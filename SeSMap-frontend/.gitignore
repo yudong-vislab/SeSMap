@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# env secrets
+.env
+.env.*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node / frontend
+node_modules/
+dist/
+build/
+
+# logs
+*.log
