@@ -360,6 +360,56 @@ export async function initSemanticMap({
     : d.modality === 'image'? App.config.hex.imageFill
     : App.config.background;
 
+
+  /* =========================
+   * Panel layout mode (hex vs scatter)
+   * ========================= */
+  function _parseXY(v) {
+    if (v == null) return null;
+    // array: [x,y]
+    if (Array.isArray(v) && v.length >= 2) {
+      const x = Number(v[0]), y = Number(v[1]);
+      if (Number.isFinite(x) && Number.isFinite(y)) return [x, y];
+      return null;
+    }
+    // object: {x,y} or {0:..,1:..}
+    if (typeof v === 'object') {
+      const x = Number(v.x ?? v.X ?? v[0]);
+      const y = Number(v.y ?? v.Y ?? v[1]);
+      if (Number.isFinite(x) && Number.isFinite(y)) return [x, y];
+      return null;
+    }
+    // string: "x,y" or "x y"
+    if (typeof v === 'string') {
+      const s = v.trim().replace(/[\[\]()]/g, '');
+      const parts = s.split(/[^0-9eE+\-\.]+/).filter(Boolean);
+      if (parts.length >= 2) {
+        const x = Number(parts[0]), y = Number(parts[1]);
+        if (Number.isFinite(x) && Number.isFinite(y)) return [x, y];
+      }
+    }
+    return null;
+  }
+
+  function getPanelLayoutMode(panelIdx) {
+    if (!Array.isArray(App.panelLayoutMode)) App.panelLayoutMode = [];
+    return App.panelLayoutMode[panelIdx] || 'hex';
+  }
+
+  function setPanelLayoutMode(panelIdx, mode) {
+    if (!Array.isArray(App.panelLayoutMode)) App.panelLayoutMode = [];
+    App.panelLayoutMode[panelIdx] = (mode === 'scatter') ? 'scatter' : 'hex';
+  }
+
+  function _layoutBtnLabel(mode) {
+    return (mode === 'scatter') ? '•' : '⬢';
+  }
+
+  function _layoutBtnTitle(mode) {
+    return (mode === 'scatter') ? 'Switch to Hex Layout' : 'Switch to Scatter Layout';
+  }
+
+
   const hexPoints = (radius) => {
     const angle = Math.PI / 3;
     return d3.range(6).map(i => [radius * Math.cos(angle * i), radius * Math.sin(angle * i)])
@@ -1968,6 +2018,41 @@ function renderHexTooltipHTML({ color = '#999', msuCount = 0, summary = '' }) {
   `;
 }
 
+
+function _escapeHtml(str) {
+  return String(str == null ? '' : str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function renderMSUTooltipHTML(d) {
+  // d: {msu_id, sentence, __hexKey}
+  let color = '#999';
+  try {
+    const st = App && App._hexStyleByKey && App._hexStyleByKey.get ? App._hexStyleByKey.get(d.__hexKey) : null;
+    if (st && st.fill) color = st.fill;
+  } catch(e) {}
+
+  const sid = (d && (d.msu_id ?? d.msuid ?? d.MSU_id)) != null ? (d.msu_id ?? d.msuid ?? d.MSU_id) : '';
+  const sent = _escapeHtml((d && d.sentence) ? d.sentence : '');
+
+  return `
+    <div style="display:flex;align-items:flex-start;gap:8px">
+      <span style="
+        margin-top:3px;display:inline-block;width:10px;height:10px;border-radius:50%;
+        background:${color};flex:none;border:1px solid rgba(0,0,0,0.12)
+      "></span>
+      <div style="min-width:0">
+        <div style="opacity:.85;margin-bottom:4px"><b>MSU ${sid}</b></div>
+        <div style="white-space:normal;word-break:break-word">${sent || '<i style="opacity:.6">No sentence</i>'}</div>
+      </div>
+    </div>
+  `;
+}
+
 function showHexTooltip(clientX, clientY, payload) {
   const tip = ensureHexTooltip();
   if (payload && payload._rawHTML && payload.html) {
@@ -2904,6 +2989,30 @@ function hideHexTooltip() {
     title.innerText = space.subspaceName || `Subspace ${i + 1}`;
     div.appendChild(title);
 
+    // Layout toggle (hex <-> scatter) — placed before release
+    const layoutBtn = document.createElement('button');
+    layoutBtn.className = 'subspace-layout';
+    const refreshLayoutBtn = () => {
+      const idxNow = Number(div.dataset.index ?? i);
+      const modeNow = getPanelLayoutMode(idxNow);
+      layoutBtn.textContent = _layoutBtnLabel(modeNow);
+      layoutBtn.title = _layoutBtnTitle(modeNow);
+      layoutBtn.classList.toggle('is-scatter', modeNow === 'scatter');
+    };
+    refreshLayoutBtn();
+    layoutBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const idxNow = Number(div.dataset.index ?? i);
+      const cur = getPanelLayoutMode(idxNow);
+      const next = (cur === 'scatter') ? 'hex' : 'scatter';
+      setPanelLayoutMode(idxNow, next);
+      refreshLayoutBtn();
+      if (typeof applyPanelLayoutMode === 'function') {
+        applyPanelLayoutMode(idxNow);
+      }
+    });
+    div.appendChild(layoutBtn);
+
     // ... 现有 addBtn 之后
     const releaseBtn = document.createElement('button');
     releaseBtn.className = 'subspace-release';
@@ -3093,18 +3202,73 @@ function hideHexTooltip() {
 
     if (container.empty()) container = svg.append('g');
     // 数据坐标（平顶六边形）
+    // Build raw hex list with both axial-derived pixel coords and original 2D coords (for scatter)
     const rawHexList = (space.hexList || []).map(h => {
-      const x = (3 / 4) * 2 * hexRadius * h.q;
-      const y = Math.sqrt(3) * hexRadius * (h.r + h.q / 2);
-      return { ...h, rawX: x, rawY: y };
+      const hx = (3 / 4) * 2 * hexRadius * h.q;
+      const hy = Math.sqrt(3) * hexRadius * (h.r + h.q / 2);
+      const xy = _parseXY(h.xy || h['2d_coord'] || h['2dCoord']); // backend provides 'xy' (from database 2d_coord)
+      return { ...h, rawX: hx, rawY: hy, _hexX: hx, _hexY: hy, _origXY: xy };
     });
 
+    // Bounds for centering + alignment
     const xs = rawHexList.map(h => h.rawX);
     const ys = rawHexList.map(h => h.rawY);
     const centerX = (Math.min(...xs) + Math.max(...xs)) / 2 || 0;
     const centerY = (Math.min(...ys) + Math.max(...ys)) / 2 || 0;
 
-    const hexList = rawHexList.map(h => ({ ...h, x: h.rawX, y: h.rawY, panelIdx }));
+    // Precompute scatter positions aligned to the hex layout extents
+    const validScatter = rawHexList
+      .filter(h => h._origXY && Number.isFinite(h._origXY[0]) && Number.isFinite(h._origXY[1]));
+    if (validScatter.length >= 2) {
+      const sMinX = Math.min(...validScatter.map(h => h._origXY[0]));
+      const sMaxX = Math.max(...validScatter.map(h => h._origXY[0]));
+      const sMinY = Math.min(...validScatter.map(h => h._origXY[1]));
+      const sMaxY = Math.max(...validScatter.map(h => h._origXY[1]));
+
+      const hMinX = Math.min(...xs), hMaxX = Math.max(...xs);
+      const hMinY = Math.min(...ys), hMaxY = Math.max(...ys);
+
+      const sRx = (sMaxX - sMinX) || 1;
+      const sRy = (sMaxY - sMinY) || 1;
+      const hRx = (hMaxX - hMinX) || 1;
+      const hRy = (hMaxY - hMinY) || 1;
+
+      const s = Math.min(hRx / sRx, hRy / sRy) * 0.98;
+
+      const sCx = (sMinX + sMaxX) / 2;
+      const sCy = (sMinY + sMaxY) / 2;
+      const hCx = (hMinX + hMaxX) / 2;
+      const hCy = (hMinY + hMaxY) / 2;
+
+      rawHexList.forEach(h => {
+        if (h._origXY && Number.isFinite(h._origXY[0]) && Number.isFinite(h._origXY[1])) {
+          h._scatterX = (h._origXY[0] - sCx) * s + hCx;
+          h._scatterY = (h._origXY[1] - sCy) * s + hCy;
+        } else {
+          h._scatterX = h._hexX;
+          h._scatterY = h._hexY;
+        }
+      });
+
+      if (!App.scatterTransformByPanel) App.scatterTransformByPanel = {};
+      App.scatterTransformByPanel[panelIdx] = { scale: s, srcCx: sCx, srcCy: sCy, dstCx: hCx, dstCy: hCy };
+    } else {
+      rawHexList.forEach(h => {
+        h._scatterX = h._hexX;
+        h._scatterY = h._hexY;
+      });
+
+      if (!App.scatterTransformByPanel) App.scatterTransformByPanel = {};
+      App.scatterTransformByPanel[panelIdx] = null;
+    }
+
+    const mode = getPanelLayoutMode(panelIdx);
+    const hexList = rawHexList.map(h => ({
+      ...h,
+      x: (mode === 'scatter') ? h._scatterX : h._hexX,
+      y: (mode === 'scatter') ? h._scatterY : h._hexY,
+      panelIdx
+    }));
     App.allHexDataByPanel[panelIdx] = hexList;
 
     // 为当前 panel 建立国家索引
@@ -3181,25 +3345,40 @@ function hideHexTooltip() {
 
     // Ensure hatch pattern exists (for conflict visualization)
     try { ensureHatchPattern(panelIdx, svg, (App.config && App.config.countryBorder && App.config.countryBorder.color) || '#999'); } catch(e) {}
-// 绑定 hex
+    // 绑定 hex
     container.selectAll('g.hex')
       .data(uniqueHexes, d => `${d.panelIdx}_${d.q}_${d.r}`)
       .join(
         enter => {
           const g = enter.append('g').attr('class', 'hex');
+
+          // Hex glyph
           g.append('path')
+            .attr('class', 'hex-shape')
             .attr('d', d3.line()(hexPoints(hexRadius)))
             .attr('fill', d => getHexFillColor(d))
             .attr('stroke', App.config.hex.borderColor)
             .attr('stroke-width', App.config.hex.borderWidth)
-            .attr('fill-opacity', App.config.hex.fillOpacity);
+            .attr('fill-opacity', App.config.hex.fillOpacity)
+            .attr('display', mode === 'scatter' ? 'none' : null);
 
-          // >>> 新增：顶层“斜线阴影”覆盖，默认不显示（fill:none）
+          // Hatch overlay (used by preview neighbors)
           g.append('path')
             .attr('class', 'hex-hatch')
             .attr('d', d3.line()(hexPoints(hexRadius)))
-            .attr('fill', 'none')                 // 需要时再切到 pattern
-            .style('pointer-events', 'none');     // 阴影不截获事件
+            .attr('fill', 'none')
+            .style('pointer-events', 'none')
+            .attr('display', mode === 'scatter' ? 'none' : null);
+
+          // // Scatter glyph
+          // g.append('circle')
+          //   .attr('class', 'scatter-dot')
+          //   .attr('r', (App.config.hex && App.config.hex.scatterRadius) ? App.config.hex.scatterRadius : Math.max(2.2, (hexRadius || 12) * 0.22))
+          //   .attr('fill', d => getHexFillColor(d))
+          //   .attr('stroke', App.config.hex.borderColor)
+          //   .attr('stroke-width', Math.max(0.6, App.config.hex.borderWidth * 0.8))
+          //   .attr('fill-opacity', App.config.hex.fillOpacity)
+          //   .attr('display', mode === 'scatter' ? null : 'none');
 
           g.on('mouseover', (event, d) => {
             // // 若已经处于“国家聚焦”锁定，悬停不再改写高亮集合
@@ -3339,6 +3518,84 @@ function hideHexTooltip() {
         exit => exit.remove()
       );
 
+
+    // === Fine-grained MSU points (scatter mode) ===
+    // Each MSU inherits the fill color from its parent hex via __hexKey.
+    let msuPoints = [];
+    try {
+      const idx = getMSUIndex();
+      const tf = App.scatterTransformByPanel ? App.scatterTransformByPanel[panelIdx] : null;
+      const seen = new Set();
+
+      rawHexList.forEach(h => {
+        const ids = Array.isArray(h.msu_ids) ? h.msu_ids : [];
+        (ids || []).forEach(msuId => {
+          const key = `${panelIdx}|${msuId}`;
+          if (seen.has(key)) return;
+
+          const rec = idx[msuId] ?? idx[String(msuId)];
+          if (!rec) return;
+
+          const xy = _parseXY(rec.xy || rec['2d_coord'] || rec['2dCoord']);
+          let x = (Number.isFinite(h._scatterX) ? h._scatterX : (Number.isFinite(h._hexX) ? h._hexX : (Number.isFinite(h.rawX) ? h.rawX : 0)));
+          let y = (Number.isFinite(h._scatterY) ? h._scatterY : (Number.isFinite(h._hexY) ? h._hexY : (Number.isFinite(h.rawY) ? h.rawY : 0)));
+
+          if (tf && Number.isFinite(tf.scale) && xy && Number.isFinite(xy[0]) && Number.isFinite(xy[1])) {
+            x = (xy[0] - tf.srcCx) * tf.scale + tf.dstCx;
+            y = (xy[1] - tf.srcCy) * tf.scale + tf.dstCy;
+          }
+
+          seen.add(key);
+          msuPoints.push({
+            panelIdx,
+            msu_id: Number(msuId),
+            sentence: rec.sentence || rec.text || rec.content || '',
+            x, y,
+            __hexKey: `${panelIdx}|${h.q},${h.r}`
+          });
+        });
+      });
+    } catch (e) {
+      msuPoints = [];
+    }
+
+    let scatterLayer = container.select('g.scatter-layer');
+    if (scatterLayer.empty()) {
+      scatterLayer = container.append('g').attr('class', 'scatter-layer');
+    }
+    scatterLayer.attr('display', mode === 'scatter' ? null : 'none');
+
+
+    scatterLayer
+      .selectAll('circle.msu-point')
+      .data(msuPoints, d => `${panelIdx}|${d.msu_id}`)
+      .join(
+        enter => enter.append('circle')
+          .attr('class', 'msu-point')
+          .attr('r', 2.0)
+          .attr('cx', d => d.x)
+          .attr('cy', d => d.y)
+          .attr('fill', d => {
+            const st = App._hexStyleByKey?.get(d.__hexKey);
+            return st?.fill || '#999';
+          })
+          .attr('fill-opacity', 0.9)
+          .on('mouseover', (event, d) => {
+            const html = renderMSUTooltipHTML(d);
+            showHexTooltip(event.clientX, event.clientY, { _rawHTML: true, html });
+          })
+          .on('mousemove', (event) => {
+            moveHexTooltip(event.clientX, event.clientY);
+          })
+          .on('mouseout', () => {
+            hideHexTooltip();
+          }),
+        update => update
+          .attr('cx', d => d.x)
+          .attr('cy', d => d.y),
+        exit => exit.remove()
+      );
+
     // 国家边界
     drawCountries(space, svg, hexRadius);
 
@@ -3352,6 +3609,63 @@ function hideHexTooltip() {
     App.hexMapsByPanel[panelIdx] = hexMap;
 
     updateHexStyles();
+  }
+
+  // Apply panel layout mode (hex <-> scatter): update coordinates + toggle glyph visibility + refresh overlays/styles
+  function applyPanelLayoutMode(panelIdx) {
+    const mode = getPanelLayoutMode(panelIdx);
+    const list = (App.allHexDataByPanel && App.allHexDataByPanel[panelIdx]) ? App.allHexDataByPanel[panelIdx] : [];
+    list.forEach(d => {
+      if (!d) return;
+      const hx = (Number.isFinite(d._hexX) ? d._hexX : d.x);
+      const hy = (Number.isFinite(d._hexY) ? d._hexY : d.y);
+      const sx = (Number.isFinite(d._scatterX) ? d._scatterX : hx);
+      const sy = (Number.isFinite(d._scatterY) ? d._scatterY : hy);
+      d.x = (mode === 'scatter') ? sx : hx;
+      d.y = (mode === 'scatter') ? sy : hy;
+    });
+
+    // hexMap shares object refs; if not, patch anyway
+    const hexMap = App.hexMapsByPanel && App.hexMapsByPanel[panelIdx];
+    if (hexMap && typeof hexMap.forEach === 'function') {
+      hexMap.forEach(d => {
+        if (!d) return;
+        const hx = (Number.isFinite(d._hexX) ? d._hexX : d.x);
+        const hy = (Number.isFinite(d._hexY) ? d._hexY : d.y);
+        const sx = (Number.isFinite(d._scatterX) ? d._scatterX : hx);
+        const sy = (Number.isFinite(d._scatterY) ? d._scatterY : hy);
+        d.x = (mode === 'scatter') ? sx : hx;
+        d.y = (mode === 'scatter') ? sy : hy;
+      });
+    }
+
+    const svg = App.subspaceSvgs && App.subspaceSvgs[panelIdx];
+    if (svg && !svg.empty()) {
+      const container = svg.select('g');
+      const scatterLayer = container.select('g.scatter-layer');
+      if (scatterLayer && !scatterLayer.empty()) scatterLayer.attr('display', mode === 'scatter' ? null : 'none');
+
+      container.selectAll('g.hex')
+        .attr('transform', d => `translate(${d.x},${d.y})`)
+        .each(function() {
+          const g = d3.select(this);
+          const showScatter = (mode === 'scatter');
+          // g.select('circle.scatter-dot').attr('display', showScatter ? null : 'none');
+          g.select('path').attr('display', showScatter ? 'none' : null);
+          g.select('path.hex-hatch').attr('display', showScatter ? 'none' : null);
+        });
+
+      // scatter: hide borders immediately (updateHexStyles will also respect mode)
+      if (mode === 'scatter') {
+        container.selectAll('.country-border').remove();
+      }
+    }
+
+    try {
+      drawOverlayLinesFromLinks(App._lastLinks, App.allHexDataByPanel, App.hexMapsByPanel, !!App.flightStart);
+    } catch (e) {}
+
+    try { updateHexStyles(); } catch (e) {}
   }
 
   function drawCountries(space, svg, hexRadius, opts = {}) {
@@ -3851,12 +4165,29 @@ function updateHexStyles() {
       path .attr('fill', finalFill)
            .attr('fill-opacity', finalOpacity);
 
+      // Scatter dot uses the same final color/alpha as hex
+      // const dot = gSel.select('circle.scatter-dot');
+      // if (!dot.empty()) {
+      //   dot.attr('fill', finalFill)
+      //      .attr('fill-opacity', finalOpacity);
+      // }
+      const scatterLayer = container.select('g.scatter-layer');
+      if (!scatterLayer.empty()) {
+        scatterLayer.attr('display', showScatter ? null : 'none');
+      }
+
       // 冲突选择态的边框专属规则
       let conflictMode = (App.lastSelectionKind === 'conflict' && App.persistentHexKeys && App.persistentHexKeys.size > 0);
       isSelected = App.persistentHexKeys && App.persistentHexKeys.has(`${panelIdx}|${d.q},${d.r}`);
       let strokeOpacity = conflictMode ? (isSelected ? STYLE.BORDER_ALT_ACTIVE : STYLE.BORDER_ALT_OTHER) : 1;
       let strokeWidth   = conflictMode ? (App.config.hex.borderWidth * (isSelected ? 1.6 : 1.0)) : App.config.hex.borderWidth;
       path.attr('stroke-opacity', strokeOpacity).attr('stroke-width', strokeWidth);
+
+      // const dot2 = gSel.select('circle.scatter-dot');
+      // if (!dot2.empty()) {
+      //   dot2.attr('stroke-opacity', strokeOpacity)
+      //       .attr('stroke-width', Math.max(0.6, strokeWidth * 0.8));
+      // }
       // 普通选中态：在非冲突模式下也给边框加一点强调
       if (!conflictMode && isSelected) {
         path.attr('stroke-width', Math.max(Number(path.attr('stroke-width')) || App.config.hex.borderWidth, App.config.hex.borderWidth * 1.6));
@@ -3875,6 +4206,12 @@ function updateHexStyles() {
     const focusCid  = override && override.countryId ? normalizeCountryId(override.countryId)
                                                     : (App.focusCountryId ? normalizeCountryId(App.focusCountryId) : null);
     const focusMode = override && override.mode ? override.mode : (App.focusMode || null);
+
+    // Scatter layout: do not draw country borders (they are defined on the hex lattice)
+    if (getPanelLayoutMode(i) === 'scatter') {
+      svg.select('g').selectAll('.country-border').remove();
+      return;
+    }
 
     drawCountries(space, svg, App.config.hex.radius, {
       focusCountryId: focusCid,
@@ -4995,6 +5332,9 @@ function _duplicateSubspaceByIndex(srcIdx) {
   const newIndex = App.currentData.subspaces.length;
   App.currentData.subspaces.push(cloned);
 
+  // Copy layout mode from source panel
+  setPanelLayoutMode(newIndex, getPanelLayoutMode(srcIdx));
+
   // 3) 渲染这个新面板
   createSubspaceElement(cloned, newIndex);
   renderHexGridFromData(newIndex, cloned, App.config.hex.radius);
@@ -5024,6 +5364,7 @@ function _deleteSubspaceByIndex(idx) {
   App.currentData.subspaces.splice(idx, 1);
   App.panelStates.splice(idx, 1);
   App.zoomStates.splice(idx, 1);
+  if (Array.isArray(App.panelLayoutMode)) App.panelLayoutMode.splice(idx, 1);
 
   // 2) 重建连线
   App._lastLinks = _rebuildLinksAfterRemove(App._lastLinks, idx);
@@ -5070,6 +5411,9 @@ function _deleteSubspaceByIndex(idx) {
     addSubspace(space = {}) {
       if (!App.currentData) App.currentData = { subspaces: [], links: [] };
       const newIndex = App.currentData.subspaces.length;
+      // Default layout mode for new subspace
+      setPanelLayoutMode(newIndex, 'hex');
+
 
       if (!Array.isArray(App.panelStates)) App.panelStates = [];
       App.panelStates.push({});
