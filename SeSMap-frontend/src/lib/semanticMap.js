@@ -36,6 +36,8 @@ try { if (typeof App !== 'undefined' && App) { App.pickRandomColor = pickRandomC
 /* === End random color helpers === */
 // src/lib/semanticMap.js
 import * as d3 from 'd3';
+import { marked } from 'marked';
+import DOMPurify from 'dompurify';
 
 /* =========================
  * 样式与常量（集中）
@@ -972,10 +974,10 @@ function renderBucketTooltipHTML(bucket) {
   if (!bucket) return '<i>No data</i>';
   var panelIdx = bucket.panelIdx != null ? bucket.panelIdx : 0;
 
-  // 1) 按国家归组
-  var groups = new Map(); // cid -> {cid, items: [], msuCount: 0, color: '#999'}
-  for (var i=0;i<bucket.items.length;i++) {
-    var it = bucket.items[i] || {};
+  var groups = new Map();
+  var items = Array.isArray(bucket.items) ? bucket.items : [];
+  for (var i = 0; i < items.length; i++) {
+    var it = items[i] || {};
     var cid = normalizeCountryId(it.country_id || '—');
     var g = groups.get(cid);
     if (!g) {
@@ -988,9 +990,8 @@ function renderBucketTooltipHTML(bucket) {
     if (Array.isArray(it.msu_ids)) g.msuCount += it.msu_ids.length;
   }
 
-  // 2) 排序：聚焦国家（若有）在最前
-  var focusCid = App.focusCountryId ? normalizeCountryId(App.focusCountryId) : null;
-  var ordered = Array.from(groups.values()).sort(function(a, b) {
+  var focusCid = App && App.focusCountryId ? normalizeCountryId(App.focusCountryId) : null;
+  var ordered = Array.from(groups.values()).sort(function (a, b) {
     if (focusCid) {
       if (a.cid === focusCid && b.cid !== focusCid) return -1;
       if (b.cid === focusCid && a.cid !== focusCid) return 1;
@@ -998,46 +999,43 @@ function renderBucketTooltipHTML(bucket) {
     return (a.cid < b.cid) ? -1 : (a.cid > b.cid) ? 1 : 0;
   });
 
-  // 3) 头部总体信息
-  var totalItems = bucket.items.length || 0;
   var totalMSU = bucket.msuCount || 0;
   var totalCountries = groups.size;
   var html = '';
   html += '<div style="margin-bottom:6px;font-weight:600">'
-       + ' · ' + (totalCountries===1?'1 Country':(totalCountries+' Countries'))
-       + ' · ' + (totalMSU===1?'1 MSU':(totalMSU+' MSUs'))
-       + '</div>';
+       +  ' · ' + (totalCountries === 1 ? '1 Country' : (totalCountries + ' Countries'))
+       +  ' · ' + (totalMSU === 1 ? '1 MSU' : (totalMSU + ' MSUs'))
+       +  '</div>';
 
-  // 4) 各国家块 + 逐条摘要
-  for (var gi=0; gi<ordered.length; gi++) {
-    var g = ordered[gi];
+  for (var gi = 0; gi < ordered.length; gi++) {
+    var g2 = ordered[gi];
     html += '<div style="display:flex;align-items:center;gap:8px;margin:.25em 0 .15em">'
          +   '<span style="display:inline-block;width:10px;height:10px;border-radius:50%;'
-         +   'background:'+g.color+';flex:none;border:1px solid rgba(255,255,255,0.25)"></span>'
-         +   '<b style="flex:none">['+ g.cid +']</b>'
-         +   '<span style="opacity:.9;flex:none">' + (g.msuCount===1?'1 MSU':(g.msuCount+' MSUs')) + '</span>'
+         +   'background:' + g2.color + ';flex:none;border:1px solid rgba(255,255,255,0.25)"></span>'
+         +   '<b style="flex:none">[' + g2.cid + ']</b>'
+         +   '<span style="opacity:.9;flex:none">' + (g2.msuCount === 1 ? '1 MSU' : (g2.msuCount + ' MSUs')) + '</span>'
          + '</div>';
 
-    var maxLines = Math.min(g.items.length, 5);
-    for (var j=0; j<maxLines; j++) {
-      var it = g.items[j] || {};
-      var nmsu = Array.isArray(it.msu_ids) ? it.msu_ids.length : 0;
-      var sum  = (it && typeof it.summary === 'string') ? it.summary.trim() : '';
-      // if (sum && sum.length > 180) sum = sum.slice(0, 180) + '…'; 完整MSU
+    var maxLines = Math.min(g2.items.length, 5);
+    for (var j = 0; j < maxLines; j++) {
+      var it2 = g2.items[j] || {};
+      var sum = (it2 && typeof it2.summary === 'string') ? it2.summary.trim() : '';
+
+      // ✅ sumHtml 在这里定义，避免 Uncaught ReferenceError
+      var sumHtml = sum ? renderMarkdownSafe(sum) : '';
+
       html += '<div style="margin-left:18px;margin-top:2px;opacity:.95">'
-           
-           +   (sum ? 'Summary: <i>' + sum + '</i>': '<i>No summary</i>')
+           +   (sumHtml ? ('Summary: ' + sumHtml) : '<i>No summary</i>')
            + '</div>';
     }
-    if (g.items.length > maxLines) {
-      html += '<div style="margin-left:18px;opacity:.6">… and ' + (g.items.length - maxLines) + ' more</div>';
+
+    if (g2.items.length > maxLines) {
+      html += '<div style="margin-left:18px;opacity:.6">… and ' + (g2.items.length - maxLines) + ' more</div>';
     }
   }
 
   return '<div style="max-width:420px">' + html + '</div>';
 }
-
-
   // —— 简易防抖 —— //
   function debounce(fn, wait = 240) {
     let t = null;
@@ -5420,6 +5418,15 @@ export function destroySemanticMap(cleanup) {
   if (typeof cleanup === 'function') cleanup();
 }
 
+function renderMarkdownSafe(md) {
+  if (!md) return '';
+  // parseInline 适合 tooltip 这种短文本；如果你有多段落再用 marked.parse
+  const unsafeHtml = marked.parseInline(md);
+  // 清洗，避免 XSS
+  return DOMPurify.sanitize(unsafeHtml, {
+    USE_PROFILES: { html: true }
+  });
+}
 
 /* === Spotlight: fade unrelated hexes when a selection exists === */
 function applySpotlight(panelIdx) {
