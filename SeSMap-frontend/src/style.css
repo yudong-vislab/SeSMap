@@ -354,6 +354,50 @@ body,
   color: #333;
 }
 
+/* 子空间右上角布局切换按钮（Hex ⬢ / Scatter •） */
+.subspace-layout {
+  position: absolute;
+  top: 6px;
+  right: 80px;          /* 放在复原按钮左侧：56px -> 80px */
+  padding: 6px 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 0 2px 0;
+
+  width: 18px;
+  height: 18px;
+
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  background: #fff;
+  cursor: pointer;
+  z-index: 30;
+
+  color: #333;
+  font-size: 12px;      /* 让 ⬢ / • 更清晰 */
+  line-height: 1;
+  user-select: none;
+}
+
+/* hover 行为：与复原按钮一致（浅灰） */
+.subspace-layout:hover {
+  background: #e5e7eb;
+  color: #333;
+}
+
+/* （可选）当处于 scatter 模式时，给按钮一个“按下/激活”态
+   你在 JS 里切换模式时可给按钮加 class="subspace-layout is-scatter"
+*/
+.subspace-layout.is-scatter {
+  background: #111;
+  border-color: #111;
+  color: #fff;
+}
+
+.subspace-layout.is-scatter:hover {
+  opacity: .85;
+}
 
 
 /* 自动隐藏滚动条（悬停或滚动时再显） */
