@@ -391,6 +391,256 @@ export async function initSemanticMap({
     return null;
   }
 
+  /* =========================
+   * Scatter alignment helpers
+   * ========================= */
+
+  function computeHexXYFromMsuIds(msuIds, msuIndex) {
+    if (!msuIndex || !Array.isArray(msuIds) || msuIds.length === 0) return null;
+    let sx = 0, sy = 0, n = 0;
+    for (let i = 0; i < msuIds.length; i++) {
+      const id = msuIds[i];
+      const m = msuIndex[id] || msuIndex[String(id)];
+      if (!m) continue;
+      const xy = _parseXY(m['2d_coord']);
+      if (!xy) continue;
+      sx += xy[0];
+      sy += xy[1];
+      n += 1;
+    }
+    if (n === 0) return null;
+    return [sx / n, sy / n];
+  }
+
+  function _solve3x3(M, b) {
+    // Gaussian elimination with partial pivoting.
+    const A = [
+      [M[0][0], M[0][1], M[0][2], b[0]],
+      [M[1][0], M[1][1], M[1][2], b[1]],
+      [M[2][0], M[2][1], M[2][2], b[2]],
+    ];
+
+    for (let col = 0; col < 3; col++) {
+      // pivot
+      let pivot = col;
+      let maxAbs = Math.abs(A[col][col]);
+      for (let r = col + 1; r < 3; r++) {
+        const v = Math.abs(A[r][col]);
+        if (v > maxAbs) { maxAbs = v; pivot = r; }
+      }
+      if (maxAbs < 1e-12) return null;
+      if (pivot !== col) {
+        const tmp = A[col]; A[col] = A[pivot]; A[pivot] = tmp;
+      }
+
+      // normalize row
+      const div = A[col][col];
+      for (let c = col; c < 4; c++) A[col][c] /= div;
+
+      // eliminate
+      for (let r = 0; r < 3; r++) {
+        if (r === col) continue;
+        const factor = A[r][col];
+        if (Math.abs(factor) < 1e-12) continue;
+        for (let c = col; c < 4; c++) {
+          A[r][c] -= factor * A[col][c];
+        }
+      }
+    }
+
+    return [A[0][3], A[1][3], A[2][3]];
+  }
+
+  function _fitAffine2D(pairs) {
+    // pairs: [ [x, y, X, Y], ... ]  where (x,y) in embedding space, (X,Y) in hex pixel space
+    if (!pairs || pairs.length < 3) return null;
+
+    let xx = 0, xy = 0, x1 = 0;
+    let yy = 0, y1 = 0;
+    let n = 0;
+
+    let xX = 0, yX = 0, X1 = 0;
+    let xY = 0, yY = 0, Y1 = 0;
+
+    for (let i = 0; i < pairs.length; i++) {
+      const p = pairs[i];
+      const x = Number(p[0]), y = Number(p[1]), X = Number(p[2]), Y = Number(p[3]);
+      if (!Number.isFinite(x) || !Number.isFinite(y) || !Number.isFinite(X) || !Number.isFinite(Y)) continue;
+
+      xx += x * x;
+      xy += x * y;
+      x1 += x;
+
+      yy += y * y;
+      y1 += y;
+
+      n += 1;
+
+      xX += x * X;
+      yX += y * X;
+      X1 += X;
+
+      xY += x * Y;
+      yY += y * Y;
+      Y1 += Y;
+    }
+
+    if (n < 3) return null;
+
+    const M = [
+      [xx, xy, x1],
+      [xy, yy, y1],
+      [x1, y1, n],
+    ];
+
+    const solX = _solve3x3(M, [xX, yX, X1]);
+    const solY = _solve3x3(M, [xY, yY, Y1]);
+    if (!solX || !solY) return null;
+
+    const a = solX[0], b = solX[1], tx = solX[2];
+    const c = solY[0], d = solY[1], ty = solY[2];
+    if (![a, b, c, d, tx, ty].every(Number.isFinite)) return null;
+
+    return { a, b, c, d, tx, ty, type: 'affine' };
+  }
+
+  function _applyAffine(t, x, y) {
+    return [
+      t.a * x + t.b * y + t.tx,
+      t.c * x + t.d * y + t.ty
+    ];
+  }
+
+  /* =========================
+   * End scatter helpers
+   * ========================= */
+
+
+  function buildMsuScatterData(panelIdx) {
+    const hexes = App.allHexDataByPanel[panelIdx] || [];
+    const msuIndex = App.currentData?.msu_index || {};
+
+    const points = [];
+
+    hexes.forEach(h => {
+      const hexKey = pkey(panelIdx, h.q, h.r);
+      const ids = Array.isArray(h.msu_ids) ? h.msu_ids : [];
+
+      ids.forEach(id => {
+        const m = msuIndex[id];
+        if (!m) return;
+
+        const xy = _parseXY(m['2d_coord']);
+        if (!xy) return;
+
+        points.push({
+          id,
+          rawX: xy[0],
+          rawY: xy[1],
+          sentence: m.sentence,
+          __hexKey: hexKey
+        });
+      });
+    });
+
+    return points;
+  }
+
+  function buildScatterTransform(panelIdx, points) {
+    // Prefer panel-level affine transform fitted from (hex centroid in 2d_coord space) -> (hex pixel center)
+    const t = (App.scatterTransformByPanel && App.scatterTransformByPanel[panelIdx]) ? App.scatterTransformByPanel[panelIdx] : null;
+    if (t && t.type === 'affine' && [t.a, t.b, t.c, t.d, t.tx, t.ty].every(Number.isFinite)) {
+      return function(pt) {
+        return [
+          t.a * pt.rawX + t.b * pt.rawY + t.tx,
+          t.c * pt.rawX + t.d * pt.rawY + t.ty
+        ];
+      };
+    }
+
+    // Fallback: extent-to-extent scaling (no rotation) — may look slightly rotated vs hex
+    const hexes = App.allHexDataByPanel[panelIdx] || [];
+
+    const xExtent = d3.extent(points, d => d.rawX);
+    const yExtent = d3.extent(points, d => d.rawY);
+
+    const centers = hexes
+      .map(h => [h._hexX, h._hexY])
+      .filter(d => Number.isFinite(d[0]) && Number.isFinite(d[1]));
+
+    const dstX = d3.extent(centers, d => d[0]);
+    const dstY = d3.extent(centers, d => d[1]);
+
+    const scaleX = d3.scaleLinear().domain(xExtent).range(dstX);
+
+    // Default flipY = true is often correct for Cartesian embeddings (y-up) into SVG (y-down).
+    const flipY = (App && App.config && App.config.scatter && typeof App.config.scatter.flipY === 'boolean')
+      ? App.config.scatter.flipY
+      : true;
+    const yRange = flipY ? [dstY[1], dstY[0]] : dstY;
+    const scaleY = d3.scaleLinear().domain(yExtent).range(yRange);
+
+    return function(pt) {
+      return [scaleX(pt.rawX), scaleY(pt.rawY)];
+    };
+  }
+
+  function renderScatterLayer(panelIdx) {
+    const svg = App.subspaceSvgs[panelIdx];
+    if (!svg) return;
+
+    const rootG = svg.select('g');
+
+    // remove old layer
+    rootG.selectAll('.scatter-layer').remove();
+
+    const points = buildMsuScatterData(panelIdx);
+    if (!points.length) return;
+
+    const tf = buildScatterTransform(panelIdx, points);
+
+    // Pre-project once
+    for (let i = 0; i < points.length; i++) {
+      const p = points[i];
+      const xy = tf(p);
+      p._px = xy[0];
+      p._py = xy[1];
+    }
+
+    const cfg = (App && App.config && App.config.scatter) ? App.config.scatter : {};
+    const R = Number.isFinite(cfg.r) ? cfg.r : 4.8;
+    const DEFAULT_FILL = cfg.defaultFill || '#555';
+    const MIN_OPACITY = Number.isFinite(cfg.minOpacity) ? cfg.minOpacity : 0.55;
+
+    const layer = rootG.append('g')
+      .attr('class', 'scatter-layer');
+
+    layer.selectAll('circle')
+      .data(points, d => d.id)
+      .join('circle')
+      .attr('class', 'msu-point')
+      .attr('r', R)
+      .attr('cx', d => d._px)
+      .attr('cy', d => d._py)
+      .attr('fill', d => {
+        const style = (App._hexStyleByKey && App._hexStyleByKey.get) ? App._hexStyleByKey.get(d.__hexKey) : null;
+        return (style && style.fill) ? style.fill : DEFAULT_FILL;
+      })
+      // Use fill-opacity (not overall opacity) to avoid compounding with other layers
+      .attr('opacity', 1)
+      .attr('fill-opacity', d => {
+        const style = (App._hexStyleByKey && App._hexStyleByKey.get) ? App._hexStyleByKey.get(d.__hexKey) : null;
+        const op = (style && typeof style.opacity === 'number') ? style.opacity : 0.95;
+        return Math.max(MIN_OPACITY, op);
+      })
+      .on('mouseenter', function(e, d) {
+        // fine-grained hover: show MSU sentence
+        showTooltip(e, d);
+      })
+      .on('mousemove', function(e) { moveTooltip(e); })
+      .on('mouseleave', hideTooltip);
+  }
+
   function getPanelLayoutMode(panelIdx) {
     if (!Array.isArray(App.panelLayoutMode)) App.panelLayoutMode = [];
     return App.panelLayoutMode[panelIdx] || 'hex';
@@ -1758,6 +2008,19 @@ function setCountryColorOverride(panelIdx, countryId, color, alphaByKey) {
     propagateCountryColorToAllPanels(countryId, color);
   }
 
+
+  // Ensure visual refresh immediately (including scatter points) after color changes.
+  // Use rAF to avoid repeated synchronous recomputations during rapid edits.
+  try {
+    const raf = (typeof requestAnimationFrame === 'function') ? requestAnimationFrame : (fn) => setTimeout(fn, 0);
+    if (!App._scheduledStyleUpdate) {
+      App._scheduledStyleUpdate = true;
+      raf(() => {
+        App._scheduledStyleUpdate = false;
+        if (typeof updateHexStyles === 'function') updateHexStyles();
+      });
+    }
+  } catch (e) {}
 }
 
 
@@ -2051,6 +2314,49 @@ function renderMSUTooltipHTML(d) {
       </div>
     </div>
   `;
+}
+
+
+// -------- Generic Tooltip API (for scatter/MSU points) --------
+// We reuse the existing hex tooltip DOM (#hex-tip) for consistent look&feel.
+function showTooltip(evtOrX, payloadOrY, maybePayload) {
+  try {
+    let x, y, payload;
+    if (typeof evtOrX === 'number') {
+      x = evtOrX;
+      y = typeof payloadOrY === 'number' ? payloadOrY : 0;
+      payload = maybePayload;
+    } else if (evtOrX && typeof evtOrX.clientX === 'number') {
+      x = evtOrX.clientX;
+      y = evtOrX.clientY;
+      payload = payloadOrY;
+    } else {
+      x = 0; y = 0; payload = payloadOrY;
+    }
+
+    // Allow passing a plain string (sentence)
+    if (typeof payload === 'string') payload = { sentence: payload };
+
+    const html = (typeof renderMSUTooltipHTML === 'function')
+      ? renderMSUTooltipHTML(payload || {})
+      : _escapeHtml((payload && payload.sentence) ? payload.sentence : '');
+
+    showHexTooltip(x, y, { _rawHTML: true, html });
+  } catch (e) {
+    // fail silently; tooltips must never break rendering
+  }
+}
+
+function moveTooltip(evtOrX, maybeY) {
+  try {
+    if (typeof moveHexTooltip !== 'function') return;
+    if (typeof evtOrX === 'number') moveHexTooltip(evtOrX, typeof maybeY === 'number' ? maybeY : 0);
+    else if (evtOrX && typeof evtOrX.clientX === 'number') moveHexTooltip(evtOrX.clientX, evtOrX.clientY);
+  } catch (e) {}
+}
+
+function hideTooltip() {
+  try { hideHexTooltip(); } catch (e) {}
 }
 
 function showHexTooltip(clientX, clientY, payload) {
@@ -3153,6 +3459,15 @@ function hideHexTooltip() {
     ensureHatchPattern(svg);
 
     const { root: overlayRoot } = ensureOverlayRoot(overlay);
+
+    // Cache space & radius for later redraw (e.g., switching layout back to hex)
+    if (!App.spacesByPanel) App.spacesByPanel = {};
+    if (!App.hexRadiusByPanel) App.hexRadiusByPanel = {};
+    App.spacesByPanel[panelIdx] = space;
+    App.hexRadiusByPanel[panelIdx] = hexRadius;
+
+    const msuIndex = (App.currentData && App.currentData.msu_index) ? App.currentData.msu_index : null;
+
     // >>> 新增：为当前 panel 的 svg 定义斜线 pattern
     ensureHatchDefs(svg, panelIdx);
 
@@ -3206,7 +3521,7 @@ function hideHexTooltip() {
     const rawHexList = (space.hexList || []).map(h => {
       const hx = (3 / 4) * 2 * hexRadius * h.q;
       const hy = Math.sqrt(3) * hexRadius * (h.r + h.q / 2);
-      const xy = _parseXY(h.xy || h['2d_coord'] || h['2dCoord']); // backend provides 'xy' (from database 2d_coord)
+      const xy = _parseXY(h.xy) || computeHexXYFromMsuIds(h.msu_ids, msuIndex); // prefer hex.xy; fallback: centroid of MSU 2d_coord
       return { ...h, rawX: hx, rawY: hy, _hexX: hx, _hexY: hy, _origXY: xy };
     });
 
@@ -3216,53 +3531,31 @@ function hideHexTooltip() {
     const centerX = (Math.min(...xs) + Math.max(...xs)) / 2 || 0;
     const centerY = (Math.min(...ys) + Math.max(...ys)) / 2 || 0;
 
-    // Precompute scatter positions aligned to the hex layout extents
-    const validScatter = rawHexList
-      .filter(h => h._origXY && Number.isFinite(h._origXY[0]) && Number.isFinite(h._origXY[1]));
-    if (validScatter.length >= 2) {
-      const sMinX = Math.min(...validScatter.map(h => h._origXY[0]));
-      const sMaxX = Math.max(...validScatter.map(h => h._origXY[0]));
-      const sMinY = Math.min(...validScatter.map(h => h._origXY[1]));
-      const sMaxY = Math.max(...validScatter.map(h => h._origXY[1]));
+    // --- Scatter alignment (MSU 2d_coord -> hex pixel space) ---
+    // We fit an affine transform using per-hex centroids in embedding space (h._origXY)
+    // mapped to their hex centers in pixel space (h.rawX, h.rawY). This captures the ~30° rotation
+    // between embedding axes and the flat-top axial grid basis.
+    const validPairs = rawHexList
+      .filter(h => h._origXY && Number.isFinite(h._origXY[0]) && Number.isFinite(h._origXY[1]) && Number.isFinite(h.rawX) && Number.isFinite(h.rawY))
+      .map(h => [h._origXY[0], h._origXY[1], h.rawX, h.rawY]);
 
-      const hMinX = Math.min(...xs), hMaxX = Math.max(...xs);
-      const hMinY = Math.min(...ys), hMaxY = Math.max(...ys);
+    const affine = (validPairs.length >= 3) ? _fitAffine2D(validPairs) : null;
 
-      const sRx = (sMaxX - sMinX) || 1;
-      const sRy = (sMaxY - sMinY) || 1;
-      const hRx = (hMaxX - hMinX) || 1;
-      const hRy = (hMaxY - hMinY) || 1;
+    // Precompute scatter positions for hexes (only used when panel is in scatter layout)
+    rawHexList.forEach(h => {
+      if (affine && h._origXY) {
+        const p = _applyAffine(affine, h._origXY[0], h._origXY[1]);
+        h._scatterX = p[0];
+        h._scatterY = p[1];
+      } else {
+        h._scatterX = h.rawX;
+        h._scatterY = h.rawY;
+      }
+    });
 
-      const s = Math.min(hRx / sRx, hRy / sRy) * 0.98;
-
-      const sCx = (sMinX + sMaxX) / 2;
-      const sCy = (sMinY + sMaxY) / 2;
-      const hCx = (hMinX + hMaxX) / 2;
-      const hCy = (hMinY + hMaxY) / 2;
-
-      rawHexList.forEach(h => {
-        if (h._origXY && Number.isFinite(h._origXY[0]) && Number.isFinite(h._origXY[1])) {
-          h._scatterX = (h._origXY[0] - sCx) * s + hCx;
-          h._scatterY = (h._origXY[1] - sCy) * s + hCy;
-        } else {
-          h._scatterX = h._hexX;
-          h._scatterY = h._hexY;
-        }
-      });
-
-      if (!App.scatterTransformByPanel) App.scatterTransformByPanel = {};
-      App.scatterTransformByPanel[panelIdx] = { scale: s, srcCx: sCx, srcCy: sCy, dstCx: hCx, dstCy: hCy };
-    } else {
-      rawHexList.forEach(h => {
-        h._scatterX = h._hexX;
-        h._scatterY = h._hexY;
-      });
-
-      if (!App.scatterTransformByPanel) App.scatterTransformByPanel = {};
-      App.scatterTransformByPanel[panelIdx] = null;
-    }
-
-    const mode = getPanelLayoutMode(panelIdx);
+    if (!App.scatterTransformByPanel) App.scatterTransformByPanel = {};
+    App.scatterTransformByPanel[panelIdx] = affine;
+const mode = getPanelLayoutMode(panelIdx);
     const hexList = rawHexList.map(h => ({
       ...h,
       x: (mode === 'scatter') ? h._scatterX : h._hexX,
@@ -3614,60 +3907,44 @@ function hideHexTooltip() {
   // Apply panel layout mode (hex <-> scatter): update coordinates + toggle glyph visibility + refresh overlays/styles
   function applyPanelLayoutMode(panelIdx) {
     const mode = getPanelLayoutMode(panelIdx);
-    const list = (App.allHexDataByPanel && App.allHexDataByPanel[panelIdx]) ? App.allHexDataByPanel[panelIdx] : [];
-    list.forEach(d => {
-      if (!d) return;
-      const hx = (Number.isFinite(d._hexX) ? d._hexX : d.x);
-      const hy = (Number.isFinite(d._hexY) ? d._hexY : d.y);
-      const sx = (Number.isFinite(d._scatterX) ? d._scatterX : hx);
-      const sy = (Number.isFinite(d._scatterY) ? d._scatterY : hy);
-      d.x = (mode === 'scatter') ? sx : hx;
-      d.y = (mode === 'scatter') ? sy : hy;
-    });
 
-    // hexMap shares object refs; if not, patch anyway
-    const hexMap = App.hexMapsByPanel && App.hexMapsByPanel[panelIdx];
-    if (hexMap && typeof hexMap.forEach === 'function') {
-      hexMap.forEach(d => {
-        if (!d) return;
-        const hx = (Number.isFinite(d._hexX) ? d._hexX : d.x);
-        const hy = (Number.isFinite(d._hexY) ? d._hexY : d.y);
-        const sx = (Number.isFinite(d._scatterX) ? d._scatterX : hx);
-        const sy = (Number.isFinite(d._scatterY) ? d._scatterY : hy);
-        d.x = (mode === 'scatter') ? sx : hx;
-        d.y = (mode === 'scatter') ? sy : hy;
-      });
+    const svg = App.subspaceSvgs[panelIdx];
+    if (!svg) return;
+
+    const rootG = svg.select('g');
+
+    if (mode === 'scatter') {
+      // Ensure hex style cache (_hexStyleByKey) is up-to-date BEFORE drawing scatter points,
+      // so points can inherit the correct per-hex color/opacity immediately.
+      try { if (typeof updateHexStyles === 'function') updateHexStyles(); } catch(_) {}
+
+      // Hide all hex glyphs & borders (your hex groups are class 'hex', not 'hex-cell')
+      rootG.selectAll('g.hex').attr('display', 'none');
+      rootG.selectAll('.country-border').attr('display', 'none');
+
+      renderScatterLayer(panelIdx);
+
+      // Re-sync styles once after layer creation (so color edits reflect without needing a drag)
+      try { if (typeof updateHexStyles === 'function') updateHexStyles(); } catch(_) {}
+
+    } else {
+      // Remove scatter
+      rootG.selectAll('.scatter-layer').remove();
+
+      // Restore hex + borders
+      rootG.selectAll('g.hex').attr('display', null);
+      rootG.selectAll('.country-border').attr('display', null);
+
+      // Ensure borders are back (some states may have overwritten stroke)
+      rootG.selectAll('path.hex-shape')
+        .attr('stroke', STYLE.HEX_BORDER_COLOR)
+        .attr('stroke-width', STYLE.HEX_BORDER_WIDTH);
+
+      // Re-apply style pipeline (opacity, hatch, alt focus, etc.)
+      try { updateHexStyles(panelIdx); } catch(_) {}
     }
-
-    const svg = App.subspaceSvgs && App.subspaceSvgs[panelIdx];
-    if (svg && !svg.empty()) {
-      const container = svg.select('g');
-      const scatterLayer = container.select('g.scatter-layer');
-      if (scatterLayer && !scatterLayer.empty()) scatterLayer.attr('display', mode === 'scatter' ? null : 'none');
-
-      container.selectAll('g.hex')
-        .attr('transform', d => `translate(${d.x},${d.y})`)
-        .each(function() {
-          const g = d3.select(this);
-          const showScatter = (mode === 'scatter');
-          // g.select('circle.scatter-dot').attr('display', showScatter ? null : 'none');
-          g.select('path').attr('display', showScatter ? 'none' : null);
-          g.select('path.hex-hatch').attr('display', showScatter ? 'none' : null);
-        });
-
-      // scatter: hide borders immediately (updateHexStyles will also respect mode)
-      if (mode === 'scatter') {
-        container.selectAll('.country-border').remove();
-      }
-    }
-
-    try {
-      drawOverlayLinesFromLinks(App._lastLinks, App.allHexDataByPanel, App.hexMapsByPanel, !!App.flightStart);
-    } catch (e) {}
-
-    try { updateHexStyles(); } catch (e) {}
   }
-
+  
   function drawCountries(space, svg, hexRadius, opts = {}) {
     const focusId  = opts.focusCountryId || null;
     const focusMode= opts.focusMode || null; // 'filled'|'outline'|null
@@ -4005,12 +4282,21 @@ function updateHexStyles() {
       : (App.focusCountryId ? normalizeCountryId(App.focusCountryId) : null);
     const focusMode = override && override.mode ? override.mode : (App.focusMode || null);
 
+
+    // Layout mode for this panel (hex vs scatter)
+    const showScatter = (typeof getPanelLayoutMode === 'function') ? (getPanelLayoutMode(panelIdx) === 'scatter') : false;
+    const containerG = svg.select('g');
+    const scatterLayer = containerG.select('g.scatter-layer');
+    if (!scatterLayer.empty()) scatterLayer.attr('display', showScatter ? null : 'none');
+
+    if (!App._hexStyleByKey) App._hexStyleByKey = new Map();
+
     svg.selectAll('g.hex').each(function(d) {
       const core = d3.select(this).select('path.hex-core');
       if (!core.empty()) core.attr('fill', computeHexBaseFill(panelIdx, d.q, d.r, d.modality));
 
       const gSel  = d3.select(this);
-      const path  = gSel.select('path');
+      const path  = gSel.select('path.hex-shape').empty() ? gSel.select('path') : gSel.select('path.hex-shape');
       const hatch = gSel.select('path.hex-hatch');
       const key   = `${panelIdx}|${d.q},${d.r}`;
 
@@ -4160,6 +4446,9 @@ function updateHexStyles() {
       if (!App.alphaCacheByHex) App.alphaCacheByHex = new Map();
       App.alphaCacheByHex.set(key, finalOpacity);
 
+       // Cache final style for this hex (used by scatter MSU points to inherit color/opacity)
+       try { App._hexStyleByKey.set(key, { fill: finalFill, opacity: finalOpacity }); } catch(e) {}
+
       // 预览邻居的斜线填充 + 应用样式
       hatch.attr('fill', isPreviewNeighbor ? `url(#hex-hatch-${panelIdx})` : 'none');
       path .attr('fill', finalFill)
@@ -4171,10 +4460,6 @@ function updateHexStyles() {
       //   dot.attr('fill', finalFill)
       //      .attr('fill-opacity', finalOpacity);
       // }
-      const scatterLayer = container.select('g.scatter-layer');
-      if (!scatterLayer.empty()) {
-        scatterLayer.attr('display', showScatter ? null : 'none');
-      }
 
       // 冲突选择态的边框专属规则
       let conflictMode = (App.lastSelectionKind === 'conflict' && App.persistentHexKeys && App.persistentHexKeys.size > 0);
@@ -4195,6 +4480,23 @@ function updateHexStyles() {
       try { applySpotlight(panelIdx); } catch(e) { console.warn(e); }
 
       });
+    // Sync MSU scatter points with the cached hex styles (inherit hex color/opacity)
+    if (!scatterLayer.empty()) {
+      scatterLayer.selectAll('circle.msu-point')
+        .attr('fill', d => {
+          const st = App._hexStyleByKey && App._hexStyleByKey.get ? App._hexStyleByKey.get(d.__hexKey) : null;
+          return (st && st.fill) ? st.fill : '#999';
+        })
+        .attr('opacity', 1)
+        .attr('fill-opacity', d => {
+          const st = App._hexStyleByKey && App._hexStyleByKey.get ? App._hexStyleByKey.get(d.__hexKey) : null;
+          const cfg = (App && App.config && App.config.scatter) ? App.config.scatter : {};
+          const MIN_OPACITY = Number.isFinite(cfg.minOpacity) ? cfg.minOpacity : 0.55;
+          const op = (st && typeof st.opacity === 'number') ? st.opacity : 0.9;
+          return Math.max(MIN_OPACITY, op);
+        });
+    }
+
   });
 
   // —— 边界重绘（保持你的原逻辑）—— //
@@ -4217,6 +4519,8 @@ function updateHexStyles() {
       focusCountryId: focusCid,
       focusMode: focusMode
     });
+
+
   });
 }
 
