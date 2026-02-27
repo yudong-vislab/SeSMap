@@ -49,9 +49,13 @@
 
           <div class="msu-text">{{ msu.sentence }}</div>
 
-          <!-- 展开显示的para_info -->
-          <div v-if="showOriginal && msu.para_info" class="para-info">
-            <div class="para-info-content">{{ msu.para_info }}</div>
+          
+          <!-- 展开显示的原文/上下文（字段兼容 + 调试兜底） -->
+          <div v-if="showOriginal" class="para-info">
+            <div v-if="msu.para_info && String(msu.para_info).trim().length" class="para-info-content">
+              {{ msu.para_info }}
+            </div>
+            <pre v-else class="para-info-content para-info-raw">{{ formatRawForDebug(msu.raw) }}</pre>
           </div>
         </div>
       </div>
@@ -123,6 +127,67 @@ const toggleMsu = (uid) => {
   selectedMsus.value = set
 }
 
+// —— 原文/上下文提取（兼容字段演进）——
+const _asText = (v) => {
+ if (v == null) return null
+ if (typeof v === 'string') return v
+ if (Array.isArray(v)) return v.map(x => (x == null ? '' : String(x))).join('\n')
+ // 常见结构：{ text: '...' }
+ if (typeof v === 'object' && typeof v.text === 'string') return v.text
+ return null
+}
+
+const extractParaInfo = (rawMsu) => {
+ if (!rawMsu) return null
+
+ // 1) 优先：历史字段 para_info
+ const direct = [
+ rawMsu.para_info,
+ rawMsu.paraInfo,
+ rawMsu.parainfo,
+ rawMsu.paragraph_info,
+
+ // 2) 常见替代字段：paragraph/context/original
+ rawMsu.paragraph,
+ rawMsu.paragraph_text,
+ rawMsu.paragraphText,
+ rawMsu.context,
+ rawMsu.context_text,
+ rawMsu.contextText,
+ rawMsu.original,
+ rawMsu.original_text,
+ rawMsu.originalText,
+ rawMsu.source,
+ rawMsu.source_text,
+ rawMsu.sourceText,
+ ].map(_asText).find(s => typeof s === 'string' && s.trim().length > 0)
+
+ if (direct) return direct
+
+ // 3) 退化：把可用的元信息拼接出来（至少不至于空）
+ const title = _asText(rawMsu.paper_title ?? rawMsu.paperTitle ?? rawMsu.title ?? rawMsu.doc_title ?? rawMsu.docTitle)
+ const section = _asText(rawMsu.section_title ?? rawMsu.sectionTitle ?? rawMsu.section)
+ const sent = _asText(rawMsu.sentence ?? rawMsu.text)
+
+ const meta = [
+ title ? `Title: ${title}` : null,
+ section ? `Section: ${section}` : null
+ ].filter(Boolean).join('\n')
+
+ const combined = [meta, sent].filter(s => typeof s === 'string' && s.trim().length > 0).join('\n\n')
+ return combined.trim() || null
+}
+
+const formatRawForDebug = (obj, limit = 2000) => {
+ try {
+ const s = JSON.stringify(obj, null, 2)
+ return s.length > limit ? (s.slice(0, limit)  + '\n…') : s
+ } catch {
+ return String(obj)
+ }
+}
+
+
 // 已选择的数量
 const selectedCount = computed(() => selectedMsus.value.size)
 
@@ -156,7 +221,7 @@ const linkMsuSentences = computed(() => {
           id,
           sentence: msu.sentence || msu.text || 'No sentence available',
           category: msu.category || 'Unknown',
-          para_info: msu.para_info || null,
+          para_info: extractParaInfo(msu),
           raw: msu
         })
       })
@@ -433,6 +498,7 @@ onBeforeUnmount(() => mini?.destroy())
 .msu-text { color: #374151; font-size: 11px; line-height: 1.5; }
 .para-info { margin-top: 8px; padding: 8px; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 4px; }
 .para-info-content { color: #4b5563; font-size: 10px; line-height: 1.5; white-space: pre-wrap; }
+.para-info-raw { margin: 0; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; font-size: 10px; }
 
 .subcard__llm { max-height: 100px; overflow-y: auto; }
 .llm-content { font-size: 11px; line-height: 1.4; color: #374151; padding: 6px; background: #ffffff; border-radius: 4px; border-left: 3px solid #e5e7eb; }
