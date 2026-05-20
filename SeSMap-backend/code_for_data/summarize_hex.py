@@ -1,10 +1,15 @@
 import json
 import os
 import re
+from pathlib import Path
 from openai import OpenAI
+from dotenv import load_dotenv
+from services.llm_config import LLM_CONFIG, model_for
+
+load_dotenv(Path(__file__).resolve().parents[1] / ".env")
+
 # 设置OpenAI API密钥
-client = OpenAI(api_key="sk-R5R6baAMrW9C8fJl25Bb213d723846C7B9E9E89a45B32685",
-                base_url="https://www.jcapikey.com/v1")# 加载JSON文件1和文件2
+client = OpenAI(api_key=LLM_CONFIG.api_key, base_url=LLM_CONFIG.base_url)# 加载JSON文件1和文件2
 def load_json_files(file1_path, file2_path):
     with open(file1_path, 'r', encoding='utf-8') as f1:
         file1_data = json.load(f1)
@@ -16,7 +21,7 @@ def load_json_files(file1_path, file2_path):
 def summarize_with_llm(text):
     try:
         response = client.chat.completions.create(
-            model="gpt-4o",  # 可以根据需要选择其他模型
+            model=model_for("summary"),
             messages=[
                 {
                     "role": "system", 

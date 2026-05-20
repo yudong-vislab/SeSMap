@@ -4,7 +4,7 @@ import { ref, watch, nextTick, onMounted } from 'vue'
 import ChatDock from './ChatDock.vue'
 import PaperList from './PaperList.vue'
 import MarkdownView from './MarkdownView.vue'
-import { sendQueryToLLM, interpretLLMResponse } from '../lib/api'
+import { sendQueryToLLM, interpretLLMResponse, setActiveProjectId } from '../lib/api'
 
 // ====== Emits ==========================================================
 const emit = defineEmits(['updateHexRadius','updateSystemPrompt','uploadPdfs','updateMarkdownModel'])
@@ -86,6 +86,10 @@ const rawPicModules = import.meta.glob(
   '../assets/pictures/**/*.{png,jpg,jpeg,gif,webp,svg}',
   { eager: true, import: 'default' }
 )
+const rawPdfModules = import.meta.glob(
+  '../assets/pdf/**/*.pdf',
+  { eager: true, import: 'default' }
+)
 
 // 建索引：{ folderId: Array<{ name, url, path }> }，并按自然序排序
 const galleryByFolder = ref({})
@@ -161,9 +165,21 @@ const FOLDER_ALIASES = {
 }
 const FOLDER_TITLES = {
   air: 'Air',
-  combust: 'Combust',
+  combust: 'Scramjet Combustion',
   case1: 'Case 1',
   case2: 'Case 2'
+}
+const FOLDER_PROJECT = {
+  air: 'case2',
+  combust: 'case1',
+  case1: 'case1',
+  case2: 'case2'
+}
+const FOLDER_PDF_DIR = {
+  air: 'case2',
+  combust: 'case1',
+  case1: 'case1',
+  case2: 'case2'
 }
 function folderTitle(folder) {
   // 优先用映射；没有映射就把下划线转空格并首字母大写
@@ -221,6 +237,31 @@ function isGalleryCommand(text){
   )
 }
 
+function isAutoGalleryTopic(text) {
+  const t = (text || '').toLowerCase()
+  return /\b(scramjet|ramjet|combustion|combustor|reacting\s+flow|reactive\s+flow|turbulent\s+combustion|supersonic|hypersonic)\b/.test(t)
+    || /超燃冲压|冲压发动机|燃烧|反应流|湍流燃烧|超声速|高超声速/.test(text || '')
+}
+
+function pdfUrlForImage(folder, img) {
+  const pdfDir = FOLDER_PDF_DIR[folder] || folder
+  const base = (img.name.split('/').pop() || img.name)
+    .replace(/\.(png|jpe?g|gif|webp|svg)$/i, '')
+    .toLowerCase()
+  const candidates = Object.entries(rawPdfModules).map(([path, url]) => ({ path, url }))
+  const inFolder = candidates.filter(x => x.path.includes(`/pdf/${pdfDir}/`))
+  const exact = inFolder.find(x => {
+    const pdfBase = (x.path.split('/').pop() || '').replace(/\.pdf$/i, '').toLowerCase()
+    return pdfBase === base
+  })
+  if (exact) return exact.url
+  const partial = inFolder.find(x => {
+    const pdfBase = (x.path.split('/').pop() || '').replace(/\.pdf$/i, '').toLowerCase()
+    return pdfBase.includes(base) || base.includes(pdfBase)
+  })
+  return partial?.url || img.url
+}
+
 
 // 将图片集合映射为 PaperList 的 items
 function toPaperItems(folder, items) {
@@ -236,7 +277,7 @@ function toPaperItems(folder, items) {
        title: pretty,          // 兜底
        content: img.url,       // ★ PaperList 用它当缩略图
        thumbUrl: img.url,      // 兼容
-       pdfUrl: img.url,        // 让“眼睛”也能点开预览
+       pdfUrl: pdfUrlForImage(folder, img),        // 让“眼睛”优先打开对应论文 PDF
        meta: { folder }
      }
    })
@@ -246,6 +287,10 @@ function toPaperItems(folder, items) {
 // 展示某个 folder：把图片灌进 Semantic Source Gallery
 function showFolder(folder) {
   const imgs = (galleryByFolder.value[folder] || []).slice()
+  const projectId = FOLDER_PROJECT[folder]
+  if (projectId) {
+    setActiveProjectId(projectId)
+  }
   // 外层标题也更新为最近一次加载的分组名（可选）
   paperQuery.value = folderTitle(folder)
    // 改为“追加一个分组”，而不是覆盖
@@ -257,7 +302,7 @@ function showFolder(folder) {
   messages.value.push({
     role:'assistant',
     type:'markdown',
-    text:`Showing \`${folder}\` — ${imgs.length} paper(s) in Semantic Source Gallery.`
+    text:`Showing \`${folderTitle(folder)}\` — ${imgs.length} paper(s) in Semantic Source Gallery.`
   })
 }
 
@@ -273,12 +318,12 @@ async function handleSend(msg) {
   }
 
   // B) Gallery 命令（必须带有 'gallery' / 'Semantic Source gallery' / '图集' / 'collect' 等关键词）
-   if (isGalleryCommand(msg)) {
+   if (isGalleryCommand(msg) || isAutoGalleryTopic(msg)) {
      const folder = resolveFolderFromText(msg)
      if (folder) { showFolder(folder); return }
      messages.value.push({
        role:'assistant', type:'error',
-       text:'No matching gallery folder. Try: “gallery air” or “gallery combust”.'
+       text:'No matching gallery folder. Try: “gallery air” or “Scramjet Combustion”.'
      })
      return
    }

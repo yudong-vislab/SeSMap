@@ -5,6 +5,7 @@ import re
 from flask import Flask, jsonify, request, abort, make_response
 from flask_cors import CORS
 from dotenv import load_dotenv
+from services.llm_config import LLM_CONFIG, get_openai_client, model_for
 
 # Optional gzip
 try:
@@ -41,13 +42,12 @@ TASK_PROMPTS = {
 
 
 # ================= Env & OpenAI client =================
-load_dotenv()
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "").strip()
-OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1").strip()
-OPENAI_DEFAULT_MODEL = os.getenv("OPENAI_DEFAULT_MODEL", "gpt-3.5-turbo").strip()
+load_dotenv(pathlib.Path(__file__).resolve().parent / ".env")
+OPENAI_API_KEY = LLM_CONFIG.api_key
+OPENAI_BASE_URL = LLM_CONFIG.base_url
+OPENAI_DEFAULT_MODEL = LLM_CONFIG.default_model
 
-from openai import OpenAI
-client = OpenAI(api_key=OPENAI_API_KEY, base_url=OPENAI_BASE_URL)
+client = get_openai_client()
 
 ENV_SYSTEM_PROMPT = (os.getenv("SYSTEM_PROMPT") or "").strip()
 SYSTEM_PROMPT_ACTIVE = ENV_SYSTEM_PROMPT if ENV_SYSTEM_PROMPT else PROMPT_BASE_SYSTEM
@@ -321,13 +321,19 @@ def parse_subspace_command(s: str) -> str:
 def is_subspace_command(s: str) -> bool:
     """
     判断一句自然语言是否是子空间显隐指令（高优先规则）。
-    只要出现 show/hide + subspace(s)/panel(s) 或者像 'show background and result' 这种关键词组合即认为是。
+    只在出现明确控制动词时判断为子空间显隐指令，避免把总结/分析 prompt
+    里普通出现的 "subspace" 误判成 UI 控制。
     """
     if not s or not s.strip():
         return False
     t = re.sub(r"\s+", " ", s.lower().strip())
-    # 典型触发词
-    if re.search(r"\b(show|hide|expand|collapse)\b", t):
+
+    # 中文显式控制
+    if re.search(r"(显示|展示|隐藏|新增|新建|删除|列出|查看|清空视图|子空间列表|子空间数量|有多少个子空间)", t):
+        return True
+
+    # 英文显式控制
+    if re.search(r"\b(show|hide|expand|collapse|add|delete|remove|list)\b", t):
         # 若句子里就明确出现 subspace(s)/panel(s)，直接认为是
         if re.search(r"\b(subspaces?|panels?)\b", t):
             return True
@@ -337,8 +343,8 @@ def is_subspace_command(s: str) -> bool:
         # "show X and Y" 这种也判定为 UI 控制（常见口语化）
         if re.match(r"^(show|hide)\s+\w+", t):
             return True
-    # 2) 兜底：如果句子里既有 all 又有 subspaces，也当成子空间指令
-    if "subspace" in t or "subspaces" in t:
+    # list/count 这类问法
+    if re.search(r"\b(how many|count)\b.*\bsubspaces?\b", t):
         return True
     return False
 
@@ -376,6 +382,20 @@ def get_indices_only():
     project_id = _normalize_case_id(raw_pid) if raw_pid else None
     data = load_data(project_id)
     return jsonify(data.get("indices", {}))
+
+@app.get("/api/llm/config")
+def get_llm_config():
+    return jsonify({
+        "base_url": LLM_CONFIG.base_url,
+        "models": {
+            "chat": model_for("chat"),
+            "intent": model_for("intent"),
+            "rag": model_for("rag"),
+            "summary": model_for("summary"),
+            "condense": model_for("condense"),
+            "embedding": model_for("embedding"),
+        }
+    })
 
 @app.get("/api/semantic-map/msu/<int:mid>")
 def get_msu_detail(mid: int):
@@ -444,6 +464,9 @@ def _format_docs(docs) -> str:
         lines.append(f"[{title} | p.{page}] {txt}")
     return "\n\n".join(lines)
 
+def _is_stale_faiss_pickle_error(err: Exception) -> bool:
+    return isinstance(err, KeyError) and str(err).strip("'\"") == "__fields_set__"
+
 class RAGService:
     """
     - Per-PDF FAISS index under: data/indexes/<project>/<doc_stem>/
@@ -455,7 +478,11 @@ class RAGService:
         self.pdf_root = pathlib.Path(pdf_root)
         self.index_root = pathlib.Path(index_root)
         self.index_root.mkdir(parents=True, exist_ok=True)
-        self.embeddings = OpenAIEmbeddings(api_key=openai_api_key, base_url=openai_base_url)
+        self.embeddings = OpenAIEmbeddings(
+            api_key=openai_api_key,
+            base_url=openai_base_url,
+            model=model_for("embedding")
+        )
         self.model_name = model
         self.temperature = temperature
         self.openai_api_key = openai_api_key
@@ -504,6 +531,20 @@ class RAGService:
         idx_dir.mkdir(parents=True, exist_ok=True)
         vs.save_local(str(idx_dir))
 
+    def _build_vectorstore_doc(self, project_id: str, pdf_path: pathlib.Path, splitter=None) -> tuple[FAISS, int]:
+        splitter = splitter or RecursiveCharacterTextSplitter(
+            chunk_size=1000, chunk_overlap=200,
+            separators=["\n\n", "\n", " ", ""]
+        )
+        docs = PyPDFLoader(str(pdf_path)).load()
+        splits = splitter.split_documents(docs)
+        for d in splits:
+            d.metadata["doc_id"] = pdf_path.name
+            d.metadata["source"] = str(pdf_path)
+        vs = FAISS.from_documents(splits, self.embeddings)
+        self._save_vectorstore_doc(project_id, pdf_path.stem, vs)
+        return vs, len(splits)
+
     def build_or_update_index(self, project_id: str, rebuild: bool = False) -> Dict[str, Any]:
         """
         Build/refresh per-PDF indexes under data/indexes/<project>/<doc_stem>/ .
@@ -521,18 +562,18 @@ class RAGService:
         for p in pdfs:
             stem = p.stem
             if not rebuild and self._index_exists_doc(project_id, stem):
-                reused += 1
-                continue
-            # load & split
-            docs = PyPDFLoader(str(p)).load()   # one page per Document
-            splits = splitter.split_documents(docs)
-            for d in splits:
-                d.metadata["doc_id"] = p.name
-                d.metadata["source"] = str(p)
-            vs = FAISS.from_documents(splits, self.embeddings)
-            self._save_vectorstore_doc(project_id, stem, vs)
+                try:
+                    self._load_vectorstore_doc(project_id, stem)
+                    reused += 1
+                    continue
+                except Exception as e:
+                    if not _is_stale_faiss_pickle_error(e):
+                        raise
+                    print(f"[RAG] stale index detected, rebuilding: {project_id}/{stem}")
+
+            _, chunk_count = self._build_vectorstore_doc(project_id, p, splitter)
             built += 1
-            total_chunks += len(splits)
+            total_chunks += chunk_count
 
         return {
             "project_id": project_id,
@@ -569,18 +610,18 @@ class RAGService:
         )
         for p in pdfs:
             if not self._index_exists_doc(project_id, p.stem):
-                docs = PyPDFLoader(str(p)).load()
-                splits = splitter.split_documents(docs)
-                for d in splits:
-                    d.metadata["doc_id"] = p.name
-                    d.metadata["source"] = str(p)
-                vs = FAISS.from_documents(splits, self.embeddings)
-                self._save_vectorstore_doc(project_id, p.stem, vs)
+                self._build_vectorstore_doc(project_id, p, splitter)
 
         # fetch contexts per doc
         per_doc_context = []
         for p in pdfs:
-            vs = self._load_vectorstore_doc(project_id, p.stem)
+            try:
+                vs = self._load_vectorstore_doc(project_id, p.stem)
+            except Exception as e:
+                if not _is_stale_faiss_pickle_error(e):
+                    raise
+                print(f"[RAG] stale index detected, rebuilding: {project_id}/{p.stem}")
+                vs, _ = self._build_vectorstore_doc(project_id, p, splitter)
             retriever = vs.as_retriever(
                 search_type="mmr" if mmr else "similarity",
                 search_kwargs={"k": k}
@@ -632,7 +673,7 @@ try:
         index_root=INDEX_ROOT,
         openai_api_key=OPENAI_API_KEY,
         openai_base_url=OPENAI_BASE_URL,
-        model=os.getenv("RAG_MODEL", OPENAI_DEFAULT_MODEL),
+        model=model_for("rag"),
         temperature=float(os.getenv("RAG_TEMPERATURE", "0.0")),
     )
 except Exception as _e:
@@ -713,7 +754,7 @@ def parse_intent_llm(text: str) -> dict:
     )
     try:
         resp = client.chat.completions.create(
-            model=os.getenv("INTENT_MODEL", OPENAI_DEFAULT_MODEL),
+            model=model_for("intent"),
             messages=[{"role":"user","content":prompt}],
             temperature=0.0,
             max_tokens=120,
@@ -768,7 +809,7 @@ def query_gpt():
 
     # 0) Subspace 控制（最高优先），LLM 严格 JSON → 前端 UI 路由
     task_type = (body.get("task") or "").lower()
-    if task_type == "subspace" or is_subspace_command(user_query):
+    if task_type == "subspace" or (not task_type and is_subspace_command(user_query)):
         try:
             tool_prompt = (
                 "You are a UI command normalizer for controlling subspace visibility across THREE cases: case1, case2, case3.\n"
@@ -786,7 +827,7 @@ def query_gpt():
                 f"USER: {user_query}\nJSON:"
             )
             resp = client.chat.completions.create(
-                model=os.getenv("INTENT_MODEL", OPENAI_DEFAULT_MODEL),
+                model=model_for("intent"),
                 messages=[{"role":"user","content":tool_prompt}],
                 temperature=0.0, max_tokens=50, timeout=10.0
             )
@@ -820,6 +861,26 @@ def query_gpt():
             },
             "meta": {}
         }), 200
+
+    # 0.5) MSU 摘要：Stepwise Analysis View / LinkCard 的 Summarize 按钮专用。
+    # 这类 prompt 中会自然出现 subspace/case/MSU 等词，不应再走 RAG 意图识别。
+    if task_type == "msu_summary":
+        try:
+            resp = client.chat.completions.create(
+                model=model_for("summary"),
+                messages=[
+                    {"role": "system", "content": PROMPT_MSU_SUMMARY},
+                    {"role": "user", "content": user_query}
+                ],
+                temperature=0.2,
+                max_tokens=700,
+                timeout=30.0
+            )
+            answer = resp.choices[0].message.content
+            return app.response_class(answer, mimetype="text/plain"), 200
+        except Exception as e:
+            print("[MSU summary] error:", e)
+            return app.response_class(f"MSU summary error: {str(e)}", mimetype="text/plain"), 500
 
 
     # 1) NL intent for RAG（规则优先，失败走 LLM）
@@ -891,7 +952,7 @@ def query_gpt():
         })
 
         resp = client.chat.completions.create(
-            model=body.get("model", OPENAI_DEFAULT_MODEL),
+            model=body.get("model") or model_for("chat"),
             messages=openai_messages,
             temperature=0.2,
             max_tokens=900,
@@ -931,7 +992,7 @@ def _condense_messages_to_summary(messages: list[str] | list[dict] | None) -> st
     )
     try:
         resp = client.chat.completions.create(
-            model=os.getenv("CONDENSE_MODEL", OPENAI_DEFAULT_MODEL),
+            model=model_for("condense"),
             messages=[{"role": "user", "content": prompt}],
             temperature=0.0,
             max_tokens=120,

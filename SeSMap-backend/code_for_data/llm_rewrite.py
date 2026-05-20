@@ -3,9 +3,13 @@ from openai import OpenAI
 import json
 import re
 from pathlib import Path
+from dotenv import load_dotenv
+from services.llm_config import LLM_CONFIG, model_for
+
+load_dotenv(Path(__file__).resolve().parents[1] / ".env")
+
 # 初始化 OpenAI 客户端
-client = OpenAI(api_key="sk-R5R6baAMrW9C8fJl25Bb213d723846C7B9E9E89a45B32685",
-                base_url="https://www.jcapikey.com/v1")
+client = OpenAI(api_key=LLM_CONFIG.api_key, base_url=LLM_CONFIG.base_url)
 
 def clean_json_text(text: str) -> str:
     # 去掉 markdown 代码块 ```json 或 ```
@@ -61,7 +65,7 @@ Paragraph:
 """
 
     response = client.chat.completions.create(
-        model="gpt-4o",  # 可以换成 gpt-4.1 / gpt-4o
+        model=model_for("summary"),
         messages=[{"role": "user", "content": prompt}],
         temperature=0
     )
@@ -116,8 +120,5 @@ if __name__ == "__main__":
     result = extract_msu(para)
     print(json.dumps(result, indent=2, ensure_ascii=False))
     print("-------------")
-
-
-
 
 

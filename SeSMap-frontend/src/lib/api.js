@@ -62,17 +62,18 @@ export async function renameMapTitle(newTitle){
 }
 
 export async function sendQueryToLLM(query, llm = 'ChatGPT', opts = {}) {
+  const body = {
+    query,
+    // 允许前端把最近几轮 messages 直接传给后端
+    messages: Array.isArray(opts.messages) ? opts.messages : undefined,
+    task: opts.task || undefined
+  };
+  if (opts.model) body.model = opts.model;
+
   const res = await fetch('/api/query', {
     method: 'POST',
     headers: { 'Content-Type':'application/json' },
-         body: JSON.stringify({
-       query,
-       model: llm === 'QWen' ? 'qwen-turbo' : 'gpt-3.5-turbo',
-       // 允许前端把最近几轮 messages 直接传给后端
-       messages: Array.isArray(opts.messages) ? opts.messages : undefined,
-       task: opts.task || undefined
-     })
-  
+    body: JSON.stringify(body)
   });
   const ct = res.headers.get('content-type') || '';
 
@@ -238,11 +239,13 @@ REQUIRED OUTPUT:
       headers: { 'Content-Type':'application/json' },
       body: JSON.stringify({
         query: prompt,
-        task: 'literature',     // ✨ 关键：这是一条“摘要”任务，不能用 'subspace'
-        model: 'gpt-3.5-turbo'         // 或你习惯的模型
+        task: 'msu_summary'     // 后端会使用 .env 里的 OPENAI_DEFAULT_MODEL
       })
     });
-    if (!res.ok) throw new Error('API request failed');
+    if (!res.ok) {
+      const errText = await res.text().catch(() => '');
+      throw new Error(errText || `API request failed (${res.status})`);
+    }
 
     const ct = res.headers.get('content-type') || '';
 
@@ -309,8 +312,7 @@ export async function runSubspaceCommand(naturalText) {
     headers: { 'Content-Type':'application/json' },
     body: JSON.stringify({
       query: naturalText,
-      task: 'subspace',      // 关键：命中后端最高优先级 UI 控制分支
-      model: 'gpt-3.5-turbo'        // 或你习惯的模型名
+      task: 'subspace'      // 关键：命中后端最高优先级 UI 控制分支
     })
   });
 
@@ -436,6 +438,3 @@ export function interpretLLMResponse(envelope) {
       return { type: 'raw', data: envelope };
   }
 }
-
-
-

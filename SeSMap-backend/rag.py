@@ -1,5 +1,6 @@
 import time
 import os
+from pathlib import Path
 from typing import List, Optional, Dict
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyPDFLoader
@@ -9,9 +10,10 @@ from langchain.prompts import ChatPromptTemplate
 from langchain.schema.runnable import RunnablePassthrough
 from langchain.schema.output_parser import StrOutputParser
 from dotenv import load_dotenv
+from services.llm_config import LLM_CONFIG, model_for
 
 # 加载环境变量
-load_dotenv()
+load_dotenv(Path(__file__).resolve().parent / ".env")
 
 class PDFRAGSystem:
     """PDF文档的检索增强生成(RAG)系统"""
@@ -19,8 +21,8 @@ class PDFRAGSystem:
     def __init__(self):
         """初始化RAG系统"""
         # 从环境变量中读取配置
-        self.api_key = os.getenv("OPENAI_API_KEY", os.getenv("OPENAI_API_KEY", ""))
-        self.base_url = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")
+        self.api_key = LLM_CONFIG.api_key
+        self.base_url = LLM_CONFIG.base_url
         
         # 验证API密钥是否存在
         if not self.api_key:
@@ -28,11 +30,12 @@ class PDFRAGSystem:
         
         self.embeddings = OpenAIEmbeddings(
             openai_api_key=self.api_key,
-            base_url=self.base_url
+            base_url=self.base_url,
+            model=model_for("embedding")
         )
         self.llm = ChatOpenAI(
             openai_api_key=self.api_key,
-            model_name=os.getenv("OPENAI_MODEL", "gpt-3.5-turbo"),
+            model_name=model_for("rag"),
             temperature=0.0,
             base_url=self.base_url
         )

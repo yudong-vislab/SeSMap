@@ -1,16 +1,12 @@
 # services/openai_client.py
-import os
 import json
 import requests
-from dotenv import load_dotenv
-
-# 加载环境变量
-load_dotenv()
+from services.llm_config import LLM_CONFIG, model_for
 
 # 从环境变量中读取配置，提供默认值作为后备
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
-OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")
-OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-3.5-turbo")
+OPENAI_API_KEY = LLM_CONFIG.api_key
+OPENAI_BASE_URL = LLM_CONFIG.base_url
+OPENAI_MODEL = model_for("chat")
 
 # 统一的请求头
 headers = {
@@ -48,7 +44,7 @@ def chat_stream(messages, temperature=0.2, max_tokens=600):
     """
     流式：逐块 yield 文本（SSE/NDJSON 外层由路由处理）
     """
-    url = f"{OPENAI_BASE_URL}/chat/completions/v1"
+    url = f"{OPENAI_BASE_URL}/chat/completions"
     payload = {
         "model": OPENAI_MODEL,
         "messages": messages,

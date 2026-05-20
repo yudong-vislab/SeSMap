@@ -4,18 +4,22 @@ import re
 from pathlib import Path
 from openai import OpenAI  
 import base64 
+from dotenv import load_dotenv
+from services.llm_config import LLM_CONFIG, model_for
 # 1. 读取 formdatabase.json
 
+load_dotenv(Path(__file__).resolve().parents[1] / ".env")
+
 client = OpenAI(
-    api_key="sk-R5R6baAMrW9C8fJl25Bb213d723846C7B9E9E89a45B32685",
-    base_url="https://www.jcapikey.com/v1"
+    api_key=LLM_CONFIG.api_key,
+    base_url=LLM_CONFIG.base_url
 )
 
 def ask_llm_with_image_and_text(image_path, text):
     with open(image_path, "rb") as img_file:
         base64_image = base64.b64encode(img_file.read()).decode('utf-8')
     response = client.chat.completions.create(
-        model="gpt-4o",
+        model=model_for("summary"),
         messages=[
             {"role": "user", "content": [
                 {"type": "text", "text": text},
