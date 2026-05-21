@@ -5,11 +5,11 @@
 
     <div class="app-shell">
       <aside class="col col-left">
-        <LeftPane />
+        <LeftPane @updateHexRadius="aggregationRange = Number($event) || 12" />
       </aside>
 
       <main class="col col-center">
-        <MainView />
+        <MainView :aggregation-range="aggregationRange" />
       </main>
 
       <aside class="col col-right">
@@ -20,10 +20,13 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import TitleBar from './components/TitleBar.vue'
 import LeftPane from './components/LeftPane.vue'
 import MainView from './components/MainView.vue'
 import RightPane from './components/RightPane.vue'
+
+const aggregationRange = ref(12)
 </script>
 
 <style>

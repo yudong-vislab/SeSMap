@@ -1,6 +1,6 @@
 <!-- src/components/MainView.vue（只展示需要改的部分） -->
 <script setup>
-import { onMounted, onBeforeUnmount, ref, nextTick, provide } from 'vue'
+import { onMounted, onBeforeUnmount, ref, nextTick, provide, watch } from 'vue'
 import { initSemanticMap } from '../lib/semanticMap'
 import {
   fetchSemanticMap,
@@ -10,6 +10,10 @@ import {
   getActiveProjectId      // ✨ 新增：从 api.js 引入当前激活的 case
 } from '../lib/api'
 import { emitSelectionSaved } from '../lib/selectionBus'
+
+const props = defineProps({
+  aggregationRange: { type: Number, default: 12 }
+})
 
 const outerRef = ref(null)
 const playgroundRef = ref(null)
@@ -74,7 +78,16 @@ async function bootstrapSemanticMap(projectId) {
   })
 
   ready.value = true
+  controller?.setAggregationRange?.(props.aggregationRange)
 }
+
+watch(
+  () => props.aggregationRange,
+  (v) => {
+    if (!ready.value || !controller) return
+    controller.setAggregationRange?.(Number(v) || 12)
+  }
+)
 
 onMounted(async () => {
   // 1️⃣ 首次加载：用当前 activeProjectId（可能是 null，会走默认 case3）

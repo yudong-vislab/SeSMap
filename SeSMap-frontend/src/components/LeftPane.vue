@@ -402,7 +402,7 @@ async function handleSend(msg) {
         <div class="cp-divider"></div>
 
         <div class="cp-block">
-          <div class="cp-label-top">Hex Aggregation Range</div>
+          <div class="cp-label-top">HSU Aggregation Range</div>
           <div class="cp-slider">
             <input type="range" :min="hexMin" :max="hexMax" :step="hexStep" v-model="hexRadius" />
             <input class="cp-number" type="number" :min="hexMin" :max="hexMax" :step="hexStep" v-model.number="hexRadius" />

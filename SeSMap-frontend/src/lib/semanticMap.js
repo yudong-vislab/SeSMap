@@ -145,6 +145,8 @@ const LAYOUT = {
   MIN_H: STYLE.SUBSPACE_MIN_H,
 };
 
+const DEFAULT_AGGREGATION_RANGE = 12;
+
 
 /* =========================
  * 初始化入口
@@ -1386,6 +1388,163 @@ function renderBucketTooltipHTML(bucket) {
   App.countryIdAlias = new Map();
   function normalizeCountryId(cid) {
     return App.countryIdAlias.get(cid) || cid;
+  }
+
+  function cloneSemanticData(data) {
+    return JSON.parse(JSON.stringify(data || { title: 'Semantic Map', subspaces: [], links: [], msu_index: {} }));
+  }
+
+  function clearInteractionForAggregation() {
+    App.selectedHex = null;
+    App.flightStart = null;
+    App.flightDraft = null;
+    App.flightHoverTarget = null;
+    App.hoveredHex = null;
+    App.neighborKeySet?.clear?.();
+    App.highlightedHexKeys?.clear?.();
+    App.persistentHexKeys?.clear?.();
+    App.excludedHexKeys?.clear?.();
+    App.selectedRouteIds?.clear?.();
+  }
+
+  function fitPanelAxialTransform(space, msuIndex) {
+    const pairs = [];
+    (space?.hexList || []).forEach(h => {
+      const ids = Array.isArray(h.msu_ids) ? h.msu_ids : [];
+      ids.forEach(id => {
+        const m = msuIndex?.[id] ?? msuIndex?.[String(id)];
+        const xy = _parseXY(m?.['2d_coord'] || m?.['2dCoord']);
+        if (!xy) return;
+        if (!Number.isFinite(Number(h.q)) || !Number.isFinite(Number(h.r))) return;
+        pairs.push([xy[0], xy[1], Number(h.q), Number(h.r)]);
+      });
+    });
+    return pairs.length >= 3 ? _fitAffine2D(pairs) : null;
+  }
+
+  function summarizeCluster(msuIds, msuIndex) {
+    const sentences = (msuIds || [])
+      .map(id => {
+        const m = msuIndex?.[id] ?? msuIndex?.[String(id)];
+        return (m?.sentence || m?.text || '').trim();
+      })
+      .filter(Boolean);
+    if (!sentences.length) return '';
+    if (sentences.length === 1) return sentences[0];
+    return `${sentences.length} semantic units are aggregated in this HSU.`;
+  }
+
+  function buildCountriesFromHexList(hexList) {
+    const byCountry = new Map();
+    (hexList || []).forEach(h => {
+      if (!h || !h.country_id) return;
+      const cid = normalizeCountryId(h.country_id);
+      if (!byCountry.has(cid)) {
+        byCountry.set(cid, {
+          country_id: cid,
+          hexes: [],
+        });
+      }
+      const rec = byCountry.get(cid);
+      if (!rec.hexes.some(x => Number(x.q) === Number(h.q) && Number(x.r) === Number(h.r))) {
+        rec.hexes.push({ q: h.q, r: h.r });
+      }
+    });
+    return Array.from(byCountry.values());
+  }
+
+  function reaggregateSemanticData(rangeRaw) {
+    const range = Math.max(1, Number(rangeRaw) || DEFAULT_AGGREGATION_RANGE);
+    const base = App.baseSemanticData || App.currentData;
+    const data = cloneSemanticData(base);
+    const msuIndex = data.msu_index || {};
+
+    if (Math.abs(range - DEFAULT_AGGREGATION_RANGE) < 0.001) {
+      return { data, changed: false };
+    }
+
+    const scale = DEFAULT_AGGREGATION_RANGE / range;
+    data.links = [];
+
+    data.subspaces = (data.subspaces || []).map((space) => {
+      const transform = fitPanelAxialTransform(space, msuIndex);
+      const groups = new Map();
+
+      (space.hexList || []).forEach(h => {
+        const ids = Array.isArray(h.msu_ids) ? h.msu_ids : [];
+        ids.forEach(id => {
+          const m = msuIndex?.[id] ?? msuIndex?.[String(id)];
+          const xy = _parseXY(m?.['2d_coord'] || m?.['2dCoord']);
+          let qBase = Number(h.q);
+          let rBase = Number(h.r);
+          if (transform && xy) {
+            const p = _applyAffine(transform, xy[0], xy[1]);
+            qBase = p[0];
+            rBase = p[1];
+          }
+          if (!Number.isFinite(qBase) || !Number.isFinite(rBase)) return;
+
+          const q = Math.round(qBase * scale);
+          const r = Math.round(rBase * scale);
+          const country = h.country_id || m?.country_id || '';
+          const modality = h.modality || m?.modality || 'text';
+          const key = `${q},${r}|${country}|${modality}`;
+
+          if (!groups.has(key)) {
+            groups.set(key, {
+              q,
+              r,
+              modality,
+              country_id: country,
+              label: h.label,
+              msu_ids: [],
+            });
+          }
+          const bucket = groups.get(key);
+          if (!bucket.msu_ids.includes(id)) bucket.msu_ids.push(id);
+        });
+      });
+
+      const hexList = Array.from(groups.values()).map(h => ({
+        ...h,
+        summary: summarizeCluster(h.msu_ids, msuIndex)
+      }));
+
+      return {
+        ...space,
+        hexList,
+        countries: buildCountriesFromHexList(hexList)
+      };
+    });
+
+    return { data, changed: true };
+  }
+
+  function applyAggregationRange(rangeRaw) {
+    const nextRange = Math.max(1, Number(rangeRaw) || DEFAULT_AGGREGATION_RANGE);
+    if (!App.baseSemanticData) App.baseSemanticData = cloneSemanticData(App.currentData);
+    if (Math.abs((App.aggregationRange || DEFAULT_AGGREGATION_RANGE) - nextRange) < 0.001) return;
+
+    const { data, changed } = reaggregateSemanticData(nextRange);
+    App.aggregationRange = nextRange;
+    App.currentData = data;
+    App._lastLinks = changed ? [] : (data.links || []);
+    stampSubspaceNamesOnAllLinks(App._lastLinks);
+    App.countryKeysGlobal = new Map();
+    App.countryKeysByPanel = [];
+    App.coordIndexByPanel = new Map();
+
+    if (!Array.isArray(App._rawHexListByPanel)) App._rawHexListByPanel = [];
+    (data.subspaces || []).forEach((space, i) => {
+      App._rawHexListByPanel[i] = Array.isArray(space.hexList) ? space.hexList.slice() : [];
+    });
+
+    clearInteractionForAggregation();
+    (data.subspaces || []).forEach((space, i) => renderHexGridFromData(i, space, App.config.hex.radius));
+    drawOverlayLinesFromLinks(App._lastLinks, App.allHexDataByPanel, App.hexMapsByPanel, false);
+    updateHexStyles();
+    publishToStepAnalysis();
+    applyResponsiveLayout(true);
   }
 
   // 仅取单面板（原有逻辑保留，如需）
@@ -5373,7 +5532,12 @@ function observePanelResize() {
   // 初始化渲染
   function renderSemanticMapFromData(data) {
     App.currentData = data;
+    App.baseSemanticData = cloneSemanticData(data);
+    App.aggregationRange = DEFAULT_AGGREGATION_RANGE;
     App._lastLinks = data.links || [];
+    App._rawHexListByPanel = (data.subspaces || []).map(space =>
+      Array.isArray(space.hexList) ? space.hexList.slice() : []
+    );
     stampSubspaceNamesOnAllLinks(App._lastLinks);   // ★ 写入子空间名字
     App.countryKeysGlobal = new Map();   // ★ 新增：全量重建前清空
 
@@ -5763,6 +5927,12 @@ function _deleteSubspaceByIndex(idx) {
         renderHexGridFromData(i, space, App.config.hex.radius);
       });
       updateHexStyles();
+    },
+    setAggregationRange(range) {
+      applyAggregationRange(range);
+    },
+    getAggregationRange() {
+      return App.aggregationRange || DEFAULT_AGGREGATION_RANGE;
     },
 
     pulseSelection() { publishToStepAnalysis(); },
