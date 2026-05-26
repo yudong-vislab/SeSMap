@@ -6,31 +6,76 @@
 //   '#C5E0B3', '#D9E1F2', '#E2F0D9', '#FCE4D6', '#EAD1DC'
 // ];
 var COLOR_PALETTE = (typeof COLOR_PALETTE !== 'undefined' && COLOR_PALETTE) ? COLOR_PALETTE : [
-  '#8CBF75', // 柔和草绿 (科技感的绿色)
-  '#E5C45A', // 稳重金黄，避免过亮
-  '#6FA8DC', // 中等饱和度的蓝色
-  '#D99970', // 柔和橙色，不刺眼
-  '#9A7FCC', // 中性色调的紫色
-  '#EA686C', // 柔和砖红，避免太浅
-  '#76C2C7', // 稳定青蓝
-  '#A6D785', // 温和浅绿
-  '#F2ECAB', // 柔和琥珀色
-  '#89B4E0', // 低饱和度天蓝
-  '#93B96F', // 稳重军绿色
-  '#A7BCE3', // 中灰蓝，适合论文插图
-  '#B9D8B1', // 清爽浅绿
-  '#E4B7B3', // 柔和粉红
-  '#C090A6'  // 稳定紫红
+  '#4C78A8',
+  '#72B7B2',
+  '#54A24B',
+  '#B279A2',
+  '#E45756',
+  '#F58518',
+  '#EECA3B',
+  '#9D755D',
+  '#7F7F7F',
+  '#A0CBE8'
 ];
 
 
-var pickRandomColor = (typeof pickRandomColor === 'function') ? pickRandomColor : function(seedStr){
-  var arr = COLOR_PALETTE; if (!arr || !arr.length) return '#A9D08D';
+function collectUsedPaletteColors(extraColors = []) {
+  var used = new Set();
+  try {
+    if (typeof App !== 'undefined' && App) {
+      App.globalCountryColors?.forEach?.(function(color){ if (color) used.add(String(color).toUpperCase()); });
+      App.panelCountryColors?.forEach?.(function(countryMap){
+        countryMap?.forEach?.(function(rec){ if (rec?.color) used.add(String(rec.color).toUpperCase()); });
+      });
+      App.panelConflictColors?.forEach?.(function(rec){ if (rec?.color) used.add(String(rec.color).toUpperCase()); });
+      if (App._pendingColorEdit?.color) used.add(String(App._pendingColorEdit.color).toUpperCase());
+      if (App._pendingConflictEdit?.color) used.add(String(App._pendingConflictEdit.color).toUpperCase());
+    }
+  } catch (_) {}
+  (extraColors || []).forEach(function(color) {
+    if (color) used.add(String(color).toUpperCase());
+  });
+  return used;
+}
+
+var pickRandomColor = (typeof pickRandomColor === 'function') ? pickRandomColor : function(seedStr, extraUsedColors){
+  var arr = COLOR_PALETTE; if (!arr || !arr.length) return '#4C78A8';
+  var used = collectUsedPaletteColors(extraUsedColors);
+  var h = 0;
   if (seedStr) {
-    var h = 0; for (var i = 0; i < seedStr.length; i++) h = (h * 33 + seedStr.charCodeAt(i)) | 0;
-    return arr[Math.abs(h) % arr.length];
+    for (var i = 0; i < seedStr.length; i++) h = (h * 33 + seedStr.charCodeAt(i)) | 0;
   }
-  return arr[Math.floor(Math.random() * arr.length)];
+  var seedIndex = Math.abs(h) % arr.length;
+  var ordered = arr.map(function(color, i) {
+    return { color: color, idx: i, seedDistance: Math.abs(i - seedIndex) };
+  });
+
+  var unused = ordered.filter(function(it){ return !used.has(String(it.color).toUpperCase()); });
+  var candidates = unused.length ? unused : ordered;
+  if (!used.size) return candidates[seedIndex % candidates.length].color;
+
+  function rgb(hex) {
+    var s = String(hex || '').replace('#', '');
+    if (s.length !== 6) return [0, 0, 0];
+    return [parseInt(s.slice(0, 2), 16), parseInt(s.slice(2, 4), 16), parseInt(s.slice(4, 6), 16)];
+  }
+  function luminance(r, g, b) {
+    return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+  }
+  function distance(a, b) {
+    var x = rgb(a), y = rgb(b);
+    var dr = x[0] - y[0], dg = x[1] - y[1], db = x[2] - y[2];
+    return Math.sqrt(dr * dr + dg * dg + db * db) + Math.abs(luminance(x[0], x[1], x[2]) - luminance(y[0], y[1], y[2])) * 0.7;
+  }
+
+  var usedArr = Array.from(used);
+  candidates.sort(function(a, b) {
+    var da = Math.min.apply(null, usedArr.map(function(c){ return distance(a.color, c); }));
+    var db = Math.min.apply(null, usedArr.map(function(c){ return distance(b.color, c); }));
+    if (db !== da) return db - da;
+    return a.seedDistance - b.seedDistance;
+  });
+  return candidates[0].color;
 };
 try { if (typeof App !== 'undefined' && App) { App.pickRandomColor = pickRandomColor; } } catch(_) {}
 /* === End random color helpers === */
@@ -120,9 +165,11 @@ const STYLE = {
   FOCUS_COUNTRY_FILL: '#FCFCFC',   // Alt 聚焦国家的统一填充色（不区分 modality）
   OPACITY_NONFOCUS: 0.08,          // Alt 聚焦时，非该国家 hex 的压暗透明度
 
-  // MSU → 透明度映射区间（数值越高越透明）
-  OPACITY_MSU_MIN: 0.15,  // msuCount = max 时用（最透明）
-  OPACITY_MSU_MAX: 0.95,  // msuCount = 0  时用（最不透明）
+  // MSU → 透明度映射区间：MSU 越少越透明，越多越实。
+  // 使用全项目稳健参考值，避免单个极端 HSU 把大多数点压得过浅。
+  OPACITY_MSU_MIN: 0.22,
+  OPACITY_MSU_MAX: 0.9,
+  OPACITY_MSU_REFERENCE_QUANTILE: 0.9,
   // 高亮透明度“加成”而不是绝对值：final = base + (1-base)*boost
   OVERLAY_ALPHA_BOOST: {
     hover: 0.15,          // 悬停 / 航线起点/hover
@@ -848,7 +895,7 @@ function _rgbToHex(r, g, b) {
 }
 
 // 尝试把任意形式的颜色转成 "#RRGGBB"
-function normalizeColorToHex(color, fallback = '#A9D08D') {
+function normalizeColorToHex(color, fallback = '#4C78A8') {
   try {
     // 1) null/undefined：直接回退
     if (color == null) return fallback;
@@ -1225,28 +1272,54 @@ function ensureHatchPattern(panelIdx, svg, color) {
   return 'url(#' + pid + ')';
 }
 
-// === 依据每面板的 MSU 数量，建立“每格 alpha”缓存 ===
+function getRobustGlobalMsuReferenceCount() {
+  const counts = [];
+  const pushCount = (n) => {
+    const v = Number(n);
+    if (Number.isFinite(v) && v > 0) counts.push(v);
+  };
+
+  (App.currentData?.subspaces || []).forEach(space => {
+    const byCoord = new Map();
+    (space?.hexList || []).forEach(h => {
+      const key = `${h?.q},${h?.r}`;
+      const count = Array.isArray(h?.msu_ids) ? h.msu_ids.length : 0;
+      byCoord.set(key, (byCoord.get(key) || 0) + count);
+    });
+    byCoord.forEach(pushCount);
+  });
+
+  if (!counts.length) {
+    (App.hexBucketsByPanel || []).forEach(bmap => {
+      if (!bmap || !(bmap instanceof Map)) return;
+      bmap.forEach(b => pushCount(b?.msuCount));
+    });
+  }
+
+  if (!counts.length) return 1;
+  counts.sort((a, b) => a - b);
+  const q = Math.max(0, Math.min(1, STYLE.OPACITY_MSU_REFERENCE_QUANTILE ?? 0.9));
+  const idx = Math.min(counts.length - 1, Math.max(0, Math.ceil(q * counts.length) - 1));
+  return Math.max(1, counts[idx]);
+}
+
+function opacityForMsuCount(msuCount) {
+  const reference = getRobustGlobalMsuReferenceCount();
+  const t = Math.max(0, Math.min(1, (Number(msuCount) || 0) / reference));
+  const minAlpha = STYLE.OPACITY_MSU_MIN ?? 0.42;
+  const maxAlpha = STYLE.OPACITY_MSU_MAX ?? 0.92;
+  return minAlpha + (maxAlpha - minAlpha) * t;
+}
+
+// === 依据全项目 MSU 数量分布，建立“每格 alpha”缓存 ===
 function recomputeMsuAlphaForPanel(panelIdx) {
   if (!App.msuAlphaByHex) App.msuAlphaByHex = new Map();
   const bmap = App.hexBucketsByPanel?.[panelIdx];
   if (!bmap || !(bmap instanceof Map)) return;
 
-  // 1) 找面板内的最大 MSU 数
-  let maxCount = 0;
-  bmap.forEach(b => { if (typeof b.msuCount === 'number' && b.msuCount > maxCount) maxCount = b.msuCount; });
-
-  const hi = STYLE.OPACITY_MSU_MAX ?? 0.25; // MSU=0 时
-  const lo = STYLE.OPACITY_MSU_MIN ?? 0.95; // MSU=max 时
-
-  // 2) 逐格映射
   bmap.forEach(b => {
     const k = `${panelIdx}|${b.q},${b.r}`;
-    let a = App?.config?.hex?.fillOpacity ?? STYLE.OPACITY_DEFAULT;
-    if (maxCount > 0) {
-      const t = Math.max(0, Math.min(1, (b.msuCount || 0) / maxCount)); // 0..1
-      a = lo + (hi - lo) * t; // 新：越多越不透明（alpha 递增）
-    }
-    App.msuAlphaByHex.set(k, a);
+    App.msuAlphaByHex.set(k, opacityForMsuCount(b?.msuCount));
   });
 }
 
@@ -2158,23 +2231,20 @@ function isConflictHex(panelIdx, q, r) {
 // 冲突区：构建透明度渐变（整面板的冲突 hex）
 function buildConflictAlphaRampFor(panelIdx) {
   const keys = getConflictKeysInPanel(panelIdx); // 已有函数
-  const arr = Array.from(keys).map(k => {
-    const [pStr, qr] = String(k).split('|');
-    const [qs, rs] = qr.split(',');
-    const p = +pStr, q = +qs, r = +rs;
-    const hex = App.hexMapsByPanel[p]?.get(`${q},${r}`);
-    return { k, x: hex?.x ?? 0, y: hex?.y ?? 0 };
-  });
-  arr.sort((a,b) => (a.y - b.y) || (a.x - b.x));
-  const n = Math.max(1, arr.length);
-  const a0 = 0.65, a1 = 1.0;
   const alphaByKey = new Map();
-  arr.forEach((it, i) => {
-    const t = n === 1 ? 1 : i / (n - 1);
-    const alpha = a0 + (a1 - a0) * t;
-    alphaByKey.set(it.k, alpha);
+  Array.from(keys).forEach(k => {
+    const [pStr, qr] = String(k).split('|');
+    const [qs, rs] = String(qr || '').split(',');
+    const p = Number(pStr);
+    const q = Number(qs);
+    const r = Number(rs);
+    const bucket = getBucket(p, q, r);
+    const alpha =
+      App.msuAlphaByHex?.get?.(k) ??
+      (bucket ? opacityForMsuCount(bucket.msuCount) : STYLE.OPACITY_DEFAULT);
+    alphaByKey.set(k, alpha);
   });
-  return { keys: new Set(arr.map(d => d.k)), alphaByKey };
+  return { keys: new Set(keys), alphaByKey };
 }
 
 // 写入/读取 冲突色
@@ -2356,7 +2426,7 @@ function getCountryColorOverride(panelIdx, countryId) {
 
 
 // 依据“该面板 + 国家”的实际 hex 集合，生成一条透明度比例尺（层次感）
-// 策略：按 y 再按 x 排序，做一个从 0.65 → 1.0 的线性渐变
+// 策略：沿用 MSU 数量透明度，颜色可改，密度表达保持稳定
 function buildAlphaRampFor(panelIdx, countryId) {
   const cid = normalizeCountryId(countryId);
   const keys = getCountryKeysInPanel(panelIdx, cid); // Set<"p|q,r">
@@ -2365,23 +2435,20 @@ function buildAlphaRampFor(panelIdx, countryId) {
     : new Set();
   const filtered = Array.from(keys).filter(k => !conflict.has(k));
 
-  const arr = filtered.map(k => {
-    const [pStr, qr] = k.split('|');
-    const [qs, rs] = qr.split(',');
-    const p = +pStr, q = +qs, r = +rs;
-    const hex = App.hexMapsByPanel[p]?.get(`${q},${r}`);
-    return { k, x: hex?.x ?? 0, y: hex?.y ?? 0 };
-  });
-  arr.sort((a,b) => (a.y - b.y) || (a.x - b.x));
-  const n = Math.max(1, arr.length);
-  const a0 = 0.65, a1 = 1.0;
   const alphaByKey = new Map();
-  arr.forEach((it, i) => {
-    const t = n === 1 ? 1 : i / (n - 1);
-    const alpha = a0 + (a1 - a0) * t;
-    alphaByKey.set(it.k, alpha);
+  filtered.forEach(k => {
+    const [pStr, qr] = String(k).split('|');
+    const [qs, rs] = String(qr || '').split(',');
+    const p = Number(pStr);
+    const q = Number(qs);
+    const r = Number(rs);
+    const bucket = getBucket(p, q, r);
+    const alpha =
+      App.msuAlphaByHex?.get?.(k) ??
+      (bucket ? opacityForMsuCount(bucket.msuCount) : STYLE.OPACITY_DEFAULT);
+    alphaByKey.set(k, alpha);
   });
-  return { keys: new Set(arr.map(d => d.k)), alphaByKey };
+  return { keys: new Set(filtered), alphaByKey };
 }
 
 /* =========================
@@ -2408,8 +2475,16 @@ function ensureColorMenu() {
   });
 
   menu.innerHTML = `
-    <div style="font-size:13px;opacity:.85;margin-bottom:8px;color:#111">
-      Adjust country color
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px">
+      <div style="font-size:13px;opacity:.85;color:#111">
+        Adjust country color
+      </div>
+      <button id="alt-color-random" type="button" title="Random color"
+              style="width:18px;height:18px;border:none;border-radius:999px;
+                    background:#111;color:#fff;cursor:pointer;font-size:10px;
+                    font-weight:700;line-height:18px;text-align:center;padding:0">
+        R
+      </button>
     </div>
 
     <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
@@ -2446,6 +2521,16 @@ function ensureColorMenu() {
     return { inp, hex };
   };
 
+  const applyMenuColor = (color) => {
+    const { inp, hex } = pick();
+    const next = normalizeColorToHex(color, '#4C78A8').toUpperCase();
+    if (inp) inp.value = next;
+    if (hex) hex.value = next;
+    if (App._pendingColorEdit) App._pendingColorEdit.color = next;
+    if (App._pendingConflictEdit) App._pendingConflictEdit.color = next;
+    debouncedPreview();
+  };
+
   // 同步：色盘 <-> 文本
   // —— 输入同步：色盘 <-> 文本，并同时更新两个 pending —— 
   menu.querySelector('#alt-color-input').addEventListener('input', () => {
@@ -2468,6 +2553,23 @@ function ensureColorMenu() {
       if (App._pendingConflictEdit) App._pendingConflictEdit.color = v;
       debouncedPreview();
     }
+  });
+
+  menu.querySelector('#alt-color-random').addEventListener('click', (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    const { inp, hex } = pick();
+    const current = normalizeColorToHex(hex?.value || inp?.value || '#4C78A8', '#4C78A8').toUpperCase();
+    if (!Array.isArray(App._colorMenuRandomHistory)) App._colorMenuRandomHistory = [];
+    App._colorMenuRandomHistory.push(current);
+
+    const tried = Array.from(new Set(App._colorMenuRandomHistory.map(c => String(c).toUpperCase())));
+    const palette = Array.isArray(COLOR_PALETTE) ? COLOR_PALETTE : [];
+    const unusedInSession = palette.filter(color => !tried.includes(String(color).toUpperCase()));
+    const extraUsed = unusedInSession.length ? tried : [current];
+    const next = pickRandomColor(`menu-random:${Date.now()}:${current}:${tried.length}`, extraUsed);
+    App._colorMenuRandomHistory.push(normalizeColorToHex(next, '#4C78A8').toUpperCase());
+    applyMenuColor(next);
   });
 
   // —— 确认：同时落盘冲突颜色 & 国家颜色 —— 
@@ -2537,10 +2639,11 @@ function showColorMenu(x, y, initColor = '#a9d08d') {
   const hex = /** @type {HTMLInputElement|null} */(menu.querySelector('#alt-color-hex'));
 
   // 统一成 "#RRGGBB"（大写）
-  const hexColor = normalizeColorToHex(initColor, '#A9D08D'); // => "#A9D08D"
+  const hexColor = normalizeColorToHex(initColor, '#4C78A8');
 
   if (inp) inp.value = hexColor;               // <input type="color"> 也能接受大写
   if (hex) hex.value = hexColor.toUpperCase(); // 文本显示大写
+  App._colorMenuRandomHistory = [hexColor.toUpperCase()];
 
   // 避免出屏
   const pad = 8;
@@ -4127,7 +4230,7 @@ const mode = getPanelLayoutMode(panelIdx);
                 App._pendingColorEdit = {
                   panelIdx,
                   countryId,
-                  color: getCountryColorOverride(panelIdx, /*...*/ ) || pickRandomColor(`country:${panelIdx}:${String(countryId)}`),
+                  color: getCountryColorOverride(panelIdx, countryId)?.color || pickRandomColor(`country:${panelIdx}:${String(countryId)}`),
                   keys,
                   alphaByKey
                 };
@@ -4135,7 +4238,7 @@ const mode = getPanelLayoutMode(panelIdx);
               }
 
               showColorMenu(event.clientX, event.clientY,
-                (App._pendingConflictEdit?.color || App._pendingColorEdit?.color || '#A9D08D')
+                (App._pendingConflictEdit?.color || App._pendingColorEdit?.color || '#4C78A8')
               );
             });
 
@@ -5322,6 +5425,7 @@ function updateHexStyles() {
           App.highlightedHexKeys = new Set(filteredKeys);
           App._pendingColorEdit = {
             panelIdx,
+            countryId: cid,
             keys: new Set(filteredKeys),
             color: getCountryColorOverride(panelIdx, cid)?.color || null,
             alphaByKey: buildAlphaMapForPanelCountry(panelIdx, cid) // 该函数内部本就排冲突；保留用于透明度分配
@@ -6489,7 +6593,7 @@ function applySpotlight(panelIdx) {
       if (A._pendingConflictEdit || A._pendingColorEdit) {
         e.preventDefault();
         if (typeof showColorMenu === 'function') {
-          const init = (A._pendingConflictEdit?.color) || (A._pendingColorEdit?.color) || '#A9D08D';
+          const init = (A._pendingConflictEdit?.color) || (A._pendingColorEdit?.color) || '#4C78A8';
           showColorMenu(e.clientX||0, e.clientY||0, init);
         }
       }
