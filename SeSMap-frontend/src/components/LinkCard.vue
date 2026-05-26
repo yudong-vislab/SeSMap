@@ -39,6 +39,11 @@
                 :checked="selectedMsus.has(msu.uid)"
                 @change="toggleMsu(msu.uid)"
               />
+              <span
+                class="paper-dot"
+                :style="{ backgroundColor: msu.paperColor }"
+                :title="msu.paperLabel"
+              ></span>
               <span class="msu-id">MSU {{ msu.id }}</span>
             </label>
 
@@ -179,6 +184,75 @@ const extractParaInfo = (rawMsu) => {
  return combined.trim() || null
 }
 
+const paperPalette = [
+ '#4C78A8', '#72B7B2', '#54A24B', '#B279A2', '#E45756',
+ '#F58518', '#EECA3B', '#9D755D', '#7F7F7F', '#A0CBE8'
+]
+
+function pickMapValue(mapLike, key) {
+ if (!mapLike || key == null) return null
+ const keys = [key, String(key)]
+ if (mapLike instanceof Map) {
+   for (const k of keys) if (mapLike.has(k)) return mapLike.get(k)
+   return null
+ }
+ if (typeof mapLike === 'object') {
+   for (const k of keys) if (Object.prototype.hasOwnProperty.call(mapLike, k)) return mapLike[k]
+ }
+ return null
+}
+
+function normalizePaperId(rawMsu, node) {
+ const direct =
+   rawMsu?.country_id ??
+   rawMsu?.countryId ??
+   rawMsu?.paper_country_id ??
+   rawMsu?.paperCountryId ??
+   node?.country_id
+ if (direct != null && String(direct).trim()) return String(direct).trim()
+ const pid = rawMsu?.paper_id ?? rawMsu?.paperId ?? rawMsu?.paper
+ if (pid != null && String(pid).trim()) {
+   const s = String(pid).trim()
+   return /^c/i.test(s) ? s : `c${s}`
+ }
+ const label = extractPaperLabel(rawMsu)
+ return label || 'unknown'
+}
+
+function extractPaperLabel(rawMsu) {
+ const value =
+   rawMsu?.paper_info ??
+   rawMsu?.paper_title ??
+   rawMsu?.paperTitle ??
+   rawMsu?.doc_title ??
+   rawMsu?.docTitle ??
+   rawMsu?.source_title ??
+   rawMsu?.sourceTitle ??
+   rawMsu?.title ??
+   rawMsu?.subtitle ??
+   rawMsu?.source
+ const text = _asText(value)
+ if (text && text.trim()) {
+   const cleaned = text.trim()
+   const parts = cleaned.split(/[\\/]/).filter(Boolean)
+   return parts[parts.length - 1] || cleaned
+ }
+ const pid = rawMsu?.paper_id ?? rawMsu?.paperId
+ return pid != null ? `Paper ${pid}` : 'Unknown paper'
+}
+
+function colorForPaper(countryId, panelIdx) {
+ const normalized = props.normalizeCountryId ? props.normalizeCountryId(countryId) : countryId
+ const panelColor = pickMapValue(props.colorByPanelCountry, `${panelIdx}|${normalized}`)
+ if (panelColor) return panelColor
+ const globalColor = pickMapValue(props.colorByCountry, normalized)
+ if (globalColor) return globalColor
+ let h = 0
+ const s = String(normalized || 'unknown')
+ for (let i = 0; i < s.length; i++) h = (h * 33 + s.charCodeAt(i)) | 0
+ return paperPalette[Math.abs(h) % paperPalette.length]
+}
+
 const formatRawForDebug = (obj, limit = 2000) => {
  try {
  const s = JSON.stringify(obj, null, 2)
@@ -216,12 +290,17 @@ const linkMsuSentences = computed(() => {
         const uid = `${hsuKey}#${id}` // 唯一 uid = HSU + MSU
         if (seen.has(uid)) return
         seen.add(uid)
+        const paperId = normalizePaperId(msu, node)
+        const paperLabel = extractPaperLabel(msu)
         out.push({
           uid,
           hsuKey,
           id,
           sentence: msu.sentence || msu.text || 'No sentence available',
           category: msu.category || 'Unknown',
+          paperId,
+          paperLabel,
+          paperColor: colorForPaper(paperId, point.panelIdx),
           para_info: extractParaInfo(msu),
           raw: msu
         })
@@ -293,23 +372,33 @@ const summarizeSelected = async () => {
     const node = nodeMap.get(hsuKey);
     if (!node?.msu || !Array.isArray(node.msu)) return;
 
-    const sentences = [];
+    const evidence = [];
     for (const msu of node.msu) {
       const id = msu?.MSU_id ?? msu?.id;
       if (id == null) continue;
       const uid = `${hsuKey}#${id}`;
       if (!sel.has(uid)) continue; // 只要“勾选”的
       const sent = (msu.sentence || msu.text || '').trim();
-      if (sent) sentences.push(`MSU ${id}: ${sent}`);
+      if (sent) {
+        const paperId = normalizePaperId(msu, node)
+        evidence.push({
+          msuId: id,
+          text: sent,
+          paperId,
+          paper: extractPaperLabel(msu),
+          category: msu.category || 'Unknown'
+        });
+      }
     }
 
-    if (sentences.length) {
+    if (evidence.length) {
       hops.push({
         step: i + 1,
         hsu: hsuKey,                             // "panelIdx:q,r"
         panelIdx: pt.panelIdx,
         subspace: fallbackName(pt.panelIdx),     // 最佳可得的子空间名
-        sentences                                // 仅包含用户选中的句子
+        evidence,
+        sentences: evidence.map(item => item.text)
       });
     }
   });
@@ -421,6 +510,7 @@ onBeforeUnmount(() => mini?.destroy())
   display:inline-flex;
   align-items:center;
   gap:6px;
+  min-width:0;
 }
 .msu-check{
   width: 0.95em;
@@ -475,7 +565,14 @@ onBeforeUnmount(() => mini?.destroy())
 
 .msu-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
 .msu-id { font-weight: 600; color: #374151; font-size: 10px; }
-
+.paper-dot{
+  display:inline-block;
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  border:1px solid rgba(255,255,255,0.25);
+  flex:none;
+}
 .show-original-btn{
   font-size: 10px;
   padding: 4px 10px;

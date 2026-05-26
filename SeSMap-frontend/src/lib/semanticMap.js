@@ -18,6 +18,7 @@ var COLOR_PALETTE = (typeof COLOR_PALETTE !== 'undefined' && COLOR_PALETTE) ? CO
   '#A0CBE8'
 ];
 
+let semanticMapInstanceSeq = 0;
 
 function collectUsedPaletteColors(extraColors = []) {
   var used = new Set();
@@ -204,6 +205,7 @@ export async function initSemanticMap({
   globalOverlayEl,
   mainTitleEl,
   initialData,
+  initialProjectId = null,
   initialHidden = true
 }) {
 
@@ -216,7 +218,9 @@ export async function initSemanticMap({
   /* =========================
    * App 状态
    * ========================= */
+  const instanceId = `semantic-map-${++semanticMapInstanceSeq}`;
   const App = {
+    instanceId,
     config: {
       hex: {
         radius: STYLE.HEX_RADIUS,
@@ -308,6 +312,7 @@ export async function initSemanticMap({
 
     // 数据
     currentData: null,
+    currentProjectId: initialProjectId || initialData?.project_id || initialData?.projectId || null,
     countryKeysGlobal: new Map(),   // ★ 新增：全局 { country_id -> Set("panel|q,r") }
     focusCountryId: null,   // ★ 当前 Alt 高亮的国家（跨面板生效）
     focusMode: 'filled',      // ★ 新增：'filled' | 'outline'
@@ -1039,6 +1044,15 @@ function getPanelCountryColor(panelIdx, cidRaw) {
 
   // 4) 最后回退
   return (App.config?.countryBorder?.color) || '#999';
+}
+
+function emitSemanticColorSnapshot() {
+  try {
+    const detail = (typeof _buildMiniSnapshot === 'function')
+      ? _buildMiniSnapshot()
+      : {};
+    window.dispatchEvent(new CustomEvent('semanticmap:colorschange', { detail }));
+  } catch (_) {}
 }
 
 
@@ -1931,8 +1945,10 @@ function renderBucketTooltipHTML(bucket) {
       });
     }
 
+    const projectId = App?.currentProjectId || App?.currentData?.project_id || App?.currentData?.projectId || window.__activeProjectId || null;
+
     // —— 原有返回，补充 3 张表 —— 
-    return { colorByCountry, colorByPanelCountry, alphaByNode, normalizeCountryId,
+    return { projectId, colorByCountry, colorByPanelCountry, alphaByNode, normalizeCountryId,
             borderColorByNode, borderWidthByNode, fillByNode };
 
   }
@@ -2280,6 +2296,7 @@ function setConflictColorOverride(panelIdx, color, alphaByKey) {
 
 
   App.panelConflictColors.set(panelIdx, { color, alphaByKey: alphaMap });
+  emitSemanticColorSnapshot();
 }
 
 function getConflictColorOverride(panelIdx) {
@@ -2338,6 +2355,7 @@ function propagateCountryColorToAllPanels(countryId, color) {
 
   // 3) 刷新
   if (typeof updateHexStyles === 'function') updateHexStyles();
+  emitSemanticColorSnapshot();
 }
 
 
@@ -2413,6 +2431,7 @@ function setCountryColorOverride(panelIdx, countryId, color, alphaByKey) {
       });
     }
   } catch (e) {}
+  emitSemanticColorSnapshot();
 }
 
 
@@ -2456,10 +2475,15 @@ function buildAlphaRampFor(panelIdx, countryId) {
  * ========================= */
 function ensureColorMenu() {
   let menu = document.getElementById('alt-color-menu');
+  if (menu && menu.dataset.semanticMapOwner !== App.instanceId) {
+    menu.remove();
+    menu = null;
+  }
   if (menu) return menu;
 
   menu = document.createElement('div');
   menu.id = 'alt-color-menu';
+  menu.dataset.semanticMapOwner = App.instanceId;
   Object.assign(menu.style, {
     position: 'fixed',
     display: 'none',
@@ -5801,12 +5825,33 @@ function observePanelResize() {
         };
       }
       syncContainerHeight(subspaceDiv);
-      drawOverlayLinesFromLinks(App._lastLinks, App.allHexDataByPanel, App.hexMapsByPanel, !!(App.flightStart || App.flightDraft));
-      updateHexStyles();
+      schedulePanelGeometryRefresh(idx);
     });
     subspaceDiv._resizeObserver = ro;
     ro.observe(subspaceDiv);
     cleanupFns.push(() => ro.disconnect());
+  });
+}
+
+function schedulePanelGeometryRefresh(panelIdx = null) {
+  if (!App._panelGeometryRefreshSet) App._panelGeometryRefreshSet = new Set();
+  if (panelIdx == null || panelIdx < 0) {
+    (App.currentData?.subspaces || []).forEach((_, i) => App._panelGeometryRefreshSet.add(i));
+  } else {
+    App._panelGeometryRefreshSet.add(panelIdx);
+  }
+  if (App._panelGeometryRefreshRaf) return;
+  App._panelGeometryRefreshRaf = requestAnimationFrame(() => {
+    App._panelGeometryRefreshRaf = null;
+    const indices = Array.from(App._panelGeometryRefreshSet || []);
+    App._panelGeometryRefreshSet?.clear?.();
+    indices.forEach(i => {
+      const space = App.currentData?.subspaces?.[i];
+      const radius = App.hexRadiusByPanel?.[i] || App.config.hex.radius;
+      if (space) renderHexGridFromData(i, space, radius);
+    });
+    drawOverlayLinesFromLinks(App._lastLinks, App.allHexDataByPanel, App.hexMapsByPanel, !!(App.flightStart || App.flightDraft));
+    updateHexStyles();
   });
 }
 
@@ -5858,20 +5903,28 @@ function observePanelResize() {
     }
 
     const resizeHandler = () => {
-      (data.subspaces || []).forEach((space, i) => renderHexGridFromData(i, space, App.config.hex.radius));
-      drawOverlayLinesFromLinks(App._lastLinks, App.allHexDataByPanel, App.hexMapsByPanel, !!App.flightStart);
-      updateHexStyles();
       App.globalOverlayEl.setAttribute('width', App.playgroundEl.clientWidth);
       App.globalOverlayEl.setAttribute('height', App.playgroundEl.clientHeight);
       applyResponsiveLayout(false);   // ← 新增：窗口变化时重新排布
+      schedulePanelGeometryRefresh();
     };
     window.addEventListener('resize', resizeHandler);
     cleanupFns.push(() => window.removeEventListener('resize', resizeHandler));
+
+    const fullscreenHandler = () => {
+      App.globalOverlayEl.setAttribute('width', App.playgroundEl.clientWidth);
+      App.globalOverlayEl.setAttribute('height', App.playgroundEl.clientHeight);
+      applyResponsiveLayout(false);
+      schedulePanelGeometryRefresh();
+    };
+    document.addEventListener('fullscreenchange', fullscreenHandler);
+    cleanupFns.push(() => document.removeEventListener('fullscreenchange', fullscreenHandler));
 
     const ro = new ResizeObserver(() => {
       App.globalOverlayEl.setAttribute('width', App.playgroundEl.clientWidth);
       App.globalOverlayEl.setAttribute('height', App.playgroundEl.clientHeight);
       applyResponsiveLayout(false);   // ← 新增
+      schedulePanelGeometryRefresh();
     });
     ro.observe(App.playgroundEl);
     cleanupFns.push(() => ro.disconnect());
@@ -6158,6 +6211,10 @@ function _deleteSubspaceByIndex(idx) {
   controller = {
     cleanup() {
       cleanupFns.forEach(fn => fn && fn());
+      const colorMenu = document.getElementById('alt-color-menu');
+      if (colorMenu?.dataset?.semanticMapOwner === App.instanceId) {
+        colorMenu.remove();
+      }
       d3.select(App.globalOverlayEl).selectAll('*').remove();
       App.playgroundEl.querySelectorAll('.subspace').forEach(n => n.remove());
     },

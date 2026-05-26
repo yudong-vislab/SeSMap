@@ -103,6 +103,10 @@ export async function sendQueryToLLM(query, llm = 'ChatGPT', opts = {}) {
       if (projectId) {
         console.log('[sendQueryToLLM] detected projectId from query:', projectId);
         setActiveProjectId(projectId);
+        if (cmd) {
+          window.__pendingSubspaceCmds = window.__pendingSubspaceCmds || [];
+          window.__pendingSubspaceCmds.push(cmd);
+        }
 
         try {
           window.dispatchEvent(new CustomEvent('semantic-map:project-changed', {
@@ -113,6 +117,10 @@ export async function sendQueryToLLM(query, llm = 'ChatGPT', opts = {}) {
         }
       } else {
         console.log('[sendQueryToLLM] no projectId detected, keep current case.');
+      }
+
+      if (projectId) {
+        return { mode: 'subspace/control', ok: true, command: cmd, projectId };
       }
 
       // ⭐ 如果路由器还没在 window 上，先动态导入一遍（副作用执行）
@@ -169,6 +177,7 @@ export async function summarizeMsuSentences(hopsOrGroups) {
           hsu: x.hsu,
           panelIdx: x.panelIdx,
           subspace: x.subspace || `Subspace ${x.panelIdx}`,
+          evidence: Array.isArray(x.evidence) ? x.evidence : null,
           sentences: x.sentences
         }));
     }
@@ -177,6 +186,7 @@ export async function summarizeMsuSentences(hopsOrGroups) {
       hsu: g.hsu,
       panelIdx: Number(String(g.hsu).split(':')[0] || 0),
       subspace: `Subspace ${Number(String(g.hsu).split(':')[0] || 0)}`,
+      evidence: Array.isArray(g.evidence) ? g.evidence : null,
       sentences: g.sentences || []
     }));
   };
@@ -198,31 +208,65 @@ export async function summarizeMsuSentences(hopsOrGroups) {
     .map(([idx, name]) => `- panelIdx ${idx} → "${name}"`)
     .join('\n');
 
+  const formatEvidence = (h) => {
+    const evidence = Array.isArray(h.evidence) && h.evidence.length
+      ? h.evidence
+      : (h.sentences || []).map((text, i) => ({ msuId: i + 1, text, paper: 'Unknown paper', paperId: 'unknown' }));
+    return evidence.map(item => {
+      const paper = item.paper || item.paperLabel || item.source || item.paperId || 'Unknown paper';
+      const msuId = item.msuId ?? item.id ?? '?';
+      const category = item.category ? ` | Category ${item.category}` : '';
+      return `- Paper "${paper}" | MSU ${msuId}${category}: ${item.text || item.sentence || item}`;
+    });
+  };
+
+  const paperMap = new Map();
+  hops.forEach(h => {
+    const evidence = Array.isArray(h.evidence) && h.evidence.length
+      ? h.evidence
+      : (h.sentences || []).map(text => ({ text, paper: 'Unknown paper' }));
+    evidence.forEach(item => {
+      const paper = item.paper || item.paperLabel || item.source || item.paperId || 'Unknown paper';
+      if (!paperMap.has(paper)) paperMap.set(paper, []);
+      paperMap.get(paper).push({
+        subspace: cleanSubspaceName(h.subspace, h.panelIdx),
+        hsu: h.hsu,
+        msuId: item.msuId ?? item.id ?? '?',
+        text: item.text || item.sentence || String(item)
+      });
+    });
+  });
+  const paperBlock = Array.from(paperMap.entries()).map(([paper, items]) => {
+    const lines = items.map(item => `  - ${item.subspace} / HSU ${item.hsu} / MSU ${item.msuId}: ${item.text}`);
+    return `Paper "${paper}":\n${lines.join('\n')}`;
+  }).join('\n\n');
+
   const hopsBlock = hops
     .sort((a,b) => (a.step||0) - (b.step||0))
     .map(h => [
       `Step ${h.step} | HSU ${h.hsu} | Subspace "${cleanSubspaceName(h.subspace, h.panelIdx)}" (panelIdx ${h.panelIdx}):`,
-      ...(h.sentences || [])
+      ...formatEvidence(h)
     ].join('\n'))
     .join('\n\n');
 
   // ---------- 提示词：只返回 RouteSummary + 禁止代码块 ----------
   const prompt = `
 You are given selected HSUs along one or more links in a semantic map.
-Each hop belongs to a named subspace and contains user-selected MSU sentences.
+Each hop belongs to a named subspace and contains user-selected MSU evidence. Each MSU may also include a paper/source label.
 
 TASK
-Write a useful analytical summary for a user reviewing a cross-subspace reasoning path. Use the named subspaces as the organizing structure: explain what evidence appears in each subspace and what changes when the path moves to another subspace.
+Write a useful analytical summary for a user reviewing cross-subspace evidence. Use a layered synthesis: identify the selected topic, explain what each named subspace contributes, and compare how different papers/sources support, extend, or conflict with each other.
 
 CONTENT RULES (Strict)
 1) Evidence-only: use ONLY facts, terms, and subspace names from the MSUs or LEGEND.
 2) Use exact subspace display names from LEGEND, such as "Background", "Method", "Experiment", "Result", or "Conclusion" when present.
 3) Never write generic labels like "Subspace 0", "Subspace 1", or "panelIdx" in the final text.
-4) Do not enumerate every hop. Synthesize the main idea in each visited subspace and the transition between subspaces.
+4) Do not enumerate every hop. Synthesize by subspace and by paper/source.
 5) Make the summary valuable: identify the selected path's topic, how the focus develops across subspaces, and the strongest evidence.
-6) If multiple papers appear, name them only when the MSU text contains paper-identifying information.
-7) No meta/fillers: avoid “overall”, “in summary”, “the text says”, “this suggests”, “it highlights”, “it indicates”.
-8) One paragraph, coherent and neutral.
+6) If multiple papers/sources appear, explicitly compare them. Mention what each paper contributes and whether their evidence is similar, complementary, or different.
+7) Preserve source boundaries: do not merge claims from different papers unless the MSUs support the comparison.
+8) No meta/fillers: avoid “overall”, “in summary”, “the text says”, “this suggests”, “it highlights”, “it indicates”.
+9) One paragraph, coherent and neutral.
 
 OUTPUT FORMAT (Very Important)
 - Return a SINGLE JSON object with EXACTLY ONE key: "RouteSummary".
@@ -230,6 +274,9 @@ OUTPUT FORMAT (Very Important)
 
 LEGEND (panel index → subspace name):
 ${legendLines || '(none)'}
+
+EVIDENCE GROUPED BY PAPER/SOURCE:
+${paperBlock || '(none)'}
 
 ORDERED HOPS (do not reorder; source of truth):
 ${hopsBlock || '(none)'}
@@ -341,6 +388,10 @@ export async function runSubspaceCommand(naturalText) {
     if (projectId) {
       // 1) 记录当前激活的 case
       setActiveProjectId(projectId);
+      if (cmd) {
+        window.__pendingSubspaceCmds = window.__pendingSubspaceCmds || [];
+        window.__pendingSubspaceCmds.push(cmd);
+      }
 
       // 2) 通知 MainView 重新拉对应 case 的语义图
       try {
@@ -350,6 +401,7 @@ export async function runSubspaceCommand(naturalText) {
       } catch (e) {
         console.warn('[runSubspaceCommand] dispatch project-changed failed:', e);
       }
+      return true;
     }
 
     if (window.CommandRouter && window.SemanticMapCtrl && cmd) {

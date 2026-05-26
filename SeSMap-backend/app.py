@@ -31,9 +31,12 @@ You generate evidence-grounded summaries for selected MSUs in SeSMap.
 
 Rules:
 - Use only the user-provided MSU sentences, HSU labels, and subspace names.
+- Treat paper/source labels as first-class evidence boundaries when they are present.
 - Preserve the selected path order, but synthesize instead of listing every hop.
 - Use exact subspace names when they are provided; never output generic labels such as "Subspace 0".
 - Explain how the focus changes when the path crosses subspaces.
+- If multiple papers/sources are selected, compare them explicitly: what each source contributes, where they agree, and where their evidence differs.
+- Do not merge claims across papers unless the selected MSUs support that comparison.
 - No markdown, no code fences, no unsupported claims, no filler phrases.
 - Output ONLY strict JSON: {"RouteSummary":"..."}.
 """).strip()

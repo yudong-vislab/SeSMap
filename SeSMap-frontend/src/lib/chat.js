@@ -42,6 +42,10 @@ export async function chatOnce({ query, messages } = {}) {
       if (projectId) {
         // 写入全局变量（getActiveProjectId 会从 window.__activeProjectId 读）
         setActiveProjectId(projectId);
+        if (text) {
+          window.__pendingSubspaceCmds = window.__pendingSubspaceCmds || [];
+          window.__pendingSubspaceCmds.push(text);
+        }
 
         try {
           window.dispatchEvent(new CustomEvent('semantic-map:project-changed', {
@@ -51,6 +55,7 @@ export async function chatOnce({ query, messages } = {}) {
         } catch (e) {
           console.warn('[chatOnce] dispatch project-changed failed:', e);
         }
+        return data;
       }
 
       // 🔁 4) 仍然把控制命令路由给语义图控制器（显隐子空间）

@@ -56,6 +56,7 @@ async function bootstrapSemanticMap(projectId) {
     globalOverlayEl: globalOverlayRef.value,
     mainTitleEl: mainTitleRef.value,
     initialData: data,
+    initialProjectId: pid,
     initialHidden: false
   })
 

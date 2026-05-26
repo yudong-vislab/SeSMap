@@ -18,7 +18,9 @@ const props = defineProps({
   /** 每个缩略卡最小宽度（控制每行个数），建议 92~120px */
   tileMin: { type: [String, Number], default: 100 },
   /** 缩略图高宽比（h = tileMin * thumbRatio） */
-  thumbRatio: { type: Number, default: 0.68 }
+  thumbRatio: { type: Number, default: 0.68 },
+  /** Semantic map color snapshot: { colorByCountry, colorByPanelCountry, normalizeCountryId } */
+  colorMaps: { type: Object, default: () => ({}) }
 })
 
 /* ---------- Emits ---------- */
@@ -184,6 +186,37 @@ function opacityForGroup(groupIdx, gi) {
 
 function openPdf(it) { emit('open-pdf', it) }
 
+const DEFAULT_PAPER_DOT = '#DCDCDC'
+function pickMapValue(mapLike, key) {
+  if (!mapLike || key == null) return null
+  const keys = [key, String(key)]
+  if (mapLike instanceof Map) {
+    for (const k of keys) if (mapLike.has(k)) return mapLike.get(k)
+    return null
+  }
+  if (typeof mapLike === 'object') {
+    for (const k of keys) if (Object.prototype.hasOwnProperty.call(mapLike, k)) return mapLike[k]
+  }
+  return null
+}
+function countryIdOfItem(it) {
+  return it?.semanticCountryId ?? it?.meta?.semanticCountryId ?? it?.countryId ?? it?.paperCountryId ?? it?.meta?.countryId ?? it?.meta?.paperCountryId ?? it?.paper_id ?? it?.paperId ?? null
+}
+function projectIdOfItem(it) {
+  return it?.projectId ?? it?.meta?.projectId ?? it?.project_id ?? it?.meta?.project_id ?? null
+}
+function sourceKeyOfItem(it) {
+  return it?.sourceKey ?? it?.meta?.sourceKey ?? null
+}
+function paperColorFor(it) {
+  const raw = countryIdOfItem(it)
+  if (raw == null || raw === '') return DEFAULT_PAPER_DOT
+  const normalize = props.colorMaps?.normalizeCountryId
+  const cid = typeof normalize === 'function' ? normalize(raw) : raw
+  const projectId = projectIdOfItem(it)
+  const sourceKey = sourceKeyOfItem(it) || (projectId ? `${projectId}|${cid}` : null)
+  return pickMapValue(props.colorMaps?.sourceColorByKey, sourceKey) || DEFAULT_PAPER_DOT
+}
 /* ---------- CSS 变量 ---------- */
 const gridVars = computed(() => {
   const min = typeof props.tileMin === 'number' ? `${props.tileMin}px` : String(props.tileMin)
@@ -235,7 +268,14 @@ defineExpose({ clearSelection })
                 </svg>
               </button>
             </div>
-            <div class="meta"><span class="title">{{ it.name || it.title }}</span></div>
+            <div class="meta">
+              <span
+                class="paper-dot"
+                :style="{ backgroundColor: paperColorFor(it) }"
+                :title="it.name || it.title"
+              ></span>
+              <span class="title">{{ it.name || it.title }}</span>
+            </div>
           </div>
         </div>
       </section>
@@ -276,7 +316,14 @@ defineExpose({ clearSelection })
             </svg>
             </button>
           </div>
-          <div class="meta"><span class="title">{{ it.name || it.title }}</span></div>
+          <div class="meta">
+            <span
+              class="paper-dot"
+              :style="{ backgroundColor: paperColorFor(it) }"
+              :title="it.name || it.title"
+            ></span>
+            <span class="title">{{ it.name || it.title }}</span>
+          </div>
         </div>
       </div>
     </section>
@@ -356,10 +403,31 @@ defineExpose({ clearSelection })
 .eye-svg{ width:16px; height:16px; fill:#9aa0a6; }
 .eye-btn:hover .eye-svg{ fill:#111; }
 
-/* 元信息行 */
-.meta{ margin-top:4px; font-size:11px; color:#111; }
+/* 元信息行：论文来源圆点保持和 semantic / stepwise 的来源标记一致 */
+.meta{
+  margin-top:4px;
+  font-size:11px;
+  color:#111;
+  display:flex;
+  align-items:center;
+  gap:6px;
+  min-width:0;
+}
+.paper-dot{
+  display:inline-block;
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  border:1px solid rgba(255,255,255,0.25);
+  background:#DCDCDC;
+  flex:none;
+}
 .meta .title{
-  display:block; max-width:100%;
-  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+  display:block;
+  min-width:0;
+  flex:1 1 auto;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
 }
 </style>

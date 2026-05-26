@@ -1,10 +1,10 @@
 <!-- src/components/LeftPane.vue -->
 <script setup>
-import { ref, watch, nextTick, onMounted } from 'vue'
+import { ref, watch, nextTick, onMounted, onBeforeUnmount } from 'vue'
 import ChatDock from './ChatDock.vue'
 import PaperList from './PaperList.vue'
 import MarkdownView from './MarkdownView.vue'
-import { sendQueryToLLM, interpretLLMResponse, setActiveProjectId } from '../lib/api'
+import { sendQueryToLLM, interpretLLMResponse, getActiveProjectId } from '../lib/api'
 
 // ====== Emits ==========================================================
 const emit = defineEmits(['updateHexRadius','updateSystemPrompt','uploadPdfs','updateMarkdownModel'])
@@ -45,6 +45,57 @@ const paperListRef = ref(null)
 const paperQuery = ref('')      // 仍保留为外层标题（可和最新一次的分组合并）
 // const papers = ref([])       // 单列表已废弃
 const paperGroups = ref([])     // [{ key, title, items }]
+const galleryColorMaps = ref({})
+const galleryProjectColorCache = ref({})
+
+function mergeGalleryProjectColors(projectId, snap = {}) {
+  if (!projectId) return
+  const next = { ...galleryProjectColorCache.value }
+  const add = (cid, color) => {
+    if (!cid || !color) return
+    next[makeSourceKey(projectId, cid)] = color
+  }
+  Object.entries(snap.colorByCountry || {}).forEach(([cid, color]) => add(cid, color))
+  Object.entries(snap.colorByPanelCountry || {}).forEach(([key, color]) => {
+    const cid = String(key).split('|').pop()
+    add(cid, color)
+  })
+  galleryProjectColorCache.value = next
+}
+
+function setGalleryColorMaps(snap = {}) {
+  const projectId = snap.projectId || snap.project_id || getActiveProjectId?.() || null
+  mergeGalleryProjectColors(projectId, snap)
+  galleryColorMaps.value = {
+    ...snap,
+    activeProjectId: projectId,
+    sourceColorByKey: { ...galleryProjectColorCache.value }
+  }
+}
+
+function refreshGalleryColorsFromSemanticMap() {
+  const snap =
+    window?.SemanticMapCtrl?.getMiniColorMaps?.()
+    || window?.SemanticMap?.getMiniColorMaps?.()
+    || window?.App?.getMiniColorMaps?.()
+    || window?.App?.getSelectionSnapshot?.()?.meta?.miniPalette
+    || {}
+  setGalleryColorMaps(snap)
+}
+
+function onSemanticColorsChange(event) {
+  setGalleryColorMaps(event?.detail || {})
+}
+
+onMounted(() => {
+  window.addEventListener('semanticmap:colorschange', onSemanticColorsChange)
+  window.addEventListener('semanticMap:ready', refreshGalleryColorsFromSemanticMap)
+  refreshGalleryColorsFromSemanticMap()
+})
+onBeforeUnmount(() => {
+  window.removeEventListener('semanticmap:colorschange', onSemanticColorsChange)
+  window.removeEventListener('semanticMap:ready', refreshGalleryColorsFromSemanticMap)
+})
 
 function openPdfModal(pdfUrl, name){ console.log('[openPdfModal]', pdfUrl, name) }
 function onSelectPaper(){ console.log('Select clicked (group-mode).') }
@@ -182,6 +233,59 @@ const FOLDER_PDF_DIR = {
   case1: 'case1',
   case2: 'case2'
 }
+const FOLDER_SOURCE_OFFSETS = {
+  combust: 1,
+  case1: 1,
+  air: 3,
+  case2: 3
+}
+const GALLERY_PAPER_SOURCE_REGISTRY = {
+  largeeddy: { projectId: 'case1', semanticCountryId: 'c1', sourceId: 'c1' },
+  largeeddymsu: { projectId: 'case1', semanticCountryId: 'c1', sourceId: 'c1' },
+  temporalflowviz: { projectId: 'case1', semanticCountryId: 'c2', sourceId: 'c2' },
+  temporalflowvizmsu: { projectId: 'case1', semanticCountryId: 'c2', sourceId: 'c2' },
+  compasstowardsbettercausalanalysisofurbantimeseries: { projectId: 'case2', semanticCountryId: 'c0', sourceId: 'c3' },
+  improvingwrfchempm25predictionsbycombiningdataassimilationanddeeplearningbasedbiascorrection: { projectId: 'case2', semanticCountryId: 'c1', sourceId: 'c4' },
+  threefoldreductionofmodeleduncertaintyindirectradiativeeffectsoverbiomassburningregionsbyconstrainingabsorbingaerosols: { projectId: 'case2', semanticCountryId: 'c2', sourceId: 'c5' },
+  visualizinglargescalespatialtimeserieswithgeochron: { projectId: 'case2', semanticCountryId: 'c3', sourceId: 'c6' },
+  volumebasedspacetimecubeforlargescalecontinuousspatialtimeseries: { projectId: 'case2', semanticCountryId: 'c4', sourceId: 'c7' }
+}
+function makeSourceKey(projectId, semanticCountryId) {
+  return `${projectId || 'unknown'}|${semanticCountryId || 'unknown'}`
+}
+function normalizeAssetBase(name) {
+  return (name.split('/').pop() || name)
+    .replace(/\.(png|jpe?g|gif|webp|svg)$/i, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, '')
+}
+function fallbackSemanticCountryId(projectId, index) {
+  if (projectId === 'case1') return `c${index + 1}`
+  if (projectId === 'case2') return `c${index}`
+  return `c${index + 1}`
+}
+function fallbackGlobalSourceId(folder, index) {
+  const offset = FOLDER_SOURCE_OFFSETS[folder] ?? 1
+  return `c${offset + index}`
+}
+function paperSourceInfoForImage(folder, img, index) {
+  const base = normalizeAssetBase(img.name)
+  const projectId = FOLDER_PROJECT[folder] || folder
+  const registered = GALLERY_PAPER_SOURCE_REGISTRY[base]
+  const semanticCountryId = registered?.semanticCountryId
+    || img.semanticCountryId
+    || img.countryId
+    || img.paperCountryId
+    || img.paper_id
+    || fallbackSemanticCountryId(projectId, index)
+  const sourceId = registered?.sourceId || fallbackGlobalSourceId(folder, index)
+  return {
+    projectId: registered?.projectId || projectId,
+    semanticCountryId,
+    sourceId,
+    sourceKey: makeSourceKey(registered?.projectId || projectId, semanticCountryId)
+  }
+}
 function folderTitle(folder) {
   // 优先用映射；没有映射就把下划线转空格并首字母大写
   if (FOLDER_TITLES[folder]) return FOLDER_TITLES[folder]
@@ -263,13 +367,13 @@ function pdfUrlForImage(folder, img) {
   return partial?.url || img.url
 }
 
-
 // 将图片集合映射为 PaperList 的 items
 function toPaperItems(folder, items) {
   // PaperList 未提供具体类型；给出常用字段：id/title/thumbUrl/meta
      return items.map((img, i) => {
      const base = img.name.split('/').pop() || img.name
      const pretty = base.replace(/\.(png|jpe?g|gif|webp|svg)$/i, '')
+     const sourceInfo = paperSourceInfoForImage(folder, img, i)
      return {
        id: `${folder}::${img.path}`,
        globalIndex: i,
@@ -279,7 +383,12 @@ function toPaperItems(folder, items) {
        content: img.url,       // ★ PaperList 用它当缩略图
        thumbUrl: img.url,      // 兼容
        pdfUrl: pdfUrlForImage(folder, img),        // 让“眼睛”优先打开对应论文 PDF
-       meta: { folder }
+       projectId: sourceInfo.projectId,
+       countryId: sourceInfo.semanticCountryId,
+       semanticCountryId: sourceInfo.semanticCountryId,
+       sourceId: sourceInfo.sourceId,
+       sourceKey: sourceInfo.sourceKey,
+       meta: { folder, ...sourceInfo }
      }
    })
 
@@ -288,10 +397,6 @@ function toPaperItems(folder, items) {
 // 展示某个 folder：把图片灌进 Semantic Source Gallery
 function showFolder(folder) {
   const imgs = (galleryByFolder.value[folder] || []).slice()
-  const projectId = FOLDER_PROJECT[folder]
-  if (projectId) {
-    setActiveProjectId(projectId)
-  }
   // 外层标题也更新为最近一次加载的分组名（可选）
   paperQuery.value = folderTitle(folder)
    // 改为“追加一个分组”，而不是覆盖
@@ -431,6 +536,7 @@ async function handleSend(msg) {
            :title="paperQuery || 'Paper Query'"
            @update:title="val => (paperQuery = val)"
            :groups="paperGroups"
+           :color-maps="galleryColorMaps"
            :use-demo="false"
            :dim-opacity="0.15"
            :tileMin="80"

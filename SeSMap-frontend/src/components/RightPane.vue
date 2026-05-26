@@ -111,6 +111,7 @@ onMounted(() => {
     const palette =
       payload?.miniPalette
       || payload?.meta?.miniPalette
+      || (window?.SemanticMapCtrl?.getMiniColorMaps?.() ?? null)
       || (window?.SemanticMap?.getMiniColorMaps?.() ?? null)
       || (window?.App?.getMiniColorMaps?.() ?? null)
       || (window?.App?.getSelectionSnapshot?.()?.meta?.miniPalette ?? null)
