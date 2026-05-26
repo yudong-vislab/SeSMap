@@ -1337,6 +1337,17 @@ function recomputeMsuAlphaForPanel(panelIdx) {
   });
 }
 
+function recomputeMsuAlphaForAllPanels() {
+  App.msuAlphaByHex = new Map();
+  (App.hexBucketsByPanel || []).forEach((bmap, panelIdx) => {
+    if (!bmap || !(bmap instanceof Map)) return;
+    bmap.forEach(b => {
+      const k = `${panelIdx}|${b.q},${b.r}`;
+      App.msuAlphaByHex.set(k, opacityForMsuCount(b?.msuCount));
+    });
+  });
+}
+
 
 function buildBucketsForPanel(panelIdx, hexList) {
   var buckets = new Map(); // key: "q,r" -> {q,r,items:[], countries:Set, msuCount, _cycleIdx}
@@ -1777,6 +1788,12 @@ function renderBucketTooltipHTML(bucket) {
     App.countryKeysGlobal = new Map();
     App.countryKeysByPanel = [];
     App.coordIndexByPanel = new Map();
+    App.hexBucketsByPanel = [];
+    App.allHexDataByPanel = [];
+    App.hexMapsByPanel = [];
+    App.msuAlphaByHex = new Map();
+    App.alphaCacheByHex = new Map();
+    App.borderCacheByHex = new Map();
     App.hsuSummaryCache = new Map();
     App.hsuSummaryPending = new Map();
     if (App.hsuSummaryHoverTimer) clearTimeout(App.hsuSummaryHoverTimer);
@@ -1790,8 +1807,11 @@ function renderBucketTooltipHTML(bucket) {
 
     clearInteractionForAggregation();
     (data.subspaces || []).forEach((space, i) => renderHexGridFromData(i, space, App.config.hex.radius));
+    recomputeMsuAlphaForAllPanels();
+    refreshColorOverridesForCurrentAggregation();
     drawOverlayLinesFromLinks(App._lastLinks, App.allHexDataByPanel, App.hexMapsByPanel, false);
     updateHexStyles();
+    emitSemanticColorSnapshot();
     publishToStepAnalysis();
     applyResponsiveLayout(true);
   }
@@ -2467,6 +2487,72 @@ function buildAlphaRampFor(panelIdx, countryId) {
     alphaByKey.set(k, alpha);
   });
   return { keys: new Set(filtered), alphaByKey };
+}
+
+function refreshColorOverridesForCurrentAggregation() {
+  const previousPanelColors = App.panelCountryColors instanceof Map
+    ? App.panelCountryColors
+    : new Map();
+  const previousGlobalColors = App.globalCountryColors instanceof Map
+    ? App.globalCountryColors
+    : new Map();
+  const previousConflictColors = App.panelConflictColors instanceof Map
+    ? App.panelConflictColors
+    : new Map();
+
+  const nextPanelColors = new Map();
+  const rememberPanelColor = (panelIdx, countryId, color) => {
+    if (!color) return;
+    const cid = normalizeCountryId(countryId);
+    const alphaByKey = buildAlphaMapForPanelCountry(panelIdx, cid);
+    if (!alphaByKey.size) return;
+    let perPanel = nextPanelColors.get(panelIdx);
+    if (!perPanel) {
+      perPanel = new Map();
+      nextPanelColors.set(panelIdx, perPanel);
+    }
+    perPanel.set(cid, { color, alphaByKey });
+  };
+
+  if (App.syncCountryColorAcrossPanels) {
+    const colorsByCountry = new Map();
+    previousPanelColors.forEach(countryMap => {
+      if (!(countryMap instanceof Map)) return;
+      countryMap.forEach((rec, rawCid) => {
+        const cid = normalizeCountryId(rawCid);
+        if (rec?.color && !colorsByCountry.has(cid)) colorsByCountry.set(cid, rec.color);
+      });
+    });
+    previousGlobalColors.forEach((color, rawCid) => {
+      const cid = normalizeCountryId(rawCid);
+      if (color) colorsByCountry.set(cid, color);
+    });
+    colorsByCountry.forEach((color, cid) => {
+      (App.countryKeysByPanel || []).forEach((countryMap, panelIdx) => {
+        if (countryMap?.has?.(cid)) rememberPanelColor(panelIdx, cid, color);
+      });
+    });
+    App.globalCountryColors = colorsByCountry;
+  } else {
+    previousPanelColors.forEach((countryMap, panelIdx) => {
+      if (!(countryMap instanceof Map)) return;
+      countryMap.forEach((rec, rawCid) => {
+        rememberPanelColor(panelIdx, rawCid, rec?.color);
+      });
+    });
+    App.globalCountryColors = previousGlobalColors;
+  }
+
+  const nextConflictColors = new Map();
+  previousConflictColors.forEach((rec, panelIdx) => {
+    if (!rec?.color) return;
+    const ramp = buildConflictAlphaRampFor(panelIdx);
+    if (!ramp.alphaByKey.size) return;
+    nextConflictColors.set(panelIdx, { color: rec.color, alphaByKey: ramp.alphaByKey });
+  });
+
+  App.panelCountryColors = nextPanelColors;
+  App.panelConflictColors = nextConflictColors;
 }
 
 /* =========================
