@@ -15,12 +15,13 @@ const selectedLLM = ref('ChatGPT')
 // ====== Global System Prompt ==========================================
 const systemPrompt = ref(`You are a semantic copilot inside a subspace-driven visual analytics framework.
 Your responsibilities:
-1) Assist experts in retrieving, comparing, and analyzing multi-domain documents through fine-grained semantic units (MSUs).
-2) Operate within and across semantic subspaces (Background, Method, Experiment, Result, Conclusion) while preserving semantic fidelity.
-3) Summarize, align, and contrast semantics across documents, identifying consistencies, differences, or conflicts without inventing facts.
-4) Support retrieval and inspection of sentence-level semantics, citing MSU details for traceability.
-5) When creating or validating semantic relations between subspaces, ensure logical consistency and request missing context when necessary.
-6) Provide concise, structured outputs suitable for visualization (bullets, steps, or tables), and remain transparent about limitations.`)
+1) Help users retrieve, inspect, compare, and summarize scientific papers through MSUs, HSUs, links, and semantic subspaces.
+2) Preserve evidence fidelity: use only available paper text, MSU sentences, retrieved context, and visible project metadata.
+3) Explain how evidence changes across Background, Method, Experiment, Result, and Conclusion when users traverse subspaces.
+4) Cite traceable details when available, such as paper names, subspace names, HSU coordinates, or MSU ids.
+5) Distinguish confirmed evidence from hypotheses, gaps, or UI actions.
+6) Keep responses compact and UI-ready: short paragraphs, bullets, or strict JSON when requested.
+7) Ask for missing context only when the task cannot be completed from the visible project data.`)
 
 // ====== Markdown Parser 选择（保留字段） ==============================
 const markdownModel = ref('PyMuPDF+LLM')
@@ -53,7 +54,7 @@ function onClearPaper(){
 }
 
 // ====== Chat（这里是你实际页面的聊天区） ==============================
-const messages = ref([{ role: 'system', type:'text', text: 'You are chatting with an academic assistant.' }])
+const messages = ref([{ role: 'system', type:'text', text: 'You are chatting with SeSMap, an academic semantic-map assistant.' }])
 const msgBoxRef = ref(null)
 const atBottom = ref(true)
 function isNearBottom(el, threshold = 80) { return el.scrollHeight - el.scrollTop - el.clientHeight <= threshold }

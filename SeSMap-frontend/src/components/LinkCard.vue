@@ -86,6 +86,7 @@ import { summarizeMsuSentences } from '@/lib/api'
 const props = defineProps({
   link:  { type: Object, required: true },
   nodes: { type: Array,  default: () => [] },
+  panelNamesByIndex: { type: Object, default: () => ({}) },
   startCountMap: { type: Object, default: () => new Map() },
 
   colorByCountry: { type: [Object, Map], default: () => ({}) },
@@ -245,7 +246,10 @@ const summarizeSelected = async () => {
 
   // 2) panelIdx → 子空间名（尽力获取；不存在就回退）
   //   - 如果后端/数据层有 link.panelNamesByIndex 之类映射，可优先使用
-  const panelNameByIdx = (props.link && props.link.panelNamesByIndex) || {};
+  const panelNameByIdx = {
+    ...((props.link && props.link.panelNamesByIndex) || {}),
+    ...(props.panelNamesByIndex || {})
+  };
   const getDomNameMap = () => {
     try {
       const els = document.querySelectorAll('.subspace-title');
@@ -266,8 +270,10 @@ const summarizeSelected = async () => {
 
   const fallbackName = (idx) => {
     const p = panelNameByIdx[idx];
-    if (p) return p;
     const dm = getDomNameMap();
+    if (p && !/^subspace\s+\d+$/i.test(String(p).trim())) return p;
+    if (dm[idx] && !/^subspace\s+\d+$/i.test(String(dm[idx]).trim())) return dm[idx];
+    if (p) return p;
     return dm[idx] || `Subspace ${idx}`;
   };
   // 3) 仅依据“用户勾选”的 MSU 构建 hops（保持 path 顺序；未选中的节点直接跳过）
@@ -429,9 +435,11 @@ onBeforeUnmount(() => mini?.destroy())
 .subcard{
   border:1px dashed #e5e7eb; border-radius:10px;
   display:grid; gap:4px;
-  grid-template-rows:auto auto auto auto;
+  grid-template-rows:auto auto minmax(0, 1fr) auto;
   padding:4px; background:#fff;
   transition: all 0.3s ease;
+  height:100%;
+  min-height:0;
 }
 .subcard.expanded { grid-template-rows: auto auto auto auto; }
 .subcard__meta{ padding:2px 2px 0 2px; line-height:1; font-size:12px; color:#6b7280; }
@@ -459,8 +467,8 @@ onBeforeUnmount(() => mini?.destroy())
 
 .hex-scroll::-webkit-scrollbar{ height:0; }
 
-.subcard__source { max-height: 200px; overflow-y: auto; transition: all 0.3s ease; }
-.subcard.expanded .subcard__source { max-height: 500px; }
+.subcard__source { min-height:0; overflow-y: auto; transition: all 0.3s ease; }
+.subcard.expanded .subcard__source { min-height:0; }
 .msu-sentences { font-size: 11px; line-height: 1.4; }
 .msu-sentence { margin-bottom: 8px; padding: 6px; background: #f9fafb; border-radius: 4px; border-left: 3px solid #e5e7eb; }
 .msu-sentence:last-child { margin-bottom: 0; }

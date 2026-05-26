@@ -24,41 +24,33 @@ def extract_msu(paragraph: str):
     """
 
     prompt = f"""
-You are an assistant for scientific text processing.
-Your task is to decompose the given paragraph into multiple Minimum Semantic Units (MSUs).
-Each MSU should satisfy the following criteria:
-about the sentence:
-1. Be a single, self-contained statement.
-2. Express only one scientific fact or idea.
-3. Do not emit important information like reasons and aims behind "to" clauses.
-about the category:
-4. Be classified into one of the categories: [Method, Experiment, Result, Conclusion,Background,others].
-5. If there are unimportant or vague sentences or author introduction, classify them as "others".
-about the rank:
-6. Rank the importance of each MSU within the paragraph on a scale from 1 to 5, where 5 is most important.
-7. Higher rank should be given to explanations which are specific to this paper.
+You extract Minimum Semantic Units (MSUs) from scientific-paper text for SeSMap.
 
-Please output the results in the following JSON format:
+MSU rules:
+1. Each MSU must be a single, self-contained scientific statement.
+2. Split conjunctions, causal clauses, aims, methods, and results when they contain distinct facts.
+3. Preserve important technical terms, variables, datasets, model names, and measurements.
+4. Do not include vague author-introduction or navigation text unless it carries scientific content.
+5. Classify each MSU as exactly one of: Background, Method, Experiment, Result, Conclusion, Other.
+6. Rank importance from 1 to 5. Use 5 for paper-specific contributions, key methods, or central findings.
+
+Output strict JSON only. No markdown, comments, or trailing text.
+Schema:
 [
-  {{"sentence": "...", "category": "...", "rank": ...}},
-
---- Example ---
-
-Input Paragraph:
-"We conducted experiments using three datasets to validate the effectiveness of our proposed method. 
-The method integrates multimodal features and applies a transformer-based encoder. 
-The results demonstrate significant improvement compared to baseline models."
-
-Output JSON:
-[
-  {{"sentence": "We conducted experiments using three datasets.", "category": "Experiment", "rank": 3}},
-  {{"sentence": "We conducted experiments to validate the effectiveness of our proposed method.", "category": "Experiment", "rank": 3}},
-  {{"sentence": "The proposed method integrates multimodal features.", "category": "Method","rank":4}},
-  {{"sentence": "The proposed method applies a transformer-based encoder.", "category": "Method","rank":5}},
-  {{"sentence": "The results demonstrate significant improvement compared to baseline models.", "category": "Result","rank":3}}
+  {{"sentence":"...","category":"Background|Method|Experiment|Result|Conclusion|Other","rank":1}}
 ]
 
---- Now process the following paragraph ---
+Example input:
+We conducted experiments using three datasets to validate the proposed method. The method integrates multimodal features and applies a transformer-based encoder. The results demonstrate significant improvement compared to baseline models.
+
+Example output:
+[
+  {{"sentence":"Experiments were conducted using three datasets.","category":"Experiment","rank":3}},
+  {{"sentence":"The experiments validate the proposed method.","category":"Experiment","rank":3}},
+  {{"sentence":"The proposed method integrates multimodal features.","category":"Method","rank":4}},
+  {{"sentence":"The proposed method applies a transformer-based encoder.","category":"Method","rank":5}},
+  {{"sentence":"The results demonstrate significant improvement compared to baseline models.","category":"Result","rank":4}}
+]
 
 Paragraph:
 {paragraph}
@@ -120,5 +112,4 @@ if __name__ == "__main__":
     result = extract_msu(para)
     print(json.dumps(result, indent=2, ensure_ascii=False))
     print("-------------")
-
 

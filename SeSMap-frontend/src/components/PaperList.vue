@@ -27,34 +27,29 @@ const emit = defineEmits(['update:title', 'update:selectedIds', 'open-pdf', 'clo
 /* ---------- 演示数据（兜底） ---------- */
 const demoItems = [
   {
-    id: 0, globalIndex: 0, name: '1911.12919v1', year: '2020', count: 45,
-    content: new URL('../assets/pictures/case_2/0_page_0_Figure_8.jpeg', import.meta.url).href,
-    pdfUrl: new URL('../assets/pdf/case2/0_1911.12919v1.pdf', import.meta.url).href
+    id: 0, globalIndex: 0, name: 'Compass', year: '2019', count: 38,
+    content: new URL('../assets/pictures/air/Compass Towards Better Causal Analysis of Urban Time Series.png', import.meta.url).href,
+    pdfUrl: new URL('../assets/pdf/case2/Compass.pdf', import.meta.url).href
   },
   {
-    id: 1, globalIndex: 1, name: '3219819.3219822', year: '2019', count: 38,
-    content: new URL('../assets/pictures/case_2/1_page_1_Figure_17.jpeg', import.meta.url).href,
-    pdfUrl: new URL('../assets/pdf/case2/1_3219819.3219822.pdf', import.meta.url).href
+    id: 1, globalIndex: 1, name: 'GeoChron', year: '2024', count: 52,
+    content: new URL('../assets/pictures/air/Visualizing Large-Scale Spatial Time Series with GeoChron.png', import.meta.url).href,
+    pdfUrl: new URL('../assets/pdf/case2/GeoChron.pdf', import.meta.url).href
   },
   {
-    id: 2, globalIndex: 2, name: 'acp-24-2423-2024', year: '2024', count: 52,
-    content: new URL('../assets/pictures/case_2/2_page_6_Figure_1.jpeg', import.meta.url).href,
-    pdfUrl: new URL('../assets/pdf/case2/2_acp-24-2423-2024.pdf', import.meta.url).href
+    id: 2, globalIndex: 2, name: 'VolumeSTCube', year: '2020', count: 45,
+    content: new URL('../assets/pictures/air/Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series.png', import.meta.url).href,
+    pdfUrl: new URL('../assets/pdf/case2/VolumeSTCube-TVCG.pdf', import.meta.url).href
   },
   {
-    id: 3, globalIndex: 3, name: 'acp-25-9061-2025', year: '2025', count: 41,
-    content: new URL('../assets/pictures/case_2/3_page_8_Figure_1.jpeg', import.meta.url).href,
-    pdfUrl: new URL('../assets/pdf/case2/3_acp-25-9061-2025.pdf', import.meta.url).href
+    id: 3, globalIndex: 3, name: 'Absorbing aerosols', year: '2024', count: 41,
+    content: new URL('../assets/pictures/air/Threefold reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols.png', import.meta.url).href,
+    pdfUrl: new URL('../assets/pdf/case2/sciadv.adi3568.pdf', import.meta.url).href
   },
   {
-    id: 4, globalIndex: 4, name: 'airvis', year: '2022', count: 35,
-    content: new URL('../assets/pictures/case_2/4_page_0_Figure_2.jpeg', import.meta.url).href,
-    pdfUrl: new URL('../assets/pdf/case2/4_airvis.pdf', import.meta.url).href
-  },
-  {
-    id: 5, globalIndex: 5, name: 'atmosphere-07-00035', year: '2020', count: 48,
-    content: new URL('../assets/pictures/case_2/5_page_2_Figure_4.jpeg', import.meta.url).href,
-    pdfUrl: new URL('../assets/pdf/case2/5_atmosphere-07-00035.pdf', import.meta.url).href
+    id: 4, globalIndex: 4, name: 'WRF-Chem PM2.5', year: '2024', count: 35,
+    content: new URL('../assets/pictures/air/Improving WRF-Chem PM2.5 predictions by combining data assimilation and deep-learning-based bias correction.png', import.meta.url).href,
+    pdfUrl: new URL('../assets/pdf/case2/1-s2.0-S0160412024007864-main.pdf', import.meta.url).href
   }
 ]
 

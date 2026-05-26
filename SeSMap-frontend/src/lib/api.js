@@ -157,7 +157,6 @@ export async function sendQueryToLLM(query, llm = 'ChatGPT', opts = {}) {
 
 // 新增：总结MSU句子的函数（修正版：不再用 task:'subspace'）
 export async function summarizeMsuSentences(hopsOrGroups) {
-  console.log(hopsOrGroups)
   // ---------- 规范化 hops ----------
   const normalize = (arr) => {
     const hasHopShape = arr?.some(x => 'step' in x || 'panelIdx' in x || 'subspace' in x);
@@ -182,11 +181,16 @@ export async function summarizeMsuSentences(hopsOrGroups) {
     }));
   };
   const hops = normalize(hopsOrGroups);
+  const cleanSubspaceName = (name, idx) => {
+    const raw = String(name || '').trim();
+    if (!raw || /^subspace\s+\d+$/i.test(raw)) return `Unnamed Subspace ${idx}`;
+    return raw;
+  };
 
   // ---------- Legend & Ordered Hops ----------
   const legendMap = new Map();
   hops.forEach(h => {
-    const name = h.subspace || `Subspace ${h.panelIdx}`;
+    const name = cleanSubspaceName(h.subspace, h.panelIdx);
     if (!legendMap.has(h.panelIdx)) legendMap.set(h.panelIdx, name);
   });
   const legendLines = Array.from(legendMap.entries())
@@ -197,30 +201,32 @@ export async function summarizeMsuSentences(hopsOrGroups) {
   const hopsBlock = hops
     .sort((a,b) => (a.step||0) - (b.step||0))
     .map(h => [
-      `Step ${h.step} | HSU ${h.hsu} | Subspace "${h.subspace}" (panelIdx ${h.panelIdx}):`,
+      `Step ${h.step} | HSU ${h.hsu} | Subspace "${cleanSubspaceName(h.subspace, h.panelIdx)}" (panelIdx ${h.panelIdx}):`,
       ...(h.sentences || [])
     ].join('\n'))
     .join('\n\n');
 
   // ---------- 提示词：只返回 RouteSummary + 禁止代码块 ----------
   const prompt = `
-You are given an ordered flight link across a semantic map.
-Each hop is an HSU in a specific subspace (panelIdx), containing one or more user-selected MSU sentences.
+You are given selected HSUs along one or more links in a semantic map.
+Each hop belongs to a named subspace and contains user-selected MSU sentences.
 
 TASK
-Write a faithful, information-dense overview that is derived ONLY from the MSUs below. Follow the hop order to preserve temporal/causal/argument flow. If panelIdx changes, describe it briefly as a shift in perspective/focus/topic—only when evident from MSUs.
+Write a useful analytical summary for a user reviewing a cross-subspace reasoning path. Use the named subspaces as the organizing structure: explain what evidence appears in each subspace and what changes when the path moves to another subspace.
 
 CONTENT RULES (Strict)
-1) Evidence-only: use ONLY terms and facts that appear in the MSUs or LEGEND. No outside info, no re-interpretation.
-2) Lexical fidelity: prefer verbatim reuse of salient nouns/phrases from MSUs; do not generalize into vague wording.
-3) Coverage: integrate the 3–6 most central claims/themes reflected across hops; avoid enumerating hops one-by-one.
-4) Transition cue: if subspace changes, mention it minimally (e.g., “Shift from <Subspace A> to <Subspace B> …”).
-5) No meta/fillers: forbid “overall/in summary/generally/the text says/this suggests/it highlights/it indicates”.
-6) One paragraph, not a list; high information density; coherent and neutral.
+1) Evidence-only: use ONLY facts, terms, and subspace names from the MSUs or LEGEND.
+2) Use exact subspace display names from LEGEND, such as "Background", "Method", "Experiment", "Result", or "Conclusion" when present.
+3) Never write generic labels like "Subspace 0", "Subspace 1", or "panelIdx" in the final text.
+4) Do not enumerate every hop. Synthesize the main idea in each visited subspace and the transition between subspaces.
+5) Make the summary valuable: identify the selected path's topic, how the focus develops across subspaces, and the strongest evidence.
+6) If multiple papers appear, name them only when the MSU text contains paper-identifying information.
+7) No meta/fillers: avoid “overall”, “in summary”, “the text says”, “this suggests”, “it highlights”, “it indicates”.
+8) One paragraph, coherent and neutral.
 
 OUTPUT FORMAT (Very Important)
 - Return a SINGLE JSON object with EXACTLY ONE key: "RouteSummary".
-- The value must be a compact paragraph of 90–120 words (no bullets, no markdown, no code fences, no extra text).
+- The value must be a compact paragraph of 80–130 words (no bullets, no markdown, no code fences, no extra text).
 
 LEGEND (panel index → subspace name):
 ${legendLines || '(none)'}
@@ -229,7 +235,7 @@ ORDERED HOPS (do not reorder; source of truth):
 ${hopsBlock || '(none)'}
 
 REQUIRED OUTPUT:
-{"RouteSummary": "<50-120 words; dense, evidence-based paragraph that preserves hop logic and notes genuine subspace shifts when present>"}
+{"RouteSummary": "<80-130 words; evidence-based paragraph organized by named subspace transitions>"}
   `.trim();
 
   // ---------- 请求（改动点：task 用 'literature'；按内容类型分流） ----------

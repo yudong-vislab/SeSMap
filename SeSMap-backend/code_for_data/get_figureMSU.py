@@ -54,23 +54,21 @@ for idx, item in enumerate(data):
         print(f"Processing figure MSU_id {item['MSU_id']} with image {image_path}")
         text = item['sentence']
         prompt = f"""
-        You are a scientific paper assistant. I will give you an image from a scientific paper and a piece of text, which is the text directly below the image in the paper. This text may be a figure caption or may not be. Please describe the content of this image in several concise sentences.        about the sentence:
-        Your task is to generate a concise description of the image based on the provided text named 'sentence'. And the category of this figure. And the rank you give to this picture.
-        Your output should satisfy:
-        1. Be a single, self-contained statement.
-        2. Express only one scientific fact or idea.
-        3. Do not emit important information like reasons and aims behind "to" clauses.
-        about the category:
-        4. Be classified into one of the categories: [Method, Experiment, Result, Conclusion,Background,others].
-        5. If there are unimportant or vague sentences or author introduction, classify them as "others".
-        about the rank:
-        6. Rank the importance of each MSU within the paragraph on a scale from 1 to 5, where 5 is most important.
-        7. Higher rank should be given to explanations which are specific to this paper.
-        
-        Please output the results in the following JSON format:
-        [
-        {{"sentence": "...", "category": "...", "rank": ...}},
-        段落：{text}
+You extract one figure-level MSU from a scientific paper image and its nearby text.
+
+Use the image and the provided text as evidence. If the text is not a caption, rely on the visible figure content and say only what is supported.
+
+Output requirements:
+- Produce exactly one self-contained sentence describing the figure's scientific content.
+- Classify it as one of: Background, Method, Experiment, Result, Conclusion, Other.
+- Rank importance from 1 to 5; use higher rank for paper-specific methods, experiments, or findings.
+- Output strict JSON only, no markdown:
+[
+  {{"sentence":"...","category":"Background|Method|Experiment|Result|Conclusion|Other","rank":1}}
+]
+
+Nearby text:
+{text}
         """
         text_output = ask_llm_with_image_and_text(image_path, prompt)
         text_output = clean_json_text(text_output)

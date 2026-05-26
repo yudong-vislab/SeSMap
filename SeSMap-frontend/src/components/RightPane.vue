@@ -5,7 +5,11 @@
     <div class="rp-card__body">
       <div class="steps-stack" ref="stackRef">
         <!-- 父卡片（一次保存） -->
-        <article v-for="(step, i) in steps" :key="step.id" class="step-card">
+        <article
+          v-for="(step, i) in steps"
+          :key="step.id"
+          class="step-card"
+        >
           <!-- 标题（一次保存一个） -->
           <div
             class="step__title"
@@ -25,6 +29,7 @@
               v-for="(lk, j) in (step.links || [])"
               :key="lk.id || j"
               class="subcards__item"
+              :style="{ height: `${lk.height || getInitialLinkHeight(lk, step.nodes || [])}px` }"
               draggable="true"
               @dragstart="onDragStart(i, j, $event)"
               @dragover="onDragOver(i, j, $event)"
@@ -35,6 +40,7 @@
               <LinkCard
                 :link="lk"
                 :nodes="step.nodes || []"
+                :panel-names-by-index="step.panelNamesByIndex || step.meta?.panelNamesByIndex || {}"
                 :start-count-map="step.startCountMap"
                 :colorByCountry="step.colorByCountry"
                 :colorByPanelCountry="step.colorByPanelCountry"
@@ -45,9 +51,13 @@
                 :borderWidthByNode="step.borderWidthByNode"  
                 :fillByNode="step.fillByNode"                
               />
+              <div
+                class="link-resize-handle"
+                title="Drag to resize this card"
+                @mousedown="startLinkResize(i, j, $event)"
+              />
             </div>
           </div>
-
         </article>
       </div>
     </div>
@@ -63,6 +73,18 @@ import { buildStartCountMap } from '@/lib/useLinkCard'
 const steps = ref([])
 const stackRef = ref(null)
 const editingIdx = ref(-1)
+const LINK_BASE_HEIGHT = 165
+const LINK_PER_MSU_HEIGHT = 62
+const LINK_INITIAL_VISIBLE_MSU_LIMIT = 4
+const MIN_LINK_HEIGHT = 230
+const MAX_LINK_HEIGHT = 900
+const resizing = reactive({
+  active: false,
+  stepIdx: -1,
+  linkIdx: -1,
+  startY: 0,
+  startHeight: MIN_LINK_HEIGHT
+})
 
 const defaultTitle = (step, i) => {
   const t = step.createdAt ? new Date(step.createdAt) : new Date()
@@ -78,7 +100,9 @@ onMounted(() => {
 
     // ① 先拿 nodes / links
     const nodes = Array.isArray(payload.nodes) ? payload.nodes : []
-    const links = Array.isArray(payload.links) ? payload.links : []
+    const links = Array.isArray(payload.links)
+      ? payload.links.map(link => ({ ...link, height: computeInitialLinkHeight(link, nodes) }))
+      : []
 
     // ② 再分组（如果你有这一步）
     const hsus = groupHSUs(nodes, links)
@@ -98,6 +122,7 @@ onMounted(() => {
       createdAt: payload.createdAt || Date.now(),
       nodes,
       links,
+      panelNamesByIndex: payload.panelNamesByIndex || payload.meta?.panelNamesByIndex || {},
       startCountMap: buildStartCountMap(links),
 
       colorByCountry:      palette?.colorByCountry      ?? payload.colorByCountry      ?? {},
@@ -119,7 +144,87 @@ onMounted(() => {
 })
 
 
-onBeforeUnmount(() => offSaved?.())
+onBeforeUnmount(() => {
+  offSaved?.()
+  stopLinkResize()
+})
+
+function clampLinkHeight(v) {
+  return Math.max(MIN_LINK_HEIGHT, Math.min(MAX_LINK_HEIGHT, Number(v) || MIN_LINK_HEIGHT))
+}
+
+function countLinkMsus(link, nodes) {
+  if (!link || !Array.isArray(link.path) || !Array.isArray(nodes)) return 0
+  const nodeMap = new Map()
+  nodes.forEach(node => nodeMap.set(`${node.panelIdx}:${node.q},${node.r}`, node))
+
+  const seen = new Set()
+  const pathKeys = Array.from(new Set(
+    link.path
+      .filter(point => point && Number.isFinite(Number(point.panelIdx)))
+      .map(point => `${Number(point.panelIdx)}:${point.q},${point.r}`)
+  ))
+
+  pathKeys.forEach(hsuKey => {
+    const node = nodeMap.get(hsuKey)
+    if (Array.isArray(node?.msu) && node.msu.length) {
+      node.msu.forEach((m, idx) => {
+        const id = m?.MSU_id ?? m?.id ?? idx
+        seen.add(`${hsuKey}#${id}`)
+      })
+    } else if (Array.isArray(node?.msu_ids) && node.msu_ids.length) {
+      node.msu_ids.forEach((id, idx) => seen.add(`${hsuKey}#${id ?? idx}`))
+    }
+  })
+  return seen.size
+}
+
+function computeInitialLinkHeight(link, nodes) {
+  const count = Math.max(1, Math.min(LINK_INITIAL_VISIBLE_MSU_LIMIT, countLinkMsus(link, nodes)))
+  return clampLinkHeight(LINK_BASE_HEIGHT + count * LINK_PER_MSU_HEIGHT)
+}
+
+function getInitialLinkHeight(link, nodes) {
+  return computeInitialLinkHeight(link, nodes)
+}
+
+function startLinkResize(stepIdx, linkIdx, e) {
+  e.preventDefault()
+  e.stopPropagation()
+  const step = steps.value[stepIdx]
+  const link = step?.links?.[linkIdx]
+  if (!link) return
+
+  const card = e.currentTarget?.closest?.('.subcards__item')
+  resizing.active = true
+  resizing.stepIdx = stepIdx
+  resizing.linkIdx = linkIdx
+  resizing.startY = e.clientY
+  resizing.startHeight = clampLinkHeight(link.height || card?.getBoundingClientRect?.().height || getInitialLinkHeight(link, step.nodes || []))
+
+  document.body.classList.add('is-link-resizing')
+  window.addEventListener('mousemove', onLinkResizeMove)
+  window.addEventListener('mouseup', stopLinkResize)
+}
+
+function onLinkResizeMove(e) {
+  if (!resizing.active || resizing.stepIdx < 0 || resizing.linkIdx < 0) return
+  const step = steps.value[resizing.stepIdx]
+  const link = step?.links?.[resizing.linkIdx]
+  if (!link) return
+  const next = clampLinkHeight(resizing.startHeight + (e.clientY - resizing.startY))
+  link.height = next
+}
+
+function stopLinkResize() {
+  if (!resizing.active) return
+  resizing.active = false
+  resizing.stepIdx = -1
+  resizing.linkIdx = -1
+  document.body.classList.remove('is-link-resizing')
+  window.removeEventListener('mousemove', onLinkResizeMove)
+  window.removeEventListener('mouseup', stopLinkResize)
+}
 
 /**
  * 将上游 payload 里的透明度信息整理成  Map("panelIdx:q,r" -> alpha)
@@ -228,6 +333,10 @@ function onTitleKey(i, evt) {
 const dragging = reactive({ from: null, to: null });
 
 function onDragStart(stepIdx, linkIdx, e) {
+  if (resizing.active || e.target?.closest?.('.link-resize-handle')) {
+    e.preventDefault()
+    return
+  }
   dragging.from = { i: stepIdx, j: linkIdx };
   e.dataTransfer.effectAllowed = 'move';
   e.dataTransfer.setData('text/plain', `${stepIdx}:${linkIdx}`);
@@ -329,9 +438,11 @@ function onDragEnd() { dragging.from = dragging.to = null; }
 .step-card{
   border:1px solid #e5e7eb; border-radius:10px;
   padding:6px; margin-bottom:10px;
+  position:relative;
   display:grid; gap:4px;
   grid-template-rows: auto auto;
   background:#fff;
+  overflow:visible;
 }
 .step__title{
   font-weight:600; font-size:12px; line-height:1; padding:6px 6px; border-radius:8px;
@@ -341,7 +452,56 @@ function onDragEnd() { dragging.from = dragging.to = null; }
 .step__title[contenteditable="plaintext-only"]{ border-color:#c7d2fe; background:#eef2ff; }
 
 /* 子卡片区 + 拖拽态 */
-.subcards{ display:flex; flex-direction:column; gap:10px; }
-.subcards__item{ border-radius:10px; }
+.subcards{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  min-height:0;
+  overflow:visible;
+  scrollbar-width:none;
+}
+.subcards::-webkit-scrollbar{ width:0; height:0; }
+.subcards__item{
+  border-radius:10px;
+  display:grid;
+  grid-template-rows:minmax(0, 1fr) 9px;
+  min-height:230px;
+  overflow:hidden;
+}
+.subcards__item > :deep(.subcard){
+  height:100%;
+  min-height:0;
+}
 .subcards__item.is-drag-over{ outline:2px dashed #93c5fd; outline-offset:2px; }
+
+.link-resize-handle{
+  position:relative;
+  height:9px;
+  cursor:ns-resize;
+  touch-action:none;
+  border-radius:0 0 10px 10px;
+  background:transparent;
+}
+.link-resize-handle::before{
+  content:'';
+  position:absolute;
+  left:50%;
+  bottom:3px;
+  width:34px;
+  height:2px;
+  transform:translateX(-50%);
+  border-radius:999px;
+  background:#d1d5db;
+  opacity:.55;
+  transition:opacity .12s ease;
+}
+.subcards__item:hover .link-resize-handle::before,
+.link-resize-handle:hover::before{
+  opacity:1;
+}
+
+:global(body.is-link-resizing){
+  cursor:ns-resize;
+  user-select:none;
+}
 </style>

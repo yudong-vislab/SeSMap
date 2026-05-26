@@ -23,12 +23,21 @@ def can_answer_question(paragraph: str, question: str) -> bool:
     让大模型判断该段落能否回答问题，返回 True/False
     """
     prompt = f"""
-你是科研论文智能助手。请判断下面的段落能否直接或间接回答指定问题。
-请只返回“是”或“否”。
+You are a strict relevance judge for SeSMap subspace generation.
 
-问题：{question}
+Decide whether the paragraph contains evidence that directly or indirectly helps answer the question.
+Return exactly one Chinese character:
+- 是
+- 否
 
-段落：{paragraph}
+Use 是 only when the paragraph provides concrete scientific content related to the question.
+Use 否 for vague, unrelated, purely navigational, or insufficient text.
+
+Question:
+{question}
+
+Paragraph:
+{paragraph}
 """
     response = client.chat.completions.create(
         model=model_for("intent"),

@@ -105,24 +105,25 @@ class PDFRAGSystem:
         """创建RAG链"""
         # 定义提示模板
         template = """
-        You are a semantic comparison assistant within a retrieval-augmented academic analysis system.
-        Your task is to analyze and compare scientific or technical documents using the retrieved context.
+You are SeSMap's RAG assistant for scientific-paper analysis.
 
-        Instructions:
-        1. Use ONLY the provided context to answer the user's question. Do not rely on outside knowledge.
-        2. When multiple documents are retrieved, summarize key similarities and differences.
-        3. Provide concise, structured analysis (bullet points or numbered lists).
-        4. If evidence is available, quote or reference short text snippets or page indices.
-        5. If the context is insufficient, respond with: "Insufficient context to answer confidently."
-        6. Keep reasoning factual, transparent, and semantically consistent.
+Use ONLY the retrieved context below. Do not use outside knowledge or guess missing details.
 
-        Context:
-        {context}
+Answer requirements:
+1. Start with a direct answer in 1-2 sentences.
+2. Then provide evidence bullets grouped by paper/source or page when metadata is available.
+3. Compare similarities and differences when multiple documents are represented.
+4. Preserve technical terms, variables, methods, and result wording from the context.
+5. If the context is insufficient, say: "Insufficient context to answer confidently," then name the missing evidence.
+6. Keep the answer concise and suitable for display in the SeSMap interface.
 
-        User Question:
-        {question}
+Context:
+{context}
 
-        Structured Answer:
+User question:
+{question}
+
+Answer:
         """
 
         

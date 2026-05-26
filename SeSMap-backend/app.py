@@ -27,20 +27,26 @@ except Exception:
     HAS_PROMPTS = False
 
 PROMPT_MSU_SUMMARY = os.getenv("PROMPT_MSU_SUMMARY", """
-You write a dense, evidence-only overview from given MSU sentences grouped by ordered hops and subspaces.
+You generate evidence-grounded summaries for selected MSUs in SeSMap.
+
 Rules:
-- 90–120 words; one paragraph; no markdown; no meta phrases.
-- Use only terms present in the MSUs; preserve hop order and note genuine subspace shifts briefly.
-Output ONLY JSON: {"RouteSummary":"..."}.
+- Use only the user-provided MSU sentences, HSU labels, and subspace names.
+- Preserve the selected path order, but synthesize instead of listing every hop.
+- Use exact subspace names when they are provided; never output generic labels such as "Subspace 0".
+- Explain how the focus changes when the path crosses subspaces.
+- No markdown, no code fences, no unsupported claims, no filler phrases.
+- Output ONLY strict JSON: {"RouteSummary":"..."}.
 """).strip()
 
 PROMPT_HSU_HOVER_SUMMARY = os.getenv("PROMPT_HSU_HOVER_SUMMARY", """
-You summarize the MSU sentences inside one dynamically aggregated HSU.
+You summarize one dynamically aggregated HSU for a hover tooltip in SeSMap.
+
 Rules:
 - Use only the provided MSU sentences.
-- Keep different papers separate when more than one paper appears.
-- 35–70 words total.
-- No markdown table, no code fence, no meta phrases.
+- Keep papers separate when multiple papers appear.
+- State the shared local theme and the strongest evidence.
+- 35-70 words total; compact enough for a tooltip.
+- No markdown table, no code fence, no generic filler.
 - Output plain text only.
 """).strip()
 
@@ -648,24 +654,26 @@ class RAGService:
         # build prompt enforcing per-paper separation + cross comparison
         llm = self._make_llm()
         template = (
-            "You will answer a user question based on multiple papers from CASE: {project_id}.\n"
-            "Keep papers SEPARATE. Be BRIEF. Prefer bullets. Obey hard limits below.\n\n"
-            "For EACH PAPER (separate section):\n"
-            "- Title: short (use filename if unsure)\n"
-            "- Problem: ONE sentence, ≤18 words\n"
-            "- Methods: up to 2 bullets, each ≤10 words\n"
-            "- Contributions: up to 3 bullets, each ≤12 words\n"
-            "- Limitations: ONLY if explicit in CONTEXT, ≤1 bullet, ≤10 words\n\n"
-            "Then a FINAL section:\n"
-            "- Cross-paper commonalities: up to 3 bullets, each ≤10 words\n"
-            "- Cross-paper differences: up to 3 bullets, each ≤12 words, name the paper\n"
-            "- One-line takeaway: ONE sentence, ≤15 words\n\n"
-            "Style:\n"
-            "- Fluent English; no redundancy; no speculation beyond CONTEXT.\n"
-            "- If info missing, say: \"Not stated in context.\" (and do not guess)\n\n"
+            "You answer a user question using retrieved passages from multiple papers in CASE: {project_id}.\n"
+            "Use ONLY the provided context. Keep papers separate, then synthesize across papers.\n\n"
+            "Required structure:\n"
+            "1. Direct answer: 1-2 sentences answering the user question.\n"
+            "2. Evidence by paper: one short subsection per paper.\n"
+            "   - Focus: one sentence.\n"
+            "   - Relevant evidence: 2-4 bullets grounded in the retrieved context.\n"
+            "   - Missing/unclear: include only if important and not stated.\n"
+            "3. Cross-paper synthesis:\n"
+            "   - Commonalities: up to 3 bullets.\n"
+            "   - Differences: up to 3 bullets; name the paper when contrasting.\n"
+            "   - Takeaway: one concise sentence.\n\n"
+            "Style constraints:\n"
+            "- Fluent English, compact, and useful for semantic-map exploration.\n"
+            "- Preserve technical terms from the context.\n"
+            "- Do not invent authors, years, results, limitations, or mechanisms.\n"
+            "- If evidence is insufficient, say exactly what is missing.\n\n"
             "USER QUESTION:\n{question}\n\n"
             "CONTEXT BY PAPER:\n{contexts}\n\n"
-            "Structured answer:"
+            "Answer:"
         )
 
         contexts_text = "\n\n".join(
@@ -751,15 +759,16 @@ def parse_intent_llm(text: str) -> dict:
     Fallback: ask an LLM to extract intent into strict JSON.
     """
     prompt = (
-      "You are an intent parser for a RAG system with two corpora: case1 and case2.\n"
-      "The user writes in ENGLISH. Extract intent to STRICT JSON with keys exactly:\n"
+      "You are a strict intent parser for SeSMap's RAG system.\n"
+      "The user may ask in English or Chinese. Output ONLY valid JSON with exactly these keys:\n"
       '{"action":"projects|index|ask|none","project_id":"case1|case2|null","question":"string|null","rebuild":false}\n'
-      "Rules:\n"
-      "- If the user wants to list available corpora/projects or papers, set action=projects.\n"
-      "- If the user asks to build/update the index, set action=index. Detect project_id and whether it implies a rebuild.\n"
-      "- If the user asks a question based on a corpus, set action=ask and fill project_id + question.\n"
-      "- If ambiguous, set action=none.\n"
-      "Now parse the user text and output ONLY the JSON object:\n"
+      "Decision rules:\n"
+      "- List available projects/corpora/papers => action=\"projects\".\n"
+      "- Build, refresh, update, or rebuild an index => action=\"index\". Detect project_id and rebuild=true only for force/full/from-scratch wording.\n"
+      "- Ask about paper content in a corpus => action=\"ask\" with project_id when stated.\n"
+      "- If the target project is unclear and no project can be inferred, use project_id=null.\n"
+      "- If the text is a UI visibility command, casual chat, or ambiguous, use action=\"none\".\n"
+      "- Do not add explanations or markdown.\n\n"
       f"USER: {text}\n"
       "JSON:"
     )
@@ -823,18 +832,20 @@ def query_gpt():
     if task_type == "subspace" or (not task_type and is_subspace_command(user_query)):
         try:
             tool_prompt = (
-                "You are a UI command normalizer for controlling subspace visibility across THREE cases: case1, case2, case3.\n"
-                "From the USER text, output STRICT JSON: "
+                "You normalize user text into a SeSMap UI command for subspace visibility.\n"
+                "Output ONLY strict JSON: "
                 "{\"command\":\"<string>\",\"project_id\":\"case1|case2|case3|null\"}\n"
-                "Allowed command forms:\n"
+                "Allowed command values:\n"
                 "- \"show all subspaces\" / \"hide all subspaces\"\n"
-                "- \"show <name1>, <name2>\"  or  \"hide <name1>, <name2>\"\n"
+                "- \"show <name1>, <name2>\" or \"hide <name1>, <name2>\"\n"
+                "- Use canonical subspace names when obvious: Background, Method, Experiment, Result, Conclusion.\n"
                 "Case selection rules:\n"
                 "- If the user mentions case 1 / case1, set project_id=\"case1\".\n"
                 "- If case 2 / case2, set project_id=\"case2\".\n"
                 "- If case 3 / case3, set project_id=\"case3\".\n"
                 "- If not clearly specified, set project_id=\"null\".\n"
-                "Do NOT add extra keys.\n"
+                "- Do not include paper-gallery requests here; only subspace visibility commands.\n"
+                "Do not add extra keys or commentary.\n"
                 f"USER: {user_query}\nJSON:"
             )
             resp = client.chat.completions.create(
@@ -1016,8 +1027,9 @@ def _condense_messages_to_summary(messages: list[str] | list[dict] | None) -> st
     convo_text = "\n".join(lines[-1200:])  # 再限长度
 
     prompt = (
-        "Summarize the following multi-turn conversation context into 1–3 concise sentences.\n"
-        "Keep only domain facts, tasks, constraints, and user intent. No extra commentary.\n"
+        "Compress the following SeSMap chat history into 1-3 concise sentences.\n"
+        "Keep only durable context: user goal, selected case/project, paper/topic names, constraints, and unresolved tasks.\n"
+        "Discard greetings, UI chatter, and redundant assistant wording. Do not invent facts.\n"
         "Conversation:\n" + convo_text + "\n\nSummary:"
     )
     try:

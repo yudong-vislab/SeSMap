@@ -2836,9 +2836,13 @@ function hideHexTooltip() {
 
   // 生成 panelIdx -> subspaceName 的映射
   function getSubspaceNameMap() {
+    const dom = getPanelNameMapFromDOM();
+    if (dom && Object.keys(dom).length) return dom;
     const m = {};
     const arr = App?.currentData?.subspaces || [];
-    arr.forEach((s, i) => { m[i] = (s && s.subspaceName) ? s.subspaceName : `Subspace ${i}`; });
+    arr.forEach((s, i) => {
+      m[i] = (s && (s.subspaceName || s.title || s.name)) ? (s.subspaceName || s.title || s.name) : `Subspace ${i}`;
+    });
     return m;
   }
 
@@ -3614,6 +3618,7 @@ function hideHexTooltip() {
 
     const title = document.createElement('div');
     title.className = 'subspace-title';
+    title.dataset.panelIdx = String(i);
     title.innerText = space.subspaceName || `Subspace ${i + 1}`;
     div.appendChild(title);
 
@@ -5085,6 +5090,7 @@ function updateHexStyles() {
  
   function snapshotFromKeySet(keySet) {
     if (!keySet || keySet.size === 0) return { nodes: [], links: [] };
+    const nameByIdx = getSubspaceNameMap();
 
     const nodes = [];
     for (const k of keySet) {
@@ -5130,13 +5136,14 @@ function updateHexStyles() {
         if (run.length >= 2) {
           run.forEach(pt => usedKeys.add(`${pt.panelIdx}|${pt.q},${pt.r}`));
           const panels = Array.from(new Set(run.map(pt => pt.panelIdx)));
-          const panelNames = panels.map(idx => App.currentData?.subspaces?.[idx]?.subspaceName || `Subspace ${idx+1}`);
+          const panelNames = panels.map(idx => nameByIdx[idx] || `Subspace ${idx}`);
           const first = run[0], last = run[run.length - 1];
           links.push({
             id: `${e.type || 'road'}:${first.panelIdx}:${first.q},${first.r}->${last.panelIdx}:${last.q},${last.r}`,
             type: e.type || 'road',
             path: run.map(pt => ({ panelIdx: pt.panelIdx, q: pt.q, r: pt.r })),
-            panels, panelNames
+            panels, panelNames,
+            panelNamesByIndex: { ...nameByIdx }
           });
         }
         run = [];
@@ -5157,12 +5164,13 @@ function updateHexStyles() {
       const q = parseInt(qStr, 10);
       const r = parseInt(rStr, 10);
       const panels = [panelIdx];
-      const panelNames = [App.currentData?.subspaces?.[panelIdx]?.subspaceName || `Subspace ${panelIdx + 1}`];
+      const panelNames = [nameByIdx[panelIdx] || `Subspace ${panelIdx}`];
       links.push({
         id: `single:${panelIdx}:${q},${r}`,
         type: 'single',
         path: [{ panelIdx, q, r }],
-        panels, panelNames
+        panels, panelNames,
+        panelNamesByIndex: { ...nameByIdx }
       });
     }
 
@@ -5173,6 +5181,7 @@ function updateHexStyles() {
   function snapshotFromSelectedRoutes() {
     const nodesSet = new Set();  // 收集被选路线中“未被排除”的节点 key
     const linksOut = [];
+    const nameByIdx = getSubspaceNameMap();
 
     (App._lastLinks || []).forEach(link => {
       if (!isSelectableRoute(link)) return;
@@ -5193,13 +5202,14 @@ function updateHexStyles() {
       }
       if (filtered.length >= 2) {
         const panels = Array.from(new Set(filtered.map(pt => pt.panelIdx)));
-        const panelNames = panels.map(idx => App.currentData?.subspaces?.[idx]?.subspaceName || `Subspace ${idx+1}`);
+        const panelNames = panels.map(idx => nameByIdx[idx] || `Subspace ${idx}`);
 
         linksOut.push({
           id: `${(link.type || 'road')}:${linkKey(link)}`,
           type: link.type || 'road',
           path: filtered,
-          panels, panelNames
+          panels, panelNames,
+          panelNamesByIndex: { ...nameByIdx }
         });
       }
     });
@@ -5355,7 +5365,7 @@ function updateHexStyles() {
       } catch(_) {}
     });
 
-    const ctrlLike = withCtrl || App.modKeys?.ctrl || App.modKeys?.meta;
+    const ctrlLike = !!(withCtrl || App.modKeys?.ctrl || App.modKeys?.meta || App.uiPref?.route);
 
     if (!ctrlLike) {
       // —— 非 Ctrl：选择“该点所在的整条链路集合”；若该点不在任何链路上，则退化为仅该点 —— //
@@ -5458,7 +5468,7 @@ function updateHexStyles() {
       // ★ 更新选中路线集合（尊重 Ctrl 并/差集）
      if (!App.selectedRouteIds) App.selectedRouteIds = new Set();
      const rid = link.id || link._uid;
-     const ctrlLike = (d3.event?.ctrlKey || App.modKeys?.ctrl || App.modKeys?.meta);
+     const ctrlLike = !!(App.uiPref?.route || App.modKeys?.ctrl || App.modKeys?.meta);
      if (rid) {
        if (ctrlLike) {
          if (App.selectedRouteIds.has(rid)) App.selectedRouteIds.delete(rid);
@@ -5523,7 +5533,7 @@ function updateHexStyles() {
        // ★ 选中整条新建航线（路线级）——支持 Ctrl 并/差集
        const rid = (typeof linkKey === 'function') ? linkKey(d) : (d.id || d._uid);
        if (!App.selectedRouteIds) App.selectedRouteIds = new Set();
-       const ctrlLike = event?.ctrlKey || App.modKeys?.ctrl || App.modKeys?.meta;
+       const ctrlLike = !!(event?.ctrlKey || event?.metaKey || App.uiPref?.route || App.modKeys?.ctrl || App.modKeys?.meta);
        if (rid) {
          if (ctrlLike) {
            if (App.selectedRouteIds.has(rid)) App.selectedRouteIds.delete(rid);
@@ -6147,7 +6157,11 @@ function _deleteSubspaceByIndex(idx) {
         : null;
       const mini = _buildMiniSnapshot();
 
-      return { nodes, links, meta: { focusId, miniPalette: mini } };
+      const panelNamesByIndex = getSubspaceNameMap();
+      links.forEach(link => {
+        if (link && !link.panelNamesByIndex) link.panelNamesByIndex = { ...panelNamesByIndex };
+      });
+      return { nodes, links, panelNamesByIndex, meta: { focusId, miniPalette: mini, panelNamesByIndex } };
     },
 
 

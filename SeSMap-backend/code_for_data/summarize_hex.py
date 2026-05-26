@@ -25,11 +25,20 @@ def summarize_with_llm(text):
             messages=[
                 {
                     "role": "system", 
-                    "content": "你是一个专业的文献研究助手，擅长分析和总结学术文本。你的任务是理解并整合来自同一篇论文的多个相关句子，提供准确、连贯的总结。"
+                    "content": (
+                        "You summarize clustered MSU sentences for a semantic-map HSU. "
+                        "Use only the provided sentences, preserve technical terms, and write in English. "
+                        "Identify the shared theme, key evidence, and any obvious limitation in one concise paragraph. "
+                        "Do not add outside knowledge or generic filler."
+                    )
                 },
                 {
                     "role": "user", 
-                    "content": f"以下是通过降维布局后在二维平面内位置相近的同一篇论文的多个短句子。这些句子在语义上相关，请将它们整合成一个连贯的段落，并用英文进行专业、准确的总结：\n\n{text}"}
+                    "content": (
+                        "The following MSU sentences are close in the semantic layout and belong to one HSU cluster. "
+                        "Write a 45-80 word evidence-grounded English summary of their shared meaning.\n\n"
+                        f"MSU sentences:\n{text}"
+                    )}
                 ],
         )
         return  response.choices[0].message.content.strip()
