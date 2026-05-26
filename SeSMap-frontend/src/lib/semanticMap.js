@@ -268,6 +268,12 @@ export async function initSemanticMap({
     // —— Alt 聚焦隔离 & 面板级聚焦覆盖 —— //
     altIsolatedPanels: new Set(),     // 被隔离 Alt 聚焦的面板索引集合（复制面板会加入）
     panelFocusOverrides: new Map(),   // panelIdx -> { countryId, mode: 'filled'|'outline' }
+    hsuSummaryCache: new Map(),
+    hsuSummaryPending: new Map(),
+    hsuSummaryHoverTimer: null,
+    hsuSummaryHoverTarget: null,
+    hoveredTooltipBucket: null,
+    lastHexTooltipClient: null,
 
     // ★ 新增：全局（跨子空间）国家颜色表 + 开关
     globalCountryColors: new Map(),  // Map<normalizedCountryId, "#RRGGBB">
@@ -1271,6 +1277,158 @@ function getBucket(panelIdx, q, r) {
   return map ? map.get(String(q)+','+String(r)) : null;
 }
 
+function isDynamicAggregationActive() {
+  return Math.abs((Number(App?.aggregationRange) || DEFAULT_AGGREGATION_RANGE) - DEFAULT_AGGREGATION_RANGE) > 0.001;
+}
+
+function paperLabelFromMsu(msu) {
+  const raw = msu?.paper_info || msu?.paper_title || msu?.paperTitle || msu?.doc_title || msu?.docTitle || msu?.title || msu?.subtitle || msu?.source || '';
+  if (raw) {
+    const s = String(raw);
+    const parts = s.split(/[\\/]/).filter(Boolean);
+    return parts[parts.length - 1] || s;
+  }
+  if (msu?.paper_id != null) return `Paper ${msu.paper_id}`;
+  return 'Unknown paper';
+}
+
+function getMsuRecord(msuId) {
+  const idx = App?.currentData?.msu_index || {};
+  return idx?.[msuId] ?? idx?.[String(msuId)] ?? null;
+}
+
+function getHsuSummaryKey(panelIdx, item) {
+  const ids = (Array.isArray(item?.msu_ids) ? item.msu_ids : [])
+    .map(x => String(x))
+    .sort((a, b) => Number(a) - Number(b));
+  const cid = item?.country_id ? normalizeCountryId(item.country_id) : '';
+  const project = window.__activeProjectId || App?.currentData?.title || 'default';
+  const range = Number(App?.aggregationRange || DEFAULT_AGGREGATION_RANGE).toFixed(2);
+  return [project, range, panelIdx, item?.q, item?.r, cid, ids.join(',')].join('|');
+}
+
+function buildHsuHoverPrompt(panelIdx, item) {
+  const ids = Array.isArray(item?.msu_ids) ? item.msu_ids : [];
+  const byPaper = new Map();
+  ids.forEach(id => {
+    const rec = getMsuRecord(id);
+    const sentence = (rec?.sentence || rec?.text || rec?.content || '').trim();
+    if (!sentence) return;
+    const paper = paperLabelFromMsu(rec);
+    if (!byPaper.has(paper)) byPaper.set(paper, []);
+    byPaper.get(paper).push({ id, sentence });
+  });
+
+  let used = 0;
+  const paperBlocks = Array.from(byPaper.entries()).map(([paper, rows]) => {
+    const remaining = 24 - used;
+    if (remaining <= 0) return '';
+    const capped = rows.slice(0, Math.min(8, remaining));
+    used += capped.length;
+    return [
+      `Paper: ${paper}`,
+      ...capped.map(r => `- MSU ${r.id}: ${r.sentence}`)
+    ].join('\n');
+  }).filter(Boolean);
+
+  return `
+Summarize one dynamically aggregated HSU for tooltip display.
+
+HSU
+- panelIdx: ${panelIdx}
+- q,r: ${item?.q},${item?.r}
+- country_id: ${item?.country_id || 'unknown'}
+- total_msu_count: ${ids.length}
+
+Requirements:
+1) Separate evidence by paper when multiple papers appear.
+2) Mention only claims present in the MSU sentences.
+3) Be concise enough for a hover tooltip.
+4) Output plain text only.
+
+MSU sentences grouped by paper:
+${paperBlocks.join('\n\n') || '(none)'}
+  `.trim();
+}
+
+async function requestHsuHoverSummary(panelIdx, item) {
+  if (!isDynamicAggregationActive()) return;
+  const ids = Array.isArray(item?.msu_ids) ? item.msu_ids : [];
+  if (!ids.length) return;
+  const key = getHsuSummaryKey(panelIdx, item);
+  if (!App.hsuSummaryCache) App.hsuSummaryCache = new Map();
+  if (!App.hsuSummaryPending) App.hsuSummaryPending = new Map();
+  if (App.hsuSummaryCache.has(key) || App.hsuSummaryPending.has(key)) return;
+
+  if (ids.length === 1) {
+    const rec = getMsuRecord(ids[0]);
+    const text = (rec?.sentence || rec?.text || '').trim();
+    App.hsuSummaryCache.set(key, { status: 'ready', text });
+    return;
+  }
+
+  const pending = fetch('/api/query', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      task: 'hsu_hover_summary',
+      query: buildHsuHoverPrompt(panelIdx, item)
+    })
+  })
+    .then(async res => {
+      const text = (await res.text()).trim();
+      if (!res.ok) throw new Error(text || `HSU summary failed (${res.status})`);
+      App.hsuSummaryCache.set(key, { status: 'ready', text });
+    })
+    .catch(err => {
+      console.warn('[HSU hover summary] failed:', err);
+      App.hsuSummaryCache.set(key, { status: 'error', text: '' });
+    })
+    .finally(() => {
+      App.hsuSummaryPending.delete(key);
+      refreshHoveredBucketTooltip();
+    });
+
+  App.hsuSummaryPending.set(key, pending);
+  refreshHoveredBucketTooltip();
+}
+
+function scheduleBucketDynamicSummaries(bucket) {
+  if (!isDynamicAggregationActive() || !bucket) return;
+  if (App.hsuSummaryHoverTimer) clearTimeout(App.hsuSummaryHoverTimer);
+  const target = `${bucket.panelIdx}|${bucket.q},${bucket.r}`;
+  App.hsuSummaryHoverTarget = target;
+  App.hsuSummaryHoverTimer = setTimeout(() => {
+    if (!App.hoveredHex) return;
+    const current = `${App.hoveredHex.panelIdx}|${App.hoveredHex.q},${App.hoveredHex.r}`;
+    if (current !== target) return;
+    (bucket.items || []).forEach(item => requestHsuHoverSummary(bucket.panelIdx, item));
+  }, 360);
+}
+
+function getDisplaySummaryForHsuItem(panelIdx, item) {
+  if (!isDynamicAggregationActive()) {
+    return (item && typeof item.summary === 'string') ? item.summary.trim() : '';
+  }
+  const ids = Array.isArray(item?.msu_ids) ? item.msu_ids : [];
+  if (!ids.length) return '';
+  const key = getHsuSummaryKey(panelIdx, item);
+  const cached = App.hsuSummaryCache?.get?.(key);
+  if (cached?.status === 'ready') return cached.text || '';
+  if (cached?.status === 'error') return 'LLM summary unavailable for this aggregated HSU.';
+  if (App.hsuSummaryPending?.has?.(key)) return 'Generating LLM summary...';
+  return 'Hover briefly to generate an LLM summary for this aggregated HSU.';
+}
+
+function refreshHoveredBucketTooltip() {
+  const bucket = App.hoveredTooltipBucket;
+  const pos = App.lastHexTooltipClient;
+  if (!bucket || !pos) return;
+  if (!App.hoveredHex) return;
+  if (App.hoveredHex.panelIdx !== bucket.panelIdx || App.hoveredHex.q !== bucket.q || App.hoveredHex.r !== bucket.r) return;
+  showHexTooltip(pos.x, pos.y, { _rawHTML: true, html: renderBucketTooltipHTML(bucket) });
+}
+
 
 function renderBucketTooltipHTML(bucket) {
   if (!bucket) return '<i>No data</i>';
@@ -1321,7 +1479,7 @@ function renderBucketTooltipHTML(bucket) {
     var maxLines = Math.min(g2.items.length, 5);
     for (var j = 0; j < maxLines; j++) {
       var it2 = g2.items[j] || {};
-      var sum = (it2 && typeof it2.summary === 'string') ? it2.summary.trim() : '';
+      var sum = getDisplaySummaryForHsuItem(panelIdx, it2);
 
       // ✅ sumHtml 在这里定义，避免 Uncaught ReferenceError
       var sumHtml = sum ? renderMarkdownSafe(sum) : '';
@@ -1533,6 +1691,11 @@ function renderBucketTooltipHTML(bucket) {
     App.countryKeysGlobal = new Map();
     App.countryKeysByPanel = [];
     App.coordIndexByPanel = new Map();
+    App.hsuSummaryCache = new Map();
+    App.hsuSummaryPending = new Map();
+    if (App.hsuSummaryHoverTimer) clearTimeout(App.hsuSummaryHoverTimer);
+    App.hsuSummaryHoverTimer = null;
+    App.hoveredTooltipBucket = null;
 
     if (!Array.isArray(App._rawHexListByPanel)) App._rawHexListByPanel = [];
     (data.subspaces || []).forEach((space, i) => {
@@ -3885,12 +4048,16 @@ const mode = getPanelLayoutMode(panelIdx);
             const _bucket = (_b && _b.items)
               ? _b
               : buildSingleBucket(panelIdx, d.q, d.r, hex);  // 单条也转成 bucket
+            App.hoveredTooltipBucket = _bucket;
+            App.lastHexTooltipClient = { x: event.clientX, y: event.clientY };
+            scheduleBucketDynamicSummaries(_bucket);
             const _html = renderBucketTooltipHTML(_bucket);
             showHexTooltip(event.clientX, event.clientY, { _rawHTML: true, html: _html });
 
           })
 
           .on('mousemove', (event) => {
+            App.lastHexTooltipClient = { x: event.clientX, y: event.clientY };
             moveHexTooltip(event.clientX, event.clientY);
           })
 
@@ -3898,6 +4065,10 @@ const mode = getPanelLayoutMode(panelIdx);
             if (App.hoveredHex?.panelIdx === panelIdx && App.hoveredHex.q === d.q && App.hoveredHex.r === d.r) {
               App.hoveredHex = null;
             }
+            if (App.hsuSummaryHoverTimer) clearTimeout(App.hsuSummaryHoverTimer);
+            App.hsuSummaryHoverTimer = null;
+            App.hoveredTooltipBucket = null;
+            App.lastHexTooltipClient = null;
             // 无论是否有国家聚焦，都清理预览集合
             App.highlightedHexKeys.clear();
             updateHexStyles();

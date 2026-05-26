@@ -34,10 +34,21 @@ Rules:
 Output ONLY JSON: {"RouteSummary":"..."}.
 """).strip()
 
+PROMPT_HSU_HOVER_SUMMARY = os.getenv("PROMPT_HSU_HOVER_SUMMARY", """
+You summarize the MSU sentences inside one dynamically aggregated HSU.
+Rules:
+- Use only the provided MSU sentences.
+- Keep different papers separate when more than one paper appears.
+- 35–70 words total.
+- No markdown table, no code fence, no meta phrases.
+- Output plain text only.
+""").strip()
+
 TASK_PROMPTS = {
     "literature": PROMPT_LITERATURE_SEARCH,
     "subspace":   PROMPT_SUBSPACE_ANALYSIS,
     "msu_summary": PROMPT_MSU_SUMMARY,  # ✨ 新增
+    "hsu_hover_summary": PROMPT_HSU_HOVER_SUMMARY,
 }
 
 
@@ -881,6 +892,25 @@ def query_gpt():
         except Exception as e:
             print("[MSU summary] error:", e)
             return app.response_class(f"MSU summary error: {str(e)}", mimetype="text/plain"), 500
+
+    # 0.6) 动态聚合后的 HSU hover 摘要：按需调用，前端会缓存。
+    if task_type == "hsu_hover_summary":
+        try:
+            resp = client.chat.completions.create(
+                model=model_for("summary"),
+                messages=[
+                    {"role": "system", "content": PROMPT_HSU_HOVER_SUMMARY},
+                    {"role": "user", "content": user_query}
+                ],
+                temperature=0.15,
+                max_tokens=220,
+                timeout=20.0
+            )
+            answer = resp.choices[0].message.content
+            return app.response_class(answer, mimetype="text/plain"), 200
+        except Exception as e:
+            print("[HSU hover summary] error:", e)
+            return app.response_class(f"HSU hover summary error: {str(e)}", mimetype="text/plain"), 500
 
 
     # 1) NL intent for RAG（规则优先，失败走 LLM）
