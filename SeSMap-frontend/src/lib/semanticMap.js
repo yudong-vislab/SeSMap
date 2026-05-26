@@ -1559,7 +1559,6 @@ function renderBucketTooltipHTML(bucket) {
     html += '<div style="display:flex;align-items:center;gap:8px;margin:.25em 0 .15em">'
          +   '<span style="display:inline-block;width:10px;height:10px;border-radius:50%;'
          +   'background:' + g2.color + ';flex:none;border:1px solid rgba(255,255,255,0.25)"></span>'
-         +   '<b style="flex:none">[' + g2.cid + ']</b>'
          +   '<span style="opacity:.9;flex:none">' + (g2.msuCount === 1 ? '1 MSU' : (g2.msuCount + ' MSUs')) + '</span>'
          + '</div>';
 
