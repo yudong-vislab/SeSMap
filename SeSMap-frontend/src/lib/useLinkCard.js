@@ -4,9 +4,10 @@ import { onRightHover, emitRightHover } from './rightHoverBus'
 
 const STYLE = {
   H: 30,
-  PADX: 10, PADY: 6,
+  PADX: 10, PADY: 7,
   HEX_R: 10,
-  DX: 52,
+  DX: 42,
+  ROW_DY: 32,
   COLOR_TEXT: '#DCDCDC',
   COLOR_IMAGE: '#DCDCDC',
   COLOR_DEFAULT: '#ffffff',
@@ -151,6 +152,55 @@ function appendSegmentArrows(layer, coords, style) {
   }
 }
 
+function layoutMiniCoords(path, svgEl) {
+  const scrollEl = svgEl?.parentElement;
+  const rowEl = scrollEl?.closest?.('.subcard__hex');
+  const actionEl = rowEl?.querySelector?.('.hex-action');
+  const rowRect = rowEl?.getBoundingClientRect?.();
+  const actionRect = actionEl?.getBoundingClientRect?.();
+  const rowStyle = rowEl ? window.getComputedStyle(rowEl) : null;
+  const rowPadX = rowStyle
+    ? (parseFloat(rowStyle.paddingLeft) || 0) + (parseFloat(rowStyle.paddingRight) || 0)
+    : 0;
+  const actionSpace = actionRect?.width ? actionRect.width + 18 : 150;
+  const rowAvailableW = rowRect?.width
+    ? Math.max(0, rowRect.width - rowPadX - actionSpace)
+    : 0;
+  const measuredW = rowAvailableW
+    || scrollEl?.getBoundingClientRect?.().width
+    || scrollEl?.clientWidth
+    || 280;
+  const availableW = Math.max(STYLE.PADX * 2 + STYLE.HEX_R * 2, measuredW);
+  const maxColsByWidth = Math.max(
+    1,
+    Math.floor((availableW - STYLE.PADX * 2 - STYLE.HEX_R * 2) / STYLE.DX) + 1
+  );
+  const cols = Math.max(1, Math.min(path.length, 5, maxColsByWidth));
+  const rows = Math.max(1, Math.ceil(path.length / cols));
+  const rowWidth = (colCount) => STYLE.PADX * 2 + STYLE.HEX_R * 2 + Math.max(0, colCount - 1) * STYLE.DX;
+  const fullRowW = rowWidth(cols);
+  const height = STYLE.PADY * 2 + STYLE.HEX_R * 2 + (rows - 1) * STYLE.ROW_DY;
+
+  const coords = path.map((p, i) => {
+    const row = Math.floor(i / cols);
+    const rowStart = row * cols;
+    const idxInRow = i - rowStart;
+    const visualCol = row % 2 === 0 ? idxInRow : cols - 1 - idxInRow;
+    return {
+      ...p,
+      x: STYLE.PADX + STYLE.HEX_R + visualCol * STYLE.DX,
+      y: STYLE.PADY + STYLE.HEX_R + row * STYLE.ROW_DY,
+      _id: idOf(p.panelIdx, p.q, p.r)
+    };
+  });
+
+  return {
+    coords,
+    width: rows > 1 ? fullRowW : rowWidth(path.length),
+    height
+  };
+}
+
 /**
  * 迷你预览（右卡片）
  * 新增支持：
@@ -172,6 +222,7 @@ export function mountMiniLink(
     borderWidthByNode = null,   // ★ 新增：逐节点边框宽
     fillByNode = null,          // ★ 新增：逐节点填充色（Alt 冲突）
     onPick = null,              // ★ 新增：点击回调，参数为 "panelIdx:q,r" 或 null
+    onSize = null,
     pickedId = null            // ★ NEW: 外部可同步选中 id（"panelIdx:q,r"）
   }
 ) {
@@ -237,17 +288,15 @@ export function mountMiniLink(
 
     const isSingleCard = (link?.type === 'single') || (path.length < 2);
 
-    const innerH = STYLE.H - 2 * STYLE.PADY;
-    const yMid = Math.round(STYLE.PADY + innerH / 2) + 0.5;
-    const coords = path.map((p, i) => ({
-      ...p, x: STYLE.PADX + i * STYLE.DX, y: yMid, _id: idOf(p.panelIdx, p.q, p.r)
-    }));
+    const layout = layoutMiniCoords(path, svgEl);
+    const coords = layout.coords;
     // 记录当前卡片内的节点 id
     visibleIds = new Set(coords.map(d => d._id));
 
-    const lastX = coords[coords.length - 1].x;
-    const contentW = lastX + STYLE.PADX + STYLE.HEX_R * 1.2;
-    svg.attr('width', contentW).attr('height', STYLE.H);
+    svg.attr('width', layout.width).attr('height', layout.height);
+    if (typeof onSize === 'function') {
+      onSize({ width: layout.width, height: layout.height });
+    }
 
     const g = svg.append('g');
     const gNodes = g.append('g').attr('class', 'nodes-layer'); // 先画节点层（在下）
@@ -349,6 +398,9 @@ export function mountMiniLink(
 
        if (next && Object.prototype.hasOwnProperty.call(next, 'onPick')) {
          onPick = next.onPick;
+       }
+       if (next && Object.prototype.hasOwnProperty.call(next, 'onSize')) {
+         onSize = next.onSize;
        }
        // 覆盖闭包变量（render 里直接用到这些闭包变量）
        if (next && Object.prototype.hasOwnProperty.call(next, 'fillByNode')) {

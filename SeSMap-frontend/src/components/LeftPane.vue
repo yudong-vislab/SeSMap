@@ -98,10 +98,13 @@ onBeforeUnmount(() => {
 })
 
 function openPdfModal(pdfUrl, name){ console.log('[openPdfModal]', pdfUrl, name) }
-function onSelectPaper(){ console.log('Select clicked (group-mode).') }
 function onClearPaper(){
   paperGroups.value = [] // 分组模式
   paperQuery.value = ''  // ★ 清掉标题
+}
+function updatePaperGroups(nextGroups) {
+  paperGroups.value = Array.isArray(nextGroups) ? nextGroups : []
+  if (!paperGroups.value.length) paperQuery.value = ''
 }
 
 // ====== Chat（这里是你实际页面的聊天区） ==============================
@@ -522,10 +525,6 @@ async function handleSend(msg) {
     <section class="lp-card">
       <header class="card__title">
         Semantic Source Gallery
-        <div class="mv-actions">
-          <button class="select-btn" id="SelectBtn" @click="onSelectPaper">Select</button>
-          <button class="clear-btn" id="ClearBtn" @click="onClearPaper">Clear</button>
-        </div>
       </header>
       <div class="lp-card__body scroll-auto-hide">
           <PaperList
@@ -541,6 +540,7 @@ async function handleSend(msg) {
            :tileMin="80"
            :thumbRatio="0.55"
            @open-pdf="({pdfUrl, name}) => openPdfModal(pdfUrl, name)"
+           @update:groups="updatePaperGroups"
          />
 
         <!-- <div v-if="!papers.length" class="empty-hint" style="margin-top:8px;">
@@ -640,9 +640,6 @@ async function handleSend(msg) {
 .cp-unit{ font-size:11px; color:#666; min-width:16px; }
 .cp-hint{ font-size:10px; color:#777; margin-top:2px; }
 .cp-divider{ width:100%; border-bottom:1px dashed #ddd; margin:5px 0; }
-
-/* 操作区按钮容器（保持灰系即可） */
-.mv-actions{ display:flex; align-items:center; gap:8px; float:right; }
 
 /* 为空提示的样式复用 */
 .empty-hint{ font-size:11px; color:#666; line-height:1.5; }

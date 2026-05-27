@@ -712,7 +712,7 @@ export async function initSemanticMap({
   }
 
   function _layoutBtnLabel(mode) {
-    return (mode === 'scatter') ? '•' : '⬢';
+    return '';
   }
 
   function _layoutBtnTitle(mode) {
@@ -3842,6 +3842,7 @@ function hideHexTooltip() {
       const idxNow = Number(div.dataset.index ?? i);
       const modeNow = getPanelLayoutMode(idxNow);
       layoutBtn.textContent = _layoutBtnLabel(modeNow);
+      layoutBtn.setAttribute('data-layout-mode', modeNow);
       layoutBtn.title = _layoutBtnTitle(modeNow);
       layoutBtn.classList.toggle('is-scatter', modeNow === 'scatter');
     };
@@ -3862,7 +3863,8 @@ function hideHexTooltip() {
     // ... 现有 addBtn 之后
     const releaseBtn = document.createElement('button');
     releaseBtn.className = 'subspace-release';
-    releaseBtn.textContent = '↺';                   // 或者 'R'
+    releaseBtn.setAttribute('aria-label', 'Release selections in this subspace');
+    releaseBtn.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>';
     releaseBtn.title = 'Release selections in this subspace';
     releaseBtn.addEventListener('click', (e) => {
       e.stopPropagation();
@@ -3874,7 +3876,7 @@ function hideHexTooltip() {
 
     const addBtn = document.createElement('button');
     addBtn.className = 'subspace-add';
-    addBtn.textContent = '+';
+    addBtn.setAttribute('aria-label', 'Duplicate Subspace');
     addBtn.title = 'Duplicate Subspace';
     addBtn.addEventListener('click', (e) => {
       e.stopPropagation();
@@ -3885,7 +3887,7 @@ function hideHexTooltip() {
 
     const closeBtn = document.createElement('button');
     closeBtn.className = 'subspace-close';
-    closeBtn.textContent = '×';
+    closeBtn.setAttribute('aria-label', 'Delete Subspace');
     closeBtn.title = 'Delete Subspace';
     closeBtn.addEventListener('click', (e) => {
       e.stopPropagation();
@@ -5065,7 +5067,7 @@ function updateHexStyles() {
         .attr('fill-opacity', d => {
           const st = App._hexStyleByKey && App._hexStyleByKey.get ? App._hexStyleByKey.get(d.__hexKey) : null;
           const cfg = (App && App.config && App.config.scatter) ? App.config.scatter : {};
-          const MIN_OPACITY = Number.isFinite(cfg.minOpacity) ? cfg.minOpacity : 0.55;
+          const MIN_OPACITY = Number.isFinite(cfg.minOpacity) ? cfg.minOpacity : 0.72;
           const op = (st && typeof st.opacity === 'number') ? st.opacity : 0.9;
           return Math.max(MIN_OPACITY, op);
         });
@@ -6290,6 +6292,61 @@ function releaseSubspaceSelections(panelIdx) {
   publishToStepAnalysis();
 }
 
+function releaseSelectionSnapshot(selection = {}) {
+  const nodeKeys = new Set();
+  const routeIds = new Set();
+
+  const addPoint = (point) => {
+    if (!point || !Number.isFinite(Number(point.panelIdx))) return;
+    nodeKeys.add(`${Number(point.panelIdx)}|${point.q},${point.r}`);
+  };
+
+  (selection.nodes || []).forEach(addPoint);
+
+  (selection.links || []).forEach(link => {
+    const id = link?.baseId || link?.routeId || link?.rawId || link?.id || '';
+    if (id) {
+      routeIds.add(String(id));
+      const parts = String(id).split(':');
+      if (parts.length > 1) routeIds.add(parts.slice(1).join(':'));
+    }
+    (link?.path || []).forEach(addPoint);
+    if (link?.from) addPoint(link.from);
+    if (link?.to) addPoint(link.to);
+  });
+
+  Array.from(App.selectedRouteIds || []).forEach(routeId => {
+    const raw = String(routeId);
+    const link = findLinkById(raw);
+    const pathKeys = new Set();
+    (link?.path || []).forEach((point, i) => {
+      const panelIdx = resolvePanelIdxForPathPoint(point, link, i);
+      pathKeys.add(`${panelIdx}|${point.q},${point.r}`);
+    });
+
+    const directMatch = routeIds.has(raw) || routeIds.has(`flight:${raw}`) || routeIds.has(`road:${raw}`) || routeIds.has(`river:${raw}`);
+    const pathMatch = pathKeys.size > 0 && Array.from(pathKeys).every(key => nodeKeys.has(key));
+    if (directMatch || pathMatch) App.selectedRouteIds.delete(routeId);
+  });
+
+  nodeKeys.forEach(key => {
+    App.persistentHexKeys?.delete?.(key);
+    App.highlightedHexKeys?.delete?.(key);
+    App.excludedHexKeys?.delete?.(key);
+  });
+
+  recomputePersistentFromRoutesPreservingExtras();
+  App.selectedEdgeKeys?.clear?.();
+  App.hoveredHex = null;
+  App.flightStart = null;
+  App.flightDraft = null;
+  App.flightHoverTarget = null;
+  updateHexStyles();
+  drawOverlayLinesFromLinks(App._lastLinks, App.allHexDataByPanel, App.hexMapsByPanel, false);
+  emitSelectionPayload();
+  publishToStepAnalysis();
+}
+
 function _duplicateSubspaceByIndex(srcIdx) {
   if (!App.currentData?.subspaces?.[srcIdx]) return;
   const src = App.currentData.subspaces[srcIdx];
@@ -6444,6 +6501,9 @@ function _deleteSubspaceByIndex(idx) {
     },
 
     pulseSelection() { publishToStepAnalysis(); },
+    releaseSelectionSnapshot(selection) {
+      releaseSelectionSnapshot(selection);
+    },
     getSelectionSnapshot() {
       // 1) 先取“路线级快照”（若有选择）
       const hasRouteSel = App.selectedRouteIds && App.selectedRouteIds.size > 0;

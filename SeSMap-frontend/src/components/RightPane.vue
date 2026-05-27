@@ -51,6 +51,7 @@
                 :borderWidthByNode="step.borderWidthByNode"  
                 :fillByNode="step.fillByNode"                
                 @resize-card-delta="resizeLinkByDelta(i, j, $event)"
+                @close-link="closeLinkCard(i, j)"
               />
             </div>
           </div>
@@ -75,17 +76,16 @@ const LINK_INITIAL_VISIBLE_MSU_LIMIT = 4
 const MIN_LINK_HEIGHT = 230
 const MAX_LINK_HEIGHT = 900
 
+const stepPrefix = (i) => `Step ${i + 1}`
 const defaultTitle = (step, i) => {
-  const t = step.createdAt ? new Date(step.createdAt) : new Date()
-  const ts = `${t.getHours().toString().padStart(2,'0')}:${t.getMinutes().toString().padStart(2,'0')}:${t.getSeconds().toString().padStart(2,'0')}`
-  return `Step ${i + 1} · ${ts}`
+  return `${stepPrefix(i)} · LLM Summarizing...`
 }
 
 let offSaved = null
 onMounted(() => {
   offSaved = onSelectionSaved((payload) => {
     const id = `${Date.now()}-${Math.random().toString(36).slice(2)}`
-    const finalTitle = payload.title || `Step ${steps.value.length + 1}`
+    const createdAt = payload.createdAt || Date.now()
 
     // ① 先拿 nodes / links
     const nodes = Array.isArray(payload.nodes) ? payload.nodes : []
@@ -106,10 +106,12 @@ onMounted(() => {
       || (window?.App?.getSelectionSnapshot?.()?.meta?.miniPalette ?? null)
 
     // ④ push；优先用 palette，其次 payload，最后兜底
-    steps.value.push({
+    const step = {
       id,
-      title: finalTitle,
-      createdAt: payload.createdAt || Date.now(),
+      title: defaultTitle({ createdAt }, steps.value.length),
+      titleTouched: false,
+      titleLoading: true,
+      createdAt,
       nodes,
       links,
       panelNamesByIndex: payload.panelNamesByIndex || payload.meta?.panelNamesByIndex || {},
@@ -129,7 +131,9 @@ onMounted(() => {
       rawText: payload.rawText || '',
       summary: payload.summary || '',
       meta: payload.meta || {}
-    })
+    }
+    steps.value.push(step)
+    generateStepTitle(step, steps.value.length - 1)
   })
 })
 
@@ -177,6 +181,135 @@ function getInitialLinkHeight(link, nodes) {
   return computeInitialLinkHeight(link, nodes)
 }
 
+function normalizePanelName(name, idx) {
+  const raw = String(name ?? '').trim()
+  if (!raw || /^subspace\s+\d+$/i.test(raw)) return `Subspace ${idx}`
+  return raw
+}
+
+function textOfMsu(msu, fallback = '') {
+  if (msu == null) return fallback
+  if (typeof msu === 'string') return msu
+  return String(msu.text ?? msu.summary ?? msu.sentence ?? msu.content ?? fallback)
+}
+
+function msuIdOf(msu, idx) {
+  if (msu == null || typeof msu !== 'object') return idx + 1
+  return msu.MSU_id ?? msu.msuId ?? msu.id ?? idx + 1
+}
+
+function paperOfMsu(msu, node) {
+  if (msu && typeof msu === 'object') {
+    return msu.paper || msu.paperLabel || msu.source || msu.paperId || msu.paper_id || msu.title || null
+  }
+  return node?.paper || node?.paperLabel || node?.source || node?.paperId || node?.paper_id || null
+}
+
+function buildStepTitleEvidence(step) {
+  const nodeMap = new Map()
+  ;(step.nodes || []).forEach(node => nodeMap.set(`${node.panelIdx}:${node.q},${node.r}`, node))
+  const panelNames = step.panelNamesByIndex || step.meta?.panelNamesByIndex || {}
+  const pathPoints = []
+  ;(step.links || []).forEach(link => {
+    if (Array.isArray(link.path) && link.path.length) pathPoints.push(...link.path)
+  })
+  const orderedKeys = []
+  const seenKeys = new Set()
+  const sourcePoints = pathPoints.length
+    ? pathPoints
+    : (step.nodes || []).map(node => ({ panelIdx: node.panelIdx, q: node.q, r: node.r }))
+
+  sourcePoints.forEach(point => {
+    const key = `${point.panelIdx}:${point.q},${point.r}`
+    if (!seenKeys.has(key)) {
+      seenKeys.add(key)
+      orderedKeys.push(key)
+    }
+  })
+
+  const lines = []
+  orderedKeys.forEach(key => {
+    const node = nodeMap.get(key)
+    if (!node) return
+    const subspace = normalizePanelName(panelNames[node.panelIdx], node.panelIdx)
+    const msus = Array.isArray(node.msu) && node.msu.length
+      ? node.msu
+      : (Array.isArray(node.msu_ids) ? node.msu_ids : [])
+    msus.slice(0, 3).forEach((msu, idx) => {
+      const text = textOfMsu(msu, String(msu)).trim()
+      if (!text) return
+      const paper = paperOfMsu(msu, node)
+      const source = paper ? ` | Paper: ${paper}` : ''
+      lines.push(`- ${subspace}${source} | MSU ${msuIdOf(msu, idx)}: ${text}`)
+    })
+  })
+  return lines.slice(0, 14).join('\n')
+}
+
+function cleanGeneratedStepTitle(raw, stepIdx) {
+  let text = String(raw || '').trim()
+  text = text.replace(/^\s*```(?:json)?\s*/i, '').replace(/\s*```\s*$/i, '').trim()
+  try {
+    const obj = JSON.parse(text)
+    text = obj.title || obj.StepTitle || obj.summary || obj.text || text
+  } catch {}
+  text = String(text || '')
+    .replace(/^["'“”]+|["'“”]+$/g, '')
+    .replace(/^\s*step\s*\d+\s*[·:：-]\s*/i, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+  if (!text) text = 'Selected evidence summary'
+  if (text.length > 90) text = `${text.slice(0, 87).trim()}...`
+  return `${stepPrefix(stepIdx)} · ${text}`
+}
+
+async function generateStepTitle(step, stepIdx) {
+  const evidence = buildStepTitleEvidence(step)
+  if (!evidence) {
+    step.title = `${stepPrefix(stepIdx)} · Selected semantic evidence`
+    step.titleLoading = false
+    return
+  }
+
+  const prompt = `
+Create a concise editable title for a saved Stepwise Analysis step.
+
+Rules:
+- Use only the evidence below.
+- Summarize the user's saved HSU/link selection, not the UI action.
+- Mention the main technical topic or evidence relationship.
+- Return one short English phrase, 6-14 words.
+- Do not include "Step", timestamps, markdown, bullets, or quotation marks.
+
+Evidence:
+${evidence}
+  `.trim()
+
+  try {
+    const res = await fetch('/api/query', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ query: prompt, task: 'msu_summary' })
+    })
+    if (!res.ok) throw new Error(await res.text().catch(() => `API request failed (${res.status})`))
+    const text = (await res.text()).trim()
+    const idx = steps.value.findIndex(s => s.id === step.id)
+    if (idx < 0) return
+    const current = steps.value[idx]
+    current.titleLoading = false
+    if (!current.titleTouched) current.title = cleanGeneratedStepTitle(text, idx)
+  } catch (err) {
+    console.error('[Stepwise] title generation failed:', err)
+    const idx = steps.value.findIndex(s => s.id === step.id)
+    if (idx >= 0) {
+      steps.value[idx].titleLoading = false
+      if (!steps.value[idx].titleTouched) {
+        steps.value[idx].title = `${stepPrefix(idx)} · Selected semantic evidence`
+      }
+    }
+  }
+}
+
 function resizeLinkByDelta(stepIdx, linkIdx, delta) {
   const step = steps.value[stepIdx]
   const link = step?.links?.[linkIdx]
@@ -184,6 +317,33 @@ function resizeLinkByDelta(stepIdx, linkIdx, delta) {
   if (!link || !amount) return
   const base = link.height || getInitialLinkHeight(link, step.nodes || [])
   link.height = clampLinkHeight(base + amount)
+}
+
+function nodesForLink(link, nodes = []) {
+  const wanted = new Set()
+  ;(link?.path || []).forEach(point => {
+    if (point && Number.isFinite(Number(point.panelIdx))) {
+      wanted.add(`${Number(point.panelIdx)}:${point.q},${point.r}`)
+    }
+  })
+  if (link?.from) wanted.add(`${Number(link.from.panelIdx)}:${link.from.q},${link.from.r}`)
+  if (link?.to) wanted.add(`${Number(link.to.panelIdx)}:${link.to.q},${link.to.r}`)
+  return (nodes || []).filter(node => wanted.has(`${Number(node.panelIdx)}:${node.q},${node.r}`))
+}
+
+function closeLinkCard(stepIdx, linkIdx) {
+  const step = steps.value[stepIdx]
+  const link = step?.links?.[linkIdx]
+  if (!step || !link) return
+
+  const nodes = nodesForLink(link, step.nodes || [])
+  window.SemanticMapCtrl?.releaseSelectionSnapshot?.({ nodes, links: [link] })
+
+  step.links.splice(linkIdx, 1)
+  step.startCountMap = buildStartCountMap(step.links)
+  if (!step.links.length) {
+    steps.value.splice(stepIdx, 1)
+  }
 }
 
 /**
@@ -261,6 +421,7 @@ function buildAlphaByNode(payload, nodes) {
 /** ====== 标题编辑 ====== */
 function beginEditTitle(i, evt) {
   editingIdx.value = i
+  if (steps.value[i]) steps.value[i].titleTouched = true
   const el = evt.currentTarget
   if (!el) return
   const range = document.createRange()
@@ -274,6 +435,7 @@ function finishEditTitle(i, evt) {
   if (!el) { editingIdx.value = -1; return }
   const txt = (el.textContent || '').trim()
   steps.value[i].title = txt || ''
+  steps.value[i].titleTouched = true
   editingIdx.value = -1
 }
 function onTitleKey(i, evt) {

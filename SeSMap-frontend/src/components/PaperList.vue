@@ -157,6 +157,14 @@ function onTitleKeyGroup(e, gi) {
   }
 }
 
+function closeGroup(gi) {
+  const next = groupsLocal.value.filter((_, idx) => idx !== gi)
+  groupsLocal.value = next
+  editingPerGroup.value = editingPerGroup.value.filter((_, idx) => idx !== gi)
+  selectedByGroup.value = selectedByGroup.value.filter((_, idx) => idx !== gi)
+  emit('update:groups', next)
+}
+
 /* ---------- 选择（单/分组） ---------- */
 // 单列表
 const selected = ref([...(props.selectedIds || [])])
@@ -173,6 +181,14 @@ function opacityFor(gi) { return !selected.value.length ? 1 : (selected.value.in
 // 分组
 const selectedByGroup = ref([]) // [[gi,...], ...]
 watch(hasGroups, (on) => { if (on && !selectedByGroup.value.length) selectedByGroup.value = props.groups.map(() => []) })
+watch(
+  groupsLocal,
+  (g) => {
+    selectedByGroup.value = g.map((_, idx) => selectedByGroup.value[idx] || [])
+    editingPerGroup.value = g.map((_, idx) => editingPerGroup.value[idx] || false)
+  },
+  { deep: true }
+)
 function toggleSelectInGroup(groupIdx, gi) {
   if (!selectedByGroup.value[groupIdx]) selectedByGroup.value[groupIdx] = []
   const s = new Set(selectedByGroup.value[groupIdx])
@@ -248,6 +264,15 @@ defineExpose({ clearSelection })
         >
           {{ g.title || (titleLocal + ' · ' + (gi + 1)) }}
         </div>
+        <button
+          class="paperlist-close"
+          type="button"
+          title="Remove this paper group"
+          aria-label="Remove this paper group"
+          @click.stop="closeGroup(gi)"
+        >
+          ×
+        </button>
       </div>
 
       <section class="subcards__item subcard subcard_paperlist">
@@ -342,20 +367,70 @@ defineExpose({ clearSelection })
   gap:6px;
   grid-template-rows:auto auto;
   background:#fff;
+  font-family:var(--app-font);
 }
 
 /* 标题行（单列表/分组都显示，可编辑） */
-.step__title-row{ display:flex; align-items:center; gap:6px; }
+.step__title-row{ display:flex; align-items:center; gap:6px; min-width:0; }
 .step__title{
   flex:1 1 auto;
-  font-weight:600; font-size:11px; line-height:1.2;
+  min-width:0;
+  font-weight:650; font-size:11px; line-height:1.25;
   padding:4px 6px; border-radius:8px;
   background:#f9fafb;
   user-select:text; cursor:text;
   outline:none; border:1px dashed transparent;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
 }
 .step__title[contenteditable="plaintext-only"]{
   border-color:#c7d2fe; background:#eef2ff;
+  white-space:normal;
+  overflow:visible;
+}
+.paperlist-close{
+  flex:0 0 18px;
+  position:relative;
+  width:18px;
+  height:18px;
+  min-width:18px;
+  max-width:18px;
+  min-height:18px;
+  max-height:18px;
+  padding:0;
+  margin:0;
+  appearance:none;
+  -webkit-appearance:none;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid #ddd;
+  border-radius:999px;
+  background:#fff;
+  color:#333;
+  cursor:pointer;
+  font-size:0;
+  line-height:1;
+  box-sizing:border-box;
+}
+.paperlist-close::before,
+.paperlist-close::after{
+  content:'';
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:8px;
+  height:1.45px;
+  border-radius:999px;
+  background:currentColor;
+  transform-origin:center;
+}
+.paperlist-close::before{ transform:translate(-50%, -50%) rotate(45deg); }
+.paperlist-close::after{ transform:translate(-50%, -50%) rotate(-45deg); }
+.paperlist-close:hover{
+  background:darkred;
+  color:#fff;
 }
 
 /* 内容卡壳 */

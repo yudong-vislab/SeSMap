@@ -63,9 +63,7 @@ body,
 .add-btn,
 .filter-btn,
 /* .save-btn, */
-.tool-btn,
-.select-btn,
-.clear-btn {
+.tool-btn {
   display: inline-flex;
   /* 用 flex 居中 */
   align-items: center;
@@ -85,9 +83,7 @@ body,
 .add-btn:hover,
 .filter-btn:hover,
 /* .save-btn:hover, */
-.tool-btn:hover,
-.select-btn:hover,
-.clear-btn:hover {
+.tool-btn:hover {
   background: #f7f7f7;
 }
 
@@ -279,111 +275,101 @@ body,
   z-index: 9999;
 }
 
-/* 子空间右上角删除按钮（hover 变深红） */
-.subspace-close {
-  position: absolute;
-  top: 6px;
-  right: 8px;
-  padding: 6px 8px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin: 5px 0 2px 0;
-  width: 18px;
-  height: 18px;
-  border: 1px solid #ddd;
-  border-radius: 999px;
-  background: #fff;
-  cursor: pointer;
-  z-index: 30;
-}
-
-.subspace-close:hover {
-  background: darkred;
-  color: #fff;
-}
-
-/* 子空间右上角新增按钮（加号）——hover 不变色 */
-.subspace-add {
-  position: absolute;
-  top: 6px;
-  right: 32px;          /* 放在关闭按钮左侧（关闭是 right:8px） */
-  padding: 6px 8px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin: 5px 0 2px 0;
-  width: 18px;
-  height: 18px;
-  border: 1px solid #ddd;
-  border-radius: 999px;
-  background: #fff;
-  cursor: pointer;
-  z-index: 30;
-  color: #333;
-}
-
-/* 保持 hover 不变色（与 close 区分开） */
-.subspace-add:hover {
-  background: #e9c46b;
-  color: #333;
-}
-
-.subspace-release {
-  position: absolute;
-  top: 6px;
-  right: 56px;          /* 放在关闭按钮左侧（关闭是 right:8px） */
-  padding: 6px 8px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin: 5px 0 2px 0;
-  width: 18px;
-  height: 18px;
-  border: 1px solid #ddd;
-  border-radius: 999px;
-  background: #fff;
-  cursor: pointer;
-  z-index: 30;
-  color: #333;
-}
-
-/* 保持 hover 不变色（与 close 区分开） */
-.subspace-release:hover {
-  background: #e5e7eb;
-  color: #333;
-}
-
-/* 子空间右上角布局切换按钮（Hex ⬢ / Scatter •） */
+/* 子空间右上角工具按钮 */
+.subspace-close,
+.subspace-add,
+.subspace-release,
 .subspace-layout {
   position: absolute;
-  top: 6px;
-  right: 80px;          /* 放在复原按钮左侧：56px -> 80px */
-  padding: 6px 8px;
+  top: 11px;
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  max-width: 18px;
+  min-height: 18px;
+  max-height: 18px;
+  padding: 0;
+  margin: 0;
+  appearance: none;
+  -webkit-appearance: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin: 5px 0 2px 0;
-
-  width: 18px;
-  height: 18px;
-
   border: 1px solid #ddd;
   border-radius: 999px;
   background: #fff;
+  color: #333;
   cursor: pointer;
   z-index: 30;
-
-  color: #333;
-  font-size: 12px;      /* 让 ⬢ / • 更清晰 */
+  font-size: 0;
   line-height: 1;
-  user-select: none;
+  box-sizing: border-box;
 }
+.subspace-close { right: 8px; }
+.subspace-add { right: 32px; }
+.subspace-release { right: 56px; }
+.subspace-layout { right: 80px; }
 
-/* hover 行为：与复原按钮一致（浅灰） */
-.subspace-layout:hover {
-  background: #e5e7eb;
-  color: #333;
+.subspace-close:hover { background: darkred; color: #fff; }
+.subspace-add:hover { background: #e9c46b; color: #333; }
+.subspace-release:hover,
+.subspace-layout:hover { background: #e5e7eb; color: #333; }
+
+.subspace-layout::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background: currentColor;
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0 50%);
+  pointer-events: none;
+}
+.subspace-layout[data-layout-mode="scatter"]::before {
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  clip-path: none;
+}
+.subspace-layout.is-scatter::before {
+  background: currentColor;
+}
+.subspace-close::before,
+.subspace-close::after,
+.subspace-add::before,
+.subspace-add::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 8px;
+  height: 1.45px;
+  border-radius: 999px;
+  background: currentColor;
+  transform-origin: center;
+}
+.subspace-close::before { transform: translate(-50%, -50%) rotate(45deg); }
+.subspace-close::after { transform: translate(-50%, -50%) rotate(-45deg); }
+.subspace-add::before { transform: translate(-50%, -50%); }
+.subspace-add::after { transform: translate(-50%, -50%) rotate(90deg); }
+.subspace-release::before {
+  content: none;
+}
+.subspace-release::after {
+  content: none;
+}
+.subspace-release svg {
+  width: 10.5px;
+  height: 10.5px;
+  display: block;
+  stroke: currentColor;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  pointer-events: none;
 }
 
 /* （可选）当处于 scatter 模式时，给按钮一个“按下/激活”态

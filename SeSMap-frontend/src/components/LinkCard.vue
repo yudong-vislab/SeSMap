@@ -3,23 +3,34 @@
   <section class="subcard" :class="{ 'expanded': showOriginal }">
     <!-- ⓪ Subspace(s) 标签 -->
     <div class="subcard__meta" v-if="subspaceTrail.length > 0">
-      <span class="meta-label">{{ subspaceTrail.length > 1 ? 'Subspaces' : 'Subspace' }}:</span>
-      <span class="meta-names">
-        <template v-for="(name, idx) in subspaceTrail" :key="`${name}-${idx}`">
-          <span class="meta-name">{{ name }}</span>
-          <span
-            v-if="idx < subspaceTrail.length - 1"
-            class="meta-arrow"
-            aria-hidden="true"
-          ></span>
-        </template>
-      </span>
+      <div class="subcard__meta-main">
+        <span class="meta-label">{{ subspaceTrail.length > 1 ? 'Subspaces' : 'Subspace' }}:</span>
+        <span class="meta-names">
+          <template v-for="(name, idx) in subspaceTrail" :key="`${name}-${idx}`">
+            <span class="meta-name">{{ name }}</span>
+            <span
+              v-if="idx < subspaceTrail.length - 1"
+              class="meta-arrow"
+              aria-hidden="true"
+            ></span>
+          </template>
+        </span>
+      </div>
+      <button
+        class="subcard-close"
+        type="button"
+        title="Close this saved selection"
+        aria-label="Close this saved selection"
+        @click.stop="emit('close-link')"
+      >
+        ×
+      </button>
     </div>
 
     <!-- ① Hex 概览 + Summarize 按钮（新增） -->
     <!-- ① Hex 概览（按钮与 hex 同层，绝对定位到右侧，垂直居中） -->
      <div class="subcard__hex">
-       <div class="hex-scroll">
+       <div class="hex-scroll" ref="hexScrollRef">
          <svg ref="svgRef" class="mini" />
        </div>
        <button
@@ -127,17 +138,20 @@ const props = defineProps({
   borderWidthByNode: { type: [Object, Map], default: () => ({}) },
   fillByNode: { type: [Object, Map], default: () => ({}) },
 })
-const emit = defineEmits(['resize-card-delta'])
+const emit = defineEmits(['resize-card-delta', 'close-link'])
 
 const svgRef = ref(null)
+const hexScrollRef = ref(null)
 const sourceRef = ref(null)
 const llmRef = ref(null)
 let mini = null
+let miniResizeObserver = null
 
 const showOriginal = ref(false)
 const llmSummary = ref('')
 const llmLoading = ref(false)
 const llmError = ref('')
+let miniHeight = null
 const sourceHeight = ref(null)
 const llmHeight = ref(null)
 const sectionResize = {
@@ -221,6 +235,14 @@ function stopSectionResize() {
   document.body.classList.remove('is-section-resizing')
   window.removeEventListener('mousemove', onSectionResizeMove)
   window.removeEventListener('mouseup', stopSectionResize)
+}
+
+function onMiniSize(size) {
+  const next = Number(size?.height) || 30
+  const baseline = miniHeight == null ? 30 : miniHeight
+  miniHeight = next
+  const delta = next - baseline
+  if (delta > 0) emit('resize-card-delta', delta)
 }
 
 // 勾选状态：存 uid（= HSU key + '#' + MSU id），确保同一 MSU 出现在不同 HSU 时不混淆
@@ -545,12 +567,34 @@ onMounted(() => {
     borderColorByNode: props.borderColorByNode,
     borderWidthByNode: props.borderWidthByNode,
     fillByNode: props.fillByNode,
+    onSize: onMiniSize,
     pickedId: pickedNodeKey.value,          // ★ 同步当前选中（初始为空）
     onPick: (key /* "panelIdx:q,r" or null */) => {
       pickedNodeKey.value = key
     }
 
   })
+  if (typeof ResizeObserver !== 'undefined' && hexScrollRef.value) {
+    miniResizeObserver = new ResizeObserver(() => {
+      mini?.update({
+        link: props.link,
+        nodes: props.nodes,
+        startCountMap: props.startCountMap,
+        colorByCountry: props.colorByCountry,
+        colorByPanelCountry: props.colorByPanelCountry,
+        normalizeCountryId: props.normalizeCountryId,
+        alphaByNode: props.alphaByNode,
+        defaultAlpha: props.defaultAlpha,
+        borderColorByNode: props.borderColorByNode,
+        borderWidthByNode: props.borderWidthByNode,
+        fillByNode: props.fillByNode,
+        onSize: onMiniSize,
+        pickedId: pickedNodeKey.value,
+        onPick: (key) => { pickedNodeKey.value = key }
+      })
+    })
+    miniResizeObserver.observe(hexScrollRef.value)
+  }
 })
 
 // 数据更新时刷新小卡
@@ -581,6 +625,7 @@ watch(
       borderColorByNode: props.borderColorByNode,
       borderWidthByNode: props.borderWidthByNode,
       fillByNode: props.fillByNode,
+      onSize: onMiniSize,
       pickedId: pickedNodeKey.value,        // ★ 每次更新保持选中样式
       onPick: (key) => { pickedNodeKey.value = key }
     })
@@ -590,6 +635,7 @@ watch(
 
 onBeforeUnmount(() => {
   stopSectionResize()
+  miniResizeObserver?.disconnect?.()
   mini?.destroy()
 })
 
@@ -634,16 +680,39 @@ onBeforeUnmount(() => {
   transition: all 0.3s ease;
   height:100%;
   min-height:0;
+  font-family:var(--app-font);
+  color:#374151;
 }
 .subcard.expanded { grid-template-rows: auto auto auto 7px auto 7px; }
-.subcard__meta{ padding:2px 2px 0 2px; line-height:1; font-size:12px; color:#6b7280; }
-.meta-label{ font-weight:600; margin-right:4px; }
+.subcard__meta{
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  padding:0 28px 0 2px;
+  line-height:1;
+  font-size:11px;
+  color:#6b7280;
+  min-height:22px;
+}
+.subcard__meta-main{
+  display:flex;
+  align-items:center;
+  min-width:0;
+  flex-wrap:nowrap;
+  line-height:1.2;
+  width:100%;
+}
+.meta-label{ font-weight:650; margin-right:4px; white-space:nowrap; flex:none; }
 .meta-names{
   display:inline-flex;
   align-items:center;
   flex-wrap:wrap;
   gap:3px;
-  font-weight:500;
+  font-weight:600;
+  min-width:0;
+  flex:1 1 auto;
 }
 .meta-name{ display:inline-flex; align-items:center; }
 .meta-arrow{
@@ -669,6 +738,51 @@ onBeforeUnmount(() => {
   border-left:7px solid currentColor;
   margin-left:-1px;
 }
+.subcard-close{
+  position:absolute;
+  top:50%;
+  right:2px;
+  transform:translateY(-50%);
+  width:18px;
+  height:18px;
+  min-width:18px;
+  max-width:18px;
+  min-height:18px;
+  max-height:18px;
+  padding:0;
+  margin:0;
+  appearance:none;
+  -webkit-appearance:none;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid #ddd;
+  border-radius:999px;
+  background:#fff;
+  color:#333;
+  cursor:pointer;
+  font-size:0;
+  line-height:1;
+  box-sizing:border-box;
+}
+.subcard-close::before,
+.subcard-close::after{
+  content:'';
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:8px;
+  height:1.45px;
+  border-radius:999px;
+  background:currentColor;
+  transform-origin:center;
+}
+.subcard-close::before{ transform:translate(-50%, -50%) rotate(45deg); }
+.subcard-close::after{ transform:translate(-50%, -50%) rotate(-45deg); }
+.subcard-close:hover{
+  background:darkred;
+  color:#fff;
+}
 
 .subcard__hex, .subcard__source, .subcard__llm{
   border:1px dashed #e5e7eb; border-radius:8px; padding:6px; min-height:40px;
@@ -678,15 +792,19 @@ onBeforeUnmount(() => {
   position: relative;        /* 让右侧按钮以本容器为定位参照 */
   display: flex;
   align-items: center;       /* 按钮与 hex 垂直对齐 */
-  height: 30px;              /* 与你原设计一致 */
+  min-height: 40px;
+  height: auto;
 }
 .hex-row{
   display:flex; align-items:center; justify-content:space-between; gap:8px; width:100%;
 }
 .hex-scroll{
-  max-width:100%; height:100%;
+  width:calc(100% - 150px);
+  max-width:calc(100% - 150px);
+  flex:0 0 calc(100% - 150px);
+  height:auto;
   display:flex; justify-content:flex-start; align-items:center;
-  overflow-x:auto; overflow-y:hidden; scrollbar-width:none;
+  overflow:visible; scrollbar-width:none;
 }
 
 .hex-scroll::-webkit-scrollbar{ height:0; }
@@ -746,8 +864,8 @@ onBeforeUnmount(() => {
 .llm-loading { font-size: 11px; color: #6b7280; padding: 7px 8px; }
 .llm-error { font-size: 11px; color: #ef4444; padding: 6px; }
 
-.placeholder{ color:#9ca3af; font-size:12px; }
-.mini{ height:100%; display:block; }
+.placeholder{ color:#9ca3af; font-size:11px; }
+.mini{ height:auto; display:block; overflow:visible; }
 
 .section-resize-handle{
   position:relative;
