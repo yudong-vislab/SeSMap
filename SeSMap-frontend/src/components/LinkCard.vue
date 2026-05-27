@@ -184,10 +184,7 @@ const extractParaInfo = (rawMsu) => {
  return combined.trim() || null
 }
 
-const paperPalette = [
- '#4C78A8', '#72B7B2', '#54A24B', '#B279A2', '#E45756',
- '#F58518', '#EECA3B', '#9D755D', '#7F7F7F', '#A0CBE8'
-]
+const DEFAULT_PAPER_DOT = '#DCDCDC'
 
 function pickMapValue(mapLike, key) {
  if (!mapLike || key == null) return null
@@ -247,10 +244,7 @@ function colorForPaper(countryId, panelIdx) {
  if (panelColor) return panelColor
  const globalColor = pickMapValue(props.colorByCountry, normalized)
  if (globalColor) return globalColor
- let h = 0
- const s = String(normalized || 'unknown')
- for (let i = 0; i < s.length; i++) h = (h * 33 + s.charCodeAt(i)) | 0
- return paperPalette[Math.abs(h) % paperPalette.length]
+ return DEFAULT_PAPER_DOT
 }
 
 const formatRawForDebug = (obj, limit = 2000) => {

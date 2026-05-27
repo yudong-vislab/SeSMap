@@ -6177,34 +6177,88 @@ function schedulePanelGeometryRefresh(panelIdx = null) {
   }
 
 function releaseSubspaceSelections(panelIdx) {
-  App._releaseToggleByPanel = App._releaseToggleByPanel || new Map();
-  if (App._releaseToggleByPanel.get(panelIdx)) {
-    // 第二次点击 → 仅重置当前子空间的点，不清国家边界/聚焦
-    resetSubspacePoints(panelIdx);
-    App._releaseToggleByPanel.set(panelIdx, false);
-    return;
-  }
-  // 第一次点击 → 执行释放效果
-  App._releaseToggleByPanel.set(panelIdx, true);
+  const panel = Number(panelIdx);
+  if (!Number.isInteger(panel)) return;
+
+  const keyBelongsToPanel = (key) => {
+    const s = String(key || '');
+    const [panelStr] = s.split('|');
+    return Number(panelStr) === panel;
+  };
 
   const dropKeysOfPanel = (set) => {
     if (!set || typeof set.forEach !== 'function') return;
-    const toDel = [];
-    set.forEach((k) => {
-      const s = String(k);
-      const p = s.split('|')[0];
-      if (p === panelIdx) toDel.push(k);
+    Array.from(set).forEach(k => {
+      if (keyBelongsToPanel(k)) set.delete(k);
     });
-    toDel.forEach(k => set.delete(k));
   };
+
+  const linkTouchesPanel = (link) => {
+    if (!link) return false;
+    if (link.panelIdx === panel || link.panelIdxFrom === panel || link.panelIdxTo === panel) return true;
+    const path = Array.isArray(link.path) ? link.path : [];
+    return path.some((point, i) => resolvePanelIdxForPathPoint(point, link, i) === panel);
+  };
+
+  const removedFlightIds = new Set();
+  const outsideKeysToKeep = new Set();
+  const collectOutsideKeysFromLink = (link) => {
+    const path = Array.isArray(link?.path) ? link.path : [];
+    path.forEach((point, i) => {
+      const pIdx = resolvePanelIdxForPathPoint(point, link, i);
+      if (pIdx !== panel) outsideKeysToKeep.add(pkey(pIdx, point.q, point.r));
+    });
+  };
+
+  App._lastLinks = (App._lastLinks || []).filter(link => {
+    const isFlight = (link?.type || '') === 'flight';
+    const remove = isFlight && linkTouchesPanel(link);
+    if (remove) {
+      const id = linkKey(link);
+      if (id && App.selectedRouteIds?.has?.(id)) collectOutsideKeysFromLink(link);
+      removedFlightIds.add(id);
+    }
+    return !remove;
+  });
+  stampSubspaceNamesOnAllLinks(App._lastLinks);
+
+  if (App.currentData && Array.isArray(App.currentData.links)) {
+    App.currentData.links = App._lastLinks;
+  }
+
+  Array.from(App.selectedRouteIds || []).forEach(routeId => {
+    if (removedFlightIds.has(routeId)) {
+      App.selectedRouteIds.delete(routeId);
+      return;
+    }
+    const link = (App._lastLinks || []).find(l => linkKey(l) === routeId);
+    if (link && linkTouchesPanel(link)) {
+      collectOutsideKeysFromLink(link);
+      App.selectedRouteIds.delete(routeId);
+    }
+  });
+
   dropKeysOfPanel(App.persistentHexKeys);
   dropKeysOfPanel(App.highlightedHexKeys);
   dropKeysOfPanel(App.excludedHexKeys);
-  App.hoveredHex = null;
-  App.flightHoverTarget = null;
+  dropKeysOfPanel(App.selectedEdgeKeys);
 
-  recomputePersistentFromRoutes();
-  drawOverlayLinesFromLinks(App.selectedRouteIds.map(id => App.linksById.get(id)));
+  if (App.selectedHex?.panelIdx === panel) App.selectedHex = null;
+  if (App.hoveredHex?.panelIdx === panel) App.hoveredHex = null;
+  if (App.flightStart?.panelIdx === panel) App.flightStart = null;
+  if (App.flightHoverTarget?.panelIdx === panel) App.flightHoverTarget = null;
+  if (App.flightDraft && linkTouchesPanel(App.flightDraft)) App.flightDraft = null;
+
+  App._pendingColorEdit = null;
+  App._pendingConflictEdit = null;
+  App.lastSelectionKind = null;
+  App._releaseToggleByPanel?.set?.(panel, false);
+
+  recomputePersistentFromRoutesPreservingExtras();
+  outsideKeysToKeep.forEach(key => {
+    if (!keyBelongsToPanel(key)) App.persistentHexKeys.add(key);
+  });
+  drawOverlayLinesFromLinks(App._lastLinks, App.allHexDataByPanel, App.hexMapsByPanel, !!(App.flightStart || App.flightDraft));
   updateHexStyles();
   publishToStepAnalysis();
 }
