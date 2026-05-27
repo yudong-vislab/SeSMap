@@ -123,9 +123,9 @@ const STYLE = {
   FLIGHT_OPACITY: 0.98,
   FLIGHT_DASH: '3,2',
   FLIGHT_CONTROL_RATIO: 0.18,
-  FLIGHT_TEMP_WIDTH: 2,
-  FLIGHT_TEMP_OPACITY: 0.55,
-  FLIGHT_TEMP_DASH: '8,6',
+  FLIGHT_TEMP_WIDTH: 1.2,
+  FLIGHT_TEMP_OPACITY: 0.72,
+  FLIGHT_TEMP_DASH: '3,2',
 
   ROAD_COLOR: '#e9c46b',
   ROAD_WIDTH: 1.2,
@@ -4650,6 +4650,44 @@ const mode = getPanelLayoutMode(panelIdx);
       return hex ? [hex.x, hex.y] : null;
     };
 
+    const appendFlightArrow = (layer, p0, c1, p1, style, opacity) => {
+      const t = 0.5;
+      const mt = 1 - t;
+      const x = mt * mt * p0[0] + 2 * mt * t * c1[0] + t * t * p1[0];
+      const y = mt * mt * p0[1] + 2 * mt * t * c1[1] + t * t * p1[1];
+      const dx = 2 * mt * (c1[0] - p0[0]) + 2 * t * (p1[0] - c1[0]);
+      const dy = 2 * mt * (c1[1] - p0[1]) + 2 * t * (p1[1] - c1[1]);
+      const len = Math.hypot(dx, dy);
+      if (!len) return;
+      const ux = dx / len;
+      const uy = dy / len;
+      const px = -uy;
+      const py = ux;
+      const size = Math.max(5.5, (style.width || 1.2) * 4.8);
+      const half = size * 0.42;
+      const tip = [x + ux * size * 0.62, y + uy * size * 0.62];
+      const base = [x - ux * size * 0.55, y - uy * size * 0.55];
+      const left = [base[0] + px * half, base[1] + py * half];
+      const right = [base[0] - px * half, base[1] - py * half];
+      layer.append('path')
+        .attr('class', 'flight-arrow')
+        .attr('d', `M${tip[0]},${tip[1]} L${left[0]},${left[1]} L${right[0]},${right[1]} Z`)
+        .attr('fill', style.color)
+        .attr('fill-opacity', opacity ?? style.opacity ?? 0.9)
+        .style('pointer-events', 'none');
+    };
+
+    const appendFlightCurve = (layer, p0, c1, p1, style, width, opacity, dash) => {
+      layer.append('path')
+        .attr('d', `M${p0[0]},${p0[1]} Q${c1[0]},${c1[1]} ${p1[0]},${p1[1]}`)
+        .attr('stroke', style.color)
+        .attr('stroke-width', width)
+        .attr('stroke-opacity', opacity)
+        .attr('fill', 'none')
+        .attr('stroke-dasharray', dash || null);
+      appendFlightArrow(layer, p0, c1, p1, { ...style, width }, opacity);
+    };
+
     (links || []).forEach(link => {
       const type  = link.type || 'road';
       const style = styleOf(type);
@@ -4692,13 +4730,7 @@ const mode = getPanelLayoutMode(panelIdx);
           const curveOffset = Math.sign(dx) * style.controlCurveRatio * Math.sqrt(dx*dx + dy*dy);
           const c1x = mx + curveOffset, c1y = my - curveOffset;
 
-          gG.links.append('path')
-            .attr('d', `M${g0[0]},${g0[1]} Q${c1x},${c1y} ${g1[0]},${g1[1]}`)
-            .attr('stroke', style.color)
-            .attr('stroke-width', style.width)
-            .attr('stroke-opacity', style.opacity)
-            .attr('fill', 'none')
-            .attr('stroke-dasharray', style.dash || null);
+          appendFlightCurve(gG.links, g0, [c1x, c1y], g1, style, style.width, style.opacity, style.dash);
         }
       } else {
         // road/river：按过滤后的 pts 直接画，跳过被排除的中间点
@@ -4790,13 +4822,7 @@ const mode = getPanelLayoutMode(panelIdx);
           const curveOffset = Math.sign(dx) * style.controlCurveRatio * Math.sqrt(dx*dx + dy*dy);
           const c1x = mx + curveOffset, c1y = my - curveOffset;
 
-          gG.links.append('path')
-            .attr('d', `M${p0[0]},${p0[1]} Q${c1x},${c1y} ${p1[0]},${p1[1]}`)
-            .attr('stroke', style.color)
-            .attr('stroke-width', style.tempWidth)
-            .attr('stroke-opacity', style.tempOpacity)
-            .attr('fill', 'none')
-            .attr('stroke-dasharray', style.tempDash);
+          appendFlightCurve(gG.links, p0, [c1x, c1y], p1, style, style.tempWidth, style.tempOpacity, style.tempDash);
         }
       }
     }

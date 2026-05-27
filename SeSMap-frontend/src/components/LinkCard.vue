@@ -2,9 +2,18 @@
 <template>
   <section class="subcard" :class="{ 'expanded': showOriginal }">
     <!-- ⓪ Subspace(s) 标签 -->
-    <div class="subcard__meta" v-if="(props.link?.panelNames?.length || 0) > 0">
-      <span class="meta-label">{{ props.link.panelNames.length > 1 ? 'Subspaces' : 'Subspace' }}:</span>
-      <span class="meta-names">{{ props.link.panelNames.join(' -> ') }}</span>
+    <div class="subcard__meta" v-if="subspaceTrail.length > 0">
+      <span class="meta-label">{{ subspaceTrail.length > 1 ? 'Subspaces' : 'Subspace' }}:</span>
+      <span class="meta-names">
+        <template v-for="(name, idx) in subspaceTrail" :key="`${name}-${idx}`">
+          <span class="meta-name">{{ name }}</span>
+          <span
+            v-if="idx < subspaceTrail.length - 1"
+            class="meta-arrow"
+            aria-hidden="true"
+          ></span>
+        </template>
+      </span>
     </div>
 
     <!-- ① Hex 概览 + Summarize 按钮（新增） -->
@@ -115,6 +124,14 @@ const showOriginal = ref(false)
 const llmSummary = ref('')
 const llmLoading = ref(false)
 const llmError = ref('')
+
+const subspaceTrail = computed(() => {
+  const raw = Array.isArray(props.link?.panelNames) ? props.link.panelNames : [];
+  return raw
+    .flatMap(name => String(name ?? '').split(/\s*(?:->|→|➜|➔|➝)\s*/g))
+    .map(name => name.trim())
+    .filter(Boolean);
+})
 
 // 勾选状态：存 uid（= HSU key + '#' + MSU id），确保同一 MSU 出现在不同 HSU 时不混淆
 const selectedMsus = ref(new Set())
@@ -528,7 +545,23 @@ onBeforeUnmount(() => mini?.destroy())
 .subcard.expanded { grid-template-rows: auto auto auto auto; }
 .subcard__meta{ padding:2px 2px 0 2px; line-height:1; font-size:12px; color:#6b7280; }
 .meta-label{ font-weight:600; margin-right:4px; }
-.meta-names{ font-weight:500; }
+.meta-names{
+  display:inline-flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:3px;
+  font-weight:500;
+}
+.meta-name{ display:inline-flex; align-items:center; }
+.meta-arrow{
+  width:0;
+  height:0;
+  border-top:4px solid transparent;
+  border-bottom:4px solid transparent;
+  border-left:7px solid currentColor;
+  opacity:.78;
+  transform:translateY(.5px);
+}
 
 .subcard__hex, .subcard__source, .subcard__llm{
   border:1px dashed #e5e7eb; border-radius:8px; padding:6px; min-height:40px;

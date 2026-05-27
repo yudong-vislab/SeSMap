@@ -118,6 +118,39 @@ function drawCityOrCapital(g, count) {
   }
 }
 
+function appendSegmentArrows(layer, coords, style) {
+  if (!Array.isArray(coords) || coords.length < 2) return;
+
+  for (let i = 0; i < coords.length - 1; i++) {
+    const a = coords[i];
+    const b = coords[i + 1];
+    const dx = b.x - a.x;
+    const dy = b.y - a.y;
+    const len = Math.hypot(dx, dy);
+    if (!len) continue;
+
+    const ux = dx / len;
+    const uy = dy / len;
+    const px = -uy;
+    const py = ux;
+    const x = (a.x + b.x) / 2;
+    const y = (a.y + b.y) / 2;
+    const size = Math.max(4.8, (style.width || 1.2) * 4.2);
+    const half = size * 0.42;
+    const tip = [x + ux * size * 0.58, y + uy * size * 0.58];
+    const base = [x - ux * size * 0.52, y - uy * size * 0.52];
+    const left = [base[0] + px * half, base[1] + py * half];
+    const right = [base[0] - px * half, base[1] - py * half];
+
+    layer.append('path')
+      .attr('class', 'mini-link-arrow')
+      .attr('d', `M${tip[0]},${tip[1]} L${left[0]},${left[1]} L${right[0]},${right[1]} Z`)
+      .attr('fill', style.stroke)
+      .attr('fill-opacity', style.opacity ?? 0.95)
+      .style('pointer-events', 'none');
+  }
+}
+
 /**
  * 迷你预览（右卡片）
  * 新增支持：
@@ -281,6 +314,10 @@ export function mountMiniLink(
       .attr('stroke-width', s.width).attr('stroke-opacity', s.opacity)
       .attr('stroke-dasharray', s.dash)
       .style('pointer-events','none'); // ★ 让背景能接收到 click，用于“清除筛选”
+
+    if (link?.type === 'flight') {
+      appendSegmentArrows(gLinks, coords, s);
+    }
  
       // ★ 背景点击 = 清除筛选（恢复显示全部 MSU）
       svg.on('click', () => {
