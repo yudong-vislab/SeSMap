@@ -57,7 +57,6 @@
   font-size: 21px;
   line-height: 1;
   font-weight: 800;
-  font-style: italic;
   letter-spacing: .2px;
   color: transparent;
   background: linear-gradient(90deg, #ffffff 0%, #ccfff5 38%, #fff5bd 70%, #ffd4df 100%);

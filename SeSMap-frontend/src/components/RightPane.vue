@@ -50,11 +50,7 @@
                 :borderColorByNode="step.borderColorByNode"  
                 :borderWidthByNode="step.borderWidthByNode"  
                 :fillByNode="step.fillByNode"                
-              />
-              <div
-                class="link-resize-handle"
-                title="Drag to resize this card"
-                @mousedown="startLinkResize(i, j, $event)"
+                @resize-card-delta="resizeLinkByDelta(i, j, $event)"
               />
             </div>
           </div>
@@ -78,13 +74,6 @@ const LINK_PER_MSU_HEIGHT = 62
 const LINK_INITIAL_VISIBLE_MSU_LIMIT = 4
 const MIN_LINK_HEIGHT = 230
 const MAX_LINK_HEIGHT = 900
-const resizing = reactive({
-  active: false,
-  stepIdx: -1,
-  linkIdx: -1,
-  startY: 0,
-  startHeight: MIN_LINK_HEIGHT
-})
 
 const defaultTitle = (step, i) => {
   const t = step.createdAt ? new Date(step.createdAt) : new Date()
@@ -147,7 +136,6 @@ onMounted(() => {
 
 onBeforeUnmount(() => {
   offSaved?.()
-  stopLinkResize()
 })
 
 function clampLinkHeight(v) {
@@ -189,42 +177,13 @@ function getInitialLinkHeight(link, nodes) {
   return computeInitialLinkHeight(link, nodes)
 }
 
-function startLinkResize(stepIdx, linkIdx, e) {
-  e.preventDefault()
-  e.stopPropagation()
+function resizeLinkByDelta(stepIdx, linkIdx, delta) {
   const step = steps.value[stepIdx]
   const link = step?.links?.[linkIdx]
-  if (!link) return
-
-  const card = e.currentTarget?.closest?.('.subcards__item')
-  resizing.active = true
-  resizing.stepIdx = stepIdx
-  resizing.linkIdx = linkIdx
-  resizing.startY = e.clientY
-  resizing.startHeight = clampLinkHeight(link.height || card?.getBoundingClientRect?.().height || getInitialLinkHeight(link, step.nodes || []))
-
-  document.body.classList.add('is-link-resizing')
-  window.addEventListener('mousemove', onLinkResizeMove)
-  window.addEventListener('mouseup', stopLinkResize)
-}
-
-function onLinkResizeMove(e) {
-  if (!resizing.active || resizing.stepIdx < 0 || resizing.linkIdx < 0) return
-  const step = steps.value[resizing.stepIdx]
-  const link = step?.links?.[resizing.linkIdx]
-  if (!link) return
-  const next = clampLinkHeight(resizing.startHeight + (e.clientY - resizing.startY))
-  link.height = next
-}
-
-function stopLinkResize() {
-  if (!resizing.active) return
-  resizing.active = false
-  resizing.stepIdx = -1
-  resizing.linkIdx = -1
-  document.body.classList.remove('is-link-resizing')
-  window.removeEventListener('mousemove', onLinkResizeMove)
-  window.removeEventListener('mouseup', stopLinkResize)
+  const amount = Number(delta) || 0
+  if (!link || !amount) return
+  const base = link.height || getInitialLinkHeight(link, step.nodes || [])
+  link.height = clampLinkHeight(base + amount)
 }
 
 /**
@@ -334,7 +293,7 @@ function onTitleKey(i, evt) {
 const dragging = reactive({ from: null, to: null });
 
 function onDragStart(stepIdx, linkIdx, e) {
-  if (resizing.active || e.target?.closest?.('.link-resize-handle')) {
+  if (e.target?.closest?.('.section-resize-handle')) {
     e.preventDefault()
     return
   }
@@ -465,7 +424,7 @@ function onDragEnd() { dragging.from = dragging.to = null; }
 .subcards__item{
   border-radius:10px;
   display:grid;
-  grid-template-rows:minmax(0, 1fr) 9px;
+  grid-template-rows:minmax(0, 1fr);
   min-height:230px;
   overflow:hidden;
 }
@@ -474,35 +433,4 @@ function onDragEnd() { dragging.from = dragging.to = null; }
   min-height:0;
 }
 .subcards__item.is-drag-over{ outline:2px dashed #93c5fd; outline-offset:2px; }
-
-.link-resize-handle{
-  position:relative;
-  height:9px;
-  cursor:ns-resize;
-  touch-action:none;
-  border-radius:0 0 10px 10px;
-  background:transparent;
-}
-.link-resize-handle::before{
-  content:'';
-  position:absolute;
-  left:50%;
-  bottom:3px;
-  width:34px;
-  height:2px;
-  transform:translateX(-50%);
-  border-radius:999px;
-  background:#d1d5db;
-  opacity:.55;
-  transition:opacity .12s ease;
-}
-.subcards__item:hover .link-resize-handle::before,
-.link-resize-handle:hover::before{
-  opacity:1;
-}
-
-:global(body.is-link-resizing){
-  cursor:ns-resize;
-  user-select:none;
-}
 </style>

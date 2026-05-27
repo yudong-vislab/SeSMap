@@ -35,7 +35,7 @@
 
 
     <!-- ② 原文句子 - 显示当前link关联的MSU句子（含勾选） -->
-    <div class="subcard__source">
+    <div class="subcard__source" ref="sourceRef" :style="sourcePanelStyle">
        <div v-if="displayMsuSentences.length > 0" class="msu-sentences">
          <!-- ★ 使用 displayMsuSentences：点击节点时仅显示该 HSU 的 MSU，点击空白恢复全部 -->
          <div v-for="(msu, index) in displayMsuSentences" :key="msu.uid" class="msu-sentence">
@@ -75,11 +75,17 @@
       </div>
       <div v-else class="placeholder">No MSU sentences for this link</div>
     </div>
+    <div
+      class="section-resize-handle"
+      title="Drag to resize MSU area"
+      @mousedown="startSectionResize('source', $event)"
+    />
 
     <!-- ③ 大模型总结（展示点击按钮后的结果） -->
-    <div class="subcard__llm">
+    <div class="subcard__llm" ref="llmRef" :style="llmPanelStyle">
       <div v-if="llmSummary" class="llm-content">
-       Summary:  {{ llmSummary }}
+        <span class="llm-label">Summary:</span>
+        <span class="llm-text">{{ llmSummary }}</span>
       </div>
       <div v-else-if="llmLoading" class="llm-loading">
         LLM is summarizing...
@@ -89,6 +95,11 @@
       </div>
       <div v-else class="placeholder">LLM summary</div>
     </div>
+    <div
+      class="section-resize-handle"
+      title="Drag to resize LLM summary area"
+      @mousedown="startSectionResize('llm', $event)"
+    />
   </section>
 </template>
 
@@ -116,14 +127,35 @@ const props = defineProps({
   borderWidthByNode: { type: [Object, Map], default: () => ({}) },
   fillByNode: { type: [Object, Map], default: () => ({}) },
 })
+const emit = defineEmits(['resize-card-delta'])
 
 const svgRef = ref(null)
+const sourceRef = ref(null)
+const llmRef = ref(null)
 let mini = null
 
 const showOriginal = ref(false)
 const llmSummary = ref('')
 const llmLoading = ref(false)
 const llmError = ref('')
+const sourceHeight = ref(null)
+const llmHeight = ref(null)
+const sectionResize = {
+  active: false,
+  target: null,
+  startY: 0,
+  startHeight: 0,
+  lastHeight: 0
+}
+
+const SECTION_MIN_HEIGHT = {
+  source: 70,
+  llm: 48
+}
+const SECTION_MAX_HEIGHT = {
+  source: 620,
+  llm: 420
+}
 
 const subspaceTrail = computed(() => {
   const raw = Array.isArray(props.link?.panelNames) ? props.link.panelNames : [];
@@ -132,6 +164,64 @@ const subspaceTrail = computed(() => {
     .map(name => name.trim())
     .filter(Boolean);
 })
+
+const sourcePanelStyle = computed(() => (
+  sourceHeight.value == null ? {} : { height: `${sourceHeight.value}px` }
+))
+const llmPanelStyle = computed(() => (
+  llmHeight.value == null ? {} : { height: `${llmHeight.value}px` }
+))
+
+const clampSectionHeight = (target, value) => {
+  const min = SECTION_MIN_HEIGHT[target] ?? 48
+  const max = SECTION_MAX_HEIGHT[target] ?? 500
+  return Math.max(min, Math.min(max, Number(value) || min))
+}
+
+function startSectionResize(target, event) {
+  event.preventDefault()
+  event.stopPropagation()
+
+  const el = target === 'llm' ? llmRef.value : sourceRef.value
+  if (!el) return
+
+  const current = clampSectionHeight(target, el.getBoundingClientRect().height)
+  if (target === 'llm') llmHeight.value = current
+  else sourceHeight.value = current
+
+  sectionResize.active = true
+  sectionResize.target = target
+  sectionResize.startY = event.clientY
+  sectionResize.startHeight = current
+  sectionResize.lastHeight = current
+
+  document.body.classList.add('is-section-resizing')
+  window.addEventListener('mousemove', onSectionResizeMove)
+  window.addEventListener('mouseup', stopSectionResize)
+}
+
+function onSectionResizeMove(event) {
+  if (!sectionResize.active || !sectionResize.target) return
+  const target = sectionResize.target
+  const next = clampSectionHeight(target, sectionResize.startHeight + (event.clientY - sectionResize.startY))
+  const delta = next - sectionResize.lastHeight
+  if (!delta) return
+
+  if (target === 'llm') llmHeight.value = next
+  else sourceHeight.value = next
+
+  sectionResize.lastHeight = next
+  emit('resize-card-delta', delta)
+}
+
+function stopSectionResize() {
+  if (!sectionResize.active) return
+  sectionResize.active = false
+  sectionResize.target = null
+  document.body.classList.remove('is-section-resizing')
+  window.removeEventListener('mousemove', onSectionResizeMove)
+  window.removeEventListener('mouseup', stopSectionResize)
+}
 
 // 勾选状态：存 uid（= HSU key + '#' + MSU id），确保同一 MSU 出现在不同 HSU 时不混淆
 const selectedMsus = ref(new Set())
@@ -498,7 +588,10 @@ watch(
   { deep: true }
 )
 
-onBeforeUnmount(() => mini?.destroy())
+onBeforeUnmount(() => {
+  stopSectionResize()
+  mini?.destroy()
+})
 
 // ⚠️ 重要：移除“自动生成总结”的 watch，改为用户点击按钮才总结
 // （所以不再 watch(linkMsuSentences) 自动调用 generateSummary）
@@ -535,14 +628,14 @@ onBeforeUnmount(() => mini?.destroy())
 /* 原有样式（未改动） */
 .subcard{
   border:1px dashed #e5e7eb; border-radius:10px;
-  display:grid; gap:4px;
-  grid-template-rows:auto auto minmax(0, 1fr) auto;
+  display:grid; gap:2px;
+  grid-template-rows:auto auto minmax(0, 1fr) 7px auto 7px;
   padding:4px; background:#fff;
   transition: all 0.3s ease;
   height:100%;
   min-height:0;
 }
-.subcard.expanded { grid-template-rows: auto auto auto auto; }
+.subcard.expanded { grid-template-rows: auto auto auto 7px auto 7px; }
 .subcard__meta{ padding:2px 2px 0 2px; line-height:1; font-size:12px; color:#6b7280; }
 .meta-label{ font-weight:600; margin-right:4px; }
 .meta-names{
@@ -598,7 +691,7 @@ onBeforeUnmount(() => mini?.destroy())
 
 .hex-scroll::-webkit-scrollbar{ height:0; }
 
-.subcard__source { min-height:0; overflow-y: auto; transition: all 0.3s ease; }
+.subcard__source { min-height:0; overflow-y: auto; transition: height 0.12s ease; }
 .subcard.expanded .subcard__source { min-height:0; }
 .msu-sentences { font-size: 11px; line-height: 1.4; }
 .msu-sentence { margin-bottom: 8px; padding: 6px; background: #f9fafb; border-radius: 4px; border-left: 3px solid #e5e7eb; }
@@ -646,13 +739,49 @@ onBeforeUnmount(() => mini?.destroy())
 .para-info-content { color: #4b5563; font-size: 10px; line-height: 1.5; white-space: pre-wrap; }
 .para-info-raw { margin: 0; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; font-size: 10px; }
 
-.subcard__llm { max-height: 100px; overflow-y: auto; }
-.llm-content { font-size: 11px; line-height: 1.4; color: #374151; padding: 6px; background: #ffffff; border-radius: 4px; border-left: 3px solid #e5e7eb; }
-.llm-loading { font-size: 11px; color: #6b7280; font-style: italic; padding: 6px; }
+.subcard__llm { min-height:48px; overflow-y: auto; transition: height 0.12s ease; }
+.llm-content { font-size: 11px; line-height: 1.45; color: #374151; padding: 7px 8px; background: #ffffff; border-radius: 5px; border-left: 3px solid #d8dee8; }
+.llm-label{ font-weight:700; color:#1f2937; margin-right:4px; }
+.llm-text{ color:#374151; }
+.llm-loading { font-size: 11px; color: #6b7280; padding: 7px 8px; }
 .llm-error { font-size: 11px; color: #ef4444; padding: 6px; }
 
 .placeholder{ color:#9ca3af; font-size:12px; }
 .mini{ height:100%; display:block; }
+
+.section-resize-handle{
+  position:relative;
+  height:7px;
+  cursor:ns-resize;
+  touch-action:none;
+  background:transparent;
+  border-radius:999px;
+}
+.section-resize-handle::before{
+  content:'';
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:36px;
+  height:2px;
+  transform:translate(-50%, -50%);
+  border-radius:999px;
+  background:#cfd6df;
+  opacity:.72;
+  transition:opacity .12s ease, width .12s ease, background-color .12s ease;
+}
+.section-resize-handle:hover::before{
+  width:44px;
+  opacity:1;
+  background:#aeb7c2;
+}
+:global(body.is-section-resizing){
+  cursor:ns-resize;
+  user-select:none;
+}
+:global(body.is-section-resizing) .section-resize-handle::before{
+  opacity:1;
+}
 
 /* 选中节点更醒目（可按需调整颜色/粗细） */
 .mini :deep(.nodes-layer .node.hovered .hex) {

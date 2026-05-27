@@ -1529,7 +1529,7 @@ function refreshHoveredBucketTooltip() {
 
 
 function renderBucketTooltipHTML(bucket) {
-  if (!bucket) return '<i>No data</i>';
+  if (!bucket) return '<span style="opacity:.62">No data</span>';
   var panelIdx = bucket.panelIdx != null ? bucket.panelIdx : 0;
 
   var groups = new Map();
@@ -1581,8 +1581,10 @@ function renderBucketTooltipHTML(bucket) {
       // ✅ sumHtml 在这里定义，避免 Uncaught ReferenceError
       var sumHtml = sum ? renderMarkdownSafe(sum) : '';
 
-      html += '<div style="margin-left:18px;margin-top:2px;opacity:.95">'
-           +   (sumHtml ? ('Summary: ' + sumHtml) : '<i>No summary</i>')
+      html += '<div style="margin-left:18px;margin-top:3px;opacity:.95">'
+           +   (sumHtml
+                ? ('<span style="font-weight:700;color:#1f2937">Summary:</span> <span>' + sumHtml + '</span>')
+                : '<span style="opacity:.62">No summary</span>')
            + '</div>';
     }
 
@@ -2802,7 +2804,6 @@ function renderHexTooltipHTML({ color = '#999', msuCount = 0, summary = '' }) {
   const safeSummary = (summary || '').toString().trim();
   // 根据数量决定显示 "MSU" 还是 "MSUs"
   const label = msuCount === 1 ? 'MSU' : 'MSUs';
-  console.log('renderHexTooltipHTML', color, msuCount, summary);
   return `
     <div style="display:flex;align-items:center;gap:8px">
       <span style="
@@ -2810,7 +2811,7 @@ function renderHexTooltipHTML({ color = '#999', msuCount = 0, summary = '' }) {
         background:${color};flex:none;border:1px solid rgba(255,255,255,0.25)
       "></span>
       <span style="opacity:.9;flex:none"><b>${msuCount}</b> ${label}: </span>
-      <span style="opacity:.95;flex:1">${safeSummary || '<i style="opacity:.6">No summary</i>'}</span>
+      <span style="opacity:.95;flex:1">${safeSummary || '<span style="opacity:.62">No summary</span>'}</span>
     </div>
   `;
 }
@@ -2844,7 +2845,7 @@ function renderMSUTooltipHTML(d) {
       "></span>
       <div style="min-width:0">
         <div style="opacity:.85;margin-bottom:4px"><b>MSU ${sid}</b></div>
-        <div style="white-space:normal;word-break:break-word">${sent || '<i style="opacity:.6">No sentence</i>'}</div>
+        <div style="white-space:normal;word-break:break-word">${sent || '<span style="opacity:.62">No sentence</span>'}</div>
       </div>
     </div>
   `;
