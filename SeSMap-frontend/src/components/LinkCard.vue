@@ -554,13 +554,27 @@ onBeforeUnmount(() => mini?.destroy())
 }
 .meta-name{ display:inline-flex; align-items:center; }
 .meta-arrow{
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  width:16px;
+  height:8px;
+  opacity:.78;
+  transform:translateY(.5px);
+}
+.meta-arrow::before{
+  content:'';
+  width:10px;
+  border-top:2px solid currentColor;
+}
+.meta-arrow::after{
+  content:'';
   width:0;
   height:0;
   border-top:4px solid transparent;
   border-bottom:4px solid transparent;
   border-left:7px solid currentColor;
-  opacity:.78;
-  transform:translateY(.5px);
+  margin-left:-1px;
 }
 
 .subcard__hex, .subcard__source, .subcard__llm{
