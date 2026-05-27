@@ -30,11 +30,27 @@ const aggregationRange = ref(12)
 </script>
 
 <style>
-html, body, #app { height: 100%; margin: 0; background: #f3f4f6; }
+html, body, #app {
+  height: 100%;
+  margin: 0;
+  background: #f3f4f6;
+  font-family: var(--app-font);
+  color: #1f2937;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
 
 /* 固定一个 CSS 变量作为顶栏高度，方便后续统一改 */
 :root{
   --titlebar-h: 40px;   /* 你要的“扁扁一条”高度 */
+  --app-font: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, "Helvetica Neue", sans-serif;
+  --panel-title-size: 14px;
+  --panel-title-weight: 650;
 }
 
 .app-container {
@@ -76,8 +92,8 @@ html, body, #app { height: 100%; margin: 0; background: #f3f4f6; }
 .col-center::-webkit-scrollbar { width: 0; height: 0; }
 
 .card__title {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: var(--panel-title-size);
+  font-weight: var(--panel-title-weight);
   color: #333;
   border-bottom: 1px solid #eee;
   padding: 8px;

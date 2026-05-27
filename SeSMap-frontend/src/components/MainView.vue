@@ -222,8 +222,8 @@ function onSave() {
 /* 标题文字 */
 .mv-title {
   margin: 0;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: var(--panel-title-size);
+  font-weight: var(--panel-title-weight);
   color: #333;
 }
 
@@ -301,7 +301,7 @@ function onSave() {
 /* —— 主标题默认态：与 subspace-title 的非编辑态保持风格一致 —— */
 .mv-title.editable-title {
   cursor: text;                /* 双击后会进入编辑，保持 I-beam 语义 */
-  font-size: 16px;
+  font-size: var(--panel-title-size);
   color: #333;
   margin: 5px 0 2px 0;
   pointer-events: auto;

@@ -492,7 +492,6 @@ async function handleSend(msg) {
         <div class="cp-block">
           <div class="cp-label-top">Global System Prompt</div>
           <textarea class="cp-input cp-textarea" v-model="systemPrompt" />
-          <div class="cp-hint">Keep concise.</div>
         </div>
 
         <div class="cp-divider"></div>
@@ -573,8 +572,8 @@ async function handleSend(msg) {
 /* 布局 */
 .lp-shell{ height:100%; display:grid; grid-template-rows:1.55fr 1.3fr 1.5fr; gap:6px; background:#f3f4f6; overflow:hidden; }
 .lp-card{ --r:12px; background:#fff; border-radius:var(--r); display:flex; flex-direction:column; min-height:0; overflow:hidden; }
-.card__title{ font-size:13px; font-weight:600; color:#333; border-bottom:1px solid #eee; padding:8px 10px; }
-.lp-card__body{ padding:4px 6px; overflow:auto; min-height:0; border-bottom-left-radius:var(--r); border-bottom-right-radius:var(--r); background-clip:padding-box; scrollbar-width:none; }
+.card__title{ font-size:var(--panel-title-size); font-weight:var(--panel-title-weight); color:#333; border-bottom:1px solid #eee; padding:8px 10px; }
+.lp-card__body{ padding:6px 8px; overflow:auto; min-height:0; border-bottom-left-radius:var(--r); border-bottom-right-radius:var(--r); background-clip:padding-box; scrollbar-width:none; }
 .lp-card__body::-webkit-scrollbar{ width:0; height:0; }
 
 /* Chat */
@@ -598,13 +597,13 @@ async function handleSend(msg) {
 }
 
 /* Control Panel — Gray Theme (colors only) */
-.cp-stack{ display:flex; flex-direction:column; gap:6px; }
-.cp-block{ display:flex; flex-direction:column; gap:4px; }
+.cp-stack{ display:flex; flex-direction:column; gap:7px; }
+.cp-block{ display:flex; flex-direction:column; gap:5px; }
 
-.cp-label-top{ font-size:11px; color:#333; font-weight:600; }
+.cp-label-top{ font-size:11px; color:#374151; font-weight:650; }
 
 .cp-input{
-  width:100%; box-sizing:border-box; font-size:11px;
+  width:100%; box-sizing:border-box; font-size:12px;
   color:#111; background:#fff; border:1px solid #d1d5db; border-radius:6px;
 }
 .cp-input::placeholder{ color:#9ca3af; }
@@ -617,14 +616,14 @@ async function handleSend(msg) {
 .cp-select:focus{ outline:none; border-color:#cbd5e1; box-shadow:0 0 0 3px #e5e7eb; }
 
 .cp-textarea{
-  min-height:90px; font-size:9px; line-height:1.4; padding:6px 8px; resize:vertical;
+  min-height:108px; font-size:11px; line-height:1.45; padding:8px 9px; resize:vertical;
   color:#111; background:#fff; border:1px solid #d1d5db; border-radius:6px;
 }
 .cp-textarea::placeholder{ color:#9ca3af; }
 .cp-textarea:focus{ outline:none; border-color:#cbd5e1; box-shadow:0 0 0 3px #e5e7eb; }
 
 .cp-file-input{
-  font-size:11px; padding:6px 8px; color:#111;
+  font-size:11px; padding:7px 8px; color:#111;
   border:1px dashed #d1d5db; border-radius:6px; background:#f7f7f7;
 }
 .cp-file-input:hover{ background:#f3f4f6; }
@@ -640,7 +639,7 @@ async function handleSend(msg) {
   background:#fff; border:1px solid #d1d5db; border-radius:6px; }
 .cp-unit{ font-size:11px; color:#666; min-width:16px; }
 .cp-hint{ font-size:10px; color:#777; margin-top:2px; }
-.cp-divider{ width:100%; border-bottom:1px dashed #ddd; margin:4px 0; }
+.cp-divider{ width:100%; border-bottom:1px dashed #ddd; margin:5px 0; }
 
 /* 操作区按钮容器（保持灰系即可） */
 .mv-actions{ display:flex; align-items:center; gap:8px; float:right; }
