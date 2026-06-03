@@ -41,6 +41,20 @@ Rules:
 - Output ONLY strict JSON: {"RouteSummary":"..."}.
 """).strip()
 
+PROMPT_STEP_TITLE = os.getenv("PROMPT_STEP_TITLE", """
+You generate short editable titles for saved Stepwise Analysis steps in SeSMap.
+
+Rules:
+- Use only the evidence provided by the user.
+- Produce a plain-language title for the selected evidence, not a route report.
+- Focus on the shared technical topic, evidence relationship, or cross-subspace transition.
+- If the selection crosses subspaces, name the conceptual transition only when it is supported by the evidence.
+- Do not mention UI route types such as flight, road, or river unless those words appear in the evidence itself.
+- Do not include HSU ids, MSU ids, panelIdx values, coordinates, timestamps, or the word "Step".
+- Do not output JSON, dictionaries, arrays, key-value fields, markdown, bullets, quotation marks, or code fences.
+- Output plain text only: one English phrase, 6-14 words.
+""").strip()
+
 PROMPT_HSU_HOVER_SUMMARY = os.getenv("PROMPT_HSU_HOVER_SUMMARY", """
 You summarize one dynamically aggregated HSU for a hover tooltip in SeSMap.
 
@@ -57,6 +71,7 @@ TASK_PROMPTS = {
     "literature": PROMPT_LITERATURE_SEARCH,
     "subspace":   PROMPT_SUBSPACE_ANALYSIS,
     "msu_summary": PROMPT_MSU_SUMMARY,  # ✨ 新增
+    "step_title": PROMPT_STEP_TITLE,
     "hsu_hover_summary": PROMPT_HSU_HOVER_SUMMARY,
 }
 
@@ -887,7 +902,26 @@ def query_gpt():
             "meta": {}
         }), 200
 
-    # 0.5) MSU 摘要：Stepwise Analysis View / LinkCard 的 Summarize 按钮专用。
+    # 0.5) Stepwise Analysis View 的自动标题：必须与 RouteSummary JSON 摘要分流。
+    if task_type == "step_title":
+        try:
+            resp = client.chat.completions.create(
+                model=model_for("summary"),
+                messages=[
+                    {"role": "system", "content": PROMPT_STEP_TITLE},
+                    {"role": "user", "content": user_query}
+                ],
+                temperature=0.15,
+                max_tokens=80,
+                timeout=20.0
+            )
+            answer = resp.choices[0].message.content
+            return app.response_class(answer, mimetype="text/plain"), 200
+        except Exception as e:
+            print("[Step title] error:", e)
+            return app.response_class(f"Step title error: {str(e)}", mimetype="text/plain"), 500
+
+    # 0.6) MSU 摘要：Stepwise Analysis View / LinkCard 的 Summarize 按钮专用。
     # 这类 prompt 中会自然出现 subspace/case/MSU 等词，不应再走 RAG 意图识别。
     if task_type == "msu_summary":
         try:
@@ -907,7 +941,7 @@ def query_gpt():
             print("[MSU summary] error:", e)
             return app.response_class(f"MSU summary error: {str(e)}", mimetype="text/plain"), 500
 
-    # 0.6) 动态聚合后的 HSU hover 摘要：按需调用，前端会缓存。
+    # 0.7) 动态聚合后的 HSU hover 摘要：按需调用，前端会缓存。
     if task_type == "hsu_hover_summary":
         try:
             resp = client.chat.completions.create(

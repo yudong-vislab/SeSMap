@@ -211,9 +211,9 @@ function onSave() {
   position: sticky;     /* 如果你希望它在大容器滚动时仍吸顶，可以 sticky；当前父容器不滚，fixed/relative 都行 */
   top: 0;
   z-index: 10;
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   align-items: center;
-  justify-content: space-between; /* 左侧标题 & 右侧按钮 */
   padding: 8px;
   background: #fff;     /* 固定栏底色 */
   border-bottom: 1px solid #eee;
@@ -222,15 +222,18 @@ function onSave() {
 /* 标题文字 */
 .mv-title {
   margin: 0;
+  min-width: 0;
   font-size: var(--panel-title-size);
   font-weight: var(--panel-title-weight);
   color: #333;
+  justify-self: start;
 }
 
 /* 右侧按钮容器：横向排列、保持右对齐 */
 .mv-actions {
   display: flex;
   align-items: center;
+  justify-self: end;
   gap: 8px;             /* 两个按钮间距 */
 }
 
@@ -272,8 +275,9 @@ function onSave() {
 .mode-toolbar{
   display:flex;
   align-items:center;
+  justify-self:center;
   gap:6px;
-  margin-left:12px;   /* 让按钮与标题有点间距 */
+  margin:0;
 }
 
 .mode-btn{

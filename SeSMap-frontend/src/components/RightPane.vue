@@ -205,13 +205,41 @@ function paperOfMsu(msu, node) {
   return node?.paper || node?.paperLabel || node?.source || node?.paperId || node?.paper_id || null
 }
 
+function resolvePanelIdxForTitlePoint(point, link, pointIdx) {
+  const direct = Number(point?.panelIdx)
+  if (Number.isFinite(direct)) return direct
+
+  const type = String(link?.type || '').toLowerCase()
+  if (type === 'flight') {
+    const lastIdx = Array.isArray(link?.path) ? link.path.length - 1 : 0
+    const endpoint =
+      pointIdx === 0 ? link?.from :
+      pointIdx === lastIdx ? link?.to :
+      null
+    const endpointIdx = Number(endpoint?.panelIdx)
+    if (Number.isFinite(endpointIdx)) return endpointIdx
+
+    const namedIdx = Number(pointIdx === 0 ? link?.panelIdxFrom : link?.panelIdxTo)
+    if (Number.isFinite(namedIdx)) return namedIdx
+  }
+
+  const linkIdx = Number(link?.panelIdx)
+  return Number.isFinite(linkIdx) ? linkIdx : null
+}
+
 function buildStepTitleEvidence(step) {
   const nodeMap = new Map()
   ;(step.nodes || []).forEach(node => nodeMap.set(`${node.panelIdx}:${node.q},${node.r}`, node))
   const panelNames = step.panelNamesByIndex || step.meta?.panelNamesByIndex || {}
   const pathPoints = []
   ;(step.links || []).forEach(link => {
-    if (Array.isArray(link.path) && link.path.length) pathPoints.push(...link.path)
+    if (Array.isArray(link.path) && link.path.length) {
+      link.path.forEach((point, pointIdx) => {
+        const panelIdx = resolvePanelIdxForTitlePoint(point, link, pointIdx)
+        if (panelIdx == null) return
+        pathPoints.push({ ...point, panelIdx })
+      })
+    }
   })
   const orderedKeys = []
   const seenKeys = new Set()
@@ -220,7 +248,9 @@ function buildStepTitleEvidence(step) {
     : (step.nodes || []).map(node => ({ panelIdx: node.panelIdx, q: node.q, r: node.r }))
 
   sourcePoints.forEach(point => {
-    const key = `${point.panelIdx}:${point.q},${point.r}`
+    const panelIdx = Number(point.panelIdx)
+    if (!Number.isFinite(panelIdx)) return
+    const key = `${panelIdx}:${point.q},${point.r}`
     if (!seenKeys.has(key)) {
       seenKeys.add(key)
       orderedKeys.push(key)
@@ -251,9 +281,10 @@ function cleanGeneratedStepTitle(raw, stepIdx) {
   text = text.replace(/^\s*```(?:json)?\s*/i, '').replace(/\s*```\s*$/i, '').trim()
   try {
     const obj = JSON.parse(text)
-    text = obj.title || obj.StepTitle || obj.summary || obj.text || text
+    text = obj.title || obj.StepTitle || obj.stepTitle || obj.RouteSummary || obj.routeSummary || obj.summary || obj.text || text
   } catch {}
   text = String(text || '')
+    .replace(/^\s*(title|stepTitle|RouteSummary|summary)\s*[:：]\s*/i, '')
     .replace(/^["'“”]+|["'“”]+$/g, '')
     .replace(/^\s*step\s*\d+\s*[·:：-]\s*/i, '')
     .replace(/\s+/g, ' ')
@@ -276,10 +307,12 @@ Create a concise editable title for a saved Stepwise Analysis step.
 
 Rules:
 - Use only the evidence below.
-- Summarize the user's saved HSU/link selection, not the UI action.
+- Summarize the user's saved evidence selection, not the UI action or route type.
 - Mention the main technical topic or evidence relationship.
+- For cross-subspace selections, capture the conceptual transition instead of describing path geometry.
 - Return one short English phrase, 6-14 words.
-- Do not include "Step", timestamps, markdown, bullets, or quotation marks.
+- Do not include "Step", "flight", "road", "river", HSU/MSU ids, coordinates, timestamps, markdown, bullets, JSON, or quotation marks.
+- Output plain text only.
 
 Evidence:
 ${evidence}
@@ -289,7 +322,7 @@ ${evidence}
     const res = await fetch('/api/query', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ query: prompt, task: 'msu_summary' })
+      body: JSON.stringify({ query: prompt, task: 'step_title' })
     })
     if (!res.ok) throw new Error(await res.text().catch(() => `API request failed (${res.status})`))
     const text = (await res.text()).trim()
