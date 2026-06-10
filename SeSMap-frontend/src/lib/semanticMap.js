@@ -595,6 +595,8 @@ export async function initSemanticMap({
 
         points.push({
           id,
+          panelIdx,
+          country_id: m.country_id || h.country_id || null,
           rawX: xy[0],
           rawY: xy[1],
           sentence: m.sentence,
@@ -683,8 +685,7 @@ export async function initSemanticMap({
       .attr('cx', d => d._px)
       .attr('cy', d => d._py)
       .attr('fill', d => {
-        const style = (App._hexStyleByKey && App._hexStyleByKey.get) ? App._hexStyleByKey.get(d.__hexKey) : null;
-        return (style && style.fill) ? style.fill : DEFAULT_FILL;
+        return resolveScatterPointFill(d, DEFAULT_FILL);
       })
       // Use fill-opacity (not overall opacity) to avoid compounding with other layers
       .attr('opacity', 1)
@@ -1044,6 +1045,32 @@ function getPanelCountryColor(panelIdx, cidRaw) {
 
   // 4) 最后回退
   return (App.config?.countryBorder?.color) || '#999';
+}
+
+function getExplicitCountryColor(panelIdx, cidRaw) {
+  if (cidRaw == null || cidRaw === '') return null;
+  let cid = cidRaw;
+  try { cid = normalizeCountryId(cidRaw); } catch(e) {}
+
+  const panelMap = App.panelCountryColors?.get?.(panelIdx);
+  const rec = panelMap?.get?.(cid) || panelMap?.get?.(cidRaw);
+  if (rec?.color) return rec.color;
+
+  const global = App.globalCountryColors?.get?.(cid) || App.globalCountryColors?.get?.(cidRaw);
+  if (global) return global;
+
+  const ov = (typeof getCountryColorOverride === 'function') ? getCountryColorOverride(panelIdx, cid) : null;
+  return ov?.color || null;
+}
+
+function resolveScatterPointFill(d, fallback = '#999') {
+  const hexStyle = App._hexStyleByKey?.get?.(d.__hexKey);
+  const parentFill = hexStyle?.fill || fallback;
+  const panelIdx = Number.isFinite(Number(d.panelIdx))
+    ? Number(d.panelIdx)
+    : Number(String(d.__hexKey || '').split('|')[0]);
+  const countryColor = getExplicitCountryColor(panelIdx, d.country_id);
+  return countryColor || parentFill;
 }
 
 function emitSemanticColorSnapshot() {
@@ -4392,6 +4419,7 @@ const mode = getPanelLayoutMode(panelIdx);
           msuPoints.push({
             panelIdx,
             msu_id: Number(msuId),
+            country_id: rec.country_id || h.country_id || null,
             sentence: rec.sentence || rec.text || rec.content || '',
             x, y,
             __hexKey: `${panelIdx}|${h.q},${h.r}`
@@ -4419,8 +4447,7 @@ const mode = getPanelLayoutMode(panelIdx);
           .attr('cx', d => d.x)
           .attr('cy', d => d.y)
           .attr('fill', d => {
-            const st = App._hexStyleByKey?.get(d.__hexKey);
-            return st?.fill || '#999';
+            return resolveScatterPointFill(d, '#999');
           })
           .attr('fill-opacity', 0.9)
           .on('mouseover', (event, d) => {
@@ -5060,8 +5087,7 @@ function updateHexStyles() {
     if (!scatterLayer.empty()) {
       scatterLayer.selectAll('circle.msu-point')
         .attr('fill', d => {
-          const st = App._hexStyleByKey && App._hexStyleByKey.get ? App._hexStyleByKey.get(d.__hexKey) : null;
-          return (st && st.fill) ? st.fill : '#999';
+          return resolveScatterPointFill(d, '#999');
         })
         .attr('opacity', 1)
         .attr('fill-opacity', d => {
