@@ -56,15 +56,21 @@ Rules:
 """).strip()
 
 PROMPT_HSU_HOVER_SUMMARY = os.getenv("PROMPT_HSU_HOVER_SUMMARY", """
-You summarize one dynamically aggregated HSU for a hover tooltip in SeSMap.
+You summarize the MSU sentences inside one currently aggregated HSU for a hover tooltip in SeSMap.
 
 Rules:
-- Use only the provided MSU sentences.
-- Keep papers separate when multiple papers appear.
-- State the shared local theme and the strongest evidence.
-- 35-70 words total; compact enough for a tooltip.
-- No markdown table, no code fence, no generic filler.
-- Output plain text only.
+- Use only the provided MSU sentences from the current HSU.
+- Use original text context only to preserve detail, wording, and domain terms for those MSUs.
+- Classify the MSU content into 2-5 semantic categories.
+- Each category must be one bullet line in this exact style: "- Category: simple but detailed synthesis".
+- Category names should be short content labels, not paper/source titles.
+- Prefer simple sentences, but do not over-compress the source meaning.
+- Preserve important proper nouns, named methods, datasets, metrics, measurements, technical components, and domain terms.
+- Keep concrete relationships such as cause/effect, problem/solution, method/result, comparison, and limitation when present.
+- Synthesize related MSUs together; do not list every MSU unless there are very few.
+- Do not mention paper titles, source labels, HSU ids, MSU ids, panelIdx values, coordinates, or country ids.
+- Do not use markdown emphasis, bold, italic, headings, tables, code fences, JSON, or intro/conclusion text.
+- Output plain text only, usually 90-180 words total.
 """).strip()
 
 TASK_PROMPTS = {
@@ -951,7 +957,7 @@ def query_gpt():
                     {"role": "user", "content": user_query}
                 ],
                 temperature=0.15,
-                max_tokens=220,
+                max_tokens=520,
                 timeout=20.0
             )
             answer = resp.choices[0].message.content

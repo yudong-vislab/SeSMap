@@ -1406,20 +1406,19 @@ function isDynamicAggregationActive() {
   return Math.abs((Number(App?.aggregationRange) || DEFAULT_AGGREGATION_RANGE) - DEFAULT_AGGREGATION_RANGE) > 0.001;
 }
 
-function paperLabelFromMsu(msu) {
-  const raw = msu?.paper_info || msu?.paper_title || msu?.paperTitle || msu?.doc_title || msu?.docTitle || msu?.title || msu?.subtitle || msu?.source || '';
-  if (raw) {
-    const s = String(raw);
-    const parts = s.split(/[\\/]/).filter(Boolean);
-    return parts[parts.length - 1] || s;
-  }
-  if (msu?.paper_id != null) return `Paper ${msu.paper_id}`;
-  return 'Unknown paper';
-}
-
 function getMsuRecord(msuId) {
   const idx = App?.currentData?.msu_index || {};
   return idx?.[msuId] ?? idx?.[String(msuId)] ?? null;
+}
+
+function cleanMsuEvidenceText(value) {
+  return String(value || '').replace(/\s+/g, ' ').trim();
+}
+
+function truncatePromptText(text, maxLen = 900) {
+  const clean = cleanMsuEvidenceText(text);
+  if (clean.length <= maxLen) return clean;
+  return clean.slice(0, maxLen - 3).trim() + '...';
 }
 
 function getHsuSummaryKey(panelIdx, item) {
@@ -1434,30 +1433,53 @@ function getHsuSummaryKey(panelIdx, item) {
 
 function buildHsuHoverPrompt(panelIdx, item) {
   const ids = Array.isArray(item?.msu_ids) ? item.msu_ids : [];
-  const byPaper = new Map();
-  ids.forEach(id => {
+  const sentenceLines = [];
+  const contextMap = new Map();
+
+  ids.forEach((id, idx) => {
     const rec = getMsuRecord(id);
-    const sentence = (rec?.sentence || rec?.text || rec?.content || '').trim();
+    const sentence = cleanMsuEvidenceText(rec?.sentence || rec?.text || rec?.content || '');
     if (!sentence) return;
-    const paper = paperLabelFromMsu(rec);
-    if (!byPaper.has(paper)) byPaper.set(paper, []);
-    byPaper.get(paper).push({ id, sentence });
+
+    const category = cleanMsuEvidenceText(rec?.category || rec?.type || '');
+    const msuLabel = `MSU ${idx + 1}`;
+    sentenceLines.push(`- ${msuLabel}${category ? ` (${category})` : ''}: ${sentence}`);
+
+    const paragraph = cleanMsuEvidenceText(
+      rec?.paragraph_info ||
+      rec?.paragraphInfo ||
+      rec?.raw_text ||
+      rec?.rawText ||
+      rec?.original_text ||
+      rec?.originalText ||
+      ''
+    );
+    if (!paragraph) return;
+
+    const paraKey = [
+      rec?.paper_id ?? '',
+      rec?.para_id ?? '',
+      paragraph.slice(0, 160)
+    ].join('|');
+    if (!contextMap.has(paraKey)) {
+      contextMap.set(paraKey, { text: paragraph, msus: [] });
+    }
+    contextMap.get(paraKey).msus.push(idx + 1);
   });
 
-  let used = 0;
-  const paperBlocks = Array.from(byPaper.entries()).map(([paper, rows]) => {
-    const remaining = 24 - used;
-    if (remaining <= 0) return '';
-    const capped = rows.slice(0, Math.min(8, remaining));
-    used += capped.length;
-    return [
-      `Paper: ${paper}`,
-      ...capped.map(r => `- MSU ${r.id}: ${r.sentence}`)
-    ].join('\n');
-  }).filter(Boolean);
+  const originalContexts = Array.from(contextMap.values());
+  const contextLines = originalContexts
+    .slice(0, 10)
+    .map((ctx, idx) => {
+      const refs = Array.from(new Set(ctx.msus)).join(', ');
+      return `Original context ${idx + 1} (for MSUs ${refs}): ${truncatePromptText(ctx.text)}`;
+    });
+  if (originalContexts.length > contextLines.length) {
+    contextLines.push(`Original context note: ${originalContexts.length - contextLines.length} additional source paragraphs are omitted for prompt length; all selected MSU sentences remain listed above.`);
+  }
 
   return `
-Summarize one dynamically aggregated HSU for tooltip display.
+Classify and summarize the MSU content inside one dynamically aggregated HSU for tooltip display.
 
 HSU
 - panelIdx: ${panelIdx}
@@ -1466,13 +1488,20 @@ HSU
 - total_msu_count: ${ids.length}
 
 Requirements:
-1) Separate evidence by paper when multiple papers appear.
-2) Mention only claims present in the MSU sentences.
-3) Be concise enough for a hover tooltip.
-4) Output plain text only.
+1) Use the selected MSU sentences as the scope of the summary.
+2) Use the original context paragraphs to preserve important wording, proper nouns, methods, metrics, datasets, and domain terms.
+3) Group related MSUs into 2-5 semantic categories.
+4) Output bullet points only, using "- Category: simple but detailed synthesis".
+5) Keep the sentences simple, but do not over-compress or drop core technical details.
+6) Do not use paper/source titles as categories or headings.
+7) Do not mention HSU ids, MSU ids, panelIdx, coordinates, country ids, or paper titles in the final bullets.
+8) Do not use bold, italic, markdown headings, tables, JSON, or code fences.
 
-MSU sentences grouped by paper:
-${paperBlocks.join('\n\n') || '(none)'}
+Selected MSU sentences in this HSU:
+${sentenceLines.join('\n') || '(none)'}
+
+Original text context from the same MSUs:
+${contextLines.join('\n\n') || '(none)'}
   `.trim();
 }
 
@@ -1488,7 +1517,7 @@ async function requestHsuHoverSummary(panelIdx, item) {
   if (ids.length === 1) {
     const rec = getMsuRecord(ids[0]);
     const text = (rec?.sentence || rec?.text || '').trim();
-    App.hsuSummaryCache.set(key, { status: 'ready', text });
+    App.hsuSummaryCache.set(key, { status: 'ready', text: text ? `- Main point: ${text}` : '' });
     return;
   }
 
@@ -1554,6 +1583,41 @@ function refreshHoveredBucketTooltip() {
   showHexTooltip(pos.x, pos.y, { _rawHTML: true, html: renderBucketTooltipHTML(bucket) });
 }
 
+function cleanHsuSummaryLine(line) {
+  return String(line || '')
+    .trim()
+    .replace(/^#{1,6}\s+/, '')
+    .replace(/^\s*(summary|classification|categories)\s*[:：]\s*/i, '')
+    .replace(/^\s*[-*•]\s+/, '')
+    .replace(/^\s*\d+[.)]\s+/, '')
+    .replace(/(\*\*|__|[*_`~])/g, '')
+    .trim();
+}
+
+function renderHsuSummaryHTML(summary) {
+  const raw = String(summary || '')
+    .replace(/^\s*```(?:\w+)?\s*/i, '')
+    .replace(/\s*```\s*$/i, '')
+    .trim();
+  if (!raw) return '';
+
+  if (/^(Generating LLM summary|Hover briefly|LLM summary unavailable)/i.test(raw)) {
+    return '<span style="opacity:.72">' + _escapeHtml(raw) + '</span>';
+  }
+
+  const lines = raw
+    .split(/\r?\n/)
+    .map(cleanHsuSummaryLine)
+    .filter(Boolean)
+    .filter(line => !/^(summary|classification|categories)$/i.test(line));
+
+  if (!lines.length) return '';
+
+  return '<ul style="margin:3px 0 0 0;padding-left:16px">'
+       + lines.map(line => '<li style="margin:1px 0">' + _escapeHtml(line) + '</li>').join('')
+       + '</ul>';
+}
+
 
 function renderBucketTooltipHTML(bucket) {
   if (!bucket) return '<span style="opacity:.62">No data</span>';
@@ -1605,12 +1669,11 @@ function renderBucketTooltipHTML(bucket) {
       var it2 = g2.items[j] || {};
       var sum = getDisplaySummaryForHsuItem(panelIdx, it2);
 
-      // ✅ sumHtml 在这里定义，避免 Uncaught ReferenceError
-      var sumHtml = sum ? renderMarkdownSafe(sum) : '';
+      var sumHtml = sum ? renderHsuSummaryHTML(sum) : '';
 
       html += '<div style="margin-left:18px;margin-top:3px;opacity:.95">'
            +   (sumHtml
-                ? ('<span style="font-weight:700;color:#1f2937">Summary:</span> <span>' + sumHtml + '</span>')
+                ? ('<div style="font-weight:700;color:#1f2937">Summary:</div>' + sumHtml)
                 : '<span style="opacity:.62">No summary</span>')
            + '</div>';
     }
