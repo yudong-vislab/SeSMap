@@ -1550,14 +1550,14 @@ async function requestHsuHoverSummary(panelIdx, item) {
 function scheduleBucketDynamicSummaries(bucket) {
   if (!isDynamicAggregationActive() || !bucket) return;
   if (App.hsuSummaryHoverTimer) clearTimeout(App.hsuSummaryHoverTimer);
+  App.hsuSummaryHoverTimer = null;
   const target = `${bucket.panelIdx}|${bucket.q},${bucket.r}`;
   App.hsuSummaryHoverTarget = target;
-  App.hsuSummaryHoverTimer = setTimeout(() => {
-    if (!App.hoveredHex) return;
-    const current = `${App.hoveredHex.panelIdx}|${App.hoveredHex.q},${App.hoveredHex.r}`;
-    if (current !== target) return;
-    (bucket.items || []).forEach(item => requestHsuHoverSummary(bucket.panelIdx, item));
-  }, 360);
+
+  if (!App.hoveredHex) return;
+  const current = `${App.hoveredHex.panelIdx}|${App.hoveredHex.q},${App.hoveredHex.r}`;
+  if (current !== target) return;
+  (bucket.items || []).forEach(item => requestHsuHoverSummary(bucket.panelIdx, item));
 }
 
 function getDisplaySummaryForHsuItem(panelIdx, item) {
@@ -1571,7 +1571,7 @@ function getDisplaySummaryForHsuItem(panelIdx, item) {
   if (cached?.status === 'ready') return cached.text || '';
   if (cached?.status === 'error') return 'LLM summary unavailable for this aggregated HSU.';
   if (App.hsuSummaryPending?.has?.(key)) return 'Generating LLM summary...';
-  return 'Hover briefly to generate an LLM summary for this aggregated HSU.';
+  return 'Generating LLM summary...';
 }
 
 function refreshHoveredBucketTooltip() {
@@ -1601,7 +1601,7 @@ function renderHsuSummaryHTML(summary) {
     .trim();
   if (!raw) return '';
 
-  if (/^(Generating LLM summary|Hover briefly|LLM summary unavailable)/i.test(raw)) {
+  if (/^(Generating LLM summary|LLM summary unavailable)/i.test(raw)) {
     return '<span style="opacity:.72">' + _escapeHtml(raw) + '</span>';
   }
 

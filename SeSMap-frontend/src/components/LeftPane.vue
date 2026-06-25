@@ -108,7 +108,7 @@ function updatePaperGroups(nextGroups) {
 }
 
 // ====== Chat（这里是你实际页面的聊天区） ==============================
-const messages = ref([{ role: 'system', type:'text', text: 'You are chatting with SeSMap, an academic semantic-map assistant.' }])
+const messages = ref([{ role: 'system', type:'text', text: 'You are chatting with SeSMap agents.' }])
 const msgBoxRef = ref(null)
 const atBottom = ref(true)
 function isNearBottom(el, threshold = 80) { return el.scrollHeight - el.scrollTop - el.clientHeight <= threshold }
