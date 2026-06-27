@@ -18401,6 +18401,12 @@
           ]
         }
       ]
+    },
+    {
+      "panelIdx": 5,
+      "subspaceName": "Subspace 6",
+      "hexList": [],
+      "countries": []
     }
   ],
   "links": [],
