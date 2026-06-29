@@ -89,7 +89,7 @@ import DOMPurify from 'dompurify';
  * 样式与常量（集中）
  * ========================= */
 const STYLE = {
-  CONFLICT_GRAY: '#B0B0B0',
+  CONFLICT_GRAY: '#DCDCDC',
   HEX_RADIUS: 16,
   HEX_BORDER_WIDTH: 1.2,
   HEX_BORDER_COLOR: '#ffffff',
