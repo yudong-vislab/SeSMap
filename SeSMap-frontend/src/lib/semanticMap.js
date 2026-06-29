@@ -2423,14 +2423,13 @@ function _normCid(cid) {
 function buildAlphaMapForPanelCountry(panelIdx, countryId) {
   const cid = normalizeCountryId(countryId);
   const keys = getCountryKeysInPanel(panelIdx, cid); // Set<"p|q,r">
-  // 关键：排除该国参与的冲突 hex
   const conflict = (typeof getConflictKeysForCountryInPanel === 'function')
     ? getConflictKeysForCountryInPanel(panelIdx, cid)
     : new Set();
 
   const alphaMap = new Map();
   for (const k of keys) {
-    if (conflict.has(k)) continue; // 跳过冲突 hex
+    if (conflict.has(k)) continue;
     const a =
       (App.msuAlphaByHex?.get?.(k)) ??
       (App.alphaCacheByHex?.get?.(k)) ??
@@ -2506,13 +2505,12 @@ function setCountryColorOverride(panelIdx, countryId, color, alphaByKey) {
   const alphaMap = new Map();
   const cidNorm = _normCid(countryId);
   const allKeys = getCountryKeysInPanel(panelIdx, cidNorm); // Set<"p|q,r">
-  // 关键：排除该国参与的冲突 hex
   const conflict = (typeof getConflictKeysForCountryInPanel === 'function')
     ? getConflictKeysForCountryInPanel(panelIdx, cidNorm)
     : new Set();
 
   allKeys.forEach(k => {
-    if (conflict.has(k)) return; // 跳过冲突 hex
+    if (conflict.has(k)) return;
     const a =
       (App.msuAlphaByHex?.get?.(k)) ??
       (App.alphaCacheByHex?.get?.(k)) ??
@@ -5008,7 +5006,10 @@ function updateHexStyles() {
 
       // —— 冲突优先：当 hex 是冲突时，用冲突覆盖 —— //
       const isConflict = isConflictHex(panelIdx, d.q, d.r);
-       // ★ 关键：一旦是冲突格，屏蔽国家覆盖色（无论预览还是确认）
+      const conflictBaseFill = isConflict
+        ? ((STYLE && STYLE.CONFLICT_GRAY) ? STYLE.CONFLICT_GRAY : '#B0B0B0')
+        : null;
+       // 冲突格只使用冲突色或默认冲突灰，不混入国家独有色。
       if (isConflict) {
         confirmedCountryColor = null;
         previewColor = null;
@@ -5041,6 +5042,7 @@ function updateHexStyles() {
         confirmedConflictColor ??
         previewColor ??
         confirmedCountryColor ??
+        conflictBaseFill ??
         focusBaseFill ??
         baseFill;
 
@@ -5655,7 +5657,7 @@ function updateHexStyles() {
             countryId: cid,
             keys: new Set(filteredKeys),
             color: getCountryColorOverride(panelIdx, cid)?.color || null,
-            alphaByKey: buildAlphaMapForPanelCountry(panelIdx, cid) // 该函数内部本就排冲突；保留用于透明度分配
+            alphaByKey: buildAlphaMapForPanelCountry(panelIdx, cid)
           };
 
           App.lastSelectionKind = 'country-preview';
@@ -6271,27 +6273,166 @@ function schedulePanelGeometryRefresh(panelIdx = null) {
    * ========================= */
   function _rebuildLinksAfterRemove(links, removedIdx) {
     const out = [];
+    const touchesRemovedPanel = (value) => Number.isInteger(Number(value)) && Number(value) === removedIdx;
+    const remapPanelValue = (value) => {
+      const n = Number(value);
+      if (!Number.isInteger(n)) return value;
+      return n > removedIdx ? n - 1 : n;
+    };
+
     for (const link of links || []) {
       const touchesRemoved =
-        link.panelIdx === removedIdx ||
-        link.panelIdxFrom === removedIdx ||
-        link.panelIdxTo === removedIdx ||
-        (link.path || []).some(p => p.panelIdx === removedIdx);
+        touchesRemovedPanel(link.panelIdx) ||
+        touchesRemovedPanel(link.panelIdxFrom) ||
+        touchesRemovedPanel(link.panelIdxTo) ||
+        touchesRemovedPanel(link.from?.panelIdx) ||
+        touchesRemovedPanel(link.to?.panelIdx) ||
+        (link.path || []).some(p => touchesRemovedPanel(p.panelIdx));
 
       if (touchesRemoved) continue;
 
       const copy = JSON.parse(JSON.stringify(link));
-      if (typeof copy.panelIdxFrom === 'number' && copy.panelIdxFrom > removedIdx) copy.panelIdxFrom--;
-      if (typeof copy.panelIdxTo   === 'number' && copy.panelIdxTo   > removedIdx) copy.panelIdxTo--;
-      if (typeof copy.panelIdx     === 'number' && copy.panelIdx     > removedIdx) copy.panelIdx--;
+      if (copy.panelIdxFrom != null) copy.panelIdxFrom = remapPanelValue(copy.panelIdxFrom);
+      if (copy.panelIdxTo != null) copy.panelIdxTo = remapPanelValue(copy.panelIdxTo);
+      if (copy.panelIdx != null) copy.panelIdx = remapPanelValue(copy.panelIdx);
+      if (copy.from && copy.from.panelIdx != null) copy.from.panelIdx = remapPanelValue(copy.from.panelIdx);
+      if (copy.to && copy.to.panelIdx != null) copy.to.panelIdx = remapPanelValue(copy.to.panelIdx);
       if (Array.isArray(copy.path)) {
         copy.path.forEach(p => {
-          if (typeof p.panelIdx === 'number' && p.panelIdx > removedIdx) p.panelIdx--;
+          if (p.panelIdx != null) p.panelIdx = remapPanelValue(p.panelIdx);
         });
       }
       out.push(copy);
     }
     return out;
+  }
+
+  function _remapPanelIndexAfterRemove(panelIdx, removedIdx) {
+    const n = Number(panelIdx);
+    if (!Number.isInteger(n)) return panelIdx;
+    if (n === removedIdx) return null;
+    return n > removedIdx ? n - 1 : n;
+  }
+
+  function _remapPanelKeyAfterRemove(key, removedIdx) {
+    const raw = String(key || '');
+    const pipeIdx = raw.indexOf('|');
+    const colonIdx = raw.indexOf(':');
+    const sepIdx = pipeIdx >= 0 ? pipeIdx : colonIdx;
+    if (sepIdx <= 0) return raw;
+
+    const panelToken = raw.slice(0, sepIdx);
+    const panel = Number(panelToken);
+    if (!Number.isInteger(panel)) return raw;
+
+    const nextPanel = _remapPanelIndexAfterRemove(panel, removedIdx);
+    if (nextPanel == null) return null;
+    return `${nextPanel}|${raw.slice(sepIdx + 1)}`;
+  }
+
+  function _remapPanelKeySetAfterRemove(set, removedIdx) {
+    const out = new Set();
+    if (!set || typeof set.forEach !== 'function') return out;
+    set.forEach(k => {
+      const next = _remapPanelKeyAfterRemove(k, removedIdx);
+      if (next != null) out.add(next);
+    });
+    return out;
+  }
+
+  function _remapPanelIndexSetAfterRemove(set, removedIdx) {
+    const out = new Set();
+    if (!set || typeof set.forEach !== 'function') return out;
+    set.forEach(panelIdx => {
+      const next = _remapPanelIndexAfterRemove(panelIdx, removedIdx);
+      if (next != null) out.add(next);
+    });
+    return out;
+  }
+
+  function _remapAlphaByKeyAfterRemove(alphaByKey, removedIdx) {
+    const out = new Map();
+    if (alphaByKey instanceof Map) {
+      alphaByKey.forEach((value, key) => {
+        const next = _remapPanelKeyAfterRemove(key, removedIdx);
+        if (next != null) out.set(next, value);
+      });
+      return out;
+    }
+    if (alphaByKey && typeof alphaByKey === 'object') {
+      Object.entries(alphaByKey).forEach(([key, value]) => {
+        const next = _remapPanelKeyAfterRemove(key, removedIdx);
+        if (next != null) out.set(next, value);
+      });
+    }
+    return out;
+  }
+
+  function _remapPanelIndexedMapAfterRemove(map, removedIdx, valueMapper = v => v) {
+    const out = new Map();
+    if (!(map instanceof Map)) return out;
+    map.forEach((value, panelIdx) => {
+      const nextPanel = _remapPanelIndexAfterRemove(panelIdx, removedIdx);
+      if (nextPanel == null) return;
+      out.set(nextPanel, valueMapper(value, nextPanel, panelIdx));
+    });
+    return out;
+  }
+
+  function _remapPanelCountryColorsAfterRemove(map, removedIdx) {
+    return _remapPanelIndexedMapAfterRemove(map, removedIdx, (countryMap) => {
+      const nextCountryMap = new Map();
+      if (!(countryMap instanceof Map)) return nextCountryMap;
+      countryMap.forEach((rec, cid) => {
+        nextCountryMap.set(cid, {
+          ...(rec || {}),
+          alphaByKey: _remapAlphaByKeyAfterRemove(rec?.alphaByKey, removedIdx)
+        });
+      });
+      return nextCountryMap;
+    });
+  }
+
+  function _remapPanelConflictColorsAfterRemove(map, removedIdx) {
+    return _remapPanelIndexedMapAfterRemove(map, removedIdx, (rec) => ({
+      ...(rec || {}),
+      alphaByKey: _remapAlphaByKeyAfterRemove(rec?.alphaByKey, removedIdx)
+    }));
+  }
+
+  function _remapPanelPointAfterRemove(point, removedIdx) {
+    if (!point || !Number.isFinite(Number(point.panelIdx))) return point || null;
+    const nextPanel = _remapPanelIndexAfterRemove(point.panelIdx, removedIdx);
+    if (nextPanel == null) return null;
+    return { ...point, panelIdx: nextPanel };
+  }
+
+  function _remapLinkDraftAfterRemove(link, removedIdx) {
+    if (!link) return null;
+    return _rebuildLinksAfterRemove([link], removedIdx)[0] || null;
+  }
+
+  function _resetPanelRenderIndexes() {
+    App.countryKeysGlobal = new Map();
+    App.countryKeysByPanel = [];
+    App.coordIndexByPanel = new Map();
+    App.hexBucketsByPanel = [];
+    App.allHexDataByPanel = [];
+    App.hexMapsByPanel = [];
+    App.msuAlphaByHex = new Map();
+    App.alphaCacheByHex = new Map();
+    App.borderCacheByHex = new Map();
+    App._hexStyleByKey = new Map();
+    App.hsuSummaryCache = new Map();
+    App.hsuSummaryPending = new Map();
+    App.spacesByPanel = {};
+    App.hexRadiusByPanel = {};
+    App.scatterTransformByPanel = {};
+    App._panelGeometryRefreshSet?.clear?.();
+    if (App.hsuSummaryHoverTimer) clearTimeout(App.hsuSummaryHoverTimer);
+    App.hsuSummaryHoverTimer = null;
+    App.hsuSummaryHoverTarget = null;
+    App.hoveredTooltipBucket = null;
   }
 
 function releaseSubspaceSelections(panelIdx) {
@@ -6472,6 +6613,7 @@ function _duplicateSubspaceByIndex(srcIdx) {
 function _deleteSubspaceByIndex(idx) {
   if (!App.currentData || !Array.isArray(App.currentData.subspaces)) return;
   if (idx < 0 || idx >= App.currentData.subspaces.length) return;
+  const removedIdx = Number(idx);
 
   // ★ 保存滚动位置
   const scroller = App.playgroundEl.closest('.mv-scroller') || App.playgroundEl.parentElement;
@@ -6479,31 +6621,70 @@ function _deleteSubspaceByIndex(idx) {
   const prevLeft = scroller ? scroller.scrollLeft : 0;
 
   // 1) 删除数据与状态
-  App.currentData.subspaces.splice(idx, 1);
-  App.panelStates.splice(idx, 1);
-  App.zoomStates.splice(idx, 1);
-  if (Array.isArray(App.panelLayoutMode)) App.panelLayoutMode.splice(idx, 1);
+  App.currentData.subspaces.splice(removedIdx, 1);
+  if (Array.isArray(App.currentData.links)) {
+    App.currentData.links = _rebuildLinksAfterRemove(App.currentData.links, removedIdx);
+  }
+  if (App.baseSemanticData && Array.isArray(App.baseSemanticData.subspaces)) {
+    App.baseSemanticData.subspaces.splice(removedIdx, 1);
+    if (Array.isArray(App.baseSemanticData.links)) {
+      App.baseSemanticData.links = _rebuildLinksAfterRemove(App.baseSemanticData.links, removedIdx);
+    }
+  }
+  App.panelStates.splice(removedIdx, 1);
+  App.zoomStates.splice(removedIdx, 1);
+  if (Array.isArray(App.panelLayoutMode)) App.panelLayoutMode.splice(removedIdx, 1);
+  if (Array.isArray(App._rawHexListByPanel)) App._rawHexListByPanel.splice(removedIdx, 1);
 
   // 2) 重建连线
-  App._lastLinks = _rebuildLinksAfterRemove(App._lastLinks, idx);
+  App._lastLinks = _rebuildLinksAfterRemove(App._lastLinks, removedIdx);
+  App.currentData.links = App._lastLinks;
   stampSubspaceNamesOnAllLinks(App._lastLinks);   // ★ 重建后也写入
 
-  // 清理选集
-  for (const k of Array.from(App.persistentHexKeys)) {
-    const [panelStr] = k.split('|');
-    if (+panelStr === idx) App.persistentHexKeys.delete(k);
+  const liveRouteIds = new Set((App._lastLinks || []).map(link => linkKey(link)).filter(Boolean));
+  App.selectedRouteIds = new Set(
+    Array.from(App.selectedRouteIds || []).filter(id => liveRouteIds.has(id))
+  );
+
+  App.persistentHexKeys  = _remapPanelKeySetAfterRemove(App.persistentHexKeys, removedIdx);
+  App.highlightedHexKeys = _remapPanelKeySetAfterRemove(App.highlightedHexKeys, removedIdx);
+  App.excludedHexKeys    = _remapPanelKeySetAfterRemove(App.excludedHexKeys, removedIdx);
+  App.selectedEdgeKeys   = _remapPanelKeySetAfterRemove(App.selectedEdgeKeys, removedIdx);
+
+  App.panelCountryColors  = _remapPanelCountryColorsAfterRemove(App.panelCountryColors, removedIdx);
+  App.panelConflictColors = _remapPanelConflictColorsAfterRemove(App.panelConflictColors, removedIdx);
+  App.panelFocusOverrides = _remapPanelIndexedMapAfterRemove(App.panelFocusOverrides, removedIdx);
+  App._releaseToggleByPanel = _remapPanelIndexedMapAfterRemove(App._releaseToggleByPanel, removedIdx);
+  App.altIsolatedPanels = _remapPanelIndexSetAfterRemove(App.altIsolatedPanels, removedIdx);
+  if (App.hiddenPanelIdxes) {
+    App.hiddenPanelIdxes = _remapPanelIndexSetAfterRemove(App.hiddenPanelIdxes, removedIdx);
   }
+
+  App.selectedHex = _remapPanelPointAfterRemove(App.selectedHex, removedIdx);
+  App.hoveredHex = _remapPanelPointAfterRemove(App.hoveredHex, removedIdx);
+  App.flightStart = _remapPanelPointAfterRemove(App.flightStart, removedIdx);
+  App.flightHoverTarget = _remapPanelPointAfterRemove(App.flightHoverTarget, removedIdx);
+  App.flightDraft = _remapLinkDraftAfterRemove(App.flightDraft, removedIdx);
+  App.routeDraft = _remapLinkDraftAfterRemove(App.routeDraft, removedIdx);
+  App._pendingColorEdit = null;
+  App._pendingConflictEdit = null;
+
+  _resetPanelRenderIndexes();
 
   // 3) 全量重绘
   renderPanels(App.currentData.subspaces || []);
   (App.currentData.subspaces || []).forEach((space, i) => {
     renderHexGridFromData(i, space, App.config.hex.radius);
   });
-  drawOverlayLinesFromLinks(App._lastLinks, App.allHexDataByPanel, App.hexMapsByPanel, !!App.flightStart);
-  App.highlightedHexKeys.clear();
-  App.hoveredHex = null;
+  recomputeMsuAlphaForAllPanels();
+  refreshColorOverridesForCurrentAggregation();
+  if (App.selectedRouteIds && App.selectedRouteIds.size > 0) {
+    recomputePersistentFromRoutesPreservingExtras();
+  }
+  drawOverlayLinesFromLinks(App._lastLinks, App.allHexDataByPanel, App.hexMapsByPanel, !!(App.flightStart || App.flightDraft));
   updateHexStyles();
   observePanelResize();
+  emitSemanticColorSnapshot();
 
   publishToStepAnalysis();
 
