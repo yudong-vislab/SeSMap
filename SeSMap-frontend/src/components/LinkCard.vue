@@ -118,6 +118,7 @@
 import { onMounted, watch, ref, onBeforeUnmount, computed } from 'vue'
 import { mountMiniLink } from '@/lib/useLinkCard'
 import { summarizeMsuSentences } from '@/lib/api'
+import { onStepwiseMsuCandidates, onApplyStepwiseMsuFilter } from '@/lib/selectionBus'
 
 const props = defineProps({
   link:  { type: Object, required: true },
@@ -146,6 +147,8 @@ const sourceRef = ref(null)
 const llmRef = ref(null)
 let mini = null
 let miniResizeObserver = null
+let offStepwiseMsuCandidates = null
+let offApplyStepwiseMsuFilter = null
 
 const showOriginal = ref(false)
 const llmSummary = ref('')
@@ -554,7 +557,53 @@ const displayMsuSentences = computed(() => {
   return all.filter(m => m.hsuKey === pickedNodeKey.value)
 })
 
+function getSemanticMsuCandidates() {
+  return (linkMsuSentences.value || []).map(msu => ({
+    uid: msu.uid,
+    text: msu.sentence,
+    sentence: msu.sentence,
+    hsuKey: msu.hsuKey,
+    msuId: msu.id,
+    category: msu.category,
+    paperId: msu.paperId,
+    paperLabel: msu.paperLabel,
+    subspaces: subspaceTrail.value,
+    checked: selectedMsus.value.has(msu.uid),
+    source: 'stepwise-link-card'
+  }))
+}
+
+function applySemanticMsuFilter(payload = {}) {
+  const rawUids = payload.uids || payload.matchedUids || []
+  const wanted = new Set(rawUids.map(uid => String(uid)))
+  if (!wanted.size) {
+    return { matched: 0, newlyChecked: 0, alreadyChecked: 0 }
+  }
+
+  const next = new Set(selectedMsus.value)
+  let matched = 0
+  let newlyChecked = 0
+  let alreadyChecked = 0
+
+  ;(linkMsuSentences.value || []).forEach(msu => {
+    if (!wanted.has(String(msu.uid))) return
+    matched += 1
+    if (next.has(msu.uid)) {
+      alreadyChecked += 1
+    } else {
+      next.add(msu.uid)
+      newlyChecked += 1
+    }
+  })
+
+  if (newlyChecked > 0) selectedMsus.value = next
+  return { matched, newlyChecked, alreadyChecked }
+}
+
 onMounted(() => {
+  offStepwiseMsuCandidates = onStepwiseMsuCandidates(getSemanticMsuCandidates)
+  offApplyStepwiseMsuFilter = onApplyStepwiseMsuFilter(applySemanticMsuFilter)
+
   mini = mountMiniLink(svgRef.value, {
     link: props.link,
     nodes: props.nodes,
@@ -635,6 +684,8 @@ watch(
 
 onBeforeUnmount(() => {
   stopSectionResize()
+  offStepwiseMsuCandidates?.()
+  offApplyStepwiseMsuFilter?.()
   miniResizeObserver?.disconnect?.()
   mini?.destroy()
 })

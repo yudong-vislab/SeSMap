@@ -5,6 +5,7 @@ import ChatDock from './ChatDock.vue'
 import PaperList from './PaperList.vue'
 import MarkdownView from './MarkdownView.vue'
 import { sendQueryToLLM, interpretLLMResponse, getActiveProjectId } from '../lib/api'
+import { collectStepwiseMsuCandidates, emitApplyStepwiseMsuFilter } from '../lib/selectionBus'
 
 // ====== Emits ==========================================================
 const emit = defineEmits(['updateHexRadius','updateSystemPrompt','uploadPdfs','updateMarkdownModel'])
@@ -415,6 +416,270 @@ function showFolder(folder) {
   })
 }
 
+// ====== Chat ➜ Stepwise MSU semantic filter ==========================
+const MSU_FILTER_CHUNK_SIZE = 80
+
+function isMsuSemanticFilterCommand(text) {
+  const raw = String(text || '')
+  const t = raw.toLowerCase()
+  if (!raw.trim()) return false
+  const hasMsu = /\bmsus?\b/i.test(t) || /微语义单元|语义单元/.test(raw)
+  const hasAction = /\b(filter|select|tick|check|choose|find|mark|pick)\b/i.test(t)
+    || /筛选|过滤|勾选|选择|选中|查找|挑选/.test(raw)
+  const hasSemantic = /\b(meanings?|means|semantic|semantics|related|relevant|about|topic|theme)\b/i.test(t)
+    || /语义|含义|意思|相关|主题|关于/.test(raw)
+  return hasMsu && hasAction && hasSemantic
+}
+
+function cleanMsuFilterIntentText(value) {
+  return String(value || '')
+    .replace(/\bplease\b/ig, ' ')
+    .replace(/^["'“”‘’\s]+|["'“”‘’\s.,;:，。；：!?！？]+$/g, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
+function extractMsuFilterMeaning(text) {
+  const raw = String(text || '').trim()
+  const patterns = [
+    /(?:with\s+the\s+meanings?\s+of|with\s+meanings?\s+of|semantic\s+meanings?\s+of|meanings?\s+of)\s+(.+)$/i,
+    /(?:with|for)\s+(.+?)\s+meanings?$/i,
+    /(?:meanings?|semantics?|theme|topic)\s*[:：]\s*(.+)$/i,
+    /(?:about|related\s+to|relevant\s+to|on\s+the\s+topic\s+of)\s+(.+)$/i,
+    /(?:语义|含义|意思|主题)(?:为|是|关于|相关|[:：])?\s*(.+)$/i,
+    /(?:关于|有关|相关(?:于)?)[“"']?(.+?)[”"']?(?:的)?\s*(?:MSU|MSUs|语义单元)?$/i
+  ]
+  for (const pattern of patterns) {
+    const m = raw.match(pattern)
+    const cleaned = cleanMsuFilterIntentText(m?.[1])
+    if (cleaned) return cleaned
+  }
+
+  const fallback = raw
+    .replace(/\b(help\s+me\s+to|please|can\s+you|could\s+you)\b/ig, ' ')
+    .replace(/\b(filter|select|tick|check|choose|find|mark|pick)\b/ig, ' ')
+    .replace(/\bmsus?\b/ig, ' ')
+    .replace(/\b(with|the|meanings?|means|semantic|semantics|of|related|relevant|about|to|topic|theme)\b/ig, ' ')
+    .replace(/帮我|请|筛选|过滤|勾选|选择|选中|查找|挑选|语义|含义|意思|相关|关于|主题|的|为|是/g, ' ')
+    .replace(/\s+/g, ' ')
+  return cleanMsuFilterIntentText(fallback) || raw
+}
+
+function truncateForPrompt(text, limit = 320) {
+  const s = String(text || '').replace(/\s+/g, ' ').trim()
+  if (s.length <= limit) return s
+  return `${s.slice(0, limit - 1)}…`
+}
+
+function dedupeMsuCandidates(items) {
+  const map = new Map()
+  ;(items || []).forEach((item, index) => {
+    if (!item?.uid) return
+    const uid = String(item.uid)
+    const existing = map.get(uid)
+    if (existing) {
+      existing.checked = existing.checked || Boolean(item.checked)
+      existing.occurrences += 1
+      return
+    }
+    map.set(uid, {
+      ...item,
+      uid,
+      text: item.text || item.sentence || '',
+      sourceIndex: index,
+      occurrences: 1,
+      checked: Boolean(item.checked)
+    })
+  })
+  return Array.from(map.values()).filter(item => String(item.text || '').trim())
+}
+
+function formatMsuCandidateForPrompt(item, index) {
+  const subspaces = Array.isArray(item.subspaces) && item.subspaces.length
+    ? ` | subspaces=${item.subspaces.join(' -> ')}`
+    : ''
+  const paper = item.paperLabel ? ` | paper=${truncateForPrompt(item.paperLabel, 90)}` : ''
+  const state = item.checked ? 'already_checked' : 'unchecked'
+  return [
+    `[${index + 1}] uid=${item.uid} | ${state} | hsu=${item.hsuKey || 'unknown'} | msu=${item.msuId ?? '?'}${subspaces}${paper}`,
+    `Text: ${truncateForPrompt(item.text || item.sentence, 360)}`
+  ].join('\n')
+}
+
+function buildMsuFilterPrompt(userText, intentSeed, chunk, chunkIndex, totalChunks) {
+  const candidateLines = chunk.map((item, index) => formatMsuCandidateForPrompt(item, index)).join('\n\n')
+  return `You are helping filter MSUs in the Stepwise Analysis View of a semantic map.
+
+User request:
+"""${userText}"""
+
+Initial meaning phrase extracted from the request:
+"""${intentSeed || userText}"""
+
+This is batch ${chunkIndex + 1} of ${totalChunks}. Analyze only the candidate MSUs in this batch.
+
+Task:
+1. Infer the user's core semantic filtering intent in a short phrase.
+2. Select candidate MSUs whose Text is directly semantically relevant to that intent.
+3. Write one short user-facing answer explaining what you are filtering for.
+
+Rules:
+- Use the MSU Text as the main evidence. Do not select by paper title alone.
+- Preserve specific domain terms in the inferred intent when they matter.
+- Prefer precision over recall; exclude weak or merely adjacent matches.
+- Already checked MSUs can appear in matches only if they are relevant.
+- Return only valid JSON. Do not use markdown fences or extra prose.
+
+JSON schema:
+{"intent":"short semantic intent","answer":"one short sentence","matches":["uid-1","uid-2"]}
+
+Candidate MSUs:
+${candidateLines}`
+}
+
+function llmResultToText(res) {
+  if (typeof res === 'string') return res
+  return res?.payload?.text
+    || res?.payload?.answer
+    || res?.text
+    || res?.answer
+    || res?.summary
+    || JSON.stringify(res)
+}
+
+function parseJsonObjectFromText(raw) {
+  const text = String(raw || '').trim()
+  const fenced = text.match(/```(?:json)?\s*([\s\S]*?)```/i)?.[1]
+  const braceStart = text.indexOf('{')
+  const braceEnd = text.lastIndexOf('}')
+  const braceText = braceStart >= 0 && braceEnd > braceStart ? text.slice(braceStart, braceEnd + 1) : ''
+  const attempts = [fenced, text, braceText].filter(Boolean)
+  for (const attempt of attempts) {
+    try {
+      const parsed = JSON.parse(attempt)
+      if (parsed && typeof parsed === 'object') return parsed
+    } catch {
+      // try next candidate
+    }
+  }
+  return null
+}
+
+function normalizeMsuFilterMatches(parsed, chunk) {
+  const raw = parsed?.matches || parsed?.uids || parsed?.matchedUids || parsed?.matched_uids || []
+  const arr = Array.isArray(raw) ? raw : []
+  const valid = new Set(chunk.map(item => String(item.uid)))
+  const out = []
+
+  arr.forEach(item => {
+    let uid = null
+    if (typeof item === 'number') {
+      uid = chunk[item - 1]?.uid
+    } else if (item && typeof item === 'object') {
+      uid = item.uid ?? item.msu_uid ?? item.id
+    } else if (typeof item === 'string') {
+      const s = item.trim()
+      uid = valid.has(s) ? s : (/^\d+$/.test(s) ? chunk[Number(s) - 1]?.uid : null)
+    }
+    if (uid != null && valid.has(String(uid))) out.push(String(uid))
+  })
+
+  return Array.from(new Set(out))
+}
+
+const MSU_FILTER_STOP_WORDS = new Set([
+  'the', 'and', 'for', 'with', 'that', 'this', 'from', 'into', 'using', 'used',
+  'about', 'related', 'meaning', 'semantic', 'semantics', 'msu', 'msus', 'filter'
+])
+
+function tokenizeForFallback(text) {
+  return String(text || '')
+    .toLowerCase()
+    .replace(/[^a-z0-9\u4e00-\u9fff]+/g, ' ')
+    .split(/\s+/)
+    .map(t => t.trim())
+    .filter(t => t.length > 2 && !MSU_FILTER_STOP_WORDS.has(t))
+}
+
+function keywordFallbackMsuMatches(chunk, intent) {
+  const terms = tokenizeForFallback(intent)
+  if (!terms.length) return []
+  const needed = terms.length === 1 ? 1 : Math.min(2, terms.length)
+  return chunk
+    .filter(item => {
+      const text = `${item.text || ''} ${item.category || ''}`.toLowerCase()
+      const hits = terms.filter(term => text.includes(term)).length
+      return hits >= needed
+    })
+    .map(item => String(item.uid))
+}
+
+function chunkArray(items, size) {
+  const chunks = []
+  for (let i = 0; i < items.length; i += size) chunks.push(items.slice(i, i + size))
+  return chunks
+}
+
+async function runMsuSemanticFilter(msg) {
+  const candidates = dedupeMsuCandidates(collectStepwiseMsuCandidates())
+  if (!candidates.length) {
+    messages.value.push({
+      role: 'assistant',
+      type: 'markdown',
+      text: 'I could not find any MSUs in the current Stepwise Analysis View. Save or open a stepwise selection first, then try the filter again.'
+    })
+    return
+  }
+
+  const intentSeed = extractMsuFilterMeaning(msg)
+  const chunks = chunkArray(candidates, MSU_FILTER_CHUNK_SIZE)
+  const matchedUids = new Set()
+  let inferredIntent = intentSeed
+  let answer = ''
+  let usedFallback = false
+
+  for (let i = 0; i < chunks.length; i += 1) {
+    const chunk = chunks[i]
+    const prompt = buildMsuFilterPrompt(msg, intentSeed, chunk, i, chunks.length)
+    try {
+      const res = await sendQueryToLLM(prompt, selectedLLM.value, { task: 'stepwise_msu_filter' })
+      const parsed = parseJsonObjectFromText(llmResultToText(res))
+      if (!parsed) throw new Error('The LLM did not return valid JSON.')
+      if (parsed.intent && (!inferredIntent || inferredIntent === intentSeed)) {
+        inferredIntent = String(parsed.intent).trim()
+      }
+      if (parsed.answer && !answer) answer = String(parsed.answer).trim()
+      normalizeMsuFilterMatches(parsed, chunk).forEach(uid => matchedUids.add(uid))
+    } catch (err) {
+      console.warn('[LeftPane] semantic MSU filter fell back to keywords:', err)
+      usedFallback = true
+      keywordFallbackMsuMatches(chunk, intentSeed || msg).forEach(uid => matchedUids.add(uid))
+    }
+  }
+
+  const uids = Array.from(matchedUids)
+  const applied = emitApplyStepwiseMsuFilter({
+    uids,
+    query: msg,
+    intent: inferredIntent || intentSeed
+  })
+
+  const intentText = cleanMsuFilterIntentText(inferredIntent || intentSeed || msg)
+  const baseAnswer = answer || `I interpreted the filter as: ${intentText}.`
+  const status = uids.length
+    ? `Checked ${applied.newlyChecked} new MSU checkbox(es); ${applied.alreadyChecked} matched checkbox(es) were already selected.`
+    : 'I did not find MSUs that were semantically close enough to check.'
+  const fallbackNote = usedFallback
+    ? '\n\nNote: One or more LLM batches did not return valid JSON, so I used a conservative keyword fallback for those batches.'
+    : ''
+
+  messages.value.push({
+    role: 'assistant',
+    type: 'markdown',
+    text: `${baseAnswer}\n\nIntent: \`${intentText}\`\n\n${status}${fallbackNote}`
+  })
+}
+
 // ====== 发送消息：本地解析优先（命中 -> 更新 Semantic Source  Gallery），否则后端 ======
 async function handleSend(msg) {
   messages.value.push({ role: 'user', type:'text', text: msg })
@@ -423,6 +688,12 @@ async function handleSend(msg) {
   if (isClearCommand(msg)) {
     onClearPaper()
     messages.value.push({ role:'assistant', type:'markdown', text:'Cleared Semantic Source Gallery.' })
+    return
+  }
+
+  // B0) Stepwise MSU 语义筛选：LLM 解析意图并自动勾选右侧相关 MSU
+  if (isMsuSemanticFilterCommand(msg)) {
+    await runMsuSemanticFilter(msg)
     return
   }
 

@@ -1492,10 +1492,15 @@ Requirements:
 2) Use the original context paragraphs to preserve important wording, proper nouns, methods, metrics, datasets, and domain terms.
 3) Group related MSUs into 2-5 semantic categories.
 4) Output bullet points only, using "- Category: simple but detailed synthesis".
+   Never output a category-only bullet. The category label and its synthesis must be on the same bullet line.
+   Correct: "- Core theme: The cluster of sentences revolves around ..."
+   Incorrect:
+   "- Core Theme:"
+   "- The cluster of sentences revolves around ..."
 5) Keep the sentences simple, but do not over-compress or drop core technical details.
 6) Do not use paper/source titles as categories or headings.
 7) Do not mention HSU ids, MSU ids, panelIdx, coordinates, country ids, or paper titles in the final bullets.
-8) Do not use bold, italic, markdown headings, tables, JSON, or code fences.
+8) Do not use bold, italic, markdown headings, nested bullets, tables, JSON, or code fences.
 
 Selected MSU sentences in this HSU:
 ${sentenceLines.join('\n') || '(none)'}
@@ -1594,6 +1599,37 @@ function cleanHsuSummaryLine(line) {
     .trim();
 }
 
+function isHsuSummaryLabelOnly(line) {
+  const text = String(line || '').trim();
+  if (!/[:：]$/.test(text)) return false;
+  const label = text.replace(/[:：]+$/, '').trim();
+  if (!label) return false;
+  if (/[.!?。！？]/.test(label)) return false;
+  return label.split(/\s+/).length <= 5;
+}
+
+function normalizeHsuSummaryLines(lines) {
+  const out = [];
+  for (let i = 0; i < lines.length; i++) {
+    const line = String(lines[i] || '').trim();
+    if (!line) continue;
+
+    if (isHsuSummaryLabelOnly(line)) {
+      const next = String(lines[i + 1] || '').trim();
+      if (next && !isHsuSummaryLabelOnly(next)) {
+        out.push(`${line} ${next}`);
+        i++;
+      } else {
+        out.push(line);
+      }
+      continue;
+    }
+
+    out.push(line);
+  }
+  return out;
+}
+
 function renderHsuSummaryHTML(summary) {
   const raw = String(summary || '')
     .replace(/^\s*```(?:\w+)?\s*/i, '')
@@ -1611,10 +1647,12 @@ function renderHsuSummaryHTML(summary) {
     .filter(Boolean)
     .filter(line => !/^(summary|classification|categories)$/i.test(line));
 
-  if (!lines.length) return '';
+  const normalizedLines = normalizeHsuSummaryLines(lines);
+
+  if (!normalizedLines.length) return '';
 
   return '<ul style="margin:3px 0 0 0;padding-left:16px">'
-       + lines.map(line => '<li style="margin:1px 0">' + _escapeHtml(line) + '</li>').join('')
+       + normalizedLines.map(line => '<li style="margin:1px 0">' + _escapeHtml(line) + '</li>').join('')
        + '</ul>';
 }
 

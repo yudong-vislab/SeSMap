@@ -53,3 +53,62 @@ export function onSummarizeSelected(handler) {
   return () => _summarizeHandlers.delete(handler);
 }
 
+// ===== stepwise MSU semantic filter bus =====
+const _stepwiseMsuCandidateProviders = new Set();
+const _stepwiseMsuFilterHandlers = new Set();
+
+/**
+ * 右侧 LinkCard 注册当前可筛选的 MSU 候选。
+ * @param {()=>Array<any>} provider
+ * @returns {()=>void}
+ */
+export function onStepwiseMsuCandidates(provider) {
+  _stepwiseMsuCandidateProviders.add(provider);
+  return () => _stepwiseMsuCandidateProviders.delete(provider);
+}
+
+/** 收集所有已挂载 Stepwise 卡片中的 MSU 候选 */
+export function collectStepwiseMsuCandidates() {
+  const out = [];
+  _stepwiseMsuCandidateProviders.forEach(provider => {
+    try {
+      const items = provider?.();
+      if (Array.isArray(items)) out.push(...items);
+    } catch (e) {
+      console.warn('[selectionBus] collectStepwiseMsuCandidates failed:', e);
+    }
+  });
+  return out;
+}
+
+/**
+ * 右侧 LinkCard 注册“按 uid 勾选 MSU”的处理器。
+ * @param {(payload:{uids?:string[], matchedUids?:string[], query?:string, intent?:string})=>any} handler
+ * @returns {()=>void}
+ */
+export function onApplyStepwiseMsuFilter(handler) {
+  _stepwiseMsuFilterHandlers.add(handler);
+  return () => _stepwiseMsuFilterHandlers.delete(handler);
+}
+
+/** 将语义筛选结果广播给所有 Stepwise 卡片，只新增勾选，不取消已有选择 */
+export function emitApplyStepwiseMsuFilter(payload = {}) {
+  const result = {
+    cards: 0,
+    matched: 0,
+    newlyChecked: 0,
+    alreadyChecked: 0
+  };
+  _stepwiseMsuFilterHandlers.forEach(handler => {
+    try {
+      const r = handler?.(payload) || {};
+      result.cards += 1;
+      result.matched += Number(r.matched) || 0;
+      result.newlyChecked += Number(r.newlyChecked) || 0;
+      result.alreadyChecked += Number(r.alreadyChecked) || 0;
+    } catch (e) {
+      console.warn('[selectionBus] emitApplyStepwiseMsuFilter failed:', e);
+    }
+  });
+  return result;
+}

@@ -73,12 +73,27 @@ Rules:
 - Output plain text only, usually 90-180 words total.
 """).strip()
 
+PROMPT_STEPWISE_MSU_FILTER = os.getenv("PROMPT_STEPWISE_MSU_FILTER", """
+You filter MSU candidates in SeSMap's Stepwise Analysis View by semantic meaning.
+
+Rules:
+- Infer the user's core semantic filtering intent from the request.
+- Select only candidate MSUs whose provided Text is directly relevant to that intent.
+- Use semantic relevance, not only keyword overlap.
+- Prefer precision over recall; exclude weak, adjacent, or title-only matches.
+- Preserve important domain terms in the inferred intent and short answer.
+- Return only strict JSON with exactly these keys: intent, answer, matches.
+- The matches value must be an array of candidate uid strings copied exactly from the prompt.
+- Do not output markdown, code fences, explanations outside JSON, or extra keys.
+""").strip()
+
 TASK_PROMPTS = {
     "literature": PROMPT_LITERATURE_SEARCH,
     "subspace":   PROMPT_SUBSPACE_ANALYSIS,
     "msu_summary": PROMPT_MSU_SUMMARY,  # ✨ 新增
     "step_title": PROMPT_STEP_TITLE,
     "hsu_hover_summary": PROMPT_HSU_HOVER_SUMMARY,
+    "stepwise_msu_filter": PROMPT_STEPWISE_MSU_FILTER,
 }
 
 
@@ -965,6 +980,25 @@ def query_gpt():
         except Exception as e:
             print("[HSU hover summary] error:", e)
             return app.response_class(f"HSU hover summary error: {str(e)}", mimetype="text/plain"), 500
+
+    # 0.8) Chat with LLM 触发的 Stepwise MSU 语义筛选：仅判断候选 uid，不走 RAG。
+    if task_type == "stepwise_msu_filter":
+        try:
+            resp = client.chat.completions.create(
+                model=model_for("summary"),
+                messages=[
+                    {"role": "system", "content": PROMPT_STEPWISE_MSU_FILTER},
+                    {"role": "user", "content": user_query}
+                ],
+                temperature=0.0,
+                max_tokens=900,
+                timeout=30.0
+            )
+            answer = resp.choices[0].message.content
+            return app.response_class(answer, mimetype="text/plain"), 200
+        except Exception as e:
+            print("[Stepwise MSU filter] error:", e)
+            return app.response_class(f"Stepwise MSU filter error: {str(e)}", mimetype="text/plain"), 500
 
 
     # 1) NL intent for RAG（规则优先，失败走 LLM）
