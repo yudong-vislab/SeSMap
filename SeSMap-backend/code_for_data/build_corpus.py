@@ -89,10 +89,10 @@ def aggregate(papers):
                     idx += 1
             para_id += 1
         paper_id += 1
-    cfg.OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    cfg.FORMDB.parent.mkdir(parents=True, exist_ok=True)
     json.dump(ALLDATA, open(cfg.FORMDB, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
-    json.dump(PARA_LIST, open(cfg.OUTPUT_DIR / "paragraphs.json", "w", encoding="utf-8"), ensure_ascii=False, indent=2)
-    json.dump(PAPER_LIST, open(cfg.OUTPUT_DIR / "papers.json", "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    json.dump(PARA_LIST, open(cfg.FORMDB.parent / "paragraphs.json", "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    json.dump(PAPER_LIST, open(cfg.FORMDB.parent / "papers.json", "w", encoding="utf-8"), ensure_ascii=False, indent=2)
     print(f"[aggregate] {idx} MSUs / {paper_id} papers -> {cfg.FORMDB}")
 
 

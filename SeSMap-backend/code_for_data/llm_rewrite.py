@@ -81,28 +81,7 @@ Paragraph:
 #         json_path = sub/f"{name}.json"
         
 if __name__ == "__main__":
-    # 示例
-    # json_path = Path("/home/lxy/case_engine/largeeddy/largeeddy.json")
-    # with open(json_path, "r", encoding="utf-8") as f:
-    #     data = json.load(f)
-    # extractmsu = []
-    # for section in data:
-    #     title = section.get("title", "No Title")
-    #     print(f"\n=== Section: {title} ===")
-    #     for para in section.get("paragraphs", []):
-    #         para_type = para.get("type")
-    #         origin = para.get("origin_text", "").strip()
-
-    #         if para_type == "text":
-    #             paragraph = origin
-    #             result = extract_msu(paragraph)
-    #             print(json.dumps(result, indent=2, ensure_ascii=False))
-    #             extractmsu.append({"paragraph":paragraph,"type":"text","resultmsu":result})
-    #         elif para_type == "figure":
-    #             extractmsu.append({"paragraph":origin,"type":"figure"})
-    # with open("/home/lxy/case_engine/largeeddy/largeeddy.json", "w", encoding="utf-8") as f:
-    #     json.dump(extractmsu, f, ensure_ascii=False, indent=2)    
-
+    # Lightweight smoke prompt for direct script testing.
     para = "Fig. [7](#page-6-0) presents a comprehensive overview of two distinct combustion stabilization mechanisms in a cavity-floor direct-injection scramjet. Building upon previous studies by Yuan et al. [\\[10](#page-11-0)], it is found that during scram mode, the fuel jet splits the cavity into two distinct regions: a rich-premixed zone and a hot product zone. The resulting flame in the cavity is discontinuous and is stabilized within the shear layers of recirculation zones. The shear layer and fuel jet impede supersonic inflow, creating reflected shocks and a bow shock. On the other hand, during ram mode operation, the flame is stabilized in the jet-wake. Furthermore, the corner recirculation zone plays a vital role in maintaining continuous ignition of the fuel jet. Although there is no primary recirculation zone within the cavity, the hot products that flow downstream have positive effects on the jet-wake flame. This is because pure jet-wake stabilized combustion is not attainable under low inflow stagnation temperatures [\\[9\\]](#page-11-0). Additionally, the shear layer and shock train exhibit violent oscillations due to large-scale vortex shedding. As a result, the flow field is complex and intrinsically unstable.",
     result = extract_msu(para)
     print(json.dumps(result, indent=2, ensure_ascii=False))
@@ -111,4 +90,3 @@ if __name__ == "__main__":
     result = extract_msu(para)
     print(json.dumps(result, indent=2, ensure_ascii=False))
     print("-------------")
-

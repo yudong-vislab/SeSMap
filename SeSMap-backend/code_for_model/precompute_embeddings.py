@@ -15,10 +15,13 @@
 #   <out>.ids.json   [id0, id1, ...]  行号 -> MSU id 的映射（训练/评测按 id 查向量）
 # ---------------------------------------------------------------------------
 
-import os, json, argparse
+import os, json, argparse, sys
+from pathlib import Path
 import numpy as np
 
-DEFAULT_BGE = "/Users/yudong/Desktop/SeSMap/SeSMap-backend/models/bge-large-en-v1.5"
+BACKEND = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(BACKEND))
+import local_config as cfg
 
 
 def load_records(path):
@@ -33,11 +36,11 @@ def load_records(path):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--corpus", required=True, help="MSU 语料 json（formdatabase 输出）")
-    ap.add_argument("--out", required=True, help="输出 .npy 路径")
+    ap.add_argument("--corpus", default=str(cfg.FORMDB), help="MSU 语料 json（formdatabase 输出）")
+    ap.add_argument("--out", default=str(cfg.EMB_CACHE), help="输出 .npy 路径")
     ap.add_argument("--id-field", default="idx")
     ap.add_argument("--sentence-field", default="sentence")
-    ap.add_argument("--model", default=DEFAULT_BGE)
+    ap.add_argument("--model", default=str(cfg.BGE_MODEL_PATH))
     ap.add_argument("--batch-size", type=int, default=32)
     ap.add_argument("--normalize", action="store_true", help="L2 归一化（默认关，与训练一致）")
     args = ap.parse_args()

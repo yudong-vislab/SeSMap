@@ -1,12 +1,12 @@
 import './commandRouter.js';
 
-// === 当前激活的语义图 case（后端的 case1/case2/case3） ===
+// === 当前激活的语义图 case（后端的 case1/case2/case3/v7） ===
 export function getActiveProjectId() {
-  return window.__activeProjectId || null;   // 可能是 "case1" / "case2" / "case3" / null
+  return window.__activeProjectId || null;   // 可能是 "case1" / "case2" / "case3" / "v7" / null
 }
 
 export function setActiveProjectId(pid) {
-  if (pid === 'case1' || pid === 'case2' || pid === 'case3') {
+  if (pid === 'case1' || pid === 'case2' || pid === 'case3' || pid === 'v7') {
     window.__activeProjectId = pid;
   } else if (!pid) {
     window.__activeProjectId = null;
@@ -14,7 +14,7 @@ export function setActiveProjectId(pid) {
 }
 
 export async function fetchSemanticMap(projectId) {
-  // 如果调用方没传，就用当前激活的 projectId（case1/2/3）
+  // 如果调用方没传，就用当前激活的 projectId（case1/2/3/v7）
   const pid = projectId || getActiveProjectId();
   const qs = pid ? `?project_id=${encodeURIComponent(pid)}` : '';
   const res = await fetch(`/api/semantic-map${qs}`);
@@ -92,9 +92,12 @@ export async function sendQueryToLLM(query, llm = 'ChatGPT', opts = {}) {
 
       // ========= ① 如果后端没给 project_id，就从用户原始 query 里解析 =========
       if (!projectId && typeof query === 'string') {
+        if (/\b(?:case\s*)?v7\b/i.test(query)) {
+          projectId = 'v7';
+        }
         // 支持 "case 1" / "Case1" / "case 2" 等写法
         const m = query.match(/case\s*([123])/i);
-        if (m) {
+        if (!projectId && m) {
           projectId = `case${m[1]}`;
         }
       }

@@ -30,10 +30,13 @@ export async function chatOnce({ query, messages } = {}) {
       // 🔍 1) 先从 payload 里拿 project_id
       let projectId = data.payload?.project_id || null;
 
-      // 🔍 2) 如果 payload 没给，就从原始 query 里用正则兜底解析 "case 1/2/3"
+      // 🔍 2) 如果 payload 没给，就从原始 query 里用正则兜底解析 "case 1/2/3/v7"
       if (!projectId && typeof query === 'string') {
+        if (/\b(?:case\s*)?v7\b/i.test(query)) {
+          projectId = 'v7';
+        }
         const m = query.match(/case\s*([123])/i);
-        if (m) {
+        if (!projectId && m) {
           projectId = `case${m[1]}`;
         }
       }

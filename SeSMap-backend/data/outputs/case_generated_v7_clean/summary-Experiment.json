@@ -1,0 +1,536 @@
+[
+  {
+    "hex_coord": [
+      -8,
+      6
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2034,
+      2051
+    ],
+    "summary": "The instance view helps users inspect the propagation instances. We empower expert users to explore and analyze these patterns effectively on the basis of pattern topologies. The proposed interactive system must support effective drill-down exploration in the pattern-instance hierarchy."
+  },
+  {
+    "hex_coord": [
+      -8,
+      7
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2025,
+      2026
+    ],
+    "summary": "Experts are particularly interested in analyzing the probabilistic cause-effect relationship between source (A) and destination (B) districts in the pattern. Experts need to conduct the comparative analysis based on the cause-effect relationships, including propagation paths and strength. Experts need to check these instances for detailed analysis to obtain reliable and convincing results."
+  },
+  {
+    "hex_coord": [
+      -7,
+      4
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2196
+    ],
+    "summary": "We detect latent propagation patterns at large spatial and temporal scales. Li et al. constructed massive causality graphs and identified the sources and propagation patterns from them. We apply pattern extraction and uncertain graph visualization techniques together with overview-to-detail mechanisms."
+  },
+  {
+    "hex_coord": [
+      -7,
+      7
+    ],
+    "country": 0,
+    "MSU_ids": [
+      252
+    ],
+    "summary": "We evaluated how our proposed design is better in both spatial and temporal exploration."
+  },
+  {
+    "hex_coord": [
+      -7,
+      8
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2138,
+      2200
+    ],
+    "summary": "We demonstrated the effectiveness of our approach through two case studies conducted with a real-world dataset and positive feedback from domain experts. We closely worked with three domain experts, EA, EB, and EC, from the fields of urban computing and atmospheric science. We closely followed the *ninestage design study methodology framework*."
+  },
+  {
+    "hex_coord": [
+      -6,
+      2
+    ],
+    "country": 4,
+    "MSU_ids": [
+      1793
+    ],
+    "summary": "pg-Causality combined pattern mining techniques and Bayesian learning to capture the causal pathways between neighboring cities. A propagation instance involves four transportation instances. A propagation graph is constructed from massive transportation graphs."
+  },
+  {
+    "hex_coord": [
+      -6,
+      6
+    ],
+    "country": 5,
+    "MSU_ids": [
+      2341
+    ],
+    "summary": "The rapid development of web technology allows interactive visualizations to combine various technologies. Technologies used in interactive visualizations include HTML for page content, CSS for aesthetics, JavaScript for interaction, and SVG for vector graphics. These technologies render sharing intuitive information highly convenient."
+  },
+  {
+    "hex_coord": [
+      -6,
+      7
+    ],
+    "country": 5,
+    "MSU_ids": [
+      2374
+    ],
+    "summary": "Hypotheses can be deduced from the preliminary visual analysis. Further visualizations were designed to verify the hypotheses and obtain useful findings. The visual methodology aims to improve the depth, readability, and accuracy of data analysis."
+  },
+  {
+    "hex_coord": [
+      -4,
+      5
+    ],
+    "country": 5,
+    "MSU_ids": [
+      2632
+    ],
+    "summary": "These data exist in various formats and are stored based on these formats in different types of databases. Data similar to tab-separated values, comma-separated values, spreadsheets, and other types of data tables can be directly stored in a relational database, such as the open source database MySQL. For unstructured data, such as text, pictures, and videos, the NoSQL (not only SQL) database can be used for storage, such as the MongoDB open source database that can also store structured data."
+  },
+  {
+    "hex_coord": [
+      -3,
+      6
+    ],
+    "country": 0,
+    "MSU_ids": [
+      359
+    ],
+    "summary": "This method is mentioned in the previous section. The experiments results are shown in Table III. Some papers used road networks data."
+  },
+  {
+    "hex_coord": [
+      -2,
+      1
+    ],
+    "country": 5,
+    "MSU_ids": [
+      2524
+    ],
+    "summary": "The methods are difficult for governmental officials and the general public to understand. These specialized software tools cannot be easily understood or shared with the general public. Conventional plots cannot effectively express spatial relationships."
+  },
+  {
+    "hex_coord": [
+      -1,
+      -8
+    ],
+    "country": 0,
+    "MSU_ids": [
+      268
+    ],
+    "summary": "We propose the usage of Convolutional Long Short-Term Memory (ConvLSTM) model. ConvLSTM is a combination of Convolutional Neural Networks and Long Short-Term Memory. ConvLSTM automatically manipulates both the spatial and temporal features of the data."
+  },
+  {
+    "hex_coord": [
+      -1,
+      -7
+    ],
+    "country": 0,
+    "MSU_ids": [
+      249
+    ],
+    "summary": "The index terms include deep learning. Convolutional layers extract the spatial relationship between input image's pixels. They proposed a spatiotemporal semisupervised neural network in the DAL model."
+  },
+  {
+    "hex_coord": [
+      -1,
+      2
+    ],
+    "country": 0,
+    "MSU_ids": [
+      221
+    ],
+    "summary": "The period of data is 3 years, from 2015 to 2017. We split the input dataset into the training set of 2 years, 2015 and 2016, and the test set is the year 2017. We repeat the calculation for 10 interpolated time steps."
+  },
+  {
+    "hex_coord": [
+      0,
+      -6
+    ],
+    "country": 0,
+    "MSU_ids": [
+      272
+    ],
+    "summary": "This transformation leverages the usage of ConvLSTM model to interpolate and predict air quality for the entire city at the same time. By transforming air pollution data into sequences of images, a ConvLSTM model is the best suitable for the air pollution interpolation and prediction problem. We propose the usage of the ConvLSTM model and claim its suitability for the spatiotemporal air pollution problem."
+  },
+  {
+    "hex_coord": [
+      0,
+      -5
+    ],
+    "country": 0,
+    "MSU_ids": [
+      307
+    ],
+    "summary": "Air pollution prediction for the whole city is a challenging problem. The overall picture of the citywide air pollution Interpolation and Prediction problem is presented. We need to interpolate and predict air pollution for the whole city using all influencing factors."
+  },
+  {
+    "hex_coord": [
+      0,
+      0
+    ],
+    "country": 5,
+    "MSU_ids": [
+      2461
+    ],
+    "summary": "Color ranges from red to blue by gradient. Spatial features of air pollution are shown and studied with stations overlaid on a satellite map. Different colors represent four seasons."
+  },
+  {
+    "hex_coord": [
+      0,
+      1
+    ],
+    "country": 5,
+    "MSU_ids": [
+      2519
+    ],
+    "summary": "Figure 4 shows a heat table of month and week mean air quality index of PM2.5. The average AQI of $PM_{2.5}$ in five years is visualized through two circular heat maps. One map shows the monthly variation of AQI, and the other shows the hourly variation."
+  },
+  {
+    "hex_coord": [
+      1,
+      -6
+    ],
+    "country": 0,
+    "MSU_ids": [
+      5,
+      64,
+      193,
+      372
+    ],
+    "summary": "We present many spatiotemporal datasets collected over Seoul city in Korea. The image illustrates the process of interpolating and predicting air pollution across a city using various factors such as air pollution monitoring stations, meteorology, traffic, wildfire, sandstorm, and China air pollution. The research aims to solve air pollution interpolation and prediction for the entire city based on various air pollution-related sources."
+  },
+  {
+    "hex_coord": [
+      1,
+      -5
+    ],
+    "country": 0,
+    "MSU_ids": [
+      289,
+      339
+    ],
+    "summary": "Predicting air quality for any regions and at any time is a critical requirement of urban citizens. Collecting as many spatiotemporal factors could help us to forecast air pollution better. Recent research in air pollution has tried to build models to interpolate and predict air pollution in the city."
+  },
+  {
+    "hex_coord": [
+      1,
+      0
+    ],
+    "country": 0,
+    "MSU_ids": [
+      206
+    ],
+    "summary": "We use PM2.5 pollutant to demonstrate our proposed model and its results."
+  },
+  {
+    "hex_coord": [
+      1,
+      0
+    ],
+    "country": 5,
+    "MSU_ids": [
+      2216,
+      2279,
+      2368
+    ],
+    "summary": "This method was tested and validated in a year-long case study of the air quality index (AQI of PM2.5) in Beijing, China. The average concentration of PM2.5 in Beijing was greater than the AQI value of 50 over the six-year study period. These parameters are usually measured using air quality index (AQI)."
+  },
+  {
+    "hex_coord": [
+      2,
+      -6
+    ],
+    "country": 0,
+    "MSU_ids": [
+      6
+    ],
+    "summary": "These datasets include air pollution data, meteorological data, traffic volume, average driving speed, and air pollution indexes of external areas. Traffic volume and average driving speed data are two new datasets in air pollution research. A low average driving speed on each road indicates potential traffic congestion."
+  },
+  {
+    "hex_coord": [
+      2,
+      -5
+    ],
+    "country": 0,
+    "MSU_ids": [
+      358
+    ],
+    "summary": "Air pollution prediction has emerged as an active research field recently. The hourly air pollution and meteorological datasets are quite common in recent research about air pollution predicting. We assign weather observation stations into the corresponding grid-cells and average values for meteorological data."
+  },
+  {
+    "hex_coord": [
+      2,
+      -3
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2082
+    ],
+    "summary": "The propagation processes of these pollutants can vary considerably in terms of both space and time. The pollutants in an area can be transported from different sets of polluted upstream areas at different times. Star-like propagation structures may indicate that the areas at the center are the major pollution sources."
+  },
+  {
+    "hex_coord": [
+      2,
+      -2
+    ],
+    "country": 5,
+    "MSU_ids": [
+      2400
+    ],
+    "summary": "According to the technical regulation on ambient air quality index (on trial), the air pollution index for PM2.5 is divided into six levels. With these levels, we can identify the severity of air pollution. In this case study, the precipitation data were integrated to determine whether rainy weather can affect pollutant concentration."
+  },
+  {
+    "hex_coord": [
+      2,
+      6
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1346
+    ],
+    "summary": "Nitroaromatic compounds and imidazole-like species are typical brown carbon molecules that absorb solar radiation. Nitro-polycyclic aromatic hydrocarbons (nitro-PAHs) are known toxicants to the human body. Nitrocatechol formation processes were represented by 4-nitrocatechol."
+  },
+  {
+    "hex_coord": [
+      3,
+      -9
+    ],
+    "country": 1,
+    "MSU_ids": [
+      630
+    ],
+    "summary": "The experimental results on data from three years across nine Chinese cities demonstrate the advantages of DeepAir beyond 10 baseline methods. We compare DeepAir with following ten baselines. Comparing with DeepFM, the results show the effectiveness of DeepAir."
+  },
+  {
+    "hex_coord": [
+      3,
+      -6
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1267
+    ],
+    "summary": "Meteorological parameters such as temperature, relative humidity, atmospheric pressure, visibility, wind speed, and wind direction were also recorded."
+  },
+  {
+    "hex_coord": [
+      3,
+      -2
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1266
+    ],
+    "summary": "Gaseous pollutants, including sulfur dioxide (SO2), ozone (O3), nitrogen dioxide (NO2), nitric oxide (NO), and carbon monoxide (CO), were recorded."
+  },
+  {
+    "hex_coord": [
+      3,
+      -2
+    ],
+    "country": 5,
+    "MSU_ids": [
+      2459
+    ],
+    "summary": "Strong winds may accelerate the spread of pollutants. The relationship between pollutants and weather factors is analyzed. Precipitation exhibits an extremely weak negative correlation with the pollutants."
+  },
+  {
+    "hex_coord": [
+      3,
+      1
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1201,
+      1205,
+      1223
+    ],
+    "summary": "During the summer of 2021, we conducted a two-month period of online observations of aerosol IN and ON in urban Shanghai. We extended our investigation through online measurements of aerosol ON in urban Shanghai during the fall-winter period of 2021. Nitrogenous components have become increasingly prominent contributors to $PM_{2.5}$ mass."
+  },
+  {
+    "hex_coord": [
+      3,
+      2
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1224
+    ],
+    "summary": "Our findings revealed significant diurnal variations in ON concentrations. Aerosol ON was measured bihourly using our newly developed analytical system. The programmed thermal evolution facilitates the separation of aerosol IN and ON, as they exhibit distinct thermal characteristics."
+  },
+  {
+    "hex_coord": [
+      3,
+      3
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1252
+    ],
+    "summary": "Carbonaceous and nitrogenous aerosols collected on quartz filters were thermally evolved under programmed temperatures. The carbonaceous aerosols were catalytically oxidized to $CO_2$ and nitrogen oxides ($NO_{\nu}$). The C signal was monitored using the non-dispersive infrared (NDIR) method."
+  },
+  {
+    "hex_coord": [
+      4,
+      -8
+    ],
+    "country": 1,
+    "MSU_ids": [
+      607
+    ],
+    "summary": "We collectively predict the air quality in a couple of hours, e.g. 1-3 hours. Weather forecasts are usually segmented into 3-hour time intervals. Weather forecast provides 3-hour segmented forecasted weather conditions."
+  },
+  {
+    "hex_coord": [
+      4,
+      -7
+    ],
+    "country": 1,
+    "MSU_ids": [
+      617,
+      732
+    ],
+    "summary": "We use three-year data from 2014/5/1 to 2017/4/30 in nine major Chinese cities. We compared our approach with 10 baselines using three-year data from 9 Chinese cities."
+  },
+  {
+    "hex_coord": [
+      4,
+      -6
+    ],
+    "country": 4,
+    "MSU_ids": [
+      1678
+    ],
+    "summary": "Case studies analyzed the air pollution problem in Beijing, China. The cause of air pollution in Beijing remains controversial. Some researchers concluded that regional transport of PM2.5 is the main cause of air pollution in Beijing."
+  },
+  {
+    "hex_coord": [
+      4,
+      -6
+    ],
+    "country": 5,
+    "MSU_ids": [
+      2369
+    ],
+    "summary": "The useful findings of air pollution in Beijing show that our new method extends the existing work and fills a gap in the research. Two datasets are utilized for the case study of air quality in Beijing. The dataset comprises one year of air quality data from 36 air quality monitoring stations in Beijing."
+  },
+  {
+    "hex_coord": [
+      4,
+      -1
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1213
+    ],
+    "summary": "Vehicle emissions and secondary formation processes were identified as major drivers of episodic ON enhancements. The field measurement was conducted in Shanghai. Coal combustion and vehicle emissions were the most dominant primary sources, each contributing 21 % to the aerosol ON."
+  },
+  {
+    "hex_coord": [
+      4,
+      1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      834,
+      1014
+    ],
+    "summary": "The chemical composition of cluster ions was measured using a high-resolution atmospheric-pressure-interface time-of-flight mass spectrometer (APi-ToF, Aerodyne Research Inc. and Tofwerk AG). The APi-ToF measures naturally charged ions in the ambient environment. The CI-APi-ToF is an APi-ToF coupled with a CI unit, equipped with a soft X-ray source to produce the primary ions."
+  },
+  {
+    "hex_coord": [
+      4,
+      3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      977
+    ],
+    "summary": "Oxygenated organic molecules from the atmospheric oxidation of volatile organic compounds (VOCs) appear to play a minor role in the initial cluster formation but contribute significantly to the consecutive growth process. Amines, ammonia, and aromatics were added to reflect an environment influenced by anthropogenic emissions. Those vapors were likely a mixture of organics from anthropogenic and biogenic origins."
+  },
+  {
+    "hex_coord": [
+      4,
+      5
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1398,
+      1450,
+      1453
+    ],
+    "summary": "Dicarboxylic acid (DCA) formation was identified through a suite of dicarboxylic acids. A significant fraction of ON (8%) was associated with the formation processes of DCAs. The part of ON related to DCA formation processes (here termed as DCA_ON) may represent the reduced-ON species formed through the heterogeneous / aqueous phase reactions between DCAs and NH3 / NH4+."
+  },
+  {
+    "hex_coord": [
+      5,
+      0
+    ],
+    "country": 2,
+    "MSU_ids": [
+      879
+    ],
+    "summary": "State-of-the-art instruments are capable of measuring size distributions down to $1-2 \text{ nm}$ and directly identifying clusters and vapors. The Airmodus A11 nano-CNC system is a two-step condensation particle counter. The Airmodus A11 nano-CNC system is capable of measuring particle size distributions of sub-3 nm particles."
+  },
+  {
+    "hex_coord": [
+      5,
+      3
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1417
+    ],
+    "summary": "This result provides a rough estimation of the total reduced ON compounds that are formed through NH3 / NH4+ reactions in urban Shanghai. In a recent study conducted in rural Shanghai (Liu et al., 2023), eight imidazoles were detected. The average concentration of imidazoles was 5.5 ± 3.4 ng m-3."
+  },
+  {
+    "hex_coord": [
+      6,
+      0
+    ],
+    "country": 2,
+    "MSU_ids": [
+      962,
+      991
+    ],
+    "summary": "We applied a kinetic model to simulate SA dimer concentrations. In the model, the formation rate of SA tetramer was regarded as the simulated particle formation rate. Favorable conditions for NPF include potentially lower CS and higher alkaline- and organic-molecule concentrations in summer."
+  },
+  {
+    "hex_coord": [
+      8,
+      -3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      799,
+      1140
+    ],
+    "summary": "We conducted a continuous 2-month measurement campaign with state-of-the-art instruments to elucidate the NPF and growth mechanisms in northern Italy. Amines are insufficient to stabilize all sulfuric acid clusters in the Po Valley. Our results also indicate that reducing key pollutants, such as SO2, amine and NH3, could help to substantially decrease the particle number concentrations in the Po Valley region."
+  },
+  {
+    "hex_coord": [
+      9,
+      -4
+    ],
+    "country": 2,
+    "MSU_ids": [
+      961
+    ],
+    "summary": "The Po Valley region in northern Italy has been characterized as a hotspot for high aerosol loadings and frequent NPF events in southern Europe. The Po Valley region is one of the most important industrial and agricultural areas in southern Europe. The Po Valley region has a dense population of over 17 million people per 70,000 km²."
+  }
+]

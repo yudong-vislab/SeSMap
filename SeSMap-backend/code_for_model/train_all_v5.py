@@ -24,6 +24,9 @@
 import os
 import json
 import math
+import argparse
+import sys
+from pathlib import Path
 from typing import List, Tuple, Dict
 from tqdm import tqdm
 
@@ -34,6 +37,10 @@ from torch.utils.data import Dataset, DataLoader
 from sentence_transformers import SentenceTransformer, models
 import numpy as np
 import matplotlib.pyplot as plt
+
+BACKEND = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(BACKEND))
+import local_config as cfg
 
 
 # -----------------------
@@ -67,11 +74,35 @@ def collate_fn(batch, tokenizer_model: SentenceTransformer, device="cpu"):
 
 
 # -----------------------
+# 1b) 缓存 embedding 模式（bge 冻结 -> 句向量只算一次；本地 CPU 训练飞快）
+# -----------------------
+def load_embedding_cache(cache_path):
+    """读取 precompute_embeddings.py 产出的 <cache>.npy + <cache>.ids.json。"""
+    ids = json.load(open(str(cache_path) + ".ids.json", encoding="utf-8"))
+    X = np.load(str(cache_path)).astype(np.float32)
+    id2row = {int(i): k for k, i in enumerate(ids)}
+    return X, id2row
+
+
+def make_cached_collate(X, id2row, device):
+    Xt = torch.tensor(X, dtype=torch.float32, device=device)
+
+    def _collate(batch):
+        _, _, _, ai, pi, ni = zip(*batch)
+
+        def gather(idxs):
+            return Xt[[id2row[int(x)] for x in idxs]]
+        return gather(ai), gather(pi), gather(ni), ai, pi, ni
+    return _collate
+
+
+# -----------------------
 # 2) 模型：SBERT（冻结） + MLP -> 2d   （与 v3 完全一致：残差 + 归一化到 [0,10]）
 # -----------------------
 class Bert2DMapper(nn.Module):
-    def __init__(self, embed_dim=768, hidden_dims=(256, 64, 32), out_dim=2, dropout=0.1):
+    def __init__(self, embed_dim=768, hidden_dims=(256, 64, 32), out_dim=2, dropout=0.1, normalize_output=True):
         super().__init__()
+        self.normalize_output = normalize_output   # v5=True(按批 max 归一化)；v6=False(交给邻域损失)
         self.layers = nn.ModuleList()
         self.norms = nn.ModuleList()
         self.activations = nn.ModuleList()
@@ -99,8 +130,9 @@ class Bert2DMapper(nn.Module):
             if residual.shape[-1] == out.shape[-1]:
                 out = out + residual
         out = self.final(out)
-        out = out / out.max(dim=0, keepdim=True)[0]  # 归一化到 [0, 1]
-        out = out * 10                                # 缩放到 [0, 10]
+        if self.normalize_output:                     # v5 行为：按批 max 归一化到 [0,10]
+            out = out / out.max(dim=0, keepdim=True)[0]
+            out = out * 10
         return out  # (batch, 2)
 
 
@@ -194,7 +226,7 @@ triplet_loss_fn = nn.TripletMarginWithDistanceLoss(
 def train_single_stage(
     json_path: str,
     metadata_path: str,
-    sbert_model_name: str = "/home/lxy/bgemodel",
+    sbert_model_name: str = str(cfg.BGE_MODEL_PATH),
     device: str = "cuda" if torch.cuda.is_available() else "cpu",
     embed_dim: int = 384,
     hidden_dims: tuple = (256, 64, 32),
@@ -202,10 +234,11 @@ def train_single_stage(
     epochs: int = 20,
     lr: float = 1e-3,
     lambda_repulsion: float = 0.4,
-    lambda_para: float = 1.0,
+    lambda_para: float = 0.1,   # 段落局部先验(可读性)，只做弱约束；不让它盖过语义 triplet
     lambda_st: float = 0.05,
     lambda_role: float = 0.0,        # 0.0 = 纯语义地图（Direction B 默认）；>0 可选启用 role 结构（建议 <=0.3）
     freeze_sbert: bool = True,
+    embedding_cache: str = None,     # precompute_embeddings 的 .npy；存在则用缓存、跳过逐 batch 编码
     save_path: str = "./model_2d_v5.pt"
 ):
     # ---- 加载元数据 ----
@@ -229,26 +262,33 @@ def train_single_stage(
         sbert = SentenceTransformer(modules=[word_embedding_model, pooling_model], device=device)
         print("手动构建模型成功")
 
-    # ---- 检测嵌入维度 ----
-    sample_emb = sbert.encode("test", convert_to_tensor=True, device=device)
-    actual_embed_dim = sample_emb.shape[-1]
-    print("Detected embedding dim:", actual_embed_dim)
-    if actual_embed_dim != embed_dim:
-        embed_dim = actual_embed_dim
-
-    # ---- 数据加载器 ----
+    # ---- 缓存 embedding 分支：有缓存就用缓存(快)，否则逐 batch 用 bge 编码 ----
+    use_cache = bool(embedding_cache) and Path(str(embedding_cache)).exists() \
+        and Path(str(embedding_cache) + ".ids.json").exists()
     ds = TripletTextDataset(json_path)
-    dataloader = DataLoader(
-        ds,
-        batch_size=batch_size,
-        shuffle=True,
-        collate_fn=lambda b: collate_fn(b, sbert, device),
-        drop_last=False
-    )
+    if use_cache:
+        X, id2row = load_embedding_cache(embedding_cache)
+        embed_dim = X.shape[1]
+        keep = [t for t in ds.data
+                if all(int(t[k]) in id2row for k in ("anchor_idx", "positive_idx", "negative_idx"))]
+        dropped = len(ds.data) - len(keep)
+        ds.data = keep
+        print(f"[cache] 用缓存 embedding {X.shape} <- {embedding_cache}（跳过逐 batch 编码，CPU 也快）"
+              + (f"；丢弃 {dropped} 条 idx 不在缓存的三元组" if dropped else ""))
+        collate = make_cached_collate(X, id2row, device)
+    else:
+        sample_emb = sbert.encode("test", convert_to_tensor=True, device=device)
+        if sample_emb.shape[-1] != embed_dim:
+            embed_dim = sample_emb.shape[-1]
+        print("Detected embedding dim:", embed_dim, "（无缓存，逐 batch 用 bge 编码）")
+        collate = lambda b: collate_fn(b, sbert, device)
+
+    dataloader = DataLoader(ds, batch_size=batch_size, shuffle=True,
+                            collate_fn=collate, drop_last=False)
 
     # ---- 模型 / 优化器 ----
     mapper = Bert2DMapper(embed_dim=embed_dim, hidden_dims=hidden_dims, out_dim=2).to(device)
-    if freeze_sbert:
+    if freeze_sbert or use_cache:
         trainable_params = list(mapper.parameters())
     else:
         trainable_params = list(mapper.parameters()) + list(sbert.parameters())
@@ -353,20 +393,38 @@ def train_single_stage(
 # 9) 使用示例
 # -----------------------
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--triplets", default=str(cfg.TRIPLETS))
+    parser.add_argument("--metadata", default=str(cfg.FORMDB))
+    parser.add_argument("--model", default=str(cfg.BGE_MODEL_PATH))
+    parser.add_argument("--out", default=str(cfg.MAPPER_CKPT))
+    parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
+    parser.add_argument("--batch-size", type=int, default=128)
+    parser.add_argument("--epochs", type=int, default=20)
+    parser.add_argument("--lr", type=float, default=1e-3)
+    parser.add_argument("--lambda-repulsion", type=float, default=0.4)
+    parser.add_argument("--lambda-para", type=float, default=0.1)
+    parser.add_argument("--lambda-st", type=float, default=0.05)
+    parser.add_argument("--lambda-role", type=float, default=0.0)
+    parser.add_argument("--embedding-cache", default=str(cfg.EMB_CACHE),
+                        help="precompute_embeddings 的 .npy；存在则用缓存训练(推荐)，否则回退逐 batch 编码")
+    args = parser.parse_args()
+
     train_single_stage(
-        json_path="pollution_result/contrastive_triplets_with_context_all_database_v2.0.json",
-        metadata_path="pollution_result/formdatabase_v2.0.json",
-        sbert_model_name="/home/lxy/bgemodel",
-        device="cuda" if torch.cuda.is_available() else "cpu",
-        embed_dim=384,
+        json_path=args.triplets,
+        metadata_path=args.metadata,
+        sbert_model_name=args.model,
+        device=args.device,
+        embed_dim=1024,
         hidden_dims=(256, 64, 32),
-        batch_size=128,
-        epochs=20,
-        lr=1e-3,
-        lambda_repulsion=0.4,
-        lambda_para=1.0,
-        lambda_st=0.05,
-        lambda_role=0.0,      # >0 可选启用 role 结构（注意：过大会压过语义，建议 <=0.3）
+        batch_size=args.batch_size,
+        epochs=args.epochs,
+        lr=args.lr,
+        lambda_repulsion=args.lambda_repulsion,
+        lambda_para=args.lambda_para,
+        lambda_st=args.lambda_st,
+        lambda_role=args.lambda_role,
         freeze_sbert=True,
-        save_path="pollution_result/bert2d_mapper_all_v5.pt"
+        embedding_cache=args.embedding_cache,
+        save_path=args.out
     )

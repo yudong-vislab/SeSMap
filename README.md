@@ -197,3 +197,26 @@ SeSMap-frontend/src/assets/pictures/
 - If the LLM provider changes, update `.env` rather than editing business code.
 - The Source Gallery is mostly handled on the frontend through local keyword matching.
 - RAG indexes are stored locally under `SeSMap-backend/data/indexes/`.
+
+## Backend Data Pipeline
+
+The active end-to-end pipeline is documented in:
+
+```text
+SeSMap-backend/REPRODUCE.md
+```
+
+Run the full backend data/model pipeline with:
+
+```bash
+cd SeSMap-backend
+python pipeline.py
+```
+
+The flow is:
+
+```text
+PDF -> Markdown -> MSU database -> raw triplets -> refined triplets
+-> embedding cache -> mapper training -> 2D coordinates -> hex/HSU cells
+-> HSU summaries -> case database/summary files -> semantic_map_data.json
+```

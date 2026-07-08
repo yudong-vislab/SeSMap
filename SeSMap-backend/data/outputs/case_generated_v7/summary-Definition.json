@@ -1,0 +1,13 @@
+[
+  {
+    "hex_coord": [
+      2,
+      -1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      451
+    ],
+    "summary": "The calculation is based on the condition that $AQI_t > 100$ and $Weather_t = rain$. k is the time interval after rain. Sudden changes mean that the air quality index (AQI) drops very sharply in a very short time span."
+  }
+]

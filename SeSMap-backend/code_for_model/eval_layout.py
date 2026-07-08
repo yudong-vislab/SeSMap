@@ -12,7 +12,8 @@
 # 说明: case 论文数很少(2/5)且可能在训练集内 -> 结果是“诊断/原型”，不是最终可发表数字。
 # ---------------------------------------------------------------------------
 
-import os, sys, json, glob
+import os, sys, json, glob, argparse
+from pathlib import Path
 import numpy as np
 
 from sklearn.decomposition import PCA
@@ -21,8 +22,12 @@ from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score, normalized_mutual_info_score
 from sklearn.neighbors import NearestNeighbors
 
-BGE_PATH = "/Users/yudong/Desktop/SeSMap/SeSMap-backend/models/bge-large-en-v1.5"
-CACHE_DIR = "/private/tmp/claude-501/-Users-yudong/21821616-7580-40d4-9d84-401a9eb25a6a/scratchpad"
+BACKEND = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(BACKEND))
+import local_config as cfg
+
+BGE_PATH = str(cfg.BGE_MODEL_PATH)
+CACHE_DIR = str(cfg.OUTPUT_DIR / "eval_cache")
 K = 12  # neighborhood size, 与论文 Purity@12 一致
 
 
@@ -125,13 +130,17 @@ def eval_case(case_dir, name):
 
 
 if __name__ == "__main__":
-    base = "/Users/yudong/Desktop/SeSMap/SeSMap-backend"
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--case-dirs", nargs="*",
+                        default=[str(cfg.CASE_ROOT / "case1"), str(cfg.CASE_ROOT / "case2"), str(cfg.CASE_ROOT / "case3")])
+    parser.add_argument("--out", default=str(cfg.OUTPUT_DIR / "eval_layout_results.json"))
+    args = parser.parse_args()
+    os.makedirs(CACHE_DIR, exist_ok=True)
     results = {}
-    for case in ["case1", "case2"]:
-        d = os.path.join(base, case)
+    for d in args.case_dirs:
+        case = os.path.basename(os.path.normpath(d))
         if os.path.isdir(d):
             results[case] = eval_case(d, case)
-    out = os.path.join(CACHE_DIR, "eval_layout_results.json")
-    json.dump(results, open(out, "w"), indent=2)
-    print(f"\nSaved results -> {out}")
+    json.dump(results, open(args.out, "w"), indent=2)
+    print(f"\nSaved results -> {args.out}")
     print("\n注: case 论文数少且可能在训练集内 -> 诊断/原型结论，非最终可发表数字。")

@@ -1,11 +1,7 @@
 import re
 import json
-import os
 from pathlib import Path
-# input_path = Path("datamd/airvis/airvis.md")
-input_path = Path("/home/lxy/case_engine/largeeddy/largeeddy.md")
-# output_path = Path("airvis.md")
-output_json = Path("/home/lxy/case_engine/largeeddy/largeeddy.json")
+import argparse
 
 def strip_bold(text: str) -> str:
     """
@@ -39,7 +35,6 @@ def correct_markdown_header_levels(md_text: str) -> str:
             m = header_re.match(f"# {body}")  # 人为加一个 '#' 让正则能统一处理去掉的 #
             if m:
                 num = m.group(1)                # "3"、"3.1"、"3.1.1"
-                print(num)
                 title_text = m.group(2).strip() # 去除后剩下的标题内容
                 level = num.count('.') + 1      # 点数量+1 决定 # 数量
                 hashes = '#' * level
@@ -199,25 +194,26 @@ def batch_process(root_dir: str, abstract_summary: str):
         )
         print(f"✔ 生成 {json_path.relative_to(root_dir)}")
 def main():
-    # DATA_ROOT = "usefor_air"
-    GLOBAL_ABSTRACT_SUMMARY = "在此填写论文摘要的精简版"
-    
-    md_text = input_path.read_text(encoding="utf-8")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--input", required=True, type=Path)
+    parser.add_argument("--out", required=True, type=Path)
+    parser.add_argument("--abstract-summary", default="")
+    args = parser.parse_args()
+
+    md_text = args.input.read_text(encoding="utf-8")
     md_fixed = correct_markdown_header_levels(md_text)
     sections = parse_markdown_to_json(
         md_fixed,
-        abstract_summary=GLOBAL_ABSTRACT_SUMMARY
+        abstract_summary=args.abstract_summary
     )
-    output_json.write_text(
+    args.out.parent.mkdir(parents=True, exist_ok=True)
+    args.out.write_text(
         json.dumps(sections, ensure_ascii=False, indent=2),
         encoding="utf-8"
     )
-    print(f"✔ 生成 {output_json}")
-    
-    # batch_process(DATA_ROOT, GLOBAL_ABSTRACT_SUMMARY)
+    print(f"✔ 生成 {args.out}")
 
 
 if __name__ == "__main__":
     main()
-
 

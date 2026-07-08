@@ -1,98 +1,103 @@
+#!/usr/bin/env python3
+"""
+Apply the trained Bert2DMapper to formdatabase.json and write formdatabase_v2.0.json.
+
+Input:
+  data/outputs/formdatabase.json
+  data/outputs/bert2d_mapper_all_v5.pt
+  models/bge-large-en-v1.5/
+
+Output:
+  data/outputs/formdatabase_v2.0.json with a 2d_coord field on every text MSU.
+"""
+from __future__ import annotations
+
+import argparse
 import json
+import sys
+from pathlib import Path
+
 import torch
 from sentence_transformers import SentenceTransformer, models
-import os
-paragraphs = []
-papers = []
-# 1. 读取 alldata.json
-# with open('case_engine/alldata_processed.json', 'r', encoding='utf-8') as f:
-#     alldata = json.load(f)
 
-# # 2. 读取 paragraphs.json 和 papers.json
-# with open('case_engine/paragraphs.json', 'r', encoding='utf-8') as f:
-#     para_data = json.load(f)
-#     if isinstance(para_data, list):
-#         paragraphs = {str(i): p for i, p in enumerate(para_data)}
-#     elif isinstance(para_data, dict):
-#         paragraphs = para_data
-#     else:
-#         raise ValueError('paragraphs.json 格式不支持')
-# with open('case_engine/papers.json', 'r', encoding='utf-8') as f:
-#     paper_data = json.load(f)
-#     if isinstance(paper_data, list):
-#         papers = {str(i): p for i, p in enumerate(paper_data)}
-#     elif isinstance(paper_data, dict):
-#         papers = paper_data
-#     else:
-#         raise ValueError('papers.json 格式不支持')
-with open('case_engine/formdatabase.json', 'r', encoding='utf-8') as f:
-    alldata = json.load(f)
-
-# 3. 加载SBERT和映射模型（参考 inference_interactive.py）
-sbert_path = '/home/lxy/bgemodel'  # 修改为你的实际路径
-model_path = 'model_train/pollution_result/bert2d_mapper_all_v3.0.pt'
-device = 'cuda' if torch.cuda.is_available() else 'cpu'
-
-# SBERT加载
+BACKEND = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(BACKEND))
+import local_config as cfg
+from code_for_model.train_all_v5 import Bert2DMapper
 try:
-    sbert = SentenceTransformer(sbert_path, device=device)
+    from code_for_model.train_all_v7 import ResidualProjectionMapper
 except Exception:
-    word_embedding_model = models.Transformer(sbert_path)
-    pooling_model = models.Pooling(
-        word_embedding_model.get_word_embedding_dimension(),
-        pooling_mode_mean_tokens=True
-    )
-    sbert = SentenceTransformer(modules=[word_embedding_model, pooling_model], device=device)
+    ResidualProjectionMapper = None
 
-# Bert2DMapper定义（与训练一致）
-import torch.nn as nn
-class Bert2DMapper(nn.Module):
-    def __init__(self, embed_dim=768, hidden_dims=(256, 64), out_dim=2, dropout=0.1):
-        super().__init__()
-        self.layers = nn.ModuleList()
-        self.norms = nn.ModuleList()
-        self.activations = nn.ModuleList()
-        self.dropouts = nn.ModuleList()
-        in_dim = embed_dim
-        for h in hidden_dims:
-            self.layers.append(nn.Linear(in_dim, h))
-            self.norms.append(nn.BatchNorm1d(h))
-            self.activations.append(nn.GELU())
-            self.dropouts.append(nn.Dropout(dropout))
-            in_dim = h
-        self.final = nn.Linear(in_dim, out_dim)
-    def forward(self, x):
-        out = x
-        for layer, norm, act, drop in zip(self.layers, self.norms, self.activations, self.dropouts):
-            residual = out
-            out = layer(out)
-            out = norm(out)
-            out = act(out)
-            out = drop(out)
-            if residual.shape[-1] == out.shape[-1]:
-                out = out + residual
-        out = self.final(out)
-        return out
 
-ckpt = torch.load(model_path, map_location=device)
-mapper = Bert2DMapper(embed_dim=ckpt['embed_dim'], hidden_dims=tuple(ckpt['hidden_dims']), out_dim=2)
-mapper.load_state_dict(ckpt['mapper_state'])
-mapper.to(device)
-mapper.eval()
+def load_sbert(model_path: Path, device: str):
+    try:
+        return SentenceTransformer(str(model_path), device=device)
+    except Exception:
+        word_embedding_model = models.Transformer(str(model_path))
+        pooling_model = models.Pooling(
+            word_embedding_model.get_word_embedding_dimension(),
+            pooling_mode_mean_tokens=True,
+            pooling_mode_cls_token=False,
+            pooling_mode_max_tokens=False,
+        )
+        return SentenceTransformer(modules=[word_embedding_model, pooling_model], device=device)
 
-# 4. 构建新数据
-newdata = []
-with torch.no_grad():
-    for idx, item in enumerate(alldata):
-        sentence = item.get('sentence', '')
-        emb = sbert.encode(sentence, convert_to_tensor=True, device=device).unsqueeze(0)
-        coords = mapper(emb).cpu().numpy().tolist()[0]
-        item['2d_coord'] = coords
-        # item['para_info'] = paragraphs.get(str(item.get('para_id', '-1')), None)
-        # item['paper_info'] = papers.get(str(item.get('paper_id', '-1')), None)
-        newdata.append(item)
 
-# 5. 保存到 formdatabase.json
-with open('case_engine/formdatabase_v2.0.json', 'w', encoding='utf-8') as f:
-    json.dump(newdata, f, ensure_ascii=False, indent=2)
+def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--input", type=Path, default=cfg.FORMDB)
+    parser.add_argument("--out", type=Path, default=cfg.FORMDB_V2)
+    parser.add_argument("--mapper", type=Path, default=cfg.MAPPER_CKPT)
+    parser.add_argument("--model", type=Path, default=cfg.BGE_MODEL_PATH)
+    parser.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
+    args = parser.parse_args()
 
+    records = json.loads(args.input.read_text(encoding="utf-8"))
+    if not isinstance(records, list):
+        raise ValueError(f"{args.input} must contain a list")
+    if not args.mapper.exists():
+        raise FileNotFoundError(f"Mapper checkpoint not found: {args.mapper}")
+
+    sbert = load_sbert(args.model, args.device)
+    ckpt = torch.load(args.mapper, map_location=args.device)
+    if ckpt.get("model_class") == "ResidualProjectionMapper":
+        if ResidualProjectionMapper is None:
+            raise RuntimeError("ResidualProjectionMapper is unavailable; cannot load v7 checkpoint")
+        mapper = ResidualProjectionMapper(
+            embed_dim=int(ckpt["embed_dim"]),
+            width=int(ckpt.get("width", 512)),
+            num_blocks=int(ckpt.get("num_blocks", 4)),
+            dropout=float(ckpt.get("dropout", 0.0)),
+            out_dim=int(ckpt.get("out_dim", 2)),
+        ).to(args.device)
+    else:
+        mapper = Bert2DMapper(
+            embed_dim=int(ckpt["embed_dim"]),
+            hidden_dims=tuple(ckpt["hidden_dims"]),
+            out_dim=2,
+            normalize_output=bool(ckpt.get("normalize_output", True)),  # v6 存 False
+        ).to(args.device)
+    mapper.load_state_dict(ckpt["mapper_state"])
+    mapper.eval()
+
+    updated = [dict(item) for item in records]
+    text_idx = [i for i, rec in enumerate(updated) if str(rec.get("sentence", "")).strip()]
+    sentences = [str(updated[i]["sentence"]).strip() for i in text_idx]
+    with torch.no_grad():
+        emb = sbert.encode(sentences, batch_size=32, convert_to_tensor=True,
+                           device=args.device, show_progress_bar=True)
+        # 关键：整批一次性 forward。Bert2DMapper.forward 里有 out/out.max(dim=0) 的“按批归一化”，
+        # 若像原来那样每次只喂 1 句(batch=1)，会把每个 MSU 都压成同一个坐标 [10,10]（垃圾输出）。
+        coords = mapper(emb).cpu().numpy().tolist()
+    for i, c in zip(text_idx, coords):
+        updated[i]["2d_coord"] = c
+
+    args.out.parent.mkdir(parents=True, exist_ok=True)
+    args.out.write_text(json.dumps(updated, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"[done] {len(updated)} records -> {args.out}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

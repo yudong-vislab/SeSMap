@@ -123,7 +123,7 @@ _DEFAULT_CASE_RAW = (os.getenv("DEFAULT_CASE") or "case3").strip().lower()
 
 def _normalize_case_id(pid: Optional[str]) -> str:
     """
-    把各种大小写/空格形式统一成 'case1' / 'case2' / 'case3'，
+    把各种大小写/空格形式统一成 'case1' / 'case2' / 'case3' / 'v7'，
     如果不认识就回退到默认 case。
     """
     if not pid:
@@ -136,9 +136,11 @@ def _normalize_case_id(pid: Optional[str]) -> str:
         return "case2"
     if t in ("case3", "3"):
         return "case3"
+    if t in ("v7", "casev7", "case7", "7"):
+        return "v7"
     # 兜底：环境变量里设的 DEFAULT_CASE
     dc = _DEFAULT_CASE_RAW.replace(" ", "")
-    if dc in ("case1", "case2", "case3"):
+    if dc in ("case1", "case2", "case3", "v7"):
         return dc
     return "case3"
 
@@ -150,14 +152,14 @@ def _match_case_id(text: str) -> Optional[str]:
     if not text:
         return None
     t = text.lower()
-    for key in ("case 1", "case1", "case 2", "case2", "case 3", "case3"):
+    for key in ("case 1", "case1", "case 2", "case2", "case 3", "case3", "case v7", "casev7", "v7"):
         if key in t:
             return _normalize_case_id(key)
     return None
 
 def get_data_path(project_id: Optional[str] = None) -> pathlib.Path:
     """
-    根据 project_id(case1/2/3) 决定 semantic_map_data.json 的路径。
+    根据 project_id(case1/2/3/v7) 决定 semantic_map_data.json 的路径。
     """
     cid = _normalize_case_id(project_id or _DEFAULT_CASE_RAW)
     return CASE_DATA_ROOT / cid / "semantic_map_data.json"
@@ -873,7 +875,7 @@ def query_gpt():
             tool_prompt = (
                 "You normalize user text into a SeSMap UI command for subspace visibility.\n"
                 "Output ONLY strict JSON: "
-                "{\"command\":\"<string>\",\"project_id\":\"case1|case2|case3|null\"}\n"
+                "{\"command\":\"<string>\",\"project_id\":\"case1|case2|case3|v7|null\"}\n"
                 "Allowed command values:\n"
                 "- \"show all subspaces\" / \"hide all subspaces\"\n"
                 "- \"show <name1>, <name2>\" or \"hide <name1>, <name2>\"\n"
@@ -882,6 +884,7 @@ def query_gpt():
                 "- If the user mentions case 1 / case1, set project_id=\"case1\".\n"
                 "- If case 2 / case2, set project_id=\"case2\".\n"
                 "- If case 3 / case3, set project_id=\"case3\".\n"
+                "- If v7 / case v7, set project_id=\"v7\".\n"
                 "- If not clearly specified, set project_id=\"null\".\n"
                 "- Do not include paper-gallery requests here; only subspace visibility commands.\n"
                 "Do not add extra keys or commentary.\n"
@@ -897,7 +900,7 @@ def query_gpt():
             pid_from_llm = js.get("project_id")
             if isinstance(pid_from_llm, str):
                 pid_from_llm = pid_from_llm.strip().lower()
-                if pid_from_llm in ("case1", "case2", "case3"):
+                if pid_from_llm in ("case1", "case2", "case3", "v7"):
                     project_id = pid_from_llm
                 else:
                     project_id = None
