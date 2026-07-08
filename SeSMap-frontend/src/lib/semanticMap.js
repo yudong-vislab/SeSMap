@@ -193,7 +193,7 @@ const LAYOUT = {
   MIN_H: STYLE.SUBSPACE_MIN_H,
 };
 
-const DEFAULT_AGGREGATION_RANGE = 12;
+const DEFAULT_AGGREGATION_RANGE = 20;
 
 
 /* =========================

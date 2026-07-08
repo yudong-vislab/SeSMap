@@ -12,7 +12,7 @@ import {
 import { emitSelectionSaved } from '../lib/selectionBus'
 
 const props = defineProps({
-  aggregationRange: { type: Number, default: 12 }
+  aggregationRange: { type: Number, default: 20 }
 })
 
 const outerRef = ref(null)
@@ -86,7 +86,7 @@ watch(
   () => props.aggregationRange,
   (v) => {
     if (!ready.value || !controller) return
-    controller.setAggregationRange?.(Number(v) || 12)
+    controller.setAggregationRange?.(Number(v) || 20)
   }
 )
 

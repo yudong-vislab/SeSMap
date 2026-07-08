@@ -135,6 +135,7 @@ def build_target_layout(args: argparse.Namespace, x: np.ndarray) -> np.ndarray:
             n_components=2,
             n_neighbors=args.target_neighbors,
             min_dist=args.min_dist,
+            spread=args.spread,
             metric="euclidean",
             random_state=args.seed,
         )
@@ -204,6 +205,7 @@ def main() -> int:
     ap.add_argument("--reuse-target", action="store_true")
     ap.add_argument("--target-neighbors", type=int, default=15)
     ap.add_argument("--min-dist", type=float, default=0.05)
+    ap.add_argument("--spread", type=float, default=1.0)
     ap.add_argument("--perplexity", type=float, default=30.0)
     ap.add_argument("--knn-k", type=int, default=24)
     ap.add_argument("--eval-k", type=int, default=12)
@@ -333,6 +335,8 @@ def main() -> int:
             "target": args.target,
             "target_cache": str(args.target_cache),
             "target_neighbors": args.target_neighbors,
+            "min_dist": args.min_dist,
+            "spread": args.spread,
             "knn_k": args.knn_k,
             "ids": ids,
             "normalize_output": False,

@@ -5,7 +5,7 @@
 
     <div class="app-shell">
       <aside class="col col-left">
-        <LeftPane @updateHexRadius="aggregationRange = Number($event) || 12" />
+        <LeftPane @updateHexRadius="aggregationRange = Number($event) || 20" />
       </aside>
 
       <main class="col col-center">
@@ -26,7 +26,7 @@ import LeftPane from './components/LeftPane.vue'
 import MainView from './components/MainView.vue'
 import RightPane from './components/RightPane.vue'
 
-const aggregationRange = ref(12)
+const aggregationRange = ref(20)
 </script>
 
 <style>

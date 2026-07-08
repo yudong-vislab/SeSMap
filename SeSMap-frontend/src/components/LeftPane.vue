@@ -28,8 +28,8 @@ Your responsibilities:
 const markdownModel = ref('PyMuPDF+LLM')
 
 // ====== Hex Radius =====================================================
-const hexRadius = ref(12)
-const hexMin = 6, hexMax = 28, hexStep = 1
+const hexRadius = ref(20)
+const hexMin = 8, hexMax = 48, hexStep = 1
 
 // ====== PDF 上传 =======================================================
 const uploadedFiles = ref([])

@@ -24,6 +24,15 @@ CANONICAL = ["Background", "Method", "Experiment", "Result", "Conclusion", "Othe
 
 def safe_name(value: str) -> str:
     value = str(value or "Other").strip() or "Other"
+    normalized = re.sub(r"[^a-z0-9]+", "_", value.lower()).strip("_")
+    aliases = {
+        "experiment_setup": "Experiment",
+        "conclusion_implication": "Conclusion",
+        "other": "Other",
+        "others": "Other",
+    }
+    if normalized in aliases:
+        return aliases[normalized]
     if value.lower() in {"other", "others"}:
         return "Other"
     for c in CANONICAL:
