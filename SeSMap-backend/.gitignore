@@ -1,1 +1,31 @@
+# Local secrets
 .env
+.env.local
+
+# Python/runtime noise
+.DS_Store
+.vscode/
+.python-version
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.venv-mineru/
+
+# Downloaded model assets.
+# Keep the manifest/scripts in git, but never commit binary model weights.
+models/**
+!models/.gitkeep
+
+# Trained mapper checkpoints and generated model artifacts
+data/outputs/*.pt
+data/outputs/*.pth
+data/outputs/*.ckpt
+data/outputs/*.bin
+data/outputs/*.safetensors
+data/outputs/*_loss.png
+pollution_result/
+model_train/
+
+# Local ML caches / indexes that are reproducible or too large for GitHub
+data/indexes/

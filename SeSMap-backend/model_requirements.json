@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "models": [
+    {
+      "name": "bge-large-en-v1.5",
+      "kind": "huggingface_snapshot",
+      "repo_id": "BAAI/bge-large-en-v1.5",
+      "local_dir": "models/bge-large-en-v1.5",
+      "ignore_patterns": [
+        "*.safetensors",
+        "*.h5",
+        "*.msgpack",
+        "*.ot",
+        "onnx/*",
+        "*.onnx"
+      ],
+      "required": true,
+      "description": "Local BGE sentence encoder used by the SeSMap data/model pipeline."
+    },
+    {
+      "name": "bert2d_mapper_all_v5",
+      "kind": "file",
+      "local_path": "data/outputs/bert2d_mapper_all_v5.pt",
+      "url_env": "SESMAP_MAPPER_CKPT_URL",
+      "sha256_env": "SESMAP_MAPPER_CKPT_SHA256",
+      "required": true,
+      "description": "Trained Bert2DMapper checkpoint. Keep it outside GitHub; provide a private URL through .env or copy it to this path."
+    }
+  ]
+}

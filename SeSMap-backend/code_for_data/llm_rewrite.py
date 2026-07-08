@@ -1,15 +1,13 @@
 import os
-from openai import OpenAI
 import json
 import re
 from pathlib import Path
 from dotenv import load_dotenv
-from services.llm_config import LLM_CONFIG, model_for
+from services.llm_config import LLM_CONFIG, model_for, get_openai_client
 
 load_dotenv(Path(__file__).resolve().parents[1] / ".env")
 
-# 初始化 OpenAI 客户端
-client = OpenAI(api_key=LLM_CONFIG.api_key, base_url=LLM_CONFIG.base_url)
+# OpenAI 客户端改为惰性构造：无 key 时不再在 import 阶段崩溃（也便于 --no-llm）。
 
 def clean_json_text(text: str) -> str:
     # 去掉 markdown 代码块 ```json 或 ```
@@ -56,6 +54,7 @@ Paragraph:
 {paragraph}
 """
 
+    client = get_openai_client()
     response = client.chat.completions.create(
         model=model_for("summary"),
         messages=[{"role": "user", "content": prompt}],

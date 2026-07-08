@@ -54,6 +54,8 @@ cd SeSMap-backend
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+cp .env.example .env
+python scripts/install_models.py
 python app.py
 ```
 
@@ -110,6 +112,23 @@ GET /api/llm/config
 ```
 
 Do not commit real API keys to a public repository.
+
+## Model Assets
+
+Large local model files are intentionally ignored by git. Backend model dependencies are declared in:
+
+```text
+SeSMap-backend/model_requirements.json
+```
+
+Install/download them with:
+
+```bash
+cd SeSMap-backend
+python scripts/install_models.py
+```
+
+The BGE encoder is downloaded from Hugging Face into `models/bge-large-en-v1.5/`. The trained mapper checkpoint is expected at `data/outputs/bert2d_mapper_all_v5.pt`; because it is private/large, provide `SESMAP_MAPPER_CKPT_URL` in `.env` or copy the file there manually.
 
 ## Common Commands
 
