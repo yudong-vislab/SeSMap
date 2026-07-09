@@ -62,7 +62,7 @@ FORMDB_V2    = MSU_DIR / "formdatabase_v2.0.json"     # 加了 2d_coord
 TRIPLETS_RAW = TRIPLET_DIR / "contrastive_triplets_raw.json"
 TRIPLETS     = TRIPLET_DIR / "contrastive_triplets.json"
 EMB_CACHE    = EMB_DIR / "emb_corpus.npy"
-MAPPER_CKPT  = _p("SESMAP_MAPPER_CKPT", MODEL_DIR / "bert2d_mapper_all_v5.pt")
+MAPPER_CKPT  = _p("SESMAP_MAPPER_CKPT", MODEL_DIR / "bert2d_mapper_all_v10.pt")  # 生产模型 = v10(正则化全批 parametric t-SNE)
 HEX_INFO     = HEX_DIR / "hexagon_info.json"
 SUMMARIES    = SUM_DIR / "summaries.json"
 SEMANTIC_MAP = SMAP_DIR / "semantic_map_data.json"
