@@ -27,9 +27,9 @@ Your responsibilities:
 // ====== Markdown Parser 选择（保留字段） ==============================
 const markdownModel = ref('PyMuPDF+LLM')
 
-// ====== Hex Radius =====================================================
-const hexRadius = ref(20)
-const hexMin = 8, hexMax = 48, hexStep = 1
+// ====== HSU Aggregation Scale ==========================================
+const hexRadius = ref(32)
+const hexMin = 4, hexMax = 120, hexStep = 1
 
 // ====== PDF 上传 =======================================================
 const uploadedFiles = ref([])
@@ -334,6 +334,14 @@ function isClearCommand(text) {
     t.includes('empty') ||
     /清空|隐藏全部|全部隐藏|清除/.test(text || '')
   )
+}
+
+function isClearSubspaceCommand(text) {
+  const raw = String(text || '')
+  const t = raw.toLowerCase()
+  if (!raw.trim()) return false
+  return /\b(clear|hide)\s+all\s+subspaces?\b/.test(t)
+    || (/清空|隐藏/.test(raw) && /所有|全部/.test(raw) && /子空间|subspace/i.test(raw))
 }
 
  // 仅当明确出现“gallery / Semantic Source gallery / 图片库 / 图集 / collect”时，才走图片展示通道
@@ -684,7 +692,29 @@ async function runMsuSemanticFilter(msg) {
 async function handleSend(msg) {
   messages.value.push({ role: 'user', type:'text', text: msg })
 
-  // A) 清空命令
+  // A0) 只拦截一个窄命令：clear/hide all subspaces，避免误清 Gallery。
+  // 其他 show/case/gallery 逻辑保持原链路。
+  if (isClearSubspaceCommand(msg)) {
+    try {
+      const ctrl = window?.SemanticMapCtrl
+      const router = window?.CommandRouter
+      const cmd = 'hide all subspaces'
+      if (ctrl && router) {
+        const ret = router.routeCommand(ctrl, cmd)
+        messages.value.push({ role:'assistant', type:'markdown', text: ret?.message || 'Done.' })
+      } else {
+        window.__pendingSubspaceCmds = window.__pendingSubspaceCmds || []
+        window.__pendingSubspaceCmds.push(cmd)
+        messages.value.push({ role:'assistant', type:'markdown', text:'Subspace command queued.' })
+      }
+    } catch (e) {
+      console.warn('[LeftPane] UI route error:', e)
+      messages.value.push({ role:'assistant', type:'error', text:`Subspace command failed: ${e.message || e}` })
+    }
+    return
+  }
+
+  // A) 清空命令（恢复原先 gallery 清理逻辑；上面的 clear subspace 已提前处理）
   if (isClearCommand(msg)) {
     onClearPaper()
     messages.value.push({ role:'assistant', type:'markdown', text:'Cleared Semantic Source Gallery.' })
@@ -707,23 +737,6 @@ async function handleSend(msg) {
      })
      return
    }
- 
-  // C) 子空间 UI 指令（优先前端直达，不经 LLM）
-  //  try {
-  //    if (window.CommandRouter && window.SemanticMapCtrl){
-  //      const parsed = window.CommandRouter.__parse?.(msg) || null
-  //      const isUi =
-  //        parsed && ['show','show-all','hide-all','add','delete','list','count','unknown'].includes(parsed.intent) &&
-  //        /^\s*(show|add|delete|remove|list|how many|显示|新增|删除|列出|有多少)/i.test(msg)
-  //      if (isUi) {
-  //        const ret = window.CommandRouter.routeCommand(window.SemanticMapCtrl, msg)
-  //        messages.value.push({ role:'assistant', type:'markdown', text: ret?.message || 'Done.' })
-  //        return
-  //      }
-  //    }
-  //  } catch(e){
-  //    console.warn('[LeftPane] UI route error:', e)
-  //  }
  
   // D) 走后端 LLM（保留你的原逻辑）
   try {
@@ -781,11 +794,11 @@ async function handleSend(msg) {
         <div class="cp-divider"></div>
 
         <div class="cp-block">
-          <div class="cp-label-top">HSU Aggregation Range</div>
+          <div class="cp-label-top">HSU Aggregation Scale</div>
           <div class="cp-slider">
-            <input type="range" :min="hexMin" :max="hexMax" :step="hexStep" v-model="hexRadius" />
-            <input class="cp-number" type="number" :min="hexMin" :max="hexMax" :step="hexStep" v-model.number="hexRadius" />
-            <span class="cp-unit">px</span>
+            <input type="range" :min="hexMin" :max="hexMax" :step="hexStep" v-model="hexRadius" aria-label="HSU aggregation scale" />
+            <input class="cp-number" type="number" :min="hexMin" :max="hexMax" :step="hexStep" v-model.number="hexRadius" aria-label="HSU aggregation scale value" />
+            <span class="cp-unit">scale</span>
           </div>
           <!-- <div class="cp-hint">Controls HSU aggregation radius.</div> -->
         </div>

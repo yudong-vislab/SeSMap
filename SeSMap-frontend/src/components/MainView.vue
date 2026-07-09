@@ -12,19 +12,21 @@ import {
 import { emitSelectionSaved } from '../lib/selectionBus'
 
 const props = defineProps({
-  aggregationRange: { type: Number, default: 20 }
+  aggregationRange: { type: Number, default: 32 }
 })
 
 const outerRef = ref(null)
 const playgroundRef = ref(null)
 const globalOverlayRef = ref(null)
 const mainTitleRef = ref(null)
+const selectionHasContent = ref(false)
 
 let controller = null
 const ready = ref(false)
 
 // ✨ 新增：保存事件处理函数，方便卸载
 let projectChangedHandler = null
+let selectionChangedHandler = null
 
 /**
  * ✨ 抽出来的初始化/重载函数
@@ -79,6 +81,7 @@ async function bootstrapSemanticMap(projectId) {
   })
 
   ready.value = true
+  selectionHasContent.value = false
   controller?.setAggregationRange?.(props.aggregationRange)
 }
 
@@ -86,7 +89,7 @@ watch(
   () => props.aggregationRange,
   (v) => {
     if (!ready.value || !controller) return
-    controller.setAggregationRange?.(Number(v) || 20)
+    controller.setAggregationRange?.(Number(v) || 32)
   }
 )
 
@@ -102,6 +105,14 @@ onMounted(async () => {
   }
 
   window.addEventListener('semantic-map:project-changed', projectChangedHandler)
+
+  selectionChangedHandler = (event) => {
+    const detail = event?.detail || {}
+    const nodes = Array.isArray(detail.nodes) ? detail.nodes : []
+    const links = Array.isArray(detail.links) ? detail.links : []
+    selectionHasContent.value = nodes.length > 0 || links.length > 0
+  }
+  window.addEventListener('semanticmap:selection', selectionChangedHandler)
 })
 
 onBeforeUnmount(() => {
@@ -109,6 +120,10 @@ onBeforeUnmount(() => {
   if (projectChangedHandler) {
     window.removeEventListener('semantic-map:project-changed', projectChangedHandler)
     projectChangedHandler = null
+  }
+  if (selectionChangedHandler) {
+    window.removeEventListener('semanticmap:selection', selectionChangedHandler)
+    selectionChangedHandler = null
   }
 
   // 清理 controller
@@ -126,13 +141,17 @@ async function onAddSubspace() {
 
 /* 点击 Save 时，打印当前选择的节点 */
 function onSave() {
-  if (!ready.value || !controller) return
+  if (!ready.value || !controller || !selectionHasContent.value) return
 
   // 先刷新一次样式，把此刻每个 hex 的最终透明度写入缓存
   controller?.refreshAllHexStyles?.()
 
   // 获取带 connected:true 的快照
   const snap = controller.getSelectionSnapshot?.() || { nodes: [], links: [] }
+  if (!Array.isArray(snap.nodes) || !Array.isArray(snap.links) || (!snap.nodes.length && !snap.links.length)) {
+    selectionHasContent.value = false
+    return
+  }
   const titleText = (mainTitleRef.value?.textContent || '').trim() || 'Semantic Map'
   const createdAt = Date.now()
 
@@ -184,7 +203,12 @@ function onSave() {
       <div class="mv-actions">
         <!-- <button class="add-btn" @click="onAddSubspace" title="Add subspace">＋</button> -->
         <!-- <button class="filter-btn" title="Filter">Filter</button> -->
-        <button class="save-btn" title="Save" @click="onSave">Save</button>
+        <button
+          class="save-btn"
+          title="Save"
+          :disabled="!selectionHasContent"
+          @click="onSave"
+        >Save</button>
       </div>
     </header>
 

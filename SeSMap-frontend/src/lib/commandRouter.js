@@ -36,7 +36,7 @@ export function parseCommand(textRaw) {
   }
 
   // 3) 隐藏全部（可选增强）
-  if (/hide all subspaces|hide all\b|隐藏(所有|全部)\s*子空间|清空视图/.test(lowered)) {
+  if (/hide all subspaces?|hide all\b|clear all subspaces?|clear subspaces?|隐藏(所有|全部)\s*子空间|清空(所有|全部)?\s*子空间|清空视图/.test(lowered)) {
     return { intent: 'hide-all' };
   }
 

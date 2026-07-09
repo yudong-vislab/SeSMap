@@ -1,5 +1,5 @@
 <script setup>
-import { ref, watch, nextTick, computed, defineExpose } from 'vue'
+import { ref, watch, nextTick, computed, defineExpose, onMounted, onBeforeUnmount } from 'vue'
 
 /* ---------- Props ---------- */
 const props = defineProps({
@@ -203,6 +203,7 @@ function opacityForGroup(groupIdx, gi) {
 function openPdf(it) { emit('open-pdf', it) }
 
 const DEFAULT_PAPER_DOT = '#DCDCDC'
+const GALLERY_COLOR_PRESETS = ['#4C78A8', '#72B7B2', '#54A24B', '#B279A2', '#E45756', '#F58518', '#EECA3B']
 function pickMapValue(mapLike, key) {
   if (!mapLike || key == null) return null
   const keys = [key, String(key)]
@@ -233,6 +234,119 @@ function paperColorFor(it) {
   const sourceKey = sourceKeyOfItem(it) || (projectId ? `${projectId}|${cid}` : null)
   return pickMapValue(props.colorMaps?.sourceColorByKey, sourceKey) || DEFAULT_PAPER_DOT
 }
+
+const galleryColorMenu = ref({
+  open: false,
+  x: 0,
+  y: 0,
+  item: null,
+  color: GALLERY_COLOR_PRESETS[0],
+  hex: GALLERY_COLOR_PRESETS[0]
+})
+
+const galleryColorMenuStyle = computed(() => ({
+  left: `${galleryColorMenu.value.x}px`,
+  top: `${galleryColorMenu.value.y}px`
+}))
+
+function normalizeHexColor(color, fallback = GALLERY_COLOR_PRESETS[0]) {
+  const s = String(color || '').trim()
+  if (/^#[0-9a-f]{6}$/i.test(s)) return s.toUpperCase()
+  if (/^#[0-9a-f]{3}$/i.test(s)) {
+    const h = s.slice(1)
+    return `#${h[0]}${h[0]}${h[1]}${h[1]}${h[2]}${h[2]}`.toUpperCase()
+  }
+  return fallback
+}
+
+function normalizedCountryIdForItem(it) {
+  const raw = countryIdOfItem(it)
+  if (raw == null || raw === '') return null
+  const normalize = props.colorMaps?.normalizeCountryId
+  return typeof normalize === 'function' ? normalize(raw) : raw
+}
+
+function openGalleryColorMenu(e, it) {
+  const cid = normalizedCountryIdForItem(it)
+  if (cid == null || cid === '') return
+  const current = paperColorFor(it)
+  const width = 180
+  const height = 118
+  const pad = 10
+  const color = normalizeHexColor(current, GALLERY_COLOR_PRESETS[0])
+  const x = Math.max(pad, Math.min(e.clientX, window.innerWidth - width - pad))
+  const y = Math.max(pad, Math.min(e.clientY, window.innerHeight - height - pad))
+  galleryColorMenu.value = {
+    open: true,
+    x,
+    y,
+    item: it,
+    color,
+    hex: color
+  }
+}
+
+function closeGalleryColorMenu() {
+  galleryColorMenu.value.open = false
+}
+
+function setGalleryMenuColor(color) {
+  const next = normalizeHexColor(color, galleryColorMenu.value.color)
+  galleryColorMenu.value.color = next
+  galleryColorMenu.value.hex = next
+}
+
+function setGalleryMenuHex(value) {
+  const next = String(value || '').trim().toUpperCase()
+  galleryColorMenu.value.hex = next
+  if (/^#[0-9A-F]{6}$/.test(next)) {
+    galleryColorMenu.value.color = next
+  }
+}
+
+function randomGalleryColor() {
+  const color = GALLERY_COLOR_PRESETS[Math.floor(Math.random() * GALLERY_COLOR_PRESETS.length)]
+  setGalleryMenuColor(color)
+}
+
+function applyGalleryColor() {
+  const item = galleryColorMenu.value.item
+  const cid = normalizedCountryIdForItem(item)
+  const color = normalizeHexColor(galleryColorMenu.value.hex, galleryColorMenu.value.color)
+  if (cid == null || cid === '') return closeGalleryColorMenu()
+
+  const ctrl = window?.SemanticMapCtrl || window?.SemanticMap || null
+  const applied = ctrl?.setSourceColor?.(cid, color)
+  if (!applied) {
+    window?.dispatchEvent?.(new CustomEvent('semanticmap:sourcecolorrequest', {
+      detail: { countryId: cid, color }
+    }))
+  }
+  closeGalleryColorMenu()
+}
+
+function onGlobalPointerDown(e) {
+  if (!galleryColorMenu.value.open) return
+  if (e?.target?.closest?.('.paper-color-menu')) return
+  closeGalleryColorMenu()
+}
+
+function onGlobalEscape(e) {
+  if (e.key === 'Escape') closeGalleryColorMenu()
+}
+
+onMounted(() => {
+  window.addEventListener('pointerdown', onGlobalPointerDown, true)
+  window.addEventListener('keydown', onGlobalEscape)
+  window.addEventListener('scroll', closeGalleryColorMenu, true)
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('pointerdown', onGlobalPointerDown, true)
+  window.removeEventListener('keydown', onGlobalEscape)
+  window.removeEventListener('scroll', closeGalleryColorMenu, true)
+})
+
 /* ---------- CSS 变量 ---------- */
 const gridVars = computed(() => {
   const min = typeof props.tileMin === 'number' ? `${props.tileMin}px` : String(props.tileMin)
@@ -284,6 +398,7 @@ defineExpose({ clearSelection })
             :class="{ 'is-selected': (selectedByGroup[gi] || []).includes(it.globalIndex) }"
             :style="{ opacity: opacityForGroup(gi, it.globalIndex) }"
             @click.stop="toggleSelectInGroup(gi, it.globalIndex)"
+            @contextmenu.prevent.stop="openGalleryColorMenu($event, it)"
             :title="it.name"
           >
             <div class="thumb" :style="{ backgroundImage: `url(${it.content || it.thumbUrl || ''})` }">
@@ -332,6 +447,7 @@ defineExpose({ clearSelection })
           :class="{ 'is-selected': selected.includes(it.globalIndex) }"
           :style="{ opacity: opacityFor(it.globalIndex) }"
           @click.stop="toggleSelect(it.globalIndex)"
+          @contextmenu.prevent.stop="openGalleryColorMenu($event, it)"
           :title="it.name"
         >
           <div class="thumb" :style="{ backgroundImage: `url(${it.content || it.thumbUrl || ''})` }">
@@ -353,6 +469,48 @@ defineExpose({ clearSelection })
       </div>
     </section>
   </article>
+
+  <div
+    v-if="galleryColorMenu.open"
+    class="paper-color-menu"
+    :style="galleryColorMenuStyle"
+    @click.stop
+    @contextmenu.prevent.stop
+  >
+    <div class="paper-color-menu__row">
+      <input
+        class="paper-color-menu__input"
+        type="color"
+        :value="galleryColorMenu.color"
+        aria-label="Source color"
+        @input="setGalleryMenuColor($event.target.value)"
+      />
+      <input
+        class="paper-color-menu__hex"
+        type="text"
+        spellcheck="false"
+        :value="galleryColorMenu.hex"
+        aria-label="Hex color"
+        @input="setGalleryMenuHex($event.target.value)"
+      />
+      <button class="paper-color-menu__random" type="button" title="Random color" aria-label="Random color" @click="randomGalleryColor">R</button>
+    </div>
+    <div class="paper-color-menu__swatches">
+      <button
+        v-for="color in GALLERY_COLOR_PRESETS"
+        :key="color"
+        class="paper-color-menu__swatch"
+        type="button"
+        :style="{ backgroundColor: color }"
+        :aria-label="`Use ${color}`"
+        @click="setGalleryMenuColor(color)"
+      ></button>
+    </div>
+    <div class="paper-color-menu__actions">
+      <button class="paper-color-menu__button" type="button" @click="closeGalleryColorMenu">Cancel</button>
+      <button class="paper-color-menu__button paper-color-menu__button_primary" type="button" @click="applyGalleryColor">Apply</button>
+    </div>
+  </div>
 </template>
 
 <style scoped>
@@ -504,5 +662,102 @@ defineExpose({ clearSelection })
   white-space:nowrap;
   overflow:hidden;
   text-overflow:ellipsis;
+}
+.paper-color-menu{
+  position:fixed;
+  z-index:10020;
+  width:180px;
+  box-sizing:border-box;
+  padding:8px;
+  border:1px solid rgba(0,0,0,.12);
+  border-radius:8px;
+  background:#fff;
+  box-shadow:0 12px 28px rgba(15,23,42,.18);
+  display:grid;
+  gap:7px;
+}
+.paper-color-menu__row,
+.paper-color-menu__actions{
+  display:grid;
+  align-items:center;
+  gap:6px;
+}
+.paper-color-menu__row{
+  grid-template-columns:30px 94px 26px;
+}
+.paper-color-menu__actions{
+  grid-template-columns:1fr 1fr;
+}
+.paper-color-menu__input{
+  width:30px;
+  height:26px;
+  padding:0;
+  border:1px solid #d1d5db;
+  border-radius:5px;
+  background:#fff;
+}
+.paper-color-menu__hex{
+  width:94px;
+  min-width:94px;
+  max-width:94px;
+  box-sizing:border-box;
+  height:26px;
+  padding:0 7px;
+  border:1px solid #d1d5db;
+  border-radius:5px;
+  background:#fff;
+  color:#111827;
+  font-size:11.5px;
+  font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  outline:none;
+}
+.paper-color-menu__hex:focus{
+  border-color:#111827;
+  box-shadow:0 0 0 2px rgba(17,24,39,.08);
+}
+.paper-color-menu__random{
+  width:26px;
+  height:26px;
+  padding:0;
+  border:1px solid #111827;
+  border-radius:999px;
+  background:#111827;
+  color:#fff;
+  font-size:11px;
+  font-weight:800;
+  line-height:24px;
+  text-align:center;
+  cursor:pointer;
+}
+.paper-color-menu__random:hover{ background:#1f2937; }
+.paper-color-menu__button{
+  height:27px;
+  padding:0 9px;
+  border:1px solid #d1d5db;
+  border-radius:6px;
+  background:#fff;
+  color:#111827;
+  font-size:11.5px;
+  cursor:pointer;
+}
+.paper-color-menu__button:hover{ background:#f3f4f6; }
+.paper-color-menu__button_primary{
+  border-color:#111827;
+  background:#111827;
+  color:#fff;
+}
+.paper-color-menu__button_primary:hover{ background:#1f2937; }
+.paper-color-menu__swatches{
+  display:grid;
+  grid-template-columns:repeat(7, 18px);
+  gap:6px;
+}
+.paper-color-menu__swatch{
+  width:18px;
+  height:18px;
+  padding:0;
+  border:1px solid rgba(0,0,0,.18);
+  border-radius:999px;
+  cursor:pointer;
 }
 </style>

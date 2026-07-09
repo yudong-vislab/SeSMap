@@ -111,6 +111,14 @@ body,
   background: #f7f7f7;   /* 原 hover 样式，不改变 */
 }
 
+.save-btn:disabled,
+.save-btn:disabled:hover {
+  opacity: .45;
+  cursor: not-allowed;
+  background: #f3f5f7;
+  color: #9ca3af;
+}
+
 
 .send-btn {
   align-self: stretch;

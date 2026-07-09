@@ -193,7 +193,7 @@ const LAYOUT = {
   MIN_H: STYLE.SUBSPACE_MIN_H,
 };
 
-const DEFAULT_AGGREGATION_RANGE = 20;
+const DEFAULT_AGGREGATION_RANGE = 32;
 
 
 /* =========================
@@ -277,6 +277,14 @@ export async function initSemanticMap({
     neighborKeySet: new Set(),
     flightStart: null,
     flightHoverTarget: null,
+    hoveredFlightId: null,
+    flightDeleteTimer: null,
+    flightDeleteHideTimer: null,
+    flightHoverClient: null,
+    flightDeleteAnchor: null,
+    flightDeleteTargetId: null,
+    flightDeleteTargetLink: null,
+    flightDeleteTargetSignature: null,
     hoveredHex: null,
     highlightedHexKeys: new Set(),  // ★ NEW：仅用于 hover 预览
     _clickTimer: null,
@@ -1082,6 +1090,18 @@ function emitSemanticColorSnapshot() {
   } catch (_) {}
 }
 
+function applySourceColorFromGallery({ countryId, color } = {}) {
+  if (countryId == null || countryId === '' || !color) return false;
+  const chosen = normalizeColorToHex(color, '#4C78A8').toUpperCase();
+  App._isConfirmingAltColor = true;
+  try {
+    propagateCountryColorToAllPanels(countryId, chosen);
+  } finally {
+    App._isConfirmingAltColor = false;
+  }
+  return true;
+}
+
 
 // === Base fill logic: single-country = that country's color; conflict = gray; none = modality fallback ===
 function computeHexBaseFill(panelIdx, q, r, modality) {
@@ -1630,6 +1650,31 @@ function normalizeHsuSummaryLines(lines) {
   return out;
 }
 
+function truncateTooltipLine(line, maxChars = 138) {
+  const text = String(line || '').trim();
+  if (text.length <= maxChars) return text;
+  return text.slice(0, Math.max(0, maxChars - 1)).trimEnd() + '…';
+}
+
+function smartTooltipExcerpt(line, maxChars = 138) {
+  const text = String(line || '')
+    .replace(/\s+/g, ' ')
+    .replace(/\$+/g, '')
+    .trim();
+  if (text.length <= maxChars) return text;
+  const clipped = text.slice(0, maxChars + 1);
+  const sentenceEnd = Math.max(
+    clipped.lastIndexOf('. '),
+    clipped.lastIndexOf('; '),
+    clipped.lastIndexOf('。'),
+    clipped.lastIndexOf('；')
+  );
+  if (sentenceEnd >= 64) return clipped.slice(0, sentenceEnd + 1).trim();
+  const comma = Math.max(clipped.lastIndexOf(', '), clipped.lastIndexOf('，'));
+  if (comma >= 72) return clipped.slice(0, comma).trim() + '…';
+  return truncateTooltipLine(text, maxChars);
+}
+
 function renderHsuSummaryHTML(summary) {
   const raw = String(summary || '')
     .replace(/^\s*```(?:\w+)?\s*/i, '')
@@ -1651,8 +1696,8 @@ function renderHsuSummaryHTML(summary) {
 
   if (!normalizedLines.length) return '';
 
-  return '<ul style="margin:3px 0 0 0;padding-left:16px">'
-       + normalizedLines.map(line => '<li style="margin:1px 0">' + _escapeHtml(line) + '</li>').join('')
+  return '<ul style="margin:3px 0 0 0;padding-left:16px;overflow-wrap:anywhere;word-break:break-word">'
+       + normalizedLines.map(line => '<li style="margin:1px 0;white-space:normal;overflow-wrap:anywhere;word-break:break-word">' + _escapeHtml(line) + '</li>').join('')
        + '</ul>';
 }
 
@@ -1689,39 +1734,45 @@ function renderBucketTooltipHTML(bucket) {
   var totalMSU = bucket.msuCount || 0;
   var totalCountries = groups.size;
   var html = '';
-  html += '<div style="margin-bottom:6px;font-weight:600">'
+  html += '<div style="margin-bottom:6px;font-weight:600;overflow-wrap:anywhere">'
        +  ' · ' + (totalCountries === 1 ? '1 Country' : (totalCountries + ' Countries'))
        +  ' · ' + (totalMSU === 1 ? '1 MSU' : (totalMSU + ' MSUs'))
        +  '</div>';
 
-  for (var gi = 0; gi < ordered.length; gi++) {
-    var g2 = ordered[gi];
-    html += '<div style="display:flex;align-items:center;gap:8px;margin:.25em 0 .15em">'
+  var maxGroups = 4;
+  var visibleGroups = ordered.slice(0, maxGroups);
+  for (var gi = 0; gi < visibleGroups.length; gi++) {
+    var g2 = visibleGroups[gi];
+    html += '<div style="display:flex;align-items:center;gap:8px;margin:.22em 0 .12em">'
          +   '<span style="display:inline-block;width:10px;height:10px;border-radius:50%;'
          +   'background:' + g2.color + ';flex:none;border:1px solid rgba(255,255,255,0.25)"></span>'
          +   '<span style="opacity:.9;flex:none">' + (g2.msuCount === 1 ? '1 MSU' : (g2.msuCount + ' MSUs')) + '</span>'
          + '</div>';
 
-    var maxLines = Math.min(g2.items.length, 5);
+    var maxLines = Math.min(g2.items.length, 4);
     for (var j = 0; j < maxLines; j++) {
       var it2 = g2.items[j] || {};
       var sum = getDisplaySummaryForHsuItem(panelIdx, it2);
 
       var sumHtml = sum ? renderHsuSummaryHTML(sum) : '';
 
-      html += '<div style="margin-left:18px;margin-top:3px;opacity:.95">'
+      html += '<div style="margin-left:18px;margin-top:2px;opacity:.95;min-width:0;overflow-wrap:anywhere;word-break:break-word;white-space:normal">'
            +   (sumHtml
-                ? ('<div style="font-weight:700;color:#1f2937">Summary:</div>' + sumHtml)
+                ? ('<div style="font-weight:700;color:#1f2937;margin-bottom:1px">Summary:</div>' + sumHtml)
                 : '<span style="opacity:.62">No summary</span>')
            + '</div>';
     }
 
     if (g2.items.length > maxLines) {
-      html += '<div style="margin-left:18px;opacity:.6">… and ' + (g2.items.length - maxLines) + ' more</div>';
+      html += '<div style="margin-left:18px;opacity:.6">… and ' + (g2.items.length - maxLines) + ' more HSU groups</div>';
     }
   }
 
-  return '<div style="max-width:420px">' + html + '</div>';
+  if (ordered.length > visibleGroups.length) {
+    html += '<div style="margin-top:6px;opacity:.6">… and ' + (ordered.length - visibleGroups.length) + ' more sources</div>';
+  }
+
+  return '<div style="max-width:100%;box-sizing:border-box;overflow-x:hidden;overflow-wrap:anywhere;word-break:break-word;white-space:normal">' + html + '</div>';
 }
   // —— 简易防抖 —— //
   function debounce(fn, wait = 240) {
@@ -2007,6 +2058,14 @@ function renderBucketTooltipHTML(bucket) {
     const colorByCountry = {};
     const colorByPanelCountry = {};
     const alphaByNode = {}; // key: "panelIdx:q,r" → 0~1
+
+    if (App && App.globalCountryColors instanceof Map) {
+      App.globalCountryColors.forEach((color, rawCid) => {
+        const cid = App.countryIdAlias?.get?.(rawCid) || rawCid;
+        const hex = color ? normalizeColorToHex(color, null) : null;
+        if (cid && hex) colorByCountry[cid] = hex;
+      });
+    }
 
     // 颜色：来自 App.panelCountryColors（你的存储结构）
     if (App && App.panelCountryColors instanceof Map) {
@@ -2701,50 +2760,62 @@ function ensureColorMenu() {
     position: 'fixed',
     display: 'none',
     zIndex: 9999,
-    minWidth: '220px',
-    padding: '10px 12px',
-    borderRadius: '12px',
-    background: '#ffffff',                // 白色背景
-    color: '#111',                        // 深色文字
-    boxShadow: '0 8px 18px rgba(0,0,0,0.25)',
-    border: '1px solid rgba(0,0,0,0.1)',  // 边框浅灰
+    width: '180px',
+    boxSizing: 'border-box',
+    padding: '8px',
+    borderRadius: '8px',
+    background: '#ffffff',
+    color: '#111827',
+    boxShadow: '0 12px 28px rgba(15,23,42,.18)',
+    border: '1px solid rgba(0,0,0,.12)',
     backdropFilter: 'blur(6px)',
   });
 
+  const colorSwatches = (Array.isArray(COLOR_PALETTE) ? COLOR_PALETTE : [])
+    .slice(0, 7)
+    .map(color => {
+      const hex = normalizeColorToHex(color, '#4C78A8').toUpperCase();
+      return `<button type="button" data-alt-color-swatch="${hex}" aria-label="Use ${hex}"
+        style="width:18px;height:18px;padding:0;border:1px solid rgba(0,0,0,.18);
+               border-radius:999px;background:${hex};cursor:pointer"></button>`;
+    })
+    .join('');
+
   menu.innerHTML = `
-    <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px">
-      <div style="font-size:13px;opacity:.85;color:#111">
-        Adjust country color
-      </div>
-      <button id="alt-color-random" type="button" title="Random color"
-              style="width:18px;height:18px;border:none;border-radius:999px;
-                    background:#111;color:#fff;cursor:pointer;font-size:10px;
-                    font-weight:700;line-height:18px;text-align:center;padding:0">
+    <div style="display:grid;grid-template-columns:30px 94px 26px;align-items:center;gap:6px;margin-bottom:7px">
+      <input id="alt-color-input" type="color" 
+            style="width:30px;height:26px;box-sizing:border-box;padding:0;border:1px solid #d1d5db;
+                   border-radius:5px;background:#fff;cursor:pointer" />
+      <input id="alt-color-hex" type="text" placeholder="#AABBCC"
+            spellcheck="false"
+            style="width:94px;min-width:94px;max-width:94px;box-sizing:border-box;height:26px;border-radius:5px;
+                   border:1px solid #d1d5db;background:#fff;color:#111827;
+                   padding:0 7px;font-size:11.5px;outline:none;
+                   font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono',monospace" />
+      <button id="alt-color-random" type="button" title="Random color" aria-label="Random color"
+              style="width:26px;height:26px;box-sizing:border-box;border:1px solid #111827;
+                     border-radius:999px;background:#111827;color:#fff;cursor:pointer;
+                     font-size:11px;font-weight:800;line-height:24px;text-align:center;padding:0">
         R
       </button>
     </div>
 
-    <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
-      <input id="alt-color-input" type="color" 
-            style="width:36px;height:28px;border:none;background:transparent;cursor:pointer" />
-      <input id="alt-color-hex" type="text" placeholder="#AABBCC"
-            style="flex:1;height:28px;border-radius:8px;
-                    border:1px solid rgba(0,0,0,.2);
-                    background:#f9f9f9;color:#111;
-                    padding:0 8px;font-size:12px;outline:none" />
+    <div style="display:grid;grid-template-columns:repeat(7, 18px);gap:6px;margin-bottom:7px">
+      ${colorSwatches}
     </div>
 
-    <div style="display:flex;justify-content:flex-end;gap:8px">
-      <button id="alt-color-cancel"
-              style="height:28px;padding:0 10px;border-radius:8px;
-                    border:1px solid rgba(0,0,0,.2);
-                    background:#fff;color:#111;cursor:pointer">
+    <div style="display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:6px">
+      <button id="alt-color-cancel" type="button"
+              style="height:27px;box-sizing:border-box;padding:0 9px;border-radius:6px;
+                     border:1px solid #d1d5db;background:#fff;color:#111827;
+                     font-size:11.5px;cursor:pointer">
         Cancel
       </button>
-      <button id="alt-color-confirm"
-              style="height:28px;padding:0 12px;border-radius:8px;
-                    border:none;background:#111;color:#fff;cursor:pointer">
-        Confirm
+      <button id="alt-color-confirm" type="button"
+              style="height:27px;box-sizing:border-box;padding:0 9px;border-radius:6px;
+                     border:1px solid #111827;background:#111827;color:#fff;
+                     font-size:11.5px;cursor:pointer">
+        Apply
       </button>
     </div>
   `;
@@ -2807,6 +2878,14 @@ function ensureColorMenu() {
     const next = pickRandomColor(`menu-random:${Date.now()}:${current}:${tried.length}`, extraUsed);
     App._colorMenuRandomHistory.push(normalizeColorToHex(next, '#4C78A8').toUpperCase());
     applyMenuColor(next);
+  });
+
+  menu.querySelectorAll('[data-alt-color-swatch]').forEach(btn => {
+    btn.addEventListener('click', (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      applyMenuColor(btn.getAttribute('data-alt-color-swatch'));
+    });
   });
 
   // —— 确认：同时落盘冲突颜色 & 国家颜色 —— 
@@ -2909,7 +2988,14 @@ function ensureHexTooltip() {
     position: 'fixed',
     display: 'none',
     zIndex: 9998,
-    maxWidth: '420px',
+    width: 'auto',
+    minWidth: '240px',
+    maxWidth: 'min(460px, calc(100vw - 28px))',
+    maxHeight: 'min(84vh, 820px)',
+    overflowY: 'auto',
+    overflowX: 'hidden',
+    overscrollBehavior: 'contain',
+    boxSizing: 'border-box',
     padding: '10px 12px',
     borderRadius: '12px',
     background: '#ffffff',         // 白底
@@ -2919,6 +3005,9 @@ function ensureHexTooltip() {
     backdropFilter: 'blur(6px)',
     fontSize: '12.5px',
     lineHeight: '1.45',
+    whiteSpace: 'normal',
+    overflowWrap: 'anywhere',
+    wordBreak: 'break-word',
     pointerEvents: 'none'
   });
   tip.innerHTML = ''; // 动态填充
@@ -3055,6 +3144,223 @@ function moveHexTooltip(clientX, clientY) {
 function hideHexTooltip() {
   const tip = document.getElementById('hex-tip');
   if (tip) tip.style.display = 'none';
+}
+
+function isFlightDeleteHoverEnabled() {
+  return !(
+    App.flightStart ||
+    App.flightDraft ||
+    App.routeDraft ||
+    App.insertMode ||
+    App.uiPref?.connectArmed
+  );
+}
+
+function ensureFlightDeleteButton() {
+  let btn = document.getElementById('flight-delete-button');
+  if (btn && btn.dataset.semanticMapOwner !== App.instanceId) {
+    btn.remove();
+    btn = null;
+  }
+  if (btn) return btn;
+
+  btn = document.createElement('button');
+  btn.id = 'flight-delete-button';
+  btn.className = 'subspace-close flight-delete-button';
+  btn.dataset.semanticMapOwner = App.instanceId;
+  btn.setAttribute('aria-label', 'Delete flight');
+  btn.title = 'Delete flight';
+  Object.assign(btn.style, {
+    position: 'fixed',
+    display: 'none',
+    top: '0px',
+    left: '0px',
+    right: 'auto',
+    zIndex: 2147483647,
+    pointerEvents: 'auto'
+  });
+  btn.addEventListener('mouseenter', () => {
+    if (App.flightDeleteHideTimer) clearTimeout(App.flightDeleteHideTimer);
+    App.flightDeleteHideTimer = null;
+  });
+  btn.addEventListener('mouseleave', () => hideFlightDeleteButton());
+  btn.addEventListener('mousemove', (event) => {
+    if (!isPointerNearFlightDeleteButton(event, 42)) hideFlightDeleteButton();
+  });
+  document.addEventListener('pointerdown', (event) => {
+    if (btn.style.display === 'none') return;
+    const rect = btn.getBoundingClientRect();
+    const hitByCoord =
+      event.clientX >= rect.left - 4 &&
+      event.clientX <= rect.right + 4 &&
+      event.clientY >= rect.top - 4 &&
+      event.clientY <= rect.bottom + 4;
+    const target = event.target;
+    const hitByTarget = target && target.closest ? target.closest('#flight-delete-button') === btn : false;
+    if (!hitByCoord && !hitByTarget) return;
+    event.preventDefault();
+    event.stopPropagation();
+    if (typeof event.stopImmediatePropagation === 'function') event.stopImmediatePropagation();
+    const id = btn.dataset.flightId || App.flightDeleteTargetId || App.hoveredFlightId;
+    deleteFlightTarget(id, App.flightDeleteTargetLink, App.flightDeleteTargetSignature);
+  }, true);
+  document.addEventListener('mousemove', (event) => {
+    if (btn.style.display === 'none') return;
+    if (btn.contains(event.target)) return;
+    if (isPointerNearFlightDeleteButton(event, 34)) return;
+    const a = App.flightDeleteAnchor;
+    if (!a) return;
+    const dx = event.clientX - a.x;
+    const dy = event.clientY - a.y;
+    if (Math.hypot(dx, dy) > 92) hideFlightDeleteButton();
+  }, true);
+  const commitDelete = (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    const id = btn.dataset.flightId || App.flightDeleteTargetId || App.hoveredFlightId;
+    deleteFlightTarget(id, App.flightDeleteTargetLink, App.flightDeleteTargetSignature);
+  };
+  btn.addEventListener('pointerdown', commitDelete);
+  btn.addEventListener('click', commitDelete);
+  document.body.appendChild(btn);
+  return btn;
+}
+
+function flightSignature(link) {
+  if (!link || (link.type || '') !== 'flight') return '';
+  const path = Array.isArray(link.path) ? link.path : [];
+  return path.map((point, i) => {
+    const panelIdx = resolvePanelIdxForPathPoint(point, link, i);
+    return `${panelIdx}:${point.q},${point.r}`;
+  }).join('>');
+}
+
+function positionFlightDeleteButton(clientX, clientY, routeId, linkRef = null) {
+  const btn = ensureFlightDeleteButton();
+  const pad = 8;
+  const size = 18;
+  const x = Math.max(pad, Math.min((clientX || 0) + 12, window.innerWidth - size - pad));
+  const y = Math.max(pad, Math.min((clientY || 0) - 26, window.innerHeight - size - pad));
+  btn.dataset.flightId = routeId || '';
+  App.flightDeleteTargetId = routeId || null;
+  App.flightDeleteTargetLink = linkRef || App.flightDeleteTargetLink || null;
+  App.flightDeleteTargetSignature = flightSignature(linkRef) || App.flightDeleteTargetSignature || null;
+  App.flightDeleteAnchor = { x: clientX || 0, y: clientY || 0 };
+  btn.style.left = `${x}px`;
+  btn.style.top = `${y}px`;
+  btn.style.right = 'auto';
+  btn.style.display = 'inline-flex';
+}
+
+function isPointerNearFlightDeleteButton(event, margin = 34) {
+  const btn = document.getElementById('flight-delete-button');
+  if (!btn || btn.style.display === 'none') return false;
+  const rect = btn.getBoundingClientRect();
+  const x = event?.clientX;
+  const y = event?.clientY;
+  if (!Number.isFinite(x) || !Number.isFinite(y)) return false;
+  return x >= rect.left - margin && x <= rect.right + margin && y >= rect.top - margin && y <= rect.bottom + margin;
+}
+
+function hideFlightDeleteButton() {
+  if (App.flightDeleteTimer) clearTimeout(App.flightDeleteTimer);
+  if (App.flightDeleteHideTimer) clearTimeout(App.flightDeleteHideTimer);
+  App.flightDeleteTimer = null;
+  App.flightDeleteHideTimer = null;
+  App.hoveredFlightId = null;
+  App.flightHoverClient = null;
+  App.flightDeleteAnchor = null;
+  App.flightDeleteTargetId = null;
+  App.flightDeleteTargetLink = null;
+  App.flightDeleteTargetSignature = null;
+  const btn = document.getElementById('flight-delete-button');
+  if (btn) {
+    btn.style.display = 'none';
+    btn.dataset.flightId = '';
+  }
+  highlightFlightLink(null);
+}
+
+function scheduleFlightDeleteButton(routeId, clientX, clientY, linkRef = null) {
+  if (!routeId || !isFlightDeleteHoverEnabled()) return;
+  if (App.flightDeleteTimer) clearTimeout(App.flightDeleteTimer);
+  App.flightHoverClient = { x: clientX, y: clientY };
+  App.flightDeleteTimer = setTimeout(() => {
+    if (App.hoveredFlightId !== routeId) return;
+    if (!isFlightDeleteHoverEnabled()) return;
+    const pos = App.flightHoverClient || { x: clientX, y: clientY };
+    positionFlightDeleteButton(pos.x, pos.y, routeId, linkRef);
+  }, 1500);
+}
+
+function highlightFlightLink(routeId) {
+  try {
+    const layer = d3.select(App.globalOverlayEl).selectAll('g.flight-link');
+    layer.each(function () {
+      const active = !!routeId && this.__flightId === routeId;
+      const g = d3.select(this);
+      g.selectAll('path.flight-shadow')
+        .attr('stroke-opacity', active ? 0.11 : 0)
+        .style('filter', active ? 'blur(0.45px)' : null);
+      g.selectAll('path.flight-visible')
+        .attr('stroke-width', function () {
+          const base = Number(this.__baseStrokeWidth || this.getAttribute('data-base-width') || 1.4);
+          return active ? base + 0.45 : base;
+        })
+        .style('filter', active ? 'drop-shadow(0 1px 1.5px rgba(15,23,42,.18))' : null);
+      g.selectAll('path.flight-arrow')
+        .style('filter', active ? 'drop-shadow(0 1px 1.5px rgba(15,23,42,.18))' : null);
+    });
+  } catch (_) {}
+}
+
+function deleteFlightTarget(routeId, linkRef = null, signature = null) {
+  if (!routeId && !linkRef && !signature) return false;
+  const before = App._lastLinks || [];
+  const removed = before.find(link => {
+    if ((link?.type || '') !== 'flight') return false;
+    if (linkRef && link === linkRef) return true;
+    if (signature && flightSignature(link) === signature) return true;
+    return !!routeId && linkKey(link) === routeId;
+  });
+  if (!removed) return false;
+  const removedId = linkKey(removed) || routeId || '';
+  const removedKeys = new Set();
+  (Array.isArray(removed.path) ? removed.path : []).forEach((point, i) => {
+    const panelIdx = resolvePanelIdxForPathPoint(point, removed, i);
+    removedKeys.add(pkey(panelIdx, point.q, point.r));
+  });
+
+  App._lastLinks = before.filter(link => {
+    if ((link?.type || '') !== 'flight') return true;
+    if (link === removed) return false;
+    return removedId ? linkKey(link) !== removedId : true;
+  });
+  if (App.currentData && Array.isArray(App.currentData.links)) {
+    App.currentData.links = App._lastLinks;
+  }
+  if (removedId) App.selectedRouteIds?.delete?.(removedId);
+  if (routeId) App.selectedRouteIds?.delete?.(routeId);
+  App.selectedEdgeKeys?.clear?.();
+  removedKeys.forEach(key => {
+    App.persistentHexKeys?.delete?.(key);
+    App.highlightedHexKeys?.delete?.(key);
+    App.excludedHexKeys?.delete?.(key);
+  });
+  if (typeof recomputePersistentFromRoutesPreservingExtras === 'function') {
+    recomputePersistentFromRoutesPreservingExtras();
+  }
+  hideFlightDeleteButton();
+  stampSubspaceNamesOnAllLinks(App.currentData);
+  drawOverlayLinesFromLinks(App._lastLinks, App.allHexDataByPanel, App.hexMapsByPanel, !!(App.flightStart || App.flightDraft));
+  updateHexStyles();
+  emitSelectionPayload?.();
+  publishToStepAnalysis?.();
+  return true;
+}
+
+function deleteFlightById(routeId) {
+  return deleteFlightTarget(routeId, null);
 }
 
 
@@ -4806,15 +5112,42 @@ const mode = getPanelLayoutMode(panelIdx);
         .style('pointer-events', 'none');
     };
 
-    const appendFlightCurve = (layer, p0, c1, p1, style, width, opacity, dash) => {
-      layer.append('path')
+    const appendFlightCurve = (layer, p0, c1, p1, style, width, opacity, dash, meta = {}) => {
+      const pathD = `M${p0[0]},${p0[1]} Q${c1[0]},${c1[1]} ${p1[0]},${p1[1]}`;
+      if (meta.hoverable) {
+        layer.append('path')
+          .attr('class', 'flight-shadow')
+          .attr('d', pathD)
+          .attr('stroke', '#111827')
+          .attr('stroke-width', Math.max(width + 3, 5))
+          .attr('stroke-opacity', meta.hovered ? 0.11 : 0)
+          .attr('fill', 'none')
+          .attr('stroke-linecap', 'round')
+          .style('pointer-events', 'none')
+          .style('filter', meta.hovered ? 'blur(0.45px)' : null);
+      }
+      const visiblePath = layer.append('path')
+        .attr('class', meta.hoverable ? 'flight-visible' : null)
         .attr('d', `M${p0[0]},${p0[1]} Q${c1[0]},${c1[1]} ${p1[0]},${p1[1]}`)
         .attr('stroke', style.color)
-        .attr('stroke-width', width)
+        .attr('stroke-width', meta.hovered ? width + 0.45 : width)
+        .attr('data-base-width', width)
         .attr('stroke-opacity', opacity)
         .attr('fill', 'none')
-        .attr('stroke-dasharray', dash || null);
+        .attr('stroke-dasharray', dash || null)
+        .style('filter', meta.hovered ? 'drop-shadow(0 1px 1.5px rgba(15,23,42,.18))' : null);
+      visiblePath.node().__baseStrokeWidth = width;
       appendFlightArrow(layer, p0, c1, p1, { ...style, width }, opacity);
+      if (meta.hoverable) {
+        layer.append('path')
+          .attr('class', 'flight-hit')
+          .attr('d', pathD)
+          .attr('stroke', 'transparent')
+          .attr('stroke-width', Math.max(width + 14, 16))
+          .attr('fill', 'none')
+          .attr('stroke-linecap', 'round')
+          .style('pointer-events', 'stroke');
+      }
     };
 
     (links || []).forEach(link => {
@@ -4842,6 +5175,46 @@ const mode = getPanelLayoutMode(panelIdx);
       bump(p0.panelIdx, p0.q, p0.r);
 
       if (type === 'flight') {
+        const flightId = lk || link.id || link._uid || `flight-${Math.random().toString(36).slice(2)}`;
+        if (!link.id && !link._uid) link._uid = flightId;
+        const hovered = App.hoveredFlightId === flightId;
+        const flightGroup = gG.links.append('g')
+          .attr('class', 'flight-link')
+          .attr('data-flight-id', flightId)
+          .datum(link)
+          .on('mouseenter', (event) => {
+            if (!isFlightDeleteHoverEnabled()) return;
+            if (App.flightDeleteHideTimer) clearTimeout(App.flightDeleteHideTimer);
+            App.flightDeleteHideTimer = null;
+            App.hoveredFlightId = flightId;
+            App.flightHoverClient = { x: event.clientX, y: event.clientY };
+            App.flightDeleteTargetLink = link;
+            App.flightDeleteTargetSignature = flightSignature(link);
+            highlightFlightLink(flightId);
+            scheduleFlightDeleteButton(flightId, event.clientX, event.clientY, link);
+          })
+          .on('mousemove', (event) => {
+            if (!isFlightDeleteHoverEnabled()) {
+              hideFlightDeleteButton();
+              return;
+            }
+            App.hoveredFlightId = flightId;
+            App.flightHoverClient = { x: event.clientX, y: event.clientY };
+            App.flightDeleteTargetLink = link;
+            App.flightDeleteTargetSignature = flightSignature(link);
+          })
+          .on('mouseleave', (event) => {
+            if (App.flightDeleteTimer) clearTimeout(App.flightDeleteTimer);
+            App.flightDeleteTimer = null;
+            App.flightDeleteHideTimer = setTimeout(() => {
+              const btn = document.getElementById('flight-delete-button');
+              if (btn && btn.matches(':hover')) return;
+              if (isPointerNearFlightDeleteButton(event, 34)) return;
+              hideFlightDeleteButton();
+            }, 520);
+          });
+        flightGroup.node().__flightId = flightId;
+
         // 多跳 flight：逐段绘制二次贝塞尔曲线（a-b, b-c, ...）
         for (let i = 0; i < pts.length - 1; i++) {
           const a = pts[i];
@@ -4859,7 +5232,11 @@ const mode = getPanelLayoutMode(panelIdx);
           const curveOffset = Math.sign(dx) * style.controlCurveRatio * Math.sqrt(dx*dx + dy*dy);
           const c1x = mx + curveOffset, c1y = my - curveOffset;
 
-          appendFlightCurve(gG.links, g0, [c1x, c1y], g1, style, style.width, style.opacity, style.dash);
+          appendFlightCurve(flightGroup, g0, [c1x, c1y], g1, style, style.width, style.opacity, style.dash, {
+            hoverable: true,
+            hovered,
+            flightId
+          });
         }
       } else {
         // road/river：按过滤后的 pts 直接画，跳过被排除的中间点
@@ -6864,6 +7241,10 @@ function _deleteSubspaceByIndex(idx) {
       // ✅ 单独提供 getMiniColorMaps 给 MainView.vue 用
       getMiniColorMaps() {
         return _buildMiniSnapshot();
+      },
+
+      setSourceColor(countryId, color) {
+        return applySourceColorFromGallery({ countryId, color });
       },
 
       // 可选

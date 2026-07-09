@@ -82,7 +82,26 @@ const defaultTitle = (step, i) => {
 }
 
 let offSaved = null
+function applyPaletteToExistingSteps(palette = {}) {
+  if (!steps.value.length) return
+  steps.value = steps.value.map(step => ({
+    ...step,
+    colorByCountry: palette?.colorByCountry ?? step.colorByCountry ?? {},
+    colorByPanelCountry: palette?.colorByPanelCountry ?? step.colorByPanelCountry ?? {},
+    normalizeCountryId: palette?.normalizeCountryId ?? step.normalizeCountryId ?? ((x) => x),
+    alphaByNode: palette?.alphaByNode ?? step.alphaByNode ?? {},
+    borderColorByNode: palette?.borderColorByNode ?? step.borderColorByNode ?? {},
+    borderWidthByNode: palette?.borderWidthByNode ?? step.borderWidthByNode ?? {},
+    fillByNode: palette?.fillByNode ?? step.fillByNode ?? {}
+  }))
+}
+
+function onSemanticColorsChange(event) {
+  applyPaletteToExistingSteps(event?.detail || {})
+}
+
 onMounted(() => {
+  window.addEventListener('semanticmap:colorschange', onSemanticColorsChange)
   offSaved = onSelectionSaved((payload) => {
     const id = `${Date.now()}-${Math.random().toString(36).slice(2)}`
     const createdAt = payload.createdAt || Date.now()
@@ -139,6 +158,7 @@ onMounted(() => {
 
 
 onBeforeUnmount(() => {
+  window.removeEventListener('semanticmap:colorschange', onSemanticColorsChange)
   offSaved?.()
 })
 

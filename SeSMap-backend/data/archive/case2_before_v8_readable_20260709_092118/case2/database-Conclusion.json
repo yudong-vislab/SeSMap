@@ -8,8 +8,8 @@
     "para_id": 3,
     "paper_id": 0,
     "2d_coord": [
-      -0.18074151873588562,
-      0.9301937818527222
+      0.25356900691986084,
+      -0.6509541273117065
     ],
     "MSU_id": 29,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -24,8 +24,8 @@
     "para_id": 4,
     "paper_id": 0,
     "2d_coord": [
-      0.49327078461647034,
-      0.08984798192977905
+      -0.505660891532898,
+      0.814941942691803
     ],
     "MSU_id": 39,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -40,8 +40,8 @@
     "para_id": 9,
     "paper_id": 0,
     "2d_coord": [
-      -0.01052192971110344,
-      -0.7701320648193359
+      -0.012695914134383202,
+      0.8419505953788757
     ],
     "MSU_id": 70,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -56,8 +56,8 @@
     "para_id": 17,
     "paper_id": 0,
     "2d_coord": [
-      0.9723724126815796,
-      -1.2755993604660034
+      -0.8191213011741638,
+      1.5012409687042236
     ],
     "MSU_id": 116,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -72,8 +72,8 @@
     "para_id": 24,
     "paper_id": 0,
     "2d_coord": [
-      0.6408476829528809,
-      -0.19549724459648132
+      -0.8379111886024475,
+      0.7187120914459229
     ],
     "MSU_id": 151,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -88,8 +88,8 @@
     "para_id": 26,
     "paper_id": 0,
     "2d_coord": [
-      0.5808929204940796,
-      -0.7744671106338501
+      -0.5965051651000977,
+      1.0606759786605835
     ],
     "MSU_id": 163,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -104,8 +104,8 @@
     "para_id": 31,
     "paper_id": 0,
     "2d_coord": [
-      1.088125228881836,
-      -0.36346328258514404
+      -1.014029622077942,
+      1.0405844449996948
     ],
     "MSU_id": 185,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -120,8 +120,8 @@
     "para_id": 31,
     "paper_id": 0,
     "2d_coord": [
-      0.8051276206970215,
-      -1.0525332689285278
+      -0.7204126715660095,
+      1.2818892002105713
     ],
     "MSU_id": 186,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -136,8 +136,8 @@
     "para_id": 77,
     "paper_id": 0,
     "2d_coord": [
-      0.8330723643302917,
-      -0.2614327669143677
+      -0.5809933543205261,
+      0.3774028718471527
     ],
     "MSU_id": 459,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -152,8 +152,8 @@
     "para_id": 88,
     "paper_id": 0,
     "2d_coord": [
-      -0.2604813277721405,
-      1.4252715110778809
+      -0.13469767570495605,
+      -1.5236374139785767
     ],
     "MSU_id": 515,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -168,8 +168,8 @@
     "para_id": 91,
     "paper_id": 0,
     "2d_coord": [
-      0.9800571799278259,
-      -0.4275665581226349
+      -0.9977712035179138,
+      0.6505618095397949
     ],
     "MSU_id": 533,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -184,8 +184,8 @@
     "para_id": 93,
     "paper_id": 0,
     "2d_coord": [
-      -0.029117394238710403,
-      0.6189655065536499
+      -0.22992023825645447,
+      -0.2507053017616272
     ],
     "MSU_id": 541,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -200,8 +200,8 @@
     "para_id": 97,
     "paper_id": 0,
     "2d_coord": [
-      1.2926900386810303,
-      -0.5095887184143066
+      -0.9728726744651794,
+      1.3859220743179321
     ],
     "MSU_id": 563,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -216,8 +216,8 @@
     "para_id": 98,
     "paper_id": 0,
     "2d_coord": [
-      0.5213671326637268,
-      -0.7632986307144165
+      -0.3307555317878723,
+      1.2078436613082886
     ],
     "MSU_id": 566,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -232,8 +232,8 @@
     "para_id": 98,
     "paper_id": 0,
     "2d_coord": [
-      0.4483925700187683,
-      0.1895076334476471
+      -0.4512178599834442,
+      1.1433405876159668
     ],
     "MSU_id": 567,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -248,8 +248,8 @@
     "para_id": 102,
     "paper_id": 0,
     "2d_coord": [
-      1.0792741775512695,
-      -0.21434539556503296
+      -0.6340708136558533,
+      0.27443262934684753
     ],
     "MSU_id": 586,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -264,8 +264,8 @@
     "para_id": 102,
     "paper_id": 0,
     "2d_coord": [
-      0.9680593609809875,
-      -0.560621976852417
+      -0.7261172533035278,
+      1.3900353908538818
     ],
     "MSU_id": 589,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -280,8 +280,8 @@
     "para_id": 104,
     "paper_id": 0,
     "2d_coord": [
-      -0.9795657396316528,
-      0.9589246511459351
+      1.1841217279434204,
+      -0.5124137997627258
     ],
     "MSU_id": 600,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -296,8 +296,8 @@
     "para_id": 104,
     "paper_id": 0,
     "2d_coord": [
-      -0.905924379825592,
-      0.11028726398944855
+      0.6913988590240479,
+      -0.15614496171474457
     ],
     "MSU_id": 602,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -312,8 +312,8 @@
     "para_id": 105,
     "paper_id": 0,
     "2d_coord": [
-      0.39045780897140503,
-      0.6308139562606812
+      -0.5260157585144043,
+      -0.30479496717453003
     ],
     "MSU_id": 603,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -328,8 +328,8 @@
     "para_id": 105,
     "paper_id": 0,
     "2d_coord": [
-      -0.4497183859348297,
-      -0.004530360922217369
+      0.7410138249397278,
+      0.06246168911457062
     ],
     "MSU_id": 604,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -344,8 +344,8 @@
     "para_id": 105,
     "paper_id": 0,
     "2d_coord": [
-      0.7066529989242554,
-      -0.12047270685434341
+      -1.0777368545532227,
+      -0.09093125909566879
     ],
     "MSU_id": 605,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -360,8 +360,8 @@
     "para_id": 105,
     "paper_id": 0,
     "2d_coord": [
-      -0.3671429455280304,
-      0.11788934469223022
+      -0.07813382148742676,
+      -0.01347390003502369
     ],
     "MSU_id": 606,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -376,8 +376,8 @@
     "para_id": 108,
     "paper_id": 0,
     "2d_coord": [
-      0.7295055389404297,
-      -1.3179181814193726
+      -0.02444067783653736,
+      1.1536940336227417
     ],
     "MSU_id": 617,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -392,8 +392,8 @@
     "para_id": 108,
     "paper_id": 0,
     "2d_coord": [
-      0.8502429723739624,
-      -1.0449037551879883
+      -0.6823531985282898,
+      1.7934749126434326
     ],
     "MSU_id": 619,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -408,8 +408,8 @@
     "para_id": 108,
     "paper_id": 0,
     "2d_coord": [
-      1.0173293352127075,
-      -1.0876344442367554
+      -0.8471024036407471,
+      1.450308918952942
     ],
     "MSU_id": 623,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -424,8 +424,8 @@
     "para_id": 109,
     "paper_id": 0,
     "2d_coord": [
-      0.8804429173469543,
-      -0.7851428985595703
+      -0.6118782758712769,
+      0.920672595500946
     ],
     "MSU_id": 624,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -440,8 +440,8 @@
     "para_id": 109,
     "paper_id": 0,
     "2d_coord": [
-      0.51240074634552,
-      -1.1478261947631836
+      -0.5972708463668823,
+      1.4514964818954468
     ],
     "MSU_id": 631,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -456,8 +456,8 @@
     "para_id": 110,
     "paper_id": 0,
     "2d_coord": [
-      1.4166759252548218,
-      -0.6087578535079956
+      -1.1721577644348145,
+      0.7896682024002075
     ],
     "MSU_id": 632,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -472,8 +472,8 @@
     "para_id": 110,
     "paper_id": 0,
     "2d_coord": [
-      0.27396246790885925,
-      0.3782619833946228
+      -0.4305250942707062,
+      -0.43946024775505066
     ],
     "MSU_id": 634,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -488,8 +488,8 @@
     "para_id": 110,
     "paper_id": 0,
     "2d_coord": [
-      1.039742112159729,
-      -0.8896596431732178
+      -0.7545040249824524,
+      0.9136269688606262
     ],
     "MSU_id": 639,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -504,8 +504,8 @@
     "para_id": 111,
     "paper_id": 0,
     "2d_coord": [
-      0.6213261485099792,
-      -1.3684827089309692
+      -0.3969457149505615,
+      1.1184751987457275
     ],
     "MSU_id": 647,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -520,8 +520,8 @@
     "para_id": 111,
     "paper_id": 0,
     "2d_coord": [
-      0.1707645207643509,
-      -0.6509925127029419
+      -0.06242493540048599,
+      1.051126480102539
     ],
     "MSU_id": 651,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -536,8 +536,8 @@
     "para_id": 111,
     "paper_id": 0,
     "2d_coord": [
-      0.9297630190849304,
-      1.4594405889511108
+      -1.0040663480758667,
+      -0.9423952698707581
     ],
     "MSU_id": 653,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -552,8 +552,8 @@
     "para_id": 112,
     "paper_id": 0,
     "2d_coord": [
-      0.3180442154407501,
-      0.13450504839420319
+      -0.04562349617481232,
+      0.03430844098329544
     ],
     "MSU_id": 659,
     "paper_info": "Compass Towards Better Causal Analysis of Urban Time Series",
@@ -568,8 +568,8 @@
     "para_id": 113,
     "paper_id": 1,
     "2d_coord": [
-      1.390647530555725,
-      0.6213005781173706
+      -1.5860915184020996,
+      -0.04799018055200577
     ],
     "MSU_id": 675,
     "paper_info": "Improving WRF-Chem PM2.5 predictions by combining data assimilation and deep-learning-based bias correction",
@@ -584,8 +584,8 @@
     "para_id": 121,
     "paper_id": 1,
     "2d_coord": [
-      -0.516384482383728,
-      -1.1510021686553955
+      0.4247913956642151,
+      1.1148490905761719
     ],
     "MSU_id": 724,
     "paper_info": "Improving WRF-Chem PM2.5 predictions by combining data assimilation and deep-learning-based bias correction",
@@ -600,8 +600,8 @@
     "para_id": 122,
     "paper_id": 1,
     "2d_coord": [
-      1.5239744186401367,
-      -0.24116387963294983
+      -1.3351587057113647,
+      0.22994549572467804
     ],
     "MSU_id": 740,
     "paper_info": "Improving WRF-Chem PM2.5 predictions by combining data assimilation and deep-learning-based bias correction",
@@ -616,8 +616,8 @@
     "para_id": 135,
     "paper_id": 1,
     "2d_coord": [
-      1.0725195407867432,
-      -0.8049497604370117
+      -0.7832061052322388,
+      1.0601203441619873
     ],
     "MSU_id": 817,
     "paper_info": "Improving WRF-Chem PM2.5 predictions by combining data assimilation and deep-learning-based bias correction",
@@ -632,8 +632,8 @@
     "para_id": 144,
     "paper_id": 1,
     "2d_coord": [
-      1.1188838481903076,
-      1.217073678970337
+      -1.0424994230270386,
+      -1.7450801134109497
     ],
     "MSU_id": 858,
     "paper_info": "Improving WRF-Chem PM2.5 predictions by combining data assimilation and deep-learning-based bias correction",
@@ -648,8 +648,8 @@
     "para_id": 146,
     "paper_id": 1,
     "2d_coord": [
-      0.5344198346138,
-      -0.5047464370727539
+      -0.18619267642498016,
+      0.9421430826187134
     ],
     "MSU_id": 871,
     "paper_info": "Improving WRF-Chem PM2.5 predictions by combining data assimilation and deep-learning-based bias correction",
@@ -664,8 +664,8 @@
     "para_id": 150,
     "paper_id": 1,
     "2d_coord": [
-      -0.18711277842521667,
-      -0.46468618512153625
+      0.2720208764076233,
+      0.7388046383857727
     ],
     "MSU_id": 889,
     "paper_info": "Improving WRF-Chem PM2.5 predictions by combining data assimilation and deep-learning-based bias correction",
@@ -680,8 +680,8 @@
     "para_id": 150,
     "paper_id": 1,
     "2d_coord": [
-      0.3393714129924774,
-      -1.1208504438400269
+      -0.15673774480819702,
+      1.525065302848816
     ],
     "MSU_id": 890,
     "paper_info": "Improving WRF-Chem PM2.5 predictions by combining data assimilation and deep-learning-based bias correction",
@@ -696,8 +696,8 @@
     "para_id": 151,
     "paper_id": 1,
     "2d_coord": [
-      0.38289666175842285,
-      0.7535837888717651
+      -0.6946893930435181,
+      -0.708064079284668
     ],
     "MSU_id": 902,
     "paper_info": "Improving WRF-Chem PM2.5 predictions by combining data assimilation and deep-learning-based bias correction",
@@ -712,8 +712,8 @@
     "para_id": 155,
     "paper_id": 1,
     "2d_coord": [
-      -0.16873179376125336,
-      1.252323865890503
+      0.3145591914653778,
+      -1.8349318504333496
     ],
     "MSU_id": 921,
     "paper_info": "Improving WRF-Chem PM2.5 predictions by combining data assimilation and deep-learning-based bias correction",
@@ -728,8 +728,8 @@
     "para_id": 155,
     "paper_id": 1,
     "2d_coord": [
-      -0.8029051423072815,
-      0.2720295190811157
+      0.5387585759162903,
+      -0.5373435616493225
     ],
     "MSU_id": 923,
     "paper_info": "Improving WRF-Chem PM2.5 predictions by combining data assimilation and deep-learning-based bias correction",
@@ -744,8 +744,8 @@
     "para_id": 155,
     "paper_id": 1,
     "2d_coord": [
-      0.16580738127231598,
-      -0.5710638761520386
+      0.2677200734615326,
+      0.9693117737770081
     ],
     "MSU_id": 924,
     "paper_info": "Improving WRF-Chem PM2.5 predictions by combining data assimilation and deep-learning-based bias correction",
@@ -760,8 +760,8 @@
     "para_id": 157,
     "paper_id": 1,
     "2d_coord": [
-      -0.3711780607700348,
-      -0.11377425491809845
+      0.6879971027374268,
+      -0.2763090133666992
     ],
     "MSU_id": 953,
     "paper_info": "Improving WRF-Chem PM2.5 predictions by combining data assimilation and deep-learning-based bias correction",
@@ -776,8 +776,8 @@
     "para_id": 161,
     "paper_id": 1,
     "2d_coord": [
-      -0.44147738814353943,
-      -0.24097295105457306
+      0.2956222593784332,
+      -0.5679038166999817
     ],
     "MSU_id": 979,
     "paper_info": "Improving WRF-Chem PM2.5 predictions by combining data assimilation and deep-learning-based bias correction",
@@ -792,8 +792,8 @@
     "para_id": 166,
     "paper_id": 1,
     "2d_coord": [
-      0.13214853405952454,
-      0.04519486799836159
+      -0.13481497764587402,
+      -0.05453294515609741
     ],
     "MSU_id": 1009,
     "paper_info": "Improving WRF-Chem PM2.5 predictions by combining data assimilation and deep-learning-based bias correction",
@@ -808,8 +808,8 @@
     "para_id": 166,
     "paper_id": 1,
     "2d_coord": [
-      -0.2064172327518463,
-      0.1967761367559433
+      0.28921836614608765,
+      -0.2043740302324295
     ],
     "MSU_id": 1010,
     "paper_info": "Improving WRF-Chem PM2.5 predictions by combining data assimilation and deep-learning-based bias correction",
@@ -824,8 +824,8 @@
     "para_id": 167,
     "paper_id": 1,
     "2d_coord": [
-      -0.31567949056625366,
-      -0.38337045907974243
+      0.3015311062335968,
+      0.4123382270336151
     ],
     "MSU_id": 1013,
     "paper_info": "Improving WRF-Chem PM2.5 predictions by combining data assimilation and deep-learning-based bias correction",
@@ -840,8 +840,8 @@
     "para_id": 168,
     "paper_id": 1,
     "2d_coord": [
-      0.5771476626396179,
-      0.036008574068546295
+      0.09412502497434616,
+      0.39630427956581116
     ],
     "MSU_id": 1016,
     "paper_info": "Improving WRF-Chem PM2.5 predictions by combining data assimilation and deep-learning-based bias correction",
@@ -856,8 +856,8 @@
     "para_id": 168,
     "paper_id": 1,
     "2d_coord": [
-      -0.20929674804210663,
-      0.37296921014785767
+      -0.04059412330389023,
+      -0.4056425094604492
     ],
     "MSU_id": 1018,
     "paper_info": "Improving WRF-Chem PM2.5 predictions by combining data assimilation and deep-learning-based bias correction",
@@ -872,8 +872,8 @@
     "para_id": 170,
     "paper_id": 1,
     "2d_coord": [
-      -0.24287907779216766,
-      -0.6821879148483276
+      0.09028107672929764,
+      1.3075172901153564
     ],
     "MSU_id": 1031,
     "paper_info": "Improving WRF-Chem PM2.5 predictions by combining data assimilation and deep-learning-based bias correction",
@@ -888,8 +888,8 @@
     "para_id": 174,
     "paper_id": 2,
     "2d_coord": [
-      -0.2932623028755188,
-      0.078606516122818
+      0.43260982632637024,
+      -0.22219112515449524
     ],
     "MSU_id": 1068,
     "paper_info": "Threefold reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols",
@@ -904,8 +904,8 @@
     "para_id": 176,
     "paper_id": 2,
     "2d_coord": [
-      0.20302917063236237,
-      0.0945412889122963
+      -0.08822815865278244,
+      0.09211292862892151
     ],
     "MSU_id": 1094,
     "paper_info": "Threefold reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols",
@@ -920,8 +920,8 @@
     "para_id": 180,
     "paper_id": 2,
     "2d_coord": [
-      0.40136170387268066,
-      -1.0209605693817139
+      0.026315033435821533,
+      1.4213863611221313
     ],
     "MSU_id": 1119,
     "paper_info": "Threefold reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols",
@@ -936,8 +936,8 @@
     "para_id": 181,
     "paper_id": 2,
     "2d_coord": [
-      0.840621829032898,
-      -0.3904438018798828
+      -0.5680715441703796,
+      0.737223207950592
     ],
     "MSU_id": 1127,
     "paper_info": "Threefold reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols",
@@ -952,8 +952,8 @@
     "para_id": 182,
     "paper_id": 2,
     "2d_coord": [
-      -0.22893328964710236,
-      -0.16301943361759186
+      0.6811755895614624,
+      -0.09324655681848526
     ],
     "MSU_id": 1134,
     "paper_info": "Threefold reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols",
@@ -968,8 +968,8 @@
     "para_id": 187,
     "paper_id": 2,
     "2d_coord": [
-      -0.018288999795913696,
-      -0.49418726563453674
+      -0.022639533504843712,
+      0.6057192087173462
     ],
     "MSU_id": 1161,
     "paper_info": "Threefold reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols",
@@ -984,8 +984,8 @@
     "para_id": 188,
     "paper_id": 2,
     "2d_coord": [
-      -0.6622909903526306,
-      -0.0030036121606826782
+      0.6217667460441589,
+      0.048699505627155304
     ],
     "MSU_id": 1173,
     "paper_info": "Threefold reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols",
@@ -1000,8 +1000,8 @@
     "para_id": 189,
     "paper_id": 2,
     "2d_coord": [
-      -1.2339664697647095,
-      -1.176386833190918
+      0.7293251156806946,
+      0.8865514993667603
     ],
     "MSU_id": 1182,
     "paper_info": "Threefold reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols",
@@ -1016,8 +1016,8 @@
     "para_id": 194,
     "paper_id": 2,
     "2d_coord": [
-      -0.2775992751121521,
-      -0.40628036856651306
+      0.4788464307785034,
+      0.01656755618751049
     ],
     "MSU_id": 1201,
     "paper_info": "Threefold reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols",
@@ -1032,8 +1032,8 @@
     "para_id": 194,
     "paper_id": 2,
     "2d_coord": [
-      -1.0765385627746582,
-      -1.0342310667037964
+      1.1147998571395874,
+      0.7262057065963745
     ],
     "MSU_id": 1204,
     "paper_info": "Threefold reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols",
@@ -1048,8 +1048,8 @@
     "para_id": 198,
     "paper_id": 2,
     "2d_coord": [
-      -0.20366045832633972,
-      -0.25212568044662476
+      0.3817935883998871,
+      -0.08985581994056702
     ],
     "MSU_id": 1242,
     "paper_info": "Threefold reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols",
@@ -1064,8 +1064,8 @@
     "para_id": 198,
     "paper_id": 2,
     "2d_coord": [
-      -0.5914984345436096,
-      -0.4210275411605835
+      0.028498101979494095,
+      0.2037779986858368
     ],
     "MSU_id": 1243,
     "paper_info": "Threefold reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols",
@@ -1080,8 +1080,8 @@
     "para_id": 199,
     "paper_id": 2,
     "2d_coord": [
-      -0.6209619045257568,
-      -0.8391920328140259
+      0.8795986771583557,
+      0.8535715341567993
     ],
     "MSU_id": 1249,
     "paper_info": "Threefold reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols",
@@ -1096,8 +1096,8 @@
     "para_id": 199,
     "paper_id": 2,
     "2d_coord": [
-      0.16303880512714386,
-      -1.3242586851119995
+      0.0027437619864940643,
+      1.3531811237335205
     ],
     "MSU_id": 1252,
     "paper_info": "Threefold reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols",
@@ -1112,8 +1112,8 @@
     "para_id": 200,
     "paper_id": 2,
     "2d_coord": [
-      0.5965763330459595,
-      -1.087298035621643
+      -0.3314472734928131,
+      1.074666976928711
     ],
     "MSU_id": 1254,
     "paper_info": "Threefold reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols",
@@ -1128,8 +1128,8 @@
     "para_id": 200,
     "paper_id": 2,
     "2d_coord": [
-      0.5979071259498596,
-      -0.08674345910549164
+      -0.649954617023468,
+      0.18987427651882172
     ],
     "MSU_id": 1258,
     "paper_info": "Threefold reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols",
@@ -1144,8 +1144,8 @@
     "para_id": 200,
     "paper_id": 2,
     "2d_coord": [
-      0.3132818341255188,
-      -0.6565848588943481
+      -0.32804781198501587,
+      1.263658046722412
     ],
     "MSU_id": 1259,
     "paper_info": "Threefold reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols",
@@ -1160,8 +1160,8 @@
     "para_id": 205,
     "paper_id": 2,
     "2d_coord": [
-      0.3817366063594818,
-      0.05225273221731186
+      -0.5684847831726074,
+      0.051921479403972626
     ],
     "MSU_id": 1299,
     "paper_info": "Threefold reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols",
@@ -1176,8 +1176,8 @@
     "para_id": 207,
     "paper_id": 2,
     "2d_coord": [
-      -1.1047191619873047,
-      -0.38010016083717346
+      1.1969683170318604,
+      0.03888440132141113
     ],
     "MSU_id": 1320,
     "paper_info": "Threefold reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols",
@@ -1192,8 +1192,8 @@
     "para_id": 211,
     "paper_id": 2,
     "2d_coord": [
-      -0.6307784914970398,
-      -0.5121909379959106
+      0.7374494671821594,
+      0.3130928575992584
     ],
     "MSU_id": 1335,
     "paper_info": "Threefold reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols",
@@ -1208,8 +1208,8 @@
     "para_id": 212,
     "paper_id": 2,
     "2d_coord": [
-      0.5960174798965454,
-      0.14239433407783508
+      -0.28772032260894775,
+      -0.18849505484104156
     ],
     "MSU_id": 1345,
     "paper_info": "Threefold reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols",
@@ -1224,8 +1224,8 @@
     "para_id": 212,
     "paper_id": 2,
     "2d_coord": [
-      0.45583075284957886,
-      -0.6204085350036621
+      -0.4620742201805115,
+      0.7535238265991211
     ],
     "MSU_id": 1346,
     "paper_info": "Threefold reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols",
@@ -1240,8 +1240,8 @@
     "para_id": 215,
     "paper_id": 2,
     "2d_coord": [
-      0.6546454429626465,
-      0.7144098281860352
+      -0.3564871549606323,
+      -0.8007436990737915
     ],
     "MSU_id": 1369,
     "paper_info": "Threefold reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols",
@@ -1256,8 +1256,8 @@
     "para_id": 215,
     "paper_id": 2,
     "2d_coord": [
-      0.9802062511444092,
-      -0.14428332448005676
+      -1.0237433910369873,
+      0.9871712923049927
     ],
     "MSU_id": 1370,
     "paper_info": "Threefold reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols",
@@ -1272,8 +1272,8 @@
     "para_id": 217,
     "paper_id": 2,
     "2d_coord": [
-      0.2713490128517151,
-      0.04986833035945892
+      0.11102000623941422,
+      -0.21728244423866272
     ],
     "MSU_id": 1391,
     "paper_info": "Threefold reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols",
@@ -1288,8 +1288,8 @@
     "para_id": 217,
     "paper_id": 2,
     "2d_coord": [
-      -1.2425163984298706,
-      -0.3641583025455475
+      1.1959178447723389,
+      -0.06661397218704224
     ],
     "MSU_id": 1397,
     "paper_info": "Threefold reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols",
@@ -1304,8 +1304,8 @@
     "para_id": 219,
     "paper_id": 2,
     "2d_coord": [
-      0.859224259853363,
-      -0.3584992289543152
+      -0.6923776268959045,
+      0.6625458002090454
     ],
     "MSU_id": 1410,
     "paper_info": "Threefold reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols",
@@ -1320,8 +1320,8 @@
     "para_id": 219,
     "paper_id": 2,
     "2d_coord": [
-      0.32200032472610474,
-      -0.09918729215860367
+      -0.42505306005477905,
+      0.15575243532657623
     ],
     "MSU_id": 1411,
     "paper_info": "Threefold reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols",
@@ -1336,8 +1336,8 @@
     "para_id": 228,
     "paper_id": 4,
     "2d_coord": [
-      -0.30061206221580505,
-      -0.9369020462036133
+      0.3904525339603424,
+      0.7428263425827026
     ],
     "MSU_id": 1488,
     "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
@@ -1352,8 +1352,8 @@
     "para_id": 229,
     "paper_id": 4,
     "2d_coord": [
-      1.3070580959320068,
-      -0.2190628945827484
+      -0.7986133694648743,
+      0.9176971316337585
     ],
     "MSU_id": 1496,
     "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
@@ -1368,8 +1368,8 @@
     "para_id": 236,
     "paper_id": 4,
     "2d_coord": [
-      0.9979903697967529,
-      -1.2201749086380005
+      -0.772746205329895,
+      1.1781507730484009
     ],
     "MSU_id": 1536,
     "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
@@ -1384,8 +1384,8 @@
     "para_id": 246,
     "paper_id": 4,
     "2d_coord": [
-      1.2468162775039673,
-      -0.8642419576644897
+      -1.0129450559616089,
+      1.3850547075271606
     ],
     "MSU_id": 1588,
     "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
@@ -1400,8 +1400,8 @@
     "para_id": 248,
     "paper_id": 4,
     "2d_coord": [
-      1.0651077032089233,
-      -1.2372015714645386
+      -0.9183031916618347,
+      1.516909122467041
     ],
     "MSU_id": 1593,
     "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
@@ -1416,8 +1416,8 @@
     "para_id": 270,
     "paper_id": 4,
     "2d_coord": [
-      1.0564061403274536,
-      -0.9003727436065674
+      -0.7372405529022217,
+      1.7296756505966187
     ],
     "MSU_id": 1689,
     "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
@@ -1432,8 +1432,8 @@
     "para_id": 272,
     "paper_id": 4,
     "2d_coord": [
-      0.9843791723251343,
-      -1.4429303407669067
+      -0.8088602423667908,
+      1.3812745809555054
     ],
     "MSU_id": 1706,
     "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
@@ -1448,8 +1448,8 @@
     "para_id": 289,
     "paper_id": 4,
     "2d_coord": [
-      1.0050486326217651,
-      -0.1098303347826004
+      -1.1022861003875732,
+      0.7725829482078552
     ],
     "MSU_id": 1793,
     "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
@@ -1464,8 +1464,8 @@
     "para_id": 291,
     "paper_id": 4,
     "2d_coord": [
-      0.5888311266899109,
-      -0.3613097667694092
+      -0.9390434622764587,
+      0.09652606397867203
     ],
     "MSU_id": 1806,
     "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
@@ -1480,8 +1480,8 @@
     "para_id": 292,
     "paper_id": 4,
     "2d_coord": [
-      1.5356873273849487,
-      -0.9778907299041748
+      -1.4044053554534912,
+      0.9480978846549988
     ],
     "MSU_id": 1819,
     "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
@@ -1496,8 +1496,8 @@
     "para_id": 295,
     "paper_id": 4,
     "2d_coord": [
-      1.211205244064331,
-      -1.035675287246704
+      -0.9643149375915527,
+      1.2160462141036987
     ],
     "MSU_id": 1838,
     "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
@@ -1512,8 +1512,8 @@
     "para_id": 307,
     "paper_id": 4,
     "2d_coord": [
-      0.35150596499443054,
-      -1.3829312324523926
+      -0.21121037006378174,
+      1.4310909509658813
     ],
     "MSU_id": 1918,
     "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
@@ -1528,8 +1528,8 @@
     "para_id": 310,
     "paper_id": 4,
     "2d_coord": [
-      -0.49089643359184265,
-      0.7843782901763916
+      0.33987656235694885,
+      -0.6043111681938171
     ],
     "MSU_id": 1937,
     "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
@@ -1544,8 +1544,8 @@
     "para_id": 310,
     "paper_id": 4,
     "2d_coord": [
-      -1.249990701675415,
-      0.3168366551399231
+      0.8129698038101196,
+      -0.2406338006258011
     ],
     "MSU_id": 1939,
     "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
@@ -1560,8 +1560,8 @@
     "para_id": 321,
     "paper_id": 4,
     "2d_coord": [
-      1.1108651161193848,
-      -0.9252992868423462
+      -0.8897321224212646,
+      1.1940219402313232
     ],
     "MSU_id": 2004,
     "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
@@ -1576,8 +1576,8 @@
     "para_id": 326,
     "paper_id": 4,
     "2d_coord": [
-      1.0649871826171875,
-      -1.170809268951416
+      -0.8691985011100769,
+      1.3388683795928955
     ],
     "MSU_id": 2042,
     "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
@@ -1592,8 +1592,8 @@
     "para_id": 327,
     "paper_id": 4,
     "2d_coord": [
-      0.4850892126560211,
-      -0.649972677230835
+      -0.17474685609340668,
+      0.9130012392997742
     ],
     "MSU_id": 2050,
     "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
@@ -1608,8 +1608,8 @@
     "para_id": 333,
     "paper_id": 4,
     "2d_coord": [
-      0.9880381226539612,
-      -1.3043065071105957
+      -0.8180146813392639,
+      1.6140084266662598
     ],
     "MSU_id": 2080,
     "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
@@ -1624,8 +1624,8 @@
     "para_id": 333,
     "paper_id": 4,
     "2d_coord": [
-      0.9182973504066467,
-      -1.339269757270813
+      -0.7595884203910828,
+      1.4763644933700562
     ],
     "MSU_id": 2085,
     "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
@@ -1640,8 +1640,8 @@
     "para_id": 334,
     "paper_id": 4,
     "2d_coord": [
-      0.952644944190979,
-      0.11806008219718933
+      -0.6041232347488403,
+      -0.7315500378608704
     ],
     "MSU_id": 2090,
     "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
@@ -1656,8 +1656,8 @@
     "para_id": 336,
     "paper_id": 4,
     "2d_coord": [
-      0.22381603717803955,
-      0.26425859332084656
+      -0.12442002445459366,
+      -0.6611404418945312
     ],
     "MSU_id": 2100,
     "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
@@ -1672,8 +1672,8 @@
     "para_id": 336,
     "paper_id": 4,
     "2d_coord": [
-      1.107525110244751,
-      -1.197901964187622
+      -0.761719286441803,
+      1.0297541618347168
     ],
     "MSU_id": 2101,
     "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
@@ -1688,8 +1688,8 @@
     "para_id": 338,
     "paper_id": 4,
     "2d_coord": [
-      0.5277851819992065,
-      -1.1585584878921509
+      -0.393576443195343,
+      1.2853001356124878
     ],
     "MSU_id": 2111,
     "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
@@ -1704,8 +1704,8 @@
     "para_id": 338,
     "paper_id": 4,
     "2d_coord": [
-      0.7438064813613892,
-      -0.5630676746368408
+      -0.5082758665084839,
+      0.9259247779846191
     ],
     "MSU_id": 2112,
     "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
@@ -1720,8 +1720,8 @@
     "para_id": 339,
     "paper_id": 4,
     "2d_coord": [
-      0.8972083330154419,
-      -1.2047690153121948
+      -0.8393465876579285,
+      1.4675288200378418
     ],
     "MSU_id": 2116,
     "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
@@ -1736,8 +1736,8 @@
     "para_id": 341,
     "paper_id": 4,
     "2d_coord": [
-      1.239367127418518,
-      -1.3386889696121216
+      -0.9673344492912292,
+      0.9428513646125793
     ],
     "MSU_id": 2121,
     "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
@@ -1752,8 +1752,8 @@
     "para_id": 341,
     "paper_id": 4,
     "2d_coord": [
-      1.3827577829360962,
-      -1.2912945747375488
+      -1.065712332725525,
+      0.9983793497085571
     ],
     "MSU_id": 2126,
     "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
@@ -1768,8 +1768,8 @@
     "para_id": 345,
     "paper_id": 3,
     "2d_coord": [
-      1.1864713430404663,
-      -1.0381383895874023
+      -0.7796707153320312,
+      1.2618861198425293
     ],
     "MSU_id": 2162,
     "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
@@ -1784,8 +1784,8 @@
     "para_id": 345,
     "paper_id": 3,
     "2d_coord": [
-      1.093603253364563,
-      -0.809740424156189
+      -0.8284767866134644,
+      1.0954015254974365
     ],
     "MSU_id": 2163,
     "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
@@ -1800,8 +1800,8 @@
     "para_id": 345,
     "paper_id": 3,
     "2d_coord": [
-      1.0843467712402344,
-      -1.1911979913711548
+      -0.8631124496459961,
+      1.202940583229065
     ],
     "MSU_id": 2164,
     "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
@@ -1816,8 +1816,8 @@
     "para_id": 376,
     "paper_id": 3,
     "2d_coord": [
-      1.0355077981948853,
-      -1.4789693355560303
+      -0.7505190372467041,
+      1.3107000589370728
     ],
     "MSU_id": 2327,
     "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
@@ -1832,8 +1832,8 @@
     "para_id": 400,
     "paper_id": 3,
     "2d_coord": [
-      0.9670522212982178,
-      -1.12247633934021
+      -0.8241974115371704,
+      1.0036591291427612
     ],
     "MSU_id": 2445,
     "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
@@ -1848,8 +1848,8 @@
     "para_id": 411,
     "paper_id": 3,
     "2d_coord": [
-      0.48026442527770996,
-      -0.20655204355716705
+      -0.7341428399085999,
+      0.15231655538082123
     ],
     "MSU_id": 2501,
     "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
@@ -1864,8 +1864,8 @@
     "para_id": 417,
     "paper_id": 3,
     "2d_coord": [
-      -0.8055596947669983,
-      0.2874813973903656
+      0.6554669737815857,
+      -0.6028346419334412
     ],
     "MSU_id": 2534,
     "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
@@ -1880,8 +1880,8 @@
     "para_id": 426,
     "paper_id": 3,
     "2d_coord": [
-      -0.25936537981033325,
-      1.0595699548721313
+      0.052263662219047546,
+      -0.8266359567642212
     ],
     "MSU_id": 2585,
     "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
@@ -1896,8 +1896,8 @@
     "para_id": 432,
     "paper_id": 3,
     "2d_coord": [
-      1.0606300830841064,
-      -0.7499880790710449
+      -0.8162262439727783,
+      0.97560054063797
     ],
     "MSU_id": 2622,
     "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
@@ -1912,8 +1912,8 @@
     "para_id": 434,
     "paper_id": 3,
     "2d_coord": [
-      0.8565245866775513,
-      -1.151821494102478
+      -0.6394410729408264,
+      1.6936733722686768
     ],
     "MSU_id": 2637,
     "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
@@ -1928,8 +1928,8 @@
     "para_id": 452,
     "paper_id": 3,
     "2d_coord": [
-      0.8157358765602112,
-      -1.5120102167129517
+      -0.5816968679428101,
+      1.3057838678359985
     ],
     "MSU_id": 2757,
     "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
@@ -1944,8 +1944,8 @@
     "para_id": 452,
     "paper_id": 3,
     "2d_coord": [
-      1.1837401390075684,
-      -0.9242148399353027
+      -0.9417528510093689,
+      1.0856366157531738
     ],
     "MSU_id": 2758,
     "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
@@ -1960,8 +1960,8 @@
     "para_id": 452,
     "paper_id": 3,
     "2d_coord": [
-      0.7888140082359314,
-      -1.279320478439331
+      -0.6212850213050842,
+      1.1472125053405762
     ],
     "MSU_id": 2759,
     "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
@@ -1976,8 +1976,8 @@
     "para_id": 454,
     "paper_id": 3,
     "2d_coord": [
-      0.09699125587940216,
-      0.20981383323669434
+      -0.3892538845539093,
+      -0.06020798534154892
     ],
     "MSU_id": 2769,
     "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
@@ -1992,8 +1992,8 @@
     "para_id": 456,
     "paper_id": 3,
     "2d_coord": [
-      0.17462170124053955,
-      -1.1785707473754883
+      -0.3055361211299896,
+      1.2292122840881348
     ],
     "MSU_id": 2779,
     "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
@@ -2008,8 +2008,8 @@
     "para_id": 456,
     "paper_id": 3,
     "2d_coord": [
-      1.1454129219055176,
-      -0.883818507194519
+      -0.9921833872795105,
+      1.154042363166809
     ],
     "MSU_id": 2780,
     "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
@@ -2024,8 +2024,8 @@
     "para_id": 456,
     "paper_id": 3,
     "2d_coord": [
-      0.37108099460601807,
-      -0.442109078168869
+      -0.28750941157341003,
+      0.2094375342130661
     ],
     "MSU_id": 2782,
     "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
@@ -2040,8 +2040,8 @@
     "para_id": 457,
     "paper_id": 3,
     "2d_coord": [
-      0.7280115485191345,
-      -1.1102758646011353
+      -0.45828911662101746,
+      1.6062730550765991
     ],
     "MSU_id": 2791,
     "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
@@ -2056,8 +2056,8 @@
     "para_id": 463,
     "paper_id": 3,
     "2d_coord": [
-      0.7889230847358704,
-      -0.1868048459291458
+      -0.78018718957901,
+      0.6803386807441711
     ],
     "MSU_id": 2824,
     "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
