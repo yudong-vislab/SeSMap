@@ -695,9 +695,24 @@ export async function initSemanticMap({
       .attr('fill', d => {
         return resolveScatterPointFill(d, DEFAULT_FILL);
       })
+      // gallery 论文筛选：country 不在选中集的散点整体隐藏（含冲突 hex 里非选中论文的点）
+      .attr('display', d => {
+        if (!App.visibleCountries) return null;
+        const cid = d.country_id ? normalizeCountryId(String(d.country_id)) : null;
+        return (cid && App.visibleCountries.has(cid)) ? null : 'none';
+      })
+      .style('pointer-events', d => {
+        if (!App.visibleCountries) return null;
+        const cid = d.country_id ? normalizeCountryId(String(d.country_id)) : null;
+        return (cid && App.visibleCountries.has(cid)) ? null : 'none';
+      })
       // Use fill-opacity (not overall opacity) to avoid compounding with other layers
       .attr('opacity', 1)
       .attr('fill-opacity', d => {
+        if (App.visibleCountries) {
+          const cid = d.country_id ? normalizeCountryId(String(d.country_id)) : null;
+          if (!cid || !App.visibleCountries.has(cid)) return 0; // 筛掉的散点不占透明度下限
+        }
         const style = (App._hexStyleByKey && App._hexStyleByKey.get) ? App._hexStyleByKey.get(d.__hexKey) : null;
         const op = (style && typeof style.opacity === 'number') ? style.opacity : 0.95;
         return Math.max(MIN_OPACITY, op);
@@ -1108,12 +1123,17 @@ function computeHexBaseFill(panelIdx, q, r, modality) {
   try {
     const b = getBucket(panelIdx, q, r);
     if (b && b.countries && b.countries.size > 0) {
-      if (b.countries.size === 1) {
-        const onlyCid = Array.from(b.countries)[0];
-        return getPanelCountryColor(panelIdx, onlyCid);
-      } else {
+      // gallery 选择联动：仅保留可见 country；冲突区随之重算；全不可见则落到背景(该 hex 当前隐藏)
+      let cs = b.countries;
+      if (App.visibleCountries) {
+        cs = new Set(Array.from(b.countries).filter(c => App.visibleCountries.has(c)));
+      }
+      if (cs.size === 1) {
+        return getPanelCountryColor(panelIdx, Array.from(cs)[0]);
+      } else if (cs.size >= 2) {
         return (STYLE && STYLE.CONFLICT_GRAY) ? STYLE.CONFLICT_GRAY : '#B0B0B0';
       }
+      // cs.size === 0 → 落到下方 modality/背景色
     }
   } catch (e) {}
   if (modality === 'image') return (App.config && App.config.hex && App.config.hex.imageFill) || '#dddddd';
@@ -4937,6 +4957,8 @@ const mode = getPanelLayoutMode(panelIdx);
     const claimMap = new Map();
     (space.countries || []).forEach(cn => {
       const cid = normalizeCountryId(cn.country_id);
+      // gallery 论文筛选：非选中国家不进 claimMap → 不画其边界，冲突边界只在选中子集间重算
+      if (App.visibleCountries && !App.visibleCountries.has(cid)) return;
       (cn.hexes || []).forEach(h => {
         const k = `${h.q},${h.r}`;
         if (!claimMap.has(k)) claimMap.set(k, new Set());
@@ -5371,8 +5393,20 @@ function updateHexStyles() {
     if (!App._hexStyleByKey) App._hexStyleByKey = new Map();
 
     svg.selectAll('g.hex').each(function(d) {
+      // —— gallery 论文筛选：不含任一选中 country 的 hex 整体隐藏（含底层 core）——
+      let filteredOut = false;
+      if (App.visibleCountries) {
+        const _bkt = getBucket(panelIdx, d.q, d.r);
+        const _hasVisible = !!(_bkt && _bkt.countries && _bkt.countries.size &&
+          Array.from(_bkt.countries).some(c => App.visibleCountries.has(c)));
+        filteredOut = !_hasVisible;
+      }
+
       const core = d3.select(this).select('path.hex-core');
-      if (!core.empty()) core.attr('fill', computeHexBaseFill(panelIdx, d.q, d.r, d.modality));
+      if (!core.empty()) {
+        core.attr('fill', filteredOut ? 'none' : computeHexBaseFill(panelIdx, d.q, d.r, d.modality))
+            .attr('display', filteredOut ? 'none' : null); // core 层也整体隐藏（含描边）
+      }
 
       const gSel  = d3.select(this);
       const path  = gSel.select('path.hex-shape').empty() ? gSel.select('path') : gSel.select('path.hex-shape');
@@ -5525,6 +5559,12 @@ function updateHexStyles() {
       let boost = Math.max(0, Math.min(1, overlayOpacity)); // overlayOpacity 改名更贴切也可
       let finalOpacity = baseOpacity + (1 - baseOpacity) * boost;
 
+      // —— gallery 论文筛选：隔离选中论文的 HSU（filteredOut 已在 .each 开头按 visibleCountries 算好）——
+      if (filteredOut) {
+        finalFill = 'none';   // 上层彩色 shape 也不画
+        finalOpacity = 0;     // 完全隐藏
+      }
+
       // 写入最终透明度缓存（右侧用）
       if (!App.alphaCacheByHex) App.alphaCacheByHex = new Map();
       App.alphaCacheByHex.set(key, finalOpacity);
@@ -5533,7 +5573,7 @@ function updateHexStyles() {
        try { App._hexStyleByKey.set(key, { fill: finalFill, opacity: finalOpacity }); } catch(e) {}
 
       // 预览邻居的斜线填充 + 应用样式
-      hatch.attr('fill', isPreviewNeighbor ? `url(#hex-hatch-${panelIdx})` : 'none');
+      hatch.attr('fill', (isPreviewNeighbor && !filteredOut) ? `url(#hex-hatch-${panelIdx})` : 'none');
       path .attr('fill', finalFill)
            .attr('fill-opacity', finalOpacity);
 
@@ -5549,7 +5589,9 @@ function updateHexStyles() {
       isSelected = App.persistentHexKeys && App.persistentHexKeys.has(`${panelIdx}|${d.q},${d.r}`);
       let strokeOpacity = conflictMode ? (isSelected ? STYLE.BORDER_ALT_ACTIVE : STYLE.BORDER_ALT_OTHER) : 1;
       let strokeWidth   = conflictMode ? (App.config.hex.borderWidth * (isSelected ? 1.6 : 1.0)) : App.config.hex.borderWidth;
-      path.attr('stroke-opacity', strokeOpacity).attr('stroke-width', strokeWidth);
+      if (filteredOut) strokeOpacity = 0; // 被筛掉的 hex 边框彻底去掉
+      path.attr('stroke-opacity', strokeOpacity).attr('stroke-width', strokeWidth)
+          .style('pointer-events', filteredOut ? 'none' : null); // 隐藏的 hex 不响应 hover
 
       // const dot2 = gSel.select('circle.scatter-dot');
       // if (!dot2.empty()) {
@@ -5565,12 +5607,21 @@ function updateHexStyles() {
       });
     // Sync MSU scatter points with the cached hex styles (inherit hex color/opacity)
     if (!scatterLayer.empty()) {
+      const _isScatterVisible = (d) => {
+        if (!App.visibleCountries) return true;
+        const cid = d.country_id ? normalizeCountryId(String(d.country_id)) : null;
+        return !!(cid && App.visibleCountries.has(cid));
+      };
       scatterLayer.selectAll('circle.msu-point')
         .attr('fill', d => {
           return resolveScatterPointFill(d, '#999');
         })
+        // gallery 论文筛选：country 不在选中集的散点整体隐藏
+        .attr('display', d => _isScatterVisible(d) ? null : 'none')
+        .style('pointer-events', d => _isScatterVisible(d) ? null : 'none')
         .attr('opacity', 1)
         .attr('fill-opacity', d => {
+          if (!_isScatterVisible(d)) return 0;
           const st = App._hexStyleByKey && App._hexStyleByKey.get ? App._hexStyleByKey.get(d.__hexKey) : null;
           const cfg = (App && App.config && App.config.scatter) ? App.config.scatter : {};
           const MIN_OPACITY = Number.isFinite(cfg.minOpacity) ? cfg.minOpacity : 0.72;
@@ -7326,6 +7377,17 @@ function _deleteSubspaceByIndex(idx) {
         drawOverlayLinesFromLinks([], App.allHexDataByPanel, App.hexMapsByPanel, false);
         updateHexStyles?.();
         applyResponsiveLayout?.(true);
+      },
+
+      // === gallery 选论文联动：仅显示选中论文(country)，冲突区随选择重算；空/未选 = 显示全部 ===
+      setVisibleCountries(ids) {
+        if (Array.isArray(ids) && ids.length) {
+          App.visibleCountries = new Set(ids.map(c => normalizeCountryId(String(c))));
+        } else {
+          App.visibleCountries = null;   // null = 显示全部
+        }
+        updateHexStyles?.();
+        return { handled: true };
       },
 
       /**

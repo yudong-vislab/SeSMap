@@ -1,0 +1,3896 @@
+[
+  {
+    "paragraph": "Chi Zhang , Computer Network Information Center, Chinese Academy of Sciences, Beijing, 100083, China and also University of Chinese Academy of Sciences, Beijing, 101408, China",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Chi Zhang is affiliated with the Computer Network Information Center, Chinese Academy of Sciences, Beijing, 100083, China.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Chi Zhang is also affiliated with the University of Chinese Academy of Sciences, Beijing, 101408, China.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Yu Dong , Computer Network Information Center, Chinese Academy of Sciences, Beijing, 100083, China",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Yu Dong is affiliated with the Computer Network Information Center, Chinese Academy of Sciences, Beijing, 100083, China.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Yang Wang and Yuetong Han , Computer Network Information Center, Chinese Academy of Sciences, Beijing, 100083, China and also University of Chinese Academy of Sciences, Beijing, 101408, China",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Yang Wang and Yuetong Han are affiliated with the Computer Network Information Center, Chinese Academy of Sciences, Beijing, China.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Yang Wang and Yuetong Han are also affiliated with the University of Chinese Academy of Sciences, Beijing, China.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Guihua Shan , Computer Network Information Center, Chinese Academy of Sciences, Beijing, 100083, China, also University of Chinese Academy of Sciences, Beijing, 101408, China, and also Hangzhou Institute for Advanced Study, UCAS, Hangzhou, 310024, China",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Guihua Shan is affiliated with the Computer Network Information Center, Chinese Academy of Sciences, Beijing, China.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Guihua Shan is affiliated with the University of Chinese Academy of Sciences, Beijing, China.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Guihua Shan is affiliated with the Hangzhou Institute for Advanced Study, UCAS, Hangzhou, China.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Bixia Tang , National Genomics Data Center, China National Center for Bioinformation, Beijing, 100049, China and also Beijing Institute of Genomics, Chinese Academy of Sciences, Beijing, 100049, China",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Bixia Tang is affiliated with the National Genomics Data Center, China National Center for Bioinformation, Beijing, China.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Bixia Tang is also affiliated with the Beijing Institute of Genomics, Chinese Academy of Sciences, Beijing, China.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Circular genome visualizations are essential for exploring structural variants and gene regulation. However, existing tools often require complex scripting and manual configuration, making the process time-consuming, error-prone, and difficult to learn. To address these challenges, we introduce AuraGenome, a large language model (LLM)-powered framework for rapid, reusable, and scalable generation of multilayered circular genome visualizations. AuraGenome combines a semanticdriven multiagent workflow with an interactive visual analytics system. The workflow employs seven specialized LLM-driven agents, each assigned distinct roles, such as intent recognition, layout planning, and code generation, to transform raw genomic data into tailored visualizations. The system supports multiple coordinated views tailored for genomic data, offering ring, radial, and chord-based layouts to represent multilayered circular genome visualizations. In addition to enabling interactions and configuration reuse, the system supports realtime refinement and high-quality report export. We validate its effectiveness through two case studies and a comprehensive user study. AuraGenome is available at https://github.com/Darius18/AuraGenome.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Circular genome visualizations are essential for exploring structural variants and gene regulation.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Existing tools often require complex scripting and manual configuration, making the process time-consuming, error-prone, and difficult to learn.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "We introduce AuraGenome, a large language model (LLM)-powered framework for rapid, reusable, and scalable generation of multilayered circular genome visualizations.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "AuraGenome combines a semantic-driven multiagent workflow with an interactive visual analytics system.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The workflow employs seven specialized LLM-driven agents, each assigned distinct roles, such as intent recognition, layout planning, and code generation, to transform raw genomic data into tailored visualizations.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The system supports multiple coordinated views tailored for genomic data, offering ring, radial, and chord-based layouts to represent multilayered circular genome visualizations.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The system enables interactions and configuration reuse.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The system supports realtime refinement and high-quality report export.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "We validate its effectiveness through two case studies and a comprehensive user study.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "AuraGenome is available at https://github.com/Darius18/AuraGenome.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "he proliferation of high-throughput sequencing technologies has transformed genomics into a data-intensive field. Modern experiments generate massive volumes of sequence-based data— such as structural variations, gene expression profiles, and chromosomal rearrangements—that are both large scale and heterogeneous. These characteristics make data interpretation challenging using traditional visualization methods. Visualization thus plays a crucial role, helping researchers explore complex relationships, uncover patterns, and effectively communicate findings.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The proliferation of high-throughput sequencing technologies has transformed genomics into a data-intensive field.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Modern experiments generate massive volumes of sequence-based data, such as structural variations, gene expression profiles, and chromosomal rearrangements.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Sequence-based data are both large scale and heterogeneous.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "These characteristics make data interpretation challenging using traditional visualization methods.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Visualization plays a crucial role in helping researchers explore complex relationships.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "Visualization helps researchers uncover patterns.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "Visualization helps researchers effectively communicate findings.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Circular genome visualizations offer aesthetic appeal and spatial efficiency for representing long genomic sequences and their interconnections.<sup>1</sup> Tools, such as Circos,<sup>2</sup> have become standard for visualizing genomic alterations and chromosome structures in circular layout. However, they rely heavily on manual configuration and scripting, imposing steep learning curves and time-consuming workflows. Researchers often need to iteratively adjust parameters to fit data-specific requirements, which can impede productivity and limit the clarity or expressiveness of the final output. These limitations highlight the demand for intelligent, automated visualization solutions tailored to the unique characteristics of circular genomic data.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Circular genome visualizations offer aesthetic appeal and spatial efficiency for representing long genomic sequences and their interconnections.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Tools, such as Circos, have become standard for visualizing genomic alterations and chromosome structures in circular layout.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Circos relies heavily on manual configuration and scripting.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Manual configuration and scripting impose steep learning curves and time-consuming workflows.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Researchers often need to iteratively adjust parameters to fit data-specific requirements.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Iterative parameter adjustments can impede productivity and limit the clarity or expressiveness of the final output.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "These limitations highlight the demand for intelligent, automated visualization solutions tailored to the unique characteristics of circular genomic data.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Recent advances in large language models (LLMs) offer new possibilities for generating genome visualizations via natural language. While LLMs can automate complex workflows, applying them in genomics remains challenging due to the need for precise intent parsing, domain data integration, and generation of meaningful, publication-ready visualizations.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Recent advances in large language models (LLMs) offer new possibilities for generating genome visualizations via natural language.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "LLMs can automate complex workflows.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Applying LLMs in genomics remains challenging due to the need for precise intent parsing.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Applying LLMs in genomics remains challenging due to the need for domain data integration.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Applying LLMs in genomics remains challenging due to the need for generation of meaningful, publication-ready visualizations.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "To address these challenges, we present AuraGenome, an LLM-powered framework that enables genomics experts to rapidly generate, flexibly customize, and efficiently reuse multilayered circular genome visualizations. AuraGenome is grounded in task-specific requirements, identified through close collaboration with genomics experts to reflect real-world workflow needs. Based on the requirements, we conducted feasibility studies using LLMs for D3-based genome visualizations and selected GPT-4o and DeepSeek-R1 as the foundation of a semantics-driven multiagent workflow. This workflow decomposes complex visualization tasks into modular steps—such as intent recognition, layout recommendation, code generation, validation, explanation, and refinement.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "AuraGenome is an LLM-powered framework that enables genomics experts to rapidly generate multilayered circular genome visualizations.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "AuraGenome allows genomics experts to flexibly customize multilayered circular genome visualizations.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "AuraGenome enables genomics experts to efficiently reuse multilayered circular genome visualizations.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "AuraGenome is grounded in task-specific requirements identified through close collaboration with genomics experts.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The task-specific requirements reflect real-world workflow needs.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Feasibility studies were conducted using LLMs for D3-based genome visualizations.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "GPT-4o and DeepSeek-R1 were selected as the foundation of a semantics-driven multiagent workflow.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The semantics-driven multiagent workflow decomposes complex visualization tasks into modular steps.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The modular steps include intent recognition, layout recommendation, code generation, validation, explanation, and refinement.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Built atop this workflow, the interactive visual analytics system supports generation and editing of circular genome visualizations in three distinct layouts—ring, radial, and chord—with multilayer composition and domain-specific operations. A layer-aware reuse mechanism further enables tracing, adapting, and repurposing visualization steps to support efficient iteration and narrative report construction. We validate AuraGenome through two real-world case studies and both quantitative and qualitative user evaluations. In sum, the main contributions are summarized as follows.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The interactive visual analytics system supports generation and editing of circular genome visualizations in three distinct layouts: ring, radial, and chord.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The system includes multilayer composition and domain-specific operations.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "A layer-aware reuse mechanism enables tracing, adapting, and repurposing visualization steps.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The layer-aware reuse mechanism supports efficient iteration and narrative report construction.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "AuraGenome is validated through two real-world case studies.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "AuraGenome is validated through both quantitative and qualitative user evaluations.",
+        "category": "Experiment",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "1) A semantics-driven multiagent workflow that orchestrates seven LLM-based agents to transform data input into visualization-ready code output tailored for circular genome representation.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A semantics-driven multiagent workflow orchestrates seven LLM-based agents.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The workflow transforms data input into visualization-ready code output.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The code output is tailored for circular genome representation.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "2) A visual analytics system that enables iterative refinement, direct manipulation, and layer-aware reuse to support the construction of complex, multilayered genome visualizations.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A visual analytics system enables iterative refinement.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The system supports direct manipulation.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The system supports layer-aware reuse.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The system supports the construction of complex, multilayered genome visualizations.",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "3) A comprehensive evaluation through two case studies and mixed-method user studies, demonstrating the framework’s effectiveness in enhancing usability and efficiency.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A comprehensive evaluation was conducted through two case studies.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "Mixed-method user studies were conducted.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "The evaluation demonstrates the framework’s effectiveness in enhancing usability.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The evaluation demonstrates the framework’s effectiveness in enhancing efficiency.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Circular layouts, with their compactness and multidimensional representation capabilities, are more suitable than linear visualizations for displaying the global features of genomes. Circular layouts map data onto channels, such as angles, radius, and layers, effectively illustrating hierarchical relationships and the distribution of significance across multiple data dimensions, such as gene functional regions, mutation distributions, and expression levels.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Circular layouts are more suitable than linear visualizations for displaying the global features of genomes.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Circular layouts offer compactness and multidimensional representation capabilities.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Circular layouts map data onto channels such as angles, radius, and layers.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Circular layouts effectively illustrate hierarchical relationships and the distribution of significance across multiple data dimensions.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Data dimensions include gene functional regions, mutation distributions, and expression levels.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "In bioinformatics, circular layouts have proven to be a highly effective visualization approach. In a study on the collinearity of the bZIP gene family in poplar, Zhao et al.<sup>3</sup> employed a circular layout analysis method to explore gene functions and regulatory mechanisms by visualizing gene density, homologous blocks, and the distribution of segmental duplicated gene pairs. Peng et al.<sup>4</sup> utilized circular layouts to depict plasmid structures carrying various genes, alongside sequence alignment results of other Enterobacteriaceae bacteria sharing similar plasmid backbones, thereby illustrating plasmid gene structures, multidrug resistance regions, and homology. Garcia et al.<sup>5</sup> in their study of the Lima bean genome, used circular layouts to display multiple features to understand genome organization and evolution. Similarly, Zhang et al.<sup>6</sup> adopted circular layouts to present genome characteristics in tea tree research, visualizing genetic diversity and evolutionary history. Despite their widespread use, these circular layouts largely rely on manual design, limiting their efficiency and general applicability.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Circular layouts are a highly effective visualization approach in bioinformatics.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Zhao et al. employed a circular layout analysis method to explore gene functions and regulatory mechanisms in the bZIP gene family in poplar.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "Zhao et al. visualized gene density, homologous blocks, and the distribution of segmental duplicated gene pairs.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "Peng et al. utilized circular layouts to depict plasmid structures carrying various genes.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "Peng et al. visualized sequence alignment results of other Enterobacteriaceae bacteria sharing similar plasmid backbones.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "Peng et al. illustrated plasmid gene structures, multidrug resistance regions, and homology.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "Garcia et al. used circular layouts to display multiple features of the Lima bean genome to understand genome organization and evolution.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "Zhang et al. adopted circular layouts to present genome characteristics in tea tree research.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "Zhang et al. visualized genetic diversity and evolutionary history in tea tree research.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "Circular layouts largely rely on manual design, limiting their efficiency and general applicability.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Circos is one of the most widely used tools, generating circular visualizations through modular configurations to display genomic variations, expression levels, and chromosome structures. BioCircos<sup>7</sup> reimplements Circos using a JavaScript library, enhancing interactivity. IntelliCircos<sup>8</sup> leverages LLMs and a curated example-based dataset to support the intelligent generation of Circos-based visualizations through natural language input.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Circos generates circular visualizations through modular configurations to display genomic variations, expression levels, and chromosome structures.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "BioCircos reimplements Circos using a JavaScript library.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "BioCircos enhances interactivity in circular visualizations.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "IntelliCircos leverages large language models (LLMs) to support the intelligent generation of Circos-based visualizations.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "IntelliCircos uses a curated example-based dataset to enable natural language input for visualization generation.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Several tools have been presented to support genome visualizations in different contexts. For example, CGView<sup>9</sup> and GView<sup>10</sup> focus on browsing microbial genome annotations. BLAST Ring Image Generator<sup>11</sup> is designed specifically for comparing multiple prokaryotic genomes, utilizing BLAST results to produce circular images with an emphasis on comparative genomics. The PanVa visual analysis tool, developed by Brandt et al.<sup>12</sup> introduces novel aggregated graphical encoding techniques to assist researchers in exploring gene variations within complex genotype–phenotype relationships. Gosling<sup>13</sup> provides a syntactic framework supporting circular layouts, with its follow-up work, AutoGosling,<sup>14</sup> leveraging deep learning to optimize genomic visualization parameters. GlyphCreator<sup>15</sup> is developed to parse existing circular visualization and enable secondary creation.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Several tools have been presented to support genome visualizations in different contexts.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "CGView focuses on browsing microbial genome annotations.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "GView focuses on browsing microbial genome annotations.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "BLAST Ring Image Generator is designed specifically for comparing multiple prokaryotic genomes.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "BLAST Ring Image Generator utilizes BLAST results to produce circular images with an emphasis on comparative genomics.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "The PanVa visual analysis tool introduces novel aggregated graphical encoding techniques.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "The PanVa visual analysis tool assists researchers in exploring gene variations within complex genotype–phenotype relationships.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Gosling provides a syntactic framework supporting circular layouts.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "AutoGosling leverages deep learning to optimize genomic visualization parameters.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "GlyphCreator is developed to parse existing circular visualization.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "GlyphCreator enables secondary creation of circular visualizations.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "These tools depend on parameterized designs, making them poorly adaptable to diverse data types and lacking support for automation. This results in low generation efficiency and a reliance on user expertise, highlighting the need for automation and intelligence, which serves as the entry point for this study.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Parameterized designs make these tools poorly adaptable to diverse data types.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "These tools lack support for automation.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "This results in low generation efficiency.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "These tools rely on user expertise.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The need for automation and intelligence serves as the entry point for this study.",
+        "category": "Background",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "The emergence of LLMs has enabled promising advances in the automatic generation of data visualizations, greatly reducing the technical threshold for manual design. For instance, CHAT2VIS<sup>16</sup> translates natural language queries and tabular data into executable Python code, ChartGPT<sup>17</sup> decomposes chart generation into multistep reasoning through fine-tuned FLAN-T5-XL, and LIDA<sup>18</sup> employs a modular pipeline to support exploratory visual analysis and narrative construction. These approaches effectively address basic visualization needs and mitigate limitations in semantic understanding and long-context reasoning.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The emergence of LLMs has enabled promising advances in the automatic generation of data visualizations.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The advances in automatic data visualization reduce the technical threshold for manual design.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "CHAT2VIS translates natural language queries and tabular data into executable Python code.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "ChartGPT decomposes chart generation into multistep reasoning through fine-tuned FLAN-T5-XL.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "LIDA employs a modular pipeline to support exploratory visual analysis and narrative construction.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "These approaches address basic visualization needs.",
+        "category": "Conclusion",
+        "rank": 3
+      },
+      {
+        "sentence": "These approaches mitigate limitations in semantic understanding and long-context reasoning.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "However, the generation of complex, customized, and interactive visualizations remains a significant challenge, particularly in scientific domains, such as genomics.<sup>8</sup> Existing models often struggle to capture the intricate data relationships, layout dependencies, and intertrack interactions that characterize these specialized charts. As noted by Cui et al.<sup>19</sup> LLMs frequently fail to retain contextual detail or integrate intermediate-level signals when processing long input sequences. In genomic visualization scenarios, these limitations lead to the omission of key features, incomplete logic, and the generation of erroneous code, especially when dealing with multitrack genome layouts or multiomics data integration.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The generation of complex, customized, and interactive visualizations remains a significant challenge, particularly in scientific domains such as genomics.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Existing models often struggle to capture the intricate data relationships, layout dependencies, and intertrack interactions that characterize specialized charts.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "LLMs frequently fail to retain contextual detail or integrate intermediate-level signals when processing long input sequences, as noted by Cui et al.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "In genomic visualization scenarios, these limitations lead to the omission of key features.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "In genomic visualization scenarios, these limitations lead to incomplete logic.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "In genomic visualization scenarios, these limitations lead to the generation of erroneous code, especially when dealing with multitrack genome layouts or multiomics data integration.",
+        "category": "Background",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Over the past two years, we worked closely with genomics experts in ongoing research projects to identify challenges in current workflows. These collaborations revealed pressing pain points in genome visualizations and highlighted the need for more intelligent and user-friendly tools, which motivated the formulation of our research objectives.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Collaborations with genomics experts revealed pressing pain points in genome visualizations.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The need for more intelligent and user-friendly tools was identified.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "These findings motivated the formulation of our research objectives.",
+        "category": "Background",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "We began by analyzing 42 genomics papers published in top-tier journals (e.g., Nature and Cell), focusing specifically on the use of circular visualizations to represent complex genomic information, such as chromosomal rearrangements, gene interactions, and differential expression patterns. Rather than analyzing full texts, we systematically reviewed key figures in papers to identify common visualization types, usage contexts, and design goals. Through this process, we derived a taxonomy of three major layout styles: ringbased, radial, and chord-based circular genome visualizations. We also examined the tools used to generate these figures, finding that most relied on static platforms, such as Circos, which offer limited customization and interactivity. These findings informed our visual design and motivated our choice of a D3-based code to support extensibility and dynamic control.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "42 genomics papers published in top-tier journals were analyzed.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The analysis focused on the use of circular visualizations to represent complex genomic information.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Circular visualizations were used to represent chromosomal rearrangements, gene interactions, and differential expression patterns.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Key figures in papers were systematically reviewed to identify common visualization types, usage contexts, and design goals.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "A taxonomy of three major layout styles was derived: ring-based, radial, and chord-based circular genome visualizations.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The tools used to generate these figures were examined.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Most tools relied on static platforms, such as Circos, which offer limited customization and interactivity.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "These findings informed the visual design and motivated the choice of a D3-based code to support extensibility and dynamic control.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "To complement these figure-derived insights with domain-specific needs, we conducted semistructured interviews and design discussions with eight genomics experts (average experience: 8.6 years) from areas, such as cancer genomics, comparative genomics, transcriptomics, and bioinformatics tool development. These experts were selected from ongoing collaborations and research networks. During sessions, experts reviewed representative circular visualizations extracted from the 42 papers, provided feedback through scenario walkthroughs, and engaged in feature prioritization and mockup evaluations. Their feedback validated the proposed layout taxonomy and further shaped our understanding of critical challenges. Based on these findings, we distilled six key requirements that a genome visual analytics framework should fulfill to enhance analytical efficiency, expressiveness, and usability.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Semistructured interviews and design discussions were conducted with eight genomics experts.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The genomics experts had an average experience of 8.6 years and specialized in areas such as cancer genomics, comparative genomics, transcriptomics, and bioinformatics tool development.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The experts were selected from ongoing collaborations and research networks.",
+        "category": "Method",
+        "rank": 2
+      },
+      {
+        "sentence": "During sessions, experts reviewed representative circular visualizations extracted from 42 papers.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Experts provided feedback through scenario walkthroughs, feature prioritization, and mockup evaluations.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The feedback validated the proposed layout taxonomy.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The feedback further shaped the understanding of critical challenges.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Six key requirements for a genome visual analytics framework were distilled based on these findings.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "The requirements aim to enhance analytical efficiency, expressiveness, and usability.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "R1—Structured Data Ingestion and Profiling: It efficiently ingests tabular genomic data and performs automatic feature recognition and statistical profiling to support data familiarization and downstream tasks.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The system efficiently ingests tabular genomic data.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The system performs automatic feature recognition.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The system performs statistical profiling to support data familiarization.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The system supports downstream tasks through statistical profiling.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "R2—Task-Aware Recommendation: It recommends suitable circular layouts based on semantics and analytic intent, such as detecting structural variations, comparing gene expression, or analyzing methylation patterns, thereby reducing manual trial-and-error.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "R2 recommends suitable circular layouts based on semantics and analytic intent.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The recommendation helps detect structural variations.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The recommendation supports comparing gene expression.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The recommendation aids in analyzing methylation patterns.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "This approach reduces manual trial-and-error.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "images/bc8f24aa46d0173f106d659143cb10214f23bc606054e4c9c76ec19c85edcfa6.jpg",
+    "type": "figure"
+  },
+  {
+    "paragraph": "FIGURE 1 Overview of the AuraGenome framework, which integrates a modular multiagent workflow with an interactive visua analytics system to enable end-to-end generation, refinement, and exploration of genome-scale circular visualizations. Together, these two components fulfill six core requirements (R1–R6) to ensure scalability, interpretability, and reproducibility in genomic data visualizations.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The AuraGenome framework integrates a modular multiagent workflow with an interactive visual analytics system.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The AuraGenome framework enables end-to-end generation, refinement, and exploration of genome-scale circular visualizations.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The two components of the AuraGenome framework fulfill six core requirements (R1–R6).",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The six core requirements ensure scalability, interpretability, and reproducibility in genomic data visualizations.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "R3—Natural Language-Driven Control: It allows users to configure visualizations using natural language commands, supporting domain-specific actions, such as interval binning, differential gene labeling, and feature toggling, for supporting semantically aligned user interactions.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "R3 allows users to configure visualizations using natural language commands.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "R3 supports domain-specific actions such as interval binning.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "R3 supports domain-specific actions such as differential gene labeling.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "R3 supports domain-specific actions such as feature toggling.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "R3 supports semantically aligned user interactions.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "R4—Code-Free Incremental Refinement: It enables direct interaction with visualization styles—such as track ordering, radial spacing, and color encoding—without coding, allowing real-time, iterative refinement.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "R4 enables direct interaction with visualization styles.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Visualization styles include track ordering, radial spacing, and color encoding.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "R4 allows real-time, iterative refinement without coding.",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "R5—High-Flexibility Interaction: It provides intuitive rules for code reuse, facilitating rapid adaptation to diverse visualization tasks with minimal effort.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "R5 provides intuitive rules for code reuse.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "R5 facilitates rapid adaptation to diverse visualization tasks with minimal effort.",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "R6—Narrative Exploration and Summarization: It supports annotation of specific tracks or elements and generates structured summaries to facilitate reporting, interpretation, and presentation.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "R6 supports annotation of specific tracks or elements.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "R6 generates structured summaries to facilitate reporting.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "R6 generates structured summaries to facilitate interpretation.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "R6 generates structured summaries to facilitate presentation.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "To address the six task requirements identified through expert interviews and literature analysis, we presented AuraGenome, a framework that supports the intelligent generation and interactive refinement of circular genome visualizations. AuraGenome integrates a semantic-driven multiagent workflow with a user-facing visual analytics system, enabling a seamless transition from raw genomic data to publicationready visualizations. As shown in Figure 1, AuraGenome framework consists of two core components: a semantic multiagent workflow and a visual analytics system.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Six task requirements were identified through expert interviews and literature analysis.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "AuraGenome is a framework that supports the intelligent generation and interactive refinement of circular genome visualizations.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "AuraGenome integrates a semantic-driven multiagent workflow with a user-facing visual analytics system.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "AuraGenome enables a seamless transition from raw genomic data to publication-ready visualizations.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The AuraGenome framework consists of two core components: a semantic multiagent workflow and a visual analytics system.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "The workflow introduces specialized LLM-based agents responsible for key subtasks, including intent recognition, data parsing (R1), visualization recommendation (R2), and code generation and refinement (R3–R5). These agents are configured based on preevaluation of model capabilities and are enhanced through structured prompts, modular code abstraction, and retrieval-augmented grounding.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The workflow introduces specialized LLM-based agents responsible for key subtasks.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Key subtasks include intent recognition, data parsing (R1), visualization recommendation (R2), and code generation and refinement (R3–R5).",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "These agents are configured based on preevaluation of model capabilities.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The agents are enhanced through structured prompts, modular code abstraction, and retrieval-augmented grounding.",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "The system enables users to refine, adjust, and manage visualizations through both direct manipulation and natural language input (R3). It supports visual parameter editing (R4), trackwise customization (R5), and summarization of analytical steps (R6). In particular, we formalize three representative layout strategies for circular genome visualizations: ring (concentric stacking of feature tracks), radial (centerout projection), and chord (arc-based linking of genomic loci). These layouts can be selected, composed, and refined interactively through novel interface elements, such as the parameter panel and sequence log, which together enable visual code reuse, stepwise branching, and traceable generation history.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The system enables users to refine, adjust, and manage visualizations through both direct manipulation and natural language input.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The system supports visual parameter editing.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The system supports trackwise customization.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The system supports summarization of analytical steps.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Three representative layout strategies for circular genome visualizations are formalized: ring (concentric stacking of feature tracks), radial (center-out projection), and chord (arc-based linking of genomic loci).",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "These layouts can be selected, composed, and refined interactively through novel interface elements, such as the parameter panel and sequence log.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The parameter panel and sequence log enable visual code reuse, stepwise branching, and traceable generation history.",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "To construct an effective multiagent workflow for genomic visualizations, we first conducted a prestudy evaluating the capabilities of LLMs on domain-specific tasks. We created a benchmark dataset, GenoVis-300, containing 300 natural language prompts derived from real genomics use cases. These prompts spanned six key task types: data parsing, chart recommendation, D3.js code generation, code modification, explanation, and style adjustment. We listed three LLMs—GPT-4o-2024-11-20, GPT-o1-2024-12-27, and DeepSeek-R1- 671B as candidates—to evaluate across five criteria relevant to the AuraGenome workflow: semantic understanding, code accuracy, instruction following, response efficiency, and output interpretability.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "An effective multiagent workflow for genomic visualizations was constructed.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "A prestudy was conducted to evaluate the capabilities of LLMs on domain-specific tasks.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "A benchmark dataset, GenoVis-300, was created containing 300 natural language prompts derived from real genomics use cases.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The GenoVis-300 prompts spanned six key task types: data parsing, chart recommendation, D3.js code generation, code modification, explanation, and style adjustment.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Three LLMs—GPT-4o-2024-11-20, GPT-o1-2024-12-27, and DeepSeek-R1-671B—were listed as candidates for evaluation.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The LLMs were evaluated across five criteria relevant to the AuraGenome workflow: semantic understanding, code accuracy, instruction following, response efficiency, and output interpretability.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "images/9e0342ef62f2e71d7f37734d6ca9c762d6c0fb42cd058f518c8bde0a0af00e1b.jpg",
+    "type": "figure"
+  },
+  {
+    "paragraph": "FIGURE 2 Comparison of LLM output assessments across five evaluation dimensions in GenoVis-300 dataset.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Figure 2 compares LLM output assessments across five evaluation dimensions.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The comparison is conducted using the GenoVis-300 dataset.",
+        "category": "Experiment",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Each model was rated on a normalized 0–100 scale, where scores above 90 reflected accurate and complete results, 70–89 indicated mostly correct outputs with minor issues, 50–69 reflected partial success with notable omissions, and scores below 50 indicated critical errors. Evaluations were independently conducted by three genomics experts using anonymized outputs and a standardized rubric to ensure fairness and consistency.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Each model was rated on a normalized 0–100 scale.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Scores above 90 reflected accurate and complete results.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Scores of 70–89 indicated mostly correct outputs with minor issues.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Scores of 50–69 reflected partial success with notable omissions.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Scores below 50 indicated critical errors.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Evaluations were independently conducted by three genomics experts.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Anonymized outputs and a standardized rubric were used to ensure fairness and consistency.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "As shown in Figure 2, GPT-4o performed best in semantic parsing and explanation tasks and Deep-Seek-R1 excelled in structured code generation. GPT-o1 showed moderate performance but struggled with layout consistency. These results guided our agent-model assignment strategy: GPT-4o was assigned to language-oriented agents, while Deep-Seek-R1 was chosen for code-focused agents. This division supports a modular workflow where each agent operates on tasks aligned with the LLM’s strengths.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "GPT-4o performed best in semantic parsing and explanation tasks.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Deep-Seek-R1 excelled in structured code generation.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "GPT-o1 showed moderate performance but struggled with layout consistency.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "These results guided our agent-model assignment strategy.",
+        "category": "Conclusion",
+        "rank": 3
+      },
+      {
+        "sentence": "GPT-4o was assigned to language-oriented agents.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Deep-Seek-R1 was chosen for code-focused agents.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "This division supports a modular workflow where each agent operates on tasks aligned with the LLM’s strengths.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Given the diverse and complex nature of genomic visualization tasks—ranging from semantic interpretation to code synthesis and validation—monolithic prompting strategies often suffer from instability and lack of control. Based on iterative experiments on multiagent workflow, we designed a modular, multiagent workflow where each LLM-based agent is responsible for a specific subtask aligned with its model capabilities. This design enables finer grained orchestration, greater controllability, and better task transparency.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Genomic visualization tasks range from semantic interpretation to code synthesis and validation.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Monolithic prompting strategies often suffer from instability and lack of control in genomic visualization tasks.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "A modular, multiagent workflow was designed based on iterative experiments on multiagent workflow.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Each LLM-based agent in the workflow is responsible for a specific subtask aligned with its model capabilities.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The modular design enables finer grained orchestration, greater controllability, and better task transparency.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "images/bf639474e32f42e82fc115e10fbb3febac1e49029fd6eaa16872bbd88154a2e2.jpg",
+    "type": "figure"
+  },
+  {
+    "paragraph": "FIGURE 3 Overview of the multiagent workflow for generating visualization-ready chart code from user queries. Each agent is responsible for a distinct function—ranging from intent recognition and operational suggestion to code generation, validation, and semantic explanation—while communicating through structured message passing.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "FIGURE 3 provides an overview of the multiagent workflow for generating visualization-ready chart code from user queries.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Each agent in the workflow is responsible for a distinct function.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The functions include intent recognition, operational suggestion, code generation, validation, and semantic explanation.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Agents communicate through structured message passing.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Figure 3 provides an overview of the multiagent workflow. Each agent is positioned along a data-tovisualization pipeline, handling a specific functional scope and interfacing with others through clearly defined message-passing mechanisms. The operational details of each agent are as follows.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Figure 3 provides an overview of the multiagent workflow.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Each agent is positioned along a data-to-visualization pipeline.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Each agent handles a specific functional scope.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Agents interface with others through clearly defined message-passing mechanisms.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Rather than relying on keyword triggers or handcrafted rules, this agent leverages the LLM’s semantic parsing capability to identify user intent at a functional level. This classification enables the system to activate only the relevant agents, reducing unnecessary computation and maintaining contextual focus. By modularizing intent routing, the system supports extensibility to new task types and ensures robustness under ambiguous user input.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The agent leverages the LLM’s semantic parsing capability to identify user intent at a functional level.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "This classification enables the system to activate only the relevant agents.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The system reduces unnecessary computation and maintains contextual focus.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "By modularizing intent routing, the system supports extensibility to new task types.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The system ensures robustness under ambiguous user input.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "This agent relies on embedded domain heuristics and data-profile templates to map data features to visualization strategies (e.g., heatmaps for expression data or links for structural variation). It also generates textual rationales that accompany each recommendation, improving transparency and helping users understand the rationale behind the system’s suggestions. This agent bridges the gap between raw genomic data and visualization design, enabling prelayout planning.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "This agent relies on embedded domain heuristics to map data features to visualization strategies.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "This agent uses data-profile templates to map data features to visualization strategies.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Visualization strategies include heatmaps for expression data or links for structural variation.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The agent generates textual rationales that accompany each recommendation.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The textual rationales improve transparency and help users understand the rationale behind the system’s suggestions.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "This agent bridges the gap between raw genomic data and visualization design.",
+        "category": "Conclusion",
+        "rank": 5
+      },
+      {
+        "sentence": "This agent enables prelayout planning.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "This abstraction reduces the granularity of codelevel decisions, allowing the agent to focus on content selection and parameter instantiation rather than low-level implementation details. It ensures that generated charts conform to best practices in layout structure and semantic consistency. The modularity also improves maintainability and supports downstream code reuse and refinement.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "This abstraction reduces the granularity of code-level decisions.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The abstraction allows the agent to focus on content selection and parameter instantiation rather than low-level implementation details.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The abstraction ensures that generated charts conform to best practices in layout structure.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The abstraction ensures semantic consistency in generated charts.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The modularity improves maintainability.",
+        "category": "Conclusion",
+        "rank": 3
+      },
+      {
+        "sentence": "The modularity supports downstream code reuse and refinement.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "This agent preserves the integrity of the chart structure while applying precise updates aligned with the user’s intent. It parses the code context, identifies relevant parameters, and rewrites only the affected components. This design promotes continuity in the visualization process, avoids unintended side effects, and supports real-time iteration and visual feedback.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The agent preserves the integrity of the chart structure while applying precise updates aligned with the user’s intent.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The agent parses the code context and identifies relevant parameters.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The agent rewrites only the affected components.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "This design promotes continuity in the visualization process.",
+        "category": "Conclusion",
+        "rank": 3
+      },
+      {
+        "sentence": "This design avoids unintended side effects.",
+        "category": "Conclusion",
+        "rank": 3
+      },
+      {
+        "sentence": "This design supports real-time iteration and visual feedback.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "While the multiagent architecture in AuraGenome enables modular task delegation, the reliability and quality of LLM-generated outputs—especially for complex genomic visualization tasks—critically depend on how each agent is instructed, grounded, and controlled. To address this, we introduce three complementary strategies to enhance agent execution quality: a structured prompt design for role alignment, a retrieval-augmented generation (RAG) mechanism for grounded code synthesis, and a modular abstraction layer to reduce codelevel complexity.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The multiagent architecture in AuraGenome enables modular task delegation.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The reliability and quality of LLM-generated outputs critically depend on how each agent is instructed, grounded, and controlled.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "LLM-generated outputs face challenges, especially for complex genomic visualization tasks.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "We introduce a structured prompt design for role alignment to enhance agent execution quality.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "We introduce a retrieval-augmented generation (RAG) mechanism for grounded code synthesis to enhance agent execution quality.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "We introduce a modular abstraction layer to reduce code-level complexity and enhance agent execution quality.",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "To further stabilize generation and align outputs with domain-specific conventions, we integrate a RAG mechanism into the chart generation and validation agents. Prior to code synthesis, the agent retrieves relevant templates from a curated knowledge base of validated chart examples, each annotated with metadata, such as chart type, data modality, and genomic scale.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A RAG mechanism is integrated into the chart generation and validation agents to stabilize generation and align outputs with domain-specific conventions.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Prior to code synthesis, the agent retrieves relevant templates from a curated knowledge base of validated chart examples.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The curated knowledge base contains validated chart examples annotated with metadata, such as chart type, data modality, and genomic scale.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Retrieval is performed using a hybrid strategy that combines semantic vector matching (weight 0.7) and keyword-based exact search (weight 0.3). Retrieved examples are injected into the prompt as in-context references, grounding the model’s generation process. This approach improves fidelity to biological conventions, reduces hallucinated code patterns, and enhances output stability—especially in multiturn interactions or layout-specific tasks.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Retrieval is performed using a hybrid strategy that combines semantic vector matching (weight 0.7) and keyword-based exact search (weight 0.3).",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Retrieved examples are injected into the prompt as in-context references, grounding the model’s generation process.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "This approach improves fidelity to biological conventions.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "This approach reduces hallucinated code patterns.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "This approach enhances output stability, especially in multiturn interactions or layout-specific tasks.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Although D3.js is a flexible and expressive library for interactive visualizations, its fine-grained syntax and tightly coupled configuration logic pose significant challenges for LLMs, especially in producing robust and maintainable code. To alleviate these issues, we abstract commonly used visualization patterns into reusable utility functions and decompose the codebase into modular, semantically coherent components. This restructuring reduces the generation complexity and enables LLMs to focus on higher level content specification rather than low-level implementation details.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "D3.js is a flexible and expressive library for interactive visualizations.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "D3.js's fine-grained syntax and tightly coupled configuration logic pose significant challenges for LLMs.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "These challenges are especially significant in producing robust and maintainable code.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "We abstract commonly used visualization patterns into reusable utility functions.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "We decompose the codebase into modular, semantically coherent components.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "This restructuring reduces the generation complexity.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "This restructuring enables LLMs to focus on higher level content specification rather than low-level implementation details.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "The modular architecture separates core responsibilities into logically distinct layers. Data processing routines—such as genomic binning, mutation filtering, and data downsampling—are isolated from interaction behaviors, which handle operations, such as region highlighting, track reordering, and feature selection. The rendering logic is kept lightweight, invoking these modular components to assemble multilayered circular layouts, including ring, radial, and chord layouts. This modular architecture offers several benefits: it shortens the prompt length, reduces cognitive load for agents, and improves output generalizability across diverse tasks. Moreover, it supports structured prompt construction, allowing the system to reference and invoke specific functionality through scoped instructions.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The modular architecture separates core responsibilities into logically distinct layers.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Data processing routines include genomic binning, mutation filtering, and data downsampling.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Interaction behaviors handle operations such as region highlighting, track reordering, and feature selection.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The rendering logic is kept lightweight and invokes modular components to assemble multilayered circular layouts.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The multilayered circular layouts include ring, radial, and chord layouts.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The modular architecture shortens the prompt length.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The modular architecture reduces cognitive load for agents.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The modular architecture improves output generalizability across diverse tasks.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The modular architecture supports structured prompt construction.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The system can reference and invoke specific functionality through scoped instructions.",
+        "category": "Result",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Require:User input U (e.g., data file, textual instruction); Agent role R; Model type M",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "User input U is required, such as a data file or textual instruction.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "An agent role R is required.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "A model type M is required.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Ensure:Final prompt P to be executed by LLM agent Initialize empty prompt P Embed role definition into P: “You are an expert in R, assisting the user with a genomic visualization task.”",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Ensure the final prompt P is executed by the LLM agent.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Initialize an empty prompt P.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Embed the role definition into prompt P: 'You are an expert in R, assisting the user with a genomic visualization task.'",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Insert user context U as task description",
+    "type": "text",
+    "resultmsu": []
+  },
+  {
+    "paragraph": "Add <search\\_and\\_reading> block: Retrieve top-k relevant templates from knowledge base using hybrid search Append results to P as in-context references",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Retrieve top-k relevant templates from the knowledge base using hybrid search.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Append retrieved templates to P as in-context references.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Add <tool\\_calling> block: Instruct the model to use predefined utility functions from code library",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The paragraph introduces a tool-calling block to instruct the model to use predefined utility functions from a code library.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Add <layout\\_constraints> block: Enforce chart layout logic and prevent track overlap",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A block is added to enforce chart layout logic.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The block prevents track overlap in the chart layout.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "if agent R is a validation agent then Add <error\\_detection> block: Check for syntax, logic, and parameter errors Add <final\\_review> block: Ensure modifications preserve prior valid outputs",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "If agent R is a validation agent, add an <error_detection> block to check for syntax, logic, and parameter errors.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Add a <final_review> block to ensure modifications preserve prior valid outputs.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "end if",
+    "type": "text",
+    "resultmsu": []
+  },
+  {
+    "paragraph": "Add <suggested\\_adjustments> block: Ask model to suggest up to 3 improvements (e.g., style, color, spacing)",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Add <suggested_adjustments> block.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Ask model to suggest up to 3 improvements (e.g., style, color, spacing).",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Append <output\\_format> block: Specify required output format (e.g., JSON, JavaScript, Markdown) for system integration",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Specify the required output format for system integration.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "return Final structured prompt P",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Final structured prompt P is returned.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Prompt Construction Architecture for Agent Execution To ensure consistency, reliability, and domain alignment, we design a structured prompt construction architecture supporting all LLM-based agents. Rather than relying on ad-hoc inputs, each agent dynamically assembles its prompt using a modular schema tailored to its role, input context, and output format.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A structured prompt construction architecture is designed to ensure consistency, reliability, and domain alignment.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The architecture supports all LLM-based agents.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Each agent dynamically assembles its prompt using a modular schema tailored to its role, input context, and output format.",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "This architecture significantly reduces hallucinations, improves reasoning traceability, and facilitates integration with RAG and utility libraries. The prompt template includes a role definition, task context, optionally retrieved templates, tool function references, layout constraints, and validation or output formatting blocks. This structured prompt ensures that each LLM invocation is aware of its role, operates within domain-safe constraints, and delivers well-structured, machine-consumable output. The complete construction process is summarized in Prompt Strategy 1.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "This architecture significantly reduces hallucinations.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "This architecture improves reasoning traceability.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "This architecture facilitates integration with RAG and utility libraries.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The prompt template includes a role definition, task context, optionally retrieved templates, tool function references, layout constraints, and validation or output formatting blocks.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "This structured prompt ensures that each LLM invocation is aware of its role.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "This structured prompt ensures that each LLM invocation operates within domain-safe constraints.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "This structured prompt ensures that each LLM invocation delivers well-structured, machine-consumable output.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The complete construction process is summarized in Prompt Strategy 1.",
+        "category": "Other",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "The visual analytics system of AuraGenome is designed to interactively generate, refine, and manage multilayered circular genome visualizations through a combination of natural language interaction and direct manipulation. As illustrated in Figure 4, the interface comprises multiple coordinated panels that together support the entire analytical workflow—from genome selection and data inspection to visualization generation and narrative reporting.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The visual analytics system of AuraGenome is designed to interactively generate multilayered circular genome visualizations.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The visual analytics system of AuraGenome is designed to refine multilayered circular genome visualizations.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The visual analytics system of AuraGenome is designed to manage multilayered circular genome visualizations.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The system combines natural language interaction and direct manipulation.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The interface comprises multiple coordinated panels.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The panels support the entire analytical workflow, from genome selection and data inspection to visualization generation and narrative reporting.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "images/2c413143064e73ad6fd51cc98e3722fb255e9dfd29cb2bb92b76ff708f171674.jpg",
+    "type": "figure"
+  },
+  {
+    "paragraph": "FIGURE 4 Visual analytics system interface of AuraGenome. Users begin by selecting reference data and exploring genomic features and statistics in (a) Reference Genome Selection and (b) Data Store View. (c) Visualization Solution Panel provides recommendations that applied and refined through (d) Chat with Aura Panel. (e) Central Visualization Panel and (f) Parameter Panel enable visual exploration and layerwise interaction. (g) Sequence Log View captures each generation step for reuse, while (h) Project History and Step Snapshots View supports project management and report output.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "AuraGenome is a visual analytics system interface.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Users begin by selecting reference data in the Reference Genome Selection view.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Users explore genomic features and statistics in the Data Store View.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The Visualization Solution Panel provides recommendations.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Recommendations are applied and refined through the Chat with Aura Panel.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The Central Visualization Panel enables visual exploration.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The Parameter Panel enables layerwise interaction.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The Sequence Log View captures each generation step for reuse.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The Project History and Step Snapshots View supports project management.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The Project History and Step Snapshots View supports report output.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "(a) Reference Genome Selection: It enables selecting from standard genome assemblies (e.g., hg19/GRCh37), which serve as the foundational coordinate system for layout construction and alignment.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Reference genome selection enables selecting from standard genome assemblies.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Standard genome assemblies, such as hg19/GRCh37, serve as the foundational coordinate system for layout construction and alignment.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "(b) Data Store View: It presents uploaded genomic datasets alongside extracted features (e.g., mutation categories, zygosity types, and validation status). This view facilitates initial familiarization with data and informs downstream visualization recommendations.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The Data Store View presents uploaded genomic datasets alongside extracted features.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Extracted features include mutation categories, zygosity types, and validation status.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "The Data Store View facilitates initial familiarization with data.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The Data Store View informs downstream visualization recommendations.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "(c) Visualization Solution Panel: It suggests agentdriven visualization templates based on inferred data characteristics and conventional visual mappings. Users can directly apply these suggestions to expedite layout design and reduce manual configuration.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The Visualization Solution Panel suggests agent-driven visualization templates based on inferred data characteristics and conventional visual mappings.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Users can directly apply these suggestions to expedite layout design.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Users can directly apply these suggestions to reduce manual configuration.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "(d) Chat with Aura Panel: It is a conversational interface that bridges users with the backend multiagent workflow. Natural language commands—such as “increase spacing of Track 3”",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The Chat with Aura Panel is a conversational interface.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The interface bridges users with the backend multiagent workflow.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Natural language commands, such as 'increase spacing of Track 3,' are supported.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "or “highlight LOH (Loss of Heterozygosity) regions”—are semantically parsed and dispatched to the appropriate agents for contextual chart modification.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Highlight LOH (Loss of Heterozygosity) regions.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "LOH regions are semantically parsed.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Parsed LOH regions are dispatched to appropriate agents for contextual chart modification.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "(e) Central Visualization Panel: It displays the multitrack circular genome chart, supporting layered rendering of structural variants, mutations, and genomic annotations with rich encoding strategies.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The Central Visualization Panel displays the multitrack circular genome chart.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The chart supports layered rendering of structural variants.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The chart supports layered rendering of mutations.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The chart supports layered rendering of genomic annotations.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The chart uses rich encoding strategies.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "(f) Track Parameter Panel: It offers fine-grained, layer-specific customization options, including radius, color, spacing, and angular transparency. All adjustments are reflected in real time within each visualization, promoting iterative refinement.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The Track Parameter Panel offers fine-grained, layer-specific customization options.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Customization options include radius, color, spacing, and angular transparency.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "All adjustments are reflected in real time within each visualization.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Real-time adjustments promote iterative refinement.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "(g) Sequence Log View: It visualizes the generation process through a node-link graph, where each node represents a distinct code-level output (e.g., a complete track or layout modification). In contrast to traditional action-level timelines, this abstraction emphasizes reusable configurations and logical checkpoints, allowing users to branch from prior states and efficiently explore design alternatives.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Sequence Log View visualizes the generation process through a node-link graph.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Each node in the graph represents a distinct code-level output, such as a complete track or layout modification.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "This abstraction contrasts with traditional action-level timelines.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The abstraction emphasizes reusable configurations and logical checkpoints.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Users can branch from prior states and efficiently explore design alternatives.",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "(h) Project History and Step Snapshots View: It maintains comprehensive project records and allows users to bookmark intermediate visual states. Snapshots can be annotated and serve as references for reporting, side-by-side comparison, or iterative editing.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The system maintains comprehensive project records.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The system allows users to bookmark intermediate visual states.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Snapshots can be annotated.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Snapshots serve as references for reporting.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Snapshots serve as references for side-by-side comparison.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Snapshots serve as references for iterative editing.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "The subsequent sections focus on the Central Visualization and Track Parameter Panels, along with the Sequence Log View, detailing their visual encodings and interaction design principles.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The Central Visualization Panel is discussed in subsequent sections.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "The Track Parameter Panel is discussed in subsequent sections.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "The Sequence Log View is discussed in subsequent sections.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "The visual encodings of these panels are detailed.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The interaction design principles of these panels are detailed.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "The Central Visualization and Parameter View serves as the core canvas of the AuraGenome system, supporting dynamic construction and real-time refinement of multilayered circular genome visualizations. As shown in Figure 4(e), the visualizations are anchored to a user-specified reference genome (e.g., hg19), which defines the genomic coordinate system. New tracks are added from the outermost ring inward, following a sequential layout mechanism that enables a layered representation of heterogeneous genomic features.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The Central Visualization and Parameter View serves as the core canvas of the AuraGenome system.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The system supports dynamic construction and real-time refinement of multilayered circular genome visualizations.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The visualizations are anchored to a user-specified reference genome, such as hg19, which defines the genomic coordinate system.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "New tracks are added from the outermost ring inward, following a sequential layout mechanism.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The sequential layout mechanism enables a layered representation of heterogeneous genomic features.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "The system supports three distinct track layouts— ring, radial, and chord—directly aligned with the three layout categories defined in our earlier design analysis. These styles enable users to map genomic data onto concentric rings for layered features, radial axes for attribute-specific distributions, and curved links for intersegment relationships, respectively. A polar coordinate grid in the background provides visual scaffolding to facilitate alignment, comparison, and scale estimation. For each uploaded dataset, users can select relevant attributes (e.g., mutation zygosity, variant type, and expression values) as the basis for visualizations. Through the parameter panel [see Figure 4(e)], users configure track-specific properties, including encoding types, color schemes, inner/outer radii, spacing, and border styles. Each track may include an annotation to describe the underlying data and rationale for the chosen visual encoding.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The system supports three distinct track layouts: ring, radial, and chord.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "These layouts are directly aligned with the three layout categories defined in our earlier design analysis.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Ring layouts enable users to map genomic data onto concentric rings for layered features.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Radial layouts enable users to map genomic data onto radial axes for attribute-specific distributions.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Chord layouts enable users to map genomic data onto curved links for intersegment relationships.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "A polar coordinate grid in the background provides visual scaffolding to facilitate alignment, comparison, and scale estimation.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "For each uploaded dataset, users can select relevant attributes such as mutation zygosity, variant type, and expression values as the basis for visualizations.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Through the parameter panel, users configure track-specific properties, including encoding types, color schemes, inner/outer radii, spacing, and border styles.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Each track may include an annotation to describe the underlying data and rationale for the chosen visual encoding.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "This view supports two primary interaction pathways for visualization specification: (1) recommendation-based initialization, where users adopt suggested layouts generated by the visualization designer agent, and (2) dialogue-based customization, where users issue natural language commands (e.g., “make the inner track blue” or “reduce the outer radius of track 3”), which are interpreted and executed by the multiagent workflow.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "This view supports two primary interaction pathways for visualization specification.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The first pathway is recommendation-based initialization, where users adopt suggested layouts generated by the visualization designer agent.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The second pathway is dialogue-based customization, where users issue natural language commands.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Natural language commands, such as 'make the inner track blue' or 'reduce the outer radius of track 3,' are interpreted and executed by the multiagent workflow.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "After each step, each visualization remains fully interactive. Users can refine elements directly via panel interactions, enabling real-time updates to styling, geometry, and track ordering. The interface supports reordering, in-place editing, and annotation overlays, allowing iterative refinement of the layout. Final visualizations can be exported to the Step Snapshots View, preserving the current configuration along with all parameter settings and user notes. This whole process facilitates downstream reporting and publication.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Each visualization remains fully interactive after each step.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Users can refine elements directly via panel interactions.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Panel interactions enable real-time updates to styling, geometry, and track ordering.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The interface supports reordering, in-place editing, and annotation overlays.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The interface allows iterative refinement of the layout.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Final visualizations can be exported to the Step Snapshots View.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The Step Snapshots View preserves the current configuration along with all parameter settings and user notes.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "This process facilitates downstream reporting and publication.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "images/b365c320edf6cf1fe82925ae13b28a8fa69305b55324f9d0533ec0cbc4c3675b.jpg",
+    "type": "figure"
+  },
+  {
+    "paragraph": "FIGURE 5 Visual design of Sequence Log View. Each node represents a generation step, with the inner icon indicating the layout type (ring, radial, or chord) and the outer ring encoding the generation status (default, modified, or saved).",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "FIGURE 5 shows the visual design of Sequence Log View.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Each node in the Sequence Log View represents a generation step.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The inner icon of each node indicates the layout type (ring, radial, or chord).",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The outer ring of each node encodes the generation status (default, modified, or saved).",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "The Sequence Log View [see Figure 4(f)] is a node-linkbased visualization designed to encode and navigate the LLM-driven process of genomic visualization generation. It explicitly represents the stepwise evolution of a user’s analytical path, capturing both the structural diversity of generated charts and the decision logic behind each step.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The Sequence Log View is a node-link-based visualization designed to encode and navigate the LLM-driven process of genomic visualization generation.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The Sequence Log View explicitly represents the stepwise evolution of a user’s analytical path.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The Sequence Log View captures the structural diversity of generated charts.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The Sequence Log View captures the decision logic behind each step.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "The visual design is illustrated in Figure 5, which details the encoding of layout types and generation statuses. Each node in the sequence is visually encoded using an inner and outer region. The inner region denotes the layout type used in that step— ring, radial, or chord—while the outer region encodes the generation status, distinguishing default, modified, and saved checkpoints through color. The sequence is arranged from left to right, with each column representing a distinct generation step. Nodes are horizontally aligned to reflect chronological order, while their vertical positions can be freely adjusted to improve visual clarity.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The visual design is illustrated in Figure 5, which details the encoding of layout types and generation statuses.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Each node in the sequence is visually encoded using an inner and outer region.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The inner region denotes the layout type used in that step—ring, radial, or chord.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The outer region encodes the generation status, distinguishing default, modified, and saved checkpoints through color.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The sequence is arranged from left to right, with each column representing a distinct generation step.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Nodes are horizontally aligned to reflect chronological order, while their vertical positions can be freely adjusted to improve visual clarity.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Connections between nodes are rendered using quadratic Bezier curves, with vertical dashed separa-\u0001 tors delineating generative stages. Each node is coupled with detailed metadata—including layout configuration, applied parameters, and associated model responses—ensuring high interpretability and workflow traceability. In cases of generation failure or suboptimal results, users can rebranch from any previous node to resume iteration with full context. The view also supports efficient reuse: users may doubleclick a node to draw a dashed link to subsequent steps and collaborate with agents to selectively inherit code and parameters. This helps avoid repeating past errors while maintaining focus on the current branch context.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Connections between nodes are rendered using quadratic Bezier curves.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Vertical dashed separators delineate generative stages.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Each node is coupled with detailed metadata, including layout configuration, applied parameters, and associated model responses.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The metadata ensures high interpretability and workflow traceability.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "In cases of generation failure or suboptimal results, users can rebranch from any previous node to resume iteration with full context.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The view supports efficient reuse by allowing users to double-click a node to draw a dashed link to subsequent steps.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Users can collaborate with agents to selectively inherit code and parameters.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "This approach helps avoid repeating past errors while maintaining focus on the current branch context.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "images/83bd50449c20b81dab8e86ed8fea7e8b411ac7f06b377d5ec51d3efb6472ee5d.jpg",
+    "type": "figure"
+  },
+  {
+    "paragraph": "FIGURE 6 Visualization workflow for AML case study. (A1) and (A2) Data upload and autoparsing of chromosomal translocation and gene expression profiles. (A3) Visualization recommendation and selection of chord + ring layout. (A5) First-generation result with default color scheme. (A6) and (A7) Interaction-based customization of color styles for enhanced visual contrast.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The workflow visualizes an AML case study.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Data upload and autoparsing of chromosomal translocation and gene expression profiles are performed.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Visualization recommendation and selection of chord + ring layout are included in the workflow.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The first-generation result uses a default color scheme.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Interaction-based customization of color styles enhances visual contrast.",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "Overall, the Sequence Log View provides a structured, interpretable, and interactive mechanism that enables users to trace generation history, modify intermediate states, and strategically reuse successful configurations, enhancing control, reliability, and efficiency in the genomic visualization process.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The Sequence Log View provides a structured mechanism.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The Sequence Log View provides an interpretable mechanism.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The Sequence Log View provides an interactive mechanism.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The Sequence Log View enables users to trace generation history.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The Sequence Log View enables users to modify intermediate states.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The Sequence Log View enables users to strategically reuse successful configurations.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The Sequence Log View enhances control in the genomic visualization process.",
+        "category": "Conclusion",
+        "rank": 5
+      },
+      {
+        "sentence": "The Sequence Log View enhances reliability in the genomic visualization process.",
+        "category": "Conclusion",
+        "rank": 5
+      },
+      {
+        "sentence": "The Sequence Log View enhances efficiency in the genomic visualization process.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "To evaluate the practical effectiveness and generalizability of the AuraGenome framework, we conducted two real-world case studies involving distinct genomic analysis tasks. These studies serve to validate both the multiagent workflow and the visual analytics system in supporting domain-specific generation, exploration, and reuse of circular genome visualizations.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The AuraGenome framework was evaluated for practical effectiveness and generalizability.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "Two real-world case studies involving distinct genomic analysis tasks were conducted.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "The studies validate the multiagent workflow of the AuraGenome framework.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The studies validate the visual analytics system of the AuraGenome framework.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The framework supports domain-specific generation, exploration, and reuse of circular genome visualizations.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "The system requirements were originally derived through iterative co-design sessions with eight genomics experts. To ensure objective evaluation, the following case studies were carried out by a separate group of two extra experts—denoted as $E _ { A }$ and $E _ { B }$ (mean experience: 10.3 years)—who were not involved in previous sections. These experts applied AuraGenome to authentic genomic analysis scenarios, enabling us to assess its usability and effectiveness in real-world contexts while minimizing evaluative bias.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The system requirements were originally derived through iterative co-design sessions with eight genomics experts.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Objective evaluation was ensured by involving a separate group of two extra experts.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The two extra experts are denoted as $E _ { A }$ and $E _ { B }$ with a mean experience of 10.3 years.",
+        "category": "Method",
+        "rank": 2
+      },
+      {
+        "sentence": "These experts were not involved in previous sections.",
+        "category": "Method",
+        "rank": 2
+      },
+      {
+        "sentence": "The experts applied AuraGenome to authentic genomic analysis scenarios.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "This enabled assessment of AuraGenome's usability and effectiveness in real-world contexts.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The evaluation minimized evaluative bias.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "In this case, $E _ { A }$ aimed to investigate chromosomal translocation patterns in AML, a hematologic malignancy often driven by specific structural variants. The overall workflow is illustrated in Figure 6.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "$E _ { A }$ aimed to investigate chromosomal translocation patterns in AML.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "AML is a hematologic malignancy often driven by specific structural variants.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "The overall workflow is illustrated in Figure 6.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "To examine the positional distribution of breakpoints and their potential correlation with functional genomic regions, $E _ { A }$ uploaded a curated dataset of chromosomal translocations. Leveraging AuraGenome’s automated parsing and feature extraction, the system computed translocation frequencies and mapped them to brightness levels within a circular layout [see Figure 6(A5)]. To visualize interchromosomal associations, $E _ { A }$ selected a chord layout, which highlighted recurrent co-occurrences of breakpoints across different chromosomes.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The positional distribution of breakpoints and their potential correlation with functional genomic regions were examined.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "A curated dataset of chromosomal translocations was uploaded by $E _ { A }$.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "AuraGenome’s automated parsing and feature extraction were leveraged.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The system computed translocation frequencies and mapped them to brightness levels within a circular layout.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "A chord layout was selected by $E _ { A }$ to visualize interchromosomal associations.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The chord layout highlighted recurrent co-occurrences of breakpoints across different chromosomes.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "To complement the structural data, $E _ { A }$ incorporated a second dataset containing gene expression profiles, which was rendered as a dual-colored annular bar chart encircling the chord layout. Red bars indicated regions of upregulated expression, while blue bars represented downregulated zones. This integration enabled visual alignment of structural variants with transcriptional activity, supporting exploratory hypotheses on regulatory disruptions and disease mechanisms in AML.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "$E _ { A }$ incorporated a second dataset containing gene expression profiles.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The gene expression profiles were rendered as a dual-colored annular bar chart encircling the chord layout.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Red bars indicated regions of upregulated expression.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Blue bars represented downregulated zones.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "This integration enabled visual alignment of structural variants with transcriptional activity.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The integration supports exploratory hypotheses on regulatory disruptions and disease mechanisms in AML.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "When the default color scheme failed to clearly distinguish between structural and expression-related patterns, $E _ { A }$ engaged the system’s natural language interface with the prompt: “Can you give it a more harmonious and beautiful color?” Aura responded with several palette suggestions, from which $E _ { A }$ selected a violet and lemon-yellow combination to improve visual contrast [see Figure 6(A6) and (A7)]. The adjustment was immediately applied via the parameter panel and reinforced through backend code modifications guided by the LLM agent.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The default color scheme failed to clearly distinguish between structural and expression-related patterns.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "$E _ { A }$ engaged the system’s natural language interface with the prompt: 'Can you give it a more harmonious and beautiful color?'",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Aura responded with several palette suggestions.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "$E _ { A }$ selected a violet and lemon-yellow combination to improve visual contrast.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The adjustment was immediately applied via the parameter panel.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The adjustment was reinforced through backend code modifications guided by the LLM agent.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "The entire process—from data upload to visualization refinement—was completed within 20 min. Notably, $E _ { A }$ identified that the genomic region chr1:16816819–18551718 exhibited both a high frequency of translocation breakpoints and significant gene upregulation. This integrated insight led $E _ { A }$ to annotate the region as a potential biomarker for AML, suggesting it as a candidate for future experimental validation.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The entire process, from data upload to visualization refinement, was completed within 20 minutes.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "$E _ { A }$ identified that the genomic region chr1:16816819–18551718 exhibited a high frequency of translocation breakpoints.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "$E _ { A }$ identified that the genomic region chr1:16816819–18551718 exhibited significant gene upregulation.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "This integrated insight led $E _ { A }$ to annotate the region as a potential biomarker for AML.",
+        "category": "Conclusion",
+        "rank": 5
+      },
+      {
+        "sentence": "The genomic region chr1:16816819–18551718 was suggested as a candidate for future experimental validation.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "To evaluate the reusability and task adaptability of AuraGenome, we conducted a second case study involving expert $\\scriptstyle { E _ { B } } ,$ who aimed to replicate and extend insights from a widely cited study in Nature<sup>20</sup> that mapped the somatic mutation landscape of the COLO-829 melanoma genome. Building on the workflow established by $E _ { A }$ , this case demonstrates that how the Sequence Log View facilitates the inheritance and contextual reuse of prior visualization logic.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A second case study was conducted to evaluate the reusability and task adaptability of AuraGenome.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "The case study involved expert E_B, who aimed to replicate and extend insights from a widely cited study in Nature that mapped the somatic mutation landscape of the COLO-829 melanoma genome.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "The case study built on the workflow established by E_A.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The Sequence Log View facilitates the inheritance and contextual reuse of prior visualization logic.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Instead of initiating a new pipeline from scratch, $E _ { B }$ accessed the sequence log from Case 1 and created a new root node branching from an earlier step [see Figure 7(a)]. Although the visual outputs were independent, the new workflow retained structural and contextual linkage to its source, allowing $E _ { B }$ to reuse layout strategies and code components. Upon uploading a new mutation dataset for the COLO-829 genome,",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "$E _ { B }$ accessed the sequence log from Case 1 and created a new root node branching from an earlier step.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The visual outputs were independent.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The new workflow retained structural and contextual linkage to its source.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "$E _ { B }$ reused layout strategies and code components.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "A new mutation dataset for the COLO-829 genome was uploaded.",
+        "category": "Experiment",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "images/99c6050211a5964f6405388195f7b62769ec0650188b6074ec58f490714efc1b.jpg",
+    "type": "figure"
+  },
+  {
+    "paragraph": "FIGURE 7 Visualization workflow excerpt from the COLO-829 case study. (a) Reuse the configuration from Case 1 and automatically parse the new dataset. (b) Generate and modify the copy number variation track. (c) Receive suggestions and explanations from Aura, followed by interactive and iterative modifications.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The visualization workflow is excerpted from the COLO-829 case study.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The configuration from Case 1 is reused to automatically parse the new dataset.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The copy number variation track is generated and modified.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Suggestions and explanations are received from Aura.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Interactive and iterative modifications are performed based on Aura's suggestions.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "AuraGenome initialized a fresh workflow using layout configurations derived from the inherited context.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "AuraGenome initialized a fresh workflow.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The workflow used layout configurations derived from the inherited context.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Following $E _ { B }$ uploaded the mutation dataset, AuraGenome automatically rendered two tracks: an orange bar chart encoding zygosity information and a chord layout representing chromosomal rearrangements. $E _ { B }$ subsequently uploaded an additional dataset with insertion and deletion events and issued a natural language instruction to display validated entries using a dual-color scheme. The system accurately filtered and visualized these mutations according to the user’s intent.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "AuraGenome automatically rendered two tracks after $E _ { B }$ uploaded the mutation dataset.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The two tracks included an orange bar chart encoding zygosity information and a chord layout representing chromosomal rearrangements.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "$E _ { B }$ uploaded an additional dataset with insertion and deletion events.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "$E _ { B }$ issued a natural language instruction to display validated entries using a dual-color scheme.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The system accurately filtered and visualized mutations according to the user’s intent.",
+        "category": "Result",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "Additional customization involved creating a substitution mutation track, with categorical encoding for mutation types using distinct color assignments, alongside a copy number variation track rendered as a blue line chart. When overlapping between adjacent tracks reduced visual clarity, $E _ { B }$ invoked the system’s recommendation module to refine the layout. Adjustments to track spacing and height were made to enhance overall readability [see Figure 7(c)].",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A substitution mutation track was created with categorical encoding for mutation types using distinct color assignments.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "A copy number variation track was rendered as a blue line chart.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "When overlapping between adjacent tracks reduced visual clarity, $E _ { B }$ invoked the system’s recommendation module to refine the layout.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Adjustments to track spacing and height were made to enhance overall readability.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "The resulting chart included seven fully customized genomic tracks and reproduced the structure of the original Nature visualizations with high fidelity. More importantly, AuraGenome’s interface preserved full interactivity throughout the process, enabling incremental edits and layout reconfigurations. The system also recorded each generation step and its associated metadata within the Step Snapshots View, producing a transparent and reproducible workflow that facilitates downstream analysis, sharing, and collaborative validation.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The resulting chart included seven fully customized genomic tracks.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The chart reproduced the structure of the original Nature visualizations with high fidelity.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "AuraGenome’s interface preserved full interactivity throughout the process.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The interface enabled incremental edits and layout reconfigurations.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The system recorded each generation step and its associated metadata within the Step Snapshots View.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The system produced a transparent and reproducible workflow.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The workflow facilitates downstream analysis, sharing, and collaborative validation.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "To evaluate the effectiveness and usability of the AuraGenome, we conducted an in-lab user study focusing on system learnability, user experience across disciplines, and its utility in real analysis tasks.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The effectiveness and usability of the AuraGenome were evaluated.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "An in-lab user study was conducted.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "The study focused on system learnability.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "The study focused on user experience across disciplines.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "The study focused on the utility of the AuraGenome in real analysis tasks.",
+        "category": "Experiment",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "In total, 12 participants with a background in biology (average experience: 4 1.5 years) were recruited for the experiment, including 10 bioinformatics researchers $( P _ { 1 } { - } P _ { 1 0 } )$ and two wet-lab researchers $( P _ { 1 1 }$ and $P _ { 1 2 } )$ . Each participant was instructed to complete the same visualization task: constructing a multilayered circular chart using the provided genomic variation data (e.g., chromosome location, mutation type, and zygosity). The task was performed using both Circos and AuraGenome. Performance was evaluated through quantitative analysis of task completion time, accuracy, and a posttask questionnaire. Additional qualitative feedback was collected via follow-up interviews.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "12 participants with a background in biology were recruited for the experiment.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "The participants had an average experience of 4 ± 1.5 years.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "The participants included 10 bioinformatics researchers (P1–P10) and two wet-lab researchers (P11 and P12).",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "Each participant was instructed to complete the same visualization task: constructing a multilayered circular chart using the provided genomic variation data.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The genomic variation data included chromosome location, mutation type, and zygosity.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The task was performed using both Circos and AuraGenome.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Performance was evaluated through quantitative analysis of task completion time, accuracy, and a posttask questionnaire.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Additional qualitative feedback was collected via follow-up interviews.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "The study adopted a within-subject crossover design. Participants were randomly assigned to two groups: Group A (n = 6) used Circos first, followed by AuraGenome after a 48-h interval, and Group B (n = 6) followed the reverse order. Each session consisted of the following steps.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The study adopted a within-subject crossover design.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Participants were randomly assigned to two groups.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Group A (n = 6) used Circos first, followed by AuraGenome after a 48-h interval.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Group B (n = 6) followed the reverse order.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Each session consisted of the following steps.",
+        "category": "Method",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "images/835331459b0a7dbe67c7aa4d54150ca953f7eec404cc08f7e1d1af8f269fcde8.jpg",
+    "type": "figure"
+  },
+  {
+    "paragraph": "FIGURE 8 Quantitative analysis results. (a) Task completion time and accuracy comparison and (b) user ratings across six evaluation questions.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Figure 8 presents quantitative analysis results.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Task completion time and accuracy are compared.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "User ratings are provided across six evaluation questions.",
+        "category": "Result",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "AuraGenome significantly outperformed Circos in both task efficiency and output accuracy. On average, participants completed the assigned visualization task in 34 min (Standard Deviation (SD) = 9.16) using AuraGenome, compared to 112 min (SD = 16.5) with Circos—a 69% reduction in time. Notably, one participant was unable to complete the task within the allotted time when using Circos. As shown in Figure 8(a), accuracy scores, evaluated by two independent genomics experts, averaged 89% (SD = 4.61) with AuraGenome versus 76% (SD = 18.31) with Circos. AuraGenome also exhibited lower performance variance across participants, suggesting improved consistency.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "AuraGenome significantly outperformed Circos in both task efficiency and output accuracy.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "Participants completed the assigned visualization task in an average of 34 minutes (SD = 9.16) using AuraGenome.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Participants completed the assigned visualization task in an average of 112 minutes (SD = 16.5) using Circos.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Using AuraGenome resulted in a 69% reduction in task completion time compared to Circos.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "One participant was unable to complete the task within the allotted time when using Circos.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Accuracy scores, evaluated by two independent genomics experts, averaged 89% (SD = 4.61) with AuraGenome.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Accuracy scores, evaluated by two independent genomics experts, averaged 76% (SD = 18.31) with Circos.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "AuraGenome exhibited lower performance variance across participants, suggesting improved consistency.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "To assess user experience, we administered a sixitem Likert-scale questionnaire adapted from the NASA Task Load Index (NASA-TLX) framework, covering the following dimensions [see Figure 8(b)].",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "User experience was assessed using a six-item Likert-scale questionnaire.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The questionnaire was adapted from the NASA Task Load Index (NASA-TLX) framework.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The questionnaire covered multiple dimensions [see Figure 8(b)].",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Q1: Confidence in the accuracy of generated results.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Confidence in the accuracy of generated results is discussed.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Q2: Perceived ease of learning and use.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Perceived ease of learning and use is referred to as Q2.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Q3: Efficiency in achieving intended outcomes.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Efficiency in achieving intended outcomes is discussed.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Q4: Satisfaction with overall system functionality.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Q4 assesses satisfaction with overall system functionality.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Q5: Ease of fine-tuning and customization.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Ease of fine-tuning and customization is discussed.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Q6: Overall satisfaction and enjoyment.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Q6 measures overall satisfaction and enjoyment.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "AuraGenome achieved significantly higher ratings than Circos on five of six questions (Q1–Q3, Q5, and $\\mathsf Q 6 ; p < 0 . 0 5 .$ Mann–Whitney U test), with Q4 (functionality) also trending positively $( p = 0 . 0 5 8 8 )$ . In addition, 11 out of 12 participants reported that AuraGenome was easier to use and customize, and eight expressed greater confidence in the correctness.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "AuraGenome achieved significantly higher ratings than Circos on five of six questions (Q1–Q3, Q5, and Q6; p < 0.05, Mann–Whitney U test).",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "Q4 (functionality) also trended positively (p = 0.0588).",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "11 out of 12 participants reported that AuraGenome was easier to use and customize.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Eight participants expressed greater confidence in the correctness of AuraGenome.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "These findings demonstrate that AuraGenome provides notable improvements in usability, efficiency, and accuracy over traditional tools, particularly benefiting users with limited programming expertise.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "AuraGenome provides notable improvements in usability over traditional tools.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "AuraGenome provides notable improvements in efficiency over traditional tools.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "AuraGenome provides notable improvements in accuracy over traditional tools.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "AuraGenome particularly benefits users with limited programming expertise.",
+        "category": "Result",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "To complement the quantitative results, we collected open-ended feedback from 12 participants through posttask interviews and questionnaires. We summarized them for further thematic analysis. The result revealed four recurring reflections about AuraGenome’s usability, functionality, and areas for growth.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Open-ended feedback was collected from 12 participants through posttask interviews and questionnaires.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "The feedback was summarized for further thematic analysis.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The result revealed four recurring reflections about AuraGenome’s usability.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The result revealed four recurring reflections about AuraGenome’s functionality.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The result revealed four recurring reflections about AuraGenome’s areas for growth.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "All participants embraced the natural language interface as a major improvement over traditional configfile editing. Chat with Aura lowered the barrier to entry and allowed users to express visualization intent more directly $( P _ { 2 } , P _ { 3 } , P _ { 8 } ,$ and $P _ { 1 0 } )$ . The real-time visualization generation further reduced trial-and-error, streamlining the configuration process $( P _ { 1 } , P _ { 2 } , P _ { 4 } ,$ and $P _ { 9 } )$",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Participants embraced the natural language interface as a major improvement over traditional config file editing.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Chat with Aura lowered the barrier to entry for users.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Chat with Aura allowed users to express visualization intent more directly.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Real-time visualization generation reduced trial-and-error in the configuration process.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Real-time visualization generation streamlined the configuration process.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Participants highlighted that AuraGenome reduced the burden of preselecting visualization strategies by automatically recommending composite charts tailored to the input data type. In contrast to traditional workflows requiring prior layout selection before track configuration. $P _ { 6 }$ noted, “The ‘variant + heatmap combo matched my study better than my own plan.” By surfacing context-aware suggestions, the system not only accelerated chart creation but also introduced users to more informative visual encodings than they might have initially decided.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "AuraGenome reduced the burden of preselecting visualization strategies by automatically recommending composite charts tailored to the input data type.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Traditional workflows require prior layout selection before track configuration.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "$P _ { 6 }$ noted, 'The variant + heatmap combo matched my study better than my own plan.'",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The system surfaced context-aware suggestions.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The system accelerated chart creation.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The system introduced users to more informative visual encodings than they might have initially decided.",
+        "category": "Result",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "The system was seen as accessible to both computational and wet-lab users. While experienced users valued the ability to issue fine-grained commands, including suggestions for direct SVG editing $( P _ { 4 }$ and $P _ { \\mathrm { 1 0 } } )$ , wet-lab participants noted that they could independently produce publication-ready charts—an empowering capability for nonprogrammers $( P _ { 1 1 }$ and $P _ { 1 2 } )$ . This cross-disciplinary flexibility was highlighted as a key advantage over traditional tools.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The system was seen as accessible to both computational and wet-lab users.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Experienced users valued the ability to issue fine-grained commands, including suggestions for direct SVG editing (P_4 and P_10).",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Wet-lab participants noted that they could independently produce publication-ready charts, an empowering capability for nonprogrammers (P_11 and P_12).",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "This cross-disciplinary flexibility was highlighted as a key advantage over traditional tools.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Few participants also identified opportunities for refinement, particularly in balancing automation with control. Some expressed a desire for richer data previews $( P _ { 1 } ) _ { i }$ , editable annotation history $( P _ { 4 } ) _ { \\bullet }$ and better visibility into the sequence of steps taken. Others (P ) noted that automated defaults occasionally misaligned with their intent, suggesting that optional confirmation or stepwise override could improve usability.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Few participants identified opportunities for refinement in balancing automation with control.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Some participants expressed a desire for richer data previews $( P _ { 1 } ) _ { i }$.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Participants expressed a desire for editable annotation history $( P _ { 4 } ) _ { \bullet }$.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Participants expressed a desire for better visibility into the sequence of steps taken.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Participants noted that automated defaults occasionally misaligned with their intent.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Participants suggested that optional confirmation or stepwise override could improve usability.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "AuraGenome’s multiagent workflow is deliberately designed to decompose complex visualization requests into manageable subtasks—such as intent recognition, layout planning, and code generation— handled by role-specific LLM agents. This structured collaboration enables the system to reliably interpret domain-specific goals and produce customized, multitrack genome visualizations. Unlike prior approaches that generate Circos-based configuration or rely on predefined templates, AuraGenome produces flexible D3-based script, supporting rich interactivity, dynamic interaction, and reuse. Together, these design elements make AuraGenome well suited for handling the complex tasks of circular genome visualizations.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "AuraGenome’s multiagent workflow is designed to decompose complex visualization requests into manageable subtasks such as intent recognition, layout planning, and code generation.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The subtasks are handled by role-specific LLM agents.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "This structured collaboration enables the system to reliably interpret domain-specific goals.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The system produces customized, multitrack genome visualizations.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Unlike prior approaches that generate Circos-based configuration or rely on predefined templates, AuraGenome produces flexible D3-based script.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The D3-based script supports rich interactivity, dynamic interaction, and reuse.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "These design elements make AuraGenome well suited for handling the complex tasks of circular genome visualizations.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "User experience varied with domain expertise, yet AuraGenome proved adaptable across the spectrum— from bioinformatics specialists to experimental researchers with limited visualization backgrounds. The natural language interface, paired with real-time visual feedback and well-aligned agent behavior, enabled users to express high-level goals without needing technical vocabulary or implementation knowledge. Participants consistently highlighted the system’s predefined interactive mechanisms—such as dynamic track reordering, attribute refinement, and visual reuse—as unexpectedly intuitive and powerful. These features not only facilitated iterative correction and fine-tuning, but also encouraged exploratory behavior, allowing users to experiment with alternative layout patterns, highlight strategies, or comparative track compositions. AuraGenome’s layered feedback, affordance-rich UI, and modular agent structure collectively support both directed editing and open-ended exploration, reinforcing its value as a user-centric tool.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "User experience varied with domain expertise.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "AuraGenome proved adaptable across the spectrum—from bioinformatics specialists to experimental researchers with limited visualization backgrounds.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The natural language interface, paired with real-time visual feedback and well-aligned agent behavior, enabled users to express high-level goals without needing technical vocabulary or implementation knowledge.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Participants consistently highlighted the system’s predefined interactive mechanisms—such as dynamic track reordering, attribute refinement, and visual reuse—as unexpectedly intuitive and powerful.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "These features facilitated iterative correction and fine-tuning.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "These features encouraged exploratory behavior, allowing users to experiment with alternative layout patterns, highlight strategies, or comparative track compositions.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "AuraGenome’s layered feedback, affordance-rich UI, and modular agent structure collectively support both directed editing and open-ended exploration.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "AuraGenome reinforces its value as a user-centric tool.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "While AuraGenome demonstrates strong adaptability, several functional boundaries remain. The current workflow and system are tailored for circular genome visualizations and do not yet support linear or hybrid visualization generation, which are equally significant in genomic analysis. In addition, performance would be modestly affected by the agents when handling ambiguous, conflicting, or poorly structured prompts, occasionally leading to redundant tracks or minor layout inconsistencies. However, these issues do not interrupt task execution. Thanks to the multiagent workflow, such errors are mitigated through agentlevel coordination and fallback strategies, ensuring smooth task progression. These observations point to directions for further refinement while confirming that AuraGenome remains robust and reliable in handling complex genomic visualization tasks.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "AuraGenome demonstrates strong adaptability.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The current workflow and system are tailored for circular genome visualizations.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The system does not yet support linear or hybrid visualization generation.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Linear and hybrid visualizations are significant in genomic analysis.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Performance is modestly affected by the agents when handling ambiguous, conflicting, or poorly structured prompts.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Occasionally, handling such prompts leads to redundant tracks or minor layout inconsistencies.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "These issues do not interrupt task execution.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The multiagent workflow mitigates such errors through agent-level coordination and fallback strategies.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The multiagent workflow ensures smooth task progression.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "AuraGenome remains robust and reliable in handling complex genomic visualization tasks.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "In this article, we presented AuraGenome, an LLMpowered framework for generating rapid, reusable, and scalable circular genome visualizations. By integrating multiagent collaboration with interactive visual analytics, AuraGenome enables natural language-driven visualization generation, significantly improving both efficiency and output quality. Two real-world case studies and a comprehensive user study demonstrate its effectiveness in enhancing task performance and reducing cognitive load in genomic research workflows.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "AuraGenome is an LLM-powered framework for generating rapid, reusable, and scalable circular genome visualizations.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "AuraGenome integrates multiagent collaboration with interactive visual analytics.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "AuraGenome enables natural language-driven visualization generation.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Natural language-driven visualization generation significantly improves both efficiency and output quality.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Two real-world case studies demonstrate the effectiveness of AuraGenome in enhancing task performance.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "A comprehensive user study demonstrates the effectiveness of AuraGenome in reducing cognitive load in genomic research workflows.",
+        "category": "Experiment",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "In future work, we plan to refine the multiagent workflow to capture more fine-grained user intents and support richer interactions with visualization outcomes. We also aim to extend support beyond circular layouts, enabling multiview genomic representations that accommodate diverse analytical needs. In addition, we will enhance the robustness of LLM-driven generation through improved retrieval grounding and validation strategies, thereby increasing reliability and reducing the risk of hallucinated outputs.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "We plan to refine the multiagent workflow to capture more fine-grained user intents.",
+        "category": "Conclusion",
+        "rank": 3
+      },
+      {
+        "sentence": "We plan to support richer interactions with visualization outcomes.",
+        "category": "Conclusion",
+        "rank": 3
+      },
+      {
+        "sentence": "We aim to extend support beyond circular layouts.",
+        "category": "Conclusion",
+        "rank": 3
+      },
+      {
+        "sentence": "We aim to enable multiview genomic representations that accommodate diverse analytical needs.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "We will enhance the robustness of LLM-driven generation through improved retrieval grounding.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "We will enhance the robustness of LLM-driven generation through improved validation strategies.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "These enhancements aim to increase reliability and reduce the risk of hallucinated outputs.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "This work was supported in part by the STI2030-Major Projects under Grant 2021ZD0200200 and in part by the Beijing Natural Science Foundation under Grant 4254090.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "This work was supported in part by the STI2030-Major Projects under Grant 2021ZD0200200.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "This work was supported in part by the Beijing Natural Science Foundation under Grant 4254090.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Chi Zhang and Yu Dong contributed equally to this work.",
+    "type": "text",
+    "resultmsu": []
+  },
+  {
+    "paragraph": "CHI ZHANG is a student at the Computer Network Information Center, Chinese Academy of Sciences, Beijing, 100083, China. He is also at the University of Chinese Academy of Sciences, Beijing, China. Contact him at zhangc@cnic.cn.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "CHI ZHANG is a student at the Computer Network Information Center, Chinese Academy of Sciences, Beijing, 100083, China.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "He is also at the University of Chinese Academy of Sciences, Beijing, China.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Contact him at zhangc@cnic.cn.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "YU DONG is an assistant professor at the Computer Network Information Center, Chinese Academy of Sciences, Beijing, 100083, China. Contact him at dongyu@cnic.cn.",
+    "type": "text",
+    "resultmsu": []
+  },
+  {
+    "paragraph": "YANG WANG is an associate professor at the Computer Network Information Center, Chinese Academy of Sciences, Beijing, 100083, China. He is also at University of Chinese Academy of Sciences, Beijing, China. He is the corresponding author of this article. Contact him at wangyang@sccas.cn.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "YANG WANG is an associate professor at the Computer Network Information Center, Chinese Academy of Sciences, Beijing, 100083, China.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "He is also at University of Chinese Academy of Sciences, Beijing, China.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "He is the corresponding author of this article.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Contact him at wangyang@sccas.cn.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "YUETONG HAN is a student at the Computer Network Information Center, Chinese Academy of Sciences, Beijing, 100083, China. She is also at University of Chinese Academy of Sciences, Beijing, China. Contact her at ythan@cnic.cn.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "YUETONG HAN is a student at the Computer Network Information Center, Chinese Academy of Sciences, Beijing, 100083, China.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "She is also at University of Chinese Academy of Sciences, Beijing, China.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Contact her at ythan@cnic.cn.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "GUIHUA SHAN is a professor at the Computer Network Information Center, Chinese Academy of Sciences, Beijing, 100083, China, and University of Chinese Academy of Sciences, Beijing, China. She is also at Hangzhou Institute for Advanced Study, UCAS, Hangzhou, China. Contact her at sgh@cnic.cn.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "GUIHUA SHAN is a professor at the Computer Network Information Center, Chinese Academy of Sciences, Beijing, 100083, China.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "She is also affiliated with the University of Chinese Academy of Sciences, Beijing, China.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "She is also at Hangzhou Institute for Advanced Study, UCAS, Hangzhou, China.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Contact her at sgh@cnic.cn.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "BIXIA TANG is an associate professor at the National Genomics Data Center, China National Center for Bioinformation, Beijing, 100049, China, and also at the Beijing Institute of Genomics, Chinese Academy of Sciences, Beijing, China. Contact her at tangbx@big.ac.cn.",
+    "type": "text",
+    "resultmsu": []
+  },
+  {
+    "paragraph": "The lEEE Computer Graphics and Applications (CG&A) magazine is inviting proposals for Special Issues (Sls) focusing on cutting-edge advancements and challenges in computer graphics, visualization, virtual and augmented reality, and human-computer interaction (HCl). Submitting a proposal is straightforward. Detailed instructions and essential information can be found on the official website: https://www.computer.org/csdl/magazine/ cg/write-for-us/82986. The IEEE Computer Society (CS) releases Call for Papers (CFPs) for accepted proposals at least one year prior to the publication date. For a list of currently active Sl CFPs, visit: https://www. computer.org/publications/authorresources/calls-forpapers?type=mags& publication=cg. Should you have inquiries not addressed on the provided websites, please reach out to Pak Chung Wong, the Interim Editor-in-Chief, at pakchungwong@computer.org.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The IEEE Computer Graphics and Applications (CG&A) magazine is inviting proposals for Special Issues (SIs) focusing on cutting-edge advancements and challenges in computer graphics, visualization, virtual and augmented reality, and human-computer interaction (HCI).",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Submitting a proposal is straightforward.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Detailed instructions and essential information can be found on the official website: https://www.computer.org/csdl/magazine/cg/write-for-us/82986.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "The IEEE Computer Society (CS) releases Call for Papers (CFPs) for accepted proposals at least one year prior to the publication date.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "For a list of currently active SI CFPs, visit: https://www.computer.org/publications/authorresources/calls-for-papers?type=mags&publication=cg.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Should you have inquiries not addressed on the provided websites, please reach out to Pak Chung Wong, the Interim Editor-in-Chief, at pakchungwong@computer.org.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

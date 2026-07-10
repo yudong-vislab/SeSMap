@@ -1,135 +1,34 @@
-# SeSMap-frontend
+# SeSMap Frontend
 
-An LLM-Powered Visual Analytics System for Semantic Subspace Exploration.
-It renders countries and conflict regions on a hex grid, supports interactive selection (click/drag/route/flight), and shows per-cell tooltips listing all MSUs present in that HSU.
+Vue 3 + Vite 前端:SeSMap 语义地图的可视分析界面——子空间地图、Semantic Source Gallery、Chat with LLM、Stepwise Analysis View。渲染 hex 网格上的国家(论文)与 boundary zone,支持点选/拖选/route/flight,以及每格列出该 HSU 内 MSU 的 tooltip。
 
-Features
+## 依赖 & 启动
 
-Hex map across multiple subspaces
-
-Country coloring & conflict-region awareness
-
-Tooltips listing all MSUs in the hovered HSU
-
-Flight/route creation & selection snapshot export
-
-Responsive layout & mini-map palettes
-
-Tech Stack
-
-Vue 3 + Vite
-
-D3.js for hex rendering
-
-Plain JS utilities (src/lib/semanticMap.js)
-
-Quick Start
-## Install dependencies
+```bash
 npm install
+npm run dev        # Vite 开发服务器(默认 http://localhost:5173)
+```
 
-## Start dev server (hot reload)
-npm run dev
+前端通过 Vite 代理把 `/api/*` 转发到后端(默认 `http://127.0.0.1:5000`,见 `vite.config.*` 的 `VITE_API_TARGET`)。**要先启动后端** `python3 app.py`。
 
+```bash
+npm run build      # 产出 dist/
+npm run preview    # 本地预览 build 产物
+```
 
-Open the URL shown in your terminal (usually http://localhost:5173).
+## 主要视图与逻辑
 
-## Production build
-npm run build
+- **Semantic Subspace Map**:从 `GET /api/semantic-map?project_id=caseN` 拉数据,按 discourse role 渲染多个子空间;每个子空间画 HSU 六边形(country=论文,boundary zone=跨论文重叠),支持 route/flight 与选择快照导出。
+- **Chat with LLM**(`ChatPanel.vue`):自然语言驱动检索、子空间构造("show background & method for case3")、摘要、跨源比较;命中关键词自动切换 case。
+- **Semantic Source Gallery**(`LeftPane.vue`):按 case 展示论文缩略图,并与地图国家(c0、c1…)关联上色。
+- **Stepwise Analysis View**:保存 flight/HSU 为可复查分析卡片,对勾选 MSU 做结构化摘要。
 
-## Preview the production build
-npm run preview
+## Cases 与配置
 
-Minimal Project Structure
-src/
-  components/        # Vue components
-  lib/semanticMap.js # hex map + interactions
-  assets/            # styles, images, etc.
+**Gallery 有两条数据源(自动择优)**:
+- **方案 B(推荐,后端 manifest)**:case 若有 `data/<caseId>/gallery.json`(由后端 `extract_thumbnails.py` 生成),前端经 `GET /api/gallery?project_id=<caseId>` 拉取缩略图 + 国家/来源映射,自动灌进 gallery。**未来上传论文跑完后端流程即自动接入,无需改前端代码**(case3 走此路)。
+- **旧路(bundled 资产)**:`src/assets/pictures/<folder>/*.png` + `LeftPane.vue` 里的硬编码映射(`FOLDER_ALIASES / FOLDER_PROJECT / GALLERY_PAPER_SOURCE_REGISTRY` 等)。case1/case2 走此路。
 
-Data Shape
+关键词别名等映射仍在 `LeftPane.vue`;`ensureBackendGallery()` 优先尝试后端 manifest,拉不到再退回 bundled 资产,两条路兼容。
 
-Provide subspace data via your loader. Each HSU record looks like:
-
-{ "q": -1, "r": -5, "modality": "text", "country_id": "c0", "msu_ids": [27] }
-
-
-If multiple records share the same (q, r), the cell is treated as a conflict region (all MSUs are surfaced in the tooltip and selection snapshots).
-
-
-# Common Input Prompt Commands
-
-This section outlines the common commands users can input to interact with the system, including commands for controlling subspace visibility and displaying images.
-
-## 1. Subspace Control Commands
-
-### Show Subspaces:
-These commands show specific subspaces in the system:
-
-- `show background` – Show the background subspace.
-- `show method` – Show the method subspace.
-- `show result` – Show the result subspace.
-- `show experiment` – Show the experiment subspace.
-- `show conclusion` – Show the conclusion subspace.
-
-### Hide Subspaces:
-These commands hide specific subspaces or all subspaces:
-
-- `hide all subspaces` – Hide all subspaces.
-- `collapse all panels` – Collapse all panels.
-- `hide background` – Hide the background subspace.
-- `hide method` – Hide the method subspace.
-- `hide result` – Hide the result subspace.
-- `hide experiment` – Hide the experiment subspace.
-- `hide conclusion` – Hide the conclusion subspace.
-
-## 2. Image Display Commands
-
-These commands display images from specific folders based on keywords or folder names.
-
-- `show air` – Show all images from the "air" folder (e.g., air pollution related images).
-- `show combust` – Show all images from the "combust" folder (e.g., combustion related images).
-- `show case1` – Show all images from the "case1" folder.
-- `show case2` – Show all images from the "case2" folder.
-- `show air pollution` – Show all images related to air pollution.
-- `show combustion` – Show all images related to combustion processes.
-
-### Example Usage:
-
-- `show air` – This command will display all images from the "air" folder, which could include images related to air pollution.
-- `show combust` – This command will display all images from the "combust" folder, such as images related to combustion processes.
-- `show background` – This will display the background subspace in the system.
-
-## 3. Clear Commands
-
-Use these commands to clear images or subspaces from the view.
-
-- `clear all pictures` – Clear all images from the view.
-- `clear gallery` – Clear the entire image gallery.
-- `clear all` – Clear all content, including subspaces and images.
-- `hide all` – Hide all displayed subspaces.
-- `clear all subspaces` – Hide and clear all subspaces.
-- `hide gallery` – Hide the image gallery.
-
-## 4. Miscellaneous Commands
-
-- `help` – Ask the assistant for help or a list of available commands.
-- `reset` – Reset the current state or configuration.
-- `reload` – Reload the system to refresh data.
-
-## Example Queries:
-
-- **Show a specific folder's images**:  
-  `show air` will display all images related to air pollution.  
-  `show combust` will show all images related to combustion.
-
-- **Hide or show specific subspaces**:  
-  `show background` will display the background subspace.  
-  `hide all subspaces` will hide all the subspaces.
-
-- **Clear the current content**:  
-  `clear gallery` will remove all images from the gallery.  
-  `clear all pictures` will clear all pictures from the current view.
-
-## Notes:
-- Commands related to **subspace control** manage the visibility of specific sections or panels in the system.
-- Commands related to **image display** trigger the display of images from folders, based on the input theme or keyword.
-- The **clear commands** help remove or hide content from the view.
+> 已内置 case1(scramjet 燃烧)/ case2(时空可视化·大气)/ case3(基因组可视化)。地图与 chat 不依赖缩略图即可工作。

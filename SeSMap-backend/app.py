@@ -2,7 +2,7 @@
 import os, json, sys, pathlib, hashlib, time
 from typing import List, Dict, Any, Optional
 import re
-from flask import Flask, jsonify, request, abort, make_response
+from flask import Flask, jsonify, request, abort, make_response, send_from_directory
 from flask_cors import CORS
 from dotenv import load_dotenv
 from services.llm_config import LLM_CONFIG, get_openai_client, model_for
@@ -841,6 +841,33 @@ def parse_intent_llm(text: str) -> dict:
 def rag_list_projects():
     rag = _ensure_rag()
     return jsonify({"projects": rag.list_projects()})
+
+# ================= Gallery (缩略图 + manifest；方案 B 泛化) =================
+@app.get("/api/gallery")
+def get_gallery():
+    """返回某 case 的 gallery manifest（每篇论文的缩略图 URL + 地图国家/来源映射）。
+    由 extract_thumbnails.py 生成 data/<case>/gallery.json + thumbnails/。"""
+    raw_pid = request.args.get("project_id") or request.args.get("case")
+    pid = _normalize_case_id(raw_pid)
+    gpath = CASE_DATA_ROOT / pid / "gallery.json"
+    if not gpath.exists():
+        return jsonify({"project_id": pid, "items": []})
+    try:
+        items = json.loads(gpath.read_text(encoding="utf-8"))
+    except Exception as e:
+        abort(500, f"gallery manifest error: {e}")
+    for it in items:
+        if it.get("thumbnail"):
+            it["thumbnail_url"] = f"/api/gallery/thumb/{pid}/{it['thumbnail']}"
+    return jsonify({"project_id": pid, "items": items})
+
+@app.get("/api/gallery/thumb/<project>/<path:fname>")
+def get_gallery_thumb(project, fname):
+    pid = _normalize_case_id(project)
+    d = CASE_DATA_ROOT / pid / "thumbnails"
+    if not (d / fname).exists():
+        abort(404, "thumbnail not found")
+    return send_from_directory(str(d), fname)
 
 @app.post("/api/rag/index")
 def rag_build_index():

@@ -1,0 +1,3837 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "IntelliCircos: A Data-driven and AI-powered Authoring Tool for Circos Plots"
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                99,
+                143,
+                877,
+                193
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Mingyang Gu<sup>1,∗</sup> , Jiamin Zhu<sup>1,∗</sup>, Qipeng Wang <sup>1</sup>, Fengjie Wang <sup>2</sup>, Xiaolin Wen<sup>2</sup>, Yong Wang<sup>2</sup> and Min Zhu<sup>†1</sup>"
+                    }
+                ]
+            },
+            "bbox": [
+                155,
+                236,
+                826,
+                253
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "<sup>1</sup>Sichuan University, Chengdu, China"
+                    }
+                ]
+            },
+            "bbox": [
+                390,
+                262,
+                594,
+                276
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "<sup>2</sup>Nanyang Technological University, Singapore, Singapore"
+                    }
+                ]
+            },
+            "bbox": [
+                334,
+                276,
+                650,
+                290
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "<sup>∗</sup>These authors contributed equally and should be regarded as joint first authors."
+                    }
+                ]
+            },
+            "bbox": [
+                282,
+                290,
+                704,
+                303
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Abstract"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                114,
+                338,
+                176,
+                352
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Genomics data is essential in biological and medical domains, and bioinformatics analysts often manually create circos plots to analyze the data and extract valuable insights. However, creating circos plots is complex, as it requires careful design for multiple track attributes and positional relationships between them. Typically, analysts often seek inspiration from existing circos plots, and they have to iteratively adjust and refine the plot to achieve a satisfactory final design, making the process both tedious and time-intensive. To address these challenges, we propose IntelliCircos, an AI-powered interactive authoring tool that streamlines the process from initial visual design to the final implementation of circos plots. Specifically, we build a new dataset containing 4396 circos plots with corresponding annotations and configurations, which are extracted and labeled from published papers. With the dataset, we further identify track combination patterns, and utilize Large Language Mode (LLM) to provide domain-specific design recommendations and configuration references to navigate the design ofcircos plots We conduct a user study with 8 bioinformatics analysts to evaluate IntelliCircos, and the results demonstrate its usability and effectiveness in authoring circos plots."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                352,
+                866,
+                506
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CCS Concepts"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                508,
+                214,
+                522
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "• Human-centered computing → User interface toolkits; Visualization application domains; Visualization toolkits;"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                522,
+                810,
+                536
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "1. Introduction"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                76,
+                579,
+                179,
+                592
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Genomics data has played a vital role in biological and medical domains. Bioinformatics analysts typically use visualizations to analyze genomics data and gain valuable insights [NHG19, O’D21]. Among various visualization techniques, circos plots [Krz09] are widely used for visualizing genomics data [OBC<sup>∗</sup>18], which present gene data in various formats (e.g., line, histogram) using multiple nested concentric circles arranged around the circumference of the same gene sequence. Circos plots allow for a compact display of analysis results from multiple dimensions and facilitate multiple downstream tasks (e.g., comparative analysis, correlation analysis) within a single visual space."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                599,
+                473,
+                752
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "However, it is complex and time-consuming for bioinformatics analysts to create circos plots consisting of two main steps: design and implementation. During the design step, bioinformatics analysts often refer to similar charts from other papers for inspiration, and then design the circos plot by considering various attributes, such as the track type, visual mapping for each track, as well as positional relationships between tracks. Once the initial design is established, analysts typically use Circos-based programming tools (e.g., Circos [KSB<sup>∗</sup>09], TBTools [CCZ<sup>∗</sup>20]) to implement the circos plot configuration based on their preliminary design, which requires iterative refinement and frequent update to achieve an optimal design. Furthermore, the authoring process often requires switching between tools for design and implementation."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                757,
+                473,
+                869
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                503,
+                578,
+                903,
+                648
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Several tools have been developed to facilitate these two steps. Existing tools mainly focus on the implementation step. Circos [KSB<sup>∗</sup>09], an authoring tool for implementing circos plots, provides various tracks and allows users to draw circos plot through the Perl language [W<sup>∗</sup>94]. Despite being widely used by bioinformatics analysts, Circos is not user-friendly (e.g., steep learning curve, lack of interactivity in output charts, and cumbersome configuration) [CCZW21, NdCTS14]. As a result, several tools have been developed to address implementation challenges with Circos, including tools built in more accessible programming languages [ZMD13, SWL20, Koc16], tools enabling interactive analysis on the resulting plots (e.g., zoom and click) on the created result [CCZW21, CCL<sup>∗</sup>16, CCX<sup>∗</sup>20, LWLG21] and Graphic User Interface (GUI)-based tools that eliminate the need for coding and terminals [ALS<sup>∗</sup>15, YOY18, WJT<sup>∗</sup>23, WLL<sup>∗</sup>23]. However, they still require intensive manual configuration from users, and users still face design challenges when using these tools. ShinyCircos-V2.0 [WJT<sup>∗</sup>23] introduces a sample gallery to inspire users with circos plot designs, but it requires users to manually digest the samples first, then apply the learned knowledge to the subsequent design of circos plot, which is cognitively overwhelming. To address this issue, GenoREC [PLW<sup>∗</sup>22] uses a rule-based approach to recommend genomics visualizations, assisting users in designing visualizations by considering the input data and tasks, simplifying the design step. However, the predefined rules make it difficult to adapt to new tasks, thereby limiting its quality and applicability. Also, it is difficult for bioinformatics analysts to specify their design requirements using GenoREC, resulting in its poor usability."
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                655,
+                905,
+                905
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": [
+                    {
+                        "type": "text",
+                        "content": "arXiv:2503.24021v1 [cs.HC] 31 Mar 2025"
+                    }
+                ]
+            },
+            "bbox": [
+                22,
+                260,
+                58,
+                705
+            ]
+        },
+        {
+            "type": "page_footnote",
+            "content": {
+                "page_footnote_content": [
+                    {
+                        "type": "text",
+                        "content": "© 2025 The Author(s). Computer Graphics Forum published by Eurographics - The European Association for Computer Graphics and John Wiley & Sons Ltd This is an open access article under the terms of the Creative Commons Attribution License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                921,
+                473,
+                973
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Eurographics Conference on Visualization (EuroVis) 2025 W. Aigner, N. Andrienko, and B. Wang (Guest Editors)"
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                66,
+                387,
+                104
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "COMPUTER GRAPHICS forum Volume 44 (2025), Number 3"
+                    }
+                ]
+            },
+            "bbox": [
+                689,
+                65,
+                903,
+                92
+            ]
+        },
+        {
+            "type": "page_footnote",
+            "content": {
+                "page_footnote_content": [
+                    {
+                        "type": "text",
+                        "content": "<sup>†</sup> Min Zhu (zhumin@scu.edu.cn) is the corresponding author."
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                891,
+                406,
+                906
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                73,
+                104,
+                473,
+                244
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "To address these challenges, we propose IntelliCircos, a Large Language Model (LLM)-powered interactive authoring tool that streamlines the process from design to the actual implementation of circos plots. First, we collect a dataset of circos plot illustrations and annotations from existing publications, where the quality of the circos plot is guaranteed. We then analyze the relationships of the common track combinations within this dataset. Next, we propose a circos plot recommendation method based on Retrieval Augmented Generation (RAG) [LPP<sup>∗</sup>20]. This method retrieves relevant examples from the above dataset based on user requirements, providing LLM with references and incorporating design patterns into prompts to improve recommendation performance in specific domain scenarios. IntelliCircos allows users to browse and analyze configurations of similar charts, receive progressive design recommendations considering both user-specified constraints and current creation in the user interface, and supports easy refinement of the created circos plot."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                248,
+                473,
+                486
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "We present a usage scenario to illustrate the usage of IntelliCircos, and further conducted a user study with 8 participants to evaluate its effectiveness and usability. The results demonstrate that IntelliCircos can effectively assist users in the design of circos plot and greatly simplifies the implementation of circos plot. The major contributions of this paper can be summarized as follows:"
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                491,
+                473,
+                575
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "• A dataset of circos plots with extracted track combination patterns to support and enhance the design recommendation process for circos plots."
+                    }
+                ]
+            },
+            "bbox": [
+                101,
+                582,
+                472,
+                622
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "• An LLM-powered and interactive circos plot authoring tool, IntelliCircos, which assists users in the designing and implementing circos plots."
+                    }
+                ]
+            },
+            "bbox": [
+                102,
+                622,
+                472,
+                664
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "• A user study to demonstrate the effectiveness and usability of IntelliCircos revealing its advantages and limitations."
+                    }
+                ]
+            },
+            "bbox": [
+                101,
+                664,
+                472,
+                693
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2. Background"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                75,
+                712,
+                178,
+                727
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "To enhance clarity, this section introduces several key terms frequently mentioned throughout the paper."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                733,
+                472,
+                762
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Consistent with research on multi-view visualizations [CZL<sup>∗</sup>21, LG23], we define a view as a type of visualization that can be categorized into several common types [BVB 13] (e.g., line, histogram, and scatter, etc.). In genomics, track is commonly used to refer to a view [LG23, NHG19], so we use the term “track” instead of “view” in the following discussion. A track displays a single dataset [LG23], and different tracks represent various aspects of genomics data [WJT<sup>∗</sup>23]. In addition to common visualization types, genomics tracks may include specialized visualizations, such as ideogram, highlight, and tile. The position of a track is determined by its inner and outer radii: the inner radius refers to the distance from the inner side of the track to the circle’s center, while the outer radius refers to the distance from the outer side of the track to the center. To enhance visual appeal or meet analytical needs, multiple tracks can be grouped within the same concentric rings, forming a structure we refer to as a ring. For example, in Figure 1 (A), there are three nested rings, where the ring Figure 1 (A1) is composed of a tile, and the ring Figure 1 (A2) is composed of two tracks: line and histogram. A circos plot typically consists of multiple concentric rings arranged around the same genomic axis. Angular ranges are used to encode the position coordinates of data across all tracks, effectively mapping data’s location on the genomic axis. For example, Figure 1 (B) shows a circos plot with eight tracks, listed from outer to inner as follows Figure 1 (B1 - B8): ideogram, highlight, tile, scatter, line, heatmaps, histogram, and chord. Circos plots are widely used to demonstrate similarities or differences among diverse genomic features associated with the same genomic regions [WJT<sup>∗</sup>23]. Furthermore, Circos [Krz09] is the most commonly used tool for creating circos plots."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                767,
+                473,
+                893
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/29e7e7a66fe47441380d924a493506f025ee7ade5411bbd46d92b80d117e04b6.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 1: (A) Structure of a Circos Plot. A circos plot consists of multiple nested rings surrounding a genomics axis, with each ring containing one or more tracks. (B) Example of a Circos Plot. The tracks (B1-B8) are arranged from outermost to innermost."
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                517,
+                103,
+                866,
+                332
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                501,
+                428,
+                905,
+                707
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In practice, tracks in circos plots are typically combined. To better explore the relationships between tracks, we classify the track combinations into two categories: stacked relationship and synthesized relationship. A stacked relationship occurs when two tracks are placed in rings without overlapping, while a synthesized relationship involves two tracks with overlapping inner and outer radii. For example, ideogram (Figure 1 (B1)) and highlight (Figure 1 (B2)) have a synthesized relationship, while their synthesized track and other tracks have a stacked relationship."
+                    }
+                ]
+            },
+            "bbox": [
+                501,
+                710,
+                903,
+                838
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3. Related Work"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                504,
+                856,
+                617,
+                871
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The related work of this paper can be divided into two areas: circos plot authoring tools and visualization recommendation."
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                877,
+                901,
+                906
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "2 of 13"
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                79,
+                119,
+                92
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Mingyang Gu & Jiamin Zhu & Qipeng Wang & Fengjie Wang & Xiaolin Wen & Yong Wang & Min Zhu / 1143"
+                    }
+                ]
+            },
+            "bbox": [
+                217,
+                79,
+                800,
+                93
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "© 2025 The Author(s). Computer Graphics Forum published by Eurographics and John Wiley & Sons Ltd."
+                    }
+                ]
+            },
+            "bbox": [
+                570,
+                928,
+                901,
+                949
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.1. Circos Plot Authoring Tools"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                75,
+                103,
+                285,
+                117
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Circos plot authoring tools can be broadly classified into two types: template-based configuration tools and interactive authoring tools. Template-based configuration tools, such as Vega-Lite [SMWH16], ECharts [LMS<sup>∗</sup>18], and ggplot2 [Wil11], predefine data-to-visualization mapping rules, allowing users to input data and configure settings to create charts. For circos plots, Circos [KSB<sup>∗</sup>09] was the first tool offering pre-built track templates and requiring users to write configuration files in Perl. Subsequent tools like RCircos [ZMD13], ggbio [YCL12], circlize [GGE<sup>∗</sup>14], and pyCircos [pon22] have integrated circos plot creation into data analysis workflows using R and Python. More recently, Gosling [LWLG21] enabled interactive genomics visualizations, including circos plot, via configuration. While these tools support the creation of circos plots, they often come with a steep learning curve [WLL<sup>∗</sup>23] and lack immediate visual feedback during the iterative configuration modification."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                123,
+                473,
+                347
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Interactive authoring tools, like J-Circos [ALS<sup>∗</sup>15], shinyCircos [YOY18], and the circos plot module in TBtools [CCZ<sup>∗</sup>20], simplify the encoding process by offering GUIs for interactively adjusting configurations. However, they still require manual configuration. AutoGosling [WLL 23] improves on this by using an image detection model to generate corresponding Gosling configurations from user sketches or example images, but creating the sketches still requires additional user efforts."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                352,
+                473,
+                464
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Despite these advancements in bioinformatics visualization, circos plots, with their multiple tracks and complex configuration options, present significant design challenges for bioinformatics analysts, especially those without the expertise of visualization. So we can see that current tools lack design assistance, while also burdening them with operational complexities. To address these gaps, we propose IntelliCircos, a tool designed to assist bioinformatics analysts in creating circos plots through visualization recommendations, design references and interactive configuration."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                469,
+                473,
+                597
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "3.2. Visualization Recommendation"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                75,
+                614,
+                307,
+                630
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Recommending precise and effective data visualizations is a challenging task [QLTL20]. Various visualization recommendation methods have been proposed to simplify this process, typically falling into two categories: rule-based and machine learning (ML)- based methods [ZSJ<sup>∗</sup>20]. Rule-based methods rely on expertdefined heuristic rules to recommend visualizations [MHS07, WMA<sup>∗</sup>15, WQM<sup>∗</sup>17]. For example, GenoREC [PLW<sup>∗</sup>22] recommends genomics visualizations based on the user-uploaded data and selected parameters. However, its rigid rules limit the types of data and tasks it can accommodate, making it challenging to adapt to diverse scenarios. Additionally, developing comprehensive rules for recommending circos plots is a challenging task [ZLQW24]."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                636,
+                473,
+                804
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In contrast, ML-based methods are data-driven approaches that allow algorithms to autonomously learn visualization design principles from high-quality examples. These methods have shown promising performance [PLW<sup>∗</sup>22]. Draco [MWN<sup>∗</sup>18] uses answer set programming to generate visualizations while learning soft constraints for design. DeepEye [LQTL18] rank visualizations based on input data, tasks, and context. VizML [HBL<sup>∗</sup>19] uses more than one million dataset-visualization pairs to recommend design choices. Recent studies have also explored the use of Large Language Models (LLMs) for visualization recommendations, including Chat2VIS [MS23] and LIDA [Dib23]. Besides, ChartGPT [TCD<sup>∗</sup>24] creates a dataset consisting of abstract utterances and charts and improve model performance through finetuning, transforming the process of generating charts from natural language into a step-by-step reasoning workflow. The Prompt4Vis framework [LCS<sup>∗</sup>24], enhances the model’s generation capabilities by providing external information through a database, leverages LLMs and context learning to improve the performance of generating data visualizations from natural language."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                809,
+                475,
+                907
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                501,
+                104,
+                905,
+                271
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "ML-based recommendation methods typically rely on highquality datasets to achieve good performance. However, current recommendation methods mainly focus on general domains and are not suitable for recommending circos plots. Therefore, we developed an ML-based recommendation method for circos plots, while simultaneously collecting a circos plot dataset from published papers to power design recommendations, aiming to provide more practical and tailored guidance for circos plot design."
+                    }
+                ]
+            },
+            "bbox": [
+                501,
+                276,
+                905,
+                388
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "4. Design Goals"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                504,
+                407,
+                612,
+                421
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Our tool is designed to assist bioinformatics analysts in creating circos plots by addressing both design and implementation aspects. Based on relevant literature [WLL<sup>∗</sup>23, PLW<sup>∗</sup>22, WJT<sup>∗</sup>23], we derive the following design goals."
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                429,
+                903,
+                484
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "G1: Assist in the design of circos plots. Currently, support for designing circos plots remains limited, as evidenced in the literature. However, the design stage is inherently challenging, requiring consideration of factors such as track types, visual mappings for each track, and positional relationships between tracks. Furthermore, bioinformatics analysts usually lack expertise in visualization, which exacerbates the difficulty of the task. These challenges highlight the need for a streamlined approach to simplify the circos plot design stage and better support users in their creation efforts."
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                491,
+                905,
+                617
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "• G1.1: Enable users to describe their design requirements in a natural way. Current tools do not allow users to easily express their design requirements. Additionally, bioinformatics analysts often lack specialized visualization design experience and may only have vague needs [VGIW24], while advanced natural language interfaces can effectively improve the usability of visualization tools [YS19, SS17, SSL<sup>∗</sup>22]. Therefore, our tool should support users in naturally expressing their design needs."
+                    }
+                ]
+            },
+            "bbox": [
+                531,
+                622,
+                903,
+                747
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "• G1.2: Support progressive design recommendation. The design of circos plot is an iterative process, which is influenced by users’ requirements, data, downstream analysis tasks, and existing design patterns [TWO16]. Moreover, users’ needs may vary throughout the design stage. For example, the track layout is considered at the initial design stage, while fine adjustments (e.g., color, transparency) are made after the layout is completed. As a result, relying on recommendation to generate a circos plot entirely from scratch is often impractical. Thus, the tool should provide recommendations in a progressive manner: offering incremental recommendations based on users’ current needs and the current design [LCS22]."
+                    }
+                ]
+            },
+            "bbox": [
+                531,
+                747,
+                905,
+                901
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Mingyang Gu & Jiamin Zhu & Qipeng Wang & Fengjie Wang & Xiaolin Wen & Yong Wang & Min Zhu / 1143"
+                    }
+                ]
+            },
+            "bbox": [
+                178,
+                79,
+                761,
+                92
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "3 of 13"
+                    }
+                ]
+            },
+            "bbox": [
+                859,
+                79,
+                901,
+                92
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "© 2025 The Author(s). Computer Graphics Forum published by Eurographics and John Wiley & Sons Ltd."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                921,
+                406,
+                944
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                114,
+                104,
+                472,
+                131
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "• G1.3: Support browsing and analyzing visual configurations of similar circos plots. A common process for creating circos plots is to search for similar papers and examine the corresponding figures in those papers [WJT<sup>∗</sup>23]. Then, bioinformatics analysts seek design inspiration coordinates these illustration configurations. Therefore, the tool should support the process of finding similar circos plots and providing their configurations."
+                    }
+                ]
+            },
+            "bbox": [
+                101,
+                131,
+                473,
+                243
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "G2: Simplify the implementation of circos plot. Bioinformatics analysts often need to manually implement designs using the Circos software, a process that is time-consuming and lacks immediate visual feedback of modifications. Additionally, for those unfamiliar with Circos, the learning curve is steep. Therefore, an intelligent, interactive authoring tool is needed to streamline the design process and enable more efficient implementation."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                248,
+                473,
+                347
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "• G2.1: Automatically apply the selected design. Currently, users must manually implement designs in Circos to assess their effects via programming, which is tedious and time-consuming. Besides, Circos does not provide an intuitive, real-time display of configuration changes, which forces bioinformatics analysts to repeatedly trial and error to achieve the desired effect [TZP 22]. Therefore, the tool should automatically apply selected designs and update the Circos plot in real time to streamline the design and implementation process when creating circos plots [SZZ 23]."
+                    }
+                ]
+            },
+            "bbox": [
+                101,
+                352,
+                473,
+                491
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "• G2.2: Support easy refinement of track configurations. Allowing users to exert control over the circos plot creation process can serve as a way of refining the recommended design to better meet users’ individual preferences and needs [Hee19, Mye22], and mitigate the limitations of automated methods [BJS<sup>∗</sup>18, LWLQ23, ZL01]. Therefore, the tool should support the refinement of the recommended results with a suite of easy-to-use interactions, such as adding or deleting tracks, matching tracks to data and adjusting various track configurations."
+                    }
+                ]
+            },
+            "bbox": [
+                101,
+                491,
+                473,
+                631
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "5. Dataset"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                75,
+                650,
+                148,
+                664
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "To support our recommendation method, we built a circos plot dataset including three modalities: circos plots (bitmaps), annotations (natural language), and configurations (structured files). We constructed the dataset through a three-step workflow: paper collection, illustration-annotation pair extraction, and illustration labeling. We then conducted a track combination analysis to identify common patterns. The workflow and analysis details are as follows:"
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                671,
+                473,
+                768
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Paper Collection. To ensure our dataset aligns with genomic themes and includes professionally created circos plots, we collected circos plot illustrations from bioinformatics published papers. Specifically, we downloaded 3,377 PDF (Portable Document Format) documents from SemanticScholar [Sch15] and Unpaywall [Unp17] that cited Circos: An information aesthetic for comparative genomics [KSB 09], a paper widely cited by studies utilizing Circos for circos plot creation."
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                775,
+                473,
+                886
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Illustration-Annotation Pair Extraction. To automate the manual extraction of circos plot illustrations and their corresponding annotations from numerous papers, we developed a deep learning-based method to identify illustration-annotation pairs and filter out irrelevant information. We used PDFFigure2.0 [CD16] to render PDFs into bitmaps and PyMuPDF [Con15] to locate and crop illustrations, excluding images smaller than 10% of the page width (e.g., icons). Poppler’s paragraph grouping mechanism [Tea18] was then applied to match annotations with illustrations, resulting in 29,701 matched pairs with metadata such as paper source, page number, and position. To isolate circos plot illustrations, we trained a binary classification deep learning model using ResNet50 [KK21] fine-tuned with pre-trained weights from IMA-GENET1K_V2 [DDS<sup>∗</sup>09]. Positive samples were sourced from the Circos [Krz09] website and image searches on Google and Bing, while negative samples came from VIS30K [CLL<sup>∗</sup>21]. All images were in PNG (Portable Network Graphics) format and resized to 224*224 pixels as input. The dataset was split into 80% for training and 20% for testing. After training for 5 epochs, the model achieved 99.23% accuracy on the test set. Using this model, we extracted 4,531 illustration-annotation pairs. After manual verification for accuracy and completeness, we retained 4,396 valid pairs."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                892,
+                473,
+                906
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/31956405a44c10ec65a12a3cea00d1acd8ee08e4480a2277dd8f2aa3a1a30c17.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 2: Label syntax of a circos plot configuration. A CIRCOS begins with the <start> terminator and ends with CIRCOS_END, containing one or multiple RING elements. A RING consists of TRACK elements, and RINGs are separated by the <split> terminator, ordered from outside to inside. A TRACK represents a single track within a circos plot. We classify text tracks, scale tracks, and other non-visual tracks under <others>, as our focus is on the design of visual elements."
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                509,
+                103,
+                897,
+                183
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                501,
+                330,
+                905,
+                622
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Illustration Labeling. Inspired by the Circos configuration format and XML (Extensible Markup Language) syntax, we use the syntax in Figure 2 to label illustrations. This syntax offers a structured representation to capture the core elements of circos plots, i.e., structures and track types. While it conceals implementation details to minimize the burden and cost of dataset annotation. To facilitate this process, we developed a web-based labeling tool and enlisted five annotators with visualization experience. Each circos plot was labeled by two annotators. On average, each annotator labeled approximately 1,800 illustrations, and the entire process took six weeks."
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                627,
+                905,
+                781
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Track Combination Analysis. We conducted a detailed analysis of the track combinations used in circos plots within our dataset. First, we examined the number of rings (Figure 3 (A)) and tracks types (Figure 3 (B)) per plot. The results show that many plots use more than five rings, indicating complex requirements for track combination and ordering. Next, we analyzed the number of tracks per ring (Figure 3 (C)), revealing that multiple tracks are typically stacked rather than synthesized within the same ring. Figure 3 (D)"
+                    }
+                ]
+            },
+            "bbox": [
+                501,
+                786,
+                905,
+                898
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "4 of 13"
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                79,
+                119,
+                92
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Mingyang Gu & Jiamin Zhu & Qipeng Wang & Fengjie Wang & Xiaolin Wen & Yong Wang & Min Zhu / 1143"
+                    }
+                ]
+            },
+            "bbox": [
+                217,
+                79,
+                800,
+                93
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "© 2025 The Author(s). Computer Graphics Forum published by Eurographics and John Wiley & Sons Ltd."
+                    }
+                ]
+            },
+            "bbox": [
+                570,
+                928,
+                901,
+                949
+            ]
+        }
+    ],
+    [
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/7166b3d5c28862b6ced1d0fd71cdfc9816c26c241129650591739d2f12057f31.jpg"
+                },
+                "content": "",
+                "chart_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 3: Track Combination Analysis Results: (A) The number of rings in each circos plot, (B) The number of track types in each circos plot, (C) The number of tracks in each ring, (D) The number of tracks of each type, (E) The conditional probability of stacked relationship, and (F) The conditional probability of synthesized relationship."
+                    }
+                ],
+                "chart_footnote": []
+            },
+            "bbox": [
+                80,
+                101,
+                900,
+                251
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "illustrates the distribution of different tracks in the dataset. To further understand the relationships between track types, we calculated pairwise relationships for the two primary track combination modes: stacked and synthesized."
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                310,
+                473,
+                367
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Tracks in stacked relationships are displayed in a linear order. We used conditional probability to calculate the pairwise relationships between adjacent tracks "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( t y p e _ { i n n e r }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and type<sub>outer</sub>):"
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                373,
+                473,
+                416
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "P ( t y p e _ { i n n e r } | t y p e _ { o u t e r } ) = \\frac { P ( t y p e _ { o u t e r } \\cap t y p e _ { i n n e r } ) } { P ( t y p e _ { o u t e r } ) } ,\\tag{1}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/1c902b233a0cb0174e8e7f26cd42da9eb9f6bf910bc4b3af07c245313ba09e86.jpg"
+                }
+            },
+            "bbox": [
+                124,
+                420,
+                421,
+                450
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "where "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "P ( t y p e _ { o u t e r } | t y p e _ { i n n e r } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "ranges from [0, 1]; values close to 0 indicate that "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "t y p e _ { i n n e r }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "rarely appears adjacent to type , while values close to 1 indicate frequent adjacency. Additionally, we designated tracks combined in synthesized relationships as synthesized tracks, and involved the start track (located outside the outermost track) and the end track (located inside the innermost track) to analyze the track types at the boundaries. The results (Figure 3 (E)) reveal that many track types like histogram, line, scatter, and heatmaps have probabilities above 0.5 (diagonal cells), suggesting that circos plots tend to stack multiple tracks of the same type. Furthermore, the high proportion of chord and other views in the end track column indicates that the central position is often reserved for displaying chord or other customized, user-defined views."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                455,
+                475,
+                636
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "For tracks combined in synthesized relationships, we calculated the conditional probability of two track types (type<sub>A</sub> and type<sub>B</sub>) appearing together:"
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                641,
+                473,
+                685
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "P ( t y p e _ { B } | t y p e _ { A } ) = \\frac { P ( t y p e _ { A } \\cap t y p e _ { B } ) } { P ( t y p e _ { A } ) } .\\tag{2}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/2db5111bb5e42ff7cf28f8771d9d3a44611953188f13cef2450112b462f962e0.jpg"
+                }
+            },
+            "bbox": [
+                158,
+                688,
+                387,
+                718
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The results (Figure 3 (F)) indicate that the ideogram and highlight exhibit the strongest connection, as they are frequently combined within the same track. This is likely because ideograms, which display chromosomes and bands, enhance the interpretability of gene regions highlighted in the data. Additionally, histogram and line are often paired with themselves to present multiple data attributes, likely due to their ability to use colors to distinguish different attributes, making them ideal for visualizing complex datasets."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                722,
+                473,
+                834
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "6. IntelliCircos"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                75,
+                853,
+                179,
+                867
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Based on the collected dataset, we developed a circos plot recommendation framework, configuration reference and an authoring"
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                875,
+                473,
+                904
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/b4c0c0955c231243c969a8930cced13349755126011fabb99eee1bf6cd868e89.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 4: Recommendation Workflow. For the user query, the tool encodes it into a vector using LLaMa and searches for semantically similar samples in the database. The retrieved samples, user query, and the results from the track combination analysis in Section 4, are combined to form the prompt for GPT-4, which generates the recommendation results."
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                509,
+                311,
+                895,
+                397
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "tool for circos plot creation. The recommendation framework and configuration reference together provide design assistance to users when creating circos plots with IntelliCircos."
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                513,
+                903,
+                556
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "6.1. Recommendation Framework"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                504,
+                575,
+                728,
+                589
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Our recommended method uses a Retrieval Augmented Generation (RAG) [LPP<sup>∗</sup>20] framework, a widely adopted approach that combines a model’s parameters with external non-parametric memory to generate language, thereby overcoming the limitations of language models in domain-specific tasks. RAG consists of two stages: a retriever and a generator. The retriever takes the user’s query and maps both the query and documents from an external corpus into a high-dimensional vector space using a shared embedding model. By calculating similarities (e.g., Euclidean distance) between the query vector and document vectors, it identifies the most relevant documents. The generator, often a pre-trained large language model (LLM), then uses the content of these retrieved documents to produce natural language text that satisfies both syntactic and semantic requirements. The prompt input to the generator is optimized through prompt engineering to guide the model in generating the most relevant output. Our recommendation framework is also divided into two stages based on RAG: the similar sample retriever and the configuration generator, as shown in Figure 4."
+                    }
+                ]
+            },
+            "bbox": [
+                501,
+                594,
+                905,
+                845
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Similar Sample Retriever. We developed the Similar Sample Retriever to search for samples that are related to bioinformatics analysts’s query from the collected circos plot illustration-annotation pairs. The Similar Sample Retriever consists of two components:"
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                849,
+                905,
+                907
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Mingyang Gu & Jiamin Zhu & Qipeng Wang & Fengjie Wang & Xiaolin Wen & Yong Wang & Min Zhu / 1143"
+                    }
+                ]
+            },
+            "bbox": [
+                179,
+                79,
+                761,
+                92
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "5 of 13"
+                    }
+                ]
+            },
+            "bbox": [
+                861,
+                79,
+                901,
+                90
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "© 2025 The Author(s). Computer Graphics Forum published by Eurographics and John Wiley & Sons Ltd."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                921,
+                406,
+                944
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "a text embedding model and a circos plot vector database which stores encoded circos plot annotations and corresponding configuration vectors. First, we selected the LLM-Embedder [ZXL<sup>∗</sup>23] as the base model for calculating text embeddings, as it is optimized for retrieval-augmented tasks with LLMs. The text embedding model converts a user’s query into a 1024-dimensional embedding vector. Similarly, it converts each annotation and its corresponding configuration in the dataset into vectors within the same semantic space. Then, we use Chroma [Tea22] to build the vector database, which stores annotation-configuration vectors generated by the text embedding model, providing external knowledge for the subsequent generator. The vector converted from the user’s query is compared with vectors stored in the database using Euclidean Distance, and the top 10 most relevant vectors are selected as examples, where the number of examples can be adjusted by users. Since both the annotations and the query are embedded in the same semantic space, the similarity between vectors reflects their semantic similarity."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                104,
+                473,
+                354
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Configuration Generator. We then created the Configuration Generator based on the GPT-4 to recommend circos plot configurations. The Configuration Generator uses a prompt template to guide the model’s responses during the recommendation process."
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                359,
+                473,
+                416
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "System prompts input for the model at the start of dialogue include: Task introduction succinctly describes the model’s role and responsibilities: “You are an expert of Genomics Visualization. Yourjob is to recommend Circos plot configurations that meet users’ needs.” Background knowledge covers the visual structure of a circos plot, track types and configuration format. Constraints are included to enforce format restrictions, such as “You can only use the tokens listed below, and you cannot use any custom tokens”. Additionally, guidelines like “If a ring includes many tracks, it is usually placed in the front of the sequence (i.e., the outer side) to avoid visual confusion.” help the model understand common track combination patterns in circos plots."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                421,
+                473,
+                589
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Once a user sends a query, the prompts are processed and passed to the model: Examples consist of sample visualizations retrieved by the Similar Samples Retriever, each example containing annotations and configurations. Requirements capture the user’s natural language input. Existing design refers to the current configuration created by users, if available."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                594,
+                473,
+                679
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "We standardized the model’s expected input and output through prompts to ensure consistency. Finally, the output from the Configuration Generator is used to recommend circos plot configurations, and we extract the track configuration from this result."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                684,
+                473,
+                741
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "6.2. Configuration Reference"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                75,
+                761,
+                266,
+                775
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In addition to recommending circos plots, browsing and analyzing similar circos plot configurations from existing papers is essential for the design stage. To better help user retrieve configurations, we combine two retrieval modes. The first mode retrieves configurations based on the latest user’s query, selecting similar configuration results by Similar Sample Retriever. The second mode retrieves configurations based on the Levenshtein distance between the current design configuration. The Levenshtein distance is a metric that measures the difference between two sequences by counting the minimum number of single-character edits (insertions, deletions, or substitutions) required to transform one string into the other. Both retrieval modes retrieve the top 10 most similar configurations, with users able to adjust the number of retrieved configurations."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                781,
+                473,
+                909
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                503,
+                104,
+                903,
+                160
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Initially, the retrieved configurations are displayed in text form, which is unintuitive. We convert the configuration set into a Directed Acyclic Graph (DAG). The nodes of the graph represent the track types in the configurations, along with <start>, <end>, and the separator <split> nodes. Nodes within the same configuration are connected by edges. Since the DAG contains redundant information, we optimize its structure by merging nodes of the same type along with their edges. The number of merged edges is accumulated as the edge weight."
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                166,
+                905,
+                291
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "6.3. User Interface"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                504,
+                310,
+                632,
+                325
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This section presents five interactive modules in the user interface to support users in creating circos plots."
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                332,
+                901,
+                361
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Circos Dashboard (Figure 5 (B)) shows a circos plot the user is currently creating, offering a quick preview of the plot. When the user hovers over any track, IntelliCircos highlights the selected track and guiding lines will connect it to the corresponding Data Panel and Configuration Panel. Since each track type is associated with a standardized data format, we adopt the mechanism from CircosJS [Koc16] to map the data to the corresponding chart."
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                366,
+                903,
+                465
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Recommend Panel (Figure 5 (A)) implements interactive circos plot configuration recommendations. Users can describe their design requirements in the input box, which offers an auto-complete feature to enhance input, where IntelliCircos enhances input efficiency with an auto-complete feature. Command templates are also available: typing “\\recommend” triggers suggestion for track combinations based on the current configuration, and “\\data” adds the all dataset name and type (karyotype data and attachment data) to the start of the user input. The conversation history with the recommendation model is displayed in dialogue bubbles. Each model’s output bubble contains recommendation results, relevant papers, and a regenerate button. Users can click on the recommendation result to preview and apply it to the current configuration."
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                469,
+                905,
+                651
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Reference Panel (Figure 5 (D)) visualizes the constructed DAG from Section 6.2 using a node-link flow diagram. We apply the Sugiyama algorithm [Nik16] to optimize the DAG layout, minimizing edge crossings while showing its hierarchical structure. A path from <start> to <end> represents a circos plot configuration. Nodes are color-coded based on their types to enhance visual distinction. Edges connect nodes, with edge width indicating the number of paths passing through them, and the exact count displayed above each edge. To aid interpretation, edges in the user’s current configuration are colored green, edges in the recommended path from the Recom Edit Panel are blue, and all other edges are gray. Users can hover over a node to highlight all paths passing through it, revealing common configuration patterns. Clicking on a node allows users to create a circos plot with ease in the Circos Dashboard. IntelliCircos will construct a path from the <start> to the selected node to form the configuration for the new plot. When constructing the path, the tool preserves segments from the user’s current configuration. For the remaining parts, IntelliCircos prioritizes paths recommended by the Recom Edit Panel. If no match is found, it selects the most frequently occurring path."
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                656,
+                905,
+                909
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "6 of 13"
+                    }
+                ]
+            },
+            "bbox": [
+                76,
+                79,
+                119,
+                92
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Mingyang Gu & Jiamin Zhu & Qipeng Wang & Fengjie Wang & Xiaolin Wen & Yong Wang & Min Zhu / 1143"
+                    }
+                ]
+            },
+            "bbox": [
+                217,
+                79,
+                800,
+                93
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "© 2025 The Author(s). Computer Graphics Forum published by Eurographics and John Wiley & Sons Ltd."
+                    }
+                ]
+            },
+            "bbox": [
+                570,
+                928,
+                901,
+                949
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/34af5ea79191540232a6695f089915593d42d20e5f766e557c515d72530fe517.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 5: IntelliCircos is an interactive AI-powered authoring tool designed to facilitate the creation of circos plot. Its user interface comprises five interconnected components: Recom Edit Panel (A) generates design recommendations based on user needs in natural language, Circos Dashboard (B) renders the circos plot created by users, Configuration Panel (C) offers easy refinement of track configurations, Reference Panel (D) enables users to browse and analyze configurations of similar circos plots, Data Panel (E) allows users to manage the source data."
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                98,
+                104,
+                879,
+                415
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                73,
+                511,
+                473,
+                540
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Configuration Panel (Figure 5 (C)) allows users to manually insert, edit, and delete tracks. The global control form is used to create new tracks, while each track has a corresponding local configuration form with customizable settings such as color and scale. IntelliCircos simplifies the process to reduce users’ workload by automatically selecting initial data sources and configuration parameters based on heuristic rules, such as prioritizing unused data sources and copying configurations from tracks of the same type. Any modifications made to the configuration are displayed in realtime on the Circos Dashboard."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                545,
+                473,
+                685
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Data Panel (Figure 5 (E)) allows users to manage data for their circos plots. It supports data upload, preview, and deletion. Similar to Circos’ data management, data is categorized into karyotype data, which marks chromosome and gene hierarchy information, and attachment data, which marks quantitative/qualitative data associated with genes. Users can set unique color markers for each type of source, distinguishing them visually in the display area."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                690,
+                473,
+                790
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "7. Usage Scenario"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                75,
+                808,
+                197,
+                823
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Here we present a scenario to illustrate how IntelliCircos supports the design and implementation of circos plots."
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                828,
+                472,
+                858
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Suppose, Alex, a genomics researcher, planned to use IntelliCircos to design a circos plot comparing human and mouse genomes in terms of gene conservation scores, homologous relationships, and gene sequencing sampling."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                863,
+                473,
+                892
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/64652ed4fdcf09a2c77d0bf4ab4ebd4fe2bd633931b297703e2877a19f66dff0.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 6: This figure illustrates a usage scenario in which a bioinformatics analyst, Alex, utilized Recom Edit Panel to create circos plot, following (A) gain a design recommendation, (B) find reference papers that are similar to the requirements, and (C-D) check reference papers’ corresponding illustration and annotation."
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                509,
+                511,
+                900,
+                733
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                503,
+                821,
+                903,
+                852
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Alex uploaded karyotype datasets that describe the correspondence between gene locations and chromosomes for both humans and mice, along with attachment datasets via the Data Panel. IntelliCircos parsed and displayed these files."
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                857,
+                903,
+                886
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Mingyang Gu & Jiamin Zhu & Qipeng Wang & Fengjie Wang & Xiaolin Wen & Yong Wang & Min Zhu / 1143"
+                    }
+                ]
+            },
+            "bbox": [
+                179,
+                79,
+                761,
+                93
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "7 of 13"
+                    }
+                ]
+            },
+            "bbox": [
+                859,
+                79,
+                901,
+                92
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "© 2025 The Author(s). Computer Graphics Forum published by Eurographics and John Wiley & Sons Ltd."
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                921,
+                406,
+                944
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                73,
+                103,
+                472,
+                132
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Then, Alex started to create a circos plot. Firstly, Alex opened the Recom Edit Panel to request recommendations with a prompt for design inspiration: “Given genomic data for humans and mice, compare their gene conversation scores and the homology relationship between genes, and display the sampling situation of gene sequencing.” IntelliCircos provided the following recommendation: <ideogram><split><highlight><split><line><split><scatter> <split><chord>. This can be interpreted as: the <ideogram> track displays genomic information, the <highlight> track shows gene conservation scores, the <line> track displays homology relationships, the <scatter> track shows the sampling information of gene sequencing, the <chord> track illustrates relationships between genomic data (Figure 6 (A)). However, Alex felt the <scatter> track was improper for displaying gene sequencing sampling. She re-entered the prompt, requesting a new track: “The sampling profile refers to gene segments measured in high-throughput sequencing and is used to show coverage of gene locations, recommend the new view type for this data type.” Subsequently, IntelliCircos recommended: <ideogram><split><highlight><split><line><split><tile><split> <chord> and explained: “I suggest using a <tile> track instead of a <scatter> track as it can display overlapping ranges effectively.”"
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                137,
+                473,
+                444
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Alex was satisfied with the recommendation but wanted to further understand the rationale behind the decision. She first clicked the References button to view the paper cited by the generated results (Figure 6 (B)). One file, named “10.1186_s13020-021-00460- z”, included an illustration with two stacked heatmaps representing the values of gene segments with different meanings. This aligned with the requirement described in Alex’s initial prompt for comparing gene conservation scores (Figure 6 (C)). Additionally, Alex noticed that the figure legend in the paper file, named “10.1371_journal.pone.0074132”, mentioned “homology” (Figure 6 (D)), which aligns with Alex’s request for displaying homologous relationships in the prompt. Alex appreciated the relevance of the references and the quality of the recommendation."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                450,
+                473,
+                631
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Then, Alex applied the recommendation results to the Circos Dashboard. She found the <line> track less readable for presenting homology scores, so she explored alternatives in the Reference Panel. Since the <histogram> track was highly recommended, she deleted the line track and clicked the histogram node to directly apply the design to the Circos Dashboard."
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                636,
+                473,
+                720
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Additionally, Alex noticed that the default color scheme used the same color for both human and mouse chromosomes, which caused visual confusion. To solve this problem, she opened the color selection panel corresponding to the ideogram track in Configuration Panel and used the tool’s preset color combinations to distinguish these species. Finally, she felt that the height and direction of the histogram did not align with her preference, so she modified these settings in Configuration Panel. Now, Alex was satisfied with the final design, and exported it as an SVG (Scalable Vector Graphics) file to share with other colleagues."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                726,
+                473,
+                866
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "8. User Study"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                504,
+                103,
+                599,
+                117
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "To evaluate the usability and effectiveness of IntelliCircos, we conducted a user study with 8 participants "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { ( P _ { 1 } - P _ { 8 } ) }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". They were asked to use IntelliCircos to create circos plots and give both qualitative and quantitative feedback. The study setting is introduced in Section 8.1, and the results are presented in Section 8.2. We did not conduct a comparative study since there are no appropriate baselines. Existing tools like Circos and RCircos are often used by bioinformatics analysts. Also, these tools primarily assist in the implementation while overlooking the design process. In contrast, IntelliCircos supports both design and implementation, seamlessly integrating these two stages. It makes it difficult and unfair to compare IntelliCircos with existing tools. As a result, we opted for a qualitative assessment of users’ experiences with IntelliCircos, comparing it to their current practices."
+                    }
+                ]
+            },
+            "bbox": [
+                501,
+                123,
+                905,
+                319
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "8.1. Study Design"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                504,
+                338,
+                624,
+                353
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "We introduce the setting of the study here, including: participants, task, data, and procedure, as outlined below."
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                359,
+                901,
+                388
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Participants. We recruited eight graduate students from different local universities in biology-related majors, each with over three years of experience in circos plots creation. All participants are familiar with creating circos plots, with a frequency of 1-5 plots per month. Participants self-reported their familiarity with Circos with a rating of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "5 . 9 \\pm 1 . 1"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", where 1 represents “No Experience” and 7 represents “Expert”."
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                393,
+                903,
+                492
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Task and Data. In our user study, participants were asked to create a circos plot using IntelliCircos. They were required to use the provided data as sufficient as possible. We utilized example data from CircosJS [Koc16], which includes track data for plotting alongside chromosomes, label data for annotation elements in different tracks, and link data to establish connections between pairs of genomic regions. This dataset meets the requirements of circos plots, including relationships and multi-layered annotations across various scales [Krz09], and its manageable size ensured the study did not last for too long."
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                497,
+                905,
+                637
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Procedure. All studies were conducted through one-to-one inperson meetings, each lasting about an hour. Prior to the user study, we briefly introduced the study procedure to participants and gained their consent for video recording the whole process. The evaluation consisted of four stages: a training session, an experimental session, a post-study questionnaire session, and a post-study semi-structured interview. During the training session, we first introduced the features of IntelliCircos, and demonstrated the whole usage process by creating an example circos plot (10 minutes). Then, participants were asked to freely explore the system to familiarize themselves with the features (5 minutes). Next, they were asked to create a circos plot using IntelliCircos (25 minutes). After this, participants were asked to complete a 7-point Likert questionnaire in a think-aloud protocol, where users were encouraged to justify their ratings (5 minutes). Specifically, a rating of 1 represents “strongly disagree”, while a rating of 7 represents “strongly agree”. Finally, the study concluded with a semi-structured interview (15 minutes). This interview included topics on the practices with exiting tools, and experience with IntelliCircos."
+                    }
+                ]
+            },
+            "bbox": [
+                501,
+                642,
+                905,
+                907
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "8 of 13"
+                    }
+                ]
+            },
+            "bbox": [
+                76,
+                79,
+                119,
+                92
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Mingyang Gu & Jiamin Zhu & Qipeng Wang & Fengjie Wang & Xiaolin Wen & Yong Wang & Min Zhu / 1143"
+                    }
+                ]
+            },
+            "bbox": [
+                217,
+                79,
+                800,
+                93
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "© 2025 The Author(s). Computer Graphics Forum published by Eurographics and John Wiley & Sons Ltd."
+                    }
+                ]
+            },
+            "bbox": [
+                570,
+                928,
+                901,
+                950
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "8.2. Results"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                75,
+                103,
+                158,
+                117
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In the following, we report our user study results including challenges of current circos plot creation tools, participants’ questionnaire ratings (Figure 7), and feedback to our tool."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                123,
+                473,
+                166
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Challenges of Current Circos Plot Software. All participants reported that Circos is the mostly used tool to create circos plots. The process of creating a circos plot with Circos can be roughly divided into four stages: (a) searching for similar circos plot designs in literature for reference, (b) designing the sequence of tracks and their attributes (e.g., view type, color) using formats like slides or sketches, (c) implementing the design in Circos, (d) repeating steps a-c until a satisfactory circos plot is achieved. They agreed that using Circos to create a circos plot had the following problems. First, Circos lacks design recommendations tailored to users’ specific requirements or references for similar needs, making stages (a) and (b) both challenging and time-consuming. Second, implementing designs through configuration is cumbersome, particularly for novice designers, as Circos has a steep learning curve. Third, Circos does not properly support the iterative process of creating circos plots, leading to frequent trial and error. As "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\sf P } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "mentioned, “While the process of using Circos can gradually optimize my design, it’s too cumbersome.”"
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                170,
+                473,
+                421
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The results confirm our hypothesis that current practice of creating circos plots has significant shortcomings. It also validates our design goals and the development of IntelliCircos."
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                425,
+                472,
+                468
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Questionnaire Responses. The quantitative results of our user study reflect participants’ ratings on both the usability and effectiveness of IntelliCircos."
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                473,
+                472,
+                515
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In terms of usability, Figure 7 (Q1 - Q4) depicts the distributions of ratings, as well as the medians (MDs) and interquartile ranges (IQRs) for all participants. Overall, IntelliCircos was easy to learn and use, with both aspects receiving median ratings of 6 or higher. While some participants gave low ratings on certain aspects, all expressed interest in using IntelliCircos in their future work (Q1). For instance, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { P } _ { 6 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "gave scores under four for Q8 but still rated 6 for Q1. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { P } _ { 5 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "rated 4 for Q2, stating the steep learning curve for novice genomics researchers. Notably, during the interview, all participants praised the seamless integration between design and implementation, as well as the three interactive modules (Recom Edit Panel, Reference Panel, and Configuration Panel)."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                520,
+                473,
+                688
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The distribution of ratings for effectiveness is shown in Figure 7 (Q5 - Q9). Overall, most participants were satisfied with IntelliCircos. Specifically, 7 out of 8 participants appreciated how Intelli-Circos simplified the creation process of circos plots (Q5), with a median rating of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "6 . 5 \\ : ( I Q R = 1 )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". They also praised the quality of the final circos plot (Q9) and found design recommendation (Q6) and the design-to-implementation process (Q7) useful and aligned with their expectations. However, the rating for customization support (Q8) was relatively lower, with most participants providing more neutral scores and one participant, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { P } _ { 6 } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", giving a negative score of 3, stating that “ The tool does not support customization of the chart or legend in the center. ” This reflects IntelliCircos’s limited editing capabilities compared to mature software (e.g., Circos)."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                693,
+                473,
+                875
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Feedback on IntelliCircos. Overall, feedback from all participants on IntelliCircos was positive. Participants found the user interface of IntelliCircos intuitive and well-organized, and expressed a strong willingness to use our tool. Below, we group their feedback according to the design goals outlined in Section 4."
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                877,
+                473,
+                907
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                503,
+                103,
+                903,
+                146
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "G1: Assist in the design of circos plots. When asked about IntelliCircos’s advantages, almost all participants mentioned that the design provided by the system was useful. All participants agreed that natural language provided an intuitive and precise means to communicate their design needs. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { P } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "mentioned, “Describing design requirements in natural language is very intuitive. I can simply describe what I want, and the tool would recommend proper designs. Additionally, I am pleasantly surprised by the predefined templates and auto-completionfeatures, which also ease the promptformulation.” All participants agreed that the progressive recommendation met their expectations. Compared to fully automated or fully manual circos plot design, participants preferred the progressive recommendation of the design. Compared to fully automated recommendations, I can control the pace of the entire recommendation process. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { - P _ { 6 } } ."
+                    },
+                    {
+                        "type": "text",
+                        "content": "“progressive recommendation better aligns with my evolving design needs.” -P . Most participants were satisfied with the recommended results. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { P _ { 4 } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "noted, “ The recommendation results meet my expectations and can be seamlessly applied without adjustments. ” As for Reference Panel, all users acknowledged its effectiveness. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { P _ { 1 } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "stated: “This presentation of track configurations allows me to intuitively overview others’ designs.” "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ } ^ { \\ ' } \\mathrm { P } _ { 8 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "noted: "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^ { \\mathrm { ~ \\tiny ~ . . ~ } } R e f -"
+                    },
+                    {
+                        "type": "text",
+                        "content": "erence Panel inspire alternative designs to try,further contributing to the design process.” Additionally, some users felt that Reference Panel provided some explanation for the recommendations in Recom Edit Panel. “I notice in Reference Panel that four papers have used the recommended results from the model, which increase my trust in those recommendations.”-P<sub>3</sub>. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\sf P } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "suggested: “The directed acyclic graph display has a certain learning curve. It may be helpful to show a reference illustration from the paper directly when hovering over a specific path.”"
+                    }
+                ]
+            },
+            "bbox": [
+                501,
+                151,
+                905,
+                569
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "G2: Simplify the implementation of circos plot. All participants agreed that IntelliCircos streamlined the process from design to implementation of circos plots. Most participants favored the direct application feature for recommended results. “I can easily apply the recommended results in Recom Edit Panel and Reference Panel, which makes it easy to experiment with designs and assess their effects. It saves me a lot of time configuring on my own— IntelliCircos really helps me create. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { \\vec { \\omega } } ^ { , , } - \\mathbf { P } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Participants also agreed that the tool for supporting easy refinement of created circos plots. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { P } _ { 3 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "commented “The tool provides clear options for adjusting the visual elements, making it easy to tailor the track to my needs.” "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { P } _ { 5 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "highlighted IntelliCircos’s immediate visual feedback, stating, “ I can immediately see the results after modifying the configuration, which reduces the costs for trial-and-error.” However, more than half of the participants mentioned that IntelliCircos could continue to evolve to support more complex, customizable features beyond those currently available in Circos, such as split karyotype plots and log-scale color mappings."
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                574,
+                905,
+                825
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "9. Discussion"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                504,
+                843,
+                596,
+                857
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "We first discuss the lessons learned from our research in Section 9.1, followed by the limitations and future work in Section 9.2."
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                864,
+                903,
+                893
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Mingyang Gu & Jiamin Zhu & Qipeng Wang & Fengjie Wang & Xiaolin Wen & Yong Wang & Min Zhu / 1143"
+                    }
+                ]
+            },
+            "bbox": [
+                179,
+                79,
+                761,
+                93
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "9 of 13"
+                    }
+                ]
+            },
+            "bbox": [
+                859,
+                79,
+                901,
+                90
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "© 2025 The Author(s). Computer Graphics Forum published by Eurographics and John Wiley & Sons Ltd."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                921,
+                406,
+                944
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/5c6f96d775dd317591fb68e596d369d7497418c7d0ae918fce5ca796a7d4db41.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Figure 7: Questionnaire results. We designed our questionnaire in two aspects: the tool’s usability (Q1 - Q4) and effectiveness (Q5 - Q9). Experts are asked to rate by a 7-point Likert scale (from 1 - strongly disagree to 7 - strongly agree)."
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                78,
+                108,
+                898,
+                222
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "9.1. Design Lessons"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                75,
+                270,
+                207,
+                284
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In this section, we present the design lessons learned, which can serve as inspiration for developing future tools."
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                291,
+                472,
+                319
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Streamlining the Creation Process from Design to Implementation. IntelliCircos simplifies the creation of circos plots by providing AI-generated recommendations and similar design references sourced from high-quality examples. The tool also automates the implementation of designs while offering customizable configuration options for fine-tuning the created visualization. One important lesson we learned was balancing simplicity and flexibility in the design-to-implementation workflow. Our findings revealed that most participants preferred the progressive recommendation approach over fully-automated suggestions or manual design, as it allowed them to iteratively refine the results to better align with their preferences. This highlights the importance of workflows that adapt to users’ evolving needs. Natural language input further simplified the design process by allowing users to intuitively express their requirements. However, early testing revealed challenges in formulating complex prompts. To address this, we integrated predefined templates and auto-completion features, which were wellreceived by the participants. This underscores the value of intuitive UI enhancements in reducing the learning curve. While tracklevel configuration provides flexibility for customization, participants found it cumbersome when many adjustments were needed. A promising future direction is to enable users to select circos plots as references, allowing the tool to learn from these examples and recommend similar designs that better align with user preferences, thereby reducing the need for manual adjustments."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                325,
+                475,
+                672
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Facilitating Effective Collaboration Between Humans and AI. IntelliCircos adopts a Human-AI collaboration workflow to assist in creating circos plots. Users can express their design requirements in natural language, receiving AI-generated recommendations and similar design references. Participants in our study praised the tool in fostering creativity and inspiration, which is achieved by its AI recommendations and reference examples. These references not only guided their designs but also increased trust in the recommendations. This underscores the importance of transparency in AI assistance. In this regard, we believe embedding contextual information, such as provenance or real-world examples, can enhance user confidence in AI-driven tools. Furthermore, participants also appreciated the ability to combine AI recommendations with user-driven refinements, which allowed them to control the pace of design and implementation. This highlights the importance of enabling users to actively guide and refine AI outputs, rather than solely relying on automated suggestions."
+                    }
+                ]
+            },
+            "bbox": [
+                73,
+                679,
+                475,
+                888
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                503,
+                270,
+                903,
+                299
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "9.2. Limitations and Future Work"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                503,
+                319,
+                727,
+                332
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In this section, we discuss the limitations and future work, regarding the functionalities, and evaluations of IntelliCircos."
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                340,
+                901,
+                368
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Functionalities. The functionalities of IntelliCircos can be further extended. The tool currently does not support sufficient data processing to prepare the data for circos plots, it only supports mapping the data to tracks. In the future, the tool can be enhanced to support data processing tasks, e.g., data filtering, so as to broaden the use cases of IntelliCircos. Currently, users need to modify relevant configurations one by one to adjust the chart to meet their needs, which is kind of cumbersome. In the future, IntelliCircos can be enhanced to recommend tailored configurations. By learning from users’ created circos plots, the tool could suggest preferences for track combinations, track types, color schemes, and more, streamlining the customization process."
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                373,
+                905,
+                541
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Evaluations. In our user study, participants were tasked to create circos plots using IntelliCircos to evaluate its support for plot creation. However, the evaluation process could be improved from several perspectives. First, while we assessed the usability and effectiveness of IntelliCircos’s main features, we did not evaluate AI assistance in terms of trust and perceived cognitive load, which is an interesting part to dive deeper for empirical insights as suggested by [YWVW19, GKC 23]. Examining these aspects would offer additional insights into the tool’s overall effectiveness. Second, this paper primarily focuses on the design and development of the tool, and as outlined in Section 8.1, we did not include a baseline comparison in our study. However, a thorough empirical investigation comparing different approaches (e.g., IntelliCircos and Circos software) could provide a broader understanding of their respective strengths and limitations. Third, the study’s participant pool was limited. Future work should involve a larger and more diverse group, including those not experienced creators to better assess the tool’s real-world value. Lastly, all questions in the questionnaire are positive. A better design approach would involve inverting the polarity of questions to validate participants’ responses."
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                547,
+                905,
+                827
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "10. Conclusion"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                504,
+                844,
+                607,
+                858
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In this paper, we introduce IntelliCircos, an AI-powered interactive authoring tool that streamlines the design and implementation of circos plots. Utilizing the capabilities of LLMs, IntelliCircos allows bioinformatics analysts to specify their requirements in natural language and receive tailored recommendations to navigate the design of circos plots. The tool then automatically applies the recommended design and supports easy refinement of the created circos plots. Specifically, the recommendation process is enhanced by distilling commonly adopted design patterns from existing circos plots with the RAG technique. A user study indicates the effectiveness and usability of IntelliCircos in aiding the authoring of circos plots. Furthermore, participants highly appreciated Intelli-Circos’ support for the iterative creation of circos plots."
+                    }
+                ]
+            },
+            "bbox": [
+                503,
+                864,
+                903,
+                893
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "10 of 13"
+                    }
+                ]
+            },
+            "bbox": [
+                76,
+                79,
+                124,
+                92
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Mingyang Gu & Jiamin Zhu & Qipeng Wang & Fengjie Wang & Xiaolin Wen & Yong Wang & Min Zhu / 1143"
+                    }
+                ]
+            },
+            "bbox": [
+                220,
+                79,
+                803,
+                92
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "© 2025 The Author(s). Computer Graphics Forum published by Eurographics and John Wiley & Sons Ltd."
+                    }
+                ]
+            },
+            "bbox": [
+                570,
+                928,
+                901,
+                949
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                73,
+                104,
+                473,
+                257
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "11. Acknowledgments"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                76,
+                276,
+                222,
+                290
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This work was supported by the National Natural Science Foundation of China (Nos.62172289)."
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                297,
+                472,
+                325
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "References"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                75,
+                344,
+                150,
+                358
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[ALS<sup>∗</sup>15] AN J., LAI J., SAJJANHAR A., BATRA J., WANG C., NEL-SON C. C.: J-circos: an interactive circos plotter. Bioinformatics 31, 9 (2015), 1463–1465. 1, 3"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[BJS<sup>∗</sup>18] BLOHM M., JAGFELD G., SOOD E., YU X., VU N. T.: Comparing attention-based convolutional and recurrent neural networks: Success and limitations in machine reading comprehension. arXiv preprint arXiv:1808.08744 (2018). 4"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[BVB<sup>∗</sup>13] BORKIN M. A., VO A. A., BYLINSKII Z., ISOLA P., SUNKAVALLI S., OLIVA A., PFISTER H.: What makes a visualization memorable? IEEE transactions on visualization and computer graphics 19, 12 (2013), 2306–2315. 2"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[CCL<sup>∗</sup>16] CUI Y., CHEN X., LUO H., FAN Z., LUO J., HE S., YUE H., ZHANG P., CHEN R.: Biocircos. js: an interactive circos javascript library for biological data visualization on web applications. Bioinformatics 32, 11 (2016), 1740–1742. 1"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[CCX<sup>∗</sup>20] CUI Y., CUI Z., XU J., HAO D., SHI J., WANG D., XIAO H., DUAN X., CHEN R., LI W.: Ng-circos: next-generation circos for data visualization and interpretation. NAR Genomics and Bioinformatics 2, 3 (2020), lqaa069. 1"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[CCZ<sup>∗</sup>20] CHEN C., CHEN H., ZHANG Y., THOMAS H. R., FRANK M. H., HE Y., XIA R.: Tbtools: an integrative toolkit developed for interactive analyses of big biological data. Molecular plant 13, 8 (2020), 1194–1202. 1, 3"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[CCZW21] CUI Z., CUI Y., ZANG T., WANG Y.: interaccircos: an r package based on javascript libraries for the generation of interactive circos plots. Bioinformatics 37, 20 (2021), 3642–3644. 1"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[CD16] CLARK C., DIVVALA S.: Pdffigures 2.0: Mining figures from research papers. In Proceedings ofthe 16th ACM/IEEE-CS on Joint Conference on Digital Libraries (2016), pp. 143–152. 4"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[CLL<sup>∗</sup>21] CHEN J., LING M., LI R., ISENBERG P., ISENBERG T., SEDLMAIR M., MÖLLER T., LARAMEE R. S., SHEN H.-W., WÜN-SCHE K., ET AL.: Vis30k: A collection of figures and tables from ieee visualization conference publications. IEEE Transactions on Visualization and Computer Graphics 27, 9 (2021), 3826–3833. 4"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[Con15] CONTRIBUTORS P.: Pymupdf, 2015. Accessed: 2024-11-29. URL: https://github.com/pymupdf/PyMuPDF. 4"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[CZL<sup>∗</sup>21] CHEN X., ZENG W., LIN Y., AI-MANEEA H. M., ROBERTS J., CHANG R.: Composition and configuration patterns in multipleview visualizations. IEEE Transactions on Visualization and Computer Graphics 27, 2 (2021), 1514–1524. doi:10.1109/TVCG.2020. 3030338. 2"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[DDS<sup>∗</sup>09] DENG J., DONG W., SOCHER R., LI L.-J., LI K., FEI-FEI L.: Imagenet: A large-scale hierarchical image database. In 2009 IEEE conference on computer vision and pattern recognition (2009), Ieee, pp. 248–255. 4"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[Dib23] DIBIA V.: Lida: A tool for automatic generation of grammaragnostic visualizations and infographics using large language models. arXiv preprint arXiv:2303.02927 (2023). 3"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[GGE<sup>∗</sup>14] GU Z., GU L., EILS R., SCHLESNER M., BRORS B.: \" circlize\" implements and enhances circular visualization in r. 3"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[GKC<sup>∗</sup>23] GABA A., KAUFMAN Z., CHEUNG J., SHVAKEL M., HALL K. W., BRUN Y., BEARFIELD C. X.: My model is unfair, do people even care? visual design affects trust and perceived bias in machine learning. IEEE transactions on visualization and computer graphics (2023). 10"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[HBL<sup>∗</sup>19] HU K., BAKKER M. A., LI S., KRASKA T., HIDALGO C.: Vizml: A machine learning approach to visualization recommendation. In Proceedings of the 2019 CHI conference on human factors in computing systems (2019), pp. 1–12. 3"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[Hee19] HEER J.: Agency plus automation: Designing artificial intelligence into interactive systems. Proceedings of the National Academy of Sciences 116, 6 (2019), 1844–1850. 4"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[KK21] KOONCE B., KOONCE B.: Resnet 50. Convolutional neural networks with swift for tensorflow: image recognition and dataset categorization (2021), 63–72. 4"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[Koc16] KRZYWINSKI M., OTHER CONTRIBUTORS: CircosJS: A Circular Genome Data Visualization Library. https://github.com/ nicgirault/circosJS, 2016. Version 1.0, accessed: 2024-11-12. 1, 6, 8"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[Krz09] KRZYWINSKI M.: Circos: Visualization of data in a circular layout, 2009. Accessed: 2024-11-18. URL: https://circos.ca/. 1, 2, 4, 8"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[KSB<sup>∗</sup>09] KRZYWINSKI M., SCHEIN J., BIROL I., CONNORS J., GAS-COYNE R., HORSMAN D., JONES S. J., MARRA M. A.: Circos: an information aesthetic for comparative genomics. Genome research 19, 9 (2009), 1639–1645. 1, 3, 4"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[LCS22] LONG J., CUMMAFORD S., STORK A.: HCI Design Knowledge: Critique, Challenge, and a Way Forward. Springer International Publishing, Cham, 2022, pp. 1–7. URL: https://doi.org/10.1007/978-3-031-79215-1_1, doi:10.1007/978-3-031-79215-1_1. 4"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[LCS<sup>∗</sup>24] LI S., CHEN X., SONG Y., SONG Y., ZHANG C.: Prompt4vis: Prompting large language models with example mining and schema filtering for tabular data visualization. arXiv preprint arXiv:2402.07909 (2024). 3"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[LG23] L’YI S., GEHLENBORG N.: Multi-view design patterns and responsive visualization for genomics data. IEEE Transactions on Visualization and Computer Graphics 29, 1 (2023), 559–569. doi: 10.1109/TVCG.2022.3209398. 2"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[LMS<sup>∗</sup>18] LI D., MEI H., SHEN Y., SU S., ZHANG W., WANG J., ZU M., CHEN W.: Echarts: a declarative framework for rapid construction of web-based visualization. Visual Informatics 2, 2 (2018), 136–146. 3"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[LPP<sup>∗</sup>20] LEWIS P., PEREZ E., PIKTUS A., PETRONI F., KARPUKHIN V., GOYAL N., KÜTTLER H., LEWIS M., YIH W.-T., ROCKTÄSCHEL T., ET AL.: Retrieval-augmented generation for knowledge-intensive nlp tasks. Advances in Neural Information Processing Systems 33 (2020), 9459–9474. 2, 5"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[LQTL18] LUO Y., QIN X., TANG N., LI G.: Deepeye: Towards automatic data visualization. In 2018 IEEE 34th international conference on data engineering (ICDE) (2018), IEEE, pp. 101–112. 3"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[LWLG21] LYI S., WANG Q., LEKSCHAS F., GEHLENBORG N.: Gosling: A grammar-based toolkit for scalable and interactive genomics data visualization. IEEE Transactions on Visualization and Computer Graphics 28, 1 (2021), 140–150. 1, 3"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                76,
+                364,
+                472,
+                400
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Mingyang Gu & Jiamin Zhu & Qipeng Wang & Fengjie Wang & Xiaolin Wen & Yong Wang & Min Zhu / 1143"
+                    }
+                ]
+            },
+            "bbox": [
+                176,
+                79,
+                758,
+                92
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "11 of 13"
+                    }
+                ]
+            },
+            "bbox": [
+                854,
+                79,
+                901,
+                90
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "© 2025 The Author(s). Computer Graphics Forum published by Eurographics and John Wiley & Sons Ltd."
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                922,
+                406,
+                944
+            ]
+        }
+    ],
+    [
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[LWLQ23] LI H., WANG Y., LIAO Q. V., QU H.: Why is ai not a panacea for data workers? an interview study on human-ai collaboration in data storytelling. arXiv preprint arXiv:2304.08366 (2023). 4"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[MHS07] MACKINLAY J., HANRAHAN P., STOLTE C.: Show me: Automatic presentation for visual analysis. IEEE transactions on visualization and computer graphics 13, 6 (2007), 1137–1144. 3"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[MS23] MADDIGAN P., SUSNJAK T.: Chat2vis: generating data visualizations via natural language using chatgpt, codex and gpt-3 large language models. Ieee Access 11 (2023), 45181–45193. 3"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[MWN<sup>∗</sup>18] MORITZ D., WANG C., NELSON G. L., LIN H., SMITH A. M., HOWE B., HEER J.: Formalizing visualization design knowledge as constraints: Actionable and extensible models in draco. IEEE transactions on visualization and computer graphics 25, 1 (2018), 438– 448. 3"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[Mye22] MYERS A.: In human-centered ai, the boundaries between ux and software roles are evolving, 2022. 4"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[NdCTS14] NAQUIN D., D’AUBENTON CARAFA Y., THERMES C., SILVAIN M.: Circus: a package for circos display of structural genome variations from paired-end and mate-pair sequencing data. BMC bioinformatics 15 (2014), 1–6. 1"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[NHG19] NUSRAT S., HARBIG T., GEHLENBORG N.: Tasks, techniques, and tools for genomic data visualization. In Computer Graphics Forum (2019), vol. 38, Wiley Online Library, pp. 781–805. 1, 2"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[Nik16] NIKOLOV N. S.: Sugiyama algorithm., 2016. 6"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[OBC<sup>∗</sup>18] O’DONOGHUE S. I., BALDI B. F., CLARK S. J., DARLING A. E., HOGAN J. M., KAUR S., MAIER-HEIN L., MCCARTHY D. J., MOORE W. J., STENAU E., ET AL.: Visualization of biomedical data. Annual Review ofBiomedical Data Science 1, 1 (2018), 275–304. 1"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[O’D21] O’DONOGHUE S. I.: Grand challenges in bioinformatics data visualization, 2021. 1"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[PLW<sup>∗</sup>22] PANDEY A., L’YI S., WANG Q., BORKIN M. A., GEHLEN-BORG N.: Genorec: a recommendation system for interactive genomics data visualization. IEEE transactions on visualization and computer graphics 29, 1 (2022), 570–580. 2, 3"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[pon22] PONNHIDE: pycircos: Python library for circos-style plots. https://github.com/ponnhide/pyCircos, 2022. Accessed: 2024-11-19. 3"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[QLTL20] QIN X., LUO Y., TANG N., LI G.: Making data visualization more efficient and effective: a survey. The VLDB Journal 29, 1 (2020), 93–117. 3"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[Sch15] SCHOLAR S.: Semantic scholar, 2015. Accessed: 2024-11-29. URL: https://www.semanticscholar.org/. 4"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[SMWH16] SATYANARAYAN A., MORITZ D., WONGSUPHASAWAT K., HEER J.: Vega-lite: A grammar of interactive graphics. IEEE transactions on visualization and computer graphics 23, 1 (2016), 341–350. 3"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[SS17] SRINIVASAN A., STASKO J.: Natural language interfaces for data analysis with visualization: Considering what has and could be asked. In Proceedings of the Eurographics/IEEE VGTC conference on visualization: Short papers (2017), pp. 55–59. 3"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[SSL<sup>∗</sup>22] SHEN L., SHEN E., LUO Y., YANG X., HU X., ZHANG X., TAI Z., WANG J.: Towards natural language interfaces for data visualization: A survey. IEEE transactions on visualization and computer graphics 29, 6 (2022), 3121–3144. 3"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[SWL20] SUN P., WANG H., LI G.: Rcirc: an r package for circrna analyses and visualization. Frontiers in Genetics 11 (2020), 548. 1"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[SZZ<sup>∗</sup>23] SHI X., ZHOU Z., ZHANG J. W., NESHATI A., TYAGI A. K., ROSSI R., GUO S., DU F., ZHAO J.: De-stijl: Facilitating graphics design with interactive 2d color palette recommendation. In Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (New York, NY, USA, 2023), CHI ’23, Association for Computing Machinery. URL: https://doi.org/10.1145/3544548. 3581070, doi:10.1145/3544548.3581070. 4"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[TCD<sup>∗</sup>24] TIAN Y., CUI W., DENG D., YI X., YANG Y., ZHANG H., WU Y.: Chartgpt: Leveraging llms to generate charts from abstract natural language. IEEE Transactions on Visualization and Computer Graphics (2024). 3"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[Tea18] TEAM T. P.: Poppler, 2018. Accessed: 2024-11-29. URL: https://poppler.freedesktop.org. 4"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[Tea22] TEAM C.: Getting started with chroma, 2022. Accessed: 2024- 11-29. URL: https://github.com/chroma-core/chroma/. 6"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[TWO16] TODI K., WEIR D., OULASVIRTA A.: Sketchplore: Sketch and explore with a layout optimiser. In Proceedings of the 2016 ACM Conference on Designing Interactive Systems (New York, NY, USA, 2016), DIS ’16, Association for Computing Machinery, p. 543–555. URL: https://doi.org/10.1145/2901790.2901817, doi: 10.1145/2901790.2901817. 3"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[TZP<sup>∗</sup>22] TYAGI A., ZHAO J., PATEL P., KHURANA S., MUELLER K.: Infographics wizard: Flexible infographics authoring and design exploration. In Computer Graphics Forum (2022), vol. 41, Wiley Online Library, pp. 121–132. 4"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[Unp17] UNPAYWALL: Unpaywall, 2017. Accessed: 2024-11-29. URL: https://unpaywall.org/. 4"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[VGIW24] VAITHILINGAM P., GLASSMAN E. L., INALA J. P., WANG C.: Dynavis: Dynamically synthesized ui widgets for visualization editing, 2024. URL: https://arxiv.org/abs/2401.10880, arXiv:2401.10880. 3"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[W<sup>∗</sup>94] WALL L., ET AL.: The perl programming language, 1994. 1"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[Wil11] WILKINSON L.: ggplot2: elegant graphics for data analysis by wickham, h., 2011. 3"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[WJT<sup>∗</sup>23] WANG Y., JIA L., TIAN G., DONG Y., ZHANG X., ZHOU Z., LUO X., LI Y., YAO W.: shinycircos-v2. 0: Leveraging the creation of circos plot with enhanced usability and advanced features. Imeta 2, 2 (2023), e109. 1, 2, 3, 4"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[WLL<sup>∗</sup>23] WANG Q., LIU X., LIANG M. Q., L’YI S., GEHLENBORG N.: Enabling multimodal user interactions for genomics visualization creation. In 2023 IEEE Visualization and Visual Analytics (VIS) (2023), IEEE, pp. 111–115. 1, 3"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[WMA<sup>∗</sup>15] WONGSUPHASAWAT K., MORITZ D., ANAND A., MACKINLAY J., HOWE B., HEER J.: Voyager: Exploratory analysis via faceted browsing of visualization recommendations. IEEE transactions on visualization and computer graphics 22, 1 (2015), 649–658. 3"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[WQM<sup>∗</sup>17] WONGSUPHASAWAT K., QU Z., MORITZ D., CHANG R., OUK F., ANAND A., MACKINLAY J., HOWE B., HEER J.: Voyager 2: Augmenting visual analysis with partial view specifications. In Proceedings of the 2017 chi conference on human factors in computing systems (2017), pp. 2648–2659. 3"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[YCL12] YIN T., COOK D., LAWRENCE M.: ggbio: an r package for extending the grammar of graphics for genomic data. Genome biology 13 (2012), 1–14. 3"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[YOY18] YU Y., OUYANG Y., YAO W.: shinycircos: an r/shiny application for interactive creation of circos plot. Bioinformatics 34, 7 (2018), 1229–1231. 1, 3"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[YS19] YU B., SILVA C. T.: Flowsense: A natural language interface for visual data exploration within a dataflow system. IEEE transactions on visualization and computer graphics 26, 1 (2019), 1–11. 3"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[YWVW19] YIN M., WORTMAN VAUGHAN J., WALLACH H.: Understanding the effect of accuracy on trust in machine learning models. In Proceedings of the 2019 chi conference on human factors in computing systems (2019), pp. 1–12. 10"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[ZL01] ZUKERMAN I., LITMAN D.: Natural language processing and user modeling: Synergies and limitations. User modeling and useradapted interaction 11 (2001), 129–158. 4"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[ZLQW24] ZHANG S., LI H., QU H., WANG Y.: Adavis: Adaptive and"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                76,
+                104,
+                472,
+                140
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "12 of 13"
+                    }
+                ]
+            },
+            "bbox": [
+                76,
+                79,
+                125,
+                92
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Mingyang Gu & Jiamin Zhu & Qipeng Wang & Fengjie Wang & Xiaolin Wen & Yong Wang & Min Zhu / 1143"
+                    }
+                ]
+            },
+            "bbox": [
+                220,
+                79,
+                803,
+                92
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "© 2025 The Author(s). Computer Graphics Forum published by Eurographics and John Wiley & Sons Ltd."
+                    }
+                ]
+            },
+            "bbox": [
+                570,
+                928,
+                901,
+                949
+            ]
+        }
+    ],
+    [
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "explainable visualization recommendation for tabular data. IEEE Transactions on Visualization and Computer Graphics 30, 9 (2024), 5923– 5938. doi:10.1109/TVCG.2023.3316469. 3"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[ZMD13] ZHANG H., MELTZER P., DAVIS S.: Rcircos: an r package for circos 2d track plots. BMC bioinformatics 14 (2013), 1–5. 1, 3"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[ZSJ<sup>∗</sup>20] ZHU S., SUN G., JIANG Q., ZHA M., LIANG R.: A survey on automatic infographics and visualization recommendations. Visual Informatics 4, 3 (2020), 24–40. 3"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "[ZXL<sup>∗</sup>23] ZHANG P., XIAO S., LIU Z., DOU Z., NIE J.-Y.: Retrieve anything to augment large language models, 2023. arXiv: 2310.07554. 6"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                106,
+                472,
+                138
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Mingyang Gu & Jiamin Zhu & Qipeng Wang & Fengjie Wang & Xiaolin Wen & Yong Wang & Min Zhu / 1143"
+                    }
+                ]
+            },
+            "bbox": [
+                176,
+                79,
+                758,
+                92
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "13 of 13"
+                    }
+                ]
+            },
+            "bbox": [
+                854,
+                79,
+                901,
+                92
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "© 2025 The Author(s). Computer Graphics Forum published by Eurographics and John Wiley & Sons Ltd."
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                922,
+                406,
+                944
+            ]
+        }
+    ]
+]

@@ -1,222 +1,68 @@
 # SeSMap
 
-SeSMap is a visual analytics system for exploring semantic maps built from scientific papers. It organizes fine-grained semantic units (MSUs) into subspaces, lets users inspect semantic relationships across papers, and supports LLM-assisted search, summarization, and interaction.
+SeSMap 是一个面向科研文献的**语义地图可视分析系统**:把论文拆成细粒度语义单元(MSU),用一个参数化投影把它们映射到 2D,组织成按 discourse role 划分的子空间,并支持跨论文的语义关系检查、LLM 辅助检索/摘要/交互。
 
-The system is designed around two linked views:
+系统由两条联动视图构成:
 
-- A semantic map view for browsing subspaces, hexagonal semantic units, routes, and selected MSUs.
-- A source gallery and stepwise analysis view for reviewing papers, saved paths, selected MSUs, and LLM summaries.
+- **语义地图视图**:浏览子空间、HSU 六边形、flight 路线、选中的 MSU;
+- **Source Gallery + Stepwise Analysis**:查看论文、保存的路径、勾选的 MSU 与 LLM 摘要。
 
-## Main Features
-
-- Multi-case semantic maps for different research domains.
-- Interactive subspace visibility control through natural language commands.
-- Source Gallery for displaying paper thumbnails by topic, such as air pollution and scramjet combustion.
-- Stepwise Analysis View for saving selected routes and summarizing checked MSUs.
-- RAG-based paper question answering over project PDFs.
-- Centralized LLM configuration for chat, intent parsing, RAG, MSU summary, context compression, and embeddings.
-
-## Project Structure
+## 架构
 
 ```text
 SeSMap/
-  SeSMap-backend/      Flask backend, APIs, RAG, prompts, data, PDF indexes
-  SeSMap-frontend/     Vue + Vite frontend, semantic map UI, gallery, analysis panels
+├── SeSMap-backend/    Flask 后端 + 数据/模型流水线 + RAG + LLM 配置   → 见 SeSMap-backend/README.md
+└── SeSMap-frontend/   Vue 3 + Vite 前端(语义地图 UI / Gallery / 分析面板) → 见 SeSMap-frontend/README.md
 ```
 
-Important backend files:
+前端通过 Vite 代理把 `/api/*` 转发到后端 `http://127.0.0.1:5000`。
+
+## 端到端流程(概览)
 
 ```text
-SeSMap-backend/app.py                    Main Flask app and API routes
-SeSMap-backend/services/llm_config.py    Central LLM configuration
-SeSMap-backend/rag.py                    PDF RAG helper
-SeSMap-backend/prompts.py                Prompt definitions
-SeSMap-backend/data/                     Semantic map data, PDFs, FAISS indexes
+PDF ──MinerU──▶ Markdown ──LLM──▶ MSU 语料 ──bge──▶ 句向量
+    ──v10 投影(全批 parametric t-SNE)──▶ 2D 坐标
+    ──hex 分箱──▶ HSU ──LLM──▶ 摘要 ──▶ database-*/summary-* ──▶ semantic_map_data.json
+    ──▶ 前端渲染:子空间 / boundary zone / flight / Chat / Gallery
 ```
 
-Important frontend files:
+- **投影模型 = v10**(参数化,直接优化邻域保持):in-sample trust 0.930 / knnOv 0.303,超过非参数 UMAP、逼近 t-SNE,且能把未见句子投进固定坐标系(句子级 OOS 0.268 > `UMAP.transform` 0.222)。
+- **设计要点**:论文分离与跨源共址在单一 2D 布局中几何互斥 → **boundary-zone 检测放在高维语义空间,2D 布局专职导航**。
+- 详细分阶段命令见后端 README 与 `SeSMap-backend/REPRODUCE.md`。
 
-```text
-SeSMap-frontend/src/components/MainView.vue   Semantic map container
-SeSMap-frontend/src/components/LeftPane.vue   Chat, source gallery, controls
-SeSMap-frontend/src/components/RightPane.vue  Stepwise analysis view
-SeSMap-frontend/src/components/LinkCard.vue   MSU selection and summary cards
-SeSMap-frontend/src/lib/semanticMap.js        Main semantic map rendering logic
-SeSMap-frontend/src/lib/api.js                Frontend API helpers
-```
+## 快速开始
 
-## Quick Start
-
-### 1. Start the Backend
+**1. 后端**(pyenv 3.10.14;`.python-version` 已固定)
 
 ```bash
 cd SeSMap-backend
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-cp .env.example .env
-python scripts/install_models.py
-python app.py
+python3 -m pip install -r requirements.txt
+cp .env.example .env          # 填 LLM_API_KEY / LLM_BASE_URL
+python3 scripts/install_models.py    # 下载 bge 编码器
+python3 app.py                # http://127.0.0.1:5000
 ```
 
-The backend runs on:
-
-```text
-http://127.0.0.1:5000
-```
-
-### 2. Start the Frontend
+**2. 前端**
 
 ```bash
 cd SeSMap-frontend
 npm install
-npm run dev
+npm run dev                   # http://localhost:5173
 ```
 
-The frontend usually runs on:
+启动后默认加载一个 case;在 Chat 里说 "show case1 / case2 / 生信" 切换。
 
-```text
-http://localhost:5173
-```
+## 从零构建一张地图 / 新增一个 case
 
-## LLM Configuration
+把 PDF 放进 `SeSMap-backend/data/pdf/`,按后端 README 第 2 节依次跑
+`mineru_pdf → build_corpus → precompute_embeddings → train_all_v10 → formdatabase → generate_hex → summarize_hex → build_case_files → build_semantic_map`;
+生信 case3 已封装成一键脚本:`bash SeSMap-backend/build_case3.sh`。
 
-LLM settings live in:
+## 主要功能
 
-```text
-SeSMap-backend/.env
-```
-
-The project uses task-based model roles:
-
-```env
-LLM_DEFAULT_MODEL=gpt-4o
-LLM_CHAT_MODEL=gpt-4o
-LLM_INTENT_MODEL=gpt-4o
-LLM_RAG_MODEL=gpt-4o
-LLM_SUMMARY_MODEL=gpt-4o
-LLM_CONDENSE_MODEL=gpt-4o
-LLM_EMBEDDING_MODEL=text-embedding-3-small
-```
-
-These roles are resolved by:
-
-```text
-SeSMap-backend/services/llm_config.py
-```
-
-Use the backend config endpoint to check the active model settings:
-
-```text
-GET /api/llm/config
-```
-
-Do not commit real API keys to a public repository.
-
-## Model Assets
-
-Large local model files are intentionally ignored by git. Backend model dependencies are declared in:
-
-```text
-SeSMap-backend/model_requirements.json
-```
-
-Install/download them with:
-
-```bash
-cd SeSMap-backend
-python scripts/install_models.py
-```
-
-The BGE encoder is downloaded from Hugging Face into `models/bge-large-en-v1.5/`. The trained mapper checkpoint is expected at `data/outputs/bert2d_mapper_all_v5.pt`; because it is private/large, provide `SESMAP_MAPPER_CKPT_URL` in `.env` or copy the file there manually.
-
-## Common Commands
-
-### Source Gallery
-
-```text
-show air related papers in gallery
-show combust related papers in gallery
-Scramjet Combustion
-clear gallery
-```
-
-Air-related commands show air pollution papers. Scramjet or combustion-related commands show the case1 combustion papers.
-
-### Subspace Control
-
-```text
-show background
-show method and result
-show all subspaces
-hide all subspaces
-list subspaces
-subspace count
-```
-
-### RAG and Paper Questions
-
-```text
-list projects
-build index for case1
-ask case2: compare the main methods across papers
-```
-
-## MSU Summary Workflow
-
-In the Stepwise Analysis View:
-
-1. Save or select a semantic route.
-2. Open a LinkCard.
-3. Check the MSUs you want to summarize.
-4. Click `Summarize`.
-
-The selected MSUs are grouped by HSU and ordered by route path. The backend uses the `LLM_SUMMARY_MODEL` role to generate a compact `RouteSummary`.
-
-## Data
-
-The project currently includes multiple cases under:
-
-```text
-SeSMap-backend/data/
-SeSMap-backend/case1/
-SeSMap-backend/case2/
-SeSMap-backend/case3/
-```
-
-PDFs and gallery assets are mirrored in the frontend for presentation:
-
-```text
-SeSMap-frontend/src/assets/pdf/
-SeSMap-frontend/src/assets/pictures/
-```
-
-## Notes
-
-- If you change the embedding model, rebuild the FAISS indexes.
-- If the LLM provider changes, update `.env` rather than editing business code.
-- The Source Gallery is mostly handled on the frontend through local keyword matching.
-- RAG indexes are stored locally under `SeSMap-backend/data/indexes/`.
-
-## Backend Data Pipeline
-
-The active end-to-end pipeline is documented in:
-
-```text
-SeSMap-backend/REPRODUCE.md
-```
-
-Run the full backend data/model pipeline with:
-
-```bash
-cd SeSMap-backend
-python pipeline.py
-```
-
-The flow is:
-
-```text
-PDF -> Markdown -> MSU database -> raw triplets -> refined triplets
--> embedding cache -> mapper training -> 2D coordinates -> hex/HSU cells
--> HSU summaries -> case database/summary files -> semantic_map_data.json
-```
+- 多 case 语义地图(不同研究领域各自建图)。
+- 自然语言控制子空间可见性与构造。
+- Source Gallery 按主题展示论文缩略图。
+- Stepwise Analysis View 保存路线、对勾选 MSU 结构化摘要。
+- 基于项目 PDF 的 RAG 问答。
+- 集中式 LLM 配置(chat / 意图解析 / RAG / MSU 摘要 / 上下文压缩 / embedding)。

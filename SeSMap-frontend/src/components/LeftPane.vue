@@ -217,31 +217,36 @@ const FOLDER_ALIASES = {
     '喷雾', '雾化', '蒸发', '等当量比', '化学计量比'
   ],
   case1: ['case1', 'project one', 'set1', '背景', 'background'],
-  case2: ['case2', 'project two', 'set2', '方法', 'methods', 'method']
+  case2: ['case2', 'project two', 'set2', '方法', 'methods', 'method'],
+  case3: ['case3', 'case 3', 'project three', 'set3', 'genome', 'genomic', 'genomics', 'circos', 'gosling', 'bioinformatics', '基因组', '生信', '环形基因组']
 }
 const FOLDER_TITLES = {
   air: 'Air',
   combust: 'Scramjet Combustion',
   case1: 'Case 1',
-  case2: 'Case 2'
+  case2: 'Case 2',
+  case3: 'Genomics'
 }
 const FOLDER_PROJECT = {
   air: 'case2',
   combust: 'case1',
   case1: 'case1',
-  case2: 'case2'
+  case2: 'case2',
+  case3: 'case3'
 }
 const FOLDER_PDF_DIR = {
   air: 'case2',
   combust: 'case1',
   case1: 'case1',
-  case2: 'case2'
+  case2: 'case2',
+  case3: 'case3'
 }
 const FOLDER_SOURCE_OFFSETS = {
   combust: 1,
   case1: 1,
   air: 3,
-  case2: 3
+  case2: 3,
+  case3: 8
 }
 const GALLERY_PAPER_SOURCE_REGISTRY = {
   largeeddy: { projectId: 'case1', semanticCountryId: 'c1', sourceId: 'c1' },
@@ -252,7 +257,13 @@ const GALLERY_PAPER_SOURCE_REGISTRY = {
   improvingwrfchempm25predictionsbycombiningdataassimilationanddeeplearningbasedbiascorrection: { projectId: 'case2', semanticCountryId: 'c1', sourceId: 'c4' },
   threefoldreductionofmodeleduncertaintyindirectradiativeeffectsoverbiomassburningregionsbyconstrainingabsorbingaerosols: { projectId: 'case2', semanticCountryId: 'c2', sourceId: 'c5' },
   visualizinglargescalespatialtimeserieswithgeochron: { projectId: 'case2', semanticCountryId: 'c3', sourceId: 'c6' },
-  volumebasedspacetimecubeforlargescalecontinuousspatialtimeseries: { projectId: 'case2', semanticCountryId: 'c4', sourceId: 'c7' }
+  volumebasedspacetimecubeforlargescalecontinuousspatialtimeseries: { projectId: 'case2', semanticCountryId: 'c4', sourceId: 'c7' },
+  // case3 = 生信/基因组可视化 5 篇（semanticCountryId=c{paper_id} 对齐 data/case3 的 c0-c4）
+  auragenome: { projectId: 'case3', semanticCountryId: 'c0', sourceId: 'c8' },
+  circos: { projectId: 'case3', semanticCountryId: 'c1', sourceId: 'c9' },
+  genorec: { projectId: 'case3', semanticCountryId: 'c2', sourceId: 'c10' },
+  gosling: { projectId: 'case3', semanticCountryId: 'c3', sourceId: 'c11' },
+  intellicircos: { projectId: 'case3', semanticCountryId: 'c4', sourceId: 'c12' }
 }
 function makeSourceKey(projectId, semanticCountryId) {
   return `${projectId || 'unknown'}|${semanticCountryId || 'unknown'}`
@@ -266,6 +277,7 @@ function normalizeAssetBase(name) {
 function fallbackSemanticCountryId(projectId, index) {
   if (projectId === 'case1') return `c${index + 1}`
   if (projectId === 'case2') return `c${index}`
+  if (projectId === 'case3') return `c${index}`   // case3 国家为 c0-c4
   return `c${index + 1}`
 }
 function fallbackGlobalSourceId(folder, index) {
@@ -406,8 +418,51 @@ function toPaperItems(folder, items) {
 
 }
 
+// 方案 B：从后端 manifest 拉某 case 的 gallery（缩略图 + 国家/来源映射），灌进 galleryByFolder，
+// 之后完全复用现有 toPaperItems / paperSourceInfoForImage 渲染链路（后者会自动读 item 自带的 semanticCountryId）。
+const backendGalleryLoaded = ref({})
+async function ensureBackendGallery(folder) {
+  if (galleryByFolder.value[folder]?.length) return true      // 已有(bundled 资产 或 已拉过)
+  if (backendGalleryLoaded.value[folder]) return false
+  const projectId = FOLDER_PROJECT[folder] || folder
+  try {
+    const res = await fetch(`/api/gallery?project_id=${encodeURIComponent(projectId)}`)
+    backendGalleryLoaded.value = { ...backendGalleryLoaded.value, [folder]: true }
+    if (!res.ok) return false
+    const data = await res.json()
+    const items = (data.items || []).filter(it => it.thumbnail_url)
+    if (!items.length) return false
+    galleryByFolder.value = {
+      ...galleryByFolder.value,
+      [folder]: items.map(it => ({
+        name: it.title || `paper ${it.paper_id}`,
+        url: it.thumbnail_url,
+        path: `${folder}/${it.thumbnail || it.paper_id}`,
+        semanticCountryId: it.semanticCountryId,
+        sourceId: it.sourceId,
+      }))
+    }
+    return true
+  } catch (e) {
+    console.warn('[gallery] backend manifest fetch failed:', e)
+    return false
+  }
+}
+
+// gallery 选论文 → 只显示选中论文(country)的子空间内容，冲突区随选择重算；未选=全部
+function onGallerySelection(countryIds) {
+  const ctrl = window?.SemanticMapCtrl
+  if (ctrl && typeof ctrl.setVisibleCountries === 'function') {
+    ctrl.setVisibleCountries(Array.isArray(countryIds) ? countryIds : [])
+  } else {
+    // 控制器未就绪时排队，地图初始化后再应用
+    window.__pendingVisibleCountries = Array.isArray(countryIds) ? countryIds : []
+  }
+}
+
 // 展示某个 folder：把图片灌进 Semantic Source Gallery
-function showFolder(folder) {
+async function showFolder(folder) {
+  await ensureBackendGallery(folder)      // 后端 manifest（case3+）；case1/2 走 bundled 资产、此处 no-op
   const imgs = (galleryByFolder.value[folder] || []).slice()
   // 外层标题也更新为最近一次加载的分组名（可选）
   paperQuery.value = folderTitle(folder)
@@ -730,7 +785,7 @@ async function handleSend(msg) {
   // B) Gallery 命令（必须带有 'gallery' / 'Semantic Source gallery' / '图集' / 'collect' 等关键词）
    if (isGalleryCommand(msg) || isAutoGalleryTopic(msg)) {
      const folder = resolveFolderFromText(msg)
-     if (folder) { showFolder(folder); return }
+     if (folder) { await showFolder(folder); return }
      messages.value.push({
        role:'assistant', type:'error',
        text:'No matching gallery folder. Try: “gallery air” or “Scramjet Combustion”.'
@@ -825,6 +880,7 @@ async function handleSend(msg) {
            :thumbRatio="0.55"
            @open-pdf="({pdfUrl, name}) => openPdfModal(pdfUrl, name)"
            @update:groups="updatePaperGroups"
+           @update:selectedCountries="onGallerySelection"
          />
 
         <!-- <div v-if="!papers.length" class="empty-hint" style="margin-top:8px;">

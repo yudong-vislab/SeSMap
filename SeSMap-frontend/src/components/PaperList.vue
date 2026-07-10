@@ -24,7 +24,7 @@ const props = defineProps({
 })
 
 /* ---------- Emits ---------- */
-const emit = defineEmits(['update:title', 'update:selectedIds', 'open-pdf', 'close', 'update:groups'])
+const emit = defineEmits(['update:title', 'update:selectedIds', 'open-pdf', 'close', 'update:groups', 'update:selectedCountries'])
 
 /* ---------- 演示数据（兜底） ---------- */
 const demoItems = [
@@ -174,8 +174,9 @@ function toggleSelect(gi) {
   s.has(gi) ? s.delete(gi) : s.add(gi)
   selected.value = [...s]
   emit('update:selectedIds', selected.value)
+  emitSelectedCountries()
 }
-function clearSelection() { selected.value = []; emit('update:selectedIds', selected.value) }
+function clearSelection() { selected.value = []; emit('update:selectedIds', selected.value); emitSelectedCountries() }
 function opacityFor(gi) { return !selected.value.length ? 1 : (selected.value.includes(gi) ? 1 : props.dimOpacity) }
 
 // 分组
@@ -189,11 +190,37 @@ watch(
   },
   { deep: true }
 )
+// 收集所有分组里被选中项的 country_id，发给上层（gallery → subspace 联动）
+function emitSelectedCountries() {
+  const cids = new Set()
+  // 分组视图：selectedByGroup 存的是 it.globalIndex（非局部下标）
+  const groups = (groupsLocal.value && groupsLocal.value.length) ? groupsLocal.value : (props.groups || [])
+  groups.forEach((g, gi) => {
+    const sel = selectedByGroup.value[gi] || []
+    ;(g.items || []).forEach((it) => {
+      if (sel.includes(it.globalIndex)) {
+        const c = countryIdOfItem(it)
+        if (c != null && c !== '') cids.add(String(c))
+      }
+    })
+  })
+  // 非分组视图：selected 存的也是 globalIndex
+  if (!groups.length && Array.isArray(selected.value) && selected.value.length) {
+    ;(displayItems.value || []).forEach((it) => {
+      if (selected.value.includes(it.globalIndex)) {
+        const c = countryIdOfItem(it)
+        if (c != null && c !== '') cids.add(String(c))
+      }
+    })
+  }
+  emit('update:selectedCountries', [...cids])
+}
 function toggleSelectInGroup(groupIdx, gi) {
   if (!selectedByGroup.value[groupIdx]) selectedByGroup.value[groupIdx] = []
   const s = new Set(selectedByGroup.value[groupIdx])
   s.has(gi) ? s.delete(gi) : s.add(gi)
   selectedByGroup.value[groupIdx] = [...s]
+  emitSelectedCountries()
 }
 function opacityForGroup(groupIdx, gi) {
   const arr = selectedByGroup.value[groupIdx] || []

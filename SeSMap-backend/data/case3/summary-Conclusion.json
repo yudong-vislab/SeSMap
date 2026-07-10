@@ -1,985 +1,968 @@
 [
-    {
-        "hex_coord": [
-            -7,
-            20
-        ],
-        "country": 1,
-        "MSU_ids": [
-            30
-        ]
-    },
-    {
-        "hex_coord": [
-            -11,
-            0
-        ],
-        "country": 1,
-        "MSU_ids": [
-            81
-        ]
-    },
-    {
-        "hex_coord": [
-            -9,
-            8
-        ],
-        "country": 1,
-        "MSU_ids": [
-            82
-        ]
-    },
-    {
-        "hex_coord": [
-            7,
-            -16
-        ],
-        "country": 1,
-        "MSU_ids": [
-            102
-        ]
-    },
-    {
-        "hex_coord": [
-            -7,
-            -8
-        ],
-        "country": 1,
-        "MSU_ids": [
-            103
-        ]
-    },
-    {
-        "hex_coord": [
-            -5,
-            8
-        ],
-        "country": 1,
-        "MSU_ids": [
-            110
-        ]
-    },
-    {
-        "hex_coord": [
-            2,
-            12
-        ],
-        "country": 1,
-        "MSU_ids": [
-            111
-        ]
-    },
-    {
-        "hex_coord": [
-            -1,
-            17
-        ],
-        "country": 1,
-        "MSU_ids": [
-            136
-        ]
-    },
-    {
-        "hex_coord": [
-            -3,
-            -1
-        ],
-        "country": 1,
-        "MSU_ids": [
-            137,
-            274
-        ]
-    },
-    {
-        "hex_coord": [
-            -7,
-            8
-        ],
-        "country": 1,
-        "MSU_ids": [
-            145
-        ]
-    },
-    {
-        "hex_coord": [
-            -5,
-            10
-        ],
-        "country": 1,
-        "MSU_ids": [
-            146
-        ]
-    },
-    {
-        "hex_coord": [
-            -4,
-            10
-        ],
-        "country": 1,
-        "MSU_ids": [
-            150
-        ]
-    },
-    {
-        "hex_coord": [
-            -2,
-            -12
-        ],
-        "country": 1,
-        "MSU_ids": [
-            151
-        ]
-    },
-    {
-        "hex_coord": [
-            -7,
-            9
-        ],
-        "country": 1,
-        "MSU_ids": [
-            166
-        ]
-    },
-    {
-        "hex_coord": [
-            -5,
-            11
-        ],
-        "country": 1,
-        "MSU_ids": [
-            167
-        ]
-    },
-    {
-        "hex_coord": [
-            -7,
-            7
-        ],
-        "country": 1,
-        "MSU_ids": [
-            168
-        ]
-    },
-    {
-        "hex_coord": [
-            -7,
-            -1
-        ],
-        "country": 1,
-        "MSU_ids": [
-            170
-        ]
-    },
-    {
-        "hex_coord": [
-            -9,
-            0
-        ],
-        "country": 1,
-        "MSU_ids": [
-            182,
-            290
-        ]
-    },
-    {
-        "hex_coord": [
-            -2,
-            10
-        ],
-        "country": 1,
-        "MSU_ids": [
-            183
-        ]
-    },
-    {
-        "hex_coord": [
-            -5,
-            15
-        ],
-        "country": 1,
-        "MSU_ids": [
-            184
-        ]
-    },
-    {
-        "hex_coord": [
-            -2,
-            17
-        ],
-        "country": 1,
-        "MSU_ids": [
-            190
-        ]
-    },
-    {
-        "hex_coord": [
-            17,
-            -18
-        ],
-        "country": 1,
-        "MSU_ids": [
-            238
-        ]
-    },
-    {
-        "hex_coord": [
-            -3,
-            -11
-        ],
-        "country": 1,
-        "MSU_ids": [
-            241
-        ]
-    },
-    {
-        "hex_coord": [
-            -2,
-            -13
-        ],
-        "country": 1,
-        "MSU_ids": [
-            275
-        ]
-    },
-    {
-        "hex_coord": [
-            -11,
-            -6
-        ],
-        "country": 1,
-        "MSU_ids": [
-            289
-        ]
-    },
-    {
-        "hex_coord": [
-            3,
-            10
-        ],
-        "country": 1,
-        "MSU_ids": [
-            291
-        ]
-    },
-    {
-        "hex_coord": [
-            -2,
-            9
-        ],
-        "country": 1,
-        "MSU_ids": [
-            359
-        ]
-    },
-    {
-        "hex_coord": [
-            -3,
-            10
-        ],
-        "country": 1,
-        "MSU_ids": [
-            360
-        ]
-    },
-    {
-        "hex_coord": [
-            13,
-            -7
-        ],
-        "country": 1,
-        "MSU_ids": [
-            377
-        ]
-    },
-    {
-        "hex_coord": [
-            -1,
-            -11
-        ],
-        "country": 1,
-        "MSU_ids": [
-            424
-        ]
-    },
-    {
-        "hex_coord": [
-            -11,
-            4
-        ],
-        "country": 1,
-        "MSU_ids": [
-            450
-        ]
-    },
-    {
-        "hex_coord": [
-            -4,
-            20
-        ],
-        "country": 1,
-        "MSU_ids": [
-            481
-        ]
-    },
-    {
-        "hex_coord": [
-            -4,
-            18
-        ],
-        "country": 1,
-        "MSU_ids": [
-            490
-        ]
-    },
-    {
-        "hex_coord": [
-            9,
-            -16
-        ],
-        "country": 1,
-        "MSU_ids": [
-            491
-        ]
-    },
-    {
-        "hex_coord": [
-            4,
-            -10
-        ],
-        "country": 1,
-        "MSU_ids": [
-            550
-        ]
-    },
-    {
-        "hex_coord": [
-            -9,
-            -2
-        ],
-        "country": 1,
-        "MSU_ids": [
-            581
-        ]
-    },
-    {
-        "hex_coord": [
-            1,
-            14
-        ],
-        "country": 1,
-        "MSU_ids": [
-            588
-        ]
-    },
-    {
-        "hex_coord": [
-            -11,
-            7
-        ],
-        "country": 1,
-        "MSU_ids": [
-            596
-        ]
-    },
-    {
-        "hex_coord": [
-            -8,
-            11
-        ],
-        "country": 1,
-        "MSU_ids": [
-            601
-        ]
-    },
-    {
-        "hex_coord": [
-            3,
-            11
-        ],
-        "country": 1,
-        "MSU_ids": [
-            603
-        ]
-    },
-    {
-        "hex_coord": [
-            0,
-            1
-        ],
-        "country": 1,
-        "MSU_ids": [
-            613
-        ]
-    },
-    {
-        "hex_coord": [
-            -10,
-            8
-        ],
-        "country": 1,
-        "MSU_ids": [
-            614
-        ]
-    },
-    {
-        "hex_coord": [
-            -13,
-            7
-        ],
-        "country": 2,
-        "MSU_ids": [
-            644
-        ]
-    },
-    {
-        "hex_coord": [
-            -3,
-            13
-        ],
-        "country": 2,
-        "MSU_ids": [
-            654
-        ]
-    },
-    {
-        "hex_coord": [
-            -2,
-            22
-        ],
-        "country": 2,
-        "MSU_ids": [
-            655
-        ]
-    },
-    {
-        "hex_coord": [
-            -9,
-            7
-        ],
-        "country": 2,
-        "MSU_ids": [
-            669
-        ]
-    },
-    {
-        "hex_coord": [
-            -2,
-            21
-        ],
-        "country": 2,
-        "MSU_ids": [
-            670
-        ]
-    },
-    {
-        "hex_coord": [
-            -1,
-            19
-        ],
-        "country": 2,
-        "MSU_ids": [
-            676
-        ]
-    },
-    {
-        "hex_coord": [
-            2,
-            13
-        ],
-        "country": 2,
-        "MSU_ids": [
-            677
-        ]
-    },
-    {
-        "hex_coord": [
-            -4,
-            8
-        ],
-        "country": 2,
-        "MSU_ids": [
-            680
-        ]
-    },
-    {
-        "hex_coord": [
-            5,
-            3
-        ],
-        "country": 2,
-        "MSU_ids": [
-            805
-        ]
-    },
-    {
-        "hex_coord": [
-            17,
-            -3
-        ],
-        "country": 2,
-        "MSU_ids": [
-            806
-        ]
-    },
-    {
-        "hex_coord": [
-            3,
-            11
-        ],
-        "country": 2,
-        "MSU_ids": [
-            808
-        ]
-    },
-    {
-        "hex_coord": [
-            2,
-            14
-        ],
-        "country": 2,
-        "MSU_ids": [
-            843
-        ]
-    },
-    {
-        "hex_coord": [
-            -6,
-            -2
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1028
-        ]
-    },
-    {
-        "hex_coord": [
-            -10,
-            6
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1029
-        ]
-    },
-    {
-        "hex_coord": [
-            -10,
-            -7
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1063
-        ]
-    },
-    {
-        "hex_coord": [
-            -10,
-            3
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1073
-        ]
-    },
-    {
-        "hex_coord": [
-            -10,
-            -1
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1074
-        ]
-    },
-    {
-        "hex_coord": [
-            -8,
-            -2
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1081
-        ]
-    },
-    {
-        "hex_coord": [
-            -5,
-            5
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1082
-        ]
-    },
-    {
-        "hex_coord": [
-            -10,
-            -6
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1083
-        ]
-    },
-    {
-        "hex_coord": [
-            -1,
-            11
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1132
-        ]
-    },
-    {
-        "hex_coord": [
-            -2,
-            5
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1153
-        ]
-    },
-    {
-        "hex_coord": [
-            -5,
-            15
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1154
-        ]
-    },
-    {
-        "hex_coord": [
-            -3,
-            20
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1162
-        ]
-    },
-    {
-        "hex_coord": [
-            -6,
-            16
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1165
-        ]
-    },
-    {
-        "hex_coord": [
-            11,
-            11
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1178
-        ]
-    },
-    {
-        "hex_coord": [
-            5,
-            15
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1202
-        ]
-    },
-    {
-        "hex_coord": [
-            -1,
-            6
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1278
-        ]
-    },
-    {
-        "hex_coord": [
-            -7,
-            5
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1338
-        ]
-    },
-    {
-        "hex_coord": [
-            17,
-            -6
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1351
-        ]
-    },
-    {
-        "hex_coord": [
-            -3,
-            10
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1365
-        ]
-    },
-    {
-        "hex_coord": [
-            6,
-            8
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1420
-        ]
-    },
-    {
-        "hex_coord": [
-            3,
-            17
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1459
-        ]
-    },
-    {
-        "hex_coord": [
-            3,
-            6
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1460
-        ]
-    },
-    {
-        "hex_coord": [
-            7,
-            -14
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1463
-        ]
-    },
-    {
-        "hex_coord": [
-            1,
-            -4
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1465
-        ]
-    },
-    {
-        "hex_coord": [
-            2,
-            8
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1469
-        ]
-    },
-    {
-        "hex_coord": [
-            -4,
-            17
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1471
-        ]
-    },
-    {
-        "hex_coord": [
-            13,
-            -2
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1481
-        ]
-    },
-    {
-        "hex_coord": [
-            1,
-            14
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1482,
-            1490
-        ]
-    },
-    {
-        "hex_coord": [
-            12,
-            0
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1485
-        ]
-    },
-    {
-        "hex_coord": [
-            8,
-            12
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1486
-        ]
-    },
-    {
-        "hex_coord": [
-            15,
-            1
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1487
-        ]
-    },
-    {
-        "hex_coord": [
-            17,
-            -12
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1488
-        ]
-    },
-    {
-        "hex_coord": [
-            1,
-            7
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1489
-        ]
-    },
-    {
-        "hex_coord": [
-            7,
-            -3
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1491
-        ]
-    },
-    {
-        "hex_coord": [
-            11,
-            -10
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1494
-        ]
-    },
-    {
-        "hex_coord": [
-            9,
-            6
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1495
-        ]
-    },
-    {
-        "hex_coord": [
-            15,
-            -16
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1498
-        ]
-    },
-    {
-        "hex_coord": [
-            3,
-            7
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1500
-        ]
-    },
-    {
-        "hex_coord": [
-            6,
-            0
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1507
-        ]
-    },
-    {
-        "hex_coord": [
-            -2,
-            -12
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1508
-        ]
-    },
-    {
-        "hex_coord": [
-            -6,
-            9
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1511
-        ]
-    },
-    {
-        "hex_coord": [
-            -1,
-            -11
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1513
-        ]
-    },
-    {
-        "hex_coord": [
-            -3,
-            -2
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1514
-        ]
-    },
-    {
-        "hex_coord": [
-            0,
-            -10
-        ],
-        "country": 3,
-        "MSU_ids": [
-            1516
-        ]
-    }
+  {
+    "hex_coord": [
+      -2,
+      -3
+    ],
+    "country": 0,
+    "MSU_ids": [
+      439,
+      449,
+      450
+    ],
+    "summary": "Data upload and autoparsing of chromosomal translocation and gene expression profiles are performed. $E _ { A }$ aimed to investigate chromosomal translocation patterns in AML. AML is a hematologic malignancy often driven by specific structural variants."
+  },
+  {
+    "hex_coord": [
+      -2,
+      -3
+    ],
+    "country": 1,
+    "MSU_ids": [
+      948
+    ],
+    "summary": "Canada’s Michael Smith Genome Sciences Center is located at 100-570 West 7th Avenue, Vancouver, BC, V5Z 4S6, Canada. British Columbia Cancer Research Center is affiliated with the British Columbia Cancer Agency. The address of the British Columbia Cancer Agency is 675 West 10th."
+  },
+  {
+    "hex_coord": [
+      0,
+      -2
+    ],
+    "country": 0,
+    "MSU_ids": [
+      589
+    ],
+    "summary": "The system efficiently ingests tabular genomic data. Visualization strategies include heatmaps for expression data or links for structural variation. We aim to enable multiview genomic representations that accommodate diverse analytical needs."
+  },
+  {
+    "hex_coord": [
+      0,
+      -2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1217,
+      1417
+    ],
+    "summary": "Analyzing large-scale genomic data requires multiple coordinated views. The 'Compare' task involves comparing features located in multiple genomic regions. Ada wants to develop a visualization to analyze genetic data obtained from three different files: a BED file, a VCF file, and a BIGWIG file."
+  },
+  {
+    "hex_coord": [
+      0,
+      -1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      132,
+      146,
+      222,
+      410,
+      411,
+      412
+    ],
+    "summary": "AutoGosling leverages deep learning to optimize genomic visualization parameters. Six key requirements for a genome visual analytics framework were distilled based on these findings. The six core requirements ensure scalability, interpretability, and reproducibility in genomic data visualizations."
+  },
+  {
+    "hex_coord": [
+      0,
+      0
+    ],
+    "country": 0,
+    "MSU_ids": [
+      561,
+      579
+    ],
+    "summary": "We introduce AuraGenome, a large language model (LLM)-powered framework for rapid, reusable, and scalable generation of multilayered circular genome visualizations. AuraGenome combines a semantic-driven multiagent workflow with an interactive visual analytics system. The workflow employs seven specialized LLM-driven agents, each assigned distinct roles, such as intent recognition, layout planning, and code generation, to transform raw genomic data into tailored visualizations."
+  },
+  {
+    "hex_coord": [
+      0,
+      1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      569
+    ],
+    "summary": "AuraGenome is validated through two real-world case studies. AuraGenome is validated through both quantitative and qualitative user evaluations. A benchmark dataset, GenoVis-300, was created containing 300 natural language prompts derived from real genomics use cases."
+  },
+  {
+    "hex_coord": [
+      1,
+      -4
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2023
+    ],
+    "summary": "Nusrat et al. introduce the visual representation of a dataset as a unit building block in the visualization of genome-mapped data, referred to as a track. A view defines the genomic location for all the tracks it contains. Genome browsers and similar tools use a single view of stacked tracks to plot genomic data along the genome sequence on the x-axis."
+  },
+  {
+    "hex_coord": [
+      1,
+      -3
+    ],
+    "country": 0,
+    "MSU_ids": [
+      417
+    ],
+    "summary": "The system supports multiple coordinated views tailored for genomic data, offering ring, radial, and chord-based layouts to represent multilayered circular genome visualizations. The interactive visual analytics system supports generation and editing of circular genome visualizations in three distinct layouts: ring, radial, and chord. The code output is tailored for circular genome representation."
+  },
+  {
+    "hex_coord": [
+      1,
+      -3
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2134
+    ],
+    "summary": "Gene annotations, including the positions, structures, and names of genes, are commonly visualized together with other information to provide contextual information about important genomic locations. Kerpedjiev et al. developed a genome browser with coordinated multiple views that supports authoring views with 1D and 2D tracks, such as matrices with two genomic coordinate axes. Glyph representations are widely used in genomics to show the complex structure of genomic data, such as gene annotations and structural variance."
+  },
+  {
+    "hex_coord": [
+      1,
+      -2
+    ],
+    "country": 0,
+    "MSU_ids": [
+      33
+    ],
+    "summary": "These limitations highlight the demand for intelligent, automated visualization solutions tailored to the unique characteristics of circular genomic data. Several tools have been presented to support genome visualizations in different contexts. The generation of complex, customized, and interactive visualizations remains a significant challenge, particularly in scientific domains such as genomics."
+  },
+  {
+    "hex_coord": [
+      1,
+      -2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1065,
+      1201
+    ],
+    "summary": "Interpretation of genomics data relies on the application of a wide range of visualization tools. A large number of visualization techniques for genomics data and different analysis tasks pose a significant challenge for analysts. Genomics analysts often base their visualization choices on trial and error or technical details, such as data formats that a specific tool can load."
+  },
+  {
+    "hex_coord": [
+      1,
+      -1
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1943,
+      1944,
+      1946
+    ],
+    "summary": "Gosling is a grammar for interactive and scalable genomics data visualization. Gosling balances expressiveness for comprehensive multi-scale genomics data visualizations with accessibility for domain scientists. A visualization grammar for genomics data visualizations was designed."
+  },
+  {
+    "hex_coord": [
+      1,
+      0
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1310,
+      1416
+    ],
+    "summary": "GenoREC recommends linear and circular layouts when a user specifies a BED file and a VCF file with categorical data. GenoREC supports three layouts: linear, circular, and space-filling. In overview tasks, where the user’s goal is to look for trends and patterns, GenoREC recommends both circular layouts and linear layouts."
+  },
+  {
+    "hex_coord": [
+      1,
+      0
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2607
+    ],
+    "summary": "The predefined rules in GenoREC make it difficult to adapt to new tasks, limiting its quality and applicability. It is difficult for bioinformatics analysts to specify their design requirements using GenoREC. The difficulty in specifying design requirements results in poor usability of GenoREC."
+  },
+  {
+    "hex_coord": [
+      1,
+      1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1160,
+      1258,
+      1512,
+      1523,
+      1550
+    ],
+    "summary": "GenoREC maps data and task specifications to appropriate visualizations. Based on the recommendation model, GenoREC generates and recommends an appropriate visualization to the user. Through the recommendation, GenoREC allows the user to avoid a wide range of similar but sub-optimal visualization options given the data and task."
+  },
+  {
+    "hex_coord": [
+      1,
+      2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1253,
+      1399,
+      1426,
+      1486,
+      1541,
+      1548
+    ],
+    "summary": "This work primarily focuses on the evaluation of GenoREC’s recommendation model. The results of the user study demonstrate that GenoREC’s recommendations are helpful for analysts working in the space of genomics data analysis. GenoREC switches to a linear recommendation when a user adds a BIGWIG file with quantitative data."
+  },
+  {
+    "hex_coord": [
+      1,
+      3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1487
+    ],
+    "summary": "Scenarios where GenoREC’s responses were significantly higher than the alternate stimulus are marked with an asterisk. The visualization with the top score was selected as the 'GenoREC stimulus'. The visualization with the score closest to the median of the score distribution was selected as the 'alternate stimulus'."
+  },
+  {
+    "hex_coord": [
+      2,
+      -3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1362
+    ],
+    "summary": "Commonly used genome browser tools lack effective multi-scale designs, such as overviews and detail views, as shown by survey results on genomics tools. If views have a circular layout, GenoREC only permits parallel and adjacent arrangements. GenoREC only supports overlaying position and color channels because they can co-exist without causing occlusion."
+  },
+  {
+    "hex_coord": [
+      2,
+      -2
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1961,
+      2243,
+      2244,
+      2245
+    ],
+    "summary": "Gosling.js is built on top of an existing platform for web-based genomics data visualization. Gosling.js simplifies the visualization of common genomics data formats. Gosling supports the design of novel genomics visualizations."
+  },
+  {
+    "hex_coord": [
+      2,
+      -1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1544
+    ],
+    "summary": "The output of GenoREC is a specification for Gosling, a grammar-based genomics visualization toolkit. GenoREC uses Gosling, a grammar-based visualization toolkit for genomics, for rendering recommendation. GenoREC was used to generate and score all possible visualizations that can be rendered by Gosling for the data and tasks of a given scenario."
+  },
+  {
+    "hex_coord": [
+      2,
+      -1
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2246
+    ],
+    "summary": "Wilkinson’s Grammar of Graphics inspired tools like ggplot2 and Vega-Lite. ggplot2 and Vega-Lite use primitive building blocks, such as visual marks and scales, for creating a wide range of general-purpose visualizations. Lavikka et al. implemented GenomeSpy, adopting the grammar of Vega-Lite, to enable the creation of WebGL-based interactive genomics visualizations."
+  },
+  {
+    "hex_coord": [
+      3,
+      -3
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2153
+    ],
+    "summary": "Gosling supports continuous zooming and panning interactions. Gosling enables a wide range of configurations for view linking with brushes. The goal was to provide first-class support for these concepts in Gosling."
+  },
+  {
+    "hex_coord": [
+      3,
+      -2
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1948,
+      2224
+    ],
+    "summary": "The accompanying JavaScript toolkit called Gosling.js provides scalable and interactive rendering. An online editor and examples of Gosling.js, its source code, and documentation are available at https://gosling.js.org. The accompanying rendering pipeline should be highly scalable to enable smooth performance."
+  },
+  {
+    "hex_coord": [
+      3,
+      -1
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1949,
+      2241,
+      2242
+    ],
+    "summary": "Visualization grammar provides a structured framework for creating visual representations of data. Several grammar-based approaches have been proposed to overcome the limitations of template-based approaches in data visualization. Grammar-based approaches aim to increase the expressiveness of visualization tools by supporting the creation of more diverse visualizations."
+  },
+  {
+    "hex_coord": [
+      3,
+      0
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1545
+    ],
+    "summary": "Table2charts employs a reinforcement learning framework to learn step-by-step visualization constructions from a large corpus of tables paired with charts. It will be possible to generate visualizations based on actual data files rather than descriptions of the files. Data2Vis is a method for automatic generation of data visualizations."
+  },
+  {
+    "hex_coord": [
+      3,
+      1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      590,
+      591
+    ],
+    "summary": "GPT-4o performed best in semantic parsing and explanation tasks. Retrieval is performed using a hybrid strategy that combines semantic vector matching (weight 0.7) and keyword-based exact search (weight 0.3). Retrieve top-k relevant templates from the knowledge base using hybrid search."
+  },
+  {
+    "hex_coord": [
+      4,
+      -5
+    ],
+    "country": 0,
+    "MSU_ids": [
+      588
+    ],
+    "summary": "Circular layouts offer compactness and multidimensional representation capabilities. Circular layouts map data onto channels such as angles, radius, and layers. Circular layouts effectively illustrate hierarchical relationships and the distribution of significance across multiple data dimensions."
+  },
+  {
+    "hex_coord": [
+      4,
+      -5
+    ],
+    "country": 1,
+    "MSU_ids": [
+      656
+    ],
+    "summary": "Previous efforts to visualize positional relationships used linearly arranged ideograms connected by lines to represent rearrangements. The shortcoming of the linear layout becomes apparent in representations associating many ideograms with numerous relationships, where multitudes of lines transgress unrelated ideograms and make patterns difficult to discern. The report hinted at the benefit of adopting the circular layout for application to structural data."
+  },
+  {
+    "hex_coord": [
+      4,
+      -4
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2812
+    ],
+    "summary": "Histogram and line are often paired with themselves to present multiple data attributes. Histogram and line use colors to distinguish different attributes. Histogram and line are ideal for visualizing complex datasets."
+  },
+  {
+    "hex_coord": [
+      4,
+      -3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1374,
+      1511
+    ],
+    "summary": "The Sage system extended the concept of automatic mapping of data variables to visualization by supporting more types of visual encoding. Without task guidance, Ada may choose a misleading visualization. In this example, all the visual encodings come from different sources and have different features."
+  },
+  {
+    "hex_coord": [
+      4,
+      -2
+    ],
+    "country": 0,
+    "MSU_ids": [
+      24,
+      25,
+      26
+    ],
+    "summary": "Visualization plays a crucial role in helping researchers explore complex relationships. Visualization helps researchers uncover patterns. Visualization helps researchers effectively communicate findings."
+  },
+  {
+    "hex_coord": [
+      4,
+      -1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1557,
+      1559
+    ],
+    "summary": "Visualization recommendation systems assist non-experts in creating data visualizations by recommending appropriate visualizations based on the data and task characteristics. Visualization researchers have contributed many visualization recommendation systems, spanning general to domain-specific systems. Existing visualization recommendation systems suggest a data visualization primarily based on the data."
+  },
+  {
+    "hex_coord": [
+      4,
+      0
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1551
+    ],
+    "summary": "Index terms include visualization. Index terms include recommendation systems. Index terms include data."
+  },
+  {
+    "hex_coord": [
+      4,
+      1
+    ],
+    "country": 4,
+    "MSU_ids": [
+      3107
+    ],
+    "summary": "The design goals are derived based on relevant literature [WLL*23, PLW*22, WJT*23]. The process resulted in 29,701 matched pairs with metadata such as paper source, page number, and position. The model was trained for 5 epochs and achieved 99.23% accuracy on the test set."
+  },
+  {
+    "hex_coord": [
+      4,
+      2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1420
+    ],
+    "summary": "The data and task specification panel contains two parts: data description and tasks. The data and task input are discussed in Sect. 3. The steps are demonstrated with the help of data and analysis task discussed in Sect. 4."
+  },
+  {
+    "hex_coord": [
+      4,
+      3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1518
+    ],
+    "summary": "None of the experts involved in the studies are authors of this paper. The Harvard Institutional Review Board determined that these studies did not require research approval under federal regulations. We recruited 13 participants (P1–P13)."
+  },
+  {
+    "hex_coord": [
+      5,
+      -5
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1309,
+      1546,
+      1547,
+      1645
+    ],
+    "summary": "For each design component, the design space is enumerated and rules are crafted to describe the design decisions. Data characteristics involve identifying visual encodings corresponding to the data type of attributes. These rules are usually formalized based on the properties of data, such as trends or outliers, and the effectiveness of visual encodings."
+  },
+  {
+    "hex_coord": [
+      5,
+      -4
+    ],
+    "country": 0,
+    "MSU_ids": [
+      233
+    ],
+    "summary": "The system performs automatic feature recognition. The system supports visual parameter editing. This design promotes continuity in the visualization process."
+  },
+  {
+    "hex_coord": [
+      5,
+      -3
+    ],
+    "country": 0,
+    "MSU_ids": [
+      106,
+      587
+    ],
+    "summary": "The layer-aware reuse mechanism supports efficient iteration and narrative report construction. These approaches address basic visualization needs. R4 enables direct interaction with visualization styles."
+  },
+  {
+    "hex_coord": [
+      5,
+      -2
+    ],
+    "country": 0,
+    "MSU_ids": [
+      124
+    ],
+    "summary": "The semantics-driven multiagent workflow decomposes complex visualization tasks into modular steps. These findings informed the visual design and motivated the choice of a D3-based code to support extensibility and dynamic control. R3 allows users to configure visualizations using natural language commands."
+  },
+  {
+    "hex_coord": [
+      5,
+      -1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1218,
+      1220,
+      1224,
+      1532,
+      1558
+    ],
+    "summary": "Existing visualization recommendation systems are not designed to handle domain-specific problems. Domain knowledge imposes restrictions on recommendation system results, as domain experts may prefer familiar or widely accepted visualizations. It is possible to develop a recommendation model using existing knowledge and best practices from the information visualization field and domain theory."
+  },
+  {
+    "hex_coord": [
+      5,
+      0
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1229,
+      1230,
+      1533,
+      1543,
+      1552
+    ],
+    "summary": "Current task-oriented recommendation systems support domain-independent low-level analytical tasks, such as compare and summarize. Options may lead to serendipitous discoveries. Serendipitous discoveries may lead to a positive attitude towards a recommendation system."
+  },
+  {
+    "hex_coord": [
+      5,
+      0
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2718,
+      3088
+    ],
+    "summary": "The tool should provide recommendations in a progressive manner, offering incremental recommendations based on users’ current needs and the current design. P6 stated that progressive recommendation better aligns with their evolving design needs. Embedding contextual information, such as provenance or real-world examples, can enhance user confidence in AI-driven tools."
+  },
+  {
+    "hex_coord": [
+      5,
+      1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      554
+    ],
+    "summary": "The experts were selected from ongoing collaborations and research networks. Experts provided feedback through scenario walkthroughs, feature prioritization, and mockup evaluations. The feedback validated the proposed layout taxonomy."
+  },
+  {
+    "hex_coord": [
+      5,
+      1
+    ],
+    "country": 4,
+    "MSU_ids": [
+      3114
+    ],
+    "summary": "Participants completed a 7-point Likert questionnaire in a think-aloud protocol, where users were encouraged to justify their ratings (5 minutes). Participants gave feedback on our tool. The questionnaire was designed in two aspects: the tool’s usability and effectiveness."
+  },
+  {
+    "hex_coord": [
+      5,
+      2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1519,
+      1520,
+      1521
+    ],
+    "summary": "The study was designed as a semi-structured interview lasting an hour. A 30-minute evaluation session was arranged with each participant via Zoom. The interviewer explained the study setup by demonstrating the web application."
+  },
+  {
+    "hex_coord": [
+      6,
+      -8
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2777,
+      2800
+    ],
+    "summary": "The position of a track is determined by its inner and outer radii. The inner radius refers to the distance from the inner side of the track to the circle’s center. The outer radius refers to the distance from the outer side of the track to the circle’s center."
+  },
+  {
+    "hex_coord": [
+      6,
+      -6
+    ],
+    "country": 0,
+    "MSU_ids": [
+      79
+    ],
+    "summary": "Circular layouts largely rely on manual design, limiting their efficiency and general applicability. The system supports trackwise customization. The Track Parameter Panel offers fine-grained, layer-specific customization options."
+  },
+  {
+    "hex_coord": [
+      6,
+      -6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1510
+    ],
+    "summary": "We noticed that it was not possible to recommend an orthogonal 'Arrangement' if the 'Layout' of the tracks were circular. The circular layout is not conducive for comparing quantitative data in the BIGWIG file. Some analysts did not like the circular layout based on participant feedback."
+  },
+  {
+    "hex_coord": [
+      6,
+      -6
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2230
+    ],
+    "summary": "Condition padding refers to the addition of extra data or context to meet certain conditions. Transition padding involves adding data to facilitate smooth transitions between states or processes. (conditionPadding | transitionPadding) is defined as a number."
+  },
+  {
+    "hex_coord": [
+      6,
+      -4
+    ],
+    "country": 0,
+    "MSU_ids": [
+      235,
+      334
+    ],
+    "summary": "These characteristics make data interpretation challenging using traditional visualization methods. Existing models often struggle to capture the intricate data relationships, layout dependencies, and intertrack interactions that characterize specialized charts. The tools used to generate these figures were examined."
+  },
+  {
+    "hex_coord": [
+      6,
+      -4
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1526,
+      1530,
+      1531
+    ],
+    "summary": "Existing systems cannot be applied to scenarios which require complex or domain-specific visual encodings. Users may only have familiarity with a small subset of visualizations within the larger design space. The selection of channels depends on the attribute types and low-level analytical tasks users want to perform with the visualization."
+  },
+  {
+    "hex_coord": [
+      6,
+      -4
+    ],
+    "country": 4,
+    "MSU_ids": [
+      3054
+    ],
+    "summary": "Some tools enable interactive analysis on the resulting plots, such as zoom and click functionality. Immediate visual feedback reduces the costs associated with trial-and-error."
+  },
+  {
+    "hex_coord": [
+      6,
+      -3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1206
+    ],
+    "summary": "Experts noted that it might require additional effort to understand and communicate the results of an unfamiliar visualization technique or design. Adding a new component requires careful analysis of its dependencies with all the other components, which can be complex if done post-hoc."
+  },
+  {
+    "hex_coord": [
+      6,
+      -3
+    ],
+    "country": 4,
+    "MSU_ids": [
+      3102
+    ],
+    "summary": "The tool should support the refinement of the recommended results with a suite of easy-to-use interactions. The tool automates the implementation of designs while offering customizable configuration options for fine-tuning the created visualization. This enhancement could streamline the customization process."
+  },
+  {
+    "hex_coord": [
+      6,
+      -2
+    ],
+    "country": 4,
+    "MSU_ids": [
+      3064,
+      3067
+    ],
+    "summary": "The framework includes configuration reference. The framework includes an authoring component. Two retrieval modes are combined to help users retrieve configurations."
+  },
+  {
+    "hex_coord": [
+      6,
+      -1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1227,
+      1553
+    ],
+    "summary": "The system should recommend design alternatives to users whenever it is possible. Explanations will justify the reasons behind recommendations to answer domain user questions, e.g., 'Why was a linear layout recommended over a circular layout?'"
+  },
+  {
+    "hex_coord": [
+      6,
+      -1
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2707,
+      2712,
+      3087,
+      3091
+    ],
+    "summary": "Users should be enabled to describe their design requirements in a natural way. Our tool should support users in naturally expressing their design needs. Refining the recommended design can mitigate the limitations of automated methods."
+  },
+  {
+    "hex_coord": [
+      6,
+      0
+    ],
+    "country": 4,
+    "MSU_ids": [
+      3112
+    ],
+    "summary": "Alex explored alternatives in the Reference Panel. Participants found design recommendation (Q6) and the design-to-implementation process (Q7) useful and aligned with their expectations. All participants agreed that the progressive recommendation met their expectations."
+  },
+  {
+    "hex_coord": [
+      6,
+      1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1228
+    ],
+    "summary": "Options can improve the trust in the system. All participants were volunteers. All responses were analyzed by open coding and thematic analysis."
+  },
+  {
+    "hex_coord": [
+      6,
+      1
+    ],
+    "country": 4,
+    "MSU_ids": [
+      3104
+    ],
+    "summary": "Consent was gained from participants for video recording the whole process. The evaluation process could be improved from several perspectives. All questions in the questionnaire are positive."
+  },
+  {
+    "hex_coord": [
+      7,
+      -5
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2717
+    ],
+    "summary": "ShinyCircos-V2.0 introduces a sample gallery to inspire users with circos plot designs. ShinyCircos-V2.0 requires users to manually digest the samples first and then apply the learned knowledge to the subsequent design of circos plots. The manual process in ShinyCircos-V2.0 is cognitively overwhelming for users."
+  },
+  {
+    "hex_coord": [
+      7,
+      -4
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2668
+    ],
+    "summary": "Despite these advancements, these tools still require intensive manual configuration from users. Users still face design challenges when using these tools. These tools still require manual configuration."
+  },
+  {
+    "hex_coord": [
+      7,
+      -3
+    ],
+    "country": 0,
+    "MSU_ids": [
+      133,
+      548
+    ],
+    "summary": "The system supports realtime refinement and high-quality report export. The task-specific requirements reflect real-world workflow needs. These tools rely on user expertise."
+  },
+  {
+    "hex_coord": [
+      7,
+      -3
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2726,
+      2727,
+      3070
+    ],
+    "summary": "The authoring process often requires switching between tools for design and implementation. Existing tools mainly focus on the implementation step. Some tools are built in more accessible programming languages."
+  },
+  {
+    "hex_coord": [
+      7,
+      -2
+    ],
+    "country": 0,
+    "MSU_ids": [
+      107,
+      203,
+      228,
+      229,
+      586
+    ],
+    "summary": "The system enables interactions and configuration reuse. LLMs can automate complex workflows. GPT-4o and DeepSeek-R1 were selected as the foundation of a semantics-driven multiagent workflow."
+  },
+  {
+    "hex_coord": [
+      7,
+      -1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      195,
+      223
+    ],
+    "summary": "These agents are configured based on preevaluation of model capabilities. Deep-Seek-R1 excelled in structured code generation. These results guided our agent-model assignment strategy."
+  },
+  {
+    "hex_coord": [
+      8,
+      -6
+    ],
+    "country": 1,
+    "MSU_ids": [
+      626
+    ],
+    "summary": "This makes Circos suitable for rapid deployment in data analysis and reporting pipelines. Circos is licensed under GPL and available at http://mkweb.bcgsc.ca/circos. Circos is general and usable in any data domain."
+  },
+  {
+    "hex_coord": [
+      8,
+      -6
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2623,
+      3078,
+      3079,
+      3101
+    ],
+    "summary": "We build a new dataset containing 4396 circos plots with corresponding annotations and configurations, which are extracted and labeled from published papers. Circos plots allow for a compact display of analysis results from multiple dimensions. Circos plots facilitate multiple downstream tasks, such as comparative analysis and correlation analysis, within a single visual space."
+  },
+  {
+    "hex_coord": [
+      8,
+      -5
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2705,
+      2706
+    ],
+    "summary": "Creating circos plots is complex as it requires careful design for multiple track attributes and positional relationships between them. The process of creating circos plots is both tedious and time-intensive. We propose IntelliCircos, an AI-powered interactive authoring tool that streamlines the process from initial visual design to the final implementation of circos plots."
+  },
+  {
+    "hex_coord": [
+      8,
+      -4
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2973,
+      3024,
+      3092
+    ],
+    "summary": "The implementation process requires iterative refinement and frequent updates to achieve an optimal design. The user study aimed to reveal the limitations of IntelliCircos. Five interactive modules are presented in the user interface."
+  },
+  {
+    "hex_coord": [
+      8,
+      -3
+    ],
+    "country": 0,
+    "MSU_ids": [
+      142,
+      234,
+      376,
+      398,
+      482,
+      592
+    ],
+    "summary": "This results in low generation efficiency. This approach reduces manual trial-and-error. Anonymized outputs and a standardized rubric were used to ensure fairness and consistency."
+  },
+  {
+    "hex_coord": [
+      8,
+      -3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1216
+    ],
+    "summary": "Experts noted that the ability to specify data requirements in familiar file formats could reduce the learning curve associated with the system. The modular architecture ensures that individual components are easy to update without affecting other system modules."
+  },
+  {
+    "hex_coord": [
+      8,
+      -3
+    ],
+    "country": 4,
+    "MSU_ids": [
+      3075,
+      3080
+    ],
+    "summary": "The syntax conceals implementation details to minimize the burden and cost of dataset annotation. This underscores the value of intuitive UI enhancements in reducing the learning curve. This approach could reduce the need for manual adjustments."
+  },
+  {
+    "hex_coord": [
+      8,
+      -2
+    ],
+    "country": 0,
+    "MSU_ids": [
+      198
+    ],
+    "summary": "The workflow introduces specialized LLM-based agents responsible for key subtasks. The agents are enhanced through structured prompts, modular code abstraction, and retrieval-augmented grounding. This division supports a modular workflow where each agent operates on tasks aligned with the LLM’s strengths."
+  },
+  {
+    "hex_coord": [
+      9,
+      -6
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2697,
+      2732,
+      2733,
+      3046
+    ],
+    "summary": "Analysts often seek inspiration from existing circos plots and iteratively adjust and refine the plot to achieve a satisfactory final design. The results demonstrate the usability and effectiveness of IntelliCircos in authoring circos plots. The process of creating circos plots consists of two main steps: design and implementation."
+  },
+  {
+    "hex_coord": [
+      9,
+      -5
+    ],
+    "country": 4,
+    "MSU_ids": [
+      3050,
+      3055,
+      3093,
+      3094,
+      3095,
+      3098,
+      3100
+    ],
+    "summary": "We conduct a user study with 8 bioinformatics analysts to evaluate IntelliCircos. IntelliCircos allows users to browse and analyze configurations of similar charts. IntelliCircos provides progressive design recommendations considering both user-specified constraints and current creation in the user interface."
+  },
+  {
+    "hex_coord": [
+      9,
+      -4
+    ],
+    "country": 4,
+    "MSU_ids": [
+      3110
+    ],
+    "summary": "A qualitative assessment of users’ experiences with IntelliCircos was conducted, comparing it to their current practices. The semi-structured interview included topics on practices with existing tools and experience with IntelliCircos. The quantitative results of the user study reflect participants’ ratings on the usability of IntelliCircos."
+  },
+  {
+    "hex_coord": [
+      10,
+      -6
+    ],
+    "country": 4,
+    "MSU_ids": [
+      3056
+    ],
+    "summary": "Participants praised the quality of the final circos plot (Q9). Participants suggested features such as split karyotype plots and log-scale color mappings for future development of IntelliCircos."
+  }
 ]
