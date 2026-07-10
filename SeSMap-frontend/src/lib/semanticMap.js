@@ -1461,6 +1461,57 @@ function truncatePromptText(text, maxLen = 900) {
   return clean.slice(0, maxLen - 3).trim() + '...';
 }
 
+function normalizeHsuSummaryResponse(raw) {
+  const text = String(raw || '').trim();
+  if (!text) return '';
+  try {
+    const parsed = JSON.parse(text);
+    if (typeof parsed === 'string') return parsed.trim();
+    return String(
+      parsed?.summary ||
+      parsed?.answer ||
+      parsed?.text ||
+      parsed?.RouteSummary ||
+      parsed?.payload?.summary ||
+      parsed?.payload?.answer ||
+      parsed?.payload?.text ||
+      ''
+    ).trim();
+  } catch (_) {
+    return text;
+  }
+}
+
+function buildLocalHsuSummary(item, maxSentences = 4) {
+  const ids = Array.isArray(item?.msu_ids) ? item.msu_ids : [];
+  const sentences = [];
+  ids.forEach(id => {
+    const rec = getMsuRecord(id);
+    const text = cleanMsuEvidenceText(rec?.sentence || rec?.text || rec?.content || '');
+    if (text && !sentences.includes(text)) sentences.push(text);
+  });
+
+  if (!sentences.length) {
+    const existing = cleanMsuEvidenceText(item?.summary || '');
+    if (existing && !/semantic units are aggregated/i.test(existing)) {
+      return `- Main evidence: ${existing}`;
+    }
+    return '';
+  }
+
+  if (sentences.length === 1) return `- Main evidence: ${sentences[0]}`;
+
+  const visible = sentences.slice(0, maxSentences);
+  const lines = visible.map((sentence, idx) => {
+    const label = idx === 0 ? 'Primary evidence' : `Related evidence ${idx + 1}`;
+    return `- ${label}: ${truncatePromptText(sentence, 360)}`;
+  });
+  if (sentences.length > visible.length) {
+    lines.push(`- Additional evidence: ${sentences.length - visible.length} more MSUs are included in this aggregated HSU.`);
+  }
+  return lines.join('\n');
+}
+
 function getHsuSummaryKey(panelIdx, item) {
   const ids = (Array.isArray(item?.msu_ids) ? item.msu_ids : [])
     .map(x => String(x))
@@ -1475,10 +1526,11 @@ function buildHsuHoverPrompt(panelIdx, item) {
   const ids = Array.isArray(item?.msu_ids) ? item.msu_ids : [];
   const sentenceLines = [];
   const contextMap = new Map();
+  const maxPromptMsus = 24;
 
-  ids.forEach((id, idx) => {
+  ids.slice(0, maxPromptMsus).forEach((id, idx) => {
     const rec = getMsuRecord(id);
-    const sentence = cleanMsuEvidenceText(rec?.sentence || rec?.text || rec?.content || '');
+    const sentence = truncatePromptText(rec?.sentence || rec?.text || rec?.content || '', 520);
     if (!sentence) return;
 
     const category = cleanMsuEvidenceText(rec?.category || rec?.type || '');
@@ -1506,6 +1558,10 @@ function buildHsuHoverPrompt(panelIdx, item) {
     }
     contextMap.get(paraKey).msus.push(idx + 1);
   });
+
+  if (ids.length > maxPromptMsus) {
+    sentenceLines.push(`- Coverage note: ${ids.length - maxPromptMsus} additional MSUs are omitted from this LLM prompt to keep hover summarization responsive.`);
+  }
 
   const originalContexts = Array.from(contextMap.values());
   const contextLines = originalContexts
@@ -1560,36 +1616,70 @@ async function requestHsuHoverSummary(panelIdx, item) {
   if (App.hsuSummaryCache.has(key) || App.hsuSummaryPending.has(key)) return;
 
   if (ids.length === 1) {
-    const rec = getMsuRecord(ids[0]);
-    const text = (rec?.sentence || rec?.text || '').trim();
-    App.hsuSummaryCache.set(key, { status: 'ready', text: text ? `- Main point: ${text}` : '' });
+    App.hsuSummaryCache.set(key, { status: 'ready', text: buildLocalHsuSummary(item) });
     return;
   }
+
+  const fallbackText = buildLocalHsuSummary(item);
+  const controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
+  const timeoutId = controller ? setTimeout(() => controller.abort(), 26000) : null;
 
   const pending = fetch('/api/query', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
+    signal: controller ? controller.signal : undefined,
     body: JSON.stringify({
       task: 'hsu_hover_summary',
       query: buildHsuHoverPrompt(panelIdx, item)
     })
   })
     .then(async res => {
-      const text = (await res.text()).trim();
+      const raw = await res.text();
+      const text = normalizeHsuSummaryResponse(raw);
       if (!res.ok) throw new Error(text || `HSU summary failed (${res.status})`);
-      App.hsuSummaryCache.set(key, { status: 'ready', text });
+      App.hsuSummaryCache.set(key, { status: 'ready', text: text || fallbackText });
     })
     .catch(err => {
       console.warn('[HSU hover summary] failed:', err);
-      App.hsuSummaryCache.set(key, { status: 'error', text: '' });
+      App.hsuSummaryCache.set(key, fallbackText
+        ? { status: 'ready', text: fallbackText }
+        : { status: 'error', text: '' });
     })
     .finally(() => {
+      if (timeoutId) clearTimeout(timeoutId);
       App.hsuSummaryPending.delete(key);
       refreshHoveredBucketTooltip();
     });
 
   App.hsuSummaryPending.set(key, pending);
   refreshHoveredBucketTooltip();
+}
+
+function getVisibleBucketSummaryItems(bucket) {
+  if (!bucket) return [];
+  const groups = new Map();
+  const items = Array.isArray(bucket.items) ? bucket.items : [];
+  for (let i = 0; i < items.length; i++) {
+    const it = items[i] || {};
+    const cid = normalizeCountryId(it.country_id || '—');
+    if (!groups.has(cid)) groups.set(cid, { cid, items: [] });
+    groups.get(cid).items.push(it);
+  }
+
+  const focusCid = App && App.focusCountryId ? normalizeCountryId(App.focusCountryId) : null;
+  const ordered = Array.from(groups.values()).sort((a, b) => {
+    if (focusCid) {
+      if (a.cid === focusCid && b.cid !== focusCid) return -1;
+      if (b.cid === focusCid && a.cid !== focusCid) return 1;
+    }
+    return (a.cid < b.cid) ? -1 : (a.cid > b.cid) ? 1 : 0;
+  });
+
+  const out = [];
+  ordered.slice(0, 4).forEach(group => {
+    group.items.slice(0, 4).forEach(item => out.push(item));
+  });
+  return out;
 }
 
 function scheduleBucketDynamicSummaries(bucket) {
@@ -1602,7 +1692,7 @@ function scheduleBucketDynamicSummaries(bucket) {
   if (!App.hoveredHex) return;
   const current = `${App.hoveredHex.panelIdx}|${App.hoveredHex.q},${App.hoveredHex.r}`;
   if (current !== target) return;
-  (bucket.items || []).forEach(item => requestHsuHoverSummary(bucket.panelIdx, item));
+  getVisibleBucketSummaryItems(bucket).forEach(item => requestHsuHoverSummary(bucket.panelIdx, item));
 }
 
 function getDisplaySummaryForHsuItem(panelIdx, item) {
@@ -1614,7 +1704,7 @@ function getDisplaySummaryForHsuItem(panelIdx, item) {
   const key = getHsuSummaryKey(panelIdx, item);
   const cached = App.hsuSummaryCache?.get?.(key);
   if (cached?.status === 'ready') return cached.text || '';
-  if (cached?.status === 'error') return 'LLM summary unavailable for this aggregated HSU.';
+  if (cached?.status === 'error') return buildLocalHsuSummary(item) || 'LLM summary unavailable for this aggregated HSU.';
   if (App.hsuSummaryPending?.has?.(key)) return 'Generating LLM summary...';
   return 'Generating LLM summary...';
 }
@@ -2997,6 +3087,45 @@ function hideColorMenu() {
   if (menu) menu.style.display = 'none';
 }
 
+function isHexTooltipNode(node) {
+  return !!(node && (
+    node.id === 'hex-tip' ||
+    (typeof node.closest === 'function' && node.closest('#hex-tip'))
+  ));
+}
+
+function clearHexTooltipState() {
+  if (App.hsuSummaryHoverTimer) clearTimeout(App.hsuSummaryHoverTimer);
+  App.hsuSummaryHoverTimer = null;
+  App.hoveredTooltipBucket = null;
+  App.lastHexTooltipClient = null;
+}
+
+function getVisibleHexTooltip() {
+  const tip = document.getElementById('hex-tip');
+  if (!tip || tip.style.display === 'none') return null;
+  return tip;
+}
+
+function isPointInsideHexTooltip(clientX, clientY) {
+  const tip = getVisibleHexTooltip();
+  if (!tip) return false;
+  const rect = tip.getBoundingClientRect();
+  return clientX >= rect.left && clientX <= rect.right && clientY >= rect.top && clientY <= rect.bottom;
+}
+
+function consumeHexTooltipWheel(event) {
+  const tip = getVisibleHexTooltip();
+  if (!tip) return false;
+  if (!isPointInsideHexTooltip(event.clientX, event.clientY)) return false;
+  event.preventDefault();
+  event.stopPropagation();
+  if (typeof event.stopImmediatePropagation === 'function') event.stopImmediatePropagation();
+  tip.scrollTop += event.deltaY;
+  tip.scrollLeft += event.deltaX;
+  return true;
+}
+
 // —— Hover Tooltip（与改色菜单同级的小组件）——
 function ensureHexTooltip() {
   let tip = document.getElementById('hex-tip');
@@ -3007,7 +3136,7 @@ function ensureHexTooltip() {
   Object.assign(tip.style, {
     position: 'fixed',
     display: 'none',
-    zIndex: 9998,
+    zIndex: 2147483600,
     width: 'auto',
     minWidth: '240px',
     maxWidth: 'min(460px, calc(100vw - 28px))',
@@ -3028,7 +3157,17 @@ function ensureHexTooltip() {
     whiteSpace: 'normal',
     overflowWrap: 'anywhere',
     wordBreak: 'break-word',
-    pointerEvents: 'none'
+    pointerEvents: 'auto'
+  });
+  tip.addEventListener('wheel', (event) => {
+    consumeHexTooltipWheel(event);
+  }, { passive: false });
+  tip.addEventListener('mouseleave', () => {
+    hideHexTooltip();
+    clearHexTooltipState();
+    App.hoveredHex = null;
+    App.highlightedHexKeys?.clear?.();
+    updateHexStyles?.();
   });
   tip.innerHTML = ''; // 动态填充
   document.body.appendChild(tip);
@@ -4734,13 +4873,11 @@ const mode = getPanelLayoutMode(panelIdx);
           })
 
           .on('mouseout', (event, d) => {
+            if (isHexTooltipNode(event.relatedTarget)) return;
             if (App.hoveredHex?.panelIdx === panelIdx && App.hoveredHex.q === d.q && App.hoveredHex.r === d.r) {
               App.hoveredHex = null;
             }
-            if (App.hsuSummaryHoverTimer) clearTimeout(App.hsuSummaryHoverTimer);
-            App.hsuSummaryHoverTimer = null;
-            App.hoveredTooltipBucket = null;
-            App.lastHexTooltipClient = null;
+            clearHexTooltipState();
             // 无论是否有国家聚焦，都清理预览集合
             App.highlightedHexKeys.clear();
             updateHexStyles();
@@ -4882,7 +5019,8 @@ const mode = getPanelLayoutMode(panelIdx);
           .on('mousemove', (event) => {
             moveHexTooltip(event.clientX, event.clientY);
           })
-          .on('mouseout', () => {
+          .on('mouseout', (event) => {
+            if (isHexTooltipNode(event.relatedTarget)) return;
             hideHexTooltip();
           }),
         update => update
@@ -6613,6 +6751,12 @@ function schedulePanelGeometryRefresh(panelIdx = null) {
   };
   document.addEventListener('mousemove', onMouseMoveGlobal);
   cleanupFns.push(() => document.removeEventListener('mousemove', onMouseMoveGlobal));
+
+  const onWheelCaptureForTooltip = (event) => {
+    consumeHexTooltipWheel(event);
+  };
+  document.addEventListener('wheel', onWheelCaptureForTooltip, { capture: true, passive: false });
+  cleanupFns.push(() => document.removeEventListener('wheel', onWheelCaptureForTooltip, { capture: true }));
 
   // 点击空白：单击 = 清空并回到默认；双击 = 优先处理正在绘制的连线/起点
   const onBlankClick = (e) => {
