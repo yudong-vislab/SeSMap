@@ -1096,6 +1096,38 @@ function resolveScatterPointFill(d, fallback = '#999') {
   return countryColor || parentFill;
 }
 
+function getConflictContextCountryId(panelIdx, q, r, key, focusCid = null) {
+  const bucket = getBucket(panelIdx, q, r);
+  if (!bucket || !bucket.countries || bucket.countries.size <= 1) return null;
+  const countries = new Set(Array.from(bucket.countries).map(normalizeCountryId));
+
+  if (App.visibleCountries) {
+    const visible = Array.from(countries).filter(cid => App.visibleCountries.has(cid));
+    if (visible.length === 1) return visible[0];
+  }
+
+  const pendingCid = App._pendingColorEdit?.countryId
+    ? normalizeCountryId(App._pendingColorEdit.countryId)
+    : null;
+  if (pendingCid && countries.has(pendingCid) && App._pendingColorEdit?.keys?.has?.(key)) {
+    return pendingCid;
+  }
+
+  if (App.highlightedHexKeys?.has?.(key) && App.hoveredHex) {
+    const hoveredBucket = getBucket(App.hoveredHex.panelIdx, App.hoveredHex.q, App.hoveredHex.r);
+    if (hoveredBucket?.countries?.size === 1) {
+      const hoveredCid = normalizeCountryId(Array.from(hoveredBucket.countries)[0]);
+      if (countries.has(hoveredCid)) return hoveredCid;
+    }
+    const hoveredHex = App.hexMapsByPanel?.[App.hoveredHex.panelIdx]?.get?.(`${App.hoveredHex.q},${App.hoveredHex.r}`);
+    const hoveredCid = hoveredHex?.country_id ? normalizeCountryId(hoveredHex.country_id) : null;
+    if (hoveredCid && countries.has(hoveredCid)) return hoveredCid;
+  }
+
+  if (focusCid && countries.has(focusCid)) return focusCid;
+  return null;
+}
+
 function emitSemanticColorSnapshot() {
   try {
     const detail = (typeof _buildMiniSnapshot === 'function')
@@ -5596,11 +5628,23 @@ function updateHexStyles() {
       const conflictBaseFill = isConflict
         ? ((STYLE && STYLE.CONFLICT_GRAY) ? STYLE.CONFLICT_GRAY : '#B0B0B0')
         : null;
-       // 冲突格只使用冲突色或默认冲突灰，不混入国家独有色。
+      const conflictContextCid = isConflict
+        ? getConflictContextCountryId(panelIdx, d.q, d.r, key, focusCid)
+        : null;
+      const conflictContextColor = conflictContextCid
+        ? (
+            (App._pendingColorEdit?.countryId && normalizeCountryId(App._pendingColorEdit.countryId) === conflictContextCid && App._pendingColorEdit?.keys?.has?.(key))
+              ? App._pendingColorEdit.color
+              : getExplicitCountryColor(panelIdx, conflictContextCid)
+          )
+        : null;
+      // 冲突格平时保持灰色；当 Alt/筛选/聚焦明确指向某个已上色国家时，临时显示该国家色。
       if (isConflict) {
         confirmedCountryColor = null;
-        previewColor = null;
-        previewAlpha = null;
+        if (!conflictContextColor) {
+          previewColor = null;
+          previewAlpha = null;
+        }
       }
       let confirmedConflictColor = null;
       let confirmedConflictAlphaMap = null;
@@ -5623,9 +5667,10 @@ function updateHexStyles() {
       }
 
       // —— 颜色与 alpha 选择优先级 —— //
-      // 颜色：冲突预览 > 冲突已确认 > 国家预览 > 国家已确认 > 焦点底色 > 默认底色
+      // 颜色：冲突预览 > 当前国家上下文里的冲突色 > 冲突已确认 > 国家预览 > 国家已确认 > 焦点底色 > 默认底色
       let finalFill =
         previewConflictColor ??
+        conflictContextColor ??
         confirmedConflictColor ??
         previewColor ??
         confirmedCountryColor ??
