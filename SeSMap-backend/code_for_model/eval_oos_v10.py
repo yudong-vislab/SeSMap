@@ -31,8 +31,7 @@ import torch.optim as optim
 BACKEND = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(BACKEND))
 import local_config as cfg
-from code_for_model.train_all_v7 import ResidualProjectionMapper, set_seed, load_embeddings
-from code_for_model.train_all_v10 import compute_joint_P
+from code_for_model.models import ResidualProjectionMapper, set_seed, load_embeddings, compute_joint_P
 
 from sklearn.neighbors import NearestNeighbors
 

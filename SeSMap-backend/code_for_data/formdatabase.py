@@ -23,11 +23,7 @@ from sentence_transformers import SentenceTransformer, models
 BACKEND = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(BACKEND))
 import local_config as cfg
-from code_for_model.train_all_v5 import Bert2DMapper
-try:
-    from code_for_model.train_all_v7 import ResidualProjectionMapper
-except Exception:
-    ResidualProjectionMapper = None
+from code_for_model.models import Bert2DMapper, ResidualProjectionMapper
 
 
 def load_sbert(model_path: Path, device: str):

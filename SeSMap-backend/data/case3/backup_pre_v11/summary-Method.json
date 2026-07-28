@@ -1,0 +1,3736 @@
+[
+  {
+    "hex_coord": [
+      -4,
+      5
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2744
+    ],
+    "summary": "3,377 PDF documents were downloaded from SemanticScholar and Unpaywall. The library was accessed on 2024-11-12. The library was accessed on 2024-11-19."
+  },
+  {
+    "hex_coord": [
+      -3,
+      0
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2181,
+      2307
+    ],
+    "summary": "One can use data of a SARS-CoV2 reference sequence along with gene and protein annotations and recombination sites to author visualizations as found in the WashU Virus Browser. A multi-scale sequence track is used in our re-implementation of the WashU Virus Browser. Flynn JA, Purushotham D, Choudhary MN, Zhuo X, Fan C, Matt G, Li D, and Wang T authored the study 'Exploring the coronavirus pandemic with the WashU Virus Genome Browser.'"
+  },
+  {
+    "hex_coord": [
+      -3,
+      1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      943
+    ],
+    "summary": "Downloaded from genome.cshlp.org on November 6, 2017. Constantine, D. 2007. Closeups of the Genome: Species by Species by Species. Darwin, C. 1859. On the Origin of Species by Natural Selection."
+  },
+  {
+    "hex_coord": [
+      -2,
+      -4
+    ],
+    "country": 1,
+    "MSU_ids": [
+      692,
+      875,
+      882,
+      890
+    ],
+    "summary": "A series of image archetypes (Figures 1-4) are presented with data used in a multipatient whole-genome analysis of genomic rearrangements in follicular lymphoma. Follicular lymphoma is a common B-cell malignancy. Structural data are derived from primary tumor samples from five patients diagnosed with follicular lymphoma."
+  },
+  {
+    "hex_coord": [
+      -2,
+      -4
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1704
+    ],
+    "summary": "Whole-genome sequencing was performed on triple-negative breast cancers."
+  },
+  {
+    "hex_coord": [
+      -2,
+      -3
+    ],
+    "country": 0,
+    "MSU_ids": [
+      400,
+      429
+    ],
+    "summary": "Data upload and autoparsing of chromosomal translocation and gene expression profiles are performed. $E _ { A }$ aimed to investigate chromosomal translocation patterns in AML. AML is a hematologic malignancy often driven by specific structural variants."
+  },
+  {
+    "hex_coord": [
+      -2,
+      -3
+    ],
+    "country": 1,
+    "MSU_ids": [
+      947
+    ],
+    "summary": "Canada’s Michael Smith Genome Sciences Center is located at 100-570 West 7th Avenue, Vancouver, BC, V5Z 4S6, Canada. British Columbia Cancer Research Center is affiliated with the British Columbia Cancer Agency. The address of the British Columbia Cancer Agency is 675 West 10th."
+  },
+  {
+    "hex_coord": [
+      -2,
+      -2
+    ],
+    "country": 1,
+    "MSU_ids": [
+      908
+    ],
+    "summary": "Genome-wide massively parallel paired-end sequencing was used. Eckhardt et al. conducted DNA methylation profiling of human chromosomes 6, 20, and 22. The study is titled 'Endsequence profiling: sequence-based analysis of aberrant genomes.'"
+  },
+  {
+    "hex_coord": [
+      -2,
+      -2
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2261,
+      2282,
+      2285,
+      2286,
+      2312,
+      2384
+    ],
+    "summary": "Large-scale data repositories provide access to thousands of datasets covering hundreds of species, cell types, tissues, and experimental conditions. Large-scale initiatives provide access to thousands of datasets covering hundreds of species, cell types, tissues, and experimental conditions. Barski A, Cuddapah S, Cui K, Roh T-Y, Schones DE, Wang Z, Wei G, Chepelev I, and Zhao K conducted a study on histone methylations in the human genome."
+  },
+  {
+    "hex_coord": [
+      -2,
+      -2
+    ],
+    "country": 4,
+    "MSU_ids": [
+      3218
+    ],
+    "summary": "Circus utilizes paired-end and mate-pair sequencing data."
+  },
+  {
+    "hex_coord": [
+      -2,
+      -1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      434
+    ],
+    "summary": "$E _ { A }$ incorporated a second dataset containing gene expression profiles. $E _ { B }$ uploaded an additional dataset with insertion and deletion events."
+  },
+  {
+    "hex_coord": [
+      -2,
+      -1
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1817,
+      2538
+    ],
+    "summary": "These methods can measure gene expression levels. NCBI GEO is a database for mining millions of expression profiles. The database provides tools for analyzing gene expression data."
+  },
+  {
+    "hex_coord": [
+      -2,
+      -1
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2887
+    ],
+    "summary": "Typing '\\data' adds all dataset names and types (karyotype data and attachment data) to the start of the user input."
+  },
+  {
+    "hex_coord": [
+      -2,
+      0
+    ],
+    "country": 0,
+    "MSU_ids": [
+      302,
+      311
+    ],
+    "summary": "Users begin by selecting reference data in the Reference Genome Selection view. Reference genome selection enables selecting from standard genome assemblies."
+  },
+  {
+    "hex_coord": [
+      -2,
+      0
+    ],
+    "country": 1,
+    "MSU_ids": [
+      821,
+      822,
+      993,
+      996,
+      997
+    ],
+    "summary": "The short-read Illumina sequencing data was assembled using ABySS. Sequence similarity data relating the dog (UCSC, canFam2, May 2005) and human (UCSC, hg18, Mar 2006) genomes were downloaded from the UCSC Genome Browser from the chainCanFam2 table (track: Dog Chain, track group: Comparative Genomics). The grapevine genome sequence suggests ancestral hexaploidization in major angiosperm phyla."
+  },
+  {
+    "hex_coord": [
+      -2,
+      2
+    ],
+    "country": 0,
+    "MSU_ids": [
+      128
+    ],
+    "summary": "During sessions, experts reviewed representative circular visualizations extracted from 42 papers."
+  },
+  {
+    "hex_coord": [
+      -2,
+      2
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2839
+    ],
+    "summary": "Chroma [Tea22] is used to build the vector database. TEAM C. published a resource titled 'Getting started with chroma' in 2022. The resource is accessible via the URL: https://github.com/chroma-core/chroma/."
+  },
+  {
+    "hex_coord": [
+      -2,
+      3
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2754
+    ],
+    "summary": "Negative samples were sourced from VIS30K. The study was published in IEEE Transactions on Visualization and Computer Graphics in 2013. Vis30k is a collection of figures and tables from IEEE Visualization Conference publications."
+  },
+  {
+    "hex_coord": [
+      -1,
+      -5
+    ],
+    "country": 0,
+    "MSU_ids": [
+      499
+    ],
+    "summary": "Group B (n = 6) followed the reverse order."
+  },
+  {
+    "hex_coord": [
+      -1,
+      -5
+    ],
+    "country": 1,
+    "MSU_ids": [
+      785,
+      826,
+      827
+    ],
+    "summary": "Alignments from the second half of this contig are inverted in their progression relative to clone order. This inversion suggests that the rearrangement is an inversion. The classical t(14;18) translocation is exemplified by the alignments of BACs 175B19 and 278H11 from a contig of patient 13."
+  },
+  {
+    "hex_coord": [
+      -1,
+      -4
+    ],
+    "country": 0,
+    "MSU_ids": [
+      462
+    ],
+    "summary": "The copy number variation track is generated and modified."
+  },
+  {
+    "hex_coord": [
+      -1,
+      -4
+    ],
+    "country": 1,
+    "MSU_ids": [
+      705,
+      706,
+      707,
+      728,
+      753,
+      816,
+      817,
+      819,
+      820,
+      963
+    ],
+    "summary": "For each sample, the figure shows large-scale rearrangements, density of small-scale events, and copy number profile. At 130Mb on chromosome 1, each sample has large deletions, inversions, and translocations involving chromosomes 4, 16, and 17. This region marks the beginning of significantly increased copy number in three samples that continues to the end of the 1q arm."
+  },
+  {
+    "hex_coord": [
+      -1,
+      -3
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1816,
+      1818,
+      1819,
+      1820
+    ],
+    "summary": "The genome of an organism encodes the blueprints of its proteins and RNA molecules, which are key molecular building blocks of life. The genome can be thought of as a long sequence consisting of the letters A, C, G, and T (i.e., nucleotides), which make up the genomic alphabet. Genomes can range from a few hundreds of thousands to many billion nucleotides in length."
+  },
+  {
+    "hex_coord": [
+      -1,
+      -2
+    ],
+    "country": 0,
+    "MSU_ids": [
+      139,
+      140,
+      141,
+      258
+    ],
+    "summary": "The proliferation of high-throughput sequencing technologies has transformed genomics into a data-intensive field. Modern experiments generate massive volumes of sequence-based data, such as structural variations, gene expression profiles, and chromosomal rearrangements. Sequence-based data are both large scale and heterogeneous."
+  },
+  {
+    "hex_coord": [
+      -1,
+      -2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1154,
+      1155,
+      1157,
+      1158,
+      1159,
+      1406
+    ],
+    "summary": "The almost ubiquitous availability of genomic data has revolutionized research in biology and medicine. Interpreting genomic and epigenomic data can improve our understanding of the genetic causes and mechanisms that underlie common and rare diseases. The 'Identify' task involves analyzing features in a genomic region of interest to read a specific feature value."
+  },
+  {
+    "hex_coord": [
+      -1,
+      -2
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2926,
+      2927,
+      2928,
+      2941,
+      2944
+    ],
+    "summary": "Genomics data is essential in biological and medical domains. Genomics data has played a vital role in biological and medical domains. The comparison includes gene conservation scores."
+  },
+  {
+    "hex_coord": [
+      -1,
+      -1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      303,
+      323,
+      362
+    ],
+    "summary": "The PanVa visual analysis tool assists researchers in exploring gene variations within complex genotype–phenotype relationships. Users explore genomic features and statistics in the Data Store View. The Data Store View presents uploaded genomic datasets alongside extracted features."
+  },
+  {
+    "hex_coord": [
+      -1,
+      -1
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1901,
+      1955,
+      2145,
+      2182,
+      2216,
+      2254,
+      2294,
+      2300,
+      2309,
+      2310,
+      2342,
+      2360,
+      2462,
+      2463,
+      2545
+    ],
+    "summary": "Variant View is a tool for visualizing genetic variants in the discontinuous biological scales, like the gene or protein sequence. HiGlass supports data scalability for multi-scale genomics data. HiGlass preprocesses data to store aggregated information, such as nearby quantitative values or filtered values, for given genomic regions and resolutions."
+  },
+  {
+    "hex_coord": [
+      -1,
+      0
+    ],
+    "country": 1,
+    "MSU_ids": [
+      932,
+      959,
+      960,
+      966,
+      967,
+      986,
+      1001,
+      1009
+    ],
+    "summary": "GenAlyzer is an interactive tool for visualizing sequence similarities between entire genomes. GenAlyzer facilitates the analysis of genome-wide sequence similarities. Graphical tools for comparative genome analysis are discussed."
+  },
+  {
+    "hex_coord": [
+      -1,
+      0
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2412
+    ],
+    "summary": "Genomediagram is a Python package for the visualization of large-scale genomic data."
+  },
+  {
+    "hex_coord": [
+      -1,
+      0
+    ],
+    "country": 4,
+    "MSU_ids": [
+      3136
+    ],
+    "summary": "Tbtools is an integrative toolkit developed for interactive analyses of big biological data. The toolkit was introduced in the paper 'Tbtools: an integrative toolkit developed for interactive analyses of big biological data' published in Molecular Plant."
+  },
+  {
+    "hex_coord": [
+      -1,
+      1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      125,
+      190
+    ],
+    "summary": "AuraGenome is grounded in task-specific requirements identified through close collaboration with genomics experts. BioCircos reimplements Circos using a JavaScript library. Semistructured interviews and design discussions were conducted with eight genomics experts."
+  },
+  {
+    "hex_coord": [
+      -1,
+      1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1198,
+      1395,
+      1444,
+      1445,
+      1446,
+      1460
+    ],
+    "summary": "Experts were interviewed to understand their genomics visualization authoring process and current challenges. Participants were recruited through advertisements on various Slack teams in the computational biology and genomics communities and Twitter. The participants had experience at the intersection of genomics and visualization ranging from 8–20 years."
+  },
+  {
+    "hex_coord": [
+      0,
+      -6
+    ],
+    "country": 1,
+    "MSU_ids": [
+      854
+    ],
+    "summary": "Fingerprinted clones are represented as tiles in track D, with clone names shown in track E."
+  },
+  {
+    "hex_coord": [
+      0,
+      -5
+    ],
+    "country": 1,
+    "MSU_ids": [
+      735,
+      737,
+      783,
+      825,
+      853,
+      860,
+      861,
+      862,
+      871,
+      898,
+      899
+    ],
+    "summary": "The images range in resolution from whole-genome (3 Gb), to a fingerprint-map contig (10 Mb), to a single Bacterial Artificial Chromosome (BAC) clone (100kb), and finally to a sequence contig (10kb). Figure 2 demonstrates three large-scale structural changes at the magnification level of a single fingerprint map contig (1-10Mb). The correspondence between the order of BACs in the map contig and on the sequence assembly can be demonstrated clearly at this magnification."
+  },
+  {
+    "hex_coord": [
+      0,
+      -4
+    ],
+    "country": 0,
+    "MSU_ids": [
+      353
+    ],
+    "summary": "Standard genome assemblies, such as hg19/GRCh37, serve as the foundational coordinate system for layout construction and alignment. The visualizations are anchored to a user-specified reference genome, such as hg19, which defines the genomic coordinate system."
+  },
+  {
+    "hex_coord": [
+      0,
+      -4
+    ],
+    "country": 1,
+    "MSU_ids": [
+      775
+    ],
+    "summary": "Figure 1 shows a whole-genome visual representation of genomic rearrangements in multiple genomes. Representing syntenic blocks as transparent ribbons indicates multiple similarity targets for a given stretch of dog sequence. Dog chromosome 31 shows similarity to both human chromosomes 3 and 21, rather than a single consensus target."
+  },
+  {
+    "hex_coord": [
+      0,
+      -4
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2030
+    ],
+    "summary": "The genome sequence may be divided into several separate chromosomes, as illustrated in Fig. 2. Many species have only a single chromosome. The research community designates a 'reference genome' sequence for each species to compare data from multiple methods."
+  },
+  {
+    "hex_coord": [
+      0,
+      -4
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2918,
+      2919
+    ],
+    "summary": "The Levenshtein distance measures the difference between two sequences by counting the minimum number of single-character edits required to transform one string into the other. Data is categorized into karyotype data, which marks chromosome and gene hierarchy information. Data is categorized into attachment data, which marks quantitative or qualitative data associated with genes."
+  },
+  {
+    "hex_coord": [
+      0,
+      -3
+    ],
+    "country": 0,
+    "MSU_ids": [
+      492
+    ],
+    "summary": "Extracted features include mutation categories, zygosity types, and validation status. The genomic variation data included chromosome location, mutation type, and zygosity."
+  },
+  {
+    "hex_coord": [
+      0,
+      -3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1188,
+      1260,
+      1430,
+      1431,
+      1432
+    ],
+    "summary": "Genomic features include point, segment, sparse, and contiguous types. This section provides an overview of the genome-mapped datasets. Chromosomes are subdivided into smaller regions called genes (feature sets or features)."
+  },
+  {
+    "hex_coord": [
+      0,
+      -3
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2024,
+      2029,
+      2091
+    ],
+    "summary": "A principal challenge in interpreting genomic data is that patterns can arise at multiple levels of scale (multi-scale). Patterns in genomic data can arise across many different locations on the genome (multi-focus). Patterns in genomic data can arise between several datasets (multi-modal)."
+  },
+  {
+    "hex_coord": [
+      0,
+      -3
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2984
+    ],
+    "summary": "The example data includes link data to establish connections between pairs of genomic regions."
+  },
+  {
+    "hex_coord": [
+      0,
+      -2
+    ],
+    "country": 0,
+    "MSU_ids": [
+      134,
+      219
+    ],
+    "summary": "The system efficiently ingests tabular genomic data. Visualization strategies include heatmaps for expression data or links for structural variation. We aim to enable multiview genomic representations that accommodate diverse analytical needs."
+  },
+  {
+    "hex_coord": [
+      0,
+      -2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1156,
+      1287
+    ],
+    "summary": "Analyzing large-scale genomic data requires multiple coordinated views. The 'Compare' task involves comparing features located in multiple genomic regions. Ada wants to develop a visualization to analyze genetic data obtained from three different files: a BED file, a VCF file, and a BIGWIG file."
+  },
+  {
+    "hex_coord": [
+      0,
+      -2
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1906,
+      2005,
+      2006,
+      2222,
+      2223
+    ],
+    "summary": "The need to support new data and additional analysis tasks arises as the field evolves and within the scope of individual projects due to the exploratory nature of scientific discovery. The term 'genomic data' is used interchangeably with 'genome-mapped data' in this text for simplicity. Genome-mapped data is complex and requires contextual information for analysis."
+  },
+  {
+    "hex_coord": [
+      0,
+      -1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      381,
+      491
+    ],
+    "summary": "AutoGosling leverages deep learning to optimize genomic visualization parameters. Six key requirements for a genome visual analytics framework were distilled based on these findings. The six core requirements ensure scalability, interpretability, and reproducibility in genomic data visualizations."
+  },
+  {
+    "hex_coord": [
+      0,
+      -1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      952
+    ],
+    "summary": "The paper is titled 'Visualization of three-way comparisons of omics data.' The VisGenome tool provides visualization of single and comparative genome representations."
+  },
+  {
+    "hex_coord": [
+      0,
+      -1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1082,
+      1284,
+      1641
+    ],
+    "summary": "A web application is contributed that allows genomics data analysts to describe their data and task specifications and explore the corresponding recommended visualizations. GenoCAT and awesome-genome-visualization are databases of existing genomic data visualization tools and techniques. Ada visualizes the data using conventional genomics visualization tools such as UCSC Genome Browser, IGV Browser, and WashU Epigenome Browser."
+  },
+  {
+    "hex_coord": [
+      0,
+      -1
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1801,
+      2381
+    ],
+    "summary": "The most widely used visualization tools for genomic data are genome browsers. Genome browsers usually support a range of visual encodings for common genomic data types and allow users to switch between them easily. Some genome browsers support user extensions or can be embedded into other applications, but these require considerable coding efforts."
+  },
+  {
+    "hex_coord": [
+      0,
+      0
+    ],
+    "country": 0,
+    "MSU_ids": [
+      12,
+      13,
+      14,
+      39,
+      40,
+      41,
+      143,
+      144,
+      145,
+      162,
+      163,
+      164,
+      165,
+      295,
+      296,
+      297,
+      351,
+      430,
+      465,
+      467,
+      555,
+      568,
+      580,
+      581,
+      582
+    ],
+    "summary": "We introduce AuraGenome, a large language model (LLM)-powered framework for rapid, reusable, and scalable generation of multilayered circular genome visualizations. AuraGenome combines a semantic-driven multiagent workflow with an interactive visual analytics system. The workflow employs seven specialized LLM-driven agents, each assigned distinct roles, such as intent recognition, layout planning, and code generation, to transform raw genomic data into tailored visualizations."
+  },
+  {
+    "hex_coord": [
+      0,
+      1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      179,
+      182,
+      478,
+      493,
+      498,
+      559
+    ],
+    "summary": "AuraGenome is validated through two real-world case studies. AuraGenome is validated through both quantitative and qualitative user evaluations. A benchmark dataset, GenoVis-300, was created containing 300 natural language prompts derived from real genomics use cases."
+  },
+  {
+    "hex_coord": [
+      0,
+      1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1371
+    ],
+    "summary": "To reduce the need for manual panning and zooming interaction, GenoREC recommends two windows to compare any two regions within the genome. Another participant asked for an additional interactive component as a tabular view in the GenoREC interface that enables a faster lookup of gene location."
+  },
+  {
+    "hex_coord": [
+      0,
+      2
+    ],
+    "country": 0,
+    "MSU_ids": [
+      180
+    ],
+    "summary": "The GenoVis-300 prompts spanned six key task types: data parsing, chart recommendation, D3.js code generation, code modification, explanation, and style adjustment."
+  },
+  {
+    "hex_coord": [
+      0,
+      2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1233,
+      1248,
+      1363,
+      1364,
+      1369,
+      1377,
+      1378,
+      1379,
+      1382
+    ],
+    "summary": "GenoREC consists of a front-end user interface that allows users to specify their input requirements to the system. The data input into GenoREC is divided into four categories: the assembly build, data type (quantitative, categorical, and text), feature set (feature extent and density), and connection. GenoREC determines the partition primarily based on the user’s task."
+  },
+  {
+    "hex_coord": [
+      0,
+      3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1241
+    ],
+    "summary": "The back-end recommendation model is published as a standalone JavaScript library on NPM."
+  },
+  {
+    "hex_coord": [
+      0,
+      3
+    ],
+    "country": 4,
+    "MSU_ids": [
+      3139
+    ],
+    "summary": "The package is based on JavaScript libraries."
+  },
+  {
+    "hex_coord": [
+      1,
+      -6
+    ],
+    "country": 1,
+    "MSU_ids": [
+      741,
+      747,
+      767,
+      768
+    ],
+    "summary": "Sequence contig ideograms are interspersed with reference assembly ideograms in Figure 4. In Figure 4, the tick labels of reference sequence ideograms are abbreviated to their last three digits to maintain relevant precision and avoid long labels. Regions A and B on chromosome 6 are smoothly zoomed to 10x."
+  },
+  {
+    "hex_coord": [
+      1,
+      -5
+    ],
+    "country": 1,
+    "MSU_ids": [
+      666,
+      742,
+      784,
+      803,
+      804,
+      896,
+      897
+    ],
+    "summary": "Axis breaks can be used to map chromosomes onto any number of ideograms, which can be drawn in any order or orientation. Batch image generation is demonstrated in Figure 8, which comprises 39 images illustrating synteny between the dog and human genomes. The ideograms are interspersed to better separate the ribbon groups to chromosomes 14 and 18."
+  },
+  {
+    "hex_coord": [
+      1,
+      -5
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1273,
+      1274,
+      1365
+    ],
+    "summary": "The partition component decides whether the chromosomes should be displayed in a contiguous track, where chromosomes are placed end-to-end. The partition component decides whether the chromosomes should be displayed in a segregated manner, where each chromosome is independently displayed as a separate track. The 'Contiguous' partition means that chromosomes are positioned end-to-end in the visualization."
+  },
+  {
+    "hex_coord": [
+      1,
+      -5
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2962
+    ],
+    "summary": "Ideograms display chromosomes and bands. The default color scheme used the same color for both human and mouse chromosomes, causing visual confusion. Alex used the tool’s preset color combinations to distinguish human and mouse chromosomes."
+  },
+  {
+    "hex_coord": [
+      1,
+      -4
+    ],
+    "country": 0,
+    "MSU_ids": [
+      360,
+      432,
+      468
+    ],
+    "summary": "Zhao et al. visualized gene density, homologous blocks, and the distribution of segmental duplicated gene pairs. Chord layouts enable users to map genomic data onto curved links for intersegment relationships. A chord layout was selected by $E _ { A }$ to visualize interchromosomal associations."
+  },
+  {
+    "hex_coord": [
+      1,
+      -4
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1270,
+      1358
+    ],
+    "summary": "It is a general practice to arrange data attributes available in genomics datasets as parallel tracks. The Layout component selects the layout to display a track in the genomics visualization. All the tracks in this component are aligned automatically based on reference genomes."
+  },
+  {
+    "hex_coord": [
+      1,
+      -4
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2013,
+      2018,
+      2022,
+      2025,
+      2044,
+      2056,
+      2525
+    ],
+    "summary": "Nusrat et al. introduce the visual representation of a dataset as a unit building block in the visualization of genome-mapped data, referred to as a track. A view defines the genomic location for all the tracks it contains. Genome browsers and similar tools use a single view of stacked tracks to plot genomic data along the genome sequence on the x-axis."
+  },
+  {
+    "hex_coord": [
+      1,
+      -4
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2943,
+      2945,
+      2946,
+      2947,
+      2949
+    ],
+    "summary": "In genomics, the term 'track' is commonly used to refer to a view. A track displays a single dataset, and different tracks represent various aspects of genomics data. Angular ranges are used to encode the position coordinates of data across all tracks, effectively mapping data’s location on the genomic axis."
+  },
+  {
+    "hex_coord": [
+      1,
+      -3
+    ],
+    "country": 0,
+    "MSU_ids": [
+      15,
+      48,
+      56,
+      60,
+      174,
+      244,
+      300,
+      326,
+      329,
+      352,
+      355,
+      358,
+      359,
+      435,
+      571
+    ],
+    "summary": "The system supports multiple coordinated views tailored for genomic data, offering ring, radial, and chord-based layouts to represent multilayered circular genome visualizations. The interactive visual analytics system supports generation and editing of circular genome visualizations in three distinct layouts: ring, radial, and chord. The code output is tailored for circular genome representation."
+  },
+  {
+    "hex_coord": [
+      1,
+      -3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1267,
+      1282
+    ],
+    "summary": "In genomics, textual annotations (e.g., 'BRCA2' gene) are important and are distinguished from categorical data, being visualized as textual representations. Stacked alignment is used as the default option since it is the most frequent alignment in genomics visualizations. The orthogonal arrangement allows the creation of adjacency matrices for visualizing genomics data with a complete network connection between two sequences."
+  },
+  {
+    "hex_coord": [
+      1,
+      -3
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1905,
+      2007,
+      2014,
+      2184,
+      2510,
+      2517,
+      2518
+    ],
+    "summary": "Gene annotations, including the positions, structures, and names of genes, are commonly visualized together with other information to provide contextual information about important genomic locations. Kerpedjiev et al. developed a genome browser with coordinated multiple views that supports authoring views with 1D and 2D tracks, such as matrices with two genomic coordinate axes. Glyph representations are widely used in genomics to show the complex structure of genomic data, such as gene annotations and structural variance."
+  },
+  {
+    "hex_coord": [
+      1,
+      -2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1084,
+      1254,
+      1525
+    ],
+    "summary": "Interpretation of genomics data relies on the application of a wide range of visualization tools. A large number of visualization techniques for genomics data and different analysis tasks pose a significant challenge for analysts. Genomics analysts often base their visualization choices on trial and error or technical details, such as data formats that a specific tool can load."
+  },
+  {
+    "hex_coord": [
+      1,
+      -2
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1956
+    ],
+    "summary": "The combination of diverse data types and analysis tasks in genomics has resulted in the development of a wide range of visualization techniques and tools. Previous studies have contributed hundreds of visualization tools to address the varied needs in genomics data visualization. Nusrat et al. [53] surveyed the visualization tools for genomics data."
+  },
+  {
+    "hex_coord": [
+      1,
+      -1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      272
+    ],
+    "summary": "Recent advances in large language models (LLMs) offer new possibilities for generating genome visualizations via natural language. Applying LLMs in genomics remains challenging due to the need for precise intent parsing. Applying LLMs in genomics remains challenging due to the need for domain data integration."
+  },
+  {
+    "hex_coord": [
+      1,
+      -1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1153
+    ],
+    "summary": "Through a thematic analysis of the tasks in the survey using the multi-level task typology of Brehmer & Munzner [6], genomics analysis tasks were categorized into three low-level query tasks. Multi-view design patterns are used for genomics data visualization. Gosling is a grammar-based toolkit for scalable and interactive genomics data visualization."
+  },
+  {
+    "hex_coord": [
+      1,
+      -1
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1751,
+      1752,
+      1794,
+      1804,
+      1805,
+      1883,
+      1916,
+      1917,
+      1926,
+      2235
+    ],
+    "summary": "Gosling is a grammar for interactive and scalable genomics data visualization. Gosling balances expressiveness for comprehensive multi-scale genomics data visualizations with accessibility for domain scientists. A visualization grammar for genomics data visualizations was designed."
+  },
+  {
+    "hex_coord": [
+      1,
+      0
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1271,
+      1311,
+      1313,
+      1315,
+      1368
+    ],
+    "summary": "GenoREC recommends linear and circular layouts when a user specifies a BED file and a VCF file with categorical data. GenoREC supports three layouts: linear, circular, and space-filling. In overview tasks, where the user’s goal is to look for trends and patterns, GenoREC recommends both circular layouts and linear layouts."
+  },
+  {
+    "hex_coord": [
+      1,
+      1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1032,
+      1034,
+      1043,
+      1044,
+      1046,
+      1078,
+      1119,
+      1120,
+      1129,
+      1130,
+      1181,
+      1231,
+      1234,
+      1240,
+      1285,
+      1292,
+      1298,
+      1302,
+      1307,
+      1321,
+      1329,
+      1345,
+      1347,
+      1351,
+      1354,
+      1359,
+      1372,
+      1373,
+      1380,
+      1383,
+      1384,
+      1425,
+      1524,
+      1556
+    ],
+    "summary": "GenoREC maps data and task specifications to appropriate visualizations. Based on the recommendation model, GenoREC generates and recommends an appropriate visualization to the user. Through the recommendation, GenoREC allows the user to avoid a wide range of similar but sub-optimal visualization options given the data and task."
+  },
+  {
+    "hex_coord": [
+      1,
+      1
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2603,
+      2604,
+      2678
+    ],
+    "summary": "GenoREC uses a rule-based approach to recommend genomics visualizations. GenoREC assists users in designing visualizations by considering the input data and tasks, simplifying the design step. GenoREC recommends genomics visualizations based on user-uploaded data and selected parameters."
+  },
+  {
+    "hex_coord": [
+      1,
+      2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1195,
+      1238,
+      1289,
+      1301,
+      1320,
+      1334,
+      1341,
+      1342,
+      1349,
+      1381,
+      1408,
+      1482,
+      1493,
+      1538
+    ],
+    "summary": "This work primarily focuses on the evaluation of GenoREC’s recommendation model. The results of the user study demonstrate that GenoREC’s recommendations are helpful for analysts working in the space of genomics data analysis. GenoREC switches to a linear recommendation when a user adds a BIGWIG file with quantitative data."
+  },
+  {
+    "hex_coord": [
+      1,
+      3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1454,
+      1455,
+      1456,
+      1488,
+      1489,
+      1723
+    ],
+    "summary": "Scenarios where GenoREC’s responses were significantly higher than the alternate stimulus are marked with an asterisk. The visualization with the top score was selected as the 'GenoREC stimulus'. The visualization with the score closest to the median of the score distribution was selected as the 'alternate stimulus'."
+  },
+  {
+    "hex_coord": [
+      2,
+      -6
+    ],
+    "country": 0,
+    "MSU_ids": [
+      473
+    ],
+    "summary": "Blue bars represented downregulated zones. A copy number variation track was rendered as a blue line chart."
+  },
+  {
+    "hex_coord": [
+      2,
+      -6
+    ],
+    "country": 1,
+    "MSU_ids": [
+      665,
+      702,
+      761,
+      762,
+      765,
+      766,
+      787
+    ],
+    "summary": "The scale on each ideogram can be independently adjusted both locally and globally to attenuate or increase the visibility of a region. A second image series (Figures 5-7) demonstrates how axis breaks and ideogram magnification can be used to zoom in on regions of interest. Figure 1 is used as the initial image in a series that demonstrates the use of Circos at higher magnification."
+  },
+  {
+    "hex_coord": [
+      2,
+      -5
+    ],
+    "country": 1,
+    "MSU_ids": [
+      782
+    ],
+    "summary": "The layout in Figure 2 permits identification of any correlation between small-scale events and rearrangements. Execution varied only in command-line parameters that specified the identity of the dog chromosome and the scale at which it should be shown."
+  },
+  {
+    "hex_coord": [
+      2,
+      -5
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1276,
+      1305
+    ],
+    "summary": "If a visualization has multiple tracks, GenoREC determines the division of each track. If a visualization has two tracks with position channels and one track with a color channel, GenoREC will combine the first position channel with the color channel. In Scenario 3, participants were asked to perform an overview task (look for patterns) using a linear track with contiguous partition (GenoREC’s stimulus) and a circular track with segregated partition, i.e., one circle per chromosome (alternate stimulus)."
+  },
+  {
+    "hex_coord": [
+      2,
+      -5
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2117
+    ],
+    "summary": "A user can specify a stacked bar chart to show the distribution of nucleotides when zoomed out and overlay an additional track to show individual nucleotides with text labels displayed only when there is enough space to render text marks. A multi-scale sequence plot shows the overall distribution of nucleotides using stacked bar charts. The stacked bar charts change to show individual nucleotides in detail upon zooming in enough."
+  },
+  {
+    "hex_coord": [
+      2,
+      -4
+    ],
+    "country": 1,
+    "MSU_ids": [
+      620,
+      621,
+      623,
+      658,
+      659,
+      793,
+      811
+    ],
+    "summary": "We created a visualization tool, called Circos, to facilitate the identification and analysis of similarities and differences arising from comparisons of genomes. Circos is effective in displaying variation in genome structure and any other kind of positional relationships between genomic intervals. Circos uses a circular ideogram layout to facilitate the display of relationships between pairs of positions by the use of ribbons, which encode the position, size, and orientation of related genomic elements."
+  },
+  {
+    "hex_coord": [
+      2,
+      -4
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1902
+    ],
+    "summary": "A circular layout, such as displaying visual representations in a polar coordinate system, is frequently used in genomics. Circular layouts are used in genomics to show the overview of visual patterns across disconnected regions. Circos is a tool for studying positional relationships between genomic intervals using a circularized layout approach."
+  },
+  {
+    "hex_coord": [
+      2,
+      -4
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2577,
+      2925,
+      3217
+    ],
+    "summary": "Circos plots are widely used for visualizing genomics data. Circos plots present gene data in various formats, such as line and histogram, using multiple nested concentric circles arranged around the circumference of the same gene sequence. Circos plots are widely used to demonstrate similarities or differences among diverse genomic features associated with the same genomic regions."
+  },
+  {
+    "hex_coord": [
+      2,
+      -3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1283,
+      1304
+    ],
+    "summary": "Commonly used genome browser tools lack effective multi-scale designs, such as overviews and detail views, as shown by survey results on genomics tools. If views have a circular layout, GenoREC only permits parallel and adjacent arrangements. GenoREC only supports overlaying position and color channels because they can co-exist without causing occlusion."
+  },
+  {
+    "hex_coord": [
+      2,
+      -2
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1754,
+      1755,
+      1807,
+      1913,
+      1975,
+      2001,
+      2126,
+      2138,
+      2139,
+      2149,
+      2154,
+      2158,
+      2237,
+      2490,
+      2493
+    ],
+    "summary": "Gosling.js is built on top of an existing platform for web-based genomics data visualization. Gosling.js simplifies the visualization of common genomics data formats. Gosling supports the design of novel genomics visualizations."
+  },
+  {
+    "hex_coord": [
+      2,
+      -1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1083,
+      1242,
+      1453
+    ],
+    "summary": "The output of GenoREC is a specification for Gosling, a grammar-based genomics visualization toolkit. GenoREC uses Gosling, a grammar-based visualization toolkit for genomics, for rendering recommendation. GenoREC was used to generate and score all possible visualizations that can be rendered by Gosling for the data and tasks of a given scenario."
+  },
+  {
+    "hex_coord": [
+      2,
+      -1
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1954,
+      1959,
+      2000,
+      2140,
+      2143,
+      2146,
+      2147,
+      2148,
+      2215,
+      2217
+    ],
+    "summary": "Wilkinson’s Grammar of Graphics inspired tools like ggplot2 and Vega-Lite. ggplot2 and Vega-Lite use primitive building blocks, such as visual marks and scales, for creating a wide range of general-purpose visualizations. Lavikka et al. implemented GenomeSpy, adopting the grammar of Vega-Lite, to enable the creation of WebGL-based interactive genomics visualizations."
+  },
+  {
+    "hex_coord": [
+      2,
+      0
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1346,
+      1348,
+      1587
+    ],
+    "summary": "GEViT-Rec focuses on epidemiology and recommends visually coherent chart combinations by inferring a data source graph and mapping it to view templates. In Fig. 6A, GenoREC recommends 'Rect + Interval' with a hue channel for the 'BED1' file because the feature set is a segment and the data attribute is categorical. For the 'BIGWIG1' file, GenoREC recommends both a bar chart ('Rect') and a line chart ('Line') based on the decision matrix since the file stores point-based contiguous quantitative values ('Point,' 'Contiguous,' and 'Quant.') (Fig. 5)."
+  },
+  {
+    "hex_coord": [
+      2,
+      0
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2367
+    ],
+    "summary": "Li et al. developed GoTree for tree visualizations. Peax is an interactive visual pattern search tool for sequential data. Peax uses unsupervised deep representation learning."
+  },
+  {
+    "hex_coord": [
+      2,
+      0
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2747,
+      3141
+    ],
+    "summary": "PDFFigure2.0 was used to render PDFs into bitmaps. Pdffigures 2.0 is a tool for mining figures from research papers."
+  },
+  {
+    "hex_coord": [
+      2,
+      1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1033,
+      1045,
+      1079,
+      1118,
+      1200,
+      1235,
+      1251,
+      1333,
+      1335,
+      1337,
+      1338,
+      1343,
+      1350,
+      1366,
+      1534
+    ],
+    "summary": "The knowledge-based recommendation shows the component-wise model of GenoREC and the subsequent decisions made at each step. The recommendation model in GenoREC uses a knowledge-based method for choosing appropriate visualizations. The core contribution of GenoREC is a knowledge-based recommendation model consisting of a set of decision rules summarized from empirical knowledge and published visualization practices."
+  },
+  {
+    "hex_coord": [
+      2,
+      1
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2691,
+      2816,
+      2826,
+      2837,
+      2838,
+      2840,
+      2841
+    ],
+    "summary": "The Prompt4Vis framework enhances the model’s generation capabilities by providing external information through a database. The tool encodes the user query into a vector using LLaMa. The retriever takes the user’s query and maps both the query and documents from an external corpus into a high-dimensional vector space using a shared embedding model."
+  },
+  {
+    "hex_coord": [
+      2,
+      2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1478
+    ],
+    "summary": "The cosine similarity score expects two vectors of equal size and generates a score in the range of [-1,1]. A higher cosine similarity score closer to 1 means that the two vectors are more similar. A lower cosine similarity score closer to -1 means the two vectors are dissimilar."
+  },
+  {
+    "hex_coord": [
+      2,
+      2
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2867
+    ],
+    "summary": "Both retrieval modes retrieve the top 10 most similar configurations."
+  },
+  {
+    "hex_coord": [
+      2,
+      3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1472
+    ],
+    "summary": "All supplemental materials are available at https://osf.io/y73pt/. Ada wants to compare the quantitative values of the BIGWIG file between different regions. Ada adds a BIGWIG file description."
+  },
+  {
+    "hex_coord": [
+      2,
+      3
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2111,
+      2119
+    ],
+    "summary": "Threshold is a parameter used to determine a specific cutoff value in a process. An operation can be 'less-than' or 'greater-than'. The threshold is defined as either a number or the expression |xe-x|."
+  },
+  {
+    "hex_coord": [
+      2,
+      3
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2791
+    ],
+    "summary": "The conditional probability of stacked relationship is analyzed. The conditional probability of synthesized relationship is analyzed. P(type_inner | type_outer) = P(type_outer ∩ type_inner) / P(type_outer)."
+  },
+  {
+    "hex_coord": [
+      3,
+      -7
+    ],
+    "country": 1,
+    "MSU_ids": [
+      878
+    ],
+    "summary": "For example, the position 58,910kb is shown as 910kb, which are the only digits that change in the labels across the image. The central thick line (G) represents the average probe value across 250 adjacent probes."
+  },
+  {
+    "hex_coord": [
+      3,
+      -6
+    ],
+    "country": 1,
+    "MSU_ids": [
+      770
+    ],
+    "summary": "Figure 5 depicts one kind of dense data set that benefits from examination at various length scales. Most of the statistically significant variation in the figure occurs over short distances which cannot be effectively shown at this resolution. Regions of interest in the data set are sparse."
+  },
+  {
+    "hex_coord": [
+      3,
+      -6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1296,
+      1297,
+      1330
+    ],
+    "summary": "The BED, VCF, and BIGWIG file formats are discussed in Sect. 4. A cell in the matrix with a value of 1 indicates that the encoding supports the factor. An empty cell in the matrix represents a value of -1, indicating that the factor is not supported."
+  },
+  {
+    "hex_coord": [
+      3,
+      -6
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2519,
+      2547
+    ],
+    "summary": "The example in this figure adds a single line of code from Fig. 6 to circularize the visualization. The data used includes a total of 0.6 GB across 3 files."
+  },
+  {
+    "hex_coord": [
+      3,
+      -5
+    ],
+    "country": 1,
+    "MSU_ids": [
+      824,
+      831,
+      834
+    ],
+    "summary": "Circos' initial application was to visualize end-sequence profiling of cancer genomes. Circos' initial application was to visualize fingerprint profiling of cancer genomes. Circos has been used to display genomic data (Campbell et al. 2008; Constantine 2007; Hampton et al. 2009; Jaillon et al. 2007; Meyer et al. 2009)."
+  },
+  {
+    "hex_coord": [
+      3,
+      -5
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1312
+    ],
+    "summary": "Selection between parallel and orthogonal arrangements depends on the type of network data."
+  },
+  {
+    "hex_coord": [
+      3,
+      -5
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2982
+    ],
+    "summary": "Values close to 0 indicate that $type_{inner}$ rarely appears adjacent to $type_{outer}$. Values close to 1 indicate frequent adjacency between $type_{inner}$ and $type_{outer}$. Example data from CircosJS was utilized, which includes track data for plotting alongside chromosomes."
+  },
+  {
+    "hex_coord": [
+      3,
+      -4
+    ],
+    "country": 0,
+    "MSU_ids": [
+      176,
+      308,
+      335,
+      378,
+      380,
+      382,
+      383,
+      384,
+      388,
+      389,
+      407,
+      408,
+      409,
+      455,
+      480
+    ],
+    "summary": "The parameter panel and sequence log enable visual code reuse, stepwise branching, and traceable generation history. The Sequence Log View captures each generation step for reuse. Sequence Log View visualizes the generation process through a node-link graph."
+  },
+  {
+    "hex_coord": [
+      3,
+      -4
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1903
+    ],
+    "summary": "Meyer et al. developed MizBee—a tool for multi-scale comparative genomics that combines circular and linear layouts for the study of synteny data across biological scales. Mizbee is a multiscale synteny browser."
+  },
+  {
+    "hex_coord": [
+      3,
+      -4
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2870
+    ],
+    "summary": "The configuration set is converted into a Directed Acyclic Graph (DAG). Reference Panel visualizes the constructed DAG from Section 6.2 using a node-link flow diagram."
+  },
+  {
+    "hex_coord": [
+      3,
+      -3
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1941,
+      1942,
+      1958,
+      1974,
+      1976,
+      2067,
+      2100,
+      2121,
+      2141,
+      2155,
+      2156,
+      2157,
+      2159,
+      2160,
+      2165,
+      2301
+    ],
+    "summary": "Gosling supports continuous zooming and panning interactions. Gosling enables a wide range of configurations for view linking with brushes. The goal was to provide first-class support for these concepts in Gosling."
+  },
+  {
+    "hex_coord": [
+      3,
+      -3
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2748
+    ],
+    "summary": "PyMuPDF was used to locate and crop illustrations, excluding images smaller than 10% of the page width."
+  },
+  {
+    "hex_coord": [
+      3,
+      -2
+    ],
+    "country": 0,
+    "MSU_ids": [
+      361
+    ],
+    "summary": "Gosling provides a syntactic framework supporting circular layouts. GlyphCreator is developed to parse existing circular visualization. GlyphCreator enables secondary creation of circular visualizations."
+  },
+  {
+    "hex_coord": [
+      3,
+      -2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1388
+    ],
+    "summary": "Users can export a Gosling JSON specification and directly load its online editor to customize the visualization further."
+  },
+  {
+    "hex_coord": [
+      3,
+      -2
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1753,
+      1800,
+      1806,
+      1912,
+      2127,
+      2128,
+      2137,
+      2142,
+      2161,
+      2162,
+      2166,
+      2187,
+      2188,
+      2229,
+      2236,
+      2361,
+      2502
+    ],
+    "summary": "The accompanying JavaScript toolkit called Gosling.js provides scalable and interactive rendering. An online editor and examples of Gosling.js, its source code, and documentation are available at https://gosling.js.org. The accompanying rendering pipeline should be highly scalable to enable smooth performance."
+  },
+  {
+    "hex_coord": [
+      3,
+      -2
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2667
+    ],
+    "summary": "AutoGosling improves on this by using an image detection model to generate corresponding Gosling configurations from user sketches or example images."
+  },
+  {
+    "hex_coord": [
+      3,
+      -1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      105
+    ],
+    "summary": "LIDA employs a modular pipeline to support exploratory visual analysis and narrative construction."
+  },
+  {
+    "hex_coord": [
+      3,
+      -1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1109
+    ],
+    "summary": "Polaris, the research prototype of Tableau, used APT’s mapping of data characteristics to visual encoding to recommend visualizations. Voyager and Voyager2 rank encodings based on a set of perceptual effectiveness metrics. Deepeye is a system aimed at automatic data visualization."
+  },
+  {
+    "hex_coord": [
+      3,
+      -1
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1795,
+      2096
+    ],
+    "summary": "Visualization grammar provides a structured framework for creating visual representations of data. Several grammar-based approaches have been proposed to overcome the limitations of template-based approaches in data visualization. Grammar-based approaches aim to increase the expressiveness of visualization tools by supporting the creation of more diverse visualizations."
+  },
+  {
+    "hex_coord": [
+      3,
+      -1
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2685,
+      3155
+    ],
+    "summary": "DeepEye ranks visualizations based on input data, tasks, and context. Lida is a tool for automatic generation of grammar-agnostic visualizations and infographics. Deepeye is a system aimed at automatic data visualization."
+  },
+  {
+    "hex_coord": [
+      3,
+      0
+    ],
+    "country": 0,
+    "MSU_ids": [
+      103,
+      104
+    ],
+    "summary": "The emergence of LLMs has enabled promising advances in the automatic generation of data visualizations. CHAT2VIS translates natural language queries and tabular data into executable Python code. ChartGPT decomposes chart generation into multistep reasoning through fine-tuned FLAN-T5-XL."
+  },
+  {
+    "hex_coord": [
+      3,
+      0
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1105,
+      1591
+    ],
+    "summary": "Table2charts employs a reinforcement learning framework to learn step-by-step visualization constructions from a large corpus of tables paired with charts. It will be possible to generate visualizations based on actual data files rather than descriptions of the files. Data2Vis is a method for automatic generation of data visualizations."
+  },
+  {
+    "hex_coord": [
+      3,
+      0
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2689,
+      2690,
+      2692,
+      2752,
+      2828,
+      3156,
+      3182,
+      3183,
+      3208,
+      3209,
+      3257
+    ],
+    "summary": "ChartGPT creates a dataset consisting of abstract utterances and charts. ChartGPT improves model performance through finetuning, transforming the process of generating charts from natural language into a step-by-step reasoning workflow. The Prompt4Vis framework leverages LLMs and context learning to improve the performance of generating data visualizations from natural language."
+  },
+  {
+    "hex_coord": [
+      3,
+      1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      245,
+      273,
+      274
+    ],
+    "summary": "GPT-4o performed best in semantic parsing and explanation tasks. Retrieval is performed using a hybrid strategy that combines semantic vector matching (weight 0.7) and keyword-based exact search (weight 0.3). Retrieve top-k relevant templates from the knowledge base using hybrid search."
+  },
+  {
+    "hex_coord": [
+      3,
+      1
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2612,
+      2769,
+      2817,
+      2818,
+      2822,
+      2825,
+      2827,
+      2830,
+      2831,
+      2833,
+      2835,
+      2842,
+      2846,
+      2854,
+      2864,
+      3119
+    ],
+    "summary": "The RAG-based method retrieves relevant examples from the dataset based on user requirements, providing LLM with references and incorporating design patterns into prompts to improve recommendation performance in specific domain scenarios. Five annotators with visualization experience were enlisted for the labeling process. On average, each annotator labeled approximately 1,800 illustrations."
+  },
+  {
+    "hex_coord": [
+      3,
+      2
+    ],
+    "country": 0,
+    "MSU_ids": [
+      181
+    ],
+    "summary": "Three LLMs—GPT-4o-2024-11-20, GPT-o1-2024-12-27, and DeepSeek-R1-671B—were listed as candidates for evaluation."
+  },
+  {
+    "hex_coord": [
+      3,
+      2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1448,
+      1450,
+      1451
+    ],
+    "summary": "The scenarios are designed to provide a comprehensive coverage of three factors: features, attributes, and tasks. The scenarios cover all feature types (point, segment, contiguous, sparse, and network) at least once. The scenarios cover all attributes (quantitative, categorical, and text) at least once."
+  },
+  {
+    "hex_coord": [
+      3,
+      2
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1802,
+      1884,
+      1962,
+      1963,
+      1999
+    ],
+    "summary": "The expressiveness of the grammar is demonstrated through a variety of real-world examples. The grammar should be domain-specific to reflect the domain language. The expressiveness of the grammar is demonstrated through various usage scenarios."
+  },
+  {
+    "hex_coord": [
+      3,
+      3
+    ],
+    "country": 0,
+    "MSU_ids": [
+      185
+    ],
+    "summary": "Each model was rated on a normalized 0–100 scale."
+  },
+  {
+    "hex_coord": [
+      3,
+      3
+    ],
+    "country": 1,
+    "MSU_ids": [
+      883
+    ],
+    "summary": "Very few of the array probe values depart sufficiently from the average to be meaningful. Probe values were averaged across 20 adjacent probes."
+  },
+  {
+    "hex_coord": [
+      3,
+      3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1471
+    ],
+    "summary": "Navigate to the window chr19: 20,000,000–chr19: 80,000,000. The responses were recorded on a 1–5 scale as shown in Fig. 7. The median and interquartile responses for all participants combined are shown in Fig. 7."
+  },
+  {
+    "hex_coord": [
+      3,
+      3
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2756,
+      2979,
+      2996,
+      3062
+    ],
+    "summary": "The dataset was split into 80% for training and 20% for testing. Participants self-reported their familiarity with Circos with a rating of 5.9 ± 1.1, where 1 represents 'No Experience' and 7 represents 'Expert'. A rating of 1 on the Likert scale represents 'strongly disagree', while a rating of 7 represents 'strongly agree'."
+  },
+  {
+    "hex_coord": [
+      4,
+      -8
+    ],
+    "country": 1,
+    "MSU_ids": [
+      865
+    ],
+    "summary": "Each histogram in track F shows the average copy number value across 1,000 probes, as well as the minimum and maximum 3-probe average within each 1,000 probe subset. Affymetrix probe values for each of the nine samples are shown in track F as a scatter plot, using the same color scheme as for the BAC segments. Variability within each 1,000 probe set is shown in histogram components H and I, which show the maximum and minimum of 3-probe average values within the set, respectively."
+  },
+  {
+    "hex_coord": [
+      4,
+      -7
+    ],
+    "country": 1,
+    "MSU_ids": [
+      764,
+      769,
+      786,
+      879,
+      881
+    ],
+    "summary": "Using rules that toggle the visibility of data elements, individual array probe values are superimposed on the average histogram tracks in the region of Figure 6 J,K. This approach allows the profile of individual probe values in a region of interest to be shown. In Figure 5, rule blocks were used to color parts of the histogram based on the sign of the probe value."
+  },
+  {
+    "hex_coord": [
+      4,
+      -7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1535
+    ],
+    "summary": "Fig. 5 shows the Decision Matrix for the Encoding component (C1). For each component (C1–C6) in Sect. 6.1.1, there is a distinct decision matrix. The decision matrix for the Encoding component (C1) is shown in Fig. 5."
+  },
+  {
+    "hex_coord": [
+      4,
+      -7
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2504
+    ],
+    "summary": "The tracks include stacked area charts and ideograms. This figure shows an example that overlays rectangular, triangular, and textual marks to create ideograms. This figure shows an area chart that is juxtaposed with an ideogram (i.e., overlaid tracks)."
+  },
+  {
+    "hex_coord": [
+      4,
+      -6
+    ],
+    "country": 0,
+    "MSU_ids": [
+      276,
+      277,
+      379,
+      387
+    ],
+    "summary": "A block is added to enforce chart layout logic. The block prevents track overlap in the chart layout. The inner icon of each node indicates the layout type (ring, radial, or chord)."
+  },
+  {
+    "hex_coord": [
+      4,
+      -6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1252,
+      1281,
+      1314
+    ],
+    "summary": "Each of these six components contains a set of possible output options as shown in Fig. 1B. In GenoREC, views with linear tracks can be arranged as parallel, adjacent, or orthogonal. For other cases, GenoREC recommends parallel arrangements."
+  },
+  {
+    "hex_coord": [
+      4,
+      -6
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2021,
+      2129,
+      2506,
+      2507,
+      2540
+    ],
+    "summary": "Mark can be one of the following types: 'point', 'line', 'bar', or 'link'. '|' means 'or.' Mark can be one of 'point', 'line', 'bar', etc."
+  },
+  {
+    "hex_coord": [
+      4,
+      -5
+    ],
+    "country": 0,
+    "MSU_ids": [
+      67,
+      68,
+      138,
+      260,
+      261,
+      391,
+      431
+    ],
+    "summary": "Circular layouts offer compactness and multidimensional representation capabilities. Circular layouts map data onto channels such as angles, radius, and layers. Circular layouts effectively illustrate hierarchical relationships and the distribution of significance across multiple data dimensions."
+  },
+  {
+    "hex_coord": [
+      4,
+      -5
+    ],
+    "country": 1,
+    "MSU_ids": [
+      832,
+      833
+    ],
+    "summary": "Previous efforts to visualize positional relationships used linearly arranged ideograms connected by lines to represent rearrangements. The shortcoming of the linear layout becomes apparent in representations associating many ideograms with numerous relationships, where multitudes of lines transgress unrelated ideograms and make patterns difficult to discern. The report hinted at the benefit of adopting the circular layout for application to structural data."
+  },
+  {
+    "hex_coord": [
+      4,
+      -5
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1355
+    ],
+    "summary": "Adjacent arrangements are one of the most common use cases with circular layouts in the domain. Meyer et al. [33] used a circular adjacent layout for visualizing interconnection between different parts of a sequence. The adjacent circular arrangement allows the analyst to look at overall connections between sequences in a space-efficient manner."
+  },
+  {
+    "hex_coord": [
+      4,
+      -5
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2057,
+      2072
+    ],
+    "summary": "There are many ways of arranging multiple views in circular layouts, each serving different use cases. The layout can be linear. The layout can be circular."
+  },
+  {
+    "hex_coord": [
+      4,
+      -5
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2872,
+      2873,
+      2874,
+      2892,
+      2895,
+      2897
+    ],
+    "summary": "Nodes within the same configuration are connected by edges. The DAG contains redundant information, so its structure is optimized by merging nodes of the same type along with their edges. The number of merged edges is accumulated as the edge weight."
+  },
+  {
+    "hex_coord": [
+      4,
+      -4
+    ],
+    "country": 0,
+    "MSU_ids": [
+      153,
+      327,
+      328,
+      330,
+      386,
+      392,
+      443,
+      472
+    ],
+    "summary": "Visualization styles include track ordering, radial spacing, and color encoding. The chart supports layered rendering of structural variants. The chart supports layered rendering of mutations."
+  },
+  {
+    "hex_coord": [
+      4,
+      -4
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2002,
+      2003,
+      2004,
+      2089,
+      2185,
+      2546
+    ],
+    "summary": "These visual encodings include band representations such as arc diagrams. These visual encodings include encoding the height of textual representations such as sequence logo plots. These visual encodings include radial visualizations such as chord diagrams."
+  },
+  {
+    "hex_coord": [
+      4,
+      -4
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2894,
+      2896,
+      2920,
+      2921,
+      3157,
+      3158
+    ],
+    "summary": "Histogram and line are often paired with themselves to present multiple data attributes. Histogram and line use colors to distinguish different attributes. Histogram and line are ideal for visualizing complex datasets."
+  },
+  {
+    "hex_coord": [
+      4,
+      -3
+    ],
+    "country": 1,
+    "MSU_ids": [
+      652,
+      772
+    ],
+    "summary": "Effective visualizations exemplify virtues such as clarity, a high data-to-ink ratio (Tufte 1992), and favorable scaling characteristics. These visualization approaches have been widely adopted because they addressed pressing visualization problems within domains where data sets were previously opaque to effective visual inspection. Color maps are used to mitigate overburdened visualizations by mapping a position pair onto a position and a color."
+  },
+  {
+    "hex_coord": [
+      4,
+      -3
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1935,
+      2097,
+      2098,
+      2099,
+      2180
+    ],
+    "summary": "The integration of multiple data types is a requirement for interpretation. The ideal tool should support multi-scale encodings for semantic zooming to ensure effective exploration across scales. Glyph representations are often visualized differently across tools."
+  },
+  {
+    "hex_coord": [
+      4,
+      -2
+    ],
+    "country": 0,
+    "MSU_ids": [
+      50,
+      57,
+      120,
+      253,
+      403
+    ],
+    "summary": "Visualization plays a crucial role in helping researchers explore complex relationships. Visualization helps researchers uncover patterns. Visualization helps researchers effectively communicate findings."
+  },
+  {
+    "hex_coord": [
+      4,
+      -2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1528,
+      1602
+    ],
+    "summary": "Tree visualizations can be decomposed into three components based on a visualization taxonomy: 'Representation' (explicit, implicit, hybrid), 'Alignment' (parallel, radial, free), and 'Dimensionality' (2D, 3D, hybrid). Tree visualization experts can determine the dependencies between components, such as whether 'Representation' of tree visualizations should be determined before 'Dimensionality'. M. Brehmer and T. Munzner proposed a multi-level typology of abstract visualization tasks."
+  },
+  {
+    "hex_coord": [
+      4,
+      -2
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2553
+    ],
+    "summary": "Visualization authoring libraries and the interfaces they provide can be categorized by their level of abstraction. A subset of tools supports the visual exploration of patterns across disconnected regions. Some tools integrate complementary visual analytics approaches to better support exploratory analysis."
+  },
+  {
+    "hex_coord": [
+      4,
+      -1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      366
+    ],
+    "summary": "The Data Store View facilitates initial familiarization with data. The Data Store View informs downstream visualization recommendations. The first pathway is recommendation-based initialization, where users adopt suggested layouts generated by the visualization designer agent."
+  },
+  {
+    "hex_coord": [
+      4,
+      -1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1080,
+      1104,
+      1110,
+      1209,
+      1223,
+      1236,
+      1386,
+      1728,
+      1729
+    ],
+    "summary": "Visualization recommendation systems assist non-experts in creating data visualizations by recommending appropriate visualizations based on the data and task characteristics. Visualization researchers have contributed many visualization recommendation systems, spanning general to domain-specific systems. Existing visualization recommendation systems suggest a data visualization primarily based on the data."
+  },
+  {
+    "hex_coord": [
+      4,
+      -1
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2686,
+      2688
+    ],
+    "summary": "Recommending precise and effective data visualizations is a challenging task. Various visualization recommendation methods have been proposed to simplify the process. Visualization recommendation methods typically fall into two categories: rule-based and machine learning-based methods."
+  },
+  {
+    "hex_coord": [
+      4,
+      0
+    ],
+    "country": 0,
+    "MSU_ids": [
+      158,
+      159,
+      160
+    ],
+    "summary": "R6 generates structured summaries to facilitate reporting. R6 generates structured summaries to facilitate interpretation. R6 generates structured summaries to facilitate presentation."
+  },
+  {
+    "hex_coord": [
+      4,
+      0
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1536,
+      1537,
+      1742
+    ],
+    "summary": "Index terms include visualization. Index terms include recommendation systems. Index terms include data."
+  },
+  {
+    "hex_coord": [
+      4,
+      0
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2746,
+      2749,
+      2768,
+      2843
+    ],
+    "summary": "ML-based methods have shown promising performance. ML-based recommendation methods typically rely on high-quality datasets to achieve good performance. A deep learning-based method was developed to identify illustration-annotation pairs and filter out irrelevant information."
+  },
+  {
+    "hex_coord": [
+      4,
+      1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      136,
+      137,
+      173,
+      494
+    ],
+    "summary": "The system performs statistical profiling to support data familiarization. The system supports downstream tasks through statistical profiling. The system supports summarization of analytical steps."
+  },
+  {
+    "hex_coord": [
+      4,
+      1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1255,
+      1452
+    ],
+    "summary": "Index terms include genomics. These systems allow data analysts who are not experts in visualization design to focus on the analysis of data. The section includes tasks with abstractions to support discussions throughout the paper."
+  },
+  {
+    "hex_coord": [
+      4,
+      1
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2932,
+      2933
+    ],
+    "summary": "The design goals are derived based on relevant literature [WLL*23, PLW*22, WJT*23]. The process resulted in 29,701 matched pairs with metadata such as paper source, page number, and position. The model was trained for 5 epochs and achieved 99.23% accuracy on the test set."
+  },
+  {
+    "hex_coord": [
+      4,
+      2
+    ],
+    "country": 0,
+    "MSU_ids": [
+      496,
+      514
+    ],
+    "summary": "Mixed-method user studies were conducted. An in-lab user study was conducted. The study focused on user experience across disciplines."
+  },
+  {
+    "hex_coord": [
+      4,
+      2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1183,
+      1344,
+      1405,
+      1407,
+      1438,
+      1457,
+      1464
+    ],
+    "summary": "The data and task specification panel contains two parts: data description and tasks. The data and task input are discussed in Sect. 3. The steps are demonstrated with the help of data and analysis task discussed in Sect. 4."
+  },
+  {
+    "hex_coord": [
+      4,
+      2
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2975,
+      2988,
+      3204
+    ],
+    "summary": "The study setting is introduced in Section 8.1. The results of the study are presented in Section 8.2. The study includes participants, task, data, and procedure."
+  },
+  {
+    "hex_coord": [
+      4,
+      3
+    ],
+    "country": 0,
+    "MSU_ids": [
+      187,
+      188,
+      189,
+      419,
+      420,
+      421,
+      497
+    ],
+    "summary": "Scores of 70–89 indicated mostly correct outputs with minor issues. Scores of 50–69 reflected partial success with notable omissions. Scores below 50 indicated critical errors."
+  },
+  {
+    "hex_coord": [
+      4,
+      3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1442,
+      1443,
+      1459,
+      1479,
+      1517
+    ],
+    "summary": "None of the experts involved in the studies are authors of this paper. The Harvard Institutional Review Board determined that these studies did not require research approval under federal regulations. We recruited 13 participants (P1–P13)."
+  },
+  {
+    "hex_coord": [
+      4,
+      3
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2969,
+      2976
+    ],
+    "summary": "A comparative study was not conducted due to the lack of appropriate baselines. Eight graduate students from different local universities in biology-related majors were recruited. The rating for customization support (Q8) was relatively lower, with most participants providing more neutral scores."
+  },
+  {
+    "hex_coord": [
+      5,
+      -8
+    ],
+    "country": 1,
+    "MSU_ids": [
+      724,
+      858,
+      866,
+      868
+    ],
+    "summary": "In Figure 1E, glyph size is proportional to the number of small-scale events in each 5Mb region. Previously, small-scale events appeared in a density track (Figure 1, E). Small-scale events are much smaller than their associated glyph."
+  },
+  {
+    "hex_coord": [
+      5,
+      -8
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2566,
+      2610,
+      2622,
+      2860
+    ],
+    "summary": "With the dataset, we identify track combination patterns. The relationships of the common track combinations within this dataset were analyzed. The dataset includes extracted track combination patterns."
+  },
+  {
+    "hex_coord": [
+      5,
+      -7
+    ],
+    "country": 0,
+    "MSU_ids": [
+      336,
+      356
+    ],
+    "summary": "Each node in the graph represents a distinct code-level output, such as a complete track or layout modification. The system supports three distinct track layouts: ring, radial, and chord."
+  },
+  {
+    "hex_coord": [
+      5,
+      -7
+    ],
+    "country": 1,
+    "MSU_ids": [
+      836,
+      837
+    ],
+    "summary": "binlinks is used to generate density tracks based on the number of links within a sliding window. Density tracks generated by binlinks are suitable for scatter, line, or histogram tracks. Large-scale deletions and insertions are shown as red and green triangular glyphs, respectively, in track D."
+  },
+  {
+    "hex_coord": [
+      5,
+      -7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1191,
+      1192,
+      1264,
+      1265,
+      1269,
+      1357
+    ],
+    "summary": "The system recommends two tracks stacked in a linear and circular layout (Fig. 3A). The first linear track option uses a bar mark for the quantitative data. The second linear track option uses a line mark for the same quantitative data (Fig. 3B)."
+  },
+  {
+    "hex_coord": [
+      5,
+      -7
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2046,
+      2503,
+      2509,
+      2514
+    ],
+    "summary": "Multiple tracks are typically grouped into views and navigated synchronously to make the exploration process more efficient. Alignment can be defined as 'stack' or 'overlay'. Nesting enables flexible composition of tracks by using multiple alignment options in a single view."
+  },
+  {
+    "hex_coord": [
+      5,
+      -7
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2652,
+      2654,
+      2788,
+      2795,
+      2802,
+      2871
+    ],
+    "summary": "To better explore the relationships between tracks, track combinations are classified into two categories: stacked relationship and synthesized relationship. A synthesized relationship involves two tracks with overlapping inner and outer radii. The synthesized track and other tracks have a stacked relationship."
+  },
+  {
+    "hex_coord": [
+      5,
+      -6
+    ],
+    "country": 1,
+    "MSU_ids": [
+      736
+    ],
+    "summary": "The application of transparency to image elements allows layering of data, such as ribbons or data tracks."
+  },
+  {
+    "hex_coord": [
+      5,
+      -6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1272,
+      1277
+    ],
+    "summary": "The space-filling layout includes examples such as the Hilbert curve. The arrangement component is responsible for selecting the arrangement of multiple views. In this paper, a view refers to a combination of one or multiple tracks."
+  },
+  {
+    "hex_coord": [
+      5,
+      -6
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2008,
+      2073,
+      2102,
+      2114,
+      2118,
+      2130,
+      2131,
+      2132,
+      2133,
+      2521,
+      2522,
+      2527
+    ],
+    "summary": "Frequently occurring concepts include tracks, views, and layouts. In the grammar, tracks and views are specified in a hierarchical structure where a view defines one or more tracks. Size, displacement, and visibility are being discussed."
+  },
+  {
+    "hex_coord": [
+      5,
+      -5
+    ],
+    "country": 0,
+    "MSU_ids": [
+      390,
+      475
+    ],
+    "summary": "Nodes are horizontally aligned to reflect chronological order, while their vertical positions can be freely adjusted to improve visual clarity. Adjustments to track spacing and height were made to enhance overall readability."
+  },
+  {
+    "hex_coord": [
+      5,
+      -5
+    ],
+    "country": 1,
+    "MSU_ids": [
+      649,
+      667,
+      746,
+      778,
+      779,
+      808
+    ],
+    "summary": "One approach uses encoding in HSL (hue, saturation, lightness) color space to perform three-way comparisons. Data points can have their value and format characteristics altered by flexible rules to help demonstrate patterns in the data. Precise tick mark and tick label control is possible, including placement of the tick ring and formatting of tick labels."
+  },
+  {
+    "hex_coord": [
+      5,
+      -5
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1081,
+      1300
+    ],
+    "summary": "For each design component, the design space is enumerated and rules are crafted to describe the design decisions. Data characteristics involve identifying visual encodings corresponding to the data type of attributes. These rules are usually formalized based on the properties of data, such as trends or outliers, and the effectiveness of visual encodings."
+  },
+  {
+    "hex_coord": [
+      5,
+      -5
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2101,
+      2528
+    ],
+    "summary": "(x | y | color | ...) := value | channel x, y, and color can be either value or channel. The control is achieved through Boolean expressions based on visual properties."
+  },
+  {
+    "hex_coord": [
+      5,
+      -4
+    ],
+    "country": 0,
+    "MSU_ids": [
+      135,
+      171,
+      306,
+      341,
+      396
+    ],
+    "summary": "The system performs automatic feature recognition. The system supports visual parameter editing. This design promotes continuity in the visualization process."
+  },
+  {
+    "hex_coord": [
+      5,
+      -4
+    ],
+    "country": 1,
+    "MSU_ids": [
+      703,
+      704
+    ],
+    "summary": "Using image maps, a feature currently in development, Figure 1 could be made interactive online. Interactive elements in Figure 1 could allow users to click and display features or their annotation in greater depth. A brief snapshot of the data set is included to orient the reader in interpreting the visualizations."
+  },
+  {
+    "hex_coord": [
+      5,
+      -4
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1108,
+      1286,
+      1385,
+      1440
+    ],
+    "summary": "The 'Show Me' feature of Tableau provides automatic mark selection based on the data properties type, role, and interpretation. This scenario is also presented in the supplementary video. In the coordinated interaction pattern, all tracks within a view have coordinated zooming and panning interactions."
+  },
+  {
+    "hex_coord": [
+      5,
+      -4
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2082,
+      2092,
+      2093,
+      2171,
+      2172,
+      2173,
+      2524,
+      2539,
+      2541,
+      2542
+    ],
+    "summary": "Users can link views and interactive brushes for synchronous visual exploration. LinkingId is similar to Vega’s Signals in that scales of visual channels can be shared using unique identifications. Coordinated zooming and panning interactions across views and/or brushes are possible."
+  },
+  {
+    "hex_coord": [
+      5,
+      -4
+    ],
+    "country": 4,
+    "MSU_ids": [
+      3045
+    ],
+    "summary": "P2 suggested that it may be helpful to show a reference illustration from the paper directly when hovering over a specific path."
+  },
+  {
+    "hex_coord": [
+      5,
+      -3
+    ],
+    "country": 0,
+    "MSU_ids": [
+      51,
+      152,
+      156
+    ],
+    "summary": "The layer-aware reuse mechanism supports efficient iteration and narrative report construction. These approaches address basic visualization needs. R4 enables direct interaction with visualization styles."
+  },
+  {
+    "hex_coord": [
+      5,
+      -3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1112
+    ],
+    "summary": "Existing systems are typically designed only for common visualization types, such as bar charts, line charts, and scatter plots. Kristiansen et al. present an approach that allows semantic alignment of multiple views based on the content of visualizations, such as visual channels used. Conventional tools are tightly coupled with default visualization techniques."
+  },
+  {
+    "hex_coord": [
+      5,
+      -3
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1904,
+      2083,
+      2084,
+      2220
+    ],
+    "summary": "A critical need for a wide range of visualization tools and techniques arises due to the diverse audiences and the integration of multiple data types. On one end of the spectrum, users are provided with graphical elements (e.g., rectangles, circles, and lines) that need to be composed from the bottom up to construct visualizations (e.g., Processing and D3). Visualization tools on the opposite end of the spectrum are often called template-based, which provide a list of visualization types that users can select."
+  },
+  {
+    "hex_coord": [
+      5,
+      -2
+    ],
+    "country": 0,
+    "MSU_ids": [
+      46,
+      147,
+      151,
+      209,
+      217,
+      218,
+      304,
+      317,
+      401,
+      458,
+      560
+    ],
+    "summary": "The semantics-driven multiagent workflow decomposes complex visualization tasks into modular steps. These findings informed the visual design and motivated the choice of a D3-based code to support extensibility and dynamic control. R3 allows users to configure visualizations using natural language commands."
+  },
+  {
+    "hex_coord": [
+      5,
+      -2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1182,
+      1184
+    ],
+    "summary": "These systems offload the work of visualization design to an algorithm. The left panel is a domain-centric data and task elicitation interface. The right panel is a visualization gallery that displays recommended visualizations."
+  },
+  {
+    "hex_coord": [
+      5,
+      -2
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2684,
+      3273
+    ],
+    "summary": "Human-centered computing includes user interface toolkits. Human-centered computing includes visualization application domains. Human-centered computing includes visualization toolkits."
+  },
+  {
+    "hex_coord": [
+      5,
+      -1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      279,
+      395
+    ],
+    "summary": "Add a <final_review> block to ensure modifications preserve prior valid outputs. Add <suggested_adjustments> block. Ask model to suggest up to 3 improvements (e.g., style, color, spacing)."
+  },
+  {
+    "hex_coord": [
+      5,
+      -1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1207,
+      1210,
+      1213,
+      1244,
+      1529,
+      1539
+    ],
+    "summary": "Existing visualization recommendation systems are not designed to handle domain-specific problems. Domain knowledge imposes restrictions on recommendation system results, as domain experts may prefer familiar or widely accepted visualizations. It is possible to develop a recommendation model using existing knowledge and best practices from the information visualization field and domain theory."
+  },
+  {
+    "hex_coord": [
+      5,
+      -1
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2886,
+      2890
+    ],
+    "summary": "Command templates are available: typing '\\recommend' triggers suggestions for track combinations based on the current configuration. Users can click on the recommendation result to preview and apply it to the current configuration."
+  },
+  {
+    "hex_coord": [
+      5,
+      0
+    ],
+    "country": 0,
+    "MSU_ids": [
+      542
+    ],
+    "summary": "The system surfaced context-aware suggestions."
+  },
+  {
+    "hex_coord": [
+      5,
+      0
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1249,
+      1433
+    ],
+    "summary": "Current task-oriented recommendation systems support domain-independent low-level analytical tasks, such as compare and summarize. Options may lead to serendipitous discoveries. Serendipitous discoveries may lead to a positive attitude towards a recommendation system."
+  },
+  {
+    "hex_coord": [
+      5,
+      0
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2233
+    ],
+    "summary": "We intend to add support for sequence abstraction in the future. Processing is a programming language designed for the media arts. The reference discusses Processing as a tool for creative coding in the context of AI and society."
+  },
+  {
+    "hex_coord": [
+      5,
+      1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      127,
+      129,
+      495,
+      512,
+      513
+    ],
+    "summary": "The experts were selected from ongoing collaborations and research networks. Experts provided feedback through scenario walkthroughs, feature prioritization, and mockup evaluations. The feedback validated the proposed layout taxonomy."
+  },
+  {
+    "hex_coord": [
+      5,
+      1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1197,
+      1409,
+      1441,
+      1480,
+      1481
+    ],
+    "summary": "A formative study was conducted with five domain experts to solicit feedback on the recommendation output, user interface, and system workflow. During the interviews, the experts emphasized that recommendations should be familiar and easy to understand. Qualitative feedback was gathered from domain experts to validate the recommendation output."
+  },
+  {
+    "hex_coord": [
+      5,
+      1
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2995,
+      3059,
+      3060,
+      3061
+    ],
+    "summary": "Participants completed a 7-point Likert questionnaire in a think-aloud protocol, where users were encouraged to justify their ratings (5 minutes). Participants gave feedback on our tool. The questionnaire was designed in two aspects: the tool’s usability and effectiveness."
+  },
+  {
+    "hex_coord": [
+      5,
+      2
+    ],
+    "country": 0,
+    "MSU_ids": [
+      500
+    ],
+    "summary": "We validate its effectiveness through two case studies and a comprehensive user study. A comprehensive evaluation was conducted through two case studies. These findings motivated the formulation of our research objectives."
+  },
+  {
+    "hex_coord": [
+      5,
+      2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1404,
+      1458,
+      1461,
+      1462,
+      1516
+    ],
+    "summary": "The study was designed as a semi-structured interview lasting an hour. A 30-minute evaluation session was arranged with each participant via Zoom. The interviewer explained the study setup by demonstrating the web application."
+  },
+  {
+    "hex_coord": [
+      5,
+      2
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2986,
+      2987,
+      2990,
+      2993,
+      2997
+    ],
+    "summary": "The manageable size of the dataset ensured the study did not last for too long. All studies were conducted through one-to-one in-person meetings, each lasting about an hour. The evaluation consisted of four stages: a training session, an experimental session, a post-study questionnaire session, and a post-study semi-structured interview."
+  },
+  {
+    "hex_coord": [
+      6,
+      -8
+    ],
+    "country": 0,
+    "MSU_ids": [
+      354
+    ],
+    "summary": "New tracks are added from the outermost ring inward, following a sequential layout mechanism."
+  },
+  {
+    "hex_coord": [
+      6,
+      -8
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2058,
+      2062
+    ],
+    "summary": "The view includes tracks. In circular layouts, tracks are still stacked from the inside to the outside of the center. Rotating tracks by 90 degrees can be beneficial in some cases."
+  },
+  {
+    "hex_coord": [
+      6,
+      -8
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2653,
+      2790,
+      2796,
+      2797,
+      2798,
+      2803,
+      2804
+    ],
+    "summary": "The position of a track is determined by its inner and outer radii. The inner radius refers to the distance from the inner side of the track to the circle’s center. The outer radius refers to the distance from the outer side of the track to the circle’s center."
+  },
+  {
+    "hex_coord": [
+      6,
+      -7
+    ],
+    "country": 0,
+    "MSU_ids": [
+      157,
+      364
+    ],
+    "summary": "R6 supports annotation of specific tracks or elements. The Track Parameter Panel is discussed in subsequent sections. Each track may include an annotation to describe the underlying data and rationale for the chosen visual encoding."
+  },
+  {
+    "hex_coord": [
+      6,
+      -7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1275
+    ],
+    "summary": "A track refers to a unit visualization that corresponds to common visualization types. Partition happens at a track level."
+  },
+  {
+    "hex_coord": [
+      6,
+      -7
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2763,
+      2880,
+      2911,
+      2914,
+      2983
+    ],
+    "summary": "The design stage requires consideration of factors such as track types, visual mappings for each track, and positional relationships between tracks. The track layout is considered at the initial design stage. We classify text tracks, scale tracks, and other non-visual tracks under <others>."
+  },
+  {
+    "hex_coord": [
+      6,
+      -6
+    ],
+    "country": 0,
+    "MSU_ids": [
+      172,
+      331,
+      363
+    ],
+    "summary": "Circular layouts largely rely on manual design, limiting their efficiency and general applicability. The system supports trackwise customization. The Track Parameter Panel offers fine-grained, layer-specific customization options."
+  },
+  {
+    "hex_coord": [
+      6,
+      -6
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2122,
+      2123,
+      2125
+    ],
+    "summary": "Condition padding refers to the addition of extra data or context to meet certain conditions. Transition padding involves adding data to facilitate smooth transitions between states or processes. (conditionPadding | transitionPadding) is defined as a number."
+  },
+  {
+    "hex_coord": [
+      6,
+      -6
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2735,
+      2907,
+      2910,
+      2912,
+      3076
+    ],
+    "summary": "Easy-to-use interactions include adding or deleting tracks, matching tracks to data, and adjusting various track configurations. Constraints are included to enforce format restrictions, such as 'You can only use the tokens listed below, and you cannot use any custom tokens.' The Configuration Panel (C) offers easy refinement of track configurations."
+  },
+  {
+    "hex_coord": [
+      6,
+      -5
+    ],
+    "country": 0,
+    "MSU_ids": [
+      175,
+      259,
+      299,
+      307,
+      332,
+      342,
+      343,
+      344,
+      345,
+      349,
+      350,
+      370,
+      371,
+      372,
+      373,
+      374,
+      375,
+      393,
+      444,
+      479
+    ],
+    "summary": "These layouts can be selected, composed, and refined interactively through novel interface elements, such as the parameter panel and sequence log. Interaction behaviors handle operations such as region highlighting, track reordering, and feature selection. The interface comprises multiple coordinated panels."
+  },
+  {
+    "hex_coord": [
+      6,
+      -5
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2764,
+      2855
+    ],
+    "summary": "Our focus is on the design of visual elements. Each example contains annotations and configurations."
+  },
+  {
+    "hex_coord": [
+      6,
+      -4
+    ],
+    "country": 0,
+    "MSU_ids": [
+      122,
+      154,
+      333,
+      369,
+      572
+    ],
+    "summary": "These characteristics make data interpretation challenging using traditional visualization methods. Existing models often struggle to capture the intricate data relationships, layout dependencies, and intertrack interactions that characterize specialized charts. The tools used to generate these figures were examined."
+  },
+  {
+    "hex_coord": [
+      6,
+      -4
+    ],
+    "country": 1,
+    "MSU_ids": [
+      807
+    ],
+    "summary": "Features of this size cannot be drawn to scale on an ideogram, requiring the use of a density plot. It is challenging to effectively represent sparse or non-uniformly distributed data, which inherently do not make effective use of the space within a figure."
+  },
+  {
+    "hex_coord": [
+      6,
+      -3
+    ],
+    "country": 0,
+    "MSU_ids": [
+      55,
+      446,
+      453,
+      466
+    ],
+    "summary": "The workflow transforms data input into visualization-ready code output. The workflow visualizes an AML case study. The entire process, from data upload to visualization refinement, was completed within 20 minutes."
+  },
+  {
+    "hex_coord": [
+      6,
+      -3
+    ],
+    "country": 1,
+    "MSU_ids": [
+      669
+    ],
+    "summary": "Flat-text configuration files can be created and adjusted automatically to generate visualizations as part of an analysis workflow."
+  },
+  {
+    "hex_coord": [
+      6,
+      -3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1540
+    ],
+    "summary": "Experts noted that it might require additional effort to understand and communicate the results of an unfamiliar visualization technique or design. Adding a new component requires careful analysis of its dependencies with all the other components, which can be complex if done post-hoc."
+  },
+  {
+    "hex_coord": [
+      6,
+      -3
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2734,
+      3066
+    ],
+    "summary": "The tool should support the refinement of the recommended results with a suite of easy-to-use interactions. The tool automates the implementation of designs while offering customizable configuration options for fine-tuning the created visualization. This enhancement could streamline the customization process."
+  },
+  {
+    "hex_coord": [
+      6,
+      -2
+    ],
+    "country": 0,
+    "MSU_ids": [
+      148,
+      149,
+      150,
+      267,
+      318,
+      319,
+      461
+    ],
+    "summary": "R3 supports domain-specific actions such as interval binning. R3 supports domain-specific actions such as differential gene labeling. R3 supports domain-specific actions such as feature toggling."
+  },
+  {
+    "hex_coord": [
+      6,
+      -2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1185,
+      1221,
+      1661,
+      1664
+    ],
+    "summary": "The system automatically defines 'Connection' based on the file format. To support flexible updates, the interface needs to support a quick turnaround time in showing the recommended outputs. One participant stated that it is possible to further abstract the domain-specific file inputs."
+  },
+  {
+    "hex_coord": [
+      6,
+      -2
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1803
+    ],
+    "summary": "Domain-specific grammar offers shortcuts to frequently used configurations like layout types and file formats. If the grammar supports domain-specific file formats and can transform data into tabular formats on the fly before encoding, domain specificity and data scalability can be addressed without burdening users."
+  },
+  {
+    "hex_coord": [
+      6,
+      -2
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2814,
+      2815,
+      2862,
+      2863,
+      2865,
+      2868,
+      3213
+    ],
+    "summary": "The framework includes configuration reference. The framework includes an authoring component. Two retrieval modes are combined to help users retrieve configurations."
+  },
+  {
+    "hex_coord": [
+      6,
+      -1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      170,
+      220,
+      322,
+      339,
+      367,
+      368,
+      441,
+      470,
+      564
+    ],
+    "summary": "The system enables users to refine, adjust, and manage visualizations through both direct manipulation and natural language input. The agent generates textual rationales that accompany each recommendation. The textual rationales improve transparency and help users understand the rationale behind the system’s suggestions."
+  },
+  {
+    "hex_coord": [
+      6,
+      -1
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2856,
+      2884,
+      2888,
+      2889,
+      2905,
+      2931,
+      2940,
+      3071,
+      3082,
+      3083
+    ],
+    "summary": "Users should be enabled to describe their design requirements in a natural way. Our tool should support users in naturally expressing their design needs. Refining the recommended design can mitigate the limitations of automated methods."
+  },
+  {
+    "hex_coord": [
+      6,
+      0
+    ],
+    "country": 0,
+    "MSU_ids": [
+      305,
+      320,
+      442,
+      463,
+      464
+    ],
+    "summary": "Recommendations are applied and refined through the Chat with Aura Panel. The Chat with Aura Panel is a conversational interface. Aura responded with several palette suggestions."
+  },
+  {
+    "hex_coord": [
+      6,
+      1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      186,
+      424,
+      520,
+      530
+    ],
+    "summary": "The evaluation demonstrates the framework’s effectiveness in enhancing usability. The evaluation demonstrates the framework’s effectiveness in enhancing efficiency. The feedback further shaped the understanding of critical challenges."
+  },
+  {
+    "hex_coord": [
+      6,
+      1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1394,
+      1410,
+      1463
+    ],
+    "summary": "Options can improve the trust in the system. All participants were volunteers. All responses were analyzed by open coding and thematic analysis."
+  },
+  {
+    "hex_coord": [
+      6,
+      1
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2989
+    ],
+    "summary": "Consent was gained from participants for video recording the whole process. The evaluation process could be improved from several perspectives. All questions in the questionnaire are positive."
+  },
+  {
+    "hex_coord": [
+      7,
+      -8
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2879
+    ],
+    "summary": "When the user hovers over any track, IntelliCircos highlights the selected track."
+  },
+  {
+    "hex_coord": [
+      7,
+      -7
+    ],
+    "country": 0,
+    "MSU_ids": [
+      474
+    ],
+    "summary": "When overlapping between adjacent tracks reduced visual clarity, $E _ { B }$ invoked the system’s recommendation module to refine the layout."
+  },
+  {
+    "hex_coord": [
+      7,
+      -7
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2961,
+      2963
+    ],
+    "summary": "IntelliCircos explained: 'I suggest using a <tile> track instead of a <scatter> track as it can display overlapping ranges effectively.' Alex opened the color selection panel corresponding to the ideogram track in the Configuration Panel. Alex modified the height and direction of the histogram in the Configuration Panel to align with her preference."
+  },
+  {
+    "hex_coord": [
+      7,
+      -6
+    ],
+    "country": 1,
+    "MSU_ids": [
+      625,
+      677,
+      678,
+      679,
+      680,
+      681,
+      763,
+      777,
+      780,
+      781,
+      795
+    ],
+    "summary": "Bitmap or vector images can be created from GFF-style data inputs and hierarchical configuration files, which can be easily generated by automated tools. An interactive online version of Circos designed to visualize tabular data can be found at http://mkweb.bcgsc.ca/circos/tableviewer. Inputs to Circos are GFF-style data files and Apache-like configuration files."
+  },
+  {
+    "hex_coord": [
+      7,
+      -6
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2124
+    ],
+    "summary": "This approach provides smooth fading across the opacity levels."
+  },
+  {
+    "hex_coord": [
+      7,
+      -6
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2755,
+      2909,
+      2917,
+      2936
+    ],
+    "summary": "All images were in PNG format and resized to 224*224 pixels as input. The Data Panel (E) allows users to manage the source data. Data Panel supports data upload, preview, and deletion."
+  },
+  {
+    "hex_coord": [
+      7,
+      -5
+    ],
+    "country": 0,
+    "MSU_ids": [
+      309,
+      310,
+      340
+    ],
+    "summary": "The Project History and Step Snapshots View supports project management. The Project History and Step Snapshots View supports report output. The system maintains comprehensive project records."
+  },
+  {
+    "hex_coord": [
+      7,
+      -5
+    ],
+    "country": 1,
+    "MSU_ids": [
+      838,
+      839
+    ],
+    "summary": "tableviewer is a collection of tools used to parse tabular data. tableviewer generates data and configuration files for visualizing tables with Circos."
+  },
+  {
+    "hex_coord": [
+      7,
+      -5
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2600,
+      2601,
+      3138,
+      3253,
+      3280,
+      3281
+    ],
+    "summary": "ShinyCircos-V2.0 introduces a sample gallery to inspire users with circos plot designs. ShinyCircos-V2.0 requires users to manually digest the samples first and then apply the learned knowledge to the subsequent design of circos plots. The manual process in ShinyCircos-V2.0 is cognitively overwhelming for users."
+  },
+  {
+    "hex_coord": [
+      7,
+      -3
+    ],
+    "country": 0,
+    "MSU_ids": [
+      17,
+      457,
+      481
+    ],
+    "summary": "The system supports realtime refinement and high-quality report export. The task-specific requirements reflect real-world workflow needs. These tools rely on user expertise."
+  },
+  {
+    "hex_coord": [
+      7,
+      -3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1222
+    ],
+    "summary": "The design of the system should account for users changing between different data and task inputs."
+  },
+  {
+    "hex_coord": [
+      7,
+      -2
+    ],
+    "country": 0,
+    "MSU_ids": [
+      16,
+      45,
+      47,
+      49,
+      54,
+      58,
+      59,
+      155,
+      167,
+      201,
+      206,
+      215,
+      216,
+      226,
+      227,
+      230,
+      240,
+      241,
+      242,
+      254,
+      257,
+      298,
+      321,
+      324,
+      325,
+      338,
+      397,
+      577,
+      578
+    ],
+    "summary": "The system enables interactions and configuration reuse. LLMs can automate complex workflows. GPT-4o and DeepSeek-R1 were selected as the foundation of a semantics-driven multiagent workflow."
+  },
+  {
+    "hex_coord": [
+      7,
+      -2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1237
+    ],
+    "summary": "The Input Compiler and Output Compiler modules orchestrate the exchange of information between the front-end and back-end."
+  },
+  {
+    "hex_coord": [
+      7,
+      -1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      168,
+      196,
+      197,
+      212,
+      231,
+      243,
+      246,
+      290,
+      445
+    ],
+    "summary": "These agents are configured based on preevaluation of model capabilities. Deep-Seek-R1 excelled in structured code generation. These results guided our agent-model assignment strategy."
+  },
+  {
+    "hex_coord": [
+      7,
+      -1
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2829,
+      2847,
+      2853,
+      3073
+    ],
+    "summary": "The prompt input to the generator is optimized through prompt engineering to guide the model in generating the most relevant output. The Configuration Generator uses a prompt template to guide the model’s responses during the recommendation process. System prompts input for the model at the start of dialogue include task introduction, background knowledge, constraints, and guidelines."
+  },
+  {
+    "hex_coord": [
+      8,
+      -7
+    ],
+    "country": 1,
+    "MSU_ids": [
+      624,
+      697,
+      743,
+      749,
+      750,
+      796,
+      813
+    ],
+    "summary": "Circos is capable of displaying data as scatter, line and histogram plots, heat maps, tiles, connectors and text. Circos has been used in mainstream periodicals and newspapers (Constantine 2007; Duncan 2007; Ostrander 2007; Zimmer 2008). Circos has been used to visualize data from other fields of study (Corum and Hossain 2007)."
+  },
+  {
+    "hex_coord": [
+      8,
+      -7
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2739,
+      2740,
+      2743,
+      2753,
+      2766
+    ],
+    "summary": "The dataset includes three modalities: circos plots (bitmaps), annotations (natural language), and configurations (structured files). The dataset was constructed through a three-step workflow: paper collection, illustration-annotation pair extraction, and illustration labeling. The dataset aligns with genomic themes and includes professionally created circos plots."
+  },
+  {
+    "hex_coord": [
+      8,
+      -6
+    ],
+    "country": 1,
+    "MSU_ids": [
+      668
+    ],
+    "summary": "This makes Circos suitable for rapid deployment in data analysis and reporting pipelines. Circos is licensed under GPL and available at http://mkweb.bcgsc.ca/circos. Circos is general and usable in any data domain."
+  },
+  {
+    "hex_coord": [
+      8,
+      -6
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2565,
+      2578,
+      2579,
+      2585,
+      2609,
+      2611,
+      2621,
+      2695,
+      2696,
+      2719,
+      2722,
+      2738,
+      2751,
+      2813,
+      2876,
+      2882,
+      2883,
+      2908,
+      2916
+    ],
+    "summary": "We build a new dataset containing 4396 circos plots with corresponding annotations and configurations, which are extracted and labeled from published papers. Circos plots allow for a compact display of analysis results from multiple dimensions. Circos plots facilitate multiple downstream tasks, such as comparative analysis and correlation analysis, within a single visual space."
+  },
+  {
+    "hex_coord": [
+      8,
+      -5
+    ],
+    "country": 0,
+    "MSU_ids": [
+      83,
+      84
+    ],
+    "summary": "IntelliCircos leverages large language models (LLMs) to support the intelligent generation of Circos-based visualizations. IntelliCircos uses a curated example-based dataset to enable natural language input for visualization generation. One participant was unable to complete the task within the allotted time when using Circos."
+  },
+  {
+    "hex_coord": [
+      8,
+      -5
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2564,
+      2567,
+      2608,
+      3115,
+      3116
+    ],
+    "summary": "Creating circos plots is complex as it requires careful design for multiple track attributes and positional relationships between them. The process of creating circos plots is both tedious and time-intensive. We propose IntelliCircos, an AI-powered interactive authoring tool that streamlines the process from initial visual design to the final implementation of circos plots."
+  },
+  {
+    "hex_coord": [
+      8,
+      -4
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2586,
+      2875,
+      2904
+    ],
+    "summary": "The implementation process requires iterative refinement and frequent updates to achieve an optimal design. The user study aimed to reveal the limitations of IntelliCircos. Five interactive modules are presented in the user interface."
+  },
+  {
+    "hex_coord": [
+      8,
+      -3
+    ],
+    "country": 0,
+    "MSU_ids": [
+      191,
+      214,
+      394,
+      557
+    ],
+    "summary": "This results in low generation efficiency. This approach reduces manual trial-and-error. Anonymized outputs and a standardized rubric were used to ensure fairness and consistency."
+  },
+  {
+    "hex_coord": [
+      8,
+      -3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1239
+    ],
+    "summary": "Experts noted that the ability to specify data requirements in familiar file formats could reduce the learning curve associated with the system. The modular architecture ensures that individual components are easy to update without affecting other system modules."
+  },
+  {
+    "hex_coord": [
+      8,
+      -3
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2767
+    ],
+    "summary": "The syntax conceals implementation details to minimize the burden and cost of dataset annotation. This underscores the value of intuitive UI enhancements in reducing the learning curve. This approach could reduce the need for manual adjustments."
+  },
+  {
+    "hex_coord": [
+      8,
+      -2
+    ],
+    "country": 0,
+    "MSU_ids": [
+      166,
+      169,
+      202,
+      205,
+      207,
+      210,
+      211,
+      213,
+      232,
+      239,
+      268,
+      269,
+      270,
+      271,
+      278,
+      284,
+      285,
+      286,
+      291,
+      292,
+      293,
+      556
+    ],
+    "summary": "The workflow introduces specialized LLM-based agents responsible for key subtasks. The agents are enhanced through structured prompts, modular code abstraction, and retrieval-augmented grounding. This division supports a modular workflow where each agent operates on tasks aligned with the LLM’s strengths."
+  },
+  {
+    "hex_coord": [
+      8,
+      -2
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2858
+    ],
+    "summary": "The model's expected input and output were standardized through prompts to ensure consistency."
+  },
+  {
+    "hex_coord": [
+      9,
+      -7
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2832,
+      2845,
+      2859,
+      2877,
+      2878,
+      2898,
+      2906,
+      2915
+    ],
+    "summary": "Bioinformatics analysts often manually create circos plots to analyze the data and extract valuable insights. Bioinformatics analysts design circos plots by considering attributes such as track type, visual mapping for each track, and positional relationships between tracks. The tool is designed to assist bioinformatics analysts in creating circos plots."
+  },
+  {
+    "hex_coord": [
+      9,
+      -6
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2584,
+      2615,
+      2625,
+      2626,
+      2672,
+      2820,
+      2821,
+      2903,
+      2922,
+      2923,
+      2924,
+      2930,
+      2977,
+      2978,
+      2994,
+      3065,
+      3081,
+      3117,
+      3118
+    ],
+    "summary": "Analysts often seek inspiration from existing circos plots and iteratively adjust and refine the plot to achieve a satisfactory final design. The results demonstrate the usability and effectiveness of IntelliCircos in authoring circos plots. The process of creating circos plots consists of two main steps: design and implementation."
+  },
+  {
+    "hex_coord": [
+      9,
+      -5
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2613,
+      2614,
+      2624,
+      2673,
+      2885,
+      2899,
+      2900,
+      2901,
+      2902,
+      2913,
+      2937,
+      2938,
+      2942,
+      2950,
+      2972,
+      2991,
+      2992
+    ],
+    "summary": "We conduct a user study with 8 bioinformatics analysts to evaluate IntelliCircos. IntelliCircos allows users to browse and analyze configurations of similar charts. IntelliCircos provides progressive design recommendations considering both user-specified constraints and current creation in the user interface."
+  },
+  {
+    "hex_coord": [
+      9,
+      -4
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2974,
+      2998
+    ],
+    "summary": "A qualitative assessment of users’ experiences with IntelliCircos was conducted, comparing it to their current practices. The semi-structured interview included topics on practices with existing tools and experience with IntelliCircos. The quantitative results of the user study reflect participants’ ratings on the usability of IntelliCircos."
+  }
+]
