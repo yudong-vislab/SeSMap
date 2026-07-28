@@ -1,894 +1,76 @@
 [
   {
     "hex_coord": [
-      -8,
-      6
-    ],
-    "country": 2,
-    "MSU_ids": [
-      1023,
-      1024
-    ],
-    "summary": "The LLM-driven framework harnesses LLM agents to automate not only code generation but also text summarization for subsequent analysis. The retrieval basis allows experts to generalize observations from one case to others exhibiting similar dynamics. We collaborated with expert E3 to manually annotate representative cluster centroids."
-  },
-  {
-    "hex_coord": [
-      -8,
+      -16,
       7
     ],
-    "country": 2,
+    "country": 1,
     "MSU_ids": [
-      787
+      307,
+      308
     ],
-    "summary": "The workflow integrates expert annotations into a VLM-based summarization pipeline. These centroids form the basis for expert annotation. These sessions aimed to evaluate how experts perceived the system’s potential for generalization to larger workflows and collaboration scenarios."
+    "summary": "The downstream-developing rich mixture is entrained by counter-rotating streamwise vortex-pairs. The entrainment by counter-rotating streamwise vortex-pairs was previously observed in Liu's research. The 3-D vortex structures in the cavity of case 2 are found to be larger than those of case 1."
   },
   {
     "hex_coord": [
-      -7,
-      2
+      -16,
+      9
     ],
-    "country": 2,
+    "country": 1,
     "MSU_ids": [
-      834
+      429
     ],
-    "summary": "The vision-language model generates descriptive summaries of individual frames and entire cases. The integration translates complex simulation outputs into interpretable latent structures. We visualized the latent distributions of the extracted embeddings using a dimensionality reduction method."
+    "summary": "Vortex shedding can either promote or inhibit vortex shedding, which subsequently disintegrates the fuel jet. Once the fuel jet collides with the shedding vortex at the cavity step, it commences disintegrating, resulting in a reduction in penetration depth."
   },
   {
     "hex_coord": [
-      -7,
-      5
-    ],
-    "country": 2,
-    "MSU_ids": [
-      618
-    ],
-    "summary": "The *Temporal Trajectory View* visualizes the clustering result and temporal trajectory of the selected case in latent space. Complexity arises in parameter-driven case comparison. Clustering and summarizing temporal flow field data to reveal evolution patterns across time."
-  },
-  {
-    "hex_coord": [
-      -7,
-      6
-    ],
-    "country": 2,
-    "MSU_ids": [
-      976
-    ],
-    "summary": "The *Similar Trajectories View* draws the top three most similar temporal trajectories of three simulation cases. We demonstrate the effectiveness of TemporalFlowViz through two expert-informed case studies and expert feedback. We distilled a set of representative domain challenges based on recurring discussions and workflow observations."
-  },
-  {
-    "hex_coord": [
-      -7,
-      7
-    ],
-    "country": 2,
-    "MSU_ids": [
-      617,
-      630
-    ],
-    "summary": "The system supports coordinated multi-view exploration to facilitate in-depth analysis. The goal is to combine LLMs' medical domain knowledge and logical reasoning with the visual understanding capabilities of existing CAD models. Experts need support for identifying and comparing cases with similar behaviors under different initial conditions."
-  },
-  {
-    "hex_coord": [
-      -7,
+      -15,
       8
     ],
-    "country": 2,
-    "MSU_ids": [
-      984
-    ],
-    "summary": "Experts evaluated various formulations based on their ability to capture late-stage behavior related to convergence and stabilization. The case studies were designed to reflect practical use scenarios. These sessions aimed to evaluate how well the system supported specific tasks."
-  },
-  {
-    "hex_coord": [
-      -6,
-      2
-    ],
     "country": 1,
     "MSU_ids": [
-      156
+      49
     ],
-    "summary": "The computational domain is showed by the yellow region in Fig. [1]."
+    "summary": "The flow instabilities may be attributed to the self-sustained cavity shear-layer oscillation, unsteady jets in supersonic crossflow, and separated boundary layers. Sitaraman et al. attributed the low-frequency oscillations to the periodic fluctuation of jet penetration brought on by the interaction with the shear layer. The cavity shear-layer experiences severe flow oscillation as a result of the large-scale separated vortex shed."
   },
   {
     "hex_coord": [
-      -6,
+      -14,
       4
-    ],
-    "country": 2,
-    "MSU_ids": [
-      489,
-      496
-    ],
-    "summary": "The visual analytics system interface of TemporalFlowViz is shown in Figure 1. The large scale and high dimensionality of simulation-generated temporal flow field data present significant challenges for visual interpretation. Distance-based methods, such as K-means and agglomerative clustering, attempt to find relationships between data points based on various distance metrics."
-  },
-  {
-    "hex_coord": [
-      -6,
-      5
-    ],
-    "country": 2,
-    "MSU_ids": [
-      540
-    ],
-    "summary": "We present TemporalFlowViz, a parameter-aware visual analytics workflow and system. TemporalFlowViz is designed to support expert-driven clustering, visualization, and interpretation of temporal flow fields from scramjet combustion simulations. The system supports parameter-based filtering."
-  },
-  {
-    "hex_coord": [
-      -6,
-      6
-    ],
-    "country": 2,
-    "MSU_ids": [
-      531,
-      555,
-      556,
-      564,
-      596
-    ],
-    "summary": "The *Filtering Panel* presents initial parameters filters, case selection table, and clustering parameters. The *Details View* displays all the flow field frames of the same case of selected point in (b). There is a growing demand for tools that support exploratory, interpretable, and human-in-the-loop analysis of large-scale simulation data."
-  },
-  {
-    "hex_coord": [
-      -6,
-      7
-    ],
-    "country": 2,
-    "MSU_ids": [
-      517
-    ],
-    "summary": "The study is related to Visual Analytics. We propose a five-stage backend workflow. They help build a retrieval basis for downstream interpretation."
-  },
-  {
-    "hex_coord": [
-      -5,
-      0
-    ],
-    "country": 2,
-    "MSU_ids": [
-      607
-    ],
-    "summary": "A commonly used method is spectral clustering. R2GenGPT leverages the pre-trained knowledge of LLMs while overcoming their inability to process visual data directly. High-dimensional temporal data overload."
-  },
-  {
-    "hex_coord": [
-      -5,
-      2
-    ],
-    "country": 2,
-    "MSU_ids": [
-      498
-    ],
-    "summary": "The large scale and high dimensionality of simulation-generated temporal flow field data present significant challenges for cross-case comparison. The latent structures produced by the models differ significantly in terms of trajectory continuity, cluster separability, and interpretability. The Clustering Parameters subsection allows customization of the DBSCAN clustering algorithm."
-  },
-  {
-    "hex_coord": [
-      -5,
-      3
-    ],
-    "country": 2,
-    "MSU_ids": [
-      544,
-      576
-    ],
-    "summary": "The application of vision–language models (VLMs) to scientific visualization is still limited. Existing methods can be roughly divided into three categories: distance-based methods, density-based methods, and connectivity-based methods. Li et al. propose a novel approach for generating accurate and robust medical image reports."
-  },
-  {
-    "hex_coord": [
-      -5,
-      4
-    ],
-    "country": 1,
-    "MSU_ids": [
-      109
-    ],
-    "summary": "The purpose of this model is to close the unresolved terms generated from the filtering process."
-  },
-  {
-    "hex_coord": [
-      -5,
-      4
-    ],
-    "country": 2,
-    "MSU_ids": [
-      524
-    ],
-    "summary": "These massive and high-dimensional data pose significant challenges for downstream analysis and expert interpretation. The KERP approach decomposes medical report generation into three main steps: encoding visual features into a structured abnormality graph, retrieving relevant text templates based on detected abnormalities, and paraphrasing these templates to generate the final report. The method employs temporal trajectory modeling."
-  },
-  {
-    "hex_coord": [
-      -5,
-      5
-    ],
-    "country": 2,
-    "MSU_ids": [
-      662,
-      663,
-      1034
-    ],
-    "summary": "The workflow applies dimensionality reduction and clustering to identify latent combustion modes. The aim is to create a more user-friendly and interpretable system for patients compared to traditional CAD systems. The study addresses semantic communication (R3)."
-  },
-  {
-    "hex_coord": [
-      -5,
-      6
-    ],
-    "country": 2,
-    "MSU_ids": [
-      519,
-      610,
-      653
-    ],
-    "summary": "The study deals with Scientific Data Simulation. Experts expressed the necessity to visually cluster and summarize combustion modes across time. Semantic annotation and report generation bridge expert interpretations with natural language outputs."
-  },
-  {
-    "hex_coord": [
-      -5,
-      7
-    ],
-    "country": 1,
-    "MSU_ids": [
-      326
-    ],
-    "summary": "The approach is inspired by the work of Cao et al. [11]."
-  },
-  {
-    "hex_coord": [
-      -5,
-      7
-    ],
-    "country": 2,
-    "MSU_ids": [
-      878
-    ],
-    "summary": "The *Report View* shows the AI generated or expert annotated description of selected frame in (b). The purpose of the study is to support stable-state detection. The case studies involved independent exploration."
-  },
-  {
-    "hex_coord": [
-      -4,
-      -2
-    ],
-    "country": 1,
-    "MSU_ids": [
-      160
-    ],
-    "summary": "The channel surrounded by the yellow region corresponds to the computational domain."
-  },
-  {
-    "hex_coord": [
-      -4,
-      -2
-    ],
-    "country": 2,
-    "MSU_ids": [
-      773
-    ],
-    "summary": "Vision Transformers (ViTs) have demonstrated strong capabilities in extracting semantically rich features from images by modeling them as sequences of patches. We define the embedding process as a transformation from $P'_i(t)$ to $p_i(t)$. Let candidate cases be indexed by  $j_1, j_2, \\ldots, j_k$."
-  },
-  {
-    "hex_coord": [
-      -4,
-      -1
-    ],
-    "country": 2,
-    "MSU_ids": [
-      565,
-      608
-    ],
-    "summary": "Early handcrafted methods, such as SIFT, extract local keypoint descriptors to capture distinctive image patches invariant to scale and rotation. Each simulation produces dozens of time-sequenced flow field frames. We explored whether focusing on these regions could improve embedding coherence and downstream interpretability."
-  },
-  {
-    "hex_coord": [
-      -4,
-      3
-    ],
-    "country": 2,
-    "MSU_ids": [
-      545,
-      909
-    ],
-    "summary": "The application of VLMs to scientific visualization is particularly limited in domains where domain-specific terminology and interpretive precision are essential. Clustering and summarizing temporal flow field data to uncover latent combustion modes. These components are tightly integrated."
-  },
-  {
-    "hex_coord": [
-      -4,
-      4
-    ],
-    "country": 2,
-    "MSU_ids": [
-      575,
-      613,
-      1012
-    ],
-    "summary": "The workflow constructs temporal trajectories to trace flow evolution under varying initial conditions. Many studies have been devoted to data clustering methods. Manual inspection is labor-intensive and susceptible to subjectivity."
-  },
-  {
-    "hex_coord": [
-      -4,
-      5
-    ],
-    "country": 1,
-    "MSU_ids": [
-      28
-    ],
-    "summary": "The combustor consisting of cavity and rearwall expansion has emerged as a preferred configuration in the history of scramjet engines."
-  },
-  {
-    "hex_coord": [
-      -4,
-      6
-    ],
-    "country": 2,
-    "MSU_ids": [
-      826
-    ],
-    "summary": "We presented TemporalFlowViz, an end-to-end visual analytics workflow and system designed to support the parameter-aware interpretation of combustion evolution in scramjet simulations. We tested the hypothesis by comparing two preprocessing strategies. As a result, Gemma-3 is adopted in our workflow deployment."
-  },
-  {
-    "hex_coord": [
-      -3,
-      -6
-    ],
-    "country": 2,
-    "MSU_ids": [
-      570
-    ],
-    "summary": "Unsupervised methods, such as stacked denoising autoencoders, learn compact representations by reconstructing corrupted inputs."
-  },
-  {
-    "hex_coord": [
-      -3,
-      -5
-    ],
-    "country": 2,
-    "MSU_ids": [
-      543,
-      566
-    ],
-    "summary": "Recent developments in vision–language models (VLMs) offer mechanisms for converting visual input into natural language. Histogram of Oriented Gradients similarly encodes gradient orientations within localized cells, providing robust structural features for object recognition. Wang et al. introduce a framework to integrate LLMs with medical-image CAD networks."
-  },
-  {
-    "hex_coord": [
-      -3,
-      -2
-    ],
-    "country": 2,
-    "MSU_ids": [
-      497
-    ],
-    "summary": "The large scale and high dimensionality of simulation-generated temporal flow field data present significant challenges for feature differentiation. The flow field frames are represented as $X_i(t) = [P_i(t), OH_i(t), ...]$. t-SNE tends to preserve local neighborhood relationships."
-  },
-  {
-    "hex_coord": [
-      -3,
-      1
-    ],
-    "country": 2,
-    "MSU_ids": [
-      574
-    ],
-    "summary": "These advances form the foundation for representing complex flow-field imagery in scramjet combustion analysis."
-  },
-  {
-    "hex_coord": [
-      -3,
-      2
-    ],
-    "country": 2,
-    "MSU_ids": [
-      541,
-      661
-    ],
-    "summary": "Expert interpretation of flow behavior often relies on implicit knowledge, such as the position of flame fronts, shock structures, or pressure gradients. Each physical field's VTK data is then processed by a python program to map into an image under a uniform colormap and cropped out of excessive background regions to generate a clean visual representation of flow field inside engine. The study addresses recognition (R2)."
-  },
-  {
-    "hex_coord": [
-      -3,
-      4
-    ],
-    "country": 1,
-    "MSU_ids": [
-      217
-    ],
-    "summary": "The time advancement of the evolution equations is achieved using the third order explicit strong stability-preserving Runge-Kutta method. *C <sup>f</sup>* = 0.003 is the wall skin-friction coefficient."
-  },
-  {
-    "hex_coord": [
-      -3,
-      4
-    ],
-    "country": 2,
-    "MSU_ids": [
-      619
-    ],
-    "summary": "R2GenGPT enables frozen LLMs to generate radiology reports without costly full fine-tuning of the LLM. There are challenges described above. Each retrieved trajectory is visualized as a mini scatter plot, where the target trajectory is highlighted against a dimmed background of all other points."
-  },
-  {
-    "hex_coord": [
-      -3,
-      5
-    ],
-    "country": 1,
-    "MSU_ids": [
-      20
-    ],
-    "summary": "The Dual-Mode Scramjet (DMSJ) engine has been viewed as a leading candidate for achieving higher speed and longer range. A scramjet engine can be designed to operate both as a scramjet and as a ramjet. The reaction zone of case 1 (scram mode) has a 'V' shape."
-  },
-  {
-    "hex_coord": [
-      -3,
-      5
-    ],
-    "country": 2,
-    "MSU_ids": [
-      521
-    ],
-    "summary": "Supersonic combustion in scramjet engines plays a pivotal role in enabling sustained hypersonic flight. Among these, the pressure field and OH field were identified by domain experts as particularly important for combustion interpretation. The clustering results demonstrated that the system could effectively separate and characterize combustion behaviors across different cases."
-  },
-  {
-    "hex_coord": [
-      -3,
-      6
-    ],
-    "country": 1,
-    "MSU_ids": [
-      126,
-      154
-    ],
-    "summary": "This mechanism has been justified in previous publications for supersonic combustion. A series of experimental studies using this facility can be found in literature."
-  },
-  {
-    "hex_coord": [
-      -3,
-      6
-    ],
-    "country": 2,
-    "MSU_ids": [
-      614
-    ],
-    "summary": "The interpretation of combustion modes often relies on tacit expert knowledge. This design prioritizes the convergence and stability characteristics that are critical for interpreting combustion behavior. The analyses were conducted using the deployed system."
-  },
-  {
-    "hex_coord": [
-      -3,
-      7
-    ],
-    "country": 1,
-    "MSU_ids": [
-      486
-    ],
-    "summary": "It can be deduced from Fig. 3 and Fig. 4 that case 1 is in scram mode. Investigations concerning the ram-to-scram transition process are essential for future endeavors."
-  },
-  {
-    "hex_coord": [
-      -3,
-      7
-    ],
-    "country": 2,
-    "MSU_ids": [
-      495,
-      530
-    ],
-    "summary": "Understanding the complex combustion dynamics within scramjet engines is critical for advancing high-speed propulsion technologies. Domain experts increasingly seek to understand how initial conditions affect combustion dynamics."
-  },
-  {
-    "hex_coord": [
-      -2,
-      -7
-    ],
-    "country": 2,
-    "MSU_ids": [
-      532,
-      567
-    ],
-    "summary": "Recent advances in deep learning offer promising solutions. The advent of deep convolutional neural networks marked a paradigm shift. We compared two open-source VLMs for this task: InternVL2.5-38B and Gemma-3-27B."
-  },
-  {
-    "hex_coord": [
-      -2,
-      -6
-    ],
-    "country": 2,
-    "MSU_ids": [
-      568,
-      569,
-      572,
-      573
-    ],
-    "summary": "AlexNet demonstrates that end-to-end learning of hierarchical features yields superior performance on large-scale image classification. ResNet introduces residual connections to facilitate training of very deep architectures. Vision Transformers model images as sequences of patch embeddings, leveraging self-attention to capture long-range dependencies."
-  },
-  {
-    "hex_coord": [
-      -2,
-      -4
-    ],
-    "country": 1,
-    "MSU_ids": [
-      131
-    ],
-    "summary": "The subgrid scale and the Kolmogorov scale are of the same order. The second order MUSCL reconstruction is used to interpolate the left and right states at the interface. The VanLeer limiter is combined with the MUSCL reconstruction to interpolate the left and right states at the interface."
-  },
-  {
-    "hex_coord": [
-      -2,
-      -3
-    ],
-    "country": 1,
-    "MSU_ids": [
-      285
-    ],
-    "summary": "Takeno Flame Index (TFI) is expressed as TFI = (∇Y^F · ∇Y^O) / |∇Y^F · ∇Y^O|."
-  },
-  {
-    "hex_coord": [
-      -2,
-      -2
-    ],
-    "country": 1,
-    "MSU_ids": [
-      157
-    ],
-    "summary": "The total length of the geometry is 400 mm. Case 1 has an equivalence ratio of *ER* = 0.1, and case 2 has *ER* = 0.3. The white lines denote *HRR* = <sup>1</sup>*.*<sup>0</sup> × 109 W/m3."
-  },
-  {
-    "hex_coord": [
-      -2,
-      0
-    ],
-    "country": 1,
-    "MSU_ids": [
-      110
-    ],
-    "summary": "The terms on the right-hand side of the equation represent production, dissipation, and diffusion of ksgs, respectively. The absence of good near-wall resolution might be the most important factor explaining the overprediction."
-  },
-  {
-    "hex_coord": [
-      -2,
-      0
-    ],
-    "country": 2,
-    "MSU_ids": [
-      529
-    ],
-    "summary": "These metrics offer limited insight into the spatial and temporal structures underlying reactive flows. The embeddings captured localized combustion characteristics across time."
-  },
-  {
-    "hex_coord": [
-      -2,
-      1
-    ],
-    "country": 1,
-    "MSU_ids": [
-      216
-    ],
-    "summary": "*<sup>A</sup>* is the cross-sectional area of the channel. In the left-hand figures, the white arrows indicate the direction of oblique shocks propagation. Fig. 13(b) shows the view zooming in on the grey region."
-  },
-  {
-    "hex_coord": [
-      -2,
-      1
-    ],
-    "country": 2,
-    "MSU_ids": [
-      542,
-      615
-    ],
-    "summary": "The position of flame fronts, shock structures, or pressure gradients are not automatically encoded or explained by conventional embedding pipelines. There is a lack of structured mechanisms to capture and share this expertise across teams or with automated systems. We fixed the UMAP parameters following recommended values from prior work and empirical tuning."
-  },
-  {
-    "hex_coord": [
-      -2,
-      6
-    ],
-    "country": 1,
-    "MSU_ids": [
-      302,
-      465,
-      483
-    ],
-    "summary": "Research on backpressure-induced unstable flames is important to understand their physical mechanisms. The schematics describe the flame stabilization mechanism in the cavity-floor direct-injection scramjet. These two flame structures correspond to the scram and ram operating modes."
-  },
-  {
-    "hex_coord": [
-      -1,
-      -8
-    ],
-    "country": 2,
-    "MSU_ids": [
-      571
-    ],
-    "summary": "Stacked denoising autoencoders have been applied successfully to clustering and anomaly detection."
-  },
-  {
-    "hex_coord": [
-      -1,
-      -4
-    ],
-    "country": 1,
-    "MSU_ids": [
-      328
-    ],
-    "summary": "Computational grid for LES. The subscripts \"*sub1*\" and \"*sub2*\" in Eq. (15) denote the subsonic downstream and upstream regimes, respectively."
-  },
-  {
-    "hex_coord": [
-      -1,
-      -2
     ],
     "country": 1,
     "MSU_ids": [
       159
     ],
-    "summary": "The maximum Courant number is kept at 0.6 in the current computation. The isolator has a divergent angle of *α* = 1.4°. In ram mode, the supersonic channel is similar to the Laval nozzle, with a thermal throat at the cavity rear-part (*x* = 250 mm)."
+    "summary": "The isolator has a divergent angle of *α* = 1.4°. The length of the expansion section’s first part is 102.5 mm with a divergent angle α = 1.4°. The length of the expansion section’s second part is 26.5 mm with a divergent angle γ = 2°."
   },
   {
     "hex_coord": [
-      -1,
-      -1
-    ],
-    "country": 2,
-    "MSU_ids": [
-      518
-    ],
-    "summary": "The study involves Temporal Flow Field. We first cropped the pressure field images to isolate the core region of the scramjet engine—focusing on the isolator and cavity— Cropped pressure field frames were processed by InternViT."
-  },
-  {
-    "hex_coord": [
-      -1,
-      0
+      -14,
+      8
     ],
     "country": 1,
     "MSU_ids": [
-      30
+      79
     ],
-    "summary": "The demand for accurate flow field reproduction of realistic engine operating conditions is increasing rapidly. The supersonic upstream regime is excluded from the analysis."
+    "summary": "The temporal oscillations impact the fluid flow, mixing, and heat release. In stage #3, the obvious large-amplitude oscillation mode with a rapid-growing trend is monitored in the cavity, which is caused by the continuous pressurization and depressurization cycles."
   },
   {
     "hex_coord": [
-      -1,
-      1
-    ],
-    "country": 2,
-    "MSU_ids": [
-      528
-    ],
-    "summary": "Scalar metrics include thrust efficiency. The simulation campaign covers over 200 individual scramjet combustion cases. Each case is defined by a unique combination of the following three initial condition parameters:"
-  },
-  {
-    "hex_coord": [
-      -1,
-      2
-    ],
-    "country": 2,
-    "MSU_ids": [
-      945
-    ],
-    "summary": "Locally, the trajectory of a single case reveals whether the process remains within a stable mode, transitions between modes, or shows oscillatory behavior. The upper region of the engine contains more informative flame structures."
-  },
-  {
-    "hex_coord": [
-      -1,
-      3
-    ],
-    "country": 2,
-    "MSU_ids": [
-      609
-    ],
-    "summary": "Traditional scalar metrics (e.g., thrust, equivalence ratio) offer limited insights into the spatial and temporal transitions during combustion. This dataset enables the exploration of parameter-dependent combustion phenomena across a wide range of initial conditions."
-  },
-  {
-    "hex_coord": [
-      -1,
-      5
-    ],
-    "country": 1,
-    "MSU_ids": [
-      229,
-      337
-    ],
-    "summary": "Various approaches have been proposed to identify the operating mode of the DMSJ engine. This section examines the dynamic behaviors of shock wave and flame during scram-to-ram transition, both qualitatively and quantitatively. Fig. 13 shows the waveform of flame oscillation in case 2."
-  },
-  {
-    "hex_coord": [
-      -1,
-      5
-    ],
-    "country": 2,
-    "MSU_ids": [
-      522,
-      616
-    ],
-    "summary": "Computational simulations have become indispensable for analyzing the complex interactions among turbulence, chemical kinetics, and thermal effects in these high-speed propulsion systems. Design exploration requires understanding how changes in initial condition parameters affect combustion outcomes. Each stage corresponds to one or more analytical requirements."
-  },
-  {
-    "hex_coord": [
-      -1,
-      6
-    ],
-    "country": 1,
-    "MSU_ids": [
-      204,
-      476
-    ],
-    "summary": "Two typical flame structures, cavity shear-layer and cavity-assisted jet-wake stabilized flame, corresponding to the scram/ram operating modes, were reproduced. The primary objective is to obtain a comprehensive understanding of flow characteristics in separated flow. The primary objective is to obtain a comprehensive understanding of unsteady flame dynamics in separated flow."
-  },
-  {
-    "hex_coord": [
-      0,
-      -4
-    ],
-    "country": 1,
-    "MSU_ids": [
-      142
-    ],
-    "summary": "The HLLC-P Riemann solver is appropriate for a range of conditions from hypersonic compressible to low-speed incompressible flow regimes."
-  },
-  {
-    "hex_coord": [
-      0,
-      -3
-    ],
-    "country": 1,
-    "MSU_ids": [
-      108,
-      141
-    ],
-    "summary": "The one-equation eddy-viscosity model articulates the transportation process of SGS turbulence kinetic energy ksgs. The HLLC-P Riemann solver eliminates distortion and instability issues from the traditional HLLC scheme in the low Mach number region. Experimental and computational 1-D Mach number distributions."
-  },
-  {
-    "hex_coord": [
-      0,
-      -3
-    ],
-    "country": 2,
-    "MSU_ids": [
-      523
-    ],
-    "summary": "The resulting data—typically high-resolution, time-sequenced flow field images across diverse initial conditions—are massive in scale and high in dimensionality."
-  },
-  {
-    "hex_coord": [
-      0,
-      -2
+      -13,
+      4
     ],
     "country": 1,
     "MSU_ids": [
       158,
-      288
-    ],
-    "summary": "The isolator is composed of a 70 mm straight section and an 80 mm expansion section. TFI = 1 denotes the premixed regime."
-  },
-  {
-    "hex_coord": [
-      0,
-      -1
-    ],
-    "country": 1,
-    "MSU_ids": [
-      231
-    ],
-    "summary": "The static pressure *p* is calculated using the ideal gas equation of state, *<sup>p</sup>* = *ρRu <sup>T</sup> Ns <sup>k</sup>*=<sup>1</sup> *Yk/Mk*. The length of the expansion section’s second part is 26.5 mm with a divergent angle γ = 2°. The pressure distributions on the upper wall are nearly identical apart from the leading edge of the expansion section."
-  },
-  {
-    "hex_coord": [
-      0,
-      3
-    ],
-    "country": 1,
-    "MSU_ids": [
-      308,
-      459
-    ],
-    "summary": "The hopping cycles included transient thermal choking, flame flashback, cavity flame-holding, and detachment. The thermal conductivity *λ* is calculated by the Eucken's approximate formula, *λ* = *μcv (*1*.*<sup>32</sup> + <sup>1</sup>*.*77*R/cv )*. The data are collected using various measurement techniques such as schlieren, chemiluminescence photography, OH-PLIF, and differential interferometry."
-  },
-  {
-    "hex_coord": [
-      0,
-      4
-    ],
-    "country": 1,
-    "MSU_ids": [
-      48,
-      80,
-      484
-    ],
-    "summary": "Limited research is available on the dynamic processes that represent unstable flame, such as ignition dynamics, thermalacoustic oscillation, flame flashback, and flow-induced unstable flame. Separation-driven supersonic combustion instability has not yet received enough attention. The reserved domain contains one fuel orifice."
-  },
-  {
-    "hex_coord": [
-      0,
-      4
-    ],
-    "country": 2,
-    "MSU_ids": [
-      525
-    ],
-    "summary": "Combustion performance is traditionally assessed using scalar metrics."
-  },
-  {
-    "hex_coord": [
-      0,
-      5
-    ],
-    "country": 1,
-    "MSU_ids": [
-      19,
-      446,
-      485
-    ],
-    "summary": "This increase in research activity results from the growing attention devoted to the strategic potential of near-space systems. A phenomenological scram-to-ram transition is achieved by directly switching the injection pressure from case 1 to case 2. Fig. [10] presents the evolution of pressure and flame during the mode transition."
-  },
-  {
-    "hex_coord": [
-      0,
-      5
-    ],
-    "country": 2,
-    "MSU_ids": [
-      612
-    ],
-    "summary": "Experts have to frequently assess whether combustion reaches steady state, exhibits oscillatory or transitional behaviors, or fails to ignite. Case Study 1 focused on combustion mode interpretation. We focused on case (a) to study stable scramjet combustion."
-  },
-  {
-    "hex_coord": [
-      1,
-      -5
-    ],
-    "country": 1,
-    "MSU_ids": [
-      21
-    ],
-    "summary": "The DMSJ engine has higher speed, lower weight, and longer range. There exist two peaks of subsonic upstream flow ratio within the engine, which occur at *x* = 75 mm in the isolator and at *x* = 160 mm in the cavity corner. The implementation of higher grid resolution near the wall is anticipated to improve the separation capture."
-  },
-  {
-    "hex_coord": [
-      1,
-      -2
-    ],
-    "country": 1,
-    "MSU_ids": [
-      115,
-      118
-    ],
-    "summary": "The coefficients *Cε* and *Ck* in Eqs. (5) and (6) are determined using the relationship between SGS stresses from two times of different-scale filtering using a box filter. According to the analyses of Kim et al. [36], it is possible to cope with energy backscatter to fit the local structures of actual turbulence. The turbulent scalar fluxes *Hsgs <sup>j</sup>* and *<sup>ϒ</sup>sgs <sup>j</sup>,<sup>k</sup>* are important unclosed terms in the filtered LES equations."
-  },
-  {
-    "hex_coord": [
-      1,
-      -2
-    ],
-    "country": 2,
-    "MSU_ids": [
-      527
-    ],
-    "summary": "Scalar metrics include pressure rise. $P_i(t)$ and $OH_i(t)$ denote the pressure and hydroxyl fields at time step t for simulation case *i*. The processed pressure field frames were clustered using DBSCAN."
-  },
-  {
-    "hex_coord": [
-      1,
-      -1
-    ],
-    "country": 1,
-    "MSU_ids": [
-      31,
       163
     ],
-    "summary": "A fixed-geometry DMSJ engine's mode transition control is often achieved by altering the fuel injection regularity. The entry height is 30 mm. Ma distributions from LES are obtained using cross-section averaging method."
+    "summary": "The isolator is composed of a 70 mm straight section and an 80 mm expansion section. The entry height is 30 mm. A cavity of 121 mm in length and 11 mm in depth is installed on the upper wall."
   },
   {
     "hex_coord": [
-      1,
-      0
-    ],
-    "country": 2,
-    "MSU_ids": [
-      651
-    ],
-    "summary": "The OH field indicates local combustion activity and flame structure. The trajectory visually represents the temporal evolution of flow characteristics."
-  },
-  {
-    "hex_coord": [
-      1,
-      1
+      -13,
+      5
     ],
     "country": 2,
     "MSU_ids": [
@@ -898,144 +80,768 @@
   },
   {
     "hex_coord": [
-      1,
-      2
+      -13,
+      10
     ],
     "country": 1,
     "MSU_ids": [
-      4,
-      46
+      57,
+      64,
+      65
     ],
-    "summary": "Unsteady supersonic combustion is an urgent problem that needs to be solved for real scramjet engine applications. A significant amount of research has been done on scramjet investigations using a variety of configurations and injection schemes. For case 1, the leading edge of the cavity serves as the source of the reflected shocks."
+    "summary": "The possible interaction with fuel jets complicates the instability process even more. The combustion instabilities associated with mode transition are typically more intense and severe. The increased intensity of combustion instabilities is due to the tendency toward cavity flame blowout."
   },
   {
     "hex_coord": [
-      1,
+      -11,
       4
     ],
     "country": 1,
     "MSU_ids": [
-      18
+      230,
+      231,
+      232
     ],
-    "summary": "The study focused on continuous flame flashback during mode transition. The boost in near-space vehicle research aims to achieve higher flying speed and longer strike range. In the simulation of a cavity-floor direct-injection scramjet, Sitaraman et al. noticed low-frequency heat release and pressure oscillations."
+    "summary": "The approaches can be categorized based on the position of the significant pressure-rise point relative to the isolator exit. The approaches can be categorized based on the size of the separation zone. The approaches can be categorized based on the Mach number at the isolator exit."
   },
   {
     "hex_coord": [
-      1,
+      -11,
+      8
+    ],
+    "country": 1,
+    "MSU_ids": [
+      289
+    ],
+    "summary": "The grid is clustered near the walls, cavity shear layer, and fuel jet. Although there is no primary recirculation zone within the cavity, the hot products that flow downstream have positive effects on the jet-wake flame. The level of fuel-rich condition for the local premixed regime can be distinguished by weighting with the mixture fraction Z."
+  },
+  {
+    "hex_coord": [
+      -11,
+      9
+    ],
+    "country": 1,
+    "MSU_ids": [
+      364,
+      365
+    ],
+    "summary": "The jet-wake flame gradually forms at the unsteady transitional mode. The flame leading edge is distorted by separated flow. The vortexes generated by the separated boundary layer induce a strong jet-wake flame."
+  },
+  {
+    "hex_coord": [
+      -9,
       4
     ],
-    "country": 2,
+    "country": 1,
     "MSU_ids": [
-      611,
-      633
+      161
     ],
-    "summary": "Difficulty in interpreting combustion evolution. The CFD platform was developed for high-speed reactive flow modeling. Diverging trajectories may suggest unstabilized combustion modes."
+    "summary": "The green line is the section mapped to air inlet for the velocity profile. The air inlet velocity profile is mapped from the section 50 mm downstream. The ratios of supersonic and subsonic downstream flow are equal at *x* = 175 mm, with each accounting for 50%."
   },
   {
     "hex_coord": [
-      1,
+      -9,
       5
     ],
     "country": 1,
     "MSU_ids": [
-      41,
-      275
+      328
     ],
-    "summary": "A lot of effort has been put into studying the mechanisms that stabilize combustion. Kato et al. conducted an experimental investigation on the flame behavior during scram to ram transition. The present work performs LES for two operating conditions illustrative of dual-mode scram/ram combustion."
+    "summary": "The supersonic outflow quantities are extrapolated from the nearest cells. The flow in recirculation zones is primarily subsonic. The subscripts \"*sub1*\" and \"*sub2*\" in Eq. (15) denote the subsonic downstream and upstream regimes, respectively."
   },
   {
     "hex_coord": [
-      2,
-      -5
-    ],
-    "country": 1,
-    "MSU_ids": [
-      161,
-      232
-    ],
-    "summary": "The PaSR model treats each grid cell as having two parts: the fine structure, which is dominated by chemical reaction, and the surrounding one, which is dominated by turbulent mixing. The green line is the section mapped to air inlet for the velocity profile. The approaches can be categorized based on the Mach number at the isolator exit."
-  },
-  {
-    "hex_coord": [
-      2,
-      -4
-    ],
-    "country": 1,
-    "MSU_ids": [
-      107,
-      116
-    ],
-    "summary": "Yoshizawa et al. proposed a one-equation eddy-viscosity model. According to the analyses of Kim et al. [36], it is possible to correct asymptotic behavior close to the stationary walls by dynamically choosing the model coefficients from the local properties of solvable scales. The subsonic downstream flow reaches its peak (10%) at *x* = 190 mm, which is slightly upstream of the location with the minimum Mach number (*x* = 200 mm) depicted in Fig. [4.]."
-  },
-  {
-    "hex_coord": [
-      2,
-      -2
-    ],
-    "country": 1,
-    "MSU_ids": [
-      2,
-      190
-    ],
-    "summary": "The unsteadiness of the flame can be present locally or globally in supersonic combustion. The Mach number fluctuations had an adverse effect on the scramjet's stability. The grid is clustered near the walls, cavity shear layer, and fuel jet."
-  },
-  {
-    "hex_coord": [
-      2,
-      -2
-    ],
-    "country": 2,
-    "MSU_ids": [
-      699
-    ],
-    "summary": "Key combustion phenomena primarily manifest near the isolator and cavity zones of the scramjet geometry. The upper region of the engine exhibited stronger variation in the OH field. In the circled regions of Fig. 8d(e), the OH field intensity was concentrated along a thin horizontal band."
-  },
-  {
-    "hex_coord": [
-      2,
-      -1
-    ],
-    "country": 1,
-    "MSU_ids": [
-      57
-    ],
-    "summary": "The possible interaction with fuel jets complicates the instability process even more. The approximate solution of the HLLC-P Riemann solver is used to calculate the conservative hyperbolic fluxes. The distance between the first node and the wall is set to 0.01 mm."
-  },
-  {
-    "hex_coord": [
-      2,
-      -1
+      -9,
+      7
     ],
     "country": 2,
     "MSU_ids": [
       698
     ],
-    "summary": "Both E1 and E2 emphasized that key combustion phenomena—such as ignition onset, shock–flame interaction, and stabilization—primarily manifest near the isolator and cavity zones of the scramjet geometry."
+    "summary": "Both E1 and E2 emphasized that key combustion phenomena—such as ignition onset, shock–flame interaction, and stabilization—primarily manifest near the isolator and cavity zones of the scramjet geometry. Ramjet cases typically originated from such clusters and terminated in larger clusters such as (e), which aggregated stable ramjet frames. Clusters (a) to (d) had scramjet combustion mode."
   },
   {
     "hex_coord": [
-      2,
+      -9,
+      8
+    ],
+    "country": 2,
+    "MSU_ids": [
+      699
+    ],
+    "summary": "Key combustion phenomena primarily manifest near the isolator and cavity zones of the scramjet geometry."
+  },
+  {
+    "hex_coord": [
+      -8,
+      5
+    ],
+    "country": 1,
+    "MSU_ids": [
+      29
+    ],
+    "summary": "A synergistic design allows the engine to operate without a physical throat between the combustor and expansion system. The absence of a physical throat provides an optimum cycle over a wider Mach number regime (Maᶠ = 3–8). The combustor configuration is preferred due to its low thrust loss and minimal aerodynamic heating."
+  },
+  {
+    "hex_coord": [
+      -8,
+      6
+    ],
+    "country": 1,
+    "MSU_ids": [
+      25,
+      26
+    ],
+    "summary": "When the flight Mach number Maᶠ = 3–6, the airflow entering the combustor is subsonic, corresponding to the ram mode. When the flight Mach number increases, the supersonic flow predominates in the combustor to avoid excessive energy loss. The mode transition exhibited significant Mach number fluctuations."
+  },
+  {
+    "hex_coord": [
+      -8,
+      7
+    ],
+    "country": 1,
+    "MSU_ids": [
+      465
+    ],
+    "summary": "Two typical flame structures, cavity shear-layer and cavity-assisted jet-wake stabilized flame, corresponding to the scram/ram operating modes, were reproduced. These two flame structures correspond to the scram and ram operating modes."
+  },
+  {
+    "hex_coord": [
+      -8,
+      8
+    ],
+    "country": 1,
+    "MSU_ids": [
+      42
+    ],
+    "summary": "Three common stabilization modes may be distinguished based on where the flame anchors: cavity shear-layer stabilized combustion, cavity assisted jet-wake stabilized combustion, and combined cavity shear-layer/recirculation stabilized combustion. The first three snapshots exhibit an evident recirculation, which corroborates the aforementioned cavity stabilized mode. The results satisfactorily reproduced two typical flame structures: cavity shear-layer and cavity-assisted jet-wake stabilized flames."
+  },
+  {
+    "hex_coord": [
+      -7,
+      2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      527,
+      528
+    ],
+    "summary": "Scalar metrics include pressure rise. Scalar metrics include thrust efficiency."
+  },
+  {
+    "hex_coord": [
+      -7,
+      3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      526
+    ],
+    "summary": "Scalar metrics include ignition delay."
+  },
+  {
+    "hex_coord": [
+      -7,
+      6
+    ],
+    "country": 1,
+    "MSU_ids": [
+      28,
+      337,
+      476
+    ],
+    "summary": "The combustor consisting of cavity and rearwall expansion has emerged as a preferred configuration in the history of scramjet engines. This section examines the dynamic behaviors of shock wave and flame during scram-to-ram transition, both qualitatively and quantitatively. Scram-to-ram mode transition based on the flame behavior could be divided into three stages."
+  },
+  {
+    "hex_coord": [
+      -7,
+      7
+    ],
+    "country": 1,
+    "MSU_ids": [
+      77
+    ],
+    "summary": "The combustion flow field in a scramjet is inherently unstable. Pure jet-wake stabilized combustion is not attainable under low inflow stagnation temperatures. As a result, the flow field is complex and intrinsically unstable."
+  },
+  {
+    "hex_coord": [
+      -7,
+      8
+    ],
+    "country": 1,
+    "MSU_ids": [
+      47
+    ],
+    "summary": "Most publications currently in print concentrate on the quasi-steady state that represents stable flame. Snapshot 'D' can be inferred to be at the unsteady transitional mode."
+  },
+  {
+    "hex_coord": [
+      -7,
+      8
+    ],
+    "country": 2,
+    "MSU_ids": [
+      650
+    ],
+    "summary": "The pressure field reflects global flow evolution and the onset of steady or oscillatory combustion states. Trajectories that gradually converge or oscillate confinedly often indicate stable combustion modes. Diverging trajectories may suggest unstabilized combustion modes."
+  },
+  {
+    "hex_coord": [
+      -7,
+      9
+    ],
+    "country": 1,
+    "MSU_ids": [
+      63
+    ],
+    "summary": "The flame flashback process could be divided into three stages: jet/shear-layer interaction, unsteady heat release, and establishment of a large-area separation zone with decay of the cavity recirculation zone. Combustion mode transition is usually accompanied by the transient establishment of flow separation. The transition process could be characterized by a series of flame oscillations driven by hopping cycles."
+  },
+  {
+    "hex_coord": [
+      -6,
+      -1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      157
+    ],
+    "summary": "The total length of the geometry is 400 mm."
+  },
+  {
+    "hex_coord": [
+      -6,
       0
     ],
     "country": 1,
     "MSU_ids": [
-      47,
-      77
+      218
     ],
-    "summary": "Most publications currently in print concentrate on the quasi-steady state that represents stable flame. The combustion flow field in a scramjet is inherently unstable. A cavity of 121 mm in length and 11 mm in depth is installed on the upper wall."
+    "summary": "The hydraulic diameter *D* is defined as *D* = 4*A/dw and *dw* is the wetted perimeter."
   },
   {
     "hex_coord": [
-      2,
-      1
+      -6,
+      2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      640
+    ],
+    "summary": "Static pressure (P) ranges from 0.8 MPa to 2.1 MPa."
+  },
+  {
+    "hex_coord": [
+      -6,
+      6
     ],
     "country": 1,
     "MSU_ids": [
       27,
       78,
+      275,
+      302
+    ],
+    "summary": "This work aims to advance the knowledge of dual-mode scramjet combustion operating with different equivalence ratios. The operational performance of a scramjet is basically determined by the flame-holder design through its influence on the fluid dynamics and combustion stability. Wang et al. have numerically found two flow-related combustion oscillation mechanisms in the scramjet with hydrogen injected upstream of the cavity."
+  },
+  {
+    "hex_coord": [
+      -6,
+      6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      909
+    ],
+    "summary": "(d) was the geometric configuration of the scramjet engine in our simulations."
+  },
+  {
+    "hex_coord": [
+      -6,
+      7
+    ],
+    "country": 1,
+    "MSU_ids": [
+      1,
+      2,
+      3,
+      4,
+      80,
+      126
+    ],
+    "summary": "The combustion process in scramjet engines generally takes place in unsteady conditions. The unsteadiness of the flame can be present locally or globally in supersonic combustion. Local or global unsteadiness occurs in processes such as reactant mixing, ignition, flame stabilization, and blow-off."
+  },
+  {
+    "hex_coord": [
+      -6,
+      7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      521
+    ],
+    "summary": "Supersonic combustion in scramjet engines plays a pivotal role in enabling sustained hypersonic flight."
+  },
+  {
+    "hex_coord": [
+      -6,
+      8
+    ],
+    "country": 1,
+    "MSU_ids": [
+      322
+    ],
+    "summary": "The mechanical model was used to analyze the mode transition mechanisms. The mode transition was found to be a nonlinear and unstable process. Scrutinizing the local flow regimes is significant for comprehending the underlying mechanisms driving mode transition."
+  },
+  {
+    "hex_coord": [
+      -6,
+      10
+    ],
+    "country": 1,
+    "MSU_ids": [
+      446
+    ],
+    "summary": "Figure 15(a) shows a temporal comparison of flame modes and POMs. Fig. 15(a) presents a comparison of the frequency between POMs and flame oscillation modes. The comparison of frequencies between POMs and flame oscillation modes was discussed previously."
+  },
+  {
+    "hex_coord": [
+      -6,
+      11
+    ],
+    "country": 2,
+    "MSU_ids": [
+      945
+    ],
+    "summary": "The upper region of the engine exhibited stronger variation in the OH field. The upper region of the engine contains more informative flame structures."
+  },
+  {
+    "hex_coord": [
+      -5,
+      2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      642
+    ],
+    "summary": "Static temperature (T) ranges from 565 K to 830 K."
+  },
+  {
+    "hex_coord": [
+      -5,
+      6
+    ],
+    "country": 1,
+    "MSU_ids": [
+      20,
+      46
+    ],
+    "summary": "The Dual-Mode Scramjet (DMSJ) engine has been viewed as a leading candidate for achieving higher speed and longer range. A scramjet engine can be designed to operate both as a scramjet and as a ramjet. Tian et al. experimentally studied the combustion mode in a hydrogen-fueled direct-injection scramjet."
+  },
+  {
+    "hex_coord": [
+      -5,
+      6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      495
+    ],
+    "summary": "Understanding the complex combustion dynamics within scramjet engines is critical for advancing high-speed propulsion technologies. We focused on case (a) to study stable scramjet combustion."
+  },
+  {
+    "hex_coord": [
+      -5,
+      7
+    ],
+    "country": 1,
+    "MSU_ids": [
+      31
+    ],
+    "summary": "A fixed-geometry DMSJ engine's mode transition control is often achieved by altering the fuel injection regularity. The mode transition process in a strut-based combustor with a combined injection strategy was numerically explored by Huang et al. Fotia et al. carried out an experimental study on the hydrogen-fueled DMSJ engine and observed some low-frequency periodic oscillations of the flame position under the separated flow."
+  },
+  {
+    "hex_coord": [
+      -5,
+      7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      596
+    ],
+    "summary": "Understanding the dynamic behavior of scramjet combustion processes involves interpreting complex spatial and temporal patterns across numerous simulation runs."
+  },
+  {
+    "hex_coord": [
+      -5,
+      9
+    ],
+    "country": 1,
+    "MSU_ids": [
+      363
+    ],
+    "summary": "This oscillation phenomenon between two combustion modes is also reported in Nakaya's studies."
+  },
+  {
+    "hex_coord": [
+      -5,
+      11
+    ],
+    "country": 2,
+    "MSU_ids": [
+      651,
+      940
+    ],
+    "summary": "The OH field indicates local combustion activity and flame structure. We focused on the hydroxyl radical (OH) field. The hydroxyl radical (OH) field served as an important indicator of combustion activity."
+  },
+  {
+    "hex_coord": [
+      -4,
+      1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      216
+    ],
+    "summary": "*<sup>A</sup>* is the cross-sectional area of the channel."
+  },
+  {
+    "hex_coord": [
+      -4,
+      6
+    ],
+    "country": 1,
+    "MSU_ids": [
+      21
+    ],
+    "summary": "The DMSJ engine has higher speed, lower weight, and longer range. Marinov's intricate hydrogen-air reaction mechanism with 9 species and 27 elementary reactions is adopted here in order to reproduce the practical chemical kinetics of the dynamic combustion process."
+  },
+  {
+    "hex_coord": [
+      -4,
+      6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      522,
+      574
+    ],
+    "summary": "Computational simulations have become indispensable for analyzing the complex interactions among turbulence, chemical kinetics, and thermal effects in these high-speed propulsion systems. These advances form the foundation for representing complex flow-field imagery in scramjet combustion analysis."
+  },
+  {
+    "hex_coord": [
+      -4,
+      7
+    ],
+    "country": 1,
+    "MSU_ids": [
+      48,
+      229
+    ],
+    "summary": "The correlation between operating and stabilization modes of the DMSJ combustor was further investigated by Yuan et al. Limited research is available on the dynamic processes that represent unstable flame, such as ignition dynamics, thermalacoustic oscillation, flame flashback, and flow-induced unstable flame. Yang et al. provided a mechanical model of the DMSJ engine."
+  },
+  {
+    "hex_coord": [
+      -4,
+      8
+    ],
+    "country": 1,
+    "MSU_ids": [
+      41
+    ],
+    "summary": "A lot of effort has been put into studying the mechanisms that stabilize combustion. Research on backpressure-induced unstable flames is important to understand their physical mechanisms. Research on backpressure-induced unstable flames is important to impose appropriate controls."
+  },
+  {
+    "hex_coord": [
+      -3,
+      1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      215
+    ],
+    "summary": "*γ* = 1.4 is the specific heat ratio."
+  },
+  {
+    "hex_coord": [
+      -3,
+      6
+    ],
+    "country": 1,
+    "MSU_ids": [
+      30
+    ],
+    "summary": "The demand for accurate flow field reproduction of realistic engine operating conditions is increasing rapidly."
+  },
+  {
+    "hex_coord": [
+      -3,
+      7
+    ],
+    "country": 1,
+    "MSU_ids": [
+      483,
+      484,
+      485,
+      486
+    ],
+    "summary": "It is imperative to delve into research exploring more practical engine configurations and operational circumstances. Investigations concerning the application of passive-injection scheme are essential for future endeavors. Investigations concerning the utilization of ethylene fuel are essential for future endeavors."
+  },
+  {
+    "hex_coord": [
+      -3,
+      7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      616
+    ],
+    "summary": "Design exploration requires understanding how changes in initial condition parameters affect combustion outcomes."
+  },
+  {
+    "hex_coord": [
+      -3,
+      8
+    ],
+    "country": 2,
+    "MSU_ids": [
+      530,
+      612
+    ],
+    "summary": "Domain experts increasingly seek to understand how initial conditions affect combustion dynamics. Experts have to frequently assess whether combustion reaches steady state, exhibits oscillatory or transitional behaviors, or fails to ignite. This design prioritizes the convergence and stability characteristics that are critical for interpreting combustion behavior."
+  },
+  {
+    "hex_coord": [
+      -3,
+      9
+    ],
+    "country": 1,
+    "MSU_ids": [
+      285
+    ],
+    "summary": "Takeno Flame Index (TFI) is expressed as TFI = (∇Y^F · ∇Y^O) / |∇Y^F · ∇Y^O|."
+  },
+  {
+    "hex_coord": [
+      -3,
+      10
+    ],
+    "country": 1,
+    "MSU_ids": [
       286
     ],
-    "summary": "The flame flashback process could be divided into three stages: jet/shear-layer interaction, unsteady heat release, and establishment of a large-area separation zone with decay of the cavity recirculation zone. The operational performance of a scramjet is basically determined by the flame-holder design through its influence on the fluid dynamics and combustion stability. The results revealed that the shock waves were still in the isolator when the combustor entered scram mode."
+    "summary": "Takeno Flame Index (TFI) can be used to characterize the flame regimes. The flame regimes indicated by different MFI values are: no flame (MFI = −2), lean-premixed flame (MFI = −1), diffusion flame (MFI = 0), and rich-premixed flame (MFI = 1). Contours of instantaneous modified flame index MFI with black isoline at stoichiometry."
+  },
+  {
+    "hex_coord": [
+      -2,
+      0
+    ],
+    "country": 1,
+    "MSU_ids": [
+      287,
+      288
+    ],
+    "summary": "TFI = −1 denotes the diffusion regime. TFI = 1 denotes the premixed regime."
+  },
+  {
+    "hex_coord": [
+      -2,
+      1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      129,
+      217
+    ],
+    "summary": "The thermal diffusivity is given by *α* = *λ/cp*. The thermal conductivity *λ* is calculated by the Eucken's approximate formula, *λ* = *μcv (*1*.*<sup>32</sup> + <sup>1</sup>*.*77*R/cv )*. ctot is the total molar concentration."
+  },
+  {
+    "hex_coord": [
+      -2,
+      2
+    ],
+    "country": 1,
+    "MSU_ids": [
+      130
+    ],
+    "summary": "Whereas, *Yk*, *hk*, *Dk* and *ω*˙ *<sup>k</sup>* represent the mass fraction, static enthalpy, mass diffusivity and reaction rate of species *k*, respectively. The mass diffusivity is often characterized in terms of the molecular Schmidt number *Dk* = *μ/Sck* and *Sck* = <sup>0</sup>*.*7 for all the species. The turbulent Prandtl number *Prt* and Schmidt number *Sck,<sup>t</sup>* are set to 0.9 and 0.75, respectively."
+  },
+  {
+    "hex_coord": [
+      -2,
+      4
+    ],
+    "country": 2,
+    "MSU_ids": [
+      542
+    ],
+    "summary": "The position of flame fronts, shock structures, or pressure gradients are not automatically encoded or explained by conventional embedding pipelines."
+  },
+  {
+    "hex_coord": [
+      -2,
+      5
+    ],
+    "country": 1,
+    "MSU_ids": [
+      17,
+      18,
+      19
+    ],
+    "summary": "The national research on near-space vehicles has been regularly boosted. The boost in near-space vehicle research aims to achieve higher flying speed and longer strike range. This increase in research activity results from the growing attention devoted to the strategic potential of near-space systems."
+  },
+  {
+    "hex_coord": [
+      -2,
+      7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      611
+    ],
+    "summary": "Difficulty in interpreting combustion evolution. This demonstrated the effectiveness of latent trajectory analysis for understanding dynamic combustion behavior."
+  },
+  {
+    "hex_coord": [
+      -2,
+      8
+    ],
+    "country": 2,
+    "MSU_ids": [
+      541,
+      614
+    ],
+    "summary": "Expert interpretation of flow behavior often relies on implicit knowledge, such as the position of flame fronts, shock structures, or pressure gradients. The interpretation of combustion modes often relies on tacit expert knowledge. Case Study 1 focused on combustion mode interpretation."
+  },
+  {
+    "hex_coord": [
+      -2,
+      9
+    ],
+    "country": 2,
+    "MSU_ids": [
+      610
+    ],
+    "summary": "Experts expressed the necessity to visually cluster and summarize combustion modes across time. Among these, the pressure field and OH field were identified by domain experts as particularly important for combustion interpretation. Globally, experts can identify clusters corresponding to different combustion modes."
+  },
+  {
+    "hex_coord": [
+      -1,
+      4
+    ],
+    "country": 1,
+    "MSU_ids": [
+      141,
+      142
+    ],
+    "summary": "The approximate solution of the HLLC-P Riemann solver is used to calculate the conservative hyperbolic fluxes. The HLLC-P Riemann solver eliminates distortion and instability issues from the traditional HLLC scheme in the low Mach number region. The HLLC-P Riemann solver is appropriate for a range of conditions from hypersonic compressible to low-speed incompressible flow regimes."
+  },
+  {
+    "hex_coord": [
+      -1,
+      5
+    ],
+    "country": 2,
+    "MSU_ids": [
+      525,
+      529,
+      609
+    ],
+    "summary": "Combustion performance is traditionally assessed using scalar metrics. These metrics offer limited insight into the spatial and temporal structures underlying reactive flows. Traditional scalar metrics (e.g., thrust, equivalence ratio) offer limited insights into the spatial and temporal transitions during combustion."
+  },
+  {
+    "hex_coord": [
+      0,
+      -11
+    ],
+    "country": 1,
+    "MSU_ids": [
+      156,
+      160
+    ],
+    "summary": "The computational domain is showed by the yellow region in Fig. [1]. The channel surrounded by the yellow region corresponds to the computational domain."
+  },
+  {
+    "hex_coord": [
+      0,
+      2
+    ],
+    "country": 1,
+    "MSU_ids": [
+      107,
+      108,
+      110,
+      118
+    ],
+    "summary": "Yoshizawa et al. proposed a one-equation eddy-viscosity model. The one-equation eddy-viscosity model articulates the transportation process of SGS turbulence kinetic energy ksgs. The terms on the right-hand side of the equation represent production, dissipation, and diffusion of ksgs, respectively."
+  },
+  {
+    "hex_coord": [
+      0,
+      3
+    ],
+    "country": 1,
+    "MSU_ids": [
+      83
+    ],
+    "summary": "Large-eddy simulation (LES) shows a high potential to predict time varying phenomena."
+  },
+  {
+    "hex_coord": [
+      0,
+      5
+    ],
+    "country": 2,
+    "MSU_ids": [
+      633
+    ],
+    "summary": "The dataset was generated using a specialized computational fluid dynamics (CFD) platform. The CFD platform was developed for high-speed reactive flow modeling."
+  },
+  {
+    "hex_coord": [
+      1,
+      2
+    ],
+    "country": 1,
+    "MSU_ids": [
+      189,
+      190
+    ],
+    "summary": "The dimensionless quantity y+ equals 10. A y+ value of 10 is a little coarse for wall-resolved LES. A y+ value of 10 is appropriate for cases with a dynamic turbulence model."
+  },
+  {
+    "hex_coord": [
+      1,
+      5
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1034
+    ],
+    "summary": "TemporalFlowViz is designed to support expert-driven clustering, visualization, and interpretation of temporal flow fields from scramjet combustion simulations. TemporalFlowViz is designed to support expert-driven interpretation of scramjet combustion simulations. We presented TemporalFlowViz, an end-to-end visual analytics workflow and system designed to support the parameter-aware interpretation of combustion evolution in scramjet simulations."
+  },
+  {
+    "hex_coord": [
+      2,
+      -14
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1012
+    ],
+    "summary": "Experts viewed the system as scalable to high-volume simulation settings. In high-volume simulation settings, hundreds of cases must be triaged or grouped."
+  },
+  {
+    "hex_coord": [
+      2,
+      -11
+    ],
+    "country": 2,
+    "MSU_ids": [
+      787,
+      1024
+    ],
+    "summary": "Domain specialists annotate representative cluster centroids with descriptive labels. For each cluster $C_k$, we identify a representative centroid by selecting the embedding closest to the cluster mean. These centroids form the basis for expert annotation."
   },
   {
     "hex_coord": [
@@ -1044,265 +850,449 @@
     ],
     "country": 1,
     "MSU_ids": [
-      1
+      115,
+      116
     ],
-    "summary": "The combustion process in scramjet engines generally takes place in unsteady conditions. The pressure distribution on the upper wall matches the experimental results well for both cases. Fig. [11] depicts the developmental process of the low-energy stream."
-  },
-  {
-    "hex_coord": [
-      2,
-      3
-    ],
-    "country": 1,
-    "MSU_ids": [
-      42,
-      365,
-      429
-    ],
-    "summary": "Quantitative analyses were conducted to characterize flame dynamics under flow separation. Three common stabilization modes may be distinguished based on where the flame anchors: cavity shear-layer stabilized combustion, cavity assisted jet-wake stabilized combustion, and combined cavity shear-layer/recirculation stabilized combustion. Wang et al. have numerically found two flow-related combustion oscillation mechanisms in the scramjet with hydrogen injected upstream of the cavity."
-  },
-  {
-    "hex_coord": [
-      2,
-      3
-    ],
-    "country": 2,
-    "MSU_ids": [
-      940
-    ],
-    "summary": "Case Study 1 focused on pressure field evolution. The hydroxyl radical (OH) field served as an important indicator of combustion activity. The shear layer combustion mode is characterized by narrow, stratified flame structures forming along the fuel–air interface."
+    "summary": "According to the analyses of Kim et al. [36], it is possible to cope with energy backscatter to fit the local structures of actual turbulence. According to the analyses of Kim et al. [36], it is possible to correct asymptotic behavior close to the stationary walls by dynamically choosing the model coefficients from the local properties of solvable scales. The model coefficients are dynamically chosen from the local properties of solvable scales."
   },
   {
     "hex_coord": [
       2,
       5
     ],
-    "country": 1,
+    "country": 2,
     "MSU_ids": [
-      17
+      558
     ],
-    "summary": "The national research on near-space vehicles has been regularly boosted."
+    "summary": "Znamenskaya's panoramic visualization survey reviews methods for thermophysical flow fields, including refractive index methods and digital particle image velocimetry. Znamenskaya emphasizes the need for scalable, quantitative analysis tools for thermophysical flow fields."
   },
   {
     "hex_coord": [
       3,
+      -11
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1023
+    ],
+    "summary": "Expert-provided annotations on centroids of representative clusters are used to condition a vision-language model. During workflow execution, domain experts interactively assign combustion-specific terminology to selected centroids through an annotation interface. The resulting annotated exemplars serve as semantic anchors for guiding the generation process."
+  },
+  {
+    "hex_coord": [
+      3,
+      -8
+    ],
+    "country": 2,
+    "MSU_ids": [
+      532,
+      567,
+      570,
+      571
+    ],
+    "summary": "Recent advances in deep learning offer promising solutions. The advent of deep convolutional neural networks marked a paradigm shift. Unsupervised methods, such as stacked denoising autoencoders, learn compact representations by reconstructing corrupted inputs."
+  },
+  {
+    "hex_coord": [
+      3,
+      6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      643,
+      644
+    ],
+    "summary": "Static temperature influences chemical reactivity. Static temperature influences ignition delay."
+  },
+  {
+    "hex_coord": [
+      4,
+      -11
+    ],
+    "country": 2,
+    "MSU_ids": [
+      544,
+      545
+    ],
+    "summary": "The application of vision–language models (VLMs) to scientific visualization is still limited. The application of VLMs to scientific visualization is particularly limited in domains where domain-specific terminology and interpretive precision are essential. This multimodal annotation pipeline enables automated reporting, similarity-driven retrieval, and collaborative analysis with minimal manual overhead."
+  },
+  {
+    "hex_coord": [
+      4,
+      -9
+    ],
+    "country": 2,
+    "MSU_ids": [
+      565,
+      566,
+      568
+    ],
+    "summary": "Early handcrafted methods, such as SIFT, extract local keypoint descriptors to capture distinctive image patches invariant to scale and rotation. Histogram of Oriented Gradients similarly encodes gradient orientations within localized cells, providing robust structural features for object recognition. AlexNet demonstrates that end-to-end learning of hierarchical features yields superior performance on large-scale image classification."
+  },
+  {
+    "hex_coord": [
+      4,
+      -8
+    ],
+    "country": 2,
+    "MSU_ids": [
+      569
+    ],
+    "summary": "ResNet introduces residual connections to facilitate training of very deep architectures. Cropped pressure field frames were processed by InternViT."
+  },
+  {
+    "hex_coord": [
+      4,
+      7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      645,
+      646,
+      647
+    ],
+    "summary": "Water vapor content (H2O) ranges from 7.8% to 14%. Water vapor content affects the mixture equivalence ratio. Water vapor content affects combustion efficiency."
+  },
+  {
+    "hex_coord": [
+      5,
+      -11
+    ],
+    "country": 2,
+    "MSU_ids": [
+      543
+    ],
+    "summary": "These annotations are used as contextual prompts for a vision–language model. Recent developments in vision–language models (VLMs) offer mechanisms for converting visual input into natural language. The latent space uses annotated descriptions as context for a vision-language model."
+  },
+  {
+    "hex_coord": [
+      5,
+      -9
+    ],
+    "country": 2,
+    "MSU_ids": [
+      572,
+      573
+    ],
+    "summary": "Vision Transformers (ViTs) have demonstrated strong capabilities in extracting semantically rich features from images by modeling them as sequences of patches. Vision Transformers (ViTs) are applied to PDE operator learning and particle image velocimetry. Vision Transformers model images as sequences of patch embeddings, leveraging self-attention to capture long-range dependencies."
+  },
+  {
+    "hex_coord": [
+      5,
+      -5
+    ],
+    "country": 2,
+    "MSU_ids": [
+      576
+    ],
+    "summary": "Density-based clustering methods such as DBSCAN have been widely used to expose latent patterns, combustion modes, and transitional behaviors in temporal flow field data. Existing methods can be roughly divided into three categories: distance-based methods, density-based methods, and connectivity-based methods. Distance-based methods, such as K-means and agglomerative clustering, attempt to find relationships between data points based on various distance metrics."
+  },
+  {
+    "hex_coord": [
+      5,
+      0
+    ],
+    "country": 1,
+    "MSU_ids": [
+      109
+    ],
+    "summary": "The terms denoted with the superscript '*sgs*' are unresolved and must be modeled. The purpose of this model is to close the unresolved terms generated from the filtering process."
+  },
+  {
+    "hex_coord": [
+      6,
+      -5
+    ],
+    "country": 2,
+    "MSU_ids": [
+      575
+    ],
+    "summary": "Many studies have been devoted to data clustering methods. A commonly used method is spectral clustering. The above ideas form the basis of many methods, such as ensemble clustering, clustering based on non-negative matrix factorization, etc."
+  },
+  {
+    "hex_coord": [
+      8,
+      -7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      608
+    ],
+    "summary": "Each simulation produces dozens of time-sequenced flow field frames. Each simulation case outputs a time series of flow field data recorded at regular time intervals. Simulation outputs are organized into time-sequenced flow field frames."
+  },
+  {
+    "hex_coord": [
+      9,
+      -10
+    ],
+    "country": 2,
+    "MSU_ids": [
+      653
+    ],
+    "summary": "We present TemporalFlowViz, a parameter-aware visual analytics workflow and system. We introduce TemporalFlowViz, a parameter-aware visual analytics workflow and system. We distilled a set of representative domain challenges based on recurring discussions and workflow observations."
+  },
+  {
+    "hex_coord": [
+      9,
+      -9
+    ],
+    "country": 2,
+    "MSU_ids": [
+      489
+    ],
+    "summary": "The visual analytics system interface of TemporalFlowViz is shown in Figure 1. We demonstrate the effectiveness of TemporalFlowViz through two expert-informed case studies and expert feedback. The derived system-level analytical requirements guided the design of TemporalFlowViz."
+  },
+  {
+    "hex_coord": [
+      10,
+      -10
+    ],
+    "country": 2,
+    "MSU_ids": [
+      984
+    ],
+    "summary": "The workflow supports the expert-driven visual analytics goals of TemporalFlowViz. Experts consistently emphasized the benefit of visual-semantic alignment enabled by our workflow."
+  },
+  {
+    "hex_coord": [
+      11,
+      -8
+    ],
+    "country": 2,
+    "MSU_ids": [
+      615
+    ],
+    "summary": "There is a lack of structured mechanisms to capture and share this expertise across teams or with automated systems. The system supports knowledge transfer and interpretive consistency across teams. Expert feedback confirmed that the system accelerates hypothesis validation, reduces cognitive load, and facilitates knowledge sharing across teams."
+  },
+  {
+    "hex_coord": [
+      11,
+      -7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      630
+    ],
+    "summary": "We derived system-level analytical requirements. These domain-informed requirements serve as the foundation for the system pipeline and interaction design. Each stage corresponds to one or more analytical requirements."
+  },
+  {
+    "hex_coord": [
+      11,
+      -3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      519
+    ],
+    "summary": "The study deals with Scientific Data Simulation."
+  },
+  {
+    "hex_coord": [
+      12,
+      -9
+    ],
+    "country": 2,
+    "MSU_ids": [
+      826
+    ],
+    "summary": "This view supports analysis at multiple levels."
+  },
+  {
+    "hex_coord": [
+      13,
+      -8
+    ],
+    "country": 2,
+    "MSU_ids": [
+      523,
+      524,
+      555
+    ],
+    "summary": "The resulting data—typically high-resolution, time-sequenced flow field images across diverse initial conditions—are massive in scale and high in dimensionality. These massive and high-dimensional data pose significant challenges for downstream analysis and expert interpretation. Visualization techniques for flow fields have evolved to address the challenges of interpreting complex, high-dimensional fluid dynamics data."
+  },
+  {
+    "hex_coord": [
+      14,
+      -9
+    ],
+    "country": 2,
+    "MSU_ids": [
+      496,
+      497,
+      498,
+      607,
+      773
+    ],
+    "summary": "The large scale and high dimensionality of simulation-generated temporal flow field data present significant challenges for visual interpretation. The large scale and high dimensionality of simulation-generated temporal flow field data present significant challenges for feature differentiation. The large scale and high dimensionality of simulation-generated temporal flow field data present significant challenges for cross-case comparison."
+  },
+  {
+    "hex_coord": [
+      14,
+      -8
+    ],
+    "country": 2,
+    "MSU_ids": [
+      540
+    ],
+    "summary": "Key challenges remain in expert interpretation of flow behavior. Task-specific fine-tuning could further enhance sensitivity to subtle flow structures and transitional events."
+  },
+  {
+    "hex_coord": [
+      15,
+      -9
+    ],
+    "country": 2,
+    "MSU_ids": [
+      976
+    ],
+    "summary": "The *Temporal Trajectory View* visualizes the clustering result and temporal trajectory of the selected case in latent space. Temporal Trajectory View (Fig. 1(b)) visualizes high-dimensional frame embeddings projected into a two-dimensional space via dimensionality reduction (e.g., UMAP). In all three kinds of ViT-based embeddings tested, the *Temporal Trajectory View* revealed a common structure."
+  },
+  {
+    "hex_coord": [
+      15,
+      -8
+    ],
+    "country": 2,
+    "MSU_ids": [
+      834
+    ],
+    "summary": "We have designed and iteratively refined a temporal dissimilarity metric. They help build a retrieval basis for downstream interpretation. Similarity is computed using a domaininformed difference metric that emphasizes relative deviation near the final time steps of each trajectory."
+  },
+  {
+    "hex_coord": [
+      15,
+      -7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      618,
+      661,
+      663
+    ],
+    "summary": "The system supports parameter-based filtering. The system supports similarity-based case retrieval. Complexity arises in parameter-driven case comparison."
+  },
+  {
+    "hex_coord": [
+      15,
+      -6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      662
+    ],
+    "summary": "The study addresses semantic communication (R3)."
+  },
+  {
+    "hex_coord": [
+      15,
+      -4
+    ],
+    "country": 1,
+    "MSU_ids": [
+      326
+    ],
+    "summary": "The approach is inspired by the work of Cao et al. [11]."
+  },
+  {
+    "hex_coord": [
+      16,
+      -15
+    ],
+    "country": 2,
+    "MSU_ids": [
+      556
+    ],
+    "summary": "Domain-specific applications such as FlowVisual by Wang et al. have tailored flow visualization for educational contexts. FlowVisual integrates 3D volume rendering and glyph techniques to teach fluid concepts."
+  },
+  {
+    "hex_coord": [
+      16,
+      -6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      613,
+      617,
+      619,
+      878
+    ],
+    "summary": "Manual inspection is labor-intensive and susceptible to subjectivity. Experts need support for identifying and comparing cases with similar behaviors under different initial conditions. There are challenges described above."
+  },
+  {
+    "hex_coord": [
+      16,
       -5
     ],
     "country": 1,
     "MSU_ids": [
-      230
+      154
     ],
-    "summary": "The approaches can be categorized based on the position of the significant pressure-rise point relative to the isolator exit. In ram mode (case 2), the ratios of supersonic and subsonic downstream flow are almost symmetrical."
+    "summary": "A series of experimental studies using this facility can be found in literature."
   },
   {
     "hex_coord": [
-      3,
-      -4
+      17,
+      -9
+    ],
+    "country": 2,
+    "MSU_ids": [
+      518
+    ],
+    "summary": "The study involves Temporal Flow Field. The workflow constructs temporal trajectories to trace flow evolution under varying initial conditions. The pipeline includes temporal trajectory construction."
+  },
+  {
+    "hex_coord": [
+      19,
+      -14
+    ],
+    "country": 2,
+    "MSU_ids": [
+      517
+    ],
+    "summary": "The study is related to Visual Analytics. These outputs help contextualize visual observations and facilitate communication."
+  },
+  {
+    "hex_coord": [
+      20,
+      -14
+    ],
+    "country": 2,
+    "MSU_ids": [
+      564
+    ],
+    "summary": "Effective image representation is fundamental to visual analytics systems, enabling subsequent tasks such as clustering and semantic interpretation."
+  },
+  {
+    "hex_coord": [
+      20,
+      -2
     ],
     "country": 1,
     "MSU_ids": [
-      83
+      204,
+      459
     ],
-    "summary": "Large-eddy simulation (LES) shows a high potential to predict time varying phenomena. Either a local grid-size (*-*¯ ) based spatial filter (denoted with superscript '−') or a Favre filter (denoted with superscript '∼') is used to derive the LES governing equations from the reactive Navier–Stokes equations. SGS stresses are obtained from two times of different-scale filtering using a box filter."
+    "summary": "This result is consistent with what was seen in Cao's investigations. This observation is consistent with previous analyses."
   },
   {
     "hex_coord": [
-      3,
+      22,
       -3
     ],
     "country": 1,
     "MSU_ids": [
-      26,
-      64,
-      287
+      131
     ],
-    "summary": "When the flight Mach number increases, the supersonic flow predominates in the combustor to avoid excessive energy loss. In a DMSJ engine, intensive heat release will alter the inflow conditions through large-scale flow separation induced by upstream-propagating backpressure. The combustion instabilities associated with mode transition are typically more intense and severe."
+    "summary": "The subgrid scale and the Kolmogorov scale are of the same order."
   },
   {
     "hex_coord": [
-      3,
-      -2
-    ],
-    "country": 1,
-    "MSU_ids": [
-      79,
-      218,
-      322
-    ],
-    "summary": "The temporal oscillations impact the fluid flow, mixing, and heat release. The hydraulic diameter *D* is defined as *D* = 4*A/dw and *dw* is the wetted perimeter. Hairpin-like vortexes induced by the shock/boundary-layer interaction are observed on the lower wall."
-  },
-  {
-    "hex_coord": [
-      3,
-      -1
-    ],
-    "country": 1,
-    "MSU_ids": [
-      63
-    ],
-    "summary": "The coherent-structures motion caused by the combined effects of low-speed separated flow and the fuel jet was the main cause of unsteady combustion. Combustion mode transition is usually accompanied by the transient establishment of flow separation. The physical time-step size of the order of 8 × 10^−9 s corresponds to the maximum Courant number of 0.6."
-  },
-  {
-    "hex_coord": [
-      3,
-      0
-    ],
-    "country": 1,
-    "MSU_ids": [
-      3,
-      307
-    ],
-    "summary": "Local or global unsteadiness occurs in processes such as reactant mixing, ignition, flame stabilization, and blow-off. The local flame structure and flow regime were investigated using a modified flame index and filter functions. The other oscillation mechanism was the unsteady flame propagation affected by the jet/cavity shear-layer interaction."
-  },
-  {
-    "hex_coord": [
-      3,
-      0
+      28,
+      -11
     ],
     "country": 2,
     "MSU_ids": [
-      642
+      531
     ],
-    "summary": "Static temperature (T) ranges from 565 K to 830 K. For three selected cases (a1–c1), we observed the spatiotemporal pressure evolution. The stability of the pressure fields is consistent with steady-state combustion."
-  },
-  {
-    "hex_coord": [
-      3,
-      1
-    ],
-    "country": 1,
-    "MSU_ids": [
-      289,
-      364
-    ],
-    "summary": "One oscillation mechanism was the intermittent auto-ignition of mixture packets linked to the fuel jet. The cavity lacks a primary recirculation zone, which may be the result of interactions between the fuel jet and low-speed separated flow in a configuration with a large length to depth ratio (L/D = 11). It can be inferred as cavity assisted jet-wake stabilized combustion, though it is susceptible to the flow oscillation."
-  },
-  {
-    "hex_coord": [
-      3,
-      1
-    ],
-    "country": 2,
-    "MSU_ids": [
-      526
-    ],
-    "summary": "Scalar metrics include ignition delay. This enables exploration of how different physical variables influence the latent structure and cluster formation. Globally, experts can identify clusters corresponding to different combustion modes."
-  },
-  {
-    "hex_coord": [
-      3,
-      2
-    ],
-    "country": 1,
-    "MSU_ids": [
-      29,
-      129
-    ],
-    "summary": "These oscillation modes caused intermittent flameout of varying levels. The absence of a physical throat provides an optimum cycle over a wider Mach number regime (Maᶠ = 3–8). The combustor configuration is preferred due to its low thrust loss and minimal aerodynamic heating."
-  },
-  {
-    "hex_coord": [
-      3,
-      2
-    ],
-    "country": 2,
-    "MSU_ids": [
-      558,
-      643
-    ],
-    "summary": "Znamenskaya's panoramic visualization survey reviews methods for thermophysical flow fields, including refractive index methods and digital particle image velocimetry. Static temperature influences chemical reactivity. The resulting clusters represent distinct latent combustion modes or transitional stages."
-  },
-  {
-    "hex_coord": [
-      3,
-      4
-    ],
-    "country": 1,
-    "MSU_ids": [
-      215,
-      363
-    ],
-    "summary": "*γ* = 1.4 is the specific heat ratio. For case 2, the pressure in the combustor rises sharply due to the intensive reaction. During ram mode operation, the flame is stabilized in the jet-wake."
-  },
-  {
-    "hex_coord": [
-      4,
-      -4
-    ],
-    "country": 1,
-    "MSU_ids": [
-      49
-    ],
-    "summary": "The flow instabilities may be attributed to the self-sustained cavity shear-layer oscillation, unsteady jets in supersonic crossflow, and separated boundary layers. The OH radicals spread from the fuel orifice to the downstream expansion section. As a result, the flow field is complex and intrinsically unstable."
-  },
-  {
-    "hex_coord": [
-      4,
-      -2
-    ],
-    "country": 1,
-    "MSU_ids": [
-      25,
-      65
-    ],
-    "summary": "When the flight Mach number Maᶠ = 3–6, the airflow entering the combustor is subsonic, corresponding to the ram mode. The increased intensity of combustion instabilities is due to the tendency toward cavity flame blowout. The mode transition was found to be a nonlinear and unstable process."
-  },
-  {
-    "hex_coord": [
-      4,
-      0
-    ],
-    "country": 2,
-    "MSU_ids": [
-      640,
-      644,
-      650
-    ],
-    "summary": "Static pressure (P) ranges from 0.8 MPa to 2.1 MPa. Static temperature influences ignition delay. The pressure field reflects global flow evolution and the onset of steady or oscillatory combustion states."
-  },
-  {
-    "hex_coord": [
-      4,
-      2
-    ],
-    "country": 2,
-    "MSU_ids": [
-      646,
-      647
-    ],
-    "summary": "Water vapor content affects the mixture equivalence ratio. Water vapor content affects combustion efficiency."
-  },
-  {
-    "hex_coord": [
-      4,
-      3
-    ],
-    "country": 1,
-    "MSU_ids": [
-      130
-    ],
-    "summary": "By varying the injection pressure, Yan et al. compared the transition processes from scram to ram and from ram to scram. The filtered reaction rate ¯ *ω*˙ *<sup>k</sup>* is modeled using the Partially Stirred Reactor (PaSR) model to couple the combustion with turbulent fluctuation. The nonlinear reaction rate can be estimated by weighting the laminar finite-rate chemistry with the volume fraction of fine structure."
-  },
-  {
-    "hex_coord": [
-      5,
-      -1
-    ],
-    "country": 1,
-    "MSU_ids": [
-      189
-    ],
-    "summary": "The time scale of SGS turbulent mixing can be calculated. A y+ value of 10 is a little coarse for wall-resolved LES. Both modes exhibited a diffusion regime as a whole, with a lean-premixed regime in the narrow layer between the reaction zone and airstream."
-  },
-  {
-    "hex_coord": [
-      5,
-      -1
-    ],
-    "country": 2,
-    "MSU_ids": [
-      645
-    ],
-    "summary": "Water vapor content (H2O) ranges from 7.8% to 14%. InternViT produced multiple fragmented clusters. According to InternViT-based clustering results, trajectories corresponding to stable scramjet combustion always remained within small round clusters."
+    "summary": "There is a growing demand for tools that support exploratory, interpretable, and human-in-the-loop analysis of large-scale simulation data."
   }
 ]

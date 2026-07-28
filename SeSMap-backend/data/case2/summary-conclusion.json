@@ -1,465 +1,627 @@
 [
   {
     "hex_coord": [
-      -4,
-      3
-    ],
-    "country": 0,
-    "MSU_ids": [
-      600
-    ],
-    "summary": "EA explained that the lack of causality detection on Sunday was because the traffic volume was small."
-  },
-  {
-    "hex_coord": [
-      -3,
-      1
-    ],
-    "country": 4,
-    "MSU_ids": [
-      1939
-    ],
-    "summary": "The readings of the purple and green ST series had correlatively increased and reached a high level of air pollution within the first three days. The fluctuation/decline trends in the orange and purple ST series were different due to the different industrial structure and pollution purification capabilities of the two regions. Most parts of China were very hot in summer."
-  },
-  {
-    "hex_coord": [
-      -3,
-      4
-    ],
-    "country": 0,
-    "MSU_ids": [
-      515
-    ],
-    "summary": "EA commented that all districts in Beijing should be treated as a whole for better air pollution control."
-  },
-  {
-    "hex_coord": [
-      -2,
-      -1
-    ],
-    "country": 2,
-    "MSU_ids": [
-      1320,
-      1397
-    ],
-    "summary": "We find that differences in direct aerosol radiative effects between models decrease by threefold over the BB source and outflow regions after correcting the identified errors. Biomass burning (BB) is a leading contributor to global emissions of carbonaceous aerosols. Absorbing biomass burning aerosols (BBAs) can affect precipitation."
-  },
-  {
-    "hex_coord": [
-      -2,
-      0
-    ],
-    "country": 0,
-    "MSU_ids": [
-      602
-    ],
-    "summary": "The center sensor is denoted as an ego sensor $s_e$. The height parameter limits peaks' minimum heights. A sharp peak in the third time window was first noticed."
-  },
-  {
-    "hex_coord": [
-      -2,
-      0
-    ],
-    "country": 2,
-    "MSU_ids": [
-      1173
-    ],
-    "summary": "Absorbing aerosols emitted from biomass burning greatly affect the radiation balance, cloudiness, and circulation over tropical regions. Recent flight campaigns have paid particular attention to biomass burning aerosols (BBA) over tropical regions. The carbonaceous component is the dominant contributor to the total aerosol emissions over the study regions."
-  },
-  {
-    "hex_coord": [
-      -2,
-      1
-    ],
-    "country": 1,
-    "MSU_ids": [
-      923
-    ],
-    "summary": "PM2.5 makes important contributions to hazy weather in autumn and winter. Hazy weather caused by PM2.5 results in reduced visibility and inconvenience to transportation. Despite the positive effects on PM2.5 predictions, the optimization achieved by the different experiments varied."
-  },
-  {
-    "hex_coord": [
-      -2,
-      1
-    ],
-    "country": 3,
-    "MSU_ids": [
-      2534
-    ],
-    "summary": "PA analyzed China's air quality in the first half of 2018 using VolumeSTCube. Some regions were particularly polluted during certain months, as denoted in Figure 6A1. AQI >150 means the air is moderately polluted, according to China's Ministry of Environmental Protection."
-  },
-  {
-    "hex_coord": [
-      -2,
+      -17,
       2
-    ],
-    "country": 4,
-    "MSU_ids": [
-      1937
-    ],
-    "summary": "Each ST series is not isolated and is oftentimes correlated with others nearby due to the influence of certain events. In the first case study, we analyzed how the air quality in China evolved. On flat terrain, air pollutants are easily transported or diffuse."
-  },
-  {
-    "hex_coord": [
-      -2,
-      3
-    ],
-    "country": 0,
-    "MSU_ids": [
-      29
-    ],
-    "summary": "If the pollutant readings at sensors A and B are identified to cause a considerable increase in those at sensor C consistently, proper measures should be taken to control the pollution at A and B rather than C. The causal directions are opposite to the traffic directions. The case studies demonstrate the dynamic causalities in air pollution phenomena and traffic situations."
-  },
-  {
-    "hex_coord": [
-      -2,
-      3
-    ],
-    "country": 1,
-    "MSU_ids": [
-      921
-    ],
-    "summary": "During the forecasting period of 0–24 hours, RMSEs decreased from 30% to 49% in the Sichuan Basin urban agglomeration. The boundary layer parameterization scheme was set as the Yonsei University scheme. Since the optimization of BC was not sensitive to time, the improvement effects could be maintained with a normalized RMSE of 0.54 to 0.70 during the 0-24 h forecasting period."
-  },
-  {
-    "hex_coord": [
-      -2,
-      3
-    ],
-    "country": 3,
-    "MSU_ids": [
-      2585
-    ],
-    "summary": "Examples of spatiotemporal phenomena include meteorological phenomena like rainfall, humidity, and temperature, and air pollution. The propagation process of air pollution expands the impact of air pollution over geographic space and time. The pollution once spread to the southwest, as indicated by the white arrow."
-  },
-  {
-    "hex_coord": [
-      -1,
-      -3
-    ],
-    "country": 2,
-    "MSU_ids": [
-      1182,
-      1204
-    ],
-    "summary": "Carbonaceous aerosols can potentially exacerbate climate warming by absorbing solar radiation at visible to ultraviolet (UV) wavelengths. Black carbon (BC) and organic aerosol (OA) are components of carbonaceous aerosols. The absorbing component of organic aerosol (OA) is also referred to as brown carbon."
-  },
-  {
-    "hex_coord": [
-      -1,
-      -1
-    ],
-    "country": 2,
-    "MSU_ids": [
-      1243,
-      1335
-    ],
-    "summary": "Flight campaign measurements support the findings of underestimated warming impacts of BBA. The varying configurations in Mie calculations include mixing state, refractive index, and particle size. We constrain aerosol lifetime via linear regression with precipitation and AE."
-  },
-  {
-    "hex_coord": [
-      -1,
-      0
-    ],
-    "country": 0,
-    "MSU_ids": [
-      604,
-      606
-    ],
-    "summary": "The air pollution dataset comprises the hourly readings of the PM2.5 concentration from 448 major air quality sensors in China between January 8 and March 23, 2018. Managers should focus more on the vehicles from $r4$ and $r5$ to take timely measures. Traffic control may be omitted on Sundays, thereby saving resources."
-  },
-  {
-    "hex_coord": [
-      -1,
-      0
-    ],
-    "country": 1,
-    "MSU_ids": [
-      953,
-      979
-    ],
-    "summary": "The reduction proportions of root-mean-square error varied from 38.90% to 48.86% for WRF-Chem_DA_BC. The reduction proportions of root-mean-square error varied from 30.10% to 46.08% for WRF-Chem_BC. DA on the initial conditions is an important technique to obtain an optimal analysis field to correct model uncertainties by combining the observation field with the model background field."
-  },
-  {
-    "hex_coord": [
-      -1,
-      0
-    ],
-    "country": 2,
-    "MSU_ids": [
-      1068
-    ],
-    "summary": "This highlights the potential to greatly reduce the uncertainty in the most uncertain radiative forcing agent. The definitions of aerosol lifetime and MAC make this equation always applicable. Modeled $\tau$ was linearly regressed against modeled precipitation and the angstrom exponent using AeroCom project data."
-  },
-  {
-    "hex_coord": [
-      -1,
-      1
-    ],
-    "country": 1,
-    "MSU_ids": [
-      1010,
-      1018
-    ],
-    "summary": "Data assimilation (DA) on the initial conditions and bias correction (BC) of model outputs are promising approaches to improving PM2.5 predictions. Continuous research and development have led to the creation of many regional and global atmospheric chemistry models. Data assimilation (DA) can reduce the uncertainty of the chemical initial field and source emission to improve prediction accuracy."
-  },
-  {
-    "hex_coord": [
-      -1,
-      2
-    ],
-    "country": 0,
-    "MSU_ids": [
-      541
-    ],
-    "summary": "Two remote air quality sensors should not have bi-directional causality. Two close sensors can have bi-directional causality because air pollutants likely transport back and forth between them. Finally, two real-world case studies on air pollution and traffic speed datasets, respectively, demonstrate the effectiveness of our approach."
-  },
-  {
-    "hex_coord": [
-      0,
-      -3
-    ],
-    "country": 1,
-    "MSU_ids": [
-      724
-    ],
-    "summary": "BC can to a certain extent make up for the limitations of initial field DA. The optimization effects of the BC method were more effective, with correlation coefficients of 0.4 to 0.8."
-  },
-  {
-    "hex_coord": [
-      0,
-      -2
-    ],
-    "country": 1,
-    "MSU_ids": [
-      1031
-    ],
-    "summary": "This study compared the optimization effects of DA and BC methods. Case 3 involves the WRF-Chem_BC experiment. The combined application of DA and BC showed large advantages over important regions examined in this study."
-  },
-  {
-    "hex_coord": [
-      0,
-      -2
-    ],
-    "country": 2,
-    "MSU_ids": [
-      1249
-    ],
-    "summary": "Results are shown individually for the Amazon and Southern Africa. Constraining SOA formation by aerosol absorption provides an innovative perspective on SOA estimation. The equation MAC = γ SSA + B represents a relationship involving the parameters MAC, SSA, and constants γ and B."
-  },
-  {
-    "hex_coord": [
-      0,
-      -1
-    ],
-    "country": 1,
-    "MSU_ids": [
-      889,
-      1013
-    ],
-    "summary": "An experiment assimilated in situ observations based on the GSI system, named WRF-Chem_DA. Bias correction (BC) can be used to construct a relationship between historical observations and the corresponding model forecasts. The inverse optimization method such as the ensemble Kalman filter (EnKF) for emission sources was proposed to calibrate the emission inventories."
-  },
-  {
-    "hex_coord": [
-      0,
-      -1
-    ],
-    "country": 2,
-    "MSU_ids": [
-      1134,
-      1161,
-      1201,
-      1242
-    ],
-    "summary": "By combining the AeroCom model ensemble with satellite and in situ observations, we provide constraints on the aerosol absorption optical depth over the Amazon and Africa. The formula for AAOD is given by the equation: AAOD = E × τ × MAC. The agreement between AeroCom mean precipitation patterns and observations suggests that AeroCom mean wet deposition patterns are realistic."
-  },
-  {
-    "hex_coord": [
-      0,
-      0
-    ],
-    "country": 1,
-    "MSU_ids": [
-      1009
-    ],
-    "summary": "Assimilating ground-based observation elements and satellite-derived aerosol optical depth data enhances PM2.5 forecasts. The fusion of observation and background information can maintain the level of consistency with actual atmospheric observations. Schwartz et al. (2012) used three different assimilation methods with MODIS AOD products and in situ PM2.5 observations."
-  },
-  {
-    "hex_coord": [
-      0,
-      0
-    ],
-    "country": 2,
-    "MSU_ids": [
-      1094
-    ],
-    "summary": "This challenge hinders reliable climate assessments over tropical regions. Both lifetime and MAC are emergent properties of models, resulting from various physical and chemical processes. In situ data is implemented in the interpretation of satellite observations to allow disaggregation of BC and OC emissions."
-  },
-  {
-    "hex_coord": [
-      0,
-      1
-    ],
-    "country": 0,
-    "MSU_ids": [
-      634
-    ],
-    "summary": "The causalities detected in every time partition must be stable and not disturbed by noise or dynamics. The time series's spatial proximity should be carefully incorporated to improve the reliability of causality detected in urban environments. The extension of the Granger causality test makes it practical for dynamic urban causality."
-  },
-  {
-    "hex_coord": [
-      0,
-      1
     ],
     "country": 3,
     "MSU_ids": [
       2769
     ],
-    "summary": "Spatial time series offer valuable insights within fields like environmental science, urban informatics, and atmospheric sciences. With the advancement of sensor technology, the scale of ST series data has become increasingly large. Interpolation techniques like Kriging and Inverse Distance Weighted can be employed to predict $\\hat{z}{c{x,y}}$ for each grid $c_{x,y}\\in C$ based on observed data samples $Z_{t}$."
+    "summary": "In the future, we plan to implement a rendering parameter adjustment control to alleviate this problem."
   },
   {
     "hex_coord": [
-      0,
-      1
+      -16,
+      3
     ],
     "country": 4,
     "MSU_ids": [
-      2100
+      2050
     ],
-    "summary": "We perform tentative explorations on an air quality dataset via this prototype. The air quality dataset used is Soc. 8.1.1. The dots of the colored entities will be colored on the geographic map."
+    "summary": "We obtain different layouts generated under different combinations of $th_s$ and $th_c$. The layout is high when the parameters $th_s$ and $th_c$ are small. Increasing $th_c$ results in the layout with looser alignment."
   },
   {
     "hex_coord": [
-      0,
-      2
+      -14,
+      -1
     ],
-    "country": 0,
+    "country": 4,
     "MSU_ids": [
-      603
+      2042
     ],
-    "summary": "Detecting and interpreting the causal relations among urban time series have important implications for various urban applications. The causal reasoning system by Pi et al. is used to analyze the causality of traffic congestion events. Li et al. analyzed the potential influences between different regions based on the co-occurrence patterns in spatial time series."
+    "summary": "The sliding window strategy is helpful to address the limitation of ignoring local features. We claim the sliding window strategy could improve visual quality. It can be concluded that the sliding window does improve the readability of representations."
   },
   {
     "hex_coord": [
-      0,
-      2
+      -14,
+      3
+    ],
+    "country": 4,
+    "MSU_ids": [
+      1806
+    ],
+    "summary": "The recorded values in ST series are encoded by the height rather than the gradient shade. Encoding values by height allows them to be perceived more accurately. Their confusion was dispelled during the study after we clarified the encoding of the vertical position again."
+  },
+  {
+    "hex_coord": [
+      -11,
+      12
     ],
     "country": 1,
     "MSU_ids": [
-      902
+      675,
+      890
     ],
-    "summary": "Certain methods have been proposed to reduce model prediction errors and improve forecast accuracy. Lu et al. (2020) utilized machine-learning methods to improve the accuracy of PM2.5 forecasts through WRF-Chem in the Chengdu-Chongqing region. By merging feature maps of different scales, both pollutant concentration values and spatial information on pollutant distributions can be obtained."
+    "summary": "The combined method had the best optimization effect over the whole domain. The optimization effect of combining DA and BC was the best among all the experiments."
   },
   {
     "hex_coord": [
-      0,
+      -10,
       4
     ],
     "country": 0,
     "MSU_ids": [
       653
     ],
-    "summary": "We propose a causal detection framework for urban time series by extending the Granger causality test. The Granger causality test applies the vector autoregressive (VAR) model as the prediction model. Given an ego sensor, we use the Granger causality test to test the causal links between it and each of its neighbor sensors in every partitioned time window."
+    "summary": "We use a parallel computing package called multiprocessing to speed up the process. In the future, we will optimize the detection model, implement it with a more high-performance programming language, and deploy it to a distributed computing server."
   },
   {
     "hex_coord": [
-      1,
-      -3
+      -10,
+      4
     ],
-    "country": 4,
+    "country": 1,
     "MSU_ids": [
-      1488
+      740
     ],
-    "summary": "The contributions of GeoChron are summarized."
+    "summary": "Artificial-intelligence machine-learning techniques have recently emerged in BC. Machine-learning methods have shown strong advantages in mining nonlinear relationships."
   },
   {
     "hex_coord": [
-      1,
-      -2
+      -10,
+      11
     ],
-    "country": 0,
+    "country": 1,
     "MSU_ids": [
-      70,
-      651
+      724,
+      871
     ],
-    "summary": "In sum, our contributions are as follows: The Granger causality test has been applied in geoscience. F Test based on the sum of squared residuals (SSR) is commonly used to determine the statistic significance."
+    "summary": "A new scheme was developed that combines DA and BC simultaneously. The best performance was achieved by combining BC and DA. BC can to a certain extent make up for the limitations of initial field DA."
   },
   {
     "hex_coord": [
-      1,
-      -1
+      -10,
+      12
+    ],
+    "country": 1,
+    "MSU_ids": [
+      858
+    ],
+    "summary": "The performances of BC were much better than those of DA, showing RMSE reductions over most areas in China. By combining DA and BC, the best improvements were yielded, showing the largest reductions in prediction RMSE. The prediction MB values were reduced by the DA and BC methods, but BC had better effects in terms of prediction improvement."
+  },
+  {
+    "hex_coord": [
+      -9,
+      10
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1119
+    ],
+    "summary": "This work presents advancements by constraining MAC instead of MEC."
+  },
+  {
+    "hex_coord": [
+      -9,
+      11
+    ],
+    "country": 1,
+    "MSU_ids": [
+      1031
+    ],
+    "summary": "This study compared the optimization effects of DA and BC methods. Different from DA, which is the adjustment of the initial field from the model input perspective, BC is the post-processing of model outputs from the back end of the model. In this study, we considered the two different techniques of DA on the initial conditions and BC separately."
+  },
+  {
+    "hex_coord": [
+      -9,
+      13
+    ],
+    "country": 1,
+    "MSU_ids": [
+      921
+    ],
+    "summary": "The reduction proportions of root-mean-square error varied from 38.90% to 48.86% for WRF-Chem_DA_BC. The reduction proportions of root-mean-square error varied from 18.88% to 32.44% for WRF-Chem_DA. The reduction proportions of root-mean-square error varied from 30.10% to 46.08% for WRF-Chem_BC."
+  },
+  {
+    "hex_coord": [
+      -8,
+      14
     ],
     "country": 1,
     "MSU_ids": [
       924
     ],
-    "summary": "Different from DA, which is the adjustment of the initial field from the model input perspective, BC is the post-processing of model outputs from the back end of the model. WRF-Chem_DA_BC was best, followed by WRF-Chem_BC, and then finally WRF-Chem_DA."
+    "summary": "WRF-Chem_BC performed better than WRF-Chem_DA in the initial field, especially in the period of 10–24 hours. Throughout the initial 24-hour period, WRF-Chem_DA_BC showed an improvement in terms of root-mean-square error compared with the control experiment. Compared with the direct predictions of WRF-Chem, the prediction MB values in the WRF-Chem_BC experiment were reduced over most areas due to BC effects."
   },
   {
     "hex_coord": [
-      1,
-      -1
-    ],
-    "country": 3,
-    "MSU_ids": [
-      2782
-    ],
-    "summary": "Large-scale datasets refer to datasets containing millions of records, following previous studies. Our study focuses on obtaining the temporal trends of spatiotemporal observations within the spatial context. Each column in the space-time cube is positioned according to its geographical location."
-  },
-  {
-    "hex_coord": [
-      1,
-      0
-    ],
-    "country": 0,
-    "MSU_ids": [
-      39,
-      567,
-      659
-    ],
-    "summary": "The effectiveness of Compass is evaluated with two case studies conducted on the real-world urban datasets, including the air pollution and traffic speed datasets. Fine-grained causality analyses enable analysts to gain insights into the temporal variations of causal relations in urban contexts. The model incorporates a summation over N variables and K lags."
-  },
-  {
-    "hex_coord": [
-      1,
-      0
-    ],
-    "country": 1,
-    "MSU_ids": [
-      1016
-    ],
-    "summary": "The inverse optimization method reduces the uncertainty of emission sources. Grid Statistical Interpolation (GsI) is a data analysis system that integrates global and regional variational assimilation techniques developed by NCEP. The testing dataset number was 1703 with a temporal resolution of $1\\mathrm{~h}$."
-  },
-  {
-    "hex_coord": [
-      1,
-      0
-    ],
-    "country": 2,
-    "MSU_ids": [
-      1258,
-      1299,
-      1345,
-      1391,
-      1411
-    ],
-    "summary": "The constrained values of $E,\tau,$ and MAC allow attribution of AAOD errors to contributions from these three factors for individual models. The satellite observation is labeled with a subscript of '0.' These inventories are used in AeroCom models."
-  },
-  {
-    "hex_coord": [
-      1,
-      0
+      -7,
+      7
     ],
     "country": 3,
     "MSU_ids": [
       2501
     ],
-    "summary": "The framework adopts interpolation to convert discretely distributed values into continuously distributed volumetric data following the STC schema. Temporal trends of spatiotemporal observations can be seen in various domains. The geographic space in Figure 2A is divided into a $3\\times 3$ grid with 9 cells."
+    "summary": "For interpolation, we employed Kriging, a widely used geostatistical method. We leveraged the Pykrige package for Kriging. We evaluated the accuracy of the adopted Kriging interpolation on the dataset and found it to be acceptable."
   },
   {
     "hex_coord": [
-      1,
+      -7,
+      10
+    ],
+    "country": 1,
+    "MSU_ids": [
+      889
+    ],
+    "summary": "Bias correction (BC) can be used to construct a relationship between historical observations and the corresponding model forecasts. BC is a statistical method that improves model predictions by establishing a relationship between historical observations and the corresponding model forecasts. BC methods have evolved from the complete forecast method to the model output statistical method and into different BC schemes."
+  },
+  {
+    "hex_coord": [
+      -7,
+      12
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1068,
+      1391
+    ],
+    "summary": "This highlights the potential to greatly reduce the uncertainty in the most uncertain radiative forcing agent. The observation-based refractive index is more suitable than those used in the AeroCom models."
+  },
+  {
+    "hex_coord": [
+      -7,
+      15
+    ],
+    "country": 1,
+    "MSU_ids": [
+      1010
+    ],
+    "summary": "An experiment considered the combination of DA on the initial conditions and BC, named WRF-Chem_DA_BC. The Weather Research and Forecasting (WRF) model coupled with chemistry, WRF-Chem v3.8, was used in this study. WRF-Chem v3.8 was developed collaboratively by various atmospheric research institutes."
+  },
+  {
+    "hex_coord": [
+      -6,
+      -4
+    ],
+    "country": 0,
+    "MSU_ids": [
+      623
+    ],
+    "summary": "Domain-specific views can be added when deploying to the actual scenarios."
+  },
+  {
+    "hex_coord": [
+      -6,
+      8
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1254
+    ],
+    "summary": "The integration provides a more comprehensive and robust conclusion than relying on a single data source. The GPCP dataset has been proven to be superior to other reanalysis datasets."
+  },
+  {
+    "hex_coord": [
+      -6,
+      11
+    ],
+    "country": 1,
+    "MSU_ids": [
+      902
+    ],
+    "summary": "Certain methods have been proposed to reduce model prediction errors and improve forecast accuracy. Data assimilation (DA) can reduce the uncertainty of the chemical initial field and source emission to improve prediction accuracy. These previous studies have shown that DA can improve PM2.5 predictions by adjusting the initial state of the atmospheric chemistry."
+  },
+  {
+    "hex_coord": [
+      -6,
+      11
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1242
+    ],
+    "summary": "This indicates the potential of our methodology to greatly reduce the overall uncertainty of aerosol climate impacts."
+  },
+  {
+    "hex_coord": [
+      -6,
+      12
+    ],
+    "country": 1,
+    "MSU_ids": [
+      953
+    ],
+    "summary": "BC based on machine-learning methods has been shown to better express the auxiliary links between various facets of the atmosphere. Ran et al. (2023) performed BC based on a multiple linear regression modeling approach to reduce the global PM2.5 prediction bias. We compared the abilities of DA and BC to optimize and enhance the forecasting of PM2.5 concentrations."
+  },
+  {
+    "hex_coord": [
+      -5,
+      9
+    ],
+    "country": 1,
+    "MSU_ids": [
+      1009
+    ],
+    "summary": "The inverse optimization method such as the ensemble Kalman filter (EnKF) for emission sources was proposed to calibrate the emission inventories. The inverse optimization method reduces the uncertainty of emission sources. The inverse optimization method improves the prediction accuracy."
+  },
+  {
+    "hex_coord": [
+      -4,
+      -7
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2085
+    ],
+    "summary": "We design an interactive session-based coloring. Users can pick a color to color the entities comprised by a clicked session. Users can color multiple sessions differently."
+  },
+  {
+    "hex_coord": [
+      -4,
+      -3
+    ],
+    "country": 0,
+    "MSU_ids": [
+      631
+    ],
+    "summary": "Revisions and improvements can be made through automated intelligent algorithms. Revisions and improvements can be made through the incorporation of human knowledge. This observation supports other researchers' opinion that human knowledge needs to be integrated into the analysis loop for reliable analyses."
+  },
+  {
+    "hex_coord": [
+      -4,
+      -2
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2090
+    ],
+    "summary": "Multi-level analysis is a well-known effective manner for accommodating a large amount of information. The design should support a multi-level analysis workflow. The multilevel strategy could be the first choice to improve the scalability of big data analysis."
+  },
+  {
+    "hex_coord": [
+      -4,
+      -1
+    ],
+    "country": 4,
+    "MSU_ids": [
+      1689
+    ],
+    "summary": "The team participates in iterating the design. We conduct an iterative design process. After multiple iterations, five design goals are concluded."
+  },
+  {
+    "hex_coord": [
+      -4,
+      4
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2637
+    ],
+    "summary": "Due to the challenge of recruiting a sufficient number of domain experts, we opted to involve undergraduate students. If undergraduate students were able to complete the tasks successfully after the introduction or tutorials, it stands to reason that domain experts would be even better equipped to utilize the system effectively. We invited twelve undergraduate students as subjects."
+  },
+  {
+    "hex_coord": [
+      -4,
+      7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1345
+    ],
+    "summary": "The overall uncertainty of our constraining analysis is primarily affected by observational errors. The Monte Carlo method involves randomly dropping a data point of each input from the distributions built from their stated uncertainties. The interquartile range of the results is used to characterize the uncertainty in this study."
+  },
+  {
+    "hex_coord": [
+      -4,
+      12
+    ],
+    "country": 1,
+    "MSU_ids": [
+      923
+    ],
+    "summary": "Different comparative experiments were designed to evaluate and analyze the effects on optimizing the PM2.5 concentration forecasts. Despite the positive effects on PM2.5 predictions, the optimization achieved by the different experiments varied."
+  },
+  {
+    "hex_coord": [
+      -3,
+      -11
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2824
+    ],
+    "summary": "Comprehensive evaluations for VolumeSTCube include a task-based controlled user study. A controlled user study is conducted to compare VolumeSTCube with Thakur and Hanson's method. Subjects can easily identify the reddest and most opaque voxels through simple rotations using VolumeSTCube."
+  },
+  {
+    "hex_coord": [
+      -3,
+      -7
+    ],
+    "country": 4,
+    "MSU_ids": [
+      1793,
+      2080
+    ],
+    "summary": "Tang et al. developed an authoring tool called iStoryline with a new layout optimization framework. The design is introduced from two aspects: layout refinement and two-level visualization. Users know what their concerns are better than the machine."
+  },
+  {
+    "hex_coord": [
+      -3,
+      3
+    ],
+    "country": 1,
+    "MSU_ids": [
+      1013
+    ],
+    "summary": "To make our findings more robust through further comparisons, we intend to also apply the DA at 06:00, 12:00, and 18:00 in future research."
+  },
+  {
+    "hex_coord": [
+      -3,
+      4
+    ],
+    "country": 0,
+    "MSU_ids": [
+      70,
+      659
+    ],
+    "summary": "In sum, our contributions are as follows: In the future, we will enhance the capability of Compass and deploy it to specific fields."
+  },
+  {
+    "hex_coord": [
+      -3,
+      6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1346
+    ],
+    "summary": "This conclusion is corroborated by our uncertainty analysis shown in fig. S15."
+  },
+  {
+    "hex_coord": [
+      -3,
+      10
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1397
+    ],
+    "summary": "The latest version of ECHAM-HAM (ECHAM6.3.0-HAMMOZ2.3) is run at a T63 horizontal resolution (∼1.875°) and 47 vertical levels. Emission and lifetime are corrected on the basis of our constrained results. The modeled ambient particle size is modified to match the observed AE."
+  },
+  {
+    "hex_coord": [
+      -3,
+      11
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1243
+    ],
+    "summary": "There have been discussions regarding possible reasons for model errors, such as particle size distribution, vertical profiles, mixing states, and refractive index. The varying configurations in Mie calculations include mixing state, refractive index, and particle size. The results suggest the necessity of dealing with errors in refractive index, particle size distribution, and precipitation in models for future model development."
+  },
+  {
+    "hex_coord": [
+      -2,
+      -12
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2791
+    ],
+    "summary": "VolumeSTCube is evaluated through a computational experiment, a real-world case study with one expert, and a controlled user study with twelve non-experts. VolumeSTCube is compared against a baseline from prior work. We conducted a case study on a real-world dataset with VolumeSTCube."
+  },
+  {
+    "hex_coord": [
+      -2,
+      -6
+    ],
+    "country": 0,
+    "MSU_ids": [
+      619
+    ],
+    "summary": "The experts provided suggestions on improving the usability further."
+  },
+  {
+    "hex_coord": [
+      -2,
+      -6
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2111,
+      2112
+    ],
+    "summary": "In the future, we plan to study level-of-detail rendering to support larger scale data. We plan to support larger scale data by abstracting the representation further."
+  },
+  {
+    "hex_coord": [
+      -2,
       2
+    ],
+    "country": 1,
+    "MSU_ids": [
+      979
+    ],
+    "summary": "Further research is needed to address the lack of observations in some cities in Northeast China."
+  },
+  {
+    "hex_coord": [
+      -2,
+      2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1252
+    ],
+    "summary": "Our findings emphasize the need for further research."
+  },
+  {
+    "hex_coord": [
+      -2,
+      2
+    ],
+    "country": 4,
+    "MSU_ids": [
+      1918
+    ],
+    "summary": "This section presents prior studies of Storylines. Testing the hypotheses requires additional data and in-depth analysis."
+  },
+  {
+    "hex_coord": [
+      -2,
+      3
+    ],
+    "country": 0,
+    "MSU_ids": [
+      617,
+      651
+    ],
+    "summary": "EC said, 'It would be very interesting if the proposed methods are applied to other fields.' In the future, we will collect richer datasets and conduct studies, thereby evaluating and improving our approaches."
+  },
+  {
+    "hex_coord": [
+      -2,
+      3
+    ],
+    "country": 1,
+    "MSU_ids": [
+      1016,
+      1018
+    ],
+    "summary": "Long-term predictions can be analyzed in future work. Work will be carried out with other models in the future to make further comparisons with the results reported here."
+  },
+  {
+    "hex_coord": [
+      -2,
+      3
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2782
+    ],
+    "summary": "This section posts the future work."
+  },
+  {
+    "hex_coord": [
+      -2,
+      6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1299,
+      1410,
+      1411
+    ],
+    "summary": "The robustness of the method is verified through a jackknife test by removing the models one by one. The construction of regional values is independent of the models used. This result underscores the robustness of our methodology."
+  },
+  {
+    "hex_coord": [
+      -2,
+      7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1161,
+      1258,
+      1259
+    ],
+    "summary": "The accurate prediction of the AAOD provides independent confirmation on the above constraining analysis and error attribution. The modeled AOD exhibits much smaller errors, which independently verifies our analysis. The impending improvement of satellite products will greatly reduce the uncertainty."
+  },
+  {
+    "hex_coord": [
+      -1,
+      -12
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2779,
+      2780
+    ],
+    "summary": "VolumeSTCube is evaluated as follows. This section introduces VolumeSTCube. These features form VolumeSTCube."
+  },
+  {
+    "hex_coord": [
+      -1,
+      -7
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2116
+    ],
+    "summary": "The frontend provides interactive visualizations for users. Addressing such an issue needs further studies of the layout algorithm and visualization."
+  },
+  {
+    "hex_coord": [
+      -1,
+      6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1201,
+      1370
+    ],
+    "summary": "The agreement with in situ observations confirms the validity of the satellite measurements. The models have been thoroughly validated against satellite observations. The SSA is found to better agree with satellite observations, suggesting the robustness of our analysis and corrections."
+  },
+  {
+    "hex_coord": [
+      -1,
+      7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1134
+    ],
+    "summary": "AeroCom mean precipitation patterns agree very well with observations. The agreement between AeroCom mean precipitation patterns and observations suggests that AeroCom mean wet deposition patterns are realistic. This is true even when using the most reliable satellite products."
+  },
+  {
+    "hex_coord": [
+      -1,
+      8
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1127
+    ],
+    "summary": "Modeled MAC was linearly regressed against modeled SSA using AeroCom project data. Modeled $\tau$ was linearly regressed against modeled precipitation and the angstrom exponent using AeroCom project data. Satellite observations of SSA were applied to estimate the constrained MAC."
+  },
+  {
+    "hex_coord": [
+      -1,
+      11
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1335
+    ],
+    "summary": "SSA is for total aerosols. The ECHAM-HAM model is developed from the atmospheric model by the European Center for Medium-Range Weather Forecasts and a parameterization package developed at Hamburg. This suggests that the SSA for total aerosols during fire seasons could sufficiently represent the aerosol criteria by (24)."
+  },
+  {
+    "hex_coord": [
+      0,
+      1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      186
+    ],
+    "summary": "Analysts can easily focus on the target areas of their interests."
+  },
+  {
+    "hex_coord": [
+      0,
+      7
     ],
     "country": 2,
     "MSU_ids": [
@@ -470,274 +632,95 @@
   {
     "hex_coord": [
       1,
-      3
-    ],
-    "country": 1,
-    "MSU_ids": [
-      858
-    ],
-    "summary": "An experiment used deep-learning-based BC, named WRF-Chem_BC. Artificial-intelligence machine-learning techniques have recently emerged in BC. The optimal approach for bias adjustment was found to be the Random Forest model."
-  },
-  {
-    "hex_coord": [
-      2,
-      -3
-    ],
-    "country": 1,
-    "MSU_ids": [
-      890
-    ],
-    "summary": "Frequency matching, Bayesian averaging, least-squares regression, multiple linear regression, and other statistical methods have been used to establish BC models. The calculation of $B$ follows the method described by Rabier et al., 1998. The optimization effect of combining DA and BC was the best among all the experiments."
-  },
-  {
-    "hex_coord": [
-      2,
-      -3
-    ],
-    "country": 2,
-    "MSU_ids": [
-      1119,
-      1252
-    ],
-    "summary": "This work presents advancements by constraining MAC instead of MEC. Fig. 1 shows the flowchart of the procedures of the constraining analysis in the current study. Our findings emphasize the need for further research."
-  },
-  {
-    "hex_coord": [
-      2,
-      -3
+      -10
     ],
     "country": 3,
     "MSU_ids": [
-      2779
+      2327
     ],
-    "summary": "VolumeSTCube is compared against a baseline from prior work. This section presents the prior studies related to our study. This section describes the data formats used in this study."
+    "summary": "In the earliest applications, the integration of volume data and space-time cubes (STC) was prevalent in video visualizations. The combination of the space-time cube and 3D volume visualization effectively presents large-scale spatiotemporal series with less context switching cost and visual occlusion. Smoothness is applied to the space-time volume to enhance visual representation in the space-time cube."
   },
   {
     "hex_coord": [
-      2,
-      -2
-    ],
-    "country": 0,
-    "MSU_ids": [
-      163,
-      566
-    ],
-    "summary": "The time view presents the time series of the selected sensor. The time view presents time partitioning results. The traditional causal analysis method is controlled variable experiments, e.g., A/B testings in business companies."
-  },
-  {
-    "hex_coord": [
-      2,
-      -2
-    ],
-    "country": 2,
-    "MSU_ids": [
-      1259,
-      1346
-    ],
-    "summary": "A closure relation based on a simple box model is introduced to estimate three components from two modeled relationships. The relationship between MAC and SSA is confirmed by Mie calculations with varying configurations. Constrained values are labeled with a subscript of 'C.'"
-  },
-  {
-    "hex_coord": [
-      2,
-      -2
+      1,
+      -8
     ],
     "country": 4,
     "MSU_ids": [
-      2050
+      1706
     ],
-    "summary": "Each entity is represented as a curve along a horizontal timeline. We demonstrate the successful application of GeoChron through two real-world cases. Each heatmap presents the spatial distribution of the recorded readings in a time interval."
+    "summary": "The designs facilitate users' understanding and interpretation of the large-scale data. The final design satisfies the goals to effectively visualize large-scale spatio-temporal series. There are many possibilities for the visual layout of large-scale data."
   },
   {
     "hex_coord": [
-      2,
-      -1
+      1,
+      -5
     ],
     "country": 0,
     "MSU_ids": [
-      151,
+      185
+    ],
+    "summary": "The spatial complexity of causality can be reduced by focusing on the target areas of interest."
+  },
+  {
+    "hex_coord": [
+      1,
+      -4
+    ],
+    "country": 4,
+    "MSU_ids": [
+      1588
+    ],
+    "summary": "The narrative of temporal trends and dynamics is preserved between adjacent evolution patterns. The Storyline offers a narrative-preserving manner to visualize evolution patterns. We add new encodings to the Storyline to present evolution patterns from a macro perspective."
+  },
+  {
+    "hex_coord": [
+      1,
+      -2
+    ],
+    "country": 0,
+    "MSU_ids": [
       459
     ],
-    "summary": "An interactive system is needed to integrate analysts in the urban causality analysis loop. Time series should be appropriately partitioned by considering their periodicity and peak occurrences. Addressing these issues demands an extension of the Granger causality test."
+    "summary": "Scatterplots are more familiar to the experts than the PCP."
   },
   {
     "hex_coord": [
-      2,
-      -1
-    ],
-    "country": 1,
-    "MSU_ids": [
-      871
-    ],
-    "summary": "BC methods have evolved from the complete forecast method to the model output statistical method and into different BC schemes. The background error covariance matrix and the observation error covariance matrix represent the weight of the contributions to the analysis field. This demonstrates some advantages of DA, but with limitations."
-  },
-  {
-    "hex_coord": [
-      2,
-      -1
-    ],
-    "country": 2,
-    "MSU_ids": [
-      1127,
-      1410
-    ],
-    "summary": "Uncertainty analysis is conducted for all constraining processes. This suggests that the modeled relationship between MAC and SSA in AeroCom is robust. Validation shows a varying degree of error per model."
-  },
-  {
-    "hex_coord": [
-      2,
-      -1
-    ],
-    "country": 4,
-    "MSU_ids": [
-      1806,
-      2112
-    ],
-    "summary": "We define the observation that spatially close ST series exhibit correlated trends in a time period as an evolution pattern. Each of the three experts has at least five years of experience in spatiotemporal data analysis. GeoChron is adapted from the Storyline."
-  },
-  {
-    "hex_coord": [
-      2,
-      0
+      1,
+      3
     ],
     "country": 0,
     "MSU_ids": [
-      605
+      589
     ],
-    "summary": "This framework includes neighbor index, time partition, and debounce strategies to improve the capability of the causality test for urban time series. Real-world causal relations between sensors can change over time. The Granger causality test has been widely applied to various domains."
+    "summary": "The experts were satisfied with this result and did not adjust them. The traffic conditions of $r3$ were more stable compared with that of $r1$. The stability of $r3$ supported the experts' decision."
   },
   {
     "hex_coord": [
-      2,
-      0
+      1,
+      9
     ],
     "country": 2,
     "MSU_ids": [
-      1370
+      1173
     ],
-    "summary": "Our approach enables identification of error contributions from emission, lifetime, and MAC per model. Eq. 1 was used to constrain $E$. The target variables include AAOD, AOD, and SSA."
+    "summary": "Lower emissions estimates partly explain the negative AAOD bias. Models tend to underestimate AAOD over Southern Africa by 32% on average."
   },
   {
     "hex_coord": [
       2,
-      0
-    ],
-    "country": 3,
-    "MSU_ids": [
-      2824
-    ],
-    "summary": "VolumeSTCube shows its superiority and effectiveness in large-scale spatial time series analysis. Sun et al. embedded traffic time series visualizations into road segments on the map after the roads are topologically expanded. Every ST series is represented as a column in the cube according to the geographic position."
-  },
-  {
-    "hex_coord": [
-      2,
-      0
-    ],
-    "country": 4,
-    "MSU_ids": [
-      1793,
-      2090
-    ],
-    "summary": "Any two ST series in a pattern should have close geographic positions because a meaningful correlation tends to exist between the ST series close in space. Clustering is performed on the parts of time series covered by the window. The spatiotemporal relations in a time slice are determined based on the time window."
-  },
-  {
-    "hex_coord": [
-      2,
-      2
-    ],
-    "country": 1,
-    "MSU_ids": [
-      675
-    ],
-    "summary": "The combined method had the best optimization effect over the whole domain. The inverse optimization method improves the prediction accuracy. $B$ represents the background error covariance matrix."
-  },
-  {
-    "hex_coord": [
-      3,
-      -4
+      -10
     ],
     "country": 0,
     "MSU_ids": [
       647
     ],
-    "summary": "We conducted a literature review and interviewed experts to compile user requirements for system development. Utilizing the third dimension can be a potential solution and deserves further study."
+    "summary": "Utilizing the third dimension can be a potential solution and deserves further study."
   },
   {
     "hex_coord": [
-      3,
-      -4
-    ],
-    "country": 4,
-    "MSU_ids": [
-      1918
-    ],
-    "summary": "The EvoLens is placed on the Storyline to display details in a narrative-preserving manner. In the above studies, the relationships between entities are explicit. The research problem is addressed in two stages."
-  },
-  {
-    "hex_coord": [
-      3,
-      -3
-    ],
-    "country": 0,
-    "MSU_ids": [
-      186,
-      617,
-      619,
-      631
-    ],
-    "summary": "The map view enables users to select a sensor to start analysis. The graph view aligns the visualization along the same timeline of the time view. In this study, we first conclude an analytical workflow and six user requirements through careful literature review and close collaboration with experts."
-  },
-  {
-    "hex_coord": [
-      3,
-      -3
-    ],
-    "country": 2,
-    "MSU_ids": [
-      1254
-    ],
-    "summary": "The integration provides a more comprehensive and robust conclusion than relying on a single data source."
-  },
-  {
-    "hex_coord": [
-      3,
-      -3
-    ],
-    "country": 3,
-    "MSU_ids": [
-      2637,
-      2759,
-      2791
-    ],
-    "summary": "VolumeSTCube is evaluated through a computational experiment, a real-world case study with one expert, and a controlled user study with twelve non-experts. VolumeSTCube is evaluated as follows. We conducted a case study on a real-world dataset with VolumeSTCube."
-  },
-  {
-    "hex_coord": [
-      3,
-      -3
-    ],
-    "country": 4,
-    "MSU_ids": [
-      2111
-    ],
-    "summary": "We evaluate GeoChron with two case studies, an informal user study, an ablation study, parameter analysis, and running time analysis. The Storyline was applied to reveal the development of a story, movie, or meeting. At the first level, GeoChron revises the Storyline with new interactions and visual encodings."
-  },
-  {
-    "hex_coord": [
-      3,
-      -2
-    ],
-    "country": 0,
-    "MSU_ids": [
-      589,
-      624,
-      639
-    ],
-    "summary": "To develop Compass, we identify and address three challenges: detecting urban causality, interpreting dynamic causal relations, and unveiling suspicious causal relations. Gaining insights demands the multifaceted analysis of the dynamic causal relations. The causal relations also constitute causal graphs over time."
-  },
-  {
-    "hex_coord": [
-      3,
-      -2
+      2,
+      -9
     ],
     "country": 1,
     "MSU_ids": [
@@ -747,175 +730,432 @@
   },
   {
     "hex_coord": [
+      2,
+      -4
+    ],
+    "country": 4,
+    "MSU_ids": [
+      1593
+    ],
+    "summary": "Visualizing evolution patterns can aid in further analysis. Step 4 involves detecting evolution patterns. Evolution patterns present complex spatial and temporal relationships between each other."
+  },
+  {
+    "hex_coord": [
+      2,
+      3
+    ],
+    "country": 0,
+    "MSU_ids": [
+      586
+    ],
+    "summary": "Given these observations and the frequency, the experts thought that the causality between $r1$ and $r3$ can be ignored."
+  },
+  {
+    "hex_coord": [
+      2,
+      9
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1182
+    ],
+    "summary": "Most inventories estimate lower emissions than our estimates over Africa. In the Amazon, the inventories estimate lower OA emission levels relative to our constrained OA. The low OA emissions in the inventories over the Amazon result from missing sources."
+  },
+  {
+    "hex_coord": [
+      2,
+      11
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1094
+    ],
+    "summary": "This challenge hinders reliable climate assessments over tropical regions. Both MAC and SSA variables depend strongly on the BC mass mixing ratio within the total aerosols. The in situ relationship is built for aerosols with a high carbonaceous content (≥ 85% of the total aerosol mass)."
+  },
+  {
+    "hex_coord": [
       3,
-      -2
+      -10
     ],
     "country": 3,
     "MSU_ids": [
-      2622
+      2162,
+      2163,
+      2164
     ],
-    "summary": "VolumeSTCube first leverages the concept of the STC to transform discretely distributed spatial time series data into continuously volumetric data. Spatiotemporal analysis involves examining data that changes over time and across different locations. Prior studies related to our study are categorized into spatiotemporal analysis."
+    "summary": "It is easy for users to accept and learn the spacetime cube. Users can perceive time and space simultaneously in the spacetime cube. In the spacetime cube, the evolution of spatiotemporal phenomena can be effectively conveyed through temporal narratives."
+  },
+  {
+    "hex_coord": [
+      3,
+      -9
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2757,
+      2758,
+      2759
+    ],
+    "summary": "Integrated views allow users to analyze spatiotemporal data in one view without switching contexts. These observed results may be attributed to a preference for continuous visual representations along a timeline. Continuous visual representations allow for clear and fine division of events."
+  },
+  {
+    "hex_coord": [
+      3,
+      -6
+    ],
+    "country": 4,
+    "MSU_ids": [
+      1838
+    ],
+    "summary": "The two-level visualization mechanism supports effective visual analysis of large-scale ST series in a spatiotemporal context. ST series can be related back to the map through user interactions. Via the interactions described, users can interactively investigate how ST time series evolve correlatively from a spatiotemporal perspective."
   },
   {
     "hex_coord": [
       3,
       -1
     ],
-    "country": 0,
+    "country": 4,
     "MSU_ids": [
-      185,
-      533,
-      586
+      1819
     ],
-    "summary": "Revealing latent temporal interactions facilitates informed policy-making for better sustainability. Some approaches for time series data are based on information theory. Visual urban planning involves optimizing the arrangement of facilities."
+    "summary": "Another strategy is to transform ST series by summarizing them into summaries or by extracting patterns from them. Clustering can also help summarize ST series. Analysts can recover the trends of ST series by examining the patterns in two adjacent time periods if the patterns are placed over time."
   },
   {
     "hex_coord": [
       3,
-      0
+      7
+    ],
+    "country": 0,
+    "MSU_ids": [
+      541
+    ],
+    "summary": "The circle sizes in the relation view indicated the low correlation coefficients. The large circle implied a low correlation. EA explained that the low correlation might result from the long distance and geographical terrain between them."
+  },
+  {
+    "hex_coord": [
+      4,
+      -5
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2121,
+      2126
+    ],
+    "summary": "We design a novel visualization called GeoChron, which is capable of visualizing large-scale ST series in an evolution pattern-aware and narrative-preserving manner. The framework detects communities as evolution patterns. We propose a technique called GeoChron by leveraging the evolution pattern notion to meaningfully organize large-scale ST series into spatiotemporal partitions."
+  },
+  {
+    "hex_coord": [
+      4,
+      -3
+    ],
+    "country": 4,
+    "MSU_ids": [
+      1536
+    ],
+    "summary": "ST series visualization is an effective means of understanding the data and reviewing spatiotemporal phenomena. ST series visualization is an important means of understanding spatiotemporal phenomena. Visualizing such patterns along the timeline can retain the temporal narrative of the trends and dynamics of the involved ST series."
+  },
+  {
+    "hex_coord": [
+      4,
+      1
+    ],
+    "country": 4,
+    "MSU_ids": [
+      1939
+    ],
+    "summary": "On Day 4, the purple and green ST series became uncorrelated as the purple ST ones continuously increased while the green ones fluctuated. Half of the orange ST series were initially correlated with the purple ones on Day 1. The fluctuation/decline trends in the orange and purple ST series were different due to the different industrial structure and pollution purification capabilities of the two regions."
+  },
+  {
+    "hex_coord": [
+      4,
+      8
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1320
+    ],
+    "summary": "Secondary OA (SOA) formation is considered part of the total emissions given the short formation time scale compared to the seasonal time scale in our analysis. Cons_OA indicates total OA, which is further separated into primary BB emission (Cons_POA) and SOA formation (SOA). The small absorption AE suggests that brown carbon is not important."
+  },
+  {
+    "hex_coord": [
+      4,
+      9
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1204,
+      1249
+    ],
+    "summary": "The correlation suggests more active SOA formation. Our results highlight the potential of detecting and constraining SOA formation from aerosol absorption. Correlations between satellite AOD and formaldehyde column for the Amazon and Southern Africa support our constrained SOA."
+  },
+  {
+    "hex_coord": [
+      5,
+      -6
     ],
     "country": 4,
     "MSU_ids": [
       1496
     ],
-    "summary": "GeoChron expands Storyline's impact to the field of big spatiotemporal data analysis. The sliding window strategy is helpful to address the limitation of ignoring local features. ST series are also associated with the spatial context."
+    "summary": "GeoChron includes two-level visualizations to enhance its visual scalability. GeoChron supports a novel two-level visualization mechanism to present the spatiotemporal information of large-scale ST series. GeoChron expands Storyline's impact to the field of big spatiotemporal data analysis."
   },
   {
     "hex_coord": [
-      4,
-      -4
+      6,
+      -10
     ],
     "country": 3,
     "MSU_ids": [
-      2327,
-      2757
-    ],
-    "summary": "Spatiotemporal visualization is a key concept in the analysis of data that varies across both space and time. Visualization is an effective and popular means for analyzing ST series. Visualization can present heterogeneous spatial and temporal information through easily perceivable and interactive graphics."
-  },
-  {
-    "hex_coord": [
-      4,
-      -4
-    ],
-    "country": 4,
-    "MSU_ids": [
-      1706,
-      2085
-    ],
-    "summary": "ST series visualization is an effective means of understanding the data and reviewing spatiotemporal phenomena. GeoChron includes two-level visualizations to enhance its visual scalability. Traditionally, ST series are first depicted in temporal visualizations, e.g., line charts."
-  },
-  {
-    "hex_coord": [
-      4,
-      -3
-    ],
-    "country": 0,
-    "MSU_ids": [
-      116,
-      623
-    ],
-    "summary": "The map view enables users to reason causal graphs within a spatial context. The graph view visualizes the dynamic causal graphs. A dynamic causal graph visualization is designed to reveal the time-varying causal relations across these causal graphs."
-  },
-  {
-    "hex_coord": [
-      4,
-      -3
-    ],
-    "country": 3,
-    "MSU_ids": [
-      2162,
-      2164,
       2445
     ],
-    "summary": "Spatial time series visualization offers scientific research pathways and analytical decision-making tools across various spatiotemporal domains. Surface rendering provides pattern details by enhanced lighting information. Interactions are designed to facilitate the exploration and analysis from temporal, spatial, and spatiotemporal perspectives."
+    "summary": "Yang et al.'s method relied on user interactions where the temporal visualization at a location is displayed after the user clicks the location on the map. It becomes easier for the user to relate the visualization to the spatial context as the map is closer to the visualization."
   },
   {
     "hex_coord": [
-      4,
-      -3
+      6,
+      -6
     ],
     "country": 4,
     "MSU_ids": [
-      1536,
-      1593,
-      1689,
-      1838,
-      2004,
-      2042,
-      2080,
-      2101,
-      2116
+      1488
     ],
-    "summary": "ST series visualization is an important means of understanding spatiotemporal phenomena. These summaries or patterns, rather than massive raw ST series, are then visually exposed. Visualizing such patterns along the timeline can retain the temporal narrative of the trends and dynamics of the involved ST series."
+    "summary": "We evaluate GeoChron with two case studies, an informal user study, an ablation study, parameter analysis, and running time analysis. GeoChron is comprehensively evaluated by a series of studies and analyses. The contributions of GeoChron are summarized."
   },
   {
     "hex_coord": [
-      4,
+      6,
+      -5
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2100
+    ],
+    "summary": "GeoChron can be applied to various kinds of data in addition to geo-spatial time series. GeoChron is potentially applicable for general spatial time series when using general spatial relationships."
+  },
+  {
+    "hex_coord": [
+      6,
+      6
+    ],
+    "country": 0,
+    "MSU_ids": [
+      602,
+      606
+    ],
+    "summary": "On Sundays, residents tend to rest at home instead of working overtime or traveling. EC stated that even if residents wanted to go out on Sundays, their departure times could be more varied than on working days. Traffic control may be omitted on Sundays, thereby saving resources."
+  },
+  {
+    "hex_coord": [
+      7,
+      -5
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2622
+    ],
+    "summary": "Spatiotemporal analysis involves examining data that changes over time and across different locations. Spatiotemporal analyses are commonly seen in various domains. Many automated algorithms for spatiotemporal analysis have been proposed."
+  },
+  {
+    "hex_coord": [
+      7,
+      -5
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2101
+    ],
+    "summary": "Initial hypotheses regarding the evolution of spatiotemporal phenomena can be established using GeoChron. Visualizing cross-domain geo-spatial time series can reveal in-depth knowledge."
+  },
+  {
+    "hex_coord": [
+      8,
+      -12
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2004
+    ],
+    "summary": "Finally, each participant filled out the ICE-T questionnaire to rate GeoChron from Insight, Confidence, Essence, and Satisfaction. It can be seen that all participants, even P6, did understand GeoChron's visualizations. All participants agreed that GeoChron can provide insights, facilitate exploration, and reveal the essence of data."
+  },
+  {
+    "hex_coord": [
+      8,
+      -8
+    ],
+    "country": 0,
+    "MSU_ids": [
+      624,
+      639
+    ],
+    "summary": "This paper presents Compass, a novel visual analytics approach for in-depth analyses of the dynamic causality in urban time series. We propose a visual analytics approach to empower experts to retrieve and comprehend dynamic causal relations among urban time series. Based on the requirements, we further develop Compass, a visual analytics system for the causal analysis of urban time series."
+  },
+  {
+    "hex_coord": [
+      8,
+      -7
+    ],
+    "country": 0,
+    "MSU_ids": [
+      632
+    ],
+    "summary": "To develop Compass, we identify and address three challenges: detecting urban causality, interpreting dynamic causal relations, and unveiling suspicious causal relations. Compass addresses the aforementioned three challenges as follows. Compass incorporates the causal detection framework and a set of effective visualizations for analyzing dynamic causalities."
+  },
+  {
+    "hex_coord": [
+      8,
+      3
+    ],
+    "country": 0,
+    "MSU_ids": [
+      515
+    ],
+    "summary": "EA commented that all districts in Beijing should be treated as a whole for better air pollution control."
+  },
+  {
+    "hex_coord": [
+      9,
+      -11
+    ],
+    "country": 0,
+    "MSU_ids": [
+      116
+    ],
+    "summary": "Bae et al. [6, 7] derived several design guidelines for the graphical representation of causality. These guidelines help us design effective causal visualizations. The alternative designs are designed for visualizing dynamic causal graphs."
+  },
+  {
+    "hex_coord": [
+      9,
+      -6
+    ],
+    "country": 0,
+    "MSU_ids": [
+      151
+    ],
+    "summary": "The method aims to facilitate the in-depth understanding of urban problems. We together attempt to apply causal analysis to solve the urban problems. Experts aim to establish where the stimulus is from."
+  },
+  {
+    "hex_coord": [
+      9,
+      5
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2534
+    ],
+    "summary": "The spatial and temporal variation of air quality could be roughly seen in Figure 6A. Some regions were particularly polluted during certain months, as denoted in Figure 6A1. The deterioration in air quality was possibly due to the poor atmospheric dispersion conditions and the influence of dust storms."
+  },
+  {
+    "hex_coord": [
+      10,
+      -7
+    ],
+    "country": 0,
+    "MSU_ids": [
+      39,
+      566,
+      567
+    ],
+    "summary": "Fine-grained causality analyses enable analysts to gain insights into the temporal variations of causal relations in urban contexts. This approach aims to enable analysts to obtain and understand correct urban causalities in dynamic environments. The time-oriented analysis disclosed fine-grained and dynamic causalities."
+  },
+  {
+    "hex_coord": [
+      11,
+      -7
+    ],
+    "country": 0,
+    "MSU_ids": [
+      163
+    ],
+    "summary": "Detecting and interpreting the causal relations among urban time series have important implications for various urban applications. Causal relations can reveal the latent temporal interactions between the sensors where the urban time series are collected. Many efforts have been devoted to the efficient extraction and extensive analysis of the co-occurrence and correlation relations among urban time series or events."
+  },
+  {
+    "hex_coord": [
+      11,
+      -6
+    ],
+    "country": 0,
+    "MSU_ids": [
+      533
+    ],
+    "summary": "The orders in which the peaks appear in the two time series supported the causal directions detected by the model. EB said, 'although the time series were not highly correlated, the model captured the key features, i.e., the peaks, and obtained reasonable causalities.' The causal link with Zhangjiakou comprised two dissimilar time series."
+  },
+  {
+    "hex_coord": [
+      11,
+      -3
+    ],
+    "country": 0,
+    "MSU_ids": [
+      600
+    ],
+    "summary": "No causality was detected on Sunday. EA explained that the lack of causality detection on Sunday was because the traffic volume was small."
+  },
+  {
+    "hex_coord": [
+      11,
+      1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      634
+    ],
+    "summary": "Other potential applications of Compass include analyzing noise pollution, water pollution, and complex physical systems. Compass can help identify when a river is polluted and reveal which tributaries pollute it for each period when the pollution events are observed."
+  },
+  {
+    "hex_coord": [
+      11,
+      2
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2585
+    ],
+    "summary": "A propagation process of air pollution is visualized with volume rendering. A propagation process of air pollution is visualized with surface rendering. If a voxel cluster extends significantly in the vertical direction and over the x-y plane, it indicates that the duration of poor air quality persists across a vast spatial area."
+  },
+  {
+    "hex_coord": [
+      11,
+      3
+    ],
+    "country": 4,
+    "MSU_ids": [
+      1937
+    ],
+    "summary": "The observations implied that there might be propagation processes of air pollution from north to south in the first two/three days."
+  },
+  {
+    "hex_coord": [
+      12,
+      -6
+    ],
+    "country": 0,
+    "MSU_ids": [
+      563
+    ],
+    "summary": "Real-world causal relations between sensors can change over time. Causal detection works given an ego sensor and partitioned windows. The framework detects stable causal graphs involving the ego sensor and its neighbors."
+  },
+  {
+    "hex_coord": [
+      12,
       -2
     ],
     "country": 0,
     "MSU_ids": [
-      563,
-      632
+      603,
+      604,
+      605
     ],
-    "summary": "The relation view presents the causal relations involved in the causal graphs. This paper presents Compass, a novel visual analytics approach for in-depth analyses of the dynamic causality in urban time series. Positive feedback was received from domain experts."
+    "summary": "Each road segment is regarded as a road sensor. These patterns can promote informed traffic management. Managers should focus more on the vehicles from $r4$ and $r5$ to take timely measures."
   },
   {
     "hex_coord": [
-      4,
-      -2
-    ],
-    "country": 3,
-    "MSU_ids": [
-      2163,
-      2758,
-      2780
-    ],
-    "summary": "The space-time cube (STC) stands out as a promising approach for the synergistic presentation of spatial and temporal information. In this study, we introduce a novel technical framework termed VolumeSTCube, designed for continuous spatiotemporal phenomena. A space-time cube is a method used to represent spatiotemporal data in a three-dimensional format."
-  },
-  {
-    "hex_coord": [
-      4,
-      -2
-    ],
-    "country": 4,
-    "MSU_ids": [
-      1588
-    ],
-    "summary": "We leverage Storyline techniques by considering an analogy between evolution patterns and sessions. By drawing an analogy between an evolution pattern and a session, the Storyline can present evolution patterns over time in a well-organized way. The Storyline can thereby visualize large-scale ST series."
-  },
-  {
-    "hex_coord": [
-      4,
-      -1
-    ],
-    "country": 1,
-    "MSU_ids": [
-      740
-    ],
-    "summary": "Machine-learning methods have shown strong advantages in mining nonlinear relationships."
-  },
-  {
-    "hex_coord": [
-      5,
+      13,
       -4
     ],
-    "country": 4,
+    "country": 0,
     "MSU_ids": [
-      2121
+      29
     ],
-    "summary": "The Storyline technique is well-suited for solving the above visualization problem. The Storyline occupies the most effective visual channel, which is position, and is compact in layout. GeoChron is an interactive visualization for large-scale spatiotemporal (ST) series."
-  },
-  {
-    "hex_coord": [
-      5,
-      -3
-    ],
-    "country": 4,
-    "MSU_ids": [
-      1819,
-      2126
-    ],
-    "summary": "We design a novel visualization called GeoChron, which is capable of visualizing large-scale ST series in an evolution pattern-aware and narrative-preserving manner. Evolution patterns offer the possibility that large-scale ST series can be visualized in a pattern-aware and narrative-preserving manner. Visualizing these patterns enables users to view multiple ST series meaningfully at once rather than scan many ST series to derive knowledge in their minds."
+    "summary": "If the pollutant readings at sensors A and B are identified to cause a considerable increase in those at sensor C consistently, proper measures should be taken to control the pollution at A and B rather than C. Two remote air quality sensors should not have bi-directional causality. Two close sensors can have bi-directional causality because air pollutants likely transport back and forth between them."
   }
 ]
