@@ -24,7 +24,8 @@ data/
 
 ## 2. Pipeline: PDF → Semantic Map
 
-Put PDFs into `data/pdf/`, then run in order:
+Put a case's PDFs into `data/caseN/pdf/`, then pass that directory to the
+case pipeline (for example, `run_bio_eval.sh` uses `data/case3/pdf/`).
 
 ```bash
 python3 code_for_data/mineru_pdf.py               # ① PDF → Markdown

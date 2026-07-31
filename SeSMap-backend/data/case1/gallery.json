@@ -1,0 +1,26 @@
+[
+  {
+    "paper_id": 0,
+    "title": "Effect of pilot hydrogen on the formation of dynamic flame in an ethylene-fueled scarmjet with a cavity",
+    "semanticCountryId": "c0",
+    "sourceId": "c0",
+    "thumbnail": "c0.png",
+    "caption": "FIG 1 Schematic of a direct-connected pulse combustion wind tunnel."
+  },
+  {
+    "paper_id": 1,
+    "title": "Large eddy simulation of a dual-mode scramjet with direct injection Flame dynamics under flow separation induced by heat-release",
+    "semanticCountryId": "c1",
+    "sourceId": "c1",
+    "thumbnail": "c1.png",
+    "caption": "Fig. 1. Sketch of the CARDC scramjet facility. The channel surrounded by the yellow region corresponds to the computational domain. The green line is the section mapped to air inlet for the velocity p"
+  },
+  {
+    "paper_id": 2,
+    "title": "TemporalFlowViz",
+    "semanticCountryId": "c2",
+    "sourceId": "c2",
+    "thumbnail": "c2.png",
+    "caption": "Fig. 1 Overview of TemporalFlowViz, including preprocessing and embedding of flow fields, temporal trajectory-based exploration, and semantic summarization and report generation via expertinformed vis"
+  }
+]

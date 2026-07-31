@@ -1,0 +1,924 @@
+[
+  {
+    "paragraph": "Jason R. Grant <sup>1</sup>¶ and Paul Stothard <sup>1</sup>",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Jason R. Grant and Paul Stothard are authors of the paper.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "1 University of Alberta, Canada ¶ Corresponding author",
+    "type": "text",
+    "resultmsu": []
+  },
+  {
+    "paragraph": "DOI: 10.21105/joss.09930",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "DOI: 10.21105/joss.09930",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "• Review",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Review",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "• Repository",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Repository.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "• Archive",
+    "type": "text",
+    "resultmsu": []
+  },
+  {
+    "paragraph": "Editor: Abhishek Tiwari",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Editor: Abhishek Tiwari",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "• @jkanche",
+    "type": "text",
+    "resultmsu": []
+  },
+  {
+    "paragraph": "• @haessar",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "No scientific content was provided in the input.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Submitted: 04 September 2025",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Submitted: 04 September 2025",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Published: 01 June 2026",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Published: 01 June 2026",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Authors of papers retain copyright and release the work under a Creative Commons Attribution 4.0 International License (CC BY 4.0).",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Authors of papers retain copyright.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "The work is released under a Creative Commons Attribution 4.0 International License (CC BY 4.0).",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Genome maps are routinely generated as a way of understanding or conveying the functional properties and sequence characteristics of organisms. CGView.js is a JavaScript-based viewer designed for microbial and organellar genomes, as well as plasmids. Inspired by the original Java-based CGView (Stothard & Wishart, 2005), it generates high-quality interactive maps that can easily be embedded in web pages. Its comprehensive API supports map manipulation and integration with third-party tools, making it suitable for developers building bioinformatics platforms.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Genome maps are routinely generated to understand or convey the functional properties and sequence characteristics of organisms.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "CGView.js is a JavaScript-based viewer designed for microbial and organellar genomes, as well as plasmids.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "CGView.js was inspired by the original Java-based CGView (Stothard & Wishart, 2005).",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "CGView.js generates high-quality interactive maps that can easily be embedded in web pages.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The comprehensive API of CGView.js supports map manipulation and integration with third-party tools.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "CGView.js is suitable for developers building bioinformatics platforms.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Microbial and organellar genomics frequently require circular maps and fast navigation between scales. Existing circular visualization tools such as Circos (Krzywinski et al., 2009) and the original Java-based CGView generate high-quality genome figures, but they produce static PNG/SVG outputs that must be regenerated to reflect changes, limiting interactive exploration. CGView.js addresses this need by providing circular and linear map layouts with nucleotide-level detail as an embeddable JavaScript component, combining smooth zooming and panning with dynamic, programmatic updates through an extensive API. Figure 1 shows examples of CGView.js circular and linear layouts, plus a zoomed view that displays base-pair detail.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Microbial and organellar genomics frequently require circular maps and fast navigation between scales.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Existing circular visualization tools such as Circos and the original Java-based CGView generate high-quality genome figures.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "These tools produce static PNG/SVG outputs that must be regenerated to reflect changes, limiting interactive exploration.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "CGView.js provides circular and linear map layouts with nucleotide-level detail as an embeddable JavaScript component.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "CGView.js combines smooth zooming and panning with dynamic, programmatic updates through an extensive API.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Figure 1 shows examples of CGView.js circular and linear layouts, plus a zoomed view that displays base-pair detail.",
+        "category": "Other",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "Several JavaScript-based genome browsers, including JBrowse (Diesh et al., 2023), igv.js (Robinson et al., 2022), and pileup.js (Vanderkam et al., 2016), are widely used for general genomics visualization. However, few support the circular maps that are often preferred for microbial and organellar genomes, and none provide the rapid and smooth zooming to the DNA sequence level available in CGView.js. CGView.js complements these tools by focusing on circular visualization and tight integration into web pipelines rather than operating as a standalone browser.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Several JavaScript-based genome browsers, including JBrowse, igv.js, and pileup.js, are widely used for general genomics visualization.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Few genome browsers support the circular maps often preferred for microbial and organellar genomes.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "None of the existing genome browsers provide the rapid and smooth zooming to the DNA sequence level available in CGView.js.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "CGView.js complements existing genome browsers by focusing on circular visualization.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "CGView.js is tightly integrated into web pipelines rather than operating as a standalone browser.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "CGView.js is an embeddable interactive map component, intended to be tightly integrated into and managed by surrounding web applications. The API exposes common actions on map components such as features, tracks, contigs, legends, and labels. A standard set of actions is provided (read, add, remove, update, reorder). All actions (except “read”) trigger events that can be used as hooks for callbacks. For example, the features-add event passes the added features to a callback, enabling host tools to react dynamically.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "CGView.js is an embeddable interactive map component.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "CGView.js is intended to be tightly integrated into and managed by surrounding web applications.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The API exposes common actions on map components such as features, tracks, contigs, legends, and labels.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "A standard set of actions is provided, including read, add, remove, update, and reorder.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "All actions, except 'read,' trigger events that can be used as hooks for callbacks.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The features-add event passes the added features to a callback, enabling host tools to react dynamically.",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "images/87d9a2b44dbb39b7b2dfe350da312b593b8e7cfbf63a976d0dc8d53d3a442c93.jpg",
+    "type": "figure"
+  },
+  {
+    "paragraph": "Figure 1: CGView.js maps of the Escherichia coli PA2 genome (GenBank accession: GCF\\_000335355.2) displaying sequence features and base composition plots. (A) Circular view of the genome. (B) Circular view zoomed to the base pair level, with the legend color picker shown in the top-right corner. (C) Linear view of the same genome.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "CGView.js maps of the Escherichia coli PA2 genome (GenBank accession: GCF_000335355.2) display sequence features and base composition plots.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Figure 1A shows a circular view of the Escherichia coli PA2 genome.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Figure 1B shows a circular view zoomed to the base pair level, with the legend color picker shown in the top-right corner.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Figure 1C shows a linear view of the same genome.",
+        "category": "Result",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Maps are rendered using the HTML canvas rather than SVG, which significantly improves performance when displaying thousands of features. During animations such as zooming or panning, the number of visible features is temporarily reduced to maintain responsiveness. Once the animation completes, the map is redrawn at full detail.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Maps are rendered using the HTML canvas rather than SVG.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Rendering maps with HTML canvas significantly improves performance when displaying thousands of features.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "During animations such as zooming or panning, the number of visible features is temporarily reduced to maintain responsiveness.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Once the animation completes, the map is redrawn at full detail.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "CGView.js uses web workers to create GC skew, GC content, and ORF tracks based on the provided genome sequence. Web workers generate these tracks in background threads without blocking the user interface, allowing users to continue moving, zooming, or interacting with the map. These processes communicate with the main thread to provide visual feedback in the form of a growing progress track. When the worker is finished, the progress track is replaced with the new plot or set of features.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "CGView.js uses web workers to create GC skew, GC content, and ORF tracks based on the provided genome sequence.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Web workers generate these tracks in background threads without blocking the user interface.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Users can continue moving, zooming, or interacting with the map while the tracks are being generated.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "These processes communicate with the main thread to provide visual feedback in the form of a growing progress track.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "When the worker is finished, the progress track is replaced with the new plot or set of features.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "The performance of CGView.js depends on the capabilities of the host system. No internal limits are set on genome size or the number of features that can be displayed. However, large genomes (e.g. more than 10 million base pairs) and large numbers of features (e.g. millions) can result in slower map rendering and navigation. For this reason, we recommend using CGView.js primarily for microbial and organellar genomes.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The performance of CGView.js depends on the capabilities of the host system.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "No internal limits are set on genome size or the number of features that can be displayed.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Large genomes, such as those with more than 10 million base pairs, can result in slower map rendering and navigation.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Large numbers of features, such as millions, can also result in slower map rendering and navigation.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "CGView.js is recommended primarily for microbial and organellar genomes.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "CGView.js maps can be quickly generated for sequences in GenBank, EMBL, and FASTA formats using the companion CGParse.js package (https://github.com/sciguy/cgview-parse). Features described in GenBank and EMBL files are automatically converted into CGView.js features for display on the map. CGParse.js can also convert GFF3, GTF, BED, CSV, and TSV files into CGView.js map features, allowing results from a variety of other sources (e.g. third-party analysis tools) to be easily visualized.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "CGView.js maps can be quickly generated for sequences in GenBank, EMBL, and FASTA formats using the companion CGParse.js package.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Features described in GenBank and EMBL files are automatically converted into CGView.js features for display on the map.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "CGParse.js can convert GFF3, GTF, BED, CSV, and TSV files into CGView.js map features.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "This allows results from a variety of other sources, such as third-party analysis tools, to be easily visualized.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Configuration and interchange rely on a lightweight CGView JSON format that stores genome information and display settings. Maps can be imported from and exported to this format for sharing and archiving. Publication-ready output is supported through PNG export up to 16,000 × 16,000 pixels and SVG export for downstream vector editing.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Configuration and interchange rely on a lightweight CGView JSON format that stores genome information and display settings.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Maps can be imported from the CGView JSON format for sharing and archiving.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Maps can be exported to the CGView JSON format for sharing and archiving.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Publication-ready output is supported through PNG export up to 16,000 × 16,000 pixels.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Publication-ready output is supported through SVG export for downstream vector editing.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Since its release in 2021, CGView.js has been integrated into multiple online bioinformatics platforms and web servers, including Proksee (Grant et al., 2023), PHASTEST (Wishart, Han, et al., 2023), PlasMapper 3.0 (Wishart, Ren, et al., 2023), MOBHunter (Rojas-Villalobos et al., 2025), PLSDB (Molano et al., 2024), BASys2 (Poelzer et al., 2025), and HLRMDB (Zhai et al., 2025). In Proksee, hundreds of CGView.js maps are downloaded daily, indicating active external use.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "CGView.js has been integrated into multiple online bioinformatics platforms and web servers since its release in 2021.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "CGView.js has been integrated into Proksee (Grant et al., 2023).",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "CGView.js has been integrated into PHASTEST (Wishart, Han, et al., 2023).",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "CGView.js has been integrated into PlasMapper 3.0 (Wishart, Ren, et al., 2023).",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "CGView.js has been integrated into MOBHunter (Rojas-Villalobos et al., 2025).",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "CGView.js has been integrated into PLSDB (Molano et al., 2024).",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "CGView.js has been integrated into BASys2 (Poelzer et al., 2025).",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "CGView.js has been integrated into HLRMDB (Zhai et al., 2025).",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "In Proksee, hundreds of CGView.js maps are downloaded daily.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The daily downloads of CGView.js maps in Proksee indicate active external use.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "The project website (https://js.cgview.ca) provides detailed documentation, examples, and tutorials that generate interactive maps directly from the shown code, supporting reproducibility and community uptake. Users who prefer a graphical interface can use Proksee (Grant et al., 2023), which renders maps with CGView.js and exposes many viewer settings through a GUI.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The project website provides detailed documentation, examples, and tutorials.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "The tutorials generate interactive maps directly from the shown code.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The project website supports reproducibility and community uptake.",
+        "category": "Conclusion",
+        "rank": 3
+      },
+      {
+        "sentence": "Users who prefer a graphical interface can use Proksee.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "Proksee renders maps with CGView.js.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Proksee exposes many viewer settings through a GUI.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "CGView.js enables the generation of high-quality interactive and static genome maps for microbial and organellar genomes. Its embeddable JavaScript design and comprehensive API make it suitable for integration into web-based platforms that visualize genomic annotations or pipeline outputs.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "CGView.js enables the generation of high-quality interactive genome maps for microbial genomes.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "CGView.js enables the generation of high-quality static genome maps for microbial genomes.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "CGView.js enables the generation of high-quality interactive genome maps for organellar genomes.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "CGView.js enables the generation of high-quality static genome maps for organellar genomes.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The embeddable JavaScript design of CGView.js makes it suitable for integration into web-based platforms.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The comprehensive API of CGView.js makes it suitable for integration into web-based platforms.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "CGView.js is suitable for visualizing genomic annotations.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "CGView.js is suitable for visualizing pipeline outputs.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Generative AI (ChatGPT) was used occasionally for issue triage, small code suggestions, and copy editing of documentation and this manuscript. All AI-assisted code and text were reviewed and verified by the authors. No figures or data were generated by AI.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Generative AI (ChatGPT) was used occasionally for issue triage.",
+        "category": "Method",
+        "rank": 2
+      },
+      {
+        "sentence": "Generative AI (ChatGPT) was used for small code suggestions.",
+        "category": "Method",
+        "rank": 2
+      },
+      {
+        "sentence": "Generative AI (ChatGPT) was used for copy editing of documentation and this manuscript.",
+        "category": "Method",
+        "rank": 2
+      },
+      {
+        "sentence": "All AI-assisted code and text were reviewed and verified by the authors.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "No figures or data were generated by AI.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "This work was funded by Genome Alberta and Genome Canada.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "This work was funded by Genome Alberta and Genome Canada.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Jason Grant: Conceptualization (equal); Methodology; Software; Visualization; Writing (original draft). Paul Stothard: Conceptualization (equal); Supervision; Writing (review and editing); Funding acquisition; Resources.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Jason Grant contributed to conceptualization equally.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Jason Grant contributed to methodology.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Jason Grant contributed to software development.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Jason Grant contributed to visualization.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Jason Grant contributed to writing the original draft.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Paul Stothard contributed to conceptualization equally.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Paul Stothard contributed to supervision.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Paul Stothard contributed to writing review and editing.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Paul Stothard contributed to funding acquisition.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Paul Stothard contributed to resources.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Diesh, C., Stevens, G. J., Xie, P., Martinez, T. D. J., Hershberg, E. A., Leung, A., Guo, E., Dider, S., Zhang, J., Bridge, C., Hogue, G., Duncan, A., Morgan, M., Flores, T., Bimber, B. N., Haw, R., Cain, S., Buels, R. M., Stein, L. D., & Holmes, I. H. (2023). JBrowse 2: a modular genome browser with views of synteny and structural variation. Genome Biology, 24(1), 74. https://doi.org/10.1186/s13059-023-02914-z",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "JBrowse 2 is a modular genome browser.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "JBrowse 2 provides views of synteny and structural variation.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "The paper describes JBrowse 2 as a tool for genome visualization.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Grant, J. R., Enns, E., Marinier, E., Mandal, A., Herman, E. K., Chen, C., Graham, M., Domselaar, G. V., & Stothard, P. (2023). Proksee: in-depth characterization",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Proksee provides in-depth characterization of prokaryotic genomes.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "and visualization of bacterial genomes. Nucleic Acids Research, 51(W1), W484–W492. https://doi.org/10.1093/nar/gkad326",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Visualization of bacterial genomes is discussed.",
+        "category": "Background",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "Krzywinski, M., Schein, J., Birol, I., Connors, J., Gascoyne, R., Horsman, D., Jones, S. J., & Marra, M. A. (2009). Circos: an information aesthetic for comparative genomics. Genome Research, 19(9), 1639–1645. https://doi.org/10.1101/gr.092759.109",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Krzywinski et al. (2009) introduced Circos as an information aesthetic tool for comparative genomics.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Circos was published in Genome Research in 2009.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Circos is designed to visually represent complex genomic data.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "The tool emphasizes aesthetics to improve the interpretability of comparative genomics data.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Molano, L.-A. G., Hirsch, P., Hannig, M., Müller, R., & Keller, A. (2024). The PLSDB 2025 update: enhanced annotations and improved functionality for comprehensive plasmid research. Nucleic Acids Research, 53(D1), D189–D196. https://doi.org/10.1093/nar/ gkae1095",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The PLSDB 2025 update provides enhanced annotations for plasmid research.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The PLSDB 2025 update offers improved functionality for comprehensive plasmid research.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Poelzer, J., Han, S., Saha, S., Oler, E., Kruger, R., Berjanskii, M., MacKay, S., & Wishart, D. S. (2025). BASys2: a next-generation bacterial genome annotation system. Nucleic Acids Research, gkaf360. https://doi.org/10.1093/nar/gkaf360",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "BASys2 is a next-generation bacterial genome annotation system.",
+        "category": "Background",
+        "rank": 5
+      },
+      {
+        "sentence": "The paper was authored by Poelzer, J., Han, S., Saha, S., Oler, E., Kruger, R., Berjanskii, M., MacKay, S., and Wishart, D. S.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "The paper was published in Nucleic Acids Research in 2025.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Robinson, J. T., Thorvaldsdottir, H., Turner, D., & Mesirov, J. P. (2022). igv.js: an embeddable JavaScript implementation of the Integrative Genomics Viewer (IGV). Bioinformatics, 39(1), btac830. https://doi.org/10.1093/bioinformatics/btac830",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "igv.js is an embeddable JavaScript implementation of the Integrative Genomics Viewer (IGV).",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "The paper was authored by Robinson, J. T., Thorvaldsdottir, H., Turner, D., and Mesirov, J. P.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "The publication appeared in Bioinformatics, 39(1), under the identifier btac830.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Rojas-Villalobos, C., Ossandon, F. J., Castillo-Vilcahuaman, C., Sepúlveda-Rebolledo, P., Castro-Salinas, D., Zapata-Araya, A., Arisan, D., Perez-Acle, T., Issotta, F., Quatrini, R., & Moya-Beltrán, A. (2025). MOBHunter: a data integration platform for identification and classification of mobile genetic elements in microbial genomes. Nucleic Acids Research, gkaf396. https://doi.org/10.1093/nar/gkaf396",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "MOBHunter is a data integration platform for identification and classification of mobile genetic elements in microbial genomes.",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "Stothard, P., & Wishart, D. S. (2005). Circular genome visualization and exploration using CGView. Bioinformatics (Oxford, England), 21(4), 537–539. https://doi.org/10.1093/ bioinformatics/bti054",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Circular genome visualization and exploration is enabled using CGView.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The study was conducted by Stothard, P., and Wishart, D. S. in 2005.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "The paper was published in Bioinformatics (Oxford, England), volume 21, issue 4, pages 537–539.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "The DOI for the paper is https://doi.org/10.1093/bioinformatics/bti054.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Vanderkam, D., Aksoy, B. A., Hodes, I., Perrone, J., & Hammerbacher, J. (2016). pileup.js: a JavaScript library for interactive and in-browser visualization of genomic data. Bioinformatics, 32(15), 2378–2379. https://doi.org/10.1093/bioinformatics/btw167",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "pileup.js is a JavaScript library for interactive and in-browser visualization of genomic data.",
+        "category": "Background",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Wishart, D. S., Han, S., Saha, S., Oler, E., Peters, H., Grant, J. R., Stothard, P., & Gautam, V. (2023). PHASTEST: faster than PHASTER, better than PHAST. Nucleic Acids Research. https://doi.org/10.1093/nar/gkad382",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "PHASTEST is faster than PHASTER.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "PHASTEST is better than PHAST.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "The study introduces PHASTEST as a new tool.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Wishart, D. S., Ren, L., Leong-Sit, J., Saha, S., Grant, J. R., Stothard, P., Singh, U., Kropielnicki, A., Oler, E., Peters, H., & Gautam, V. (2023). PlasMapper 3.0—a web server for generating, editing, annotating and visualizing publication quality plasmid maps. Nucleic Acids Research. https://doi.org/10.1093/nar/gkad276",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "PlasMapper 3.0 is a web server for generating, editing, annotating, and visualizing publication-quality plasmid maps.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "The tool is designed to assist researchers in creating high-quality plasmid maps for publication purposes.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "PlasMapper 3.0 provides functionalities for generating plasmid maps.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "PlasMapper 3.0 includes features for editing plasmid maps.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "PlasMapper 3.0 supports annotating plasmid maps.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "PlasMapper 3.0 enables visualization of plasmid maps.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Zhai, Z., Che, X., Shen, W., Zhang, Z., Li, Y., & Pan, J. (2025). HLRMDB: a comprehensive database of the human microbiome with metagenomic assembly, taxonomic classification, and functional annotation by analysis of long-read and hybrid sequencing data. Nucleic Acids Research, gkaf1152. https://doi.org/10.1093/nar/gkaf1152",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "HLRMDB is a comprehensive database of the human microbiome.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "HLRMDB includes metagenomic assembly, taxonomic classification, and functional annotation.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "HLRMDB is developed by analyzing long-read and hybrid sequencing data.",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  }
+]

@@ -1,0 +1,779 @@
+[
+  {
+    "paragraph": "Ya Cui<sup>1,2,3,†</sup>, Xiaowei Chen<sup>1,2,4,†</sup>, Huaxia Luo<sup>1,2</sup>, Zhen Fan<sup>1,2,4</sup>, Jianjun Luo<sup>1,2</sup>, Shunmin He<sup>5</sup>, Haiyan Yue<sup>1,2,3</sup>, Peng Zhang<sup>3</sup> and Runsheng Chen<sup>1,2,6,</sup>\\*",
+    "type": "text",
+    "resultmsu": []
+  },
+  {
+    "paragraph": "<sup>1</sup>Key Laboratory of RNA Biology, <sup>2</sup>Beijing Key Laboratory of Noncoding RNA, Institute of Biophysics, Chinese Academy of Sciences, Beijing 100101, China, <sup>3</sup>University of Chinese Academy of Sciences, Beijing 100049, China, <sup>4</sup>Core Facility for Protein Research, Institute of Biophysics, <sup>5</sup>Key Laboratory of the Zoological Systematics and Evolution, Institute of Zoology, Chinese Academy of Sciences, Beijing 100101, China and <sup>6</sup>Research Network of Computational Biology, RNCB, Beijing 100101, China",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Key Laboratory of RNA Biology is located at the Institute of Biophysics, Chinese Academy of Sciences, Beijing, China.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Beijing Key Laboratory of Noncoding RNA is part of the Institute of Biophysics, Chinese Academy of Sciences, Beijing, China.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "The University of Chinese Academy of Sciences is located in Beijing, China.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "The Core Facility for Protein Research is part of the Institute of Biophysics, Chinese Academy of Sciences, Beijing, China.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "The Key Laboratory of the Zoological Systematics and Evolution is part of the Institute of Zoology, Chinese Academy of Sciences, Beijing, China.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "The Research Network of Computational Biology (RNCB) is based in Beijing, China.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "\\*To whom correspondence should be addressed.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "To whom correspondence should be addressed.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "<sup>†</sup>The authors wish it to be known that, in their opinion, the first two authors should be regarded as Joint First Authors. Associate Editor: John Hancock",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The authors wish it to be known that, in their opinion, the first two authors should be regarded as Joint First Authors.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Associate Editor: John Hancock.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Received on 5 November 2015; revised on 18 January 2016; accepted on 19 January 2016",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Received on 5 November 2015.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Revised on 18 January 2016.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Accepted on 19 January 2016.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Summary: We here present BioCircos.js, an interactive and lightweight JavaScript library especially for biological data interactive visualization. BioCircos.js facilitates the development of webbased applications for circular visualization of various biological data, such as genomic features, genetic variations, gene expression and biomolecular interactions.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "BioCircos.js is an interactive and lightweight JavaScript library for biological data visualization.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "BioCircos.js facilitates the development of web-based applications for circular visualization of biological data.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "BioCircos.js supports visualization of genomic features, genetic variations, gene expression, and biomolecular interactions.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Availability and implementation: BioCircos.js and its manual are freely available online at http://bio info.ibp.ac.cn/biocircos/.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "BioCircos.js is freely available online.",
+        "category": "Other",
+        "rank": 3
+      },
+      {
+        "sentence": "The manual for BioCircos.js is freely available online.",
+        "category": "Other",
+        "rank": 3
+      },
+      {
+        "sentence": "BioCircos.js and its manual can be accessed at http://bioinfo.ibp.ac.cn/biocircos/.",
+        "category": "Other",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "Contact: rschen@ibp.ac.cn",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Contact information is provided as rschen@ibp.ac.cn.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Supplementary information: Supplementary data are available at Bioinformatics online.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Supplementary data are available at Bioinformatics online.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Multi-faceted and complex biological data increasingly require visualization and sophisticated analyses. However, suitable visualization tools are not always available to come readily at hand. Furthermore, many biological visualization tools are desktop applications that may be difficult to install and configure. Circos (Krzywinski et al., 2009) is a powerful Perl-based tool for illustrating genomic features, and is widely used in biological research. However, the graphical files it outputs are not interactive and users can thus not obtained further details by moving a mouse pointer over the data points. Alternatives to Circos, such as Circoletto (Darzentas, 2010), CIRCUS (Naquin et al., 2014) and Rcircos (Zhang et al., 2013), are also not interactive, whereas J-Circos (An et al., 2015), though interactive, is a desktop software. Web visualization applications have the advantage of generating interactive images in which all elements are interactive with mouse-over explanations and clickable buttons, and are thus far more userfriendly and provide more easily accessible information. As Circos and its alternatives do not function well on web applications, an interactive Circos-like tool for web applications would greatly facilitate visualization of biological data.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Multi-faceted and complex biological data increasingly require visualization and sophisticated analyses.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Suitable visualization tools are not always readily available.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Many biological visualization tools are desktop applications that may be difficult to install and configure.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Circos is a powerful Perl-based tool for illustrating genomic features and is widely used in biological research.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "The graphical files output by Circos are not interactive, and users cannot obtain further details by moving a mouse pointer over the data points.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Alternatives to Circos, such as Circoletto, CIRCUS, and Rcircos, are also not interactive.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "J-Circos, though interactive, is a desktop software.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Web visualization applications generate interactive images in which all elements are interactive with mouse-over explanations and clickable buttons.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Web visualization applications are far more user-friendly and provide more easily accessible information.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Circos and its alternatives do not function well on web applications.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "An interactive Circos-like tool for web applications would greatly facilitate visualization of biological data.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "Based on the powerful D3 (Data-Driven Documents) (Bostock et al., 2011) and the jQuery JavaScript library, we have developed BioCircos.js, an interactive and lightweight JavaScript library especially adapted for interactive visualization of biological data on web applications. BioCircos.js thus facilitates the development of web applications for visualization of biological data in a circular format similar to that of Circos.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "BioCircos.js is based on the powerful D3 (Data-Driven Documents) and the jQuery JavaScript library.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "BioCircos.js is an interactive and lightweight JavaScript library.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "BioCircos.js is especially adapted for interactive visualization of biological data on web applications.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "BioCircos.js facilitates the development of web applications for visualization of biological data in a circular format similar to that of Circos.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "images/3514dd29480b88ba0b02188a053ceeda1f3eb58b72a048402c3bee07665dde52.jpg",
+    "type": "figure"
+  },
+  {
+    "paragraph": "images/5d86138a169a7d4ba17a9563d206abe3ab9de68190ced723b8bf9257a9fb6959.jpg",
+    "type": "figure"
+  },
+  {
+    "paragraph": "Fig. 1. Plots constructed with BioCircos.js. (A) Reproduced plots of published somatic mutations from a human cancer genome. The outer ring represents chromosome ideograms. From outside and inwards, the data tracks represent insertions, deletions, heterozygous substitutions, homozygous substitutions, cod ing substitutions (silent in grey, missense in purple, nonsense in red and splice site in black), copy number variation, LOH and rearrangements. A detailed description can be found in Pleasance et al., 2010. (B) Circular visualization of protein domains, mutations and drug targeted mutations in EGFR. The outer ring represents the positions of the amino acid in EGFR. The next four tracks (from outside and inwards) are protein domains, drug targeted indels (Deletion in exon 19 and insertion in exon 20, data from Shigematsu et al., 2005), drug targeted mutations (L858R and T790M) and mutations (data from the IntOGen database; Gonzalez-Perez et al., 2013) in the CDS respectively",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Plots were constructed using BioCircos.js.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Reproduced plots of published somatic mutations from a human cancer genome are shown.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The outer ring in the plot represents chromosome ideograms.",
+        "category": "Result",
+        "rank": 2
+      },
+      {
+        "sentence": "From outside to inwards, the data tracks represent insertions, deletions, heterozygous substitutions, homozygous substitutions, coding substitutions (silent in grey, missense in purple, nonsense in red, and splice site in black), copy number variation, LOH, and rearrangements.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "A detailed description of the somatic mutation data can be found in Pleasance et al., 2010.",
+        "category": "Background",
+        "rank": 1
+      },
+      {
+        "sentence": "Circular visualization of protein domains, mutations, and drug-targeted mutations in EGFR is shown.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The outer ring in the EGFR plot represents the positions of the amino acid in EGFR.",
+        "category": "Result",
+        "rank": 2
+      },
+      {
+        "sentence": "The next four tracks in the EGFR plot (from outside to inwards) represent protein domains, drug-targeted indels (deletion in exon 19 and insertion in exon 20, data from Shigematsu et al., 2005), drug-targeted mutations (L858R and T790M), and mutations (data from the IntOGen database; Gonzalez-Perez et al., 2013) in the CDS, respectively.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "BioCircos.js is written in JavaScript and generates interactive graphics with SVG element based on D3 (Data-Driven Documents) and jQuery. BioCircos.js itself is not a web application, but a library that provides the functionality to build Circos-like web tools.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "BioCircos.js is written in JavaScript.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "BioCircos.js generates interactive graphics with SVG elements based on D3 (Data-Driven Documents) and jQuery.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "BioCircos.js is a library that provides the functionality to build Circos-like web tools.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "BioCircos.js itself is not a web application.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "BioCircos.js provides the SNP, CNV, HEATMAP, LINK, LINE, SCATTER, ARC and HISTGRAM modules to display genome-wide genetic variations (SNPs, CNVs and chromosome rearrangement), gene expression and biomolecular interactions. BioCircos.js provides the BACKGROUND module to display background and axis circles, and also provides the TEXT module to facilitate the annotation of elements. Tooltips showing detailed information of SVG elements are also provided. With Twitter Bootstrap as the front-end framework, tooltips have an increased number of styles. A detailed document is available on the website.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "BioCircos.js provides the SNP, CNV, HEATMAP, LINK, LINE, SCATTER, ARC and HISTGRAM modules to display genome-wide genetic variations (SNPs, CNVs and chromosome rearrangement), gene expression and biomolecular interactions.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "BioCircos.js provides the BACKGROUND module to display background and axis circles.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "BioCircos.js provides the TEXT module to facilitate the annotation of elements.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Tooltips showing detailed information of SVG elements are also provided.",
+        "category": "Method",
+        "rank": 2
+      },
+      {
+        "sentence": "With Twitter Bootstrap as the front-end framework, tooltips have an increased number of styles.",
+        "category": "Method",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "BioCircos.js supports multiple-platforms and works in all major internet browsers (Google Chrome, Internet Explorer, Mozilla Firefox, Safari, Opera). Its speed is determined by the client’s hardware and the internet browser used.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "BioCircos.js supports multiple platforms.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "BioCircos.js works in all major internet browsers, including Google Chrome, Internet Explorer, Mozilla Firefox, Safari, and Opera.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The speed of BioCircos.js is determined by the client’s hardware.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The speed of BioCircos.js is determined by the internet browser used.",
+        "category": "Background",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "The main differences between BioCircos.js and Circos are threefold. (i) BioCircos.js provides a convenient way to construct web-based applications for interactive visualization of biological data in a circular format. Additionally, BioCircos.js can generate high quality SVG vector graphics. (ii) BioCircos.js is written in web client-side JavaScript, and can thus take advantages of many web features to achieve useful interactive effects, such as binding mouse events to data points, animation effects, etc, which are not available to the Perl-based Circos.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The main differences between BioCircos.js and Circos are threefold.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "BioCircos.js provides a convenient way to construct web-based applications for interactive visualization of biological data in a circular format.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "BioCircos.js can generate high quality SVG vector graphics.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "BioCircos.js is written in web client-side JavaScript.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "BioCircos.js can take advantage of many web features to achieve useful interactive effects, such as binding mouse events to data points and animation effects.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "These interactive effects are not available to the Perl-based Circos.",
+        "category": "Background",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "We consider this is the most important advantage of BioCircos.js. (iii) Biocircos.js can be used by conjunction with standard browsers, thereby circumventing a number of problems, such as fixing dependencies or upgrading Perl modules, which is often necessary to perform when installing Circos on a local computer.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "BioCircos.js can be used with standard browsers.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Using BioCircos.js circumvents problems such as fixing dependencies or upgrading Perl modules.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Fixing dependencies or upgrading Perl modules is often necessary when installing Circos on a local computer.",
+        "category": "Background",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "To demonstrate the utility of BioCircos.js in generating circular images of biological data, we attempted to reproduce published Circos plots using BioCircos.js. A study published in 2010 reported a comprehensive catalogue of somatic mutations from a human cancer genome (Pleasance et al., 2010). We obtained all necessary data from the supplementary materials, including insertions, deletions, substitutions, copy number variations, loss of heterozygosity (LOH), and rearrangements, and used BioCircos.js to reproduce the plot containing all mutations (Fig. 1A). For example, we reproduced substitutions using SCATTER modules, and rearrangements using the LINK modules. A detailed description of data tracks can be found in Pleasance et al. (2010).",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "BioCircos.js was used to generate circular images of biological data.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Published Circos plots were reproduced using BioCircos.js.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "A study published in 2010 reported a comprehensive catalogue of somatic mutations from a human cancer genome (Pleasance et al., 2010).",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Data obtained from the supplementary materials included insertions, deletions, substitutions, copy number variations, loss of heterozygosity (LOH), and rearrangements.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "BioCircos.js was used to reproduce the plot containing all mutations (Fig. 1A).",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "Substitutions were reproduced using SCATTER modules.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Rearrangements were reproduced using LINK modules.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "A detailed description of data tracks can be found in Pleasance et al. (2010).",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Figure 1A shows the ability to visualize multi-faceted biological data. Figure 1B shows how BioCircos.js can be used to visualize other types of biological data, in this case the amino acid sequence of the EGFR. The protein domains and SNPs in CDS are displayed using the ARC and SCATTER modules (Gonzalez-Perez et al., 2013; Shigematsu et al., 2005), so that the further away an SNP is located from the center, the higher its mutational frequency in population. Drug targeted mutations and indels are also displayed in the plot, all drug targeted mutations being located in the kinase domain. The mutation L858R (target of Afatinib, Iressa and Tarceva) has a higher frequency in population, and Figure 1B clearly demonstrates the significance of L858R in drug design. To further illustrate the utility of BioCircos.js, we have provided three additional examples in the supplementary.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Figure 1A shows the ability to visualize multi-faceted biological data.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Figure 1B shows how BioCircos.js can be used to visualize other types of biological data, specifically the amino acid sequence of the EGFR.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The protein domains and SNPs in CDS are displayed using the ARC and SCATTER modules.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The further away an SNP is located from the center, the higher its mutational frequency in the population.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Drug targeted mutations and indels are displayed in the plot.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "All drug targeted mutations are located in the kinase domain.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The mutation L858R, which is a target of Afatinib, Iressa, and Tarceva, has a higher frequency in the population.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Figure 1B demonstrates the significance of L858R in drug design.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "Three additional examples illustrating the utility of BioCircos.js are provided in the supplementary.",
+        "category": "Other",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "BioCircos.js is not a web application for end-users but a JavaScript library for programmers. Developers need to write code around BioCircos.js to build web applications. BioCircos.js provides flexible and powerful functionality for the development of web-based circular visualization tools for multi-faceted biological data. These applications will be developed as plugins to simplify the process of generating circular image. We will continue to develop BioCircos.js to provide more features and support to the research community.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "BioCircos.js is a JavaScript library for programmers.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "BioCircos.js is not a web application for end-users.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Developers need to write code around BioCircos.js to build web applications.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "BioCircos.js provides flexible and powerful functionality for the development of web-based circular visualization tools for multi-faceted biological data.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "These applications will be developed as plugins to simplify the process of generating circular images.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "We will continue to develop BioCircos.js to provide more features and support to the research community.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "We are grateful to Aiping Wu for thoughtful discussions and valuable comments on BioCircos.js design. We thank Geir Skogerbø for careful reading and valuable suggestions on the manuscript.",
+    "type": "text",
+    "resultmsu": []
+  },
+  {
+    "paragraph": "This work was supported by grants from the National High Technology Research and Development Program (‘863’ Program) of China (2014AA021103, 2015AA020108 and 2014AA021502) and the National Natural Science Foundation of China (31520103905).",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "This work was supported by grants from the National High Technology Research and Development Program (‘863’ Program) of China.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "The grant numbers include 2014AA021103, 2015AA020108, and 2014AA021502.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "This work was also supported by the National Natural Science Foundation of China.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "The grant number for the National Natural Science Foundation of China is 31520103905.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Conflict of Interest: none declared.",
+    "type": "text",
+    "resultmsu": []
+  },
+  {
+    "paragraph": "An,J. et al. (2015) J-Circos: an interactive Circos plotter. Bioinformatics, 31, 1463–1465.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "J-Circos is an interactive Circos plotter.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "J-Circos was introduced by An et al. in 2015.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "J-Circos was published in the journal Bioinformatics.",
+        "category": "Background",
+        "rank": 1
+      },
+      {
+        "sentence": "J-Circos enables the creation of interactive Circos plots.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Bostock,M. et al. (2011) Data-Driven Documents. IEEE Trans. Vis. Comput. Graph, 17, 2301–2309. D(3):",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Bostock, M. et al. (2011) introduced Data-Driven Documents (D3).",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "D3 is a library for producing dynamic, interactive data visualizations in web browsers.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "D3 leverages modern web standards such as HTML, SVG, and CSS.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The library enables binding data to DOM elements and applying data-driven transformations.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "D3 supports the creation of highly customizable visualizations.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Darzentas,N. (2010) Circoletto: visualizing sequence similarity with Circos. Bioinformatics, 26, 2620–2621.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Circoletto is a tool for visualizing sequence similarity using Circos.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The tool was introduced by Darzentas in 2010.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Circoletto was published in the journal Bioinformatics.",
+        "category": "Background",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Gonzalez-Perez,A. et al. (2013) IntOGen-mutations identifies cancer drivers across tumor types. Nat. Methods, 10, 1081–1082.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "IntOGen-mutations identifies cancer drivers across tumor types.",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "Krzywinski,M. et al. (2009) Circos: an information aesthetic for comparative genomics. Genome Res., 19, 1639–1645.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Krzywinski, M. et al. (2009) introduced Circos as an information aesthetic for comparative genomics.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "The paper was published in Genome Research, volume 19, pages 1639–1645.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Naquin,D. et al. (2014) CIRCUS: a package for Circos display of structural genome variations from paired-end and mate-pair sequencing data. BMC Bioinf., 15, 198.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "CIRCUS is a package for Circos display of structural genome variations.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "CIRCUS utilizes paired-end and mate-pair sequencing data.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Pleasance,E.D. et al. (2010) A comprehensive catalogue of somatic mutations from a human cancer genome. Nature, 463, 191–196.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A comprehensive catalogue of somatic mutations from a human cancer genome was created.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The study was conducted by Pleasance, E.D. et al. in 2010.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "The study was published in Nature, volume 463, pages 191–196.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Shigematsu,H. et al. (2005) Clinical and biological features associated with epidermal growth factor receptor gene mutations in lung cancers. J. Natl. Cancer Inst., 97, 339–346.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Clinical and biological features are associated with epidermal growth factor receptor gene mutations in lung cancers.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Zhang,H. et al. (2013) RCircos: an R package for Circos 2D track plots. BMC Bioinf., 14, 244.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "RCircos is an R package for creating Circos 2D track plots.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The package was introduced by Zhang, H. et al. in 2013.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The work was published in BMC Bioinformatics, volume 14, article 244.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

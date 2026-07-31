@@ -1,0 +1,80 @@
+Genome analysis
+
+# interacCircos: an R package based on JavaScript libraries for the generation of interactive circos plots
+
+Zhe Cui <sup>1,†</sup>, Ya Cui<sup>2,†</sup>, Tianyi Zang<sup>1,</sup>\* and Yadong Wang<sup>1,</sup>\*
+
+\*To whom correspondence should be addressed.
+
+<sup>†</sup>The authors wish it to be known that, in their opinion, the first two authors should be regarded as Joint First Authors. Associate editor: Can Alkan
+
+Received on December 24, 2020; revised on March 30, 2021; editorial decision on March 31, 2021; accepted on April 7, 202
+
+## Abstract
+
+Summary: JavaScript-based Circos libraries have been widely implemented to generate interactive Circos plots in web applications. However, these libraries require either local installation, which requires the compilation of extra libraries, or extra data processing procedures to prepare input and configuration for each track of plot, which limits the utility and capability of integration with powerful R packages. In this report, we present interacCircos, an R package for creating interactive Circos plots through the integration of JavaScript-based libraries. interacCircos can simply and flexibly implement 14 track-plot functions and 7 auxiliary functions for presenting large-scale genomic data in interactive Circos plots.
+
+Availability and implementation: InteracCircos and its manual are freely available at https://github.com/mrcuizhe/ interacCircos under the GPL license. The online documentation is available at https://mrcuizhe.github.io/ interacCircos\_documentation/index.html.
+
+Contact: tianyi.zang@hit.edu.cn or ydwang@hit.edu.cn
+
+Supplementary information: Supplementary data are available at Bioinformatics online.
+
+## 1 Introduction
+
+Circos (Krzywinski et al., 2009) has been widely employed in genomic analysis for the visualization of genomic elements and biological relationships. However, the inherent limitation of Circos, such as the difficulty of installation and laborious preparation of input files, limit its ability to be integrated with powerful packages developed in other popular languages, such as R. In recent years, some Circosderived tools, such as Circoletto (Darzentas, 2010), CIRCUS (Naquin et al., 2014) and Rcircos (Zhang et al., 2013), have been developed to facilitate the drawing of Circos plots. Among these tools, BioCircos.js (Cui et al., 2016), circosJS (Nicolas Girault, 2020) and NG-Circos (Cui et al., 2020) try to address the fact that the original Circos implementation is not interactive. These softwares do not require compiling third-party libraries; however, it is still not possible to integrate them with many popular R packages to use their output directly. Moreover, the JavaScript language-based input of these libraries also requires an extra data processing procedure, which may cost considerable time understanding language grammar and data formats. BioCircos.R (Loan, 2019) is an R implementation that can generate interactive Circos plots, but this package was developed based on BioCircos.js, which limited it to only five functional modules. Hence, we develop and present a userfriendly R package, interacCircos, which combines BioCircos.js, circosJS and NG-Circos based on the htmlwidgets package to simply and flexibly generate interactive Circos plots and effectively integrate with other popular R pipelines.
+
+## 2 Implementation
+
+BioCircos.js, circosJS and NG-Circos were originally developed in JavaScript based on JQuery and Data-Driven Documents (D3) (Bostock et al., 2011). We combined the functional modules from these libraries and ported parameters into an R package based on htmlwidgets. The modules and parameters of these libraries are inherited and integrated by packaging each module into a function. To promote ease of usage, we strictly set the input format for each module through a simple data frame, which significantly reduces the additional learning costs for JavaScript grammar and data preprocessing. Data in the data frame are directly passed to functions without further processing.
+
+interacCircos provides a total of 21 functions that correspond to 21 functional modules, 14 of which are designed to display genomic and biological features, such as genome-wide genetic variations (i.e., SNPs, CNVs and chromosome-scale rearrangements), gene expression and biomolecular interactions. The other seven auxiliary functions are all integrated and compatible with one another in interacCircos. Note that the interactive Circos plot drawn through interacCircos is displayed in an SVG element of HTML, which is multiplatform-compatible and can be easily embedded into the user’s website.
+
+![](images/13cdb04fd5408c5aeb376d066dbe3678865723378f57a17ade7b2d5b3d452d59.jpg)  
+Fig. 1. Reproduced plots by interacCircos. (A) This plot indicates a QTL involved in net blotch resistance, i.e., average ordinate and reaction type. The most inner circle is the barley chromosome and all other functions’ coordinates are based on it. Grey connector lines representing the genetic position are displayed through CircosArc() function. The red and blue bar plot representing the marker trait associations and count of significant marker trait associations are displayed through CircosHistogram() function and the red and blue line plot. The most outer labels are displayed through CircosLink() function. (B) This plot represents the comparative genome mapping of C.rubella with A.lyrata. The most outer ring (yellow and red) showing the percentage of the genomic window and the second most outer ring (green and blue) showing gene density is displayed through the CircosWig() function. The inner ring and chords showing orthologous regions between species are drawn through the CircosChord() function
+
+## 3 Results
+
+Compared with JavaScript libraries, interacCircos can (i) conveniently construct an interactive multitrack Circos plot by adding/ removing modules through ‘þ’ or ‘-’ in main functions, a common strategy widely utilized by many R drawing packages. (ii) Easily take advantage of web-client JavaScript to achieve interactive effects, such as binding mouse events to data points and achieving animation effects. Additionally, interacCircos uses a data frame as the input format, which is the most commonly used data format in R and is considerably more user-friendly than that in JavaScript libraries. These data structures also enable interacCircos to easily cooperate with other popular R pipelines. (iii) be directly visualized through popular integrated development environments (IDEs) of R, such as RStudio, or web browsers, such as Chrome and Safari. This kind of display strategy can circumvent numerous problems, such as fixing dependencies or upgrading Perl modules, when installing Circos on a local computer.
+
+A set of demos and a complete vignette are included in the package to show the interactive Circos plot construction procedures for each track-plot function. Additionally, a website with details of all parameters and functions is available online. To illustrate the utilities of interacCircos in displaying diverse biological data and relationships in an interactive Circos plot, we reproduced Circos figures from published articles using interacCircos. A study published in 2017 indicated that a QTL was involved in net blotch resistance, i.e., average ordinate (AO) and reaction type (RT) (Vatter et al., 2017). We reproduced this plot by applying functions of interacCircos to represent the genetic position of SNPs, marker trait associations and count of significant marker trait associations in circular (Fig. 1A). The second plot that we reproduced was first published in 2013, displaying comparative genomic mapping in Capsella rubella and Arabidopsis lyrata (Slotte et al., 2013). interacCircos is able to display the percentage of the genomic window that comprises transposable elements, gene density and orthologous regions between species (Fig. 1B). Note that we artificially simulated some of the unavailable data. The source code is available in the Supplementary Material.
+
+## Conclusion and outlook
+
+The interacCircos package provides simple and flexible functionality to display comprehensive biological data and relationships as an interactive Circos plot. Through the 21 functions corresponding to modules of BioCircos.js/circosJS/NG-Circos, interacCircos is able to display more than 10 types of common plots in circular, as well as more than 10 types of animation and mouse events. More importantly, interacCircos simplifies and standardizes the input of functions through a data frame, one of the most commonly used data structures of R, which also makes the cooperation of interacCircos and other R pipelines possible and compatible.
+
+However, as this package is dedicated to being user-friendly and less coding-intensive, we realized that we still need to provide more flexible choices for the plot to accommodate additional types of biological data, such as protein–protein interaction networks. With the updating and upgrading of BioCircos.js/circosJS/NG-Circos, we expect that interacCircos can adapt to more types of biological data and plots and subsequently facilitate research in the bioinformatics field in the future.
+
+## Acknowledgement
+
+We thank the teams of BioCircos.js, BioCircos.R, NGCircos and circosJS for sharing the code.
+
+## Funding
+
+This work was supported by the National Key Research and Development Program of China [2017YFC1201201, 2018YFC0910504, 2017YFC0907503 and 2016YFC0901605] and National Natural Science Foundation of China [62076082].
+
+Conflict of Interest: none declared.
+
+## References
+
+Bostock,M. et al. (2011) D<sup>3</sup> data-driven documents. IEEE Transactions on Visualization and Computer Graphics, 17, 2301–2309.
+
+Cui,Y. et al. (2016) BioCircos.js: an interactive Circos JavaScript library for biological data visualization on web applications. Bioinformatics, 32, 1740–1742.
+
+Cui,Y. et al. (2020) NG-Circos: next-generation Circos for data visualization and interpretation. NAR Genomics and Bioinformatics, 2, lqaa069.
+
+Darzentas,N. (2010) Circoletto: visualizing sequence similarity with Circos. Bioinformatics, 26, 2620–2621.
+
+Krzywinski,M. et al. (2009) Circos: an information aesthetic for comparative genomics. Genome Res, 19, 1639–1645.
+
+Loan,V. (2019) BioCircos.R: Zenodo release. Zenodo. doi:10.5281/zenodo. 1216781
+
+Naquin,D. et al. (2014) CIRCUS: a package for Circos display of structural genome variations from paired-end and mate-pair sequencing data. BMC Bioinformatics, 15, 198.
+
+Nicolas Girault,R.C. et al. (2020) circosJS: a d3 library to build circular graphs. https://github.com/nicgirault/circosJS. [18 November 2020].
+
+Slotte,T. et al. (2013) The Capsella rubella genome and the genomic consequences of rapid mating system evolution. Nature Genetics, 45, 831–835.
+
+Vatter,T. et al. (2017) A nested association mapping population identifies multiple small effect QTL conferring resistance against net blotch (Pyrenophora teres f. teres) in wild barley. PLoS One, 12, e0186803.
+
+Zhang,H. et al. (2013) RCircos: an R package for Circos 2D track plots. BMC Bioinformatics, 14, 244.

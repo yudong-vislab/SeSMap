@@ -38,37 +38,62 @@ def load_corpus_and_emb(corpus_path, emb_path):
     by_id = {}
     for i, r in enumerate(recs):
         by_id[r.get("idx", i)] = r
-    rows = []  # row -> {sentence, paper_id}
+    rows = []  # row -> MSU metadata used for local candidate filtering
     for rid in ids:
         r = by_id.get(rid, {})
-        rows.append({"sentence": r.get("sentence", ""), "paper_id": r.get("paper_id", -1)})
+        rows.append({
+            "sentence": r.get("sentence", ""),
+            "paper_id": r.get("paper_id", -1),
+            "category": r.get("category", "Other"),
+            "rank": r.get("rank", -1),
+        })
     return X, rows
 
 
-def gen_candidates(X, rows, tau_lo, tau_hi, per_anchor, max_candidates, seed):
-    """不同论文之间、余弦∈[tau_lo,tau_hi] 的候选对（去重、无序）。"""
+def gen_candidates(X, rows, tau_lo, tau_hi, per_anchor, max_candidates, seed,
+                   allowed_categories=None, min_rank=1):
+    """Generate locally filtered, cross-paper semantic-pair candidates.
+
+    Only MSUs that pass the category/importance filter can become anchors or
+    candidates.  This keeps the complete corpus local while sending only a
+    small, high-value subset to the external judge.
+    """
     Xn = X / (np.linalg.norm(X, axis=1, keepdims=True) + 1e-9)
     N = Xn.shape[0]
     papers = np.array([r["paper_id"] for r in rows])
+    categories = np.array([str(r.get("category", "Other")) for r in rows])
+    ranks = np.array([float(r.get("rank", -1) or -1) for r in rows])
+    allowed = {str(x).strip().lower() for x in (allowed_categories or []) if str(x).strip()}
+    eligible = ranks >= min_rank
+    if allowed:
+        eligible &= np.array([c.lower() in allowed for c in categories])
     rng = random.Random(seed)
     order = list(range(N)); rng.shuffle(order)
     seen = set(); cands = []
     for a in order:
+        if not eligible[a]:
+            continue
         sims = Xn @ Xn[a]                       # (N,)
-        cross = (papers != papers[a])           # 只跨论文
+        cross = (papers != papers[a]) & eligible # 只跨论文，且另一端也须通过本地筛选
         band = (sims >= tau_lo) & (sims <= tau_hi) & cross
         idxs = np.where(band)[0]
-        idxs = idxs[np.argsort(-sims[idxs])][:per_anchor]
+        # Do not slice before de-duplication: an anchor whose nearest pair was
+        # already claimed by another anchor should still get its next-best pair.
+        idxs = idxs[np.argsort(-sims[idxs])]
+        added_for_anchor = 0
         for b in idxs:
             key = (a, int(b)) if a < b else (int(b), a)
             if key in seen:
                 continue
             seen.add(key)
             cands.append((key[0], key[1], float(sims[b])))
+            added_for_anchor += 1
+            if added_for_anchor >= per_anchor:
+                break
         if len(cands) >= max_candidates:
             break
     cands.sort(key=lambda t: -t[2])
-    return cands[:max_candidates]
+    return cands[:max_candidates], int(eligible.sum())
 
 
 def clean_json(text: str) -> str:
@@ -123,6 +148,10 @@ def main():
     ap.add_argument("--tau-hi", type=float, default=0.95)
     ap.add_argument("--per-anchor", type=int, default=3)
     ap.add_argument("--max-candidates", type=int, default=4000)
+    ap.add_argument("--categories", default="",
+                    help="comma-separated MSU categories allowed to leave the local corpus")
+    ap.add_argument("--min-rank", type=int, default=1,
+                    help="minimum MSU importance rank allowed to leave the local corpus")
     ap.add_argument("--judge-batch", type=int, default=10)
     ap.add_argument("--test-frac", type=float, default=0.2)
     ap.add_argument("--seed", type=int, default=7)
@@ -131,9 +160,15 @@ def main():
 
     X, rows = load_corpus_and_emb(args.corpus, args.emb)
     print(f"[data] N={X.shape[0]}  papers={len(set(r['paper_id'] for r in rows))}")
-    cands = gen_candidates(X, rows, args.tau_lo, args.tau_hi,
-                           args.per_anchor, args.max_candidates, args.seed)
+    categories = [x.strip() for x in args.categories.split(",") if x.strip()]
+    cands, eligible_count = gen_candidates(
+        X, rows, args.tau_lo, args.tau_hi, args.per_anchor, args.max_candidates,
+        args.seed, categories, args.min_rank)
+    print(f"[filter] local-only eligible MSUs: {eligible_count}/{len(rows)} "
+          f"categories={categories or 'ALL'}, min_rank={args.min_rank}")
+    covered = {i for a, b, _ in cands for i in (a, b)}
     print(f"[cand] {len(cands)} cross-paper candidate pairs in cosine[{args.tau_lo},{args.tau_hi}]")
+    print(f"[coverage] {len(covered)}/{eligible_count} eligible MSUs occur in at least one submitted pair")
 
     if args.dry_run:
         pos = [(a, b, s) for (a, b, s) in cands]  # 占位：把候选全当正样本，用于流水线联调
@@ -149,6 +184,9 @@ def main():
     out = {
         "meta": {"n_pos": len(pos), "n_train": len(train), "n_test": len(test),
                  "tau_lo": args.tau_lo, "tau_hi": args.tau_hi,
+                 "filter_categories": categories, "min_rank": args.min_rank,
+                 "eligible_msu_count": eligible_count, "candidate_pair_count": len(cands),
+                 "submitted_msu_count": len(covered),
                  "dry_run": args.dry_run, "seed": args.seed,
                  "note": "pairs are ROW indices into EMB_CACHE; positives are cross-paper semantic equivalence/correspondence"},
         "train_pos": [[a, b, s] for (a, b, s) in train],

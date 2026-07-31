@@ -1,0 +1,4454 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Effect of pilot hydrogen on the formation of dynamic flame in an ethylene-fueled scramjet with a cavity"
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                191,
+                67,
+                903,
+                158
+            ]
+        },
+        {
+            "type": "index",
+            "content": {
+                "list_type": "text_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "Cite as: Phys. Fluids 33, 055130 (2021); https://doi.org/10.1063/5.0048229"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "Submitted: 20 February 2021 . Accepted: 30 April 2021 . Published Online: 25 May 2021"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                189,
+                179,
+                836,
+                212
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Wen Shi (时文 ), Ye Tian (田野 ), Jialing Le (乐嘉陵 ), and Fuyu Zhong (钟富宇 )"
+                    }
+                ]
+            },
+            "bbox": [
+                191,
+                224,
+                736,
+                243
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/75f49c7247b8cf4bece0556bf10894babbb8613dae2f39927026e8b4c96767fa.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                738,
+                254,
+                968,
+                307
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "ARTICLES YOU MAY BE INTERESTED IN"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                191,
+                337,
+                532,
+                355
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Modeling thermodynamic trends of rotating detonation engines Physics of Fluids 32, 126102 (2020); https://doi.org/10.1063/5.0023972"
+                    }
+                ]
+            },
+            "bbox": [
+                189,
+                369,
+                776,
+                406
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Development of an interface thickening method for the direct numerical simulation of compressible liquid–vapor flows in the framework of the second gradient theory Physics of Fluids 33, 052119 (2021); https://doi.org/10.1063/5.0048715"
+                    }
+                ]
+            },
+            "bbox": [
+                189,
+                419,
+                910,
+                472
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Direct numerical simulation of a supersonic turbulent boundary layer over a compression– decompression corner"
+                    }
+                ]
+            },
+            "bbox": [
+                189,
+                483,
+                941,
+                515
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Physics of Fluids 33, 065111 (2021); https://doi.org/10.1063/5.0052453"
+                    }
+                ]
+            },
+            "bbox": [
+                189,
+                516,
+                767,
+                535
+            ]
+        },
+        {
+            "type": "page_aside_text",
+            "content": {
+                "page_aside_text_content": []
+            },
+            "bbox": [
+                58,
+                49,
+                107,
+                344
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "AIP Publishing"
+                    }
+                ]
+            },
+            "bbox": [
+                45,
+                825,
+                124,
+                887
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Physics of Fluids SPECIAL TOPIC: Tribute to Frank M. White on his 88th Anniversary"
+                    }
+                ]
+            },
+            "bbox": [
+                254,
+                779,
+                611,
+                841
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "SUBMIT TODAY!"
+                    }
+                ]
+            },
+            "bbox": [
+                671,
+                773,
+                960,
+                846
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Phys. Fluids 33, 055130 (2021); https://doi.org/10.1063/5.0048229 © 2021 Author(s)."
+                    }
+                ]
+            },
+            "bbox": [
+                197,
+                917,
+                611,
+                953
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "33, 055130"
+                    }
+                ]
+            },
+            "bbox": [
+                906,
+                918,
+                977,
+                930
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Effect of pilot hydrogen on the formation of dynamic flame in an ethylene-fueled scramjet with a cavity"
+                    }
+                ],
+                "level": 1
+            },
+            "bbox": [
+                81,
+                118,
+                753,
+                201
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Cite as: Phys. Fluids 33, 055130 (2021); doi: 10.1063/5.0048229 <sub>Submitted: 20 February 2021</sub> . <sub>Accepted: 30 April 2021</sub> . Published Online: 25 May 2021"
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                229,
+                522,
+                275
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/f563650e1586be3319f6b0cb469ff19e90724576f5f10d537802e652ab58bba3.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                730,
+                231,
+                911,
+                271
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Wen Shi (时文), Ye Tian (田野),<sup>a)</sup> Jialing Le (乐嘉陵), and Fuyu Zhong (钟富宇)"
+                    }
+                ]
+            },
+            "bbox": [
+                81,
+                290,
+                633,
+                307
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "AFFILIATIONS"
+                    }
+                ]
+            },
+            "bbox": [
+                81,
+                318,
+                189,
+                332
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Science and Technology on Scramjet Laboratory, China Aerodynamics Research and Development Center, Mianyang 621000, China"
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                337,
+                756,
+                364
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "<sup>a)</sup>Author to whom correspondence should be addressed: tianye@cardc.cn"
+                    }
+                ]
+            },
+            "bbox": [
+                81,
+                374,
+                560,
+                389
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "ABSTRACT"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                81,
+                410,
+                168,
+                425
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Pilot hydrogen is used for the ignition of gaseous ethylene to improve combustion efficiency at low flight Mach numbers. The process of dynamic flame stabilization has been investigated experimentally in a scramjet equipped with a cavity by using a variety of fuel injection strategies involving the injection of pure hydrogen, pure ethylene, and combinations of fuels to understand the effects of pilot hydrogen on supersonic combustion. This study reports experiments conducted in a direct-connected facility that simulated flight conditions at a Mach number of 4, a total temperature of 953 K, and a total pressure of 0.82 MPa. The data were collected by using hydroxyl planar laser-induced fluorescence (OH-PLIF), methylene (CH), luminosity images, and 10-kHz static pressure transducers. The results show that the internal flow oscillated at a dominant frequency of approximately 450 Hz without fuel injection. Oscillation in internal flow was suppressed when pilot hydrogen was injected into the cavity, whereas the influence of other injection strategies was minor. The OH-PLIF images indicate that the pilot flame was unstable, with different locations and occupying different areas. The normalized pressure was apparently higher when pilot hydrogen was injected ahead of the cavity step. The pure ethylene flame was difficult to stabilize without the application of pilot hydrogen. Once the pilot hydrogen had been turned off, the ethylene flame moved toward the cavity ramp and its area expanded. Thus, pilot hydrogen is a precondition for the stabilization of the ethylene flame."
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                428,
+                916,
+                587
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Published under an exclusive license by AIP Publishing. https://doi.org/10.1063/5.0048229"
+                    }
+                ]
+            },
+            "bbox": [
+                81,
+                592,
+                609,
+                608
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "I. INTRODUCTION"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                81,
+                642,
+                218,
+                656
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The scramjet is the most advanced air-breathing propulsion system because of its high impulse and simple structure.<sup>1</sup> When a scramjet operates in a wide range of flight conditions, a high mixing efficiency between air and fuel is needed to achieve a high combustion efficiency in a finite-length combustor. Because the characteristic reaction time of hydrocarbons is longer than the residence time,<sup>2</sup> it is important to increase the local residence time of the fuel to guarantee successful ignition and the formation of a flame."
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                660,
+                486,
+                765
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A variety of approaches to achieving the above goal have been investigated. Cavities that can achieve radical pooling or recirculation have attracted researchers’ attention in particular.<sup>3,4</sup> The design affects the entrainment and rate of mass exchange between supersonic inflow and the cavity and is critical to determining the ignitability of the cavity and performance of the scramjet.<sup>5</sup> The length-to-width ratio impacts the mean structure of the region of recirculation and turbulent nature of the shear layer. Compared with results obtained in cavities with length-to-width ratios of 5 5 and 5 1, the turbulent intensity of a shear layer with a length-to-width ratio of 5 3 can be suppressed according to streamwise data and drops markedly in the spanwise center of the cavity.<sup>6</sup> Pressure oscillation has been noted in a supersonic combustor, where the dominant modes of pressure oscillation were affected by the aspect ratio of the cavity. A higher aspect ratio leads to an enhancement in broadband noise.<sup>7</sup> The reduction in the height of the rear wall of the cavity can bend its shear layer, compress the recirculation zone, weaken the intensity of combustion, and relieve overconcentrated heat, thus allowing for a higher equivalence ratio.<sup>8</sup> In a combustor equipped with a cavity, the internal flow without a chemical reaction is distinct from the one with a jet injected from a flat plate into supersonic flow. The flameholder of the cavity can enhance mixing without an excessive loss of total pressure owing to the low-speed recirculation region.<sup>9</sup> Therefore, the flameholder of the cavity is the most promising candidate due to its effectiveness in stabilizing the flame under a wide range of flight conditions.<sup>10,11</sup>"
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                765,
+                488,
+                871
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                508,
+                641,
+                916,
+                871
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Physics of Fluids"
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                51,
+                238,
+                69
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ARTICLE"
+                    }
+                ]
+            },
+            "bbox": [
+                620,
+                53,
+                679,
+                69
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "scitation org/journal/phf"
+                    }
+                ]
+            },
+            "bbox": [
+                723,
+                53,
+                867,
+                69
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Phys. Fluids 33, 055130 (2021); doi: 10.1063/5.0048229 Published under an exclusive license by AIP Publishing"
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                914,
+                328,
+                945
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "33, 055130-1"
+                    }
+                ]
+            },
+            "bbox": [
+                854,
+                914,
+                923,
+                928
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A cavity-stabilized ethylene flame with an equivalence ratio of 0.15 has been predicted through hybrid large-eddy/Reynolds-averaged Navier–Stokes simulations. The flame structures reveal that the flame propagates near the cavity to generate a stoichiometric fuel-rich mixture.<sup>12</sup> Analysis has shown that the high instantaneous rate of scalar dissipation can increase with the breakdown of the fuel jets, and the flame is inhibited when the flow composition is stoichiometric. 13 Chemiluminescence images at eight orientations using two customized fiber-based endoscope (FBE) bundles at 20 kHz have been captured to gain knowledge of the detailed spatiotemporal dynamics of the transition from an ignition kernel to a stable flame.<sup>14</sup> The characteristics of the flame, especially those at the interface between supersonic and dual-mode combustion, have been obtained via schlieren and flame visualization. The stabilized subsonic region of the flame leads to a stepwise transition from supersonic to dual-mode combustion.<sup>15</sup> Hence, combustion in a scramjet equipped with a cavity is complex, and a comprehensive understanding of the mixing, ignition, and flame stabilization is vital to improving its performance."
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                119,
+                488,
+                357
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "To understand the interaction between the characteristics of injection and mixing to implement stable ignition, it is imperative to perform non-reacting experiments and numerical simulations. Vortex structures induced by transverse jets have been investigated using the planar laser-induced fluorescence (PLIF) measurements, which is among the most highly developed combustion laser diagnostic techniques for two-dimensional (2D) flame structure visualization. The zone of the flame was visualized by capturing various intermediates of OH, C<sub>2</sub>HO, H, and CH. Fuel flowed away from an open cavity of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "L / D = 7"
+                    },
+                    {
+                        "type": "text",
+                        "content": "owing to the lifting, counter-rotating vortex.<sup>16</sup> The mixing mechanism when fuel was injected into the supersonic air was then analyzed. The windward shear layer became unstable under the influence of a shear force induced by a velocity gradient, and large-scale vortices simultaneously broke and merged to enhance mixing. Flame ignition and stabilization have been investigated experimentally and numerically based on the evolution of single-injection-hole vortex structures.<sup>9</sup> The characteristics of the flame with the injection of hydrogen by a transverse jet upstream of a cavity under a flight Mach number of 10 have been investigated via high-speed schlieren imagery and PLIF. Eight successive schlieren images were taken at rates of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { i } 0 ^ { 5 } – 1 0 ^ { 7 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "frames per second. Experimental analyses have revealed that autoignitiondominated combustion was achieved, and OH (hydroxyl) fluorescence first appeared in the recirculation zone located upstream of the location of injection.<sup>17–19</sup> The OH-PLIF images showed instantaneous structures of the hydrogen flame and demonstrated that the OH radical had spread from the shear layer to internal flow and ignited the entire hydrogen jet with an increase in the total injection pressure. This spread of combustion was dominated by diffusion and convection processes alongside heat release and complex interactions between the injection and the shear layer of the cavity,<sup>20</sup>"
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                357,
+                488,
+                751
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The stabilization of the flame of a scramjet does not rely solely on the design of the flameholder, injection strategies, and autoignition processes, particularly when heavy hydrocarbon fuels with long ignition times are used.<sup>21</sup> Such hydrocarbon as ethylene, methane, and kerosene are difficult to ignite, and their flames are challenging to stabilize without the assistance of a source of ignition, such as a spark plug, pulse detonation, or air throttling when the total temperature of the freestream is low.<sup>22–25</sup> Comprehensive experimental and numerical research on flame stabilization by using air throttling has been conducted by Tian et al.<sup>26–28</sup> Air throttling can help build a shock train ahead of a cavity to provide a low-velocity and high-pressure environment that aids in ignition. The evolution of the structure of the flame, the mechanism of its stabilization, and transitions of the combustion mode have thus been obtained. The transition in the combustion mode is triggered due to changes in the mass flux of throttling and the duration for which the throttling is inactive. It has also been shown that pilot hydrogen is vital to igniting kerosene without air throttling,<sup>29</sup> and it has been verified that hydrogen offers the shortest ignition delay time among all fuels.<sup>21</sup> Various investigations have confirmed that the high-temperature reaction gas from a pilot hydrogen flame contains a large pool ofradicals that enhance the ignition and stabilization of subsequent hydrocarbon flames.<sup>30,31</sup> Based on the significant advantages of hydrogen addition, a strategy based on injecting pilot hydrogen was used in this study."
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                751,
+                488,
+                871
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                508,
+                119,
+                916,
+                318
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "However, the turbulent dynamics of the flame of various injection strategies in a cavity-equipped scramjet require further investigation to provide insights into the mechanisms of flame stabilization, which is the main purpose of this paper. Therefore, a series of experiments using non-intrusive optical measurements were conducted to obtain the effects of pilot hydrogen on the formation of an ethylene flame and to determine whether the flame can be sustained without pilot hydrogen. This has not been investigated in past research. This study is significant because it gathers the characteristics of combustion involving oscillations in combustion that can be used to qualitatively evaluate fluctuations in heat release, and this can help us investigate the chemical reaction between hydrogen and ethylene."
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                317,
+                916,
+                477
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "II. EXPERIMENTAL FACILITY AND MEASUREMENTS A. Facility and combustor configuration"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                508,
+                480,
+                888,
+                512
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Experiments were conducted at the China Aerodynamics Research and Development Center’s (CARDC) pulse combustion wind tunnel, as shown in Fig. 1. The direct-connected facility used nozzles instead of inlets to expedite research and reduce cost. The oxygen-rich air mixes with "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { H } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "in a heater. Under the control of a quickly acting valve, the supply oxygen-rich air and H<sub>2</sub> can be precisely limited to be shorter than 1 ms."
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                515,
+                916,
+                606
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This mixture was ignited by spark plugs. The intense combustion of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { H } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { O } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "can heat 2.68 kg/s of air and simulate the flight conditions at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "M a _ { \\infty } = 4"
+                    },
+                    {
+                        "type": "text",
+                        "content": "at a total temperature of 950 K and a total pressure of 0.82 MPa. The mole fractions of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { O } _ { 2 } , \\mathrm { N } _ { 2 } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "_ \\mathrm { H _ { 2 } O }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "were 21%, 67%, and 12%, respectively. After combustion, the gas was exposed directly to a vacuum tank. The operating time was 300–500 ms. Although the operating time was short, it was still sufficient for carrying out various measurements to acquire the instantaneous characteristics of ignition and flame formation."
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                606,
+                916,
+                725
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The tested combustor was made of stainless steel and consisted of two sections, as displayed in Fig. 2. The first section was a 300-mmlong rectangular isolator containing an 80-mm-long expansion section at an angle of divergence of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1 . { \\bar { 4 ^ { \\circ } } } ."
+                    },
+                    {
+                        "type": "text",
+                        "content": ". The cross-sectional area of the entrance of the isolator was 30 mm (height) 150 mm (width). The second section consisted of the combustor, including a cavity and a four-part expansion section. A cavity with a depth of 11 mm, a lengthto-depth ratio of 11, and an aft angle of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2 1 . 1 ^ { \\circ }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "was assembled on the top wall of the combustor. The expansion section ranged from x 421 to 1073 mm, with angles of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1 . 4 ^ { \\circ }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", 2\u0003, 8.0\u0003, and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1 5 ^ { \\circ } ."
+                    },
+                    {
+                        "type": "text",
+                        "content": "Optical glasses made of quartz were assembled on the side walls of the combustor."
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                725,
+                916,
+                871
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Physics of Fluids"
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                51,
+                238,
+                69
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ARTICLE"
+                    }
+                ]
+            },
+            "bbox": [
+                622,
+                54,
+                679,
+                67
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "scitation org/journal/phf"
+                    }
+                ]
+            },
+            "bbox": [
+                723,
+                53,
+                867,
+                69
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "33, 055130-2"
+                    }
+                ]
+            },
+            "bbox": [
+                854,
+                914,
+                923,
+                928
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Phys. Fluids 33, 055130 (2021); doi: 10.1063/5.0048229 Published under an exclusive license by AIP Publishing"
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                914,
+                328,
+                945
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/2660133ad8329261ea8c71a2465850f0e557fdaa7c78477fc94d5fcc225916bb.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "FIG 1 Schematic of a direct-connected pulse combustion wind tunnel."
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                155,
+                122,
+                841,
+                242
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "As shown in Fig. 3, there were two rows of fuel injection orifices, labeled Jet-1 and Jet-2; there were 20 orifices in total, 10 in each row. The diameter of each orifice was 1 mm, and they were straight and vertical with respect to the wall. The interval between them was about 9.5 mm, and the distance between each orifice and the sidewall was 27.3 mm. They were located 10 mm upstream and 25 mm downstream of the cavity step, respectively. During the experiments, roomtemperature hydrogen and ethylene were injected at sonic speed and an angle of 90\u0003 into the flow. The fuel was ignited by spark plugs located 75 mm downstream of the cavity step."
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                300,
+                488,
+                433
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "B. Measurements"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                81,
+                446,
+                218,
+                459
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The flow structures and the process of flame formation were obtained by pressure transducers and non-connect optical measurements, including schlieren images, instantaneous CH luminosity images, and OH-PLIF. The distribution of wall pressure at the centerline on the top wall of the combustor was measured along the streamwise direction by pressure transducers at a range of sampling frequency of 10 kHz, pressure ranging from 0 to 700 kPa, and a maximum measurement error of 0.5%. A total of 45 channels were used. The experimental arrangements of the optical measurements are shown in Fig. 4. Quartz glasses were mounted on the sidewall and the bottom wall for optical access."
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                463,
+                488,
+                609
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A frequency-doubled Nd:YAG laser (Continuum, Precision II 9010) at 500 Hz was developed and used as the pumping source for the PLIF system, generating a 532 nm beam at approximately 30 mJ per pulse. The pulsed Nd:YAG laser pumped a dye laser (Lamda Physik, Scanmate Pro) to double its frequency and yield 1.6 mJ per pulse at a repetition rate of 500 Hz. The Q1(8) line of the "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\stackrel { \\bullet } { A } { } ^ { 2 } \\Sigma ^ { + } - X ^ { 2 } \\Pi ( \\stackrel { \\bullet } { 1 } , 0 )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "transition at 283.553 nm was applied to excite the OH radicals and avoid the fluorescence self-absorption effect. The optics, consisting of a concave lens (f −15 mm), a collimating lens (f  350 mm), and a focusing lens (f  375 mm), created a laser sheet 160 mm long and 0.1 mm thick to visualize the radicals. The fluorescence signal was collected by an ICMOS camera integrated in house through an UV achromatic lens (Nikon, F/105 mm, f/4.5), and a single-band bandpass filter consisting of a Schott UG11 and a Semrock 315/15. The detection gate time was set to 100 ns to minimize the contributions of OH chemiluminescence and flame luminosity. The PLIF images presented in this paper contain only qualitative data because the calculation of the theoretical fluorescence yield to extract quantitative OH concentrations is extremely difficult. A 283.553 nm laser at the Q1(8) band was selected to excite the OH radicals to reduce the dependence of the fluorescence signal on temperature. The intensity of the fluorescence signal was approximately proportional to the concentration of OH. The intensity of the OH fluorescence signal was collected by a high-speed camera and stored as a gray image that was normalized to the range [0,1] and converted into a pseudo-color image. The pixel value of the gray image corresponded to the pseudocolormap, which represents the relative concentration of OH."
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                608,
+                488,
+                676
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/a5b1a7ccc416cf8cf41fafa225e5b357b11e403c9bb7dc353e9b729946740b4b.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "FIG<sub>.</sub> 2<sub>.</sub> Geometric configurations of (a) the tested combustor and (b) cavity."
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                89,
+                692,
+                478,
+                847
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                508,
+                299,
+                916,
+                587
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The schlieren images were captured by a high-speed camera (Photron SA-5) with an exposure time of 4.62 ls and a frame rate of 10 000 fps. The chemiluminescence of CH was used to mark the chemical reaction of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C _ { 2 } H _ { 4 } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "in the combustor. The luminosity from CH was photographed by a high-speed color camera with 65 nm bandwidth interference filters centered at 430 nm with an exposure time of 0.2 ms and a frame rate of 5000 fps. A series of 1000 CH luminosity images or 100 OH-PLIF images were captured over 200 ms. These 2D images were used to track OH and CH and provide information on the chemical reaction zone and the emission-scale amplitude that could reveal unsteady behavior in terms of heat release."
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                585,
+                918,
+                692
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/97cc3ae8df834eca9032ffd9ea8ef710b3bb7558c6876e66876f3b344048e3ac.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "FIG 3 Schematic of fuel injection and spark."
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                545,
+                709,
+                880,
+                846
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Physics of Fluids"
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                51,
+                238,
+                69
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ARTICLE"
+                    }
+                ]
+            },
+            "bbox": [
+                620,
+                54,
+                679,
+                67
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "scitation org/journal/phf"
+                    }
+                ]
+            },
+            "bbox": [
+                723,
+                53,
+                867,
+                69
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Phys. Fluids 33, 055130 (2021); doi: 10.1063/5.0048229 Published under an exclusive license by AIP Publishing"
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                914,
+                328,
+                945
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "33, 055130-3"
+                    }
+                ]
+            },
+            "bbox": [
+                854,
+                914,
+                923,
+                928
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/69e4e89347ae8e8ecc88a593680a01e9677d2741775dd3c3d8c5f0acfd50e868.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                83,
+                121,
+                637,
+                299
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                80,
+                317,
+                488,
+                359
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "C. Test sequences with various parameters"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                81,
+                375,
+                401,
+                389
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In Fig. 5, the solid line represents the total pressure of internal flow after the settling chamber, presenting the operating condition of the heater. The stable stage of the solid line was chosen as the test time. The operating time of the direct-connected facility was approximately 500 ms. The solid line with open circles represents the injection pressure of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { H } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and that with triangles represents the injection pressure of C<sub>2</sub>H<sub>4</sub>. The sharp increment and collision represent the opening and closing of the valve, respectively. The hydrogen valve opened at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "t = 0 s"
+                    },
+                    {
+                        "type": "text",
+                        "content": "s."
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                391,
+                488,
+                448
+            ]
+        },
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/a999666d7d28a5ba1dfdff34ecbb6120782f500f96f07decceaeee81b9925095.jpg"
+                },
+                "content": "",
+                "chart_caption": [],
+                "chart_footnote": []
+            },
+            "bbox": [
+                96,
+                469,
+                473,
+                646
+            ]
+        },
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/cc73eb379cc70d16c0b3072626bde9c68739a11fe72d922b7cc030113bfdcc43.jpg"
+                },
+                "content": "",
+                "chart_caption": [
+                    {
+                        "type": "text",
+                        "content": "FIG<sub>.</sub> 5<sub>.</sub> Operating sequence of tests: (a) hydrogen and ethylene; (b) single fuel."
+                    }
+                ],
+                "chart_footnote": []
+            },
+            "bbox": [
+                93,
+                668,
+                475,
+                846
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                508,
+                317,
+                916,
+                384
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Ethylene was injected at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "t = 0 . 0 7 5 \\ s"
+                    },
+                    {
+                        "type": "text",
+                        "content": "as shown in Fig. 5(a). Injections of hydrogen and ethylene were sustained around 0.26 and 0.285 s, respectively. Therefore, the static pressure obtained by the pressure transducers and schlieren images from t 0 to "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "0 . 0 7 5 s"
+                    },
+                    {
+                        "type": "text",
+                        "content": "(stage a) could be analyzed to measure the effect of injection of pure hydrogen. Dynamic combustion from the injection of ethylene to stabilization was tracked from t 0.075 to 0.26 s (stage b), and the variation in the pure ethylene flame from "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "t = 0 . 2 6 \\mathrm { t o } 0 . 3 6 s"
+                    },
+                    {
+                        "type": "text",
+                        "content": "(stage c) was captured."
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                383,
+                915,
+                489
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Figure 5(b) provides the operational sequence when pure hydrogen or ethylene was used. The spark plug operated at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "t = 0 . 0 7"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and 0.155 s and the total test duration was approximately 0.25 s. Images of OH from "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "t = 0 . 0 7"
+                    },
+                    {
+                        "type": "text",
+                        "content": "to 0.25 s were used to analyze the dynamic evolution of the pure hydrogen or the ethylene flame. The parameters of injection for various cases are listed in Table I. Gaseous fuel was choked at the exit of the injection tube. Multiple cases based on different fuel injection strategies were investigated."
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                489,
+                916,
+                594
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "III. RESULTS"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                509,
+                599,
+                607,
+                613
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "A. Flow structure without fuel injection"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                509,
+                615,
+                803,
+                629
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The structures of supersonic internal flow without injection are shown in Fig. 6. The oblique shocks S0, labeled using the red dashed lines, were generated due to the particulars of manufacturing and imperfections in the installation. As these S0 shocks were weak, their effects on internal supersonic flow were minor. Expansion waves were attached to the cavity step because of supersonic airflow over the front step of the cavity. Above this was a shear layer, labeled with pink dashed lines, generated between low-speed airflow in the cavity and high-speed flow in the main region. After the expansion waves, the internal flow approached the bottom of the cavity wall, and an oblique shock S1 was generated owing to supersonic flow over the cavity ramp. This shock impacted the bottom wall of the combustor and formed a separation, resulting in the generation of a separation shock S2. Moreover, shock S1 generated two more reflected shocks, S3 and S4. Another oblique shock S5 was generated because of the upstream movement of S2 along with the augmented shock angle and that of S3 and S4. These complex, boundary-layer shock wave interactions imported unstable variations into the recirculation and the subsonic region of the cavity. This is consistent with the changes in compression induced by S1."
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                632,
+                916,
+                871
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Physics of Fluids"
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                51,
+                238,
+                69
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ARTICLE"
+                    }
+                ]
+            },
+            "bbox": [
+                622,
+                54,
+                679,
+                67
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "scitation org/journal/phf"
+                    }
+                ]
+            },
+            "bbox": [
+                723,
+                54,
+                867,
+                69
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Phys. Fluids 33, 055130 (2021); doi: 10.1063/5.0048229 Published under an exclusive license by AIP Publishing"
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                914,
+                328,
+                945
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "33, 055130-4"
+                    }
+                ]
+            },
+            "bbox": [
+                854,
+                914,
+                923,
+                928
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/e1851bd8952c570f2bb1e83d3946d65452eb7dc236eeb5b49caf712c2b7e3d9e.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                153,
+                640,
+                843,
+                847
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/d157b80be3e919dc9f32d0dccb7024f516c931873da210272f1e6b3495b5307d.jpg"
+                },
+                "table_caption": [
+                    {
+                        "type": "text",
+                        "content": "TABLE I Location and parameters of fuel injection for different cases."
+                    }
+                ],
+                "table_footnote": [],
+                "html": "<table><tr><td colspan=\"8\">Case</td></tr><tr><td>Parameter</td><td colspan=\"8\">Case 1 Case 2 Case 3 Case 4 Case 5</td></tr><tr><td>Injection location</td><td>Jet-1</td><td>Jet-2</td><td>Jet-2</td><td></td><td> $\\mathrm { J e t } - 2$ </td><td></td><td>Jet-2 Jet-1 Jet-2</td><td></td></tr><tr><td>Fuel</td><td> $\\mathrm { H } _ { 2 }$ </td><td> $\\mathrm { H } _ { 2 }$ </td><td> $\\mathrm { C _ { 2 } H _ { 4 } }$ </td><td></td><td> $\\mathrm { C _ { 2 } H _ { 4 } }$ </td><td> $\\mathrm { C _ { 2 } H _ { 4 } }$ </td><td> $\\mathrm { H } _ { 2 }$ </td><td> $\\mathrm { C _ { 2 } H _ { 4 } }$ </td></tr><tr><td> $\\phi$ </td><td> $0 . 3$  1</td><td>0.3 1</td><td>0.1</td><td></td><td>0.15 1</td><td>0.3 5</td><td>0.3</td><td>0.1</td></tr><tr><td>Number of experiments</td><td></td><td></td><td>8</td><td></td><td></td><td></td><td>1</td><td></td></tr><tr><td>Mass flow rate  $( \\mathrm { g } / \\mathrm { s } )$ </td><td>24.4</td><td>24.4</td><td>16.3</td><td></td><td>24.4</td><td>48.9</td><td>24.4</td><td>16.3</td></tr><tr><td> $T _ { t } \\left( \\mathrm { K } \\right)$ </td><td>300</td><td>300</td><td>300</td><td></td><td>300</td><td>300</td><td>300</td><td>300</td></tr><tr><td>Ma</td><td>1.0</td><td>1.0</td><td>1.0</td><td></td><td>1.0</td><td>1.0</td><td>1.0</td><td>1.0</td></tr><tr><td>Ignition</td><td>√</td><td>」</td><td>X</td><td></td><td>」</td><td>×</td><td>7</td><td>7</td></tr><tr><td>Flame stabilization</td><td>7</td><td>小</td><td>X</td><td></td><td></td><td>×</td><td>V</td><td>√</td></tr></table>",
+                "table_type": "complex_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                81,
+                135,
+                485,
+                337
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                81,
+                360,
+                485,
+                386
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The variations in the location and shock angle of S1 changed the separation, leading to the downstream movement of S2. As the oblique shock S2 no longer impacted the cavity ramp, S5 disappeared as shown in Fig. 6(c). Further movement of the oblique shocks, such as S2, downstream impacted the top wall of the combustor and induced S5 again. Following this, the oblique shocks started to propagate upstream, as did the location of impact of S2 with the wall. Finally, the internal flow structure returned to its original state as shown in Fig. 6(f). Thus, the periodic movement and structural evolution of the oblique shocks were successfully observed."
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                386,
+                488,
+                522
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "B. Hydrogen-only flame stabilization process"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                81,
+                536,
+                416,
+                551
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "As shown in Fig. 7(a), the structure of internal flow without injection was simple and included a shear layer and expansion waves at the cavity step, oblique shocks S1 and S2, and the corresponding reflected shocks. Unstable oscillations in internal flow were introduced above, and other characteristics of the oscillation are discussed in Sec. III. In"
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                553,
+                488,
+                621
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/f377afb240b39712d2e52a896d275f1a67ffbdf9a8eb9c484f863674053bc5f8.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                521,
+                122,
+                905,
+                210
+            ]
+        },
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/aa46ca319c1686901e4e0bce88f7e9c8836027461739ed99a662e1850fd31492.jpg"
+                },
+                "content": "",
+                "chart_caption": [],
+                "chart_footnote": []
+            },
+            "bbox": [
+                521,
+                217,
+                906,
+                310
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/6fe0c69dc74045f5b5ce321789e31fe9acb44d614a5184531d9206e5bb160725.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "FIG 7 Internal structures of supersonic flow under various injection strategies: (a) non-reacting flow; (b) hydrogen injected at Jet-1 location; and (c) hydrogen injected at Jet-2 location."
+                    },
+                    {
+                        "type": "text",
+                        "content": "Fig. 7(b), the gaseous H at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\phi = 0 . 3"
+                    },
+                    {
+                        "type": "text",
+                        "content": "was injected at Jet-1. An oblique shock S1 was generated ahead of the location of hydrogen injection that was attached to the bottom wall of the combustor and was reflected near x 312 mm to form a new oblique shock S2. Complex interactions between the shocks and boundary layers occurred in the cavity, and complex oblique shock structures such as S3 and S5–S7 were generated. As shown in Fig. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "7 ( \\mathrm { c } ) ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "the gaseous "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { H } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\phi = 0 . 3"
+                    },
+                    {
+                        "type": "text",
+                        "content": "was injected at Jet-2 and the oblique shock S1 was generated downstream of the cavity step and reflected at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "x = 3 7 8 \\mathrm { m m }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Compared with the flow structure induced by the injection conditions for Jet-1, that induced by the injection conditions of Jet-2 was simpler."
+                    },
+                    {
+                        "type": "text",
+                        "content": "FIG<sub>.</sub> 6<sub>.</sub> Internal supersonic flow structures without fuel injection."
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                521,
+                317,
+                906,
+                406
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Physics of Fluids"
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                51,
+                238,
+                69
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ARTICLE"
+                    }
+                ]
+            },
+            "bbox": [
+                622,
+                53,
+                679,
+                67
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "scitation org/journal/phf"
+                    }
+                ]
+            },
+            "bbox": [
+                723,
+                53,
+                867,
+                69
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Phys. Fluids 33, 055130 (2021); doi: 10.1063/5.0048229 Published under an exclusive license by AIP Publishing"
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                914,
+                328,
+                945
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "33, 055130-5"
+                    }
+                ]
+            },
+            "bbox": [
+                854,
+                914,
+                923,
+                928
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "As the locations of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { H } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "injection differed, the evolutions of flow structures from ignition to flame stabilization ought to have been distinct. As shown in Fig. 8(a), the intense combustion of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { H } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "occurred after the spark began operating. The products of combustion at high temperature and static pressure occupied the cavity promptly. The foot of the leading shock was located around x 295 mm at the bottom wall of the combustor at this time. As internal supersonic flow was compressed by combustion, the "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\ \" \\lambda \\ \""
+                    },
+                    {
+                        "type": "text",
+                        "content": "shock was pushed upstream until it vanished. As shown in Fig. 8(b), the oblique shock resulting from "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { H } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "injection deformed, with a new oblique shock generated around the cavity step, and their feet were located around "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "x = 3 4 0"
+                    },
+                    {
+                        "type": "text",
+                        "content": "mm. In contrast to the experimental result of case 1, the flame was located downstream of the site of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { H } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "injection and attaches to the cavity ramp. The "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^ { \\mathfrak { a } } \\lambda ^ { \\mathfrak { n } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "shock was then generated ahead of the cavity step and moved upstream until it vanished, which is similar to the result of case 1. When the flame stabilized, the leading shock was sustained in the isolator, and complex shocks were generated under the flame."
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                119,
+                488,
+                355
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In case 1, gaseous hydrogen was injected at Jet-1 and the flame was unstable as the OH radicals varied as a consequence, as shown in Fig. 9. At t 0.158 s, OH was concentrated near the cavity step and was attached to the bottom wall of the cavity. This led to a large initial OH concentration ratio (CR) in the shear layer, which was maximum at x 325–350 mm, and OH moved downstream. At t 0.164 s, intensified combustion occurred, and the distribution of OH became non-uniform as internal flow compression increased. Following this, the chemical reaction underwent repeated fluctuations in the concentration and subsequent diffusion of OH, as shown in Fig. 9. The distribution of OH obtained by PLIF verified that this injection strategy for Jet-1 can draw gaseous "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { H } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "into the cavity and enhance mixing."
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                354,
+                488,
+                395
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                506,
+                119,
+                916,
+                252
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In case 2, gaseous "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { H } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\phi = 0 . 3"
+                    },
+                    {
+                        "type": "text",
+                        "content": "was injected at Jet-2 located 25 mm downstream of the cavity step, as shown in Fig. 10. When the injection strategy changed from using Jet-1 to Jet-2, the location of the chemical reaction zone varied significantly. The shear layer was penetrated by the pillar of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { H } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and lifted toward the supersonic internal flow. According to the OH-PLIF images, the main chemical reaction zone was sustained in the shear layer at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "y = 2 0 - 4 0"
+                    },
+                    {
+                        "type": "text",
+                        "content": "mm, and there was no chemical reaction in the recirculation region near the cavity ramp."
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                250,
+                916,
+                355
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "At t 0.158 s, most of the OH was located in the shear layer of the cavity, near its ramp for the combustor. Then, H located within the boundaries "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "x = 3 2 5 - 3 7 5"
+                    },
+                    {
+                        "type": "text",
+                        "content": "mm and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { y } > 2 0 \\mathrm { m m } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and the tail of the"
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                354,
+                916,
+                395
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/2d3896a2abbf815080837314fde63a0492ae4a3207784569104743c0c360f4ba.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "FIG 8 Flow structures from ignition to stabilization at different injection locations: (a) Schlieren images taken at different times of case 1 and (b) schlieren images taken at different times of case 2."
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                111,
+                414,
+                890,
+                834
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Physics of Fluids"
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                51,
+                238,
+                69
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ARTICLE"
+                    }
+                ]
+            },
+            "bbox": [
+                622,
+                53,
+                679,
+                69
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "scitation org/journal/phf"
+                    }
+                ]
+            },
+            "bbox": [
+                723,
+                53,
+                867,
+                69
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Phys. Fluids 33, 055130 (2021); doi: 10.1063/5.0048229 Published under an exclusive license by AIP Publishing"
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                914,
+                328,
+                945
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "33, 055130-6"
+                    }
+                ]
+            },
+            "bbox": [
+                854,
+                914,
+                923,
+                928
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/21ba2735054e9a8fd29a079375b3b6d4a90c728d324a153c0dd812134ca69596.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "FIG 9 OH-PLIF images of cavities with pure H at / 0.3 injected at Jet-1."
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                155,
+                124,
+                841,
+                545
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "shear layer moved toward the bottom wall of the combustor, which led to an enlarged chemical reaction-free zone. Because OH concentration in the shear layer decreased, the shear layer moved up. Similar to the results of case 1, this flame and reaction area of case 2 were unstable."
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                582,
+                486,
+                648
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The OH-PLIF images verified that the location of injection had a significant impact on combustion, and the chemical reaction was more unstable when Jet-2 was used as the location of injection. As shown in Fig. 11, the areas containing OH ranged from 1120 to 1814 mm<sup>2</sup> when H was injected at Jet-1 (case 1), larger than the areas when Jet-2 was used (case 2). In case 2, the area of the chemical reaction zone was approximately 774.8–1701 mm<sup>2</sup>. In this case, the combustion weakened, resulting in a 50% reduction in area. Therefore, the injection strategy that uses Jet-2 is not conducive to promoting mixing, or the efficiency of combustion or thrust. An appropriate injection strategy would not only enhance mixing, but also sustain relatively stable combustion."
+                    }
+                ]
+            },
+            "bbox": [
+                78,
+                648,
+                488,
+                812
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "C. Flame stabilization using pure ethylene"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                81,
+                825,
+                395,
+                840
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In case 4, pure ethylene at / 0.15 was injected at Jet-2 for successful combustion. As shown in Fig. 12, the main chemical reaction zone was located around the ramp and bottom wall of the cavity but the flame was unstable."
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                843,
+                486,
+                871
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                508,
+                582,
+                915,
+                609
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "At t 0.158 s, the ratio of OH concentration increased at the cavity ramp, and weak combustion was noted at the bottom wall of the cavity. Then, the ethylene began reacting close to Jet-2, and the ratio of OH concentration increased. Consequently, the chemical reaction zone expanded. However, at t 0.167 s, it moved downward, and the area containing OH decreased as it moved from the bottom wall of the cavity to its ramp. Then, the chemical reaction zone expanded and occupied x 330–420 mm as the ratio of OH concentration increased. From t 0.168 to 0.172 s, the area containing OH shrank, and OH previously locates around the ramp of the cavity expanded to the cavity step. Unstable combustion involves repeated oscillatory motions of OH, mainly in cavity recirculation."
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                609,
+                916,
+                765
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Moreover, the instantaneous area of the chemical reaction zone and the distribution of OH clearly reflected the characteristics of unstable combustion. The area of the chemical reaction zone increased from 0 to 872.3 mm<sup>2</sup> after the application of a spark plug in case 4, as shown in Fig. 13."
+                    }
+                ]
+            },
+            "bbox": [
+                506,
+                765,
+                916,
+                830
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Due to instability, the area of the chemical reaction zone oscillated within the range of 448.3–1235 mm<sup>2</sup> from t 0.08 to t 0.25 s, except at t 0.105 and t 0.242 s. This is because of the delay effect of the solenoid valve, and the ethylene injection does not immediately enter or stop into the combustor. This corresponded to the expansion of the flame from the cavity ramp to the location of Jet-2. Attempts to stabilize the combustion of gaseous "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C _ { 2 } H _ { 4 } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "failed using the equivalence ratios shown in Table I and used in the descriptions of cases 3 and 5. Therefore, stable combustion was difficult to achieve when ethylene was injected at Jet-2 within the supersonic internal flow at a low total temperature."
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                830,
+                916,
+                871
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Physics of Fluids"
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                51,
+                238,
+                69
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ARTICLE"
+                    }
+                ]
+            },
+            "bbox": [
+                620,
+                54,
+                679,
+                67
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "scitation org/journal/phf"
+                    }
+                ]
+            },
+            "bbox": [
+                723,
+                53,
+                867,
+                69
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Phys. Fluids 33, 055130 (2021); doi: 10.1063/5.0048229 Published under an exclusive license by AIP Publishing"
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                914,
+                328,
+                945
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "33, 055130-7"
+                    }
+                ]
+            },
+            "bbox": [
+                854,
+                914,
+                923,
+                928
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/5a6ff555a95e2ab93f8ee5e736752e6254ef987f86b7abdb9f33324d639101f8.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "FIG 10 OH-PLIF images of a cavity with pure H at / 0.3 injected at Jet-2."
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                155,
+                124,
+                841,
+                552
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                80,
+                593,
+                488,
+                647
+            ]
+        },
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/9c97f588a18f3b4de6c2558ffcdbbc803322db7a23f206f401dbc758e7ff8a65.jpg"
+                },
+                "content": "",
+                "chart_caption": [
+                    {
+                        "type": "text",
+                        "content": "FIG<sub>.</sub> 11<sub>.</sub> Areas of the chemical reaction zones (OH) with varying jet locations and /  0.3."
+                    }
+                ],
+                "chart_footnote": []
+            },
+            "bbox": [
+                137,
+                674,
+                434,
+                835
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                508,
+                593,
+                915,
+                647
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "To guarantee the combustion of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C _ { 2 } H _ { 4 } } ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "it is necessary to add an additional pilot flame that aids the injection strategy. Experiments on combined injection were thus conducted to evaluate the effects of pilot "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { H } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "on stabilizing the combustion of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C _ { 2 } H _ { 4 } } ."
+                    },
+                    {
+                        "type": "text",
+                        "content": "Gaseous "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { H } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\phi = 0 . 3"
+                    },
+                    {
+                        "type": "text",
+                        "content": "was injected at Jet-1 and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C _ { 2 } H _ { 4 } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\phi = 0 . 1"
+                    },
+                    {
+                        "type": "text",
+                        "content": "at Jet-2."
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                646,
+                915,
+                714
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "D. Stabilizing hydrogen and ethylene flames"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                509,
+                736,
+                841,
+                751
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "1. Effects ofpilot hydrogen on chemical reaction zone"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                509,
+                755,
+                897,
+                768
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In case 6, the dynamic evolution of the combustion of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C _ { 2 } H _ { 4 } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "was captured by luminosity images of CH at an exposure time of 0.2 ms. The blue zone shown in "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { F i g . }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "14 represents the location of CH. As color-to-gray transformation can reduce the time required to filter and segment images, the original CH luminosity images were converted into gray images as shown in Fig. 14(b). The edge of the chemical reaction zone was detected via a discontinuity in the gray values. Then, its area was determined based on the location of the edge as shown in Fig. 14(c)."
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                776,
+                916,
+                871
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Physics of Fluids"
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                51,
+                238,
+                69
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ARTICLE"
+                    }
+                ]
+            },
+            "bbox": [
+                622,
+                54,
+                679,
+                67
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "scitation org/journal/phf"
+                    }
+                ]
+            },
+            "bbox": [
+                723,
+                53,
+                867,
+                69
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Phys. Fluids 33, 055130 (2021); doi: 10.1063/5.0048229 Published under an exclusive license by AIP Publishing"
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                914,
+                328,
+                945
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "33, 055130-8"
+                    }
+                ]
+            },
+            "bbox": [
+                854,
+                914,
+                923,
+                928
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/70931420fafe4609193913cb4a2b6b7928383bc9414ef897803daf66830aed16.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "FIG 12 Dynamic evolution of OH with pure C<sub>2</sub>H<sub>4</sub> at /  0.15 in case 4."
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                153,
+                122,
+                848,
+                530
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                81,
+                566,
+                486,
+                593
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "At t 0.133 s, the spark plug operated with the valves of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { H } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and C H open. At t 0.26 s, H injection stopped, and the single C H flame lasted for approximately 0.1 s. During this process, the evolutions of the x coordinate of the center of the CH region and the area of the chemical reaction zone are captured in Figs. 15 and 16, respectively."
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                593,
+                488,
+                646
+            ]
+        },
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/38cb770a0a28f3a34d5ed85d9e22097e80ee16b6f1af21d96ad0e890b0de8467.jpg"
+                },
+                "content": "",
+                "chart_caption": [
+                    {
+                        "type": "text",
+                        "content": "FIG<sub>.</sub> 13<sub>.</sub> Area of the chemical reaction zone in case 4."
+                    }
+                ],
+                "chart_footnote": []
+            },
+            "bbox": [
+                117,
+                662,
+                455,
+                846
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                508,
+                566,
+                915,
+                593
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The x coordinate of the center of the CH region was calculated using Eq. (1), where n is the number of pixels of the combustion flame and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "x _ { p , i }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is the x coordinate of each pixel,"
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                592,
+                916,
+                634
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/65e5aa9bb4bca0c580c679b4e3e6953c57ebb0c6f791074451d1bc9b5845d891.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "FIG<sub>.</sub> 14<sub>.</sub> CH image processing in case 6: (a) CH image; (b) gray image; and (c) gray image with edge."
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                524,
+                662,
+                900,
+                836
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Physics of Fluids"
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                51,
+                238,
+                69
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ARTICLE"
+                    }
+                ]
+            },
+            "bbox": [
+                622,
+                54,
+                679,
+                67
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "scitation org/journal/phf"
+                    }
+                ]
+            },
+            "bbox": [
+                723,
+                53,
+                867,
+                69
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Phys. Fluids 33, 055130 (2021); doi: 10.1063/5.0048229 Published under an exclusive license by AIP Publishing"
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                914,
+                328,
+                945
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "33, 055130-9"
+                    }
+                ]
+            },
+            "bbox": [
+                854,
+                914,
+                923,
+                928
+            ]
+        }
+    ],
+    [
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/06b400dc613d28bb6c9132c1e318ecc9abaddf9e8a2597a365c3d643da6bc903.jpg"
+                },
+                "content": "",
+                "chart_caption": [
+                    {
+                        "type": "text",
+                        "content": "FIG 15 X coordinate of the center of CH region in case 6."
+                    }
+                ],
+                "chart_footnote": []
+            },
+            "bbox": [
+                129,
+                123,
+                444,
+                299
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "X _ { c } = \\frac { \\displaystyle \\sum _ { i = I } ^ { n } x _ { p , i } } { n } .\\tag{1}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/5aec47b6559353c87cf1c639e6714f432a31c265dc0ff21b84b3ee7eedaf7810.jpg"
+                }
+            },
+            "bbox": [
+                238,
+                337,
+                326,
+                384
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "When an "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { H } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "pilot flame was present, gaseous "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C _ { 2 } H _ { 4 } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "was ignited successfully and rapidly, with the area of the CH region increasing from 0 to "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "6 3 1 . { \\dot { 5 } }  { \\mathrm { m m } } ^ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\dot { X } _ { c }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "growing to 347.5 mm. After ignition, the "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C _ { 2 } H _ { 4 } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "flame stabilized in the middle of the cavity, but unstable combustion led to oscillations in "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "X _ { c } ."
+                    },
+                    {
+                        "type": "text",
+                        "content": "The average area decreased at "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "t { = } 0 . 1 3 3 { - } 0 . 2 6 s"
+                    },
+                    {
+                        "type": "text",
+                        "content": "as shown in Fig. 16. When the valve for "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { H } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "was closed, the location of the CH region varied significantly. The value of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "X _ { \\mathrm { c } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "of the CH region increased to 384 mm and the area grew to 1197 mm<sup>2</sup>. These changes represent increases of 42.13% and 78.44%, respectively. The "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C _ { 2 } H _ { 4 } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "flame was stabilized and attached to a cavity ramp with a larger area than before."
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                389,
+                488,
+                536
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "It can be inferred that the products of combustion of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { H } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "provided a high-temperature and high-pressure environment that was conductive to promptly igniting and stabilizing the "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C _ { 2 } H _ { 4 } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "flame. Without the H<sub>2</sub> pilot flame, the gaseous "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C _ { 2 } H _ { 4 } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "with a constant equivalence ratio needed almost 9.2 ms for the location of the flame to change and for it to attach to the cavity ramp. Throughout the process, the chemical reaction zone and flame were unstable, and complex coupling was observed between flow and combustion."
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                535,
+                488,
+                642
+            ]
+        },
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/3958c44c672458914daf8c6288e082ae4abdac30f39a8dd7639ed0bd4ef5ce8d.jpg"
+                },
+                "content": "",
+                "chart_caption": [
+                    {
+                        "type": "text",
+                        "content": "FIG<sub>.</sub> 16<sub>.</sub> Area of the CH region in case 6."
+                    }
+                ],
+                "chart_footnote": []
+            },
+            "bbox": [
+                117,
+                662,
+                452,
+                845
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/dedbee1391cb73fe9603339239f0a5563c9b038a8870597a1ea8ee70695cd413.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "FIG 17 Schlieren images and the CH region in the presence of the "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathsf { H } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "pilot flame."
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                544,
+                123,
+                880,
+                301
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "As shown in Fig. 17, the combustion of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C _ { 2 } H _ { 4 } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "occurred immediately after injection but the structure of the CH region did not remain static because the combustion of pure "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { H } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "was unstable, as shown in Fig. 9. This instability in the pilot "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { H } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "affected the combustion of gaseous C H , leading to a variation in the boundaries around the products of high-temperature combustion. The enlarging and shrinking of the chemical reaction zone led to shock trains of varying lengths and structures."
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                341,
+                915,
+                444
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Without the instability introduced by the "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { H } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "pilot flame, the products of high-temperature combustion were relatively stable, as were the structures of the shock trains below the chemical reaction zone, as displayed in Fig. 18. A comparison indicates that the unstable combustion of the pilot "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { H } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "was the main reason for oscillations in the combustion of "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C _ { 2 } H _ { 4 } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "as well as the complex coupling between flow and combustion. Moreover, the presence of pilot H was a precondition for quick "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C _ { 2 } H _ { 4 } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "ignition and flame formation, which could not be stabilized separately at a low equivalent ratio."
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                444,
+                916,
+                562
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "When pure "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { C _ { 2 } H _ { 4 } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "was injected, the distribution of static pressure in case 4 was practically equal to that in case "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^ { 6 , }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "and the maximum normalized pressure was 1.36 as shown in Fig. 19. The combustion of pure C H in case 4 was incomplete, and the pilot H was conducive to improving combustion efficiency in stage c of case 6. Therefore, pilot "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { H } _ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "is required for operational stability and high performance."
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                562,
+                916,
+                642
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/3fe2c0a61ad1c9e8c4ec8e8c91872b3a89b3422cb03dc77f3721075f5fbdd604.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "FIG<sub>.</sub> 18<sub>.</sub> Schlieren images and the CH region without H<sub>2</sub> pilot flame."
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                544,
+                669,
+                880,
+                847
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Physics of Fluids"
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                51,
+                238,
+                69
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ARTICLE"
+                    }
+                ]
+            },
+            "bbox": [
+                622,
+                54,
+                679,
+                67
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "scitation org/journal/phf"
+                    }
+                ]
+            },
+            "bbox": [
+                723,
+                53,
+                867,
+                69
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Phys. Fluids 33, 055130 (2021); doi: 10.1063/5.0048229 Published under an exclusive license by AIP Publishing"
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                914,
+                328,
+                945
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "33, 055130-10"
+                    }
+                ]
+            },
+            "bbox": [
+                849,
+                914,
+                923,
+                928
+            ]
+        }
+    ],
+    [
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/7893ee37e06d0a55609d0e715df168f517c12f0e3af02f67e9e0e96313b17d2a.jpg"
+                },
+                "content": "",
+                "chart_caption": [
+                    {
+                        "type": "text",
+                        "content": "FIG 19 Normalized pressure distributions with pure "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathsf { C } _ { 2 } \\mathsf { H } _ { 4 }"
+                    }
+                ],
+                "chart_footnote": []
+            },
+            "bbox": [
+                96,
+                122,
+                475,
+                333
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2. Effects ofpilot hydrogen on oscillation and performance"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                80,
+                375,
+                413,
+                404
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "When high-speed air flows over a cavity, an unstable shear layer and complex recirculation zones are formed in the step and ramp. Moreover, global instability can intensify owing to the complex flow physics induced by the shock waves, leading to separation and recirculation. As shown in Fig. 6, the internal flow in and out of the cavity oscillated within a narrow range in the case of no fuel injection. This unstable progress involved shock wave–boundary layer interactions, the generation and disappearance of oblique shock S5, and the oscillatory movement of oblique shocks S3 and S4. The pressure–time <sup>history</sup> <sup>at</sup> <sup>x</sup> ¼ <sup>371</sup> <sup>mm</sup> <sup>in</sup> <sup>this</sup> <sup>cavity</sup> <sup>was</sup> <sup>monitored.</sup> <sup>The</sup> <sup>oscillatory</sup> characteristics were obtained via FFT and the corresponding results are shown in Fig. 20."
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                410,
+                488,
+                517
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": []
+            },
+            "bbox": [
+                508,
+                119,
+                916,
+                173
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A combined analysis by using the FFT and schlieren images shows that although some dominant frequencies lower than 100 Hz can be observed in Fig. 20, they were obtained when the experimental equipment was working and are thus excluded. The dominant frequencies of internal flow before the injection of gaseous fuel were 413.2, 446.8, and 456.1 Hz. The small difference among the dominant frequencies in different cases indicates that the operation of the directconnected facility was stable and repeatable. After the injection of gaseous fuel, cold flow oscillation appeared to have been suppressed in case 2 because the dominant frequency moved from 446.8 to 33.4–250.4 Hz. In the other cases, the dominant frequency was barely affected by fuel injection. When the fuel was injected at Jet-2, the oblique shock S1 was generated ahead of the injection and attached to the bottom wall of the combustor. The point of attachment of S1 was close to the separation caused by S2. Thus, the existence of S1 enhanced the separation at the bottom wall and stabilized cold flow by suppressing unstable interactions between the shock and the separation in the cavity. When fuel was injected at Jet-1, the oblique shock S1 was reflected at the bottom wall of the combustor and interacted with the separation in the cavity. The influence of oblique shock S1 was lost in the complex internal flow of the cavity. Thus, the change in the dominant frequency of oscillation was small. The location of fuel injection thus significantly impacts the stability of cold flow. For the combined injection of hydrogen and ethylene in stage b of case 6, the results of FFT are not discussed here because unstable combustion occurred without a dominant frequency."
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                173,
+                916,
+                516
+            ]
+        },
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/ba658907c867cea8a4566312dd3e8497a8d53dfda44b29523b64087071642afd.jpg"
+                },
+                "content": "",
+                "chart_caption": [],
+                "chart_footnote": []
+            },
+            "bbox": [
+                109,
+                545,
+                359,
+                640
+            ]
+        },
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/b3051d8da9e31a158f29987eaf86971c0710b7171fb69551a3d38c53f9facaa6.jpg"
+                },
+                "content": "",
+                "chart_caption": [],
+                "chart_footnote": []
+            },
+            "bbox": [
+                379,
+                546,
+                629,
+                639
+            ]
+        },
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/efa668315e9923206e3ec15d43914e0ccdf971857e8b784651741d3d9139d29a.jpg"
+                },
+                "content": "",
+                "chart_caption": [],
+                "chart_footnote": []
+            },
+            "bbox": [
+                640,
+                546,
+                888,
+                637
+            ]
+        },
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/6049188b91aa71726da1127c4737beef79ac61d0425ff7ed6ae8462f20698c22.jpg"
+                },
+                "content": "",
+                "chart_caption": [],
+                "chart_footnote": []
+            },
+            "bbox": [
+                111,
+                637,
+                359,
+                731
+            ]
+        },
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/6f6783da8687b0036ea8fa5f887c31bfc4aa0b1abca0123284d857418230629e.jpg"
+                },
+                "content": "",
+                "chart_caption": [],
+                "chart_footnote": []
+            },
+            "bbox": [
+                379,
+                637,
+                629,
+                730
+            ]
+        },
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/f62f76f8e13bcf3f7b153379050788e29681d409299e5abffc7e7015ab807135.jpg"
+                },
+                "content": "",
+                "chart_caption": [],
+                "chart_footnote": []
+            },
+            "bbox": [
+                640,
+                636,
+                890,
+                730
+            ]
+        },
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/e385a4db923838da2307469b49fc5967a993dffde4b0e94a53174a6b558b579f.jpg"
+                },
+                "content": "",
+                "chart_caption": [
+                    {
+                        "type": "text",
+                        "content": "(a)"
+                    }
+                ],
+                "chart_footnote": []
+            },
+            "bbox": [
+                109,
+                729,
+                359,
+                824
+            ]
+        },
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/a54afdb4e78caad8e5102689b54c7fa3980f5ee37f51bc020ab9d5c3b7c4eb26.jpg"
+                },
+                "content": "",
+                "chart_caption": [
+                    {
+                        "type": "text",
+                        "content": "(b)"
+                    }
+                ],
+                "chart_footnote": []
+            },
+            "bbox": [
+                379,
+                729,
+                629,
+                824
+            ]
+        },
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/701c9e6cb4d7c90b2a452a9a36e7991b6e0cb15071b60f4d7c15a083df095a4b.jpg"
+                },
+                "content": "",
+                "chart_caption": [
+                    {
+                        "type": "text",
+                        "content": "(c)"
+                    },
+                    {
+                        "type": "text",
+                        "content": "FIG<sub>.</sub> 20<sub>.</sub> FFT analysis of pressure–time history at x  371 mm: (a) FFT analysis result of case 1; (b) FFT analysis result of case 2; and (c) FFT analysis result of case 6."
+                    }
+                ],
+                "chart_footnote": []
+            },
+            "bbox": [
+                640,
+                729,
+                890,
+                824
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Physics of Fluids"
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                51,
+                238,
+                69
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ARTICLE"
+                    }
+                ]
+            },
+            "bbox": [
+                622,
+                53,
+                679,
+                69
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "scitation org/journal/phf"
+                    }
+                ]
+            },
+            "bbox": [
+                723,
+                53,
+                867,
+                69
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "33, 055130-11"
+                    }
+                ]
+            },
+            "bbox": [
+                849,
+                914,
+                923,
+                929
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Phys. Fluids 33, 055130 (2021); doi: 10.1063/5.0048229 Published under an exclusive license by AIP Publishing"
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                914,
+                328,
+                945
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Because the pilot hydrogen flame was a precondition for successful ignition and flame stabilization when the equivalence ratio of ethylene was low, the mass flow rate of hydrogen was kept constant for the various injection strategies to evaluate the effects of the pilot flame on the performance of the scramjet. The corresponding experimental results are shown in Fig. 21. The thrust of combustor has been evaluated by the value of Ð Pd<sup>~</sup>A. The thrusts were 1 016.6, 871.2, 778.2, and 1 287.7 N for cases 1, 2, and 4, and stage b of case 6, respectively. The normalized pressure distributions for cases 1 and 2 were completely different, although the equivalence ratio of gaseous hydrogen was the same. When hydrogen was injected at Jet-1 in case 1, the maximum normalized pressure was 2.52, approximately 1.31 times that in case 2. This indicates that this injection strategy for Jet-1 can improve the efficiency of combustion. Once the hydrogen had been ignited, the combustion in case 1 was more severe and unstable than in the case of non-reacting flow. The rise in pressure was concentrated mainly at x 129 to x 731 mm. In case 2, the initial point of the rise in pressure was at x 269 mm. Thus, the length of the shock train induced by intense combustion decreased around 140 mm. Flame stabilization in case 3 was unsuccessful at /  0.1. In case 4, pure ethylene at / 0.15 was ignited and the flame was stabilized by the pilot flame. The maximum normalized pressure was 1.38, clearly lower than those in the other cases. Thus, gaseous ethylene is difficult to stabilize at low flight Mach numbers at a low total temperature. In stage b of case 6, the maximum normalized pressure was 3.22. Compared with case 1, the added ethylene improved the normalized pressure by approximately 27.8% and significantly increased the pressure distribution in the divergent section of the combustor, leading to a better performance. Moreover, the leading edge of the shock train approached the entrance of the isolator. This indicates that the shock train encountered the entire isolator and the scramjet almost unstarts."
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                121,
+                488,
+                524
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The experimental results confirm that the location of injection and application of pilot hydrogen have significant effects on flame stabilization. A reasonable injection strategy for pilot hydrogen can improve the pressure distribution and efficiency of combustion while providing a high thrust."
+                    }
+                ]
+            },
+            "bbox": [
+                80,
+                524,
+                486,
+                590
+            ]
+        },
+        {
+            "type": "chart",
+            "content": {
+                "image_source": {
+                    "path": "images/0b220303ca169aa16a255e0702aa87bb309800794f73878ac4e40ac10684419f.jpg"
+                },
+                "content": "",
+                "chart_caption": [
+                    {
+                        "type": "text",
+                        "content": "FIG 21 Normalized pressure distributions under different injection strategies."
+                    }
+                ],
+                "chart_footnote": []
+            },
+            "bbox": [
+                91,
+                619,
+                475,
+                846
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "IV. CONCLUSIONS"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                509,
+                119,
+                650,
+                133
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "In this study, experiments were conducted to investigate the effects of pilot hydrogen on the performance of an ethylene-fueled scramjet equipped with a single cavity. The direct-connected CARDC facility was used to simulate a Mach number of 4 in flight conditions. In addition, optical measurements were performed by using schlieren images, OH-PLIF, CH luminosity images, and 10 kHz pressure transducers."
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                137,
+                916,
+                229
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Without fuel injection, the structure of internal flow was simple. It included a shear layer and several expansion waves at the cavity step as well as oblique shocks and unstable separation. Although the operation of the direct-connect facility was stable and repeatable, the internal flow oscillated with a dominant frequency of approximately 450 Hz."
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                229,
+                915,
+                296
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Moreover, specific injection strategies can be used to suppress oscillations in internal flow. The experimental results showed that the high dominant frequency decreased when pilot hydrogen was injected into the cavity. No significant impact on oscillation was noted when pilot hydrogen was injected ahead of the cavity step."
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                296,
+                915,
+                362
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A reasonable injection strategy can reduce instability and improve the performance of the scramjet. The normalized pressure distribution when pilot hydrogen was injected ahead of the cavity step appeared to be higher than that when it was injected into the cavity. The OH-PLIF images showed that the pilot flame was unstable. The low equivalence ratio of ethylene rendered stabilization at a flight Mach number of 4 impossible."
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                362,
+                915,
+                453
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "With the assistance of pilot hydrogen, ethylene was ignited and the flame was stabilized. The maximum normalized pressure was approximately 3.22, 1.278 times that of pilot hydrogen. Furthermore, the ethylene flame remained stable when the pilot hydrogen was turned off. Its center moved from x 347.5 to x 384 mm when its area increased. Hence, the presence of pilot hydrogen not only improved performance, but also stabilized the ethylene flame. In all experiments, the combustion was drastic and unstable, but without a dominant frequency."
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                453,
+                916,
+                574
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "ACKNOWLEDGMENTS"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                509,
+                585,
+                679,
+                600
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "This project was supported by the National Nature Science Foundation of China (Grant No. 51706237) and the CARDC Fundamental and Frontier Technology Research Fund."
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                608,
+                915,
+                647
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The authors declare that there are no conflicts of interest regarding the publication of this paper."
+                    }
+                ]
+            },
+            "bbox": [
+                508,
+                647,
+                915,
+                676
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "DATA AVAILABILITY"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                509,
+                679,
+                661,
+                693
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "The data that support the findings of this study are available from the corresponding author upon reasonable request."
+                    }
+                ]
+            },
+            "bbox": [
+                509,
+                697,
+                915,
+                725
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "REFERENCES"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                511,
+                737,
+                616,
+                751
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>1</sup>H. B. Wang, Z. G. Wang, M. B. Sun, and H. Y. Wu, “Combustion modes of hydrogen jet combustion in a cavity-based supersonic combustor,” Int. J. Hydrogen Energy 38, 12078–12089 (2013)."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>2</sup>C. Y. Liu, Z. G. Wang, M. B. Sun, H. B. Wang, and P. B. Li, “Characteristics of a cavity-stabilized hydrogen jet flame in a model scramjet combustor,” AIAA J. 57, 1624–1635 (2019)."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>3</sup>A. Ben-Yakar and R. K. Hanson, “Cavity flame-holders for ignition and flame stabilization in scramjets: An overview,” J. Propul. Power 17, 869–877 (2001)."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>4</sup>R. A. Baurle and D. R. Eklund, “Analysis of dual-mode hydrocarbon scramjet operation at Mach 4–6.5,” J. Propul. Power 18, 990–1002 (2002)."
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                516,
+                756,
+                913,
+                789
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Physics of Fluids"
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                51,
+                238,
+                69
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ARTICLE"
+                    }
+                ]
+            },
+            "bbox": [
+                622,
+                54,
+                679,
+                67
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "scitation org/journal/phf"
+                    }
+                ]
+            },
+            "bbox": [
+                723,
+                54,
+                867,
+                69
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Phys. Fluids 33, 055130 (2021); doi: 10.1063/5.0048229 Published under an exclusive license by AIP Publishing"
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                914,
+                328,
+                945
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "33, 055130-12"
+                    }
+                ]
+            },
+            "bbox": [
+                849,
+                914,
+                923,
+                928
+            ]
+        }
+    ],
+    [
+        {
+            "type": "list",
+            "content": {
+                "list_type": "reference_list",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>5</sup>R. Moradi, A. Mahyari, M. B. Gerdroodbary, A. Abdollahi, and Y. Amini, “Shape effect of cavity flameholder on mixing zone of hydrogen jet at supersonic flow,” Int. J. Hydrogen Energy 43, 16364–16372 (2018)."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>6</sup>S. J. Beresh, J. L. Wagner, B. O. M. Pruett, J. F. Henfling, and R. W. Spillers, “Supersonic flow over a finite-width rectangular cavity,” AIAA J. 53, 296–310 (2015)."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>7</sup>K. Sathiyamoorthy, T. H. Danish, J. Srinivas, and P. Manjunath, “Experimental investigation of supersonic combustion in a strut-cavity based combustor,” Acta Astronaut. 148, 285–293 (2018)"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>8</sup>Y. X. Yang, Y. X. Zhang, J. F. Yu, M. B. Sun, H. B. Wang, and Z. G. Wang, “Rear-wall-expansion effect of cavity flameholder on supersonic combustion,” J. Propul. Power 35, 1029–1033 (2019)."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>9</sup>C. Y. Liu, Y. H. Zhao, Z. G. Wang, H. B. Wang, and M. B. Sun, “Dynamics and mixing mechanism of transverse jet injection into a supersonic combustor with cavity flameholder,” Acta Astronaut. 136, 90–100 (2017)."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>10</sup>M. Sun and Z. Hu, “Mixing in near-wall regions downstream of a sonic jet in a supersonic crossflow at Mach 2.7,” Phys. Fluids 30, 106102 (2018)."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>11</sup>C. Liu, J. Yu, Z. Wang, M. Sun, H. Wang, and H. Grosshans, “Characteristics of hydrogen jet combustion in a high-enthalpy supersonic crossflow,” Phys. Fluids 31, 046105 (2019)."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>12</sup>A. S. Potturi and J. R. Edwards, “Large-eddy/Reynolds-averaged Navier–Stokes simulation of cavity-stabilized ethylene combustion,” Combust. Flame 162, 1176–1192 (2015)."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>13</sup>J. A. Fulton, J. R. Edwards, A. Cutler, J. McDaniel, and C. Goyne, “Turbulence/ chemistry interactions in a ramp-stabilized supersonic hydrogen–air diffusion flame,” Combust. Flame 174, 152–165 (2016)."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>14</sup>L. Ma, Q. C. Lei, Y. Wu, W. J. Xu, T. M. Ombrello, and C. D. Carter, “From ignition to stable combustion in a cavity flameholder studied via 3D tomographic chemiluminescence at 20k Hz,” Combust. Flame 165, 1–10 (2016)."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>15</sup>F. J. Forster, N. C. Droske, M. N. Buhler, J. V. Wolfersdorf, and B. Waigand, “Analysis of flame characteristics in a scramjet combustor with staged fuel injection using common path focusing schlieren and flame visualization,” Combust. Flame 168, 204–215 (2016)."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>16</sup>M. B. Sun, H. Geng, J. H. Liang, and Z. G. Wang, “Mixing characteristics in a supersonic combustor with gaseous fuel injection upstream of a cavity flameholder,” Flow Turbul. Combust. 82, 271–286 (2009)."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>17</sup>A. Ben-Yakar, M. Kamel, C. Morris, and, and R. K. Hanson, “Experimental investigation of H transverse jet combustion in hypervelocity flows,” in Joint Propulsion Conference and Exhibit (1997)."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>18</sup>A. Ben-Yakar and R. K. Hanson, “Supersonic combustion of cross-flow jets and the influence of cavity flame-holders,” in 37th Aerospace Sciences Meeting and Exhibit (2011)."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>19</sup>A. Ben-Yakar, M. G. Munga, and R. K. Hanson, “Time evolution and mixing characteristics of hydrogen and ethylene transverse jets in supersonic crossflows,” Phys. Fluids 18, 026101 (2006)."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>20</sup>H. B. Wang, Z. G. Wang, M. B. Sun, and N. Qin, “Combustion characteristics in a supersonic combustor with hydrogen injection upstream of cavity flameholder,” Proc. Combust. Inst. 34, 2073–2082 (2013)."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>21</sup>M. B. Colket and L. J. Spadaccini, “Scramjet fuels autoignition study,” J. Propul. Power 17, 315–323 (2001)."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>22</sup>S. H. Yang, Y. Tian, and, and L. Li, “Flow oscillation in a scramjet combustor with air-throttling,” in 21st AIAA International Space Planes and Hypersonics Technologies Conference (2017)."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>23</sup>J. Li, L. W. Zhang, J. Y. Choi, V. Yang, and K. C. Lin, “Ignition transients in a scramjet engine with air throttling part 1: Nonreacting flow,” J. Propul. Power 30, 438–448 (2014)."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>24</sup>J. Li, L. W. Zhang, J. Y. Choi, and V. Yang, “Ignition transients in a scramjet engine with air throttling part II: Reacting flow,” J. Propul. Power 31, 79–88 (2015)."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>25</sup>G. B. Goodwin, R. F. Johnson, and, and D. A. Kessler, “Premixed ethylene-air combustion in a dual-mode scramjet cavity combustor with a turbulent inflow,” in AIAA Propulsion and Energy 2019 Forum (2019)."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>26</sup>Y. Tian, S. H. Yang, and J. L. Le, “Study on the effect of air throttling on flame stabilization of an ethylene fueled scramjet combustor,” Int. J. Aerosp. Eng. 2015, 504684."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>27</sup>Y. Tian, S. H. Yang, and J. L. Le, “Study on flame stabilization of a hydrogen and kerosene fueled combustor,” Aerosp. Sci. Technol. 59, 183–185 (2016)."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>28</sup>Y. Tian, S. H. Yang, B. G. Xia, and J. L. Le, “Experimental study on the effect of air throttling on supersonic combustion,” Proc. Inst. Mech. Eng., Part G 232, 472–480 (2018)."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>29</sup>Y. Tian, S. H. Yang, J. L. Le, and F. Y. Zhong, “Investigation of combustion process of a kerosene fueled combustor with air throttling,” Combust. Flame 179, 74–85 (2017)."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>30</sup>Y. Ju and T. Nioka, “Ignition simulation of methane/hydrogen mixtures in a supersonic mixing layer,” Combust. Flame 102, 462–470 (1995)."
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "<sup>31</sup>G. Yu, J. G. Li, X. Y. Chang, L. H. Chen, and C. J. Sung, “Investigation of kerosene combustion characteristics with pilot hydrogen in model supersonic combustors,” J. Propul. Power 17, 1263–1272 (2001)."
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                119,
+                486,
+                154
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "Physics of Fluids"
+                    }
+                ]
+            },
+            "bbox": [
+                75,
+                51,
+                238,
+                69
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "ARTICLE"
+                    }
+                ]
+            },
+            "bbox": [
+                622,
+                54,
+                679,
+                67
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "scitation org/journal/phf"
+                    }
+                ]
+            },
+            "bbox": [
+                723,
+                54,
+                867,
+                69
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "Phys. Fluids 33, 055130 (2021); doi: 10.1063/5.0048229 Published under an exclusive license by AIP Publishing"
+                    }
+                ]
+            },
+            "bbox": [
+                58,
+                914,
+                328,
+                945
+            ]
+        },
+        {
+            "type": "page_footer",
+            "content": {
+                "page_footer_content": [
+                    {
+                        "type": "text",
+                        "content": "33, 055130-13"
+                    }
+                ]
+            },
+            "bbox": [
+                849,
+                914,
+                923,
+                928
+            ]
+        }
+    ]
+]

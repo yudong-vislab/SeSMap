@@ -2,70 +2,48 @@
   {
     "hex_coord": [
       -15,
-      5
-    ],
-    "country": 1,
-    "MSU_ids": [
-      165
-    ],
-    "summary": "The cavity has a rear-wall-expansion angle of β = 21.1°."
-  },
-  {
-    "hex_coord": [
-      -14,
-      4
-    ],
-    "country": 1,
-    "MSU_ids": [
-      166,
-      167
-    ],
-    "summary": "The isolator has a divergent angle of *α* = 1.4°. The length of the expansion section’s first part is 102.5 mm with a divergent angle α = 1.4°. The length of the expansion section’s second part is 26.5 mm with a divergent angle γ = 2°."
-  },
-  {
-    "hex_coord": [
-      -14,
       6
     ],
-    "country": 1,
+    "country": 0,
     "MSU_ids": [
-      236
+      101,
+      102,
+      105
     ],
-    "summary": "Wang et al. found that the shock-train oscillation could propagate further downstream along the thicker boundary layer, resulting in drastic coherence and pressure fluctuations in downstream separated flow. For case 1, the leading edge of the cavity serves as the source of the reflected shocks. Case 1 displays the phenomenon on the cavity side of the shear layer."
+    "summary": "The first section was a 300-mm-long rectangular isolator containing an 80-mm-long expansion section at an angle of divergence of 1.4°. The cross-sectional area of the entrance of the isolator was 30 mm (height) by 150 mm (width). The expansion section ranged from x = 421 mm to x = 1073 mm, with angles of 1.4°, 2°, 8.0°, and 15°."
+  },
+  {
+    "hex_coord": [
+      -14,
+      1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      246
+    ],
+    "summary": "Equivalence ratios (ϕ) range from 0.1 to 1.0 across cases. The equivalence ratio is 0.3."
   },
   {
     "hex_coord": [
       -13,
-      3
+      1
     ],
     "country": 1,
     "MSU_ids": [
-      192,
-      193
+      577
     ],
-    "summary": "There are 342 × 80 × 38 cells inside the cavity. There are 762 × 137 × 38 cells outside the cavity."
+    "summary": "The distance between the first node and the wall is set to 0.01 mm so that the dimensionless quantity $y^{+}$ equals 10."
   },
   {
     "hex_coord": [
       -13,
-      4
+      6
     ],
-    "country": 1,
+    "country": 0,
     "MSU_ids": [
-      164
+      124
     ],
-    "summary": "The isolator is composed of a 70 mm straight section and an 80 mm expansion section. The entry height is 30 mm. A cavity of 121 mm in length and 11 mm in depth is installed on the upper wall."
-  },
-  {
-    "hex_coord": [
-      -13,
-      5
-    ],
-    "country": 1,
-    "MSU_ids": [
-      240
-    ],
-    "summary": "The separation point pressure in the isolator for case 2 is slightly overpredicted. For cases1 and case 2, the cavity and isolator, respectively, contain the maximum amount of error. The pressure rise propagates upstream to the isolator."
+    "summary": "Geometric configurations of the cavity are shown."
   },
   {
     "hex_coord": [
@@ -74,32 +52,57 @@
     ],
     "country": 1,
     "MSU_ids": [
-      237
+      579
     ],
-    "summary": "The presence of reflected and pre-combustion shock waves in these regions causes the measured pressure on the upper wall to be lower than the cross-section averaged. The reflected shocks are then enhanced due to the obstruction of the cavity shear-layer. The shear layer and fuel jet impede supersonic inflow, creating reflected shocks and a bow shock."
+    "summary": "The total number of grid cells is 5.0 million, with $342 \\times 80 \\times 38$ and $762 \\times 137 \\times 38$ cells inside and outside the cavity, respectively."
   },
   {
     "hex_coord": [
-      -13,
-      9
+      -12,
+      -1
     ],
     "country": 1,
     "MSU_ids": [
-      55,
-      239
+      550,
+      674
     ],
-    "summary": "In a DMSJ engine, intensive heat release will alter the inflow conditions through large-scale flow separation induced by upstream-propagating backpressure. Once the heat release reached a high enough level, there was a noticeable unsteadiness. For case 2, the pressure in the combustor rises sharply due to the intensive reaction."
+    "summary": "The maximum Courant number is kept at 0.6 in the current computation. TFI is expressed as TFI = (∇Y_F · ∇Y_O) / |∇Y_F · ∇Y_O|. The formula for MFI is defined as MFI = (1/2) * ((Z - Z_st) / |Z - Z_st|) * (1 + TFI) * ((1 + sign(HRR - HRR̄)) / 2) + sign(HRR - HRR̄) - 1."
   },
   {
     "hex_coord": [
-      -13,
-      10
+      -12,
+      0
     ],
     "country": 1,
     "MSU_ids": [
-      244
+      522,
+      537,
+      551
     ],
-    "summary": "The possible interaction with fuel jets complicates the instability process even more. The combustion instabilities associated with mode transition are typically more intense and severe. The increased intensity of combustion instabilities is due to the tendency toward cavity flame blowout."
+    "summary": "The Schmidt number $S c _ { k , t }$ is set to 0.75. In the present work, $C_{mix} = \\sqrt{1 / (1 + C_{\\mu} Re_{t})}$ and $C_{\\mu} = 0.09$. This leads to $C_{mix} \\approx 0.01$."
+  },
+  {
+    "hex_coord": [
+      -12,
+      1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      521,
+      584
+    ],
+    "summary": "The turbulent Prandtl number $P r _ { t }$ is set to 0.9. Data are collected for 6 flow-through times $( \\tau _ { f } = L / U _ { \\infty } \\approx 4 \\times 10 ^ { - 4 } \\ s )$ after $5 \\tau _ { f }$ to reach the statistical steady state. The white lines denote $HRR = 1.0 \\times 10^9$ W/m³."
+  },
+  {
+    "hex_coord": [
+      -12,
+      2
+    ],
+    "country": 1,
+    "MSU_ids": [
+      505
+    ],
+    "summary": "The thermal diffusivity is given by α = λ / c_p. The thermal conductivity λ is calculated using Eucken’s approximate formula, λ = μ c_ν (1.32 + 1.77 R / c_ν). The thermodynamic parameters c_p, c_ν, and h_s are computed based on the JANAF polynomials."
   },
   {
     "hex_coord": [
@@ -108,45 +111,111 @@
     ],
     "country": 1,
     "MSU_ids": [
-      339
+      585
     ],
-    "summary": "In the left-hand figures, the white arrows indicate the direction of oblique shocks propagation."
+    "summary": "Topologically identical coarser (1.0 million) and finer (7.0 million) grids are generated for case 1 to perform a grid independence study."
   },
   {
     "hex_coord": [
-      -11,
-      3
+      -12,
+      8
     ],
-    "country": 2,
+    "country": 0,
     "MSU_ids": [
-      703,
-      712
+      119
     ],
-    "summary": "The second preprocessing strategy applied a spatial crop around the isolator and cavity region. We adopt cropped inputs centered on the isolator–cavity region as the default configuration throughout our pipeline."
+    "summary": "The pressure transducers operated at a sampling frequency of 10 kHz, with pressure ranging from 0 to 700 kPa, and a maximum measurement error of 0.5%. The maximum normalized pressure in case 4 was 1.38, clearly lower than those in the other cases."
   },
   {
     "hex_coord": [
-      -11,
-      7
-    ],
-    "country": 1,
-    "MSU_ids": [
-      168,
-      170
-    ],
-    "summary": "Fuel orifices with a diameter of 1 mm are located 25 mm downstream of the cavity step. The reserved domain contains one fuel orifice."
-  },
-  {
-    "hex_coord": [
-      -11,
+      -12,
       8
     ],
     "country": 1,
     "MSU_ids": [
-      186,
-      428
+      974
     ],
-    "summary": "The grid is clustered near the walls, cavity shear layer, and fuel jet. Although there is no primary recirculation zone within the cavity, the hot products that flow downstream have positive effects on the jet-wake flame. The level of fuel-rich condition for the local premixed regime can be distinguished by weighting with the mixture fraction Z."
+    "summary": "The experiments were conducted at low stagnation temperature and pressure."
+  },
+  {
+    "hex_coord": [
+      -12,
+      8
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1173
+    ],
+    "summary": "Static pressure (P) ranges from 0.8 MPa to 2.1 MPa."
+  },
+  {
+    "hex_coord": [
+      -12,
+      9
+    ],
+    "country": 0,
+    "MSU_ids": [
+      270,
+      285
+    ],
+    "summary": "The pressure–time history at x = 371 mm in this cavity was monitored. FFT analysis of pressure–time history was performed at x = 371 mm."
+  },
+  {
+    "hex_coord": [
+      -11,
+      -2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1305
+    ],
+    "summary": "t_i and t_j are the number of time steps in cases i and j, respectively."
+  },
+  {
+    "hex_coord": [
+      -11,
+      -1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      552
+    ],
+    "summary": "The residual criterion for convergence in each time-step is set to $1 \\times 10^{-12}$."
+  },
+  {
+    "hex_coord": [
+      -11,
+      -1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1238,
+      1239
+    ],
+    "summary": "The convergence radius r_i of a trajectory of case i is defined as: r_i = (1/K) Σ_{t=t_i-K+1}^{t_i} ||q_i(t) - q̄_i||. q̄_i is defined as: q̄_i = (1/K) Σ_{t=t_i-K+1}^{t_i} q_i(t)."
+  },
+  {
+    "hex_coord": [
+      -11,
+      1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      519,
+      520
+    ],
+    "summary": "The total energy is represented by 𝒞 = h_s - p / ρ + u_i^2 / 2, where h_s is the sensible enthalpy. H_{j}^{sgs} = (ρ̄ * υ_t) / Pr_t * (∂h̃_s / ∂x_j). Υ_{j,k}^{sgs} = (ρ̄ * υ_t) / Sc_{k,t} * (∂Ỹ_k / ∂x_j)."
+  },
+  {
+    "hex_coord": [
+      -11,
+      10
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1175
+    ],
+    "summary": "Static pressure controls shock strength."
   },
   {
     "hex_coord": [
@@ -155,10 +224,21 @@
     ],
     "country": 1,
     "MSU_ids": [
-      206,
-      207
+      816
     ],
-    "summary": "Simulations for both cases are conducted on the moderate grid (5.0 million). The moderate grid is used to make a compromise between fidelity and efficiency."
+    "summary": "The POMs Φ_i can be obtained by normalizing the basis functions Au."
+  },
+  {
+    "hex_coord": [
+      -10,
+      -2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1301,
+      1302
+    ],
+    "summary": "The numerator of the formula calculates the Euclidean distance between p_i(a) and p_j(b). The denominator of the formula normalizes the distance using the differences between consecutive points in p_i and p_j."
   },
   {
     "hex_coord": [
@@ -167,45 +247,56 @@
     ],
     "country": 1,
     "MSU_ids": [
-      200,
-      201
+      809,
+      814,
+      815,
+      818
     ],
-    "summary": "Coarser (1.0 million) and finer (7.0 million) grids are generated for case 1. The coarser and finer grids are generated to perform a grid independence study. The moderate and finer grids predict lower pressure values than the coarser one at the leading edge of the expansion section."
+    "summary": "The equation \\overline { { \\dot { \\omega } _ { k } \\left( \\rho , Y _ { k } , T \\right) } } = \\kappa \\cdot \\dot { \\omega } _ { k } \\left( \\bar { \\rho } , \\tilde { Y } _ { k } , \\tilde { T } \\right) represents a mathematical relationship. The equation \\pmb{\\psi}(x, y, t) = \\left[ \\begin{array} { c c c } { \\mathbf { u } _ { 1 } ( t _ { 1 } ) } & { \\cdots } & { \\mathbf { u } _ { 1 } ( t _ { N } ) } \\\\ { \\vdots } & { \\ddots } & { \\vdots } \\\\ { \\mathbf { u } _ { \\mathbf { M } } ( t _ { 1 } ) } & { \\cdots } & { \\mathbf { u } _ { \\mathbf { M } } ( t _ { N } ) } \\end{array} \\right] \\tag{16} represents a mathematical formulation. The equation \\( \\mathbf{C} = \\boldsymbol{\\psi}^T \\boldsymbol{\\psi} \\) defines the computation of \\( \\mathbf{C} \\) as the product of the transpose of \\( \\boldsymbol{\\psi} \\) and \\( \\boldsymbol{\\psi} \\)."
   },
   {
     "hex_coord": [
       -10,
-      3
+      0
+    ],
+    "country": 1,
+    "MSU_ids": [
+      525
+    ],
+    "summary": "The nonlinear reaction rate can be estimated by weighting the laminar finite-rate chemistry with the volume fraction of fine structure. This indicates that the finite-rate chemical kinetics effect is present in almost the whole domain where $\\tau_{c} \\gg \\tau_{m}$. The distribution includes the iso-surface of $Y_{H2} = 0.1$ in case 1 (left) and case 2 (right)."
+  },
+  {
+    "hex_coord": [
+      -10,
+      9
     ],
     "country": 2,
     "MSU_ids": [
-      883,
-      941,
-      942
+      1174
     ],
-    "summary": "We first cropped the pressure field images to isolate the core region of the scramjet engine—focusing on the isolator and cavity— The OH field images were preprocessed by cropping them to retain only the core scramjet engine region. The preprocessing removed irrelevant background areas from the OH field images."
+    "summary": "Static pressure controls upstream compression."
   },
   {
     "hex_coord": [
       -9,
       -3
     ],
-    "country": 1,
+    "country": 2,
     "MSU_ids": [
-      187
+      1300
     ],
-    "summary": "The distance between the first node and the wall is set to 0.01 mm."
+    "summary": "The formula defines Δ(i, j) as a summation over the Dynamic Time Warping (DTW) alignment between time series t_i and t_j."
   },
   {
     "hex_coord": [
       -9,
       -2
     ],
-    "country": 1,
+    "country": 0,
     "MSU_ids": [
-      191
+      263
     ],
-    "summary": "The total number of grid cells is 5.0 million."
+    "summary": "X_c is defined as the sum of x_p,i from i=I to n, divided by n."
   },
   {
     "hex_coord": [
@@ -214,9 +305,47 @@
     ],
     "country": 1,
     "MSU_ids": [
-      185
+      812,
+      813
     ],
-    "summary": "A multi-block structured grid is used."
+    "summary": "The eigenvalue λ representing the modal energy is obtained using eigendecomposition. The eigenvector A is obtained using eigendecomposition."
+  },
+  {
+    "hex_coord": [
+      -9,
+      -1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1224,
+      1225,
+      1226
+    ],
+    "summary": "The multichannel flow field frames are represented as $X _ { i } ( t ) = [ P _ { i } ( t ) , O H _ { i } ( t ) , . . . ]$. $P _ { i } ( t )$ denotes the pressure field at time step t for simulation case $i$. $O H _ { i } ( t )$ denotes the hydroxyl field at time step t for simulation case $i$."
+  },
+  {
+    "hex_coord": [
+      -9,
+      0
+    ],
+    "country": 1,
+    "MSU_ids": [
+      515,
+      517,
+      811
+    ],
+    "summary": "The term \\( \\bar{\\tau}_{ij} - \\tau_{ij}^{sgs} \\) represents the total stress tensor, including subgrid-scale stresses. The SGS stress tensor is modeled. The subgrid-scale stress tensor is defined as τ_ij^sgs = -2υ_t S̄_ij + (2/3)δ_ij k_sgs."
+  },
+  {
+    "hex_coord": [
+      -9,
+      2
+    ],
+    "country": 1,
+    "MSU_ids": [
+      518
+    ],
+    "summary": "The equation describes the conservation of momentum in a fluid system. The equation describes the conservation of energy in a turbulent flow system. The equation describes the subgrid-scale kinetic energy transport equation."
   },
   {
     "hex_coord": [
@@ -225,9 +354,9 @@
     ],
     "country": 1,
     "MSU_ids": [
-      173
+      710
     ],
-    "summary": "The green line is the section mapped to air inlet for the velocity profile. The air inlet velocity profile is mapped from the section 50 mm downstream. The ratios of supersonic and subsonic downstream flow are equal at *x* = 175 mm, with each accounting for 50%."
+    "summary": "The equation defines the mass flow rate for subregion 2 as the integral of a function involving the Mach number (Ma), velocity component (u_x), density (ρ), and area (A)."
   },
   {
     "hex_coord": [
@@ -236,9 +365,53 @@
     ],
     "country": 1,
     "MSU_ids": [
-      176
+      709
     ],
-    "summary": "The supersonic outflow quantities are extrapolated from the nearest cells. The flow in recirculation zones is primarily subsonic. The subscripts \"*sub1*\" and \"*sub2*\" in Eq. (15) denote the subsonic downstream and upstream regimes, respectively."
+    "summary": "The equation defines the mass flow rate for subregion 1 as the integral of a function involving the Mach number (Ma), velocity component (u_x), density (ρ), and area (A)."
+  },
+  {
+    "hex_coord": [
+      -9,
+      7
+    ],
+    "country": 1,
+    "MSU_ids": [
+      706
+    ],
+    "summary": "The sharp pressure drop is not captured by the discrete pressure measurements. The supersonic upstream regime is excluded from the analysis."
+  },
+  {
+    "hex_coord": [
+      -8,
+      -2
+    ],
+    "country": 0,
+    "MSU_ids": [
+      257
+    ],
+    "summary": "In Eq. (1), $x _ { p , i }$ is the x coordinate of each pixel."
+  },
+  {
+    "hex_coord": [
+      -8,
+      -2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1244
+    ],
+    "summary": "$W _ { P }$ is an optional spatial weighting matrix."
+  },
+  {
+    "hex_coord": [
+      -8,
+      -1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      542
+    ],
+    "summary": "The second order MUSCL reconstruction and the VanLeer limiter are combined to interpolate the left and right states at the interface."
   },
   {
     "hex_coord": [
@@ -247,11 +420,9 @@
     ],
     "country": 1,
     "MSU_ids": [
-      171,
-      172,
-      177
+      549
     ],
-    "summary": "Periodic boundary conditions are applied in the span-wise (z) direction. All the inlets are set to Dirichlet boundaries based on the experimental parameters. No-slip adiabatic boundary condition is imposed on all the walls."
+    "summary": "The Rosenbrock stiff ODE solver is used to integrate the overall reaction rate. The time-averaged distribution of velocity vector is colored by the streamwise component."
   },
   {
     "hex_coord": [
@@ -260,21 +431,33 @@
     ],
     "country": 1,
     "MSU_ids": [
-      138,
-      139
+      507,
+      516,
+      535
     ],
-    "summary": "The second order MUSCL reconstruction is used to interpolate the left and right states at the interface. The VanLeer limiter is combined with the MUSCL reconstruction to interpolate the left and right states at the interface."
+    "summary": "The molecular dynamic viscosity μ is estimated using Sutherland’s law of viscosity. The model articulates the transportation process of SGS turbulence kinetic energy $k_{sgs}$. The turbulence kinematic viscosity is modeled."
   },
   {
     "hex_coord": [
       -8,
-      5
+      2
     ],
     "country": 1,
     "MSU_ids": [
-      23
+      951
     ],
-    "summary": "A synergistic design allows the engine to operate without a physical throat between the combustor and expansion system. The absence of a physical throat provides an optimum cycle over a wider Mach number regime (Maᶠ = 3–8). The combustor configuration is preferred due to its low thrust loss and minimal aerodynamic heating."
+    "summary": "Yoshizawa et al. [35] proposed a one-equation eddy-viscosity model. The $y^{+}$ value of 10 is a little coarse for wall-resolved LES but appropriate for those with a dynamic turbulence model. A statistically-derived subgrid-scale kinetic energy model was proposed for the large-eddy simulation of turbulent flows."
+  },
+  {
+    "hex_coord": [
+      -8,
+      4
+    ],
+    "country": 1,
+    "MSU_ids": [
+      570
+    ],
+    "summary": "The green line represents the section mapped to the air inlet for the velocity profile."
   },
   {
     "hex_coord": [
@@ -283,20 +466,68 @@
     ],
     "country": 1,
     "MSU_ids": [
-      169
+      475
     ],
-    "summary": "The present work reserves only 1/15th of the full width (10 mm) to reduce computational cost."
+    "summary": "blastFoam is built against the Open-FOAM C++ library. The blastFoam code is open-source by Synthetik Applied Technologies LLC."
+  },
+  {
+    "hex_coord": [
+      -7,
+      -1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      541
+    ],
+    "summary": "The time advancement of the evolution equations is achieved using the third order explicit strong stability-preserving Runge-Kutta method. The model was introduced by A. Yoshizawa and K. Horiuti in 1985. R.J. Spiteri and S.J. Ruuth introduced a new class of optimal high-order strong-stability-preserving time discretization methods."
+  },
+  {
+    "hex_coord": [
+      -7,
+      0
+    ],
+    "country": 1,
+    "MSU_ids": [
+      546
+    ],
+    "summary": "The diffusive fluxes are discretized using the second order central differencing method. The reference is to the book 'Solving Ordinary Differential Equations II' by G. Wanner and E. Hairer."
   },
   {
     "hex_coord": [
       -7,
       1
     ],
-    "country": 2,
+    "country": 1,
     "MSU_ids": [
-      704
+      523,
+      524
     ],
-    "summary": "The size and location of the crop box were kept fixed across all frames of a flow field channel (e.g. pressure field). The fixed crop box ensured comparability."
+    "summary": "The filtered reaction rate \\( \\bar { \\dot { \\omega } } _ { k } \\) is modeled using the Partially Stirred Reactor (PaSR) model to couple the combustion with turbulent fluctuation. The PaSR model treats each grid cell as having two parts: the fine structure, which is dominated by chemical reaction, and the surrounding one, which is dominated by turbulent mixing."
+  },
+  {
+    "hex_coord": [
+      -7,
+      2
+    ],
+    "country": 1,
+    "MSU_ids": [
+      861,
+      862
+    ],
+    "summary": "The implementation of higher grid resolution near the wall is anticipated to improve the separation capture. The employment of a dynamic turbulent scalar flux model is anticipated to improve the separation capture."
+  },
+  {
+    "hex_coord": [
+      -7,
+      3
+    ],
+    "country": 1,
+    "MSU_ids": [
+      543,
+      544,
+      545
+    ],
+    "summary": "The approximate solution of the HLLC-P Riemann solver is used to calculate the conservative hyperbolic fluxes. The HLLC-P Riemann solver eliminates the distortion and instability issues from the traditional HLLC scheme in the low Mach number region. The HLLC-P Riemann solver is appropriate for a range of conditions from hypersonic compressible to low-speed incompressible flow regimes."
   },
   {
     "hex_coord": [
@@ -305,32 +536,65 @@
     ],
     "country": 1,
     "MSU_ids": [
-      380
+      567
     ],
-    "summary": "Fig. [11] depicts the developmental process of the low-energy stream. The snapshots are taken in the center slice during mode transition. Figure 11 shows instantaneous snapshots of streamwise velocity in the center slice during mode transition."
+    "summary": "To reduce computational cost, the present work reserves 1/15th of the width (10 mm), containing one fuel orifice, to apply periodic boundary conditions in the span-wise direction (z). Inflow parameters for the airstream are described. Inflow parameters for the fuel jet are described."
   },
   {
     "hex_coord": [
       -7,
-      9
+      5
     ],
     "country": 1,
     "MSU_ids": [
-      393
+      596
     ],
-    "summary": "The flame flashback process could be divided into three stages: jet/shear-layer interaction, unsteady heat release, and establishment of a large-area separation zone with decay of the cavity recirculation zone. Combustion mode transition is usually accompanied by the transient establishment of flow separation. The transition process could be characterized by a series of flame oscillations driven by hopping cycles."
+    "summary": "The Mach number distributions are verified by a 1-D pressure/Mach number response model. Fig. 4 shows experimental 1-D Mach number distributions. Fig. 4 shows computational 1-D Mach number distributions."
   },
   {
     "hex_coord": [
       -7,
-      11
+      15
+    ],
+    "country": 0,
+    "MSU_ids": [
+      104
+    ],
+    "summary": "A cavity with a depth of 11 mm, a length-to-depth ratio of 11, and an aft angle of 21.1° was assembled on the top wall of the combustor."
+  },
+  {
+    "hex_coord": [
+      -6,
+      -4
     ],
     "country": 1,
     "MSU_ids": [
-      412,
-      413
+      508
     ],
-    "summary": "Most of the OH radicals are localized in the cavity shear-layer as opposed to the cavity. There is a negligible amount of OH radicals in the leading edge of the cavity. The study utilizes the height variation of the T = 1800 K isoline at x = 220 mm in the center slice to characterize the flame oscillation level."
+    "summary": "The terms denoted with the superscript 'sgs' are unresolved and must be modeled. The model aims to close the unresolved terms generated from the filtering process."
+  },
+  {
+    "hex_coord": [
+      -6,
+      -2
+    ],
+    "country": 0,
+    "MSU_ids": [
+      255
+    ],
+    "summary": "The evolutions of the x coordinate of the center of the CH region are captured in Fig. 15. The x coordinate of the center of the CH region was calculated using Eq. (1). The X coordinate of the center of the CH region is analyzed in case 6."
+  },
+  {
+    "hex_coord": [
+      -6,
+      1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      476,
+      477
+    ],
+    "summary": "A local grid-size-based spatial filter is used to derive the LES governing equations from the reactive Navier–Stokes equations. A Favre filter is used to derive the LES governing equations from the reactive Navier–Stokes equations."
   },
   {
     "hex_coord": [
@@ -339,277 +603,452 @@
     ],
     "country": 1,
     "MSU_ids": [
-      105,
-      184
+      606,
+      967
     ],
-    "summary": "The static pressure *p* is calculated using the ideal gas equation of state, *<sup>p</sup>* = *ρRu <sup>T</sup> Ns <sup>k</sup>*=<sup>1</sup> *Yk/Mk*. The isentropic flow hypothesis is used to convert the stagnation temperature and pressure of the inflow into static values."
+    "summary": "Fig. 2(a) shows the computational grid for LES. An accurate and robust HLLC-type Riemann solver is proposed for the compressible Euler system."
   },
   {
     "hex_coord": [
       -6,
-      8
+      3
     ],
-    "country": 1,
+    "country": 0,
     "MSU_ids": [
-      67
+      11
     ],
-    "summary": "The mechanical model was used to analyze the mode transition mechanisms. The mode transition was found to be a nonlinear and unstable process. Scrutinizing the local flow regimes is significant for comprehending the underlying mechanisms driving mode transition."
-  },
-  {
-    "hex_coord": [
-      -6,
-      9
-    ],
-    "country": 2,
-    "MSU_ids": [
-      804
-    ],
-    "summary": "The resulting clusters represent distinct latent combustion modes or transitional stages. When cluster transitions occur—such as during ignition or mode shifts—focused summaries are produced. Focused summaries are produced to explain key transitional events like flame stabilization or failure recovery."
+    "summary": "Direct numerical simulation was performed on a supersonic turbulent boundary layer."
   },
   {
     "hex_coord": [
       -5,
-      -2
+      -4
     ],
     "country": 1,
     "MSU_ids": [
-      300
+      547,
+      548
     ],
-    "summary": "The white lines denote *HRR* = <sup>1</sup>*.*<sup>0</sup> × 109 W/m3."
+    "summary": "The resulting algebraic equations are solved using the PBiCGStab method. The PBiCGStab method is preconditioned by the DILU technique."
   },
   {
     "hex_coord": [
       -5,
-      5
-    ],
-    "country": 1,
-    "MSU_ids": [
-      8,
-      152
-    ],
-    "summary": "Large-eddy simulation of a scramjet test rig was performed at a stagnation temperature of 950 K and a pressure of 0.82 MPa. Tian et al. found that the transition threshold equivalence ratio (ER) was 0.23 under Mach 4 flight conditions. A laboratory-scale direct-connect scramjet facility with a cavity flame-holder is being designed at China Aerodynamics Research and Development Center (CARDC)."
-  },
-  {
-    "hex_coord": [
-      -5,
-      6
-    ],
-    "country": 1,
-    "MSU_ids": [
-      22
-    ],
-    "summary": "The Dual-Mode Scramjet (DMSJ) engine has been viewed as a leading candidate for achieving higher speed and longer range. A scramjet engine can be designed to operate both as a scramjet and as a ramjet. Tian et al. experimentally studied the combustion mode in a hydrogen-fueled direct-injection scramjet."
-  },
-  {
-    "hex_coord": [
-      -5,
-      8
-    ],
-    "country": 2,
-    "MSU_ids": [
-      637
-    ],
-    "summary": "The purpose of the study is to support interpretation of transitional combustion behaviors. The time series captures the evolution of combustion dynamics from ignition to either a stable combustion state or an instability-induced shutdown."
-  },
-  {
-    "hex_coord": [
-      -4,
-      5
-    ],
-    "country": 1,
-    "MSU_ids": [
-      7,
-      153
-    ],
-    "summary": "A hydrogen-fueled direct-injection scheme was computed using *blastFoam* code. At Mach 1, the hydrogen fuel is directly injected into the cavity at ambient temperature (*T*<sup>0</sup> = 295 K). This work performed LES of a hydrogen-fueled direct-injection scramjet."
-  },
-  {
-    "hex_coord": [
-      -4,
-      6
-    ],
-    "country": 1,
-    "MSU_ids": [
-      125
-    ],
-    "summary": "The DMSJ engine has higher speed, lower weight, and longer range. Marinov's intricate hydrogen-air reaction mechanism with 9 species and 27 elementary reactions is adopted here in order to reproduce the practical chemical kinetics of the dynamic combustion process."
-  },
-  {
-    "hex_coord": [
-      -4,
-      7
-    ],
-    "country": 1,
-    "MSU_ids": [
-      66
-    ],
-    "summary": "The correlation between operating and stabilization modes of the DMSJ combustor was further investigated by Yuan et al. Limited research is available on the dynamic processes that represent unstable flame, such as ignition dynamics, thermalacoustic oscillation, flame flashback, and flow-induced unstable flame. Yang et al. provided a mechanical model of the DMSJ engine."
-  },
-  {
-    "hex_coord": [
-      -4,
-      9
-    ],
-    "country": 1,
-    "MSU_ids": [
-      155
-    ],
-    "summary": "Quantitative analyses were conducted to characterize flame dynamics under flow separation. The data are collected using various measurement techniques such as schlieren, chemiluminescence photography, OH-PLIF, and differential interferometry."
-  },
-  {
-    "hex_coord": [
-      -4,
-      10
-    ],
-    "country": 1,
-    "MSU_ids": [
-      11,
-      290,
-      291
-    ],
-    "summary": "The local flame structure and flow regime were investigated using a modified flame index and filter functions. The current work proposes a Modified Flame Index (MFI) that incorporates the unit-volume heat-release rate to differentiate the flame from the flow field. In the Modified Flame Index, the mixture fraction Z is calculated from Bilger et al."
-  },
-  {
-    "hex_coord": [
-      -3,
-      -1
-    ],
-    "country": 1,
-    "MSU_ids": [
-      147
-    ],
-    "summary": "The physical time-step size of the order of 8 × 10^−9 s corresponds to the maximum Courant number of 0.6."
-  },
-  {
-    "hex_coord": [
-      -3,
       0
     ],
     "country": 1,
     "MSU_ids": [
-      146
-    ],
-    "summary": "The maximum Courant number is kept at 0.6 in the current computation."
-  },
-  {
-    "hex_coord": [
-      -3,
-      2
-    ],
-    "country": 1,
-    "MSU_ids": [
-      99,
-      106
-    ],
-    "summary": "The total energy is represented by *<sup>E</sup>* = *hs* − *<sup>p</sup>/ρ* + *<sup>u</sup>*<sup>2</sup> *j /*2 where *hs* is the sensible enthalpy. The thermodynamic parameters *cp*, *cv*, *hs* are computed based on the JANAF polynomials."
-  },
-  {
-    "hex_coord": [
-      -3,
-      3
-    ],
-    "country": 1,
-    "MSU_ids": [
-      327
+      707
     ],
     "summary": "The filter functions used to extract the local mass flow rate of mixture through a cross section are defined."
   },
   {
     "hex_coord": [
-      -3,
-      5
+      -5,
+      1
     ],
     "country": 1,
     "MSU_ids": [
-      325
+      611
     ],
-    "summary": "The supersonic upstream regime is excluded from the analysis."
+    "summary": "A is the cross-sectional area of the channel. Ma distributions from LES are obtained using the cross-section averaging method."
+  },
+  {
+    "hex_coord": [
+      -5,
+      2
+    ],
+    "country": 0,
+    "MSU_ids": [
+      9
+    ],
+    "summary": "An interface thickening method was developed for the direct numerical simulation of compressible liquid–vapor flows."
+  },
+  {
+    "hex_coord": [
+      -5,
+      2
+    ],
+    "country": 1,
+    "MSU_ids": [
+      471,
+      529,
+      943
+    ],
+    "summary": "The present work uses blastFoam, an open-source highly compressible reactive system solver, to perform LES for two operating conditions. In OpenFOAM, the chemical time-scale of multi-step reaction is integrated. A new OpenFOAM solver for compressible multi-fluid flow was developed."
+  },
+  {
+    "hex_coord": [
+      -5,
+      2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1166
+    ],
+    "summary": "The CFD platform was developed for high-speed reactive flow modeling."
+  },
+  {
+    "hex_coord": [
+      -5,
+      4
+    ],
+    "country": 0,
+    "MSU_ids": [
+      316
+    ],
+    "summary": "Experiments were conducted in a direct-connected facility that simulated flight conditions at a Mach number of 4, a total temperature of 953 K, and a total pressure of 0.82 MPa. The direct-connected CARDC facility was used to simulate a Mach number of 4 in flight conditions. The analysis focused on operation at Mach 4–6.5."
+  },
+  {
+    "hex_coord": [
+      -5,
+      4
+    ],
+    "country": 1,
+    "MSU_ids": [
+      556
+    ],
+    "summary": "The facility is designed to simulate flight conditions at Mach numbers ranging from 4 to 2. The vitiated air is accelerated to Mach 2 at the isolator entry under stagnation conditions of p0 = 0.82 MPa and T0 = 950 K, corresponding to a Mach 4 flight condition."
+  },
+  {
+    "hex_coord": [
+      -4,
+      -2
+    ],
+    "country": 0,
+    "MSU_ids": [
+      271
+    ],
+    "summary": "Other characteristics of the oscillation are discussed in Sec. III. The oscillatory characteristics were obtained via FFT and the corresponding results are shown in Fig. 20."
+  },
+  {
+    "hex_coord": [
+      -4,
+      -2
+    ],
+    "country": 1,
+    "MSU_ids": [
+      805
+    ],
+    "summary": "The dominant frequency of each POD mode (POM) is determined through the application of the Fast Fourier Transform (FFT) to their corresponding temporal coefficients."
+  },
+  {
+    "hex_coord": [
+      -4,
+      0
+    ],
+    "country": 1,
+    "MSU_ids": [
+      590
+    ],
+    "summary": "Simulations for both cases are conducted on the moderate grid (5.0 million) to balance fidelity and efficiency."
+  },
+  {
+    "hex_coord": [
+      -4,
+      1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      366
+    ],
+    "summary": "The study utilized Large-eddy/Reynolds-averaged Navier–Stokes simulation."
+  },
+  {
+    "hex_coord": [
+      -4,
+      1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      412,
+      897,
+      940
+    ],
+    "summary": "Large-eddy simulation is used as a method in the study. The investigation is based on the use of secondary circulation jets. Large eddy simulation was used for the investigation."
+  },
+  {
+    "hex_coord": [
+      -4,
+      1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1165
+    ],
+    "summary": "The dataset was generated using a specialized CFD (Computational Fluid Dynamics) platform."
+  },
+  {
+    "hex_coord": [
+      -4,
+      2
+    ],
+    "country": 1,
+    "MSU_ids": [
+      474,
+      540
+    ],
+    "summary": "The simulations are performed using the density-based, multispecies, reactive solver blastFoam. BlastFoam employs the finite-volume method along with a cellcenter data storage structure for the discrete solution of the computational domain."
+  },
+  {
+    "hex_coord": [
+      -4,
+      3
+    ],
+    "country": 1,
+    "MSU_ids": [
+      944,
+      968
+    ],
+    "summary": "The solver has applications to high-explosive detonation. The solver is designed to work at various Mach numbers."
+  },
+  {
+    "hex_coord": [
+      -4,
+      3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1358
+    ],
+    "summary": "At each timestep, the CFD solver outputs multiple physical fields including static pressure, OH mass fraction, velocity, Mach number, and others. Examples of flow field components include pressure, OH concentration, and Mach."
+  },
+  {
+    "hex_coord": [
+      -4,
+      8
+    ],
+    "country": 1,
+    "MSU_ids": [
+      419,
+      833
+    ],
+    "summary": "A hydrogen-fueled direct-injection scheme was computed using blastFoam code via large-eddy simulation of a scramjet test rig at a stagnation temperature of 950 K and a pressure of 0.82 MPa. Tian et al. experimentally studied the combustion mode in a hydrogen-fueled direct-injection scramjet. Wang et al. numerically found two flow-related combustion oscillation mechanisms in the scramjet with hydrogen injected upstream of the cavity."
+  },
+  {
+    "hex_coord": [
+      -3,
+      -6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1414
+    ],
+    "summary": "Two additional experts, E3 and E4, were invited to conduct independent analyses."
+  },
+  {
+    "hex_coord": [
+      -3,
+      -5
+    ],
+    "country": 1,
+    "MSU_ids": [
+      880,
+      893
+    ],
+    "summary": "The investigation is conducted using numerical methods. The investigation is conducted as a numerical study."
+  },
+  {
+    "hex_coord": [
+      -3,
+      -1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1120
+    ],
+    "summary": "The model achieves this without fine-tuning the whole LLM."
+  },
+  {
+    "hex_coord": [
+      -3,
+      1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      942
+    ],
+    "summary": "The study utilized a dynamic thickened flame model."
   },
   {
     "hex_coord": [
       -3,
       8
     ],
+    "country": 1,
+    "MSU_ids": [
+      956,
+      957
+    ],
+    "summary": "The study investigates combustion and flame stabilization modes in a hydrogen-fueled scramjet combustor. The study investigates the impact of the induced shock wave on hydrogen mixing augmentation in a supersonic crossflow. Large eddy simulation was used to study flame structure in a hydrogen-fueled supersonic combustor."
+  },
+  {
+    "hex_coord": [
+      -3,
+      10
+    ],
+    "country": 0,
+    "MSU_ids": [
+      145
+    ],
+    "summary": "Gaseous fuel was choked at the exit of the injection tube."
+  },
+  {
+    "hex_coord": [
+      -3,
+      15
+    ],
     "country": 2,
     "MSU_ids": [
-      835
+      1465
     ],
-    "summary": "Domain experts increasingly seek to understand how initial conditions affect combustion dynamics. Experts have to frequently assess whether combustion reaches steady state, exhibits oscillatory or transitional behaviors, or fails to ignite. This design prioritizes the convergence and stability characteristics that are critical for interpreting combustion behavior."
+    "summary": "Less active regions, such as the left portion of the domain, received smaller weights."
+  },
+  {
+    "hex_coord": [
+      -2,
+      -8
+    ],
+    "country": 1,
+    "MSU_ids": [
+      569
+    ],
+    "summary": "The computational domain is shown by the yellow region in Fig. 1. The channel surrounded by the yellow region corresponds to the computational domain."
+  },
+  {
+    "hex_coord": [
+      -2,
+      -6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1415
+    ],
+    "summary": "Two expert-informed case studies were conducted. Two case studies involving independent exploration were conducted. The case studies were designed to reflect practical use scenarios."
   },
   {
     "hex_coord": [
       -2,
       -5
     ],
-    "country": 2,
+    "country": 1,
     "MSU_ids": [
-      775,
-      776
+      927
     ],
-    "summary": "This metric maintains normalization by local motion magnitudes. This metric allows for elastic alignment."
+    "summary": "A series of experimental studies using this facility can be found in literature [5,45,46]. The comparison includes Tian’s experimental results. The investigation is experimental in nature."
+  },
+  {
+    "hex_coord": [
+      -2,
+      -4
+    ],
+    "country": 0,
+    "MSU_ids": [
+      120
+    ],
+    "summary": "A total of 45 channels were used for the measurements."
   },
   {
     "hex_coord": [
       -2,
       -3
     ],
-    "country": 1,
+    "country": 2,
     "MSU_ids": [
-      148
+      1172
     ],
-    "summary": "The residual criterion for convergence in each time-step is set to 1 × 10^−12."
+    "summary": "Each case is defined by a unique combination of three initial condition parameters."
+  },
+  {
+    "hex_coord": [
+      -2,
+      0
+    ],
+    "country": 0,
+    "MSU_ids": [
+      321
+    ],
+    "summary": "The small difference among the dominant frequencies in different cases indicates that the operation of the direct-connected facility was stable and repeatable. The operation of the direct-connect facility was stable and repeatable."
+  },
+  {
+    "hex_coord": [
+      -2,
+      0
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1260
+    ],
+    "summary": "All three ViT backbones are retained as viable options within the system. The system was effective even when OH field trajectories fluctuated at steady state."
   },
   {
     "hex_coord": [
       -2,
       1
     ],
-    "country": 1,
+    "country": 0,
     "MSU_ids": [
-      100,
-      101,
-      133,
-      292
+      12
     ],
-    "summary": "The thermal diffusivity is given by *α* = *λ/cp*. The thermal conductivity *λ* is calculated by the Eucken's approximate formula, *λ* = *μcv (*1*.*<sup>32</sup> + <sup>1</sup>*.*77*R/cv )*. ctot is the total molar concentration."
+    "summary": "The simulation focused on a compression–decompression corner."
   },
   {
     "hex_coord": [
       -2,
       2
     ],
-    "country": 1,
+    "country": 0,
     "MSU_ids": [
-      102,
-      103,
-      120,
-      124,
-      224
+      97
     ],
-    "summary": "Whereas, *Yk*, *hk*, *Dk* and *ω*˙ *<sup>k</sup>* represent the mass fraction, static enthalpy, mass diffusivity and reaction rate of species *k*, respectively. The mass diffusivity is often characterized in terms of the molecular Schmidt number *Dk* = *μ/Sck* and *Sck* = <sup>0</sup>*.*7 for all the species. The turbulent Prandtl number *Prt* and Schmidt number *Sck,<sup>t</sup>* are set to 0.9 and 0.75, respectively."
+    "summary": "The direct-connected facility used nozzles instead of inlets to expedite research and reduce cost."
   },
   {
     "hex_coord": [
       -2,
       3
     ],
-    "country": 1,
+    "country": 0,
     "MSU_ids": [
-      174,
-      175
+      291
     ],
-    "summary": "Synthetic turbulence with a 5% fluctuation intensity is added using the LEMOS generator. The turbulence is added to reproduce the fully-developed inflow that follows a 1/7th power law."
+    "summary": "The thrust of the combustor has been evaluated by the value of Ð Pd~A."
   },
   {
     "hex_coord": [
       -2,
-      9
+      7
+    ],
+    "country": 0,
+    "MSU_ids": [
+      66
+    ],
+    "summary": "The mixing mechanism was analyzed when fuel was injected into supersonic air. A. Ben-Yakar and R. K. Hanson authored the paper 'Cavity flame-holders for ignition and flame stabilization in scramjets: An overview.'"
+  },
+  {
+    "hex_coord": [
+      -2,
+      14
+    ],
+    "country": 0,
+    "MSU_ids": [
+      179,
+      180,
+      190
+    ],
+    "summary": "Hydrogen is injected at the Jet-1 location in one strategy. Hydrogen is injected at the Jet-2 location in another strategy. The gaseous H2 at φ = 0.3 was injected at Jet-1."
+  },
+  {
+    "hex_coord": [
+      -1,
+      -8
     ],
     "country": 2,
     "MSU_ids": [
-      827
+      1129,
+      1196
     ],
-    "summary": "Experts expressed the necessity to visually cluster and summarize combustion modes across time. Among these, the pressure field and OH field were identified by domain experts as particularly important for combustion interpretation. Globally, experts can identify clusters corresponding to different combustion modes."
+    "summary": "Based on recurring discussions and workflow observations, we distilled a set of representative domain challenges. System-level analytical requirements were derived based on the identified challenges. Each stage corresponds to one or more analytical requirements."
   },
   {
     "hex_coord": [
@@ -618,116 +1057,148 @@
     ],
     "country": 2,
     "MSU_ids": [
-      672
+      1122
     ],
-    "summary": "The frames are filtered based on user-specified initial conditions."
+    "summary": "Structured interviews and co-design sessions were conducted with two domain experts, E1 and E2, to address real-world analytical challenges. Post-session interviews were conducted with domain experts to gather impressions of system usability, interpretability, and analytical value. The sessions aimed to evaluate how well the system supported specific tasks."
   },
   {
     "hex_coord": [
       -1,
-      0
+      -5
     ],
     "country": 2,
     "MSU_ids": [
-      697,
-      811
+      1200,
+      1354
     ],
-    "summary": "$P_i(t)$ and $OH_i(t)$ denote the pressure and hydroxyl fields at time step t for simulation case *i*. The Initial Parameter Filters section provides interactive sliders and text boxes to constrain the simulation dataset by static pressure (P, in MPa), static temperature (T, in Kelvin), and water vapor concentration ($H_2O$, in %)."
+    "summary": "This preprocessing enables comparative analysis across selected cases. Sorting by column headers allows experts to prioritize cases for analysis."
   },
   {
     "hex_coord": [
       -1,
-      1
+      -4
     ],
-    "country": 1,
+    "country": 2,
     "MSU_ids": [
-      127
+      1199,
+      1347,
+      1433
     ],
-    "summary": "The volume fraction of fine structure *κ* can be defined as a function of chemical time-scale *τ<sup>c</sup>* and SGS mixing time-scale *τm*, i.e. *κ* = *τc/ (τ<sup>c</sup>* + *τm)*. The volume fraction of τc / (τc + τm) for the two cases is 0.983 and 0.878, respectively. These volume fraction values indicate that finite-rate chemical kinetics effects are present in almost the whole domain where τc ≈ τm."
+    "summary": "The embeddings are filtered based on user-specified initial conditions such as static pressure, temperature, and humidity. The Initial Parameter Filters section provides interactive sliders and text boxes to constrain the simulation dataset by static pressure (P, in MPa), static temperature (T, in Kelvin), and water vapor concentration (H2O, in %). Simulation cases were filtered using the Filtering Panel to constrain initial conditions such as pressure, temperature, and humidity."
   },
   {
     "hex_coord": [
       -1,
-      2
+      -3
     ],
-    "country": 1,
+    "country": 2,
     "MSU_ids": [
-      104,
-      112,
-      121,
-      122,
-      123
+      1350,
+      1351
     ],
-    "summary": "The molecular dynamic viscosity *μ* is estimated using the Sutherland's law of viscosity. The turbulence kinematic viscosity is modeled. The filtered reaction rate ¯ *ω*˙ *<sup>k</sup>* is modeled using the Partially Stirred Reactor (PaSR) model to couple the combustion with turbulent fluctuation."
+    "summary": "The Selected Cases Table presents a tabular overview of the filtered simulation cases. The table shows the initial conditions (parameters) of the filtered simulation cases for quick comparison."
   },
   {
     "hex_coord": [
       -1,
       3
     ],
-    "country": 1,
+    "country": 0,
     "MSU_ids": [
-      96,
-      97,
-      220
+      123
     ],
-    "summary": "Either a local grid-size (*-*¯ ) based spatial filter (denoted with superscript '−') or a Favre filter (denoted with superscript '∼') is used to derive the LES governing equations from the reactive Navier–Stokes equations. The LES governing equations are derived from the reactive Navier–Stokes equations. The grid resolution is sufficient to resolve the interaction between chemical reaction and turbulence."
+    "summary": "Geometric configurations of the tested combustor are shown."
   },
   {
     "hex_coord": [
       -1,
-      4
-    ],
-    "country": 1,
-    "MSU_ids": [
-      140
-    ],
-    "summary": "The approximate solution of the HLLC-P Riemann solver is used to calculate the conservative hyperbolic fluxes. The HLLC-P Riemann solver eliminates distortion and instability issues from the traditional HLLC scheme in the low Mach number region. The HLLC-P Riemann solver is appropriate for a range of conditions from hypersonic compressible to low-speed incompressible flow regimes."
-  },
-  {
-    "hex_coord": [
-      -1,
-      5
-    ],
-    "country": 1,
-    "MSU_ids": [
-      136
-    ],
-    "summary": "*BlastFoam* uses a cell-center data storage structure for the discrete solution of the computational domain."
-  },
-  {
-    "hex_coord": [
-      -1,
-      6
+      3
     ],
     "country": 2,
     "MSU_ids": [
-      823
+      1475
     ],
-    "summary": "Each simulated combustion case produces time-sequenced flow field images. Each point represents a frame from a combustion simulation, colored by its cluster assignment."
+    "summary": "(d) was the geometric configuration of the scramjet engine in our simulations."
   },
   {
     "hex_coord": [
       -1,
       7
     ],
-    "country": 2,
+    "country": 1,
     "MSU_ids": [
-      745,
-      752
+      891,
+      973
     ],
-    "summary": "We tested the models to evaluate how different ViT architectures capture combustion-related spatial features. Many combustion sequences formed U-shaped manifolds indicative of progressive evolution in BLIP-2 embeddings. UMAP better preserves combustion trajectory shapes, cluster boundaries, and transition trends."
+    "summary": "The study investigates flame stabilization in a cavity-based scramjet. The study examines local combustion modes in a cavity-based scramjet. Different fuel injection schemes are analyzed in the context of a cavity-based scramjet."
   },
   {
     "hex_coord": [
       -1,
       8
     ],
+    "country": 1,
+    "MSU_ids": [
+      924
+    ],
+    "summary": "The combustor is equipped with a thin strut flameholder."
+  },
+  {
+    "hex_coord": [
+      -1,
+      10
+    ],
+    "country": 0,
+    "MSU_ids": [
+      138,
+      139
+    ],
+    "summary": "Ethylene was injected at t = 0.075 s. Injections of hydrogen and ethylene were sustained around 0.26 and 0.285 s, respectively. Dynamic combustion from the injection of ethylene to stabilization was tracked from t = 0.075 to 0.26 s (stage b)."
+  },
+  {
+    "hex_coord": [
+      -1,
+      11
+    ],
+    "country": 0,
+    "MSU_ids": [
+      23
+    ],
+    "summary": "A variety of fuel injection strategies involving the injection of pure hydrogen, pure ethylene, and combinations of fuels were used to understand the effects of pilot hydrogen on supersonic combustion. During the experiments, room-temperature hydrogen and ethylene were injected at sonic speed and an angle of 90 degrees into the flow."
+  },
+  {
+    "hex_coord": [
+      -1,
+      12
+    ],
+    "country": 0,
+    "MSU_ids": [
+      137,
+      290
+    ],
+    "summary": "The static pressure obtained by the pressure transducers and schlieren images from t = 0 to 0.075 s (stage a) could be analyzed to measure the effect of injection of pure hydrogen. The mass flow rate of hydrogen was kept constant for the various injection strategies to evaluate the effects of the pilot flame on the performance of the scramjet."
+  },
+  {
+    "hex_coord": [
+      -1,
+      14
+    ],
+    "country": 1,
+    "MSU_ids": [
+      557
+    ],
+    "summary": "At Mach 1, hydrogen fuel is directly injected into the cavity at ambient temperature (T0 = 295 K)."
+  },
+  {
+    "hex_coord": [
+      0,
+      -7
+    ],
     "country": 2,
     "MSU_ids": [
-      738
+      1416
     ],
-    "summary": "These results confirm that spatially focusing on expert-identified regions enhances latent structure clarity and combustion mode separability. This projection allows experts to visually assess latent structure, combustion mode separation, and temporal trajectory continuity. One expert highlighted that 'labeling once and seeing it echoed across dozens of similar cases' allowed them to validate combustion behavior at scale."
+    "summary": "The evaluations focused on late-stage behavior related to convergence and stabilization. The evaluation aimed to ensure objectivity of the final implementation. The limitations suggest directions for refinement rather than structural shortcomings."
   },
   {
     "hex_coord": [
@@ -736,9 +1207,23 @@
     ],
     "country": 2,
     "MSU_ids": [
-      952
+      1352,
+      1533
     ],
-    "summary": "The adjustments were made to refine the separation of trajectory groups."
+    "summary": "Complexity arises in parameter-driven case comparison. Users can select multiple cases using checkboxes. Experts could explore comparable cases with a single click."
+  },
+  {
+    "hex_coord": [
+      0,
+      -5
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1009,
+      1060,
+      1356
+    ],
+    "summary": "The system supports parameter-based filtering. The system supports parameter filtering. The parameter values were chosen based on recommended values from prior work and empirical tuning."
   },
   {
     "hex_coord": [
@@ -747,46 +1232,35 @@
     ],
     "country": 2,
     "MSU_ids": [
-      710,
-      764,
-      771,
-      772
+      1341,
+      1346
     ],
-    "summary": "The convergence radius r_i of a trajectory of case i is defined as: r_i = 1/K * ∑_{t=t_i-K+1}^{t_i} ||p_i(t) - p̄_i||, where p̄_i = 1/K * ∑_{t=t_i-K+1}^{t_i} p_i(t). Let the vertices of trajectory of case *i* be  $p'_i(1), \\ldots, p'_i(t_i)$. The difference between trajectories $p_i(\\cdot)$ and $p_j(\\cdot)$ is defined using a time-warped alignment."
+    "summary": "The Filtering Panel presents initial parameter filters, case selection table, and clustering parameters. Filtering Panel enables users to subset and organize the simulation data based on initial conditions and clustering parameters."
   },
   {
     "hex_coord": [
       0,
-      0
-    ],
-    "country": 1,
-    "MSU_ids": [
-      442
-    ],
-    "summary": "The eigenvalue *λ* representing the modal energy and the eigenvector *A* are obtained using eigendecomposition."
-  },
-  {
-    "hex_coord": [
-      0,
-      0
+      -3
     ],
     "country": 2,
     "MSU_ids": [
-      696
+      1232
     ],
-    "summary": "The flow field frames are represented as $X_i(t) = [P_i(t), OH_i(t), ...]$."
+    "summary": "The size and location of the crop box were kept fixed across all frames of a flow field channel to ensure comparability."
   },
   {
     "hex_coord": [
       0,
-      2
+      -2
     ],
-    "country": 1,
+    "country": 2,
     "MSU_ids": [
-      119,
-      132
+      1187,
+      1241,
+      1426,
+      1463
     ],
-    "summary": "Yoshizawa et al. proposed a one-equation eddy-viscosity model. The one-equation eddy-viscosity model articulates the transportation process of SGS turbulence kinetic energy ksgs. The terms on the right-hand side of the equation represent production, dissipation, and diffusion of ksgs, respectively."
+    "summary": "The images are cropped to remove excessive background regions and generate a clean visual representation of the flow field inside the engine. Cropped inputs centered on the isolator–cavity region are adopted as the default configuration throughout the pipeline. The pressure field images were cropped to isolate the core region of the scramjet engine, focusing on the isolator and cavity."
   },
   {
     "hex_coord": [
@@ -795,12 +1269,9 @@
     ],
     "country": 1,
     "MSU_ids": [
-      128,
-      135,
-      143,
-      463
+      472
     ],
-    "summary": "In OpenFOAM, the chemical time-scale of multi-step reaction is integrated. *BlastFoam* employs the finite-volume method for the discrete solution of the computational domain. The diffusive fluxes are discretized using the second order central differencing method."
+    "summary": "Kato et al. conducted an experimental investigation on the flame behavior during scram to ram transition. The operating conditions are illustrative of dual-mode scram/ram combustion in a configuration identical to the experiment of Tian et al. M.L. Fotia and J.F. Driscoll studied ram-scram transition and flame/shock-train interactions in a model scramjet experiment."
   },
   {
     "hex_coord": [
@@ -809,388 +1280,330 @@
     ],
     "country": 1,
     "MSU_ids": [
-      84,
-      95
+      418
     ],
-    "summary": "The present work uses blastFoam, an open-source highly compressible reactive system solver. The simulations are performed using the density-based, multispecies, reactive solver *blastFoam* that is built against the Open-FOAM C++ library."
-  },
-  {
-    "hex_coord": [
-      0,
-      5
-    ],
-    "country": 2,
-    "MSU_ids": [
-      632
-    ],
-    "summary": "The dataset was generated using a specialized computational fluid dynamics (CFD) platform. The CFD platform was developed for high-speed reactive flow modeling."
-  },
-  {
-    "hex_coord": [
-      0,
-      6
-    ],
-    "country": 2,
-    "MSU_ids": [
-      622
-    ],
-    "summary": "TemporalFlowViz enhances knowledge discovery in large-scale scramjet combustion analysis. Clustering and summarizing temporal flow field data to uncover latent combustion modes. We constructed a dataset of scramjet combustion simulations in collaboration with domain experts."
-  },
-  {
-    "hex_coord": [
-      0,
-      7
-    ],
-    "country": 2,
-    "MSU_ids": [
-      504,
-      549,
-      654,
-      674
-    ],
-    "summary": "We apply dimensionality reduction and density-based clustering to uncover latent combustion modes. The workflow applies dimensionality reduction and clustering to identify latent combustion modes. This dataset enables the exploration of parameter-dependent combustion phenomena across a wide range of initial conditions."
+    "summary": "Flow separation is analyzed in the context of dual-mode scramjets. This work advances the knowledge of dual-mode scramjet combustion operating with different equivalence ratios by conducting quantitative analyses that characterize flame dynamics under flow separation. The time-averaged Mach number contours embody two typical features of a dual-mode scramjet."
   },
   {
     "hex_coord": [
       0,
       8
     ],
-    "country": 2,
+    "country": 0,
     "MSU_ids": [
-      864,
-      868
+      53
     ],
-    "summary": "Through coordinated filtering, embedding visualization, trajectory comparison, raw flow inspection, and semantic interpretation, the system enables experts to explore, interpret, and report on complex combustion simulations. The case studies were designed to evaluate how well the system supports expert reasoning, pattern recognition, and semantic interpretation in combustion simulation analysis. These studies revealed the system's ability to distinguish combustion modes, uncover evolution patterns, and support scalable interpretation across parameterized simulations."
+    "summary": "A cavity-stabilized ethylene flame with an equivalence ratio of 0.15 has been predicted through hybrid large-eddy/Reynolds-averaged Navier–Stokes simulations. The study focuses on flame stabilization in a hydrogen and kerosene fueled combustor. The study investigates kerosene combustion characteristics with pilot hydrogen in model supersonic combustors."
   },
   {
     "hex_coord": [
       0,
       9
     ],
-    "country": 2,
-    "MSU_ids": [
-      845
-    ],
-    "summary": "Details view allows experts to identify key events such as ignition or blowout."
-  },
-  {
-    "hex_coord": [
-      1,
-      -11
-    ],
-    "country": 2,
-    "MSU_ids": [
-      965
-    ],
-    "summary": "Centroids of the clusters were highlighted in diamonds."
-  },
-  {
-    "hex_coord": [
-      1,
-      -4
-    ],
-    "country": 2,
-    "MSU_ids": [
-      753,
-      774
-    ],
-    "summary": "Given a case i with $t_i$ time steps, we denote the sequence of. $t_i$ and $t_j$ are the number of time steps in cases i and j, respectively."
-  },
-  {
-    "hex_coord": [
-      1,
-      0
-    ],
     "country": 1,
-    "MSU_ids": [
-      111,
-      441
-    ],
-    "summary": "The SGS stress tensor is modeled. The two-point space correlation tensor in matrix form *C* is calculated."
-  },
-  {
-    "hex_coord": [
-      1,
-      1
-    ],
-    "country": 1,
-    "MSU_ids": [
-      113,
-      114
-    ],
-    "summary": "The coefficients *Cε* and *Ck* in Eqs. (5) and (6) are determined using the relationship between SGS stresses from two times of different-scale filtering using a box filter. SGS stresses are obtained from two times of different-scale filtering using a box filter."
-  },
-  {
-    "hex_coord": [
-      1,
-      2
-    ],
-    "country": 1,
-    "MSU_ids": [
-      188
-    ],
-    "summary": "The dimensionless quantity y+ equals 10. A y+ value of 10 is a little coarse for wall-resolved LES. A y+ value of 10 is appropriate for cases with a dynamic turbulence model."
-  },
-  {
-    "hex_coord": [
-      1,
-      3
-    ],
-    "country": 1,
-    "MSU_ids": [
-      144,
-      487,
-      488
-    ],
-    "summary": "The resulting algebraic equations are solved using the PBiCGStab method which is preconditioned by the DILU technique. The implementation of higher grid resolution near the wall is anticipated to improve the separation capture. The employment of dynamic turbulent scalar flux model is anticipated to improve the separation capture."
-  },
-  {
-    "hex_coord": [
-      1,
-      4
-    ],
-    "country": 1,
-    "MSU_ids": [
-      137,
-      145
-    ],
-    "summary": "The time advancement of the evolution equations is achieved using the third order explicit strong stability-preserving Runge-Kutta method. The Rosenbrock stiff ODE solver is used to integrate the overall reaction rate."
-  },
-  {
-    "hex_coord": [
-      1,
-      5
-    ],
-    "country": 2,
-    "MSU_ids": [
-      500,
-      655
-    ],
-    "summary": "TemporalFlowViz is designed to support expert-driven clustering, visualization, and interpretation of temporal flow fields from scramjet combustion simulations. TemporalFlowViz is designed to support expert-driven interpretation of scramjet combustion simulations. We presented TemporalFlowViz, an end-to-end visual analytics workflow and system designed to support the parameter-aware interpretation of combustion evolution in scramjet simulations."
-  },
-  {
-    "hex_coord": [
-      1,
-      6
-    ],
-    "country": 2,
-    "MSU_ids": [
-      1035
-    ],
-    "summary": "TemporalFlowViz demonstrates strong performance and expert usability across combustion interpretation tasks. TemporalFlowViz combines ViT embeddings, interactive trajectory construction, density-based clustering, and expert-augmented semantic summarization to support interpretable analysis of high-dimensional, time-sequenced combustion data. TemporalFlowViz represents a step toward deeply integrated, expert-informed visual analytics for scientific simulations—fusing deep learning, trajectory-based reasoning, and semantic interpretability into a unified framework for understanding combustion dynamics at scale."
-  },
-  {
-    "hex_coord": [
-      1,
-      7
-    ],
-    "country": 2,
-    "MSU_ids": [
-      1044
-    ],
-    "summary": "The pretrained Vision Transformers have been successful in capturing combustion-relevant features in pressure and OH fields. The Vision Transformer is constructed through fine-tuning on large-scale combustion simulation datasets."
-  },
-  {
-    "hex_coord": [
-      1,
-      8
-    ],
-    "country": 2,
-    "MSU_ids": [
-      860,
-      861,
-      862,
-      863
-    ],
-    "summary": "The system enables experts to explore, interpret, and report on complex combustion simulations with high precision and interactivity. The system enables experts to explore complex combustion simulations with high precision and interactivity. The system enables experts to interpret complex combustion simulations with high precision and interactivity."
-  },
-  {
-    "hex_coord": [
-      1,
-      10
-    ],
-    "country": 2,
-    "MSU_ids": [
-      884,
-      943
-    ],
-    "summary": "We assigned larger weights to subregions with more pronounced combustion activity. Based on domain knowledge, higher weights were assigned to the upper region of the engine."
-  },
-  {
-    "hex_coord": [
-      2,
-      -12
-    ],
-    "country": 2,
-    "MSU_ids": [
-      831
-    ],
-    "summary": "Cluster centroids can be toggled using the 'Hide Centroids / Show Centroids' button."
-  },
-  {
-    "hex_coord": [
-      2,
-      -11
-    ],
-    "country": 2,
-    "MSU_ids": [
-      506,
-      786,
-      798,
-      855
-    ],
-    "summary": "Domain specialists annotate representative cluster centroids with descriptive labels. For each cluster $C_k$, we identify a representative centroid by selecting the embedding closest to the cluster mean. These centroids form the basis for expert annotation."
-  },
-  {
-    "hex_coord": [
-      2,
-      -1
-    ],
-    "country": 2,
-    "MSU_ids": [
-      715
-    ],
-    "summary": "$W_P$ is an optional spatial weighting matrix."
-  },
-  {
-    "hex_coord": [
-      2,
-      2
-    ],
-    "country": 1,
-    "MSU_ids": [
-      117
-    ],
-    "summary": "According to the analyses of Kim et al. [36], it is possible to cope with energy backscatter to fit the local structures of actual turbulence. According to the analyses of Kim et al. [36], it is possible to correct asymptotic behavior close to the stationary walls by dynamically choosing the model coefficients from the local properties of solvable scales. The model coefficients are dynamically chosen from the local properties of solvable scales."
-  },
-  {
-    "hex_coord": [
-      2,
-      4
-    ],
-    "country": 2,
-    "MSU_ids": [
-      648
-    ],
-    "summary": "At each timestep, the CFD solver outputs multiple physical fields including static pressure, OH mass fraction, velocity, Mach number, and others."
-  },
-  {
-    "hex_coord": [
-      3,
-      -12
-    ],
-    "country": 2,
-    "MSU_ids": [
-      797,
-      850,
-      922
-    ],
-    "summary": "The workflow retrieves the top-k nearest cluster centroids in latent space. When generating new frame descriptions, the system retrieves the top-k nearest cluster centroids. Pressing the *save description* button stored the expert-written description for the centroid of cluster 0 (top-left)."
-  },
-  {
-    "hex_coord": [
-      3,
-      -11
-    ],
-    "country": 2,
-    "MSU_ids": [
-      679,
-      788,
-      789,
-      996
-    ],
-    "summary": "Expert-provided annotations on centroids of representative clusters are used to condition a vision-language model. During workflow execution, domain experts interactively assign combustion-specific terminology to selected centroids through an annotation interface. The resulting annotated exemplars serve as semantic anchors for guiding the generation process."
-  },
-  {
-    "hex_coord": [
-      3,
-      -6
-    ],
-    "country": 2,
-    "MSU_ids": [
-      742
-    ],
-    "summary": "Cropped inputs yield more compact clusters. Cropped inputs yield clearer trajectory convergence. Cropped inputs led to tighter clustering and more convergent temporal trajectories, whereas whole-frame inputs produced more scattered and noisy distributions."
-  },
-  {
-    "hex_coord": [
-      3,
-      -4
-    ],
-    "country": 2,
-    "MSU_ids": [
-      819
-    ],
-    "summary": "The Clustering Parameters subsection includes the *minSamples* and *eps* parameters."
-  },
-  {
-    "hex_coord": [
-      3,
-      5
-    ],
-    "country": 1,
-    "MSU_ids": [
-      436,
-      438
-    ],
-    "summary": "The goal is to identify large-scale coherent structures that exert a dominant influence on the flow field through the application of Proper Orthogonal Decomposition (POD). The dominant frequency of each POD mode (POM) is determined through the application of the Fast Fourier Transform (FFT) to their corresponding temporal coefficients."
-  },
-  {
-    "hex_coord": [
-      4,
-      -13
-    ],
-    "country": 2,
-    "MSU_ids": [
-      793
-    ],
-    "summary": "Gemma-3 offers lightweight 4-bit and 8-bit quantizations and efficient image-to-text generation speed. Gemma-3 successfully processes multiple images in a single pass without out-of-memory failures."
-  },
-  {
-    "hex_coord": [
-      4,
-      -12
-    ],
-    "country": 2,
-    "MSU_ids": [
-      853,
-      968,
-      969
-    ],
-    "summary": "The images and descriptions of frames from the selected case are used by VLM to generate case summary. The bottom-left panel showed the auto-generated description for the 12th frame of case (a), produced by the Gemma-3 VLM using nearest centroid descriptions and images as context. The right panel showed the case-level summary generated by aggregating frame-level outputs."
-  },
-  {
-    "hex_coord": [
-      4,
-      -11
-    ],
-    "country": 2,
-    "MSU_ids": [
-      1037
-    ],
-    "summary": "The application of vision–language models (VLMs) to scientific visualization is still limited. The application of VLMs to scientific visualization is particularly limited in domains where domain-specific terminology and interpretive precision are essential. This multimodal annotation pipeline enables automated reporting, similarity-driven retrieval, and collaborative analysis with minimal manual overhead."
-  },
-  {
-    "hex_coord": [
-      4,
-      -10
-    ],
-    "country": 2,
-    "MSU_ids": [
-      1046
-    ],
-    "summary": "We compared two open-source VLMs for this task: InternVL2.5-38B and Gemma-3-27B. InternVL2.5 achieves strong performance on vision-language benchmarks. InternVL2.5's deployment presented practical limitations, including high VRAM usage, limited quantization support, and a lack of pre-optimized deployment formats."
-  },
-  {
-    "hex_coord": [
-      4,
-      -8
-    ],
-    "country": 2,
     "MSU_ids": [
       904
     ],
-    "summary": "ResNet introduces residual connections to facilitate training of very deep architectures. Cropped pressure field frames were processed by InternViT."
+    "summary": "The investigation involves ethylene injection upstream of a cavity flameholder."
+  },
+  {
+    "hex_coord": [
+      0,
+      12
+    ],
+    "country": 0,
+    "MSU_ids": [
+      86
+    ],
+    "summary": "Based on the significant advantages of hydrogen addition, a strategy based on injecting pilot hydrogen was used in this study. This injection strategy for Jet-1 can improve the efficiency of combustion. A reasonable injection strategy for pilot hydrogen can improve the pressure distribution of combustion."
+  },
+  {
+    "hex_coord": [
+      1,
+      -7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1010,
+      1062
+    ],
+    "summary": "The system supports similarity-based case retrieval. The system supports case similarity retrieval."
+  },
+  {
+    "hex_coord": [
+      1,
+      -6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1159,
+      1160,
+      1229,
+      1230
+    ],
+    "summary": "Parameter-aware case retrieval enables comparative exploration across simulations with different initial conditions. Parameter-aware case analysis enables comparative exploration across simulations with different initial conditions. We explored whether focusing on the isolator and cavity zones could improve embedding coherence."
+  },
+  {
+    "hex_coord": [
+      1,
+      -5
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1349
+    ],
+    "summary": "The filters reduce visual clutter in downstream views."
+  },
+  {
+    "hex_coord": [
+      1,
+      -3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1470
+    ],
+    "summary": "Two preprocessing strategies were compared: using the whole flow field frames versus applying a spatial crop around the isolator and cavity region. Cropped pressure field frames were processed by InternViT."
+  },
+  {
+    "hex_coord": [
+      1,
+      0
+    ],
+    "country": 0,
+    "MSU_ids": [
+      272
+    ],
+    "summary": "Schlieren images were taken at different times for case 1. Schlieren images were taken at different times for case 2. A combined analysis using the FFT and schlieren images shows that some dominant frequencies lower than 100 Hz were observed in Fig. 20 but were excluded as they were obtained when the experimental equipment was working."
+  },
+  {
+    "hex_coord": [
+      1,
+      0
+    ],
+    "country": 1,
+    "MSU_ids": [
+      629
+    ],
+    "summary": "Due to the long camera exposure time used in the experimental schlieren, the vortex evolution cannot be properly captured."
+  },
+  {
+    "hex_coord": [
+      1,
+      8
+    ],
+    "country": 0,
+    "MSU_ids": [
+      100,
+      103
+    ],
+    "summary": "The tested combustor was made of stainless steel and consisted of two sections. The second section consisted of the combustor, including a cavity and a four-part expansion section."
+  },
+  {
+    "hex_coord": [
+      1,
+      13
+    ],
+    "country": 0,
+    "MSU_ids": [
+      99
+    ],
+    "summary": "Under the control of a quickly acting valve, the supply of oxygen-rich air and H₂ can be precisely limited to be shorter than 1 ms."
+  },
+  {
+    "hex_coord": [
+      2,
+      -10
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1471
+    ],
+    "summary": "An example of a density-based method is density-based spatial clustering with noise (Wang et al. 2015). The processed frames were clustered using DBSCAN. A density-based algorithm for discovering clusters in large spatial databases with noise was proposed."
+  },
+  {
+    "hex_coord": [
+      2,
+      -8
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1308,
+      1310
+    ],
+    "summary": "The computed similarity scores are used to retrieve the top-k most similar cases. The computed similarity scores help build a retrieval basis for downstream interpretation. The retrieval basis allows experts to generalize observations from one case to others exhibiting similar dynamics."
+  },
+  {
+    "hex_coord": [
+      2,
+      -7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1554
+    ],
+    "summary": "The system is designed to generalize across unsteady or transient events."
+  },
+  {
+    "hex_coord": [
+      2,
+      0
+    ],
+    "country": 0,
+    "MSU_ids": [
+      71,
+      125,
+      127,
+      128
+    ],
+    "summary": "Eight successive schlieren images were taken at rates of 10^5–10^7 frames per second. Schlieren images were captured by a high-speed camera (Photron SA-5) with an exposure time of 4.62 μs and a frame rate of 10,000 fps. The luminosity from CH was photographed by a high-speed color camera with 65 nm bandwidth interference filters centered at 430 nm, an exposure time of 0.2 ms, and a frame rate of 5000 fps."
+  },
+  {
+    "hex_coord": [
+      3,
+      -10
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1355,
+      1484
+    ],
+    "summary": "The Clustering Parameters subsection allows customization of the DBSCAN clustering algorithm. E4 adjusted DBSCAN clustering parameters, including ε and MinPts, to refine the separation of trajectory groups."
+  },
+  {
+    "hex_coord": [
+      3,
+      -8
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1373
+    ],
+    "summary": "Similarity is computed using a domain-informed difference metric that emphasizes relative deviation near the final time steps of each trajectory. The domain-informed difference metric is defined in the previous section."
+  },
+  {
+    "hex_coord": [
+      3,
+      -7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1306,
+      1307
+    ],
+    "summary": "UMAP maintains both local and global structural continuity. UMAP better preserves cluster boundaries. UMAP better preserves transition trends."
+  },
+  {
+    "hex_coord": [
+      3,
+      -6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1280
+    ],
+    "summary": "UMAP was selected as the default projection method for OH fields based on visual evaluation and expert feedback. UMAP better preserves trajectory shapes at OH fields compared to t-SNE. UMAP better preserves cluster separations at OH fields compared to t-SNE."
+  },
+  {
+    "hex_coord": [
+      3,
+      -4
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1364
+    ],
+    "summary": "When a case is selected, its frames are chronologically connected to form a temporal trajectory. Similar trajectories to the selected case are shown in (a2) and (a3). The two most similar trajectories to the selected case were located at regions (s2) and (s3)."
+  },
+  {
+    "hex_coord": [
+      3,
+      0
+    ],
+    "country": 0,
+    "MSU_ids": [
+      25,
+      317
+    ],
+    "summary": "The data were collected by using hydroxyl planar laser-induced fluorescence (OH-PLIF), methylene (CH), luminosity images, and 10-kHz static pressure transducers. The flow structures and the process of flame formation were obtained by pressure transducers and non-connect optical measurements, including schlieren images, instantaneous CH luminosity images, and OH-PLIF. Optical measurements were performed using schlieren images, OH-PLIF, CH luminosity images, and 10 kHz pressure transducers."
+  },
+  {
+    "hex_coord": [
+      3,
+      0
+    ],
+    "country": 1,
+    "MSU_ids": [
+      559
+    ],
+    "summary": "The experimental data are collected using various measurement techniques such as schlieren, chemiluminescence photography, OH-PLIF, and differential interferometry. The solver's capability was evidenced by qualitative optical diagnostic images, quantitative wall pressure measurements, and Mach number distributions."
+  },
+  {
+    "hex_coord": [
+      3,
+      1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      374
+    ],
+    "summary": "The analysis uses common path focusing schlieren and flame visualization techniques."
+  },
+  {
+    "hex_coord": [
+      3,
+      8
+    ],
+    "country": 1,
+    "MSU_ids": [
+      576
+    ],
+    "summary": "A multi-block structured grid is clustered near the walls, cavity shear layer, and fuel jet. The rich-premixed regime is observed in the vicinity of the fuel jet. This occurrence is attributed to the dilution effect of the downstream-developing rich-mixture."
+  },
+  {
+    "hex_coord": [
+      3,
+      11
+    ],
+    "country": 0,
+    "MSU_ids": [
+      98
+    ],
+    "summary": "The oxygen-rich air mixes with H₂ in a heater."
+  },
+  {
+    "hex_coord": [
+      4,
+      -12
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1319
+    ],
+    "summary": "The equation \\( \\hat{p}_k = \\arg \\operatorname*{min}_{p_i(t) \\in C_k} \\left\\| p_i(t) - \\frac{1}{|C_k|} \\sum_{p_j(t') \\in C_k} p_j(t') \\right\\| \\) defines the process for selecting \\( \\hat{p}_k \\) as the point minimizing the distance to the centroid of cluster \\( C_k \\)."
+  },
+  {
+    "hex_coord": [
+      4,
+      -11
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1363,
+      1543
+    ],
+    "summary": "Points are colored by their cluster assignment. Manually selected parameters allow fine control in clustering."
+  },
+  {
+    "hex_coord": [
+      4,
+      -8
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1667
+    ],
+    "summary": "Whole-frame inputs produced more scattered and noisy distributions. The method employs a local denoising criterion to train the network."
   },
   {
     "hex_coord": [
@@ -1199,10 +1612,10 @@
     ],
     "country": 2,
     "MSU_ids": [
-      732,
-      889
+      1283,
+      1361
     ],
-    "summary": "Researchers can use InternViT to highlight mode transitions via clustering boundaries. To better display the clustering results, we used InternViT to extract embeddings from frames."
+    "summary": "UMAP produces cleaner latent clusters that are easier to annotate and interpret. The UMAP parameters were fixed to n_neighbors = 15 and min_dist = 0.1. Dimensionality reduction techniques such as UMAP are used for the projection."
   },
   {
     "hex_coord": [
@@ -1211,13 +1624,9 @@
     ],
     "country": 2,
     "MSU_ids": [
-      784,
-      818,
-      951,
-      1017,
-      1018
+      1343
     ],
-    "summary": "We begin by clustering all UMAP-projected frame-level embeddings $p_i(t)$ using DBSCAN. The Clustering Parameters subsection allows customization of the DBSCAN clustering algorithm. E4 adjusted DB-SCAN clustering parameters including ε and *minSamples*."
+    "summary": "The Similar Trajectories View draws the top three most similar temporal trajectories of three simulation cases. (b1) and (c1) were the two most similar trajectories calculated in the Similar Trajectory View."
   },
   {
     "hex_coord": [
@@ -1226,1094 +1635,1335 @@
     ],
     "country": 2,
     "MSU_ids": [
-      1019
+      1376
     ],
-    "summary": "Clustering may benefit from adaptive tuning strategies for improved consistency across variable datasets."
+    "summary": "Each retrieved trajectory is visualized as a mini scatter plot. The temporal trajectories began in a dispersed region and gradually converged into a compact cluster. Scatter plot (a1) exhibited the clustering result in the Temporal Trajectory View."
   },
   {
     "hex_coord": [
       4,
-      7
-    ],
-    "country": 1,
-    "MSU_ids": [
-      151
-    ],
-    "summary": "The high-enthalpy vitiated air has a mole fraction of 21% O2, 12% H2O and 67% N2."
-  },
-  {
-    "hex_coord": [
-      5,
-      -13
-    ],
-    "country": 2,
-    "MSU_ids": [
-      799,
-      800,
-      803
-    ],
-    "summary": "As a result, Gemma-3 is adopted in our workflow deployment. These are used as context inputs to Gemma-3. Gemma-3 generates descriptive summaries of the selected frame."
-  },
-  {
-    "hex_coord": [
-      5,
-      -12
-    ],
-    "country": 2,
-    "MSU_ids": [
-      592
-    ],
-    "summary": "R2GenGPT leverages the pre-trained knowledge of LLMs while overcoming their inability to process visual data directly."
-  },
-  {
-    "hex_coord": [
-      5,
-      -11
-    ],
-    "country": 2,
-    "MSU_ids": [
-      507,
-      851,
-      852
-    ],
-    "summary": "These annotations are used as contextual prompts for a vision–language model. Recent developments in vision–language models (VLMs) offer mechanisms for converting visual input into natural language. The latent space uses annotated descriptions as context for a vision-language model."
-  },
-  {
-    "hex_coord": [
-      5,
-      -10
-    ],
-    "country": 2,
-    "MSU_ids": [
-      520,
-      1020,
-      1043
-    ],
-    "summary": "The study uses a Vision Transformer. The pretrained Vision Transformers used in our pipeline are sourced from general-purpose corpora. We plan to construct a domain-adaptive Vision Transformer."
-  },
-  {
-    "hex_coord": [
-      5,
-      -9
-    ],
-    "country": 2,
-    "MSU_ids": [
-      533,
-      535,
-      947
-    ],
-    "summary": "Vision Transformers (ViTs) have demonstrated strong capabilities in extracting semantically rich features from images by modeling them as sequences of patches. Vision Transformers (ViTs) are applied to PDE operator learning and particle image velocimetry. Vision Transformers model images as sequences of patch embeddings, leveraging self-attention to capture long-range dependencies."
-  },
-  {
-    "hex_coord": [
-      5,
-      -8
-    ],
-    "country": 2,
-    "MSU_ids": [
-      664,
-      685,
-      720,
-      820
-    ],
-    "summary": "The method employs deep feature embedding. The pipeline includes feature embedding. We visualized the latent distributions of the extracted embeddings using a dimensionality reduction method."
-  },
-  {
-    "hex_coord": [
-      5,
-      -7
-    ],
-    "country": 1,
-    "MSU_ids": [
-      443
-    ],
-    "summary": "The POMs *<sup>i</sup>* can be obtained by normalizing the basis functions *Au*."
-  },
-  {
-    "hex_coord": [
-      5,
-      -7
-    ],
-    "country": 2,
-    "MSU_ids": [
-      714
-    ],
-    "summary": "Figure 3: Comparison of UMAP-projected trajectories using pressure field embeddings from whole frames versus cropped regions. We define the embedding process as a transformation from $P'_i(t)$ to $p_i(t)$."
-  },
-  {
-    "hex_coord": [
-      5,
-      -6
-    ],
-    "country": 2,
-    "MSU_ids": [
-      748
-    ],
-    "summary": "UMAP produces cleaner latent clusters that are easier to annotate and interpret."
-  },
-  {
-    "hex_coord": [
-      5,
-      -5
-    ],
-    "country": 2,
-    "MSU_ids": [
-      537,
-      577,
-      578,
-      579,
-      905
-    ],
-    "summary": "Density-based clustering methods such as DBSCAN have been widely used to expose latent patterns, combustion modes, and transitional behaviors in temporal flow field data. Existing methods can be roughly divided into three categories: distance-based methods, density-based methods, and connectivity-based methods. Distance-based methods, such as K-means and agglomerative clustering, attempt to find relationships between data points based on various distance metrics."
-  },
-  {
-    "hex_coord": [
-      5,
-      0
-    ],
-    "country": 1,
-    "MSU_ids": [
-      98
-    ],
-    "summary": "The terms denoted with the superscript '*sgs*' are unresolved and must be modeled. The purpose of this model is to close the unresolved terms generated from the filtering process."
-  },
-  {
-    "hex_coord": [
-      5,
       3
     ],
-    "country": 2,
+    "country": 1,
     "MSU_ids": [
-      639
+      473
     ],
-    "summary": "Each simulation case is conducted under a distinct combination of initial conditions. Each case is defined by a unique combination of the following three initial condition parameters:"
+    "summary": "A lot of effort has been put into studying the mechanisms that stabilize combustion. The primary objective is to obtain a comprehensive understanding of flow characteristics, flame stabilization mechanisms, and unsteady flame dynamics in separated flow."
   },
   {
     "hex_coord": [
-      6,
-      -13
-    ],
-    "country": 2,
-    "MSU_ids": [
-      582
-    ],
-    "summary": "Zhang et al. introduce an LLM-driven framework for circular genome visualization generation."
-  },
-  {
-    "hex_coord": [
-      6,
-      -12
-    ],
-    "country": 2,
-    "MSU_ids": [
-      584,
-      585,
-      588,
-      589,
-      590,
-      593,
-      594
-    ],
-    "summary": "Li et al. propose a novel approach for generating accurate and robust medical image reports. The KERP approach decomposes medical report generation into three main steps: encoding visual features into a structured abnormality graph, retrieving relevant text templates based on detected abnormalities, and paraphrasing these templates to generate the final report. Wang et al. introduce a framework to integrate LLMs with medical-image CAD networks."
-  },
-  {
-    "hex_coord": [
-      6,
-      -11
-    ],
-    "country": 2,
-    "MSU_ids": [
-      508,
-      509,
-      583,
-      680
-    ],
-    "summary": "The vision–language model generates natural-language summaries for individual frames. The vision–language model generates natural-language summaries for full simulation cases. The LLM-driven framework harnesses LLM agents to automate not only code generation but also text summarization for subsequent analysis."
-  },
-  {
-    "hex_coord": [
-      6,
-      -9
-    ],
-    "country": 2,
-    "MSU_ids": [
-      503,
-      548,
-      652,
-      713,
-      716
-    ],
-    "summary": "We use pretrained Vision Transformers to extract high-dimensional embeddings from flow field frames. The workflow extracts high-dimensional embeddings from flow field images using pretrained ViTs. Each physical field's VTK data is then processed by a python program to map into an image under a uniform colormap and cropped out of excessive background regions to generate a clean visual representation of flow field inside engine."
-  },
-  {
-    "hex_coord": [
-      6,
-      -8
-    ],
-    "country": 2,
-    "MSU_ids": [
-      671,
-      736,
-      758,
-      885
-    ],
-    "summary": "These frames are encoded into high-dimensional embeddings. BLIP-2 tended to generate smooth, temporally ordered embeddings. We applied these techniques to project frame-level embeddings $p_i(t) \\in \\mathbb{R}^n$ into a shared two-dimensional latent space $p'_i(t) \\in \\mathbb{R}^2$."
-  },
-  {
-    "hex_coord": [
-      6,
-      -7
-    ],
-    "country": 2,
-    "MSU_ids": [
-      706,
-      707,
-      719
-    ],
-    "summary": "Both inputs were passed through the same embedding extraction pipeline. Both inputs were projected into the UMAP-reduced latent space. For each model, we extracted frame-level embeddings from the same cropped input images."
-  },
-  {
-    "hex_coord": [
-      6,
-      -6
-    ],
-    "country": 2,
-    "MSU_ids": [
-      536,
-      735
-    ],
-    "summary": "Dimensionality reduction techniques like t-SNE and UMAP have been widely used to expose latent patterns, combustion modes, and transitional behaviors in temporal flow field data. We applied two commonly used nonlinear dimensionality reduction techniques—t-SNE and UMAP. The top two plots illustrate the projection results using t-SNE for both pressure and OH field embeddings."
-  },
-  {
-    "hex_coord": [
-      6,
-      -5
-    ],
-    "country": 2,
-    "MSU_ids": [
-      580,
-      581
-    ],
-    "summary": "Many studies have been devoted to data clustering methods. A commonly used method is spectral clustering. The above ideas form the basis of many methods, such as ensemble clustering, clustering based on non-negative matrix factorization, etc."
-  },
-  {
-    "hex_coord": [
-      7,
-      -16
+      4,
+      4
     ],
     "country": 1,
     "MSU_ids": [
-      310
+      908
     ],
-    "summary": "The vortex structures are identified using the Q-criterion iso-surface (1 × 105 s−1)."
+    "summary": "Large-Eddy/Reynolds-averaged Navier–Stokes simulation was used to study combustion oscillations."
   },
   {
     "hex_coord": [
-      7,
-      -13
-    ],
-    "country": 2,
-    "MSU_ids": [
-      490,
-      810
-    ],
-    "summary": "The *Filtering Panel* presents initial parameters filters, case selection table, and clustering parameters. Filtering Panel (Fig. 1(a1)) enables users to subset and organize the simulation data based on initial conditions and clustering parameters."
-  },
-  {
-    "hex_coord": [
-      7,
-      -11
-    ],
-    "country": 2,
-    "MSU_ids": [
-      551,
-      666,
-      688,
-      783,
-      849,
-      1036
-    ],
-    "summary": "The workflow integrates expert annotations into a VLM-based summarization pipeline. The VLM-based summarization pipeline generates descriptive, domain-aligned reports. The method employs expert-guided semantic summarization."
-  },
-  {
-    "hex_coord": [
-      7,
-      -10
-    ],
-    "country": 2,
-    "MSU_ids": [
-      802
-    ],
-    "summary": "At the frame level, the workflow produces direct semantic interpretations based on nearby cluster exemplars."
-  },
-  {
-    "hex_coord": [
-      7,
-      -8
-    ],
-    "country": 2,
-    "MSU_ids": [
-      731
-    ],
-    "summary": "Researchers can use BLIP-2 for trajectory-based reasoning."
-  },
-  {
-    "hex_coord": [
-      7,
-      -7
-    ],
-    "country": 2,
-    "MSU_ids": [
-      744
-    ],
-    "summary": "UMAP maintains both local and global structural continuity."
-  },
-  {
-    "hex_coord": [
-      8,
+      5,
       -14
     ],
     "country": 2,
     "MSU_ids": [
-      890,
-      891
+      1081,
+      1082
     ],
-    "summary": "We filtered simulation cases using the Filtering Panel. We used the Filtering Panel to constrain initial conditions such as pressure, temperature, and humidity."
+    "summary": "Chen et al. (2024) introduce an open dataset of DLGs (data lineage graph). The DLG dataset includes the DLG model, the dataset construction process, and applied areas. The dataset was created in collaboration with domain experts."
   },
   {
     "hex_coord": [
-      8,
-      -13
-    ],
-    "country": 2,
-    "MSU_ids": [
-      949,
-      950
-    ],
-    "summary": "E4 used the Filtering Panel in the visual analytics system. E4 interactively adjusted the ranges of initial conditions using the Filtering Panel. The VLM-generated summaries served as a shared semantic layer that all experts could use to explain simulation behavior."
-  },
-  {
-    "hex_coord": [
-      8,
+      5,
       -12
     ],
     "country": 2,
     "MSU_ids": [
-      628,
-      882,
-      1001
+      1318,
+      1331,
+      1371,
+      1394
     ],
-    "summary": "Semantic annotation and report generation are used for communication and automation. The generated summaries provide interpretable insights into dynamic phenomena. The system facilitated interpretation through automatic report generation."
+    "summary": "For each cluster $C _ { k }$, a representative centroid is identified by selecting the embedding closest to the mean of the cluster. The workflow retrieves the top-k nearest cluster centroids in latent space and gathers their associated images and expert-provided annotations. Cluster centroids can be toggled using the 'Hide Centroids / Show Centroids' button."
   },
   {
     "hex_coord": [
-      8,
+      5,
       -11
     ],
     "country": 2,
     "MSU_ids": [
-      627,
-      1013
+      1495,
+      1496
     ],
-    "summary": "Semantic annotation and report generation bridge expert interpretations with natural language outputs. The semantic report generation was found to be valuable as an interpretive tool. The semantic report generation was found to be valuable as a mechanism for cross-expert communication."
+    "summary": "Centroids of the clusters were highlighted in diamonds. Dashed circles were drawn around the centroids to highlight them."
   },
   {
     "hex_coord": [
-      8,
-      -10
-    ],
-    "country": 2,
-    "MSU_ids": [
-      660,
-      1014
-    ],
-    "summary": "TemporalFlowViz includes report generation via expert-informed vision-language modeling. The system allows domain specialists to move from raw images to hypothesis-driven analysis at a significantly accelerated pace."
-  },
-  {
-    "hex_coord": [
-      8,
-      -9
-    ],
-    "country": 2,
-    "MSU_ids": [
-      658,
-      659,
-      733,
-      886
-    ],
-    "summary": "TemporalFlowViz enhances hypothesis generation. TemporalFlowViz supports interpretable pattern discovery. TemporalFlowViz includes preprocessing and embedding."
-  },
-  {
-    "hex_coord": [
-      8,
+      5,
       -8
     ],
     "country": 2,
     "MSU_ids": [
-      695,
-      702
+      1263,
+      1432
     ],
-    "summary": "TemporalFlowViz begins with preprocessing simulation outputs into multichannel flow field frames. The first preprocessing strategy used the whole flow field frames. TemporalFlowViz is adaptable to a wider range of phenomena including blowout or reignition."
+    "summary": "Cropped inputs led to tighter clustering and more convergent temporal trajectories. Cropped inputs yield more compact clusters. Cropped inputs yield clearer trajectory convergence."
   },
   {
     "hex_coord": [
-      8,
-      -7
-    ],
-    "country": 2,
-    "MSU_ids": [
-      636,
-      670,
-      684,
-      686,
-      841
-    ],
-    "summary": "Each simulation produces dozens of time-sequenced flow field frames. Each simulation case outputs a time series of flow field data recorded at regular time intervals. Simulation outputs are organized into time-sequenced flow field frames."
-  },
-  {
-    "hex_coord": [
-      8,
-      -1
-    ],
-    "country": 2,
-    "MSU_ids": [
-      749,
-      750
-    ],
-    "summary": "We fixed the UMAP parameters to $n_neighbors = 15$ and $min_dist = 0.1$. We fixed the UMAP parameters following recommended values from prior work and empirical tuning."
-  },
-  {
-    "hex_coord": [
-      9,
-      -12
-    ],
-    "country": 2,
-    "MSU_ids": [
-      925,
-      926
-    ],
-    "summary": "Users could access these semantic summaries. Users could access these semantic summaries by clicking on."
-  },
-  {
-    "hex_coord": [
-      9,
-      -11
-    ],
-    "country": 2,
-    "MSU_ids": [
-      690,
-      691
-    ],
-    "summary": "The integration translates complex simulation outputs into interpretable latent structures. The integration translates complex simulation outputs into textual reports."
-  },
-  {
-    "hex_coord": [
-      9,
-      -10
-    ],
-    "country": 2,
-    "MSU_ids": [
-      499,
-      546,
-      605,
-      606
-    ],
-    "summary": "We present TemporalFlowViz, a parameter-aware visual analytics workflow and system. We introduce TemporalFlowViz, a parameter-aware visual analytics workflow and system. We distilled a set of representative domain challenges based on recurring discussions and workflow observations."
-  },
-  {
-    "hex_coord": [
-      9,
-      -9
-    ],
-    "country": 2,
-    "MSU_ids": [
-      621,
-      734
-    ],
-    "summary": "The visual analytics system interface of TemporalFlowViz is shown in Figure 1. We demonstrate the effectiveness of TemporalFlowViz through two expert-informed case studies and expert feedback. The derived system-level analytical requirements guided the design of TemporalFlowViz."
-  },
-  {
-    "hex_coord": [
-      9,
+      5,
       -7
     ],
     "country": 1,
     "MSU_ids": [
-      439
+      817
+    ],
+    "summary": "The temporal coefficients a(t) are calculated by projecting the raw matrix onto POMs."
+  },
+  {
+    "hex_coord": [
+      5,
+      -7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1234,
+      1249
+    ],
+    "summary": "The inputs were projected into the UMAP-reduced latent space. The latent distributions of the embeddings were visualized using a dimensionality reduction method."
+  },
+  {
+    "hex_coord": [
+      5,
+      -6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1292,
+      1293
+    ],
+    "summary": "A temporal dissimilarity metric was designed to quantify trajectory similarity. The temporal dissimilarity metric was iteratively refined in collaboration with domain experts. The Temporal Trajectory View and the Similar Trajectories View were compared."
+  },
+  {
+    "hex_coord": [
+      5,
+      -5
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1309,
+      1372,
+      1378
+    ],
+    "summary": "The top-k most similar cases are visualized in the Similar Trajectories View for comparative inspection. Similar Trajectories View supports comparative reasoning by displaying the top six similar temporal trajectories to the currently selected case. This layout enables quick visual comparison of trajectory shapes, cluster transitions, and stabilization patterns across cases."
+  },
+  {
+    "hex_coord": [
+      5,
+      -4
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1345,
+      1382,
+      1386,
+      1388
+    ],
+    "summary": "The Details View displays all the flow field frames of the same case of the selected point in the Temporal Trajectory View. Details View provides a scrollable view showing the full temporal sequence of flow field frames of scientific visualizations for the selected case. Details view allows experts to validate embedding-based patterns against flow fields."
+  },
+  {
+    "hex_coord": [
+      5,
+      -3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1383
+    ],
+    "summary": "Each row in the Details View corresponds to a simulation timestep, presenting the raw field output such as pressure and OH."
+  },
+  {
+    "hex_coord": [
+      6,
+      -13
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1005,
+      1399,
+      1452,
+      1522
+    ],
+    "summary": "Domain specialists annotate representative cluster centroids with descriptive labels to bridge the gap between latent representations and expert reasoning. Centroids form the basis for expert annotation. The model is grounded in expert-labeled centroids."
+  },
+  {
+    "hex_coord": [
+      6,
+      -12
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1206,
+      1395,
+      1453,
+      1562
+    ],
+    "summary": "Expert-provided annotations on centroids of representative clusters are used to condition a vision-language model. The annotated descriptions of the top-k nearest cluster centroids are used as context for a vision-language model. Pressing the save description button stored the expert-written description for the centroid of cluster 0 (top-left)."
+  },
+  {
+    "hex_coord": [
+      6,
+      -11
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1498,
+      1499
+    ],
+    "summary": "The bottom-left panel showed the auto-generated description for the 12th frame of case (a). The right panel showed the case-level summary generated by aggregating frame-level outputs. The description of frames of the selected case was generated from the frame and description of the closest centroids."
+  },
+  {
+    "hex_coord": [
+      6,
+      -10
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1112,
+      1390
+    ],
+    "summary": "The second step retrieves relevant text templates based on detected abnormalities. Direct selection supports efficient inspection of important frames. Annotating some frames once and inspecting them echoed across dozens of similar cases."
+  },
+  {
+    "hex_coord": [
+      6,
+      -9
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1368,
+      1369,
+      1377,
+      1389
+    ],
+    "summary": "Users can zoom, pan, and hover for tooltips. Clicking a point highlights the corresponding frame in the Details View. The target trajectory is highlighted against a dimmed background of all other points."
+  },
+  {
+    "hex_coord": [
+      6,
+      -8
+    ],
+    "country": 1,
+    "MSU_ids": [
+      806
     ],
     "summary": "In the snapshot POD approach, the dataset is first arranged into a matrix."
   },
   {
     "hex_coord": [
-      10,
-      -14
+      6,
+      -8
     ],
     "country": 2,
     "MSU_ids": [
-      815
+      1216,
+      1218
     ],
-    "summary": "Users can select multiple cases using checkboxes."
+    "summary": "The pipeline includes spatially focused preprocessing. The pipeline includes dimensionality reduction."
   },
   {
     "hex_coord": [
-      10,
-      -13
+      6,
+      -7
     ],
     "country": 2,
     "MSU_ids": [
-      816,
-      830,
-      842,
-      967
+      1281,
+      1287,
+      1288,
+      1303,
+      1304,
+      1316
     ],
-    "summary": "Users can initiate visualization by clicking the 'Draw Scatter Plot' button. Clicking a point highlights the corresponding frame in the Details View and triggers semantic generation in the Report View. Users can click a frame to highlight its embedding in the scatter plot."
+    "summary": "UMAP enables more faithful temporal trajectory construction. For a case i with t_i time steps, the sequence of UMAP-projected frame embeddings is denoted as: p_i'(1), p_i'(2), ..., p_i'(t_i). The UMAP-projected frame embeddings are chronologically connected to form a trajectory in the 2D latent space."
   },
   {
     "hex_coord": [
-      10,
-      -12
-    ],
-    "country": 2,
-    "MSU_ids": [
-      843,
-      858
-    ],
-    "summary": "Users can view its description in the Report View. The Report View supports quick review, edit, and export for documentation or cross-expert discussion. This capacity to produce interpretable narratives from latent structures significantly lowers the barrier to entry for less experienced analysts."
-  },
-  {
-    "hex_coord": [
-      10,
-      -11
-    ],
-    "country": 2,
-    "MSU_ids": [
-      538
-    ],
-    "summary": "Visual analytics systems enhance interpretability by linking latent embeddings with raw simulation frames."
-  },
-  {
-    "hex_coord": [
-      10,
-      -10
-    ],
-    "country": 2,
-    "MSU_ids": [
-      683
-    ],
-    "summary": "The workflow supports the expert-driven visual analytics goals of TemporalFlowViz. Experts consistently emphasized the benefit of visual-semantic alignment enabled by our workflow."
-  },
-  {
-    "hex_coord": [
-      10,
-      -9
-    ],
-    "country": 2,
-    "MSU_ids": [
-      656,
-      668,
-      807
-    ],
-    "summary": "TemporalFlowViz addresses the four core requirements—temporal summarization (R1), trajectory-based pattern. The TemporalFlowViz consists of three main stages. The five views correspond to the main stages of the TemporalFlowViz workflow: data filtering, embedding projection, trajectory construction, similarity retrieval, and semantic interpretation."
-  },
-  {
-    "hex_coord": [
-      10,
+      6,
       -6
     ],
     "country": 2,
     "MSU_ids": [
-      689
+      1004,
+      1203,
+      1342,
+      1360
     ],
-    "summary": "These components are tightly integrated."
+    "summary": "Temporal trajectories in the embedding space are constructed to track the evolution of each simulation over time. Temporal trajectories are constructed for each simulation by connecting the embeddings of frames chronologically in Temporal Trajectory View. The Temporal Trajectory View visualizes the clustering result and temporal trajectory of the selected case in latent space."
   },
   {
     "hex_coord": [
-      11,
-      -13
+      6,
+      -4
     ],
     "country": 2,
     "MSU_ids": [
-      493,
-      847,
-      848,
-      934
+      1387
     ],
-    "summary": "The *Report View* shows the AI generated or expert annotated description of selected frame in (b). Hover previews and direct selection support efficient inspection of important frames. Report View (Fig. 1(d)) displays the description of the currently selected frame in the scatter plot."
+    "summary": "Details view allows experts to identify key events such as ignition or blowout."
   },
   {
     "hex_coord": [
-      11,
-      -12
+      6,
+      -3
     ],
     "country": 2,
     "MSU_ids": [
-      494,
-      840,
-      844,
-      846
+      1001,
+      1169,
+      1197,
+      1362
     ],
-    "summary": "The *Details View* displays all the flow field frames of the same case of selected point in (b). Details View (Fig. 1(e)) provides a scrollable view showing the full temporal sequence of flow field frames of scientific visualizations for the selected case. Details view allows experts to validate embedding-based patterns against flow fields."
+    "summary": "Our approach leverages hundreds of simulated combustion cases with varying initial conditions, each producing time-sequenced flow field images. The resulting data from simulations are typically high-resolution, time-sequenced flow field images across diverse initial conditions. Each simulation of combustion produces dozens of time-sequenced flow field frames."
   },
   {
     "hex_coord": [
-      11,
-      -11
+      6,
+      0
     ],
     "country": 2,
     "MSU_ids": [
-      539,
-      809
+      1348
     ],
-    "summary": "Visual analytics systems enable multi-view exploration and trajectory-based reasoning. The views enable experts to move fluidly from parameter-level filtering to latent structure inspection, raw field validation, and case-level reporting."
+    "summary": "This projection allows experts to assess combustion mode separation. These filters allow users to isolate specific combustion modes of interest, such as high-pressure lean combustion."
   },
   {
     "hex_coord": [
-      11,
-      -10
-    ],
-    "country": 2,
-    "MSU_ids": [
-      667,
-      806
-    ],
-    "summary": "All components are coordinated through a unified visual analytics system. The visual analytics system interface is composed of five tightly coordinated views."
-  },
-  {
-    "hex_coord": [
-      11,
-      -9
-    ],
-    "country": 2,
-    "MSU_ids": [
-      682,
-      859
-    ],
-    "summary": "We propose a five-stage backend workflow. These five views form an integrated environment that operationalizes the entire workflow."
-  },
-  {
-    "hex_coord": [
-      11,
-      -8
-    ],
-    "country": 2,
-    "MSU_ids": [
-      995
-    ],
-    "summary": "There is a lack of structured mechanisms to capture and share this expertise across teams or with automated systems. The system supports knowledge transfer and interpretive consistency across teams. Expert feedback confirmed that the system accelerates hypothesis validation, reduces cognitive load, and facilitates knowledge sharing across teams."
-  },
-  {
-    "hex_coord": [
-      11,
-      -7
-    ],
-    "country": 2,
-    "MSU_ids": [
-      620,
-      669
-    ],
-    "summary": "We derived system-level analytical requirements. These domain-informed requirements serve as the foundation for the system pipeline and interaction design. Each stage corresponds to one or more analytical requirements."
-  },
-  {
-    "hex_coord": [
-      12,
-      -13
-    ],
-    "country": 2,
-    "MSU_ids": [
-      838,
-      933
-    ],
-    "summary": "Selecting a trajectory in this view updates the main Temporal Trajectory View and allows direct navigation to the corresponding frames in the Details View and Report View. The system allows selecting points in the Temporal Trajectory View."
-  },
-  {
-    "hex_coord": [
-      12,
-      -12
-    ],
-    "country": 2,
-    "MSU_ids": [
-      938
-    ],
-    "summary": "The ability to toggle between frame- and trajectory-level summaries allowed for efficient interpretation of different simulation outcomes. The interactive views, particularly the combination of the *Temporal Trajectory View* and the *Similar Trajectories View*, were praised for facilitating rapid understanding and intuitive reasoning about the simulation data."
-  },
-  {
-    "hex_coord": [
-      12,
-      -11
-    ],
-    "country": 2,
-    "MSU_ids": [
-      512,
-      553,
-      801,
-      808,
-      854
-    ],
-    "summary": "The system supports coordinated multi-view exploration to facilitate in-depth analysis. An interactive multi-view interface connects these components through coordinated filtering, trajectory exploration, case retrieval, and frame-level semantic inspection. This mechanism supports multiple levels of semantic abstraction."
-  },
-  {
-    "hex_coord": [
-      12,
-      -10
-    ],
-    "country": 2,
-    "MSU_ids": [
-      1025,
-      1026
-    ],
-    "summary": "Future versions may incorporate structured annotation templates, provenance tracking, or collaborative validation mechanisms. Future versions may incorporate mechanisms to streamline consensus building."
-  },
-  {
-    "hex_coord": [
-      12,
-      -6
-    ],
-    "country": 2,
-    "MSU_ids": [
-      768
-    ],
-    "summary": "We have designed the metric in collaboration with domain experts."
-  },
-  {
-    "hex_coord": [
-      13,
-      -15
-    ],
-    "country": 2,
-    "MSU_ids": [
-      829
-    ],
-    "summary": "Users can zoom, pan, and hover for tooltips."
-  },
-  {
-    "hex_coord": [
-      13,
-      -12
-    ],
-    "country": 2,
-    "MSU_ids": [
-      937
-    ],
-    "summary": "This layout enables quick visual comparison of trajectory shapes, cluster transitions, and stabilization patterns across cases. This layout supports seamless multi-view inspection and cross-case pattern recognition. The ability to toggle between frame- and trajectory-level summaries allowed for efficient browsing of different simulation outcomes."
-  },
-  {
-    "hex_coord": [
-      14,
-      -9
-    ],
-    "country": 2,
-    "MSU_ids": [
-      747
-    ],
-    "summary": "The large scale and high dimensionality of simulation-generated temporal flow field data present significant challenges for visual interpretation. The large scale and high dimensionality of simulation-generated temporal flow field data present significant challenges for feature differentiation. The large scale and high dimensionality of simulation-generated temporal flow field data present significant challenges for cross-case comparison."
-  },
-  {
-    "hex_coord": [
-      14,
-      -7
-    ],
-    "country": 2,
-    "MSU_ids": [
-      700,
-      730
-    ],
-    "summary": "We explored whether focusing on these regions could improve embedding coherence and downstream interpretability. This allows researchers to experiment with different embedding strategies depending on the analysis task."
-  },
-  {
-    "hex_coord": [
-      14,
-      -5
-    ],
-    "country": 2,
-    "MSU_ids": [
-      867
-    ],
-    "summary": "The case studies were designed to reflect practical use scenarios."
-  },
-  {
-    "hex_coord": [
-      15,
-      -15
-    ],
-    "country": 2,
-    "MSU_ids": [
-      560,
-      561
-    ],
-    "summary": "He et al. presented a parallel visualization framework for large-scale flow-field data. He et al.'s framework combines grid-segmented data partitioning with optimized communication strategies. He et al.'s framework achieves realtime interactivity on millions of grid cells."
-  },
-  {
-    "hex_coord": [
-      15,
-      -9
-    ],
-    "country": 2,
-    "MSU_ids": [
-      491,
-      822
-    ],
-    "summary": "The *Temporal Trajectory View* visualizes the clustering result and temporal trajectory of the selected case in latent space. Temporal Trajectory View (Fig. 1(b)) visualizes high-dimensional frame embeddings projected into a two-dimensional space via dimensionality reduction (e.g., UMAP). In all three kinds of ViT-based embeddings tested, the *Temporal Trajectory View* revealed a common structure."
-  },
-  {
-    "hex_coord": [
-      15,
-      -8
-    ],
-    "country": 2,
-    "MSU_ids": [
-      767,
-      781,
-      833,
-      1028
-    ],
-    "summary": "We have designed and iteratively refined a temporal dissimilarity metric. They help build a retrieval basis for downstream interpretation. Similarity is computed using a domaininformed difference metric that emphasizes relative deviation near the final time steps of each trajectory."
-  },
-  {
-    "hex_coord": [
-      15,
-      -7
-    ],
-    "country": 2,
-    "MSU_ids": [
-      510,
-      511,
-      629,
-      782
-    ],
-    "summary": "The system supports parameter-based filtering. The system supports similarity-based case retrieval. Complexity arises in parameter-driven case comparison."
-  },
-  {
-    "hex_coord": [
-      16,
-      -15
-    ],
-    "country": 2,
-    "MSU_ids": [
-      557
-    ],
-    "summary": "Domain-specific applications such as FlowVisual by Wang et al. have tailored flow visualization for educational contexts. FlowVisual integrates 3D volume rendering and glyph techniques to teach fluid concepts."
-  },
-  {
-    "hex_coord": [
-      16,
-      -10
-    ],
-    "country": 2,
-    "MSU_ids": [
-      505,
-      675
-    ],
-    "summary": "We construct temporal trajectories in the embedding space to track the evolution of each simulation over time. Temporal trajectories are constructed for each simulation by connecting the embeddings of frames chronologically in Temporal Trajectory View."
-  },
-  {
-    "hex_coord": [
-      16,
-      -9
-    ],
-    "country": 2,
-    "MSU_ids": [
-      665,
-      881,
-      1030
-    ],
-    "summary": "The method employs temporal trajectory modeling. The Temporal Trajectory View allows experts to assess mode transitions. The Temporal Trajectory View allows experts to assess steady-state convergence."
-  },
-  {
-    "hex_coord": [
-      16,
-      -8
-    ],
-    "country": 2,
-    "MSU_ids": [
-      624,
-      779,
-      780
-    ],
-    "summary": "The study focuses on trajectory-based visualization and comparison. They are used to retrieve the top-k most similar cases. The top-k most similar cases are visualized in the Similar Trajectories View for comparative inspection."
-  },
-  {
-    "hex_coord": [
-      16,
-      -7
-    ],
-    "country": 2,
-    "MSU_ids": [
-      817
-    ],
-    "summary": "The filtering enables comparative analysis across selected cases. Sorting by column headers allows experts to prioritize cases for analysis."
-  },
-  {
-    "hex_coord": [
-      17,
-      -10
-    ],
-    "country": 2,
-    "MSU_ids": [
-      759
-    ],
-    "summary": "These points are chronologically connected to form a trajectory in the 2D latent space."
-  },
-  {
-    "hex_coord": [
-      17,
-      -9
+      6,
+      4
     ],
     "country": 1,
     "MSU_ids": [
-      437
+      765
+    ],
+    "summary": "A particular focus was set on the continuous flame flashback during mode transition, which could be divided into three stages involving jet/shear-layer interaction, unsteady heat release, and the establishment of a large-area separation zone, with the decay of the cavity recirculation zone. The entire process of flame flashback can be categorized into three stages based on its severity. In stage #3, multiple reciprocating oscillations of the separated flow and continuous severe flame flashback phenomenon can be observed."
+  },
+  {
+    "hex_coord": [
+      7,
+      -13
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1322
+    ],
+    "summary": "The annotated exemplars serve as semantic anchors for guiding the generation process."
+  },
+  {
+    "hex_coord": [
+      7,
+      -12
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1655,
+      1656
+    ],
+    "summary": "The VLM-generated summaries, grounded in human-provided insights, served as a shared semantic layer. The shared semantic layer allowed experts to explain, compare, or question simulation behavior, particularly in unfamiliar parameter regimes. TextLens is a visual analytics tool powered by large language models."
+  },
+  {
+    "hex_coord": [
+      7,
+      -10
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1344,
+      1353,
+      1384,
+      1385,
+      1458,
+      1497
+    ],
+    "summary": "The Report View shows the AI-generated or expert-annotated description of the selected frame in the Temporal Trajectory View. Users can initiate visualization by clicking the 'Draw Scatter Plot' button. Users can click a frame to highlight its embedding in the scatter plot."
+  },
+  {
+    "hex_coord": [
+      7,
+      -9
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1379,
+      1380
+    ],
+    "summary": "Selecting a trajectory in this view updates the main Temporal Trajectory View. Selecting a trajectory allows direct navigation to the corresponding frames in the Details View and Report View."
+  },
+  {
+    "hex_coord": [
+      7,
+      -8
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1217,
+      1261,
+      1357
+    ],
+    "summary": "These elements are not automatically encoded or explained by conventional embedding pipelines. The pipeline includes feature embedding. This approach allows researchers to experiment with different embedding strategies depending on the analysis task."
+  },
+  {
+    "hex_coord": [
+      7,
+      -7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1556
+    ],
+    "summary": "Temporal Exploration supports R1 and R2. Preliminary tests indicate that the current trajectory modeling can serve as a foundation for more expressive representations. Expressive representations include hierarchical time-scale embedding or event-aware trajectory segmentation."
+  },
+  {
+    "hex_coord": [
+      7,
+      -6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1198
+    ],
+    "summary": "The time-sequenced flow field frames are encoded into high-dimensional embeddings. The capacity to produce interpretable narratives from latent structures significantly lowers the barrier to entry for less experienced analysts or interdisciplinary collaborators."
+  },
+  {
+    "hex_coord": [
+      7,
+      -5
+    ],
+    "country": 1,
+    "MSU_ids": [
+      804
     ],
     "summary": "The analysis is conducted on 2-D velocity vector snapshots."
   },
   {
     "hex_coord": [
-      17,
-      -9
+      7,
+      -5
     ],
     "country": 2,
     "MSU_ids": [
-      550,
-      687,
-      760
+      1050,
+      1289
     ],
-    "summary": "The study involves Temporal Flow Field. The workflow constructs temporal trajectories to trace flow evolution under varying initial conditions. The pipeline includes temporal trajectory construction."
+    "summary": "Temporal trajectories are constructed to trace flow evolution under varying initial conditions. The 2D latent-space trajectory visually represents the temporal evolution of flow characteristics. The study supports interpretable summarization of latent flow field structures."
   },
   {
     "hex_coord": [
-      17,
-      -8
+      7,
+      -4
     ],
     "country": 2,
     "MSU_ids": [
-      492,
-      763,
-      765,
-      766,
-      832
+      1150
     ],
-    "summary": "The *Similar Trajectories View* draws the top three most similar temporal trajectories of three simulation cases. To enable comparative reasoning and pattern reuse, we identify the top-k most similar trajectories to any selected case *i*. Let candidate cases be indexed by  $j_1, j_2, \\ldots, j_k$."
+    "summary": "Summarizing temporal flow field data to reveal evolution patterns across time. All models reflect temporal evolution to varying degrees."
   },
   {
     "hex_coord": [
-      18,
+      7,
+      -3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1221,
+      1222
+    ],
+    "summary": "These components are tightly integrated to translate complex simulation outputs into interpretable latent structures. These components are tightly integrated to translate complex simulation outputs into textual reports."
+  },
+  {
+    "hex_coord": [
+      7,
+      1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1505
+    ],
+    "summary": "Case Study 2 explored the classification of combustion modes based on OH field trajectories. Cases (a1)–(c1) in Figure 5 followed highly similar combustion pathways. Clustering of OH field trajectories was used to identify combustion modes."
+  },
+  {
+    "hex_coord": [
+      8,
+      -15
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1696
+    ],
+    "summary": "Zhang et al. (2025) introduce an LLM-driven framework for circular genome visualization generation. Auragenome is an LLM-powered framework for on-the-fly reusable and scalable circular genome visualizations."
+  },
+  {
+    "hex_coord": [
+      8,
       -14
     ],
     "country": 2,
     "MSU_ids": [
-      563,
-      737
+      1110,
+      1113
     ],
-    "summary": "Saliency-guided importance sampling has been proposed to focus visualization effort on regions of greatest dynamical interest. The purpose of this was for visualization and clustering."
+    "summary": "The approach decomposes medical report generation into three main steps. The third step paraphrases these templates to generate the final report."
   },
   {
     "hex_coord": [
-      18,
-      -9
+      8,
+      -13
     ],
     "country": 2,
     "MSU_ids": [
-      824
+      1220,
+      1313
     ],
-    "summary": "When a case is selected, its frames are chronologically connected to form a temporal trajectory."
+    "summary": "The pipeline includes cluster-based semantic summarization. Clustering is integrated into a unified semantic pipeline."
   },
   {
     "hex_coord": [
-      18,
-      -8
-    ],
-    "country": 2,
-    "MSU_ids": [
-      828,
-      836
-    ],
-    "summary": "Locally, the trajectory of a single case reveals whether the process remains within a stable mode, transitions between modes, or shows oscillatory behavior. Each retrieved trajectory is visualized as a mini scatter plot, where the target trajectory is highlighted against a dimmed background of all other points. Scatter plot (a1) exhibited the clustering result in the Temporal Trajectory View."
-  },
-  {
-    "hex_coord": [
-      18,
-      -2
-    ],
-    "country": 2,
-    "MSU_ids": [
-      729
-    ],
-    "summary": "We retain all three ViT backbones as viable options within our system."
-  },
-  {
-    "hex_coord": [
-      20,
-      -19
-    ],
-    "country": 1,
-    "MSU_ids": [
-      440
-    ],
-    "summary": "Each column of the matrix corresponds to a temporal discretization of the whole spatial grid."
-  },
-  {
-    "hex_coord": [
-      23,
-      -17
-    ],
-    "country": 1,
-    "MSU_ids": [
-      444
-    ],
-    "summary": "The temporal coefficients *a(t)* are calculated via projecting the raw matrix onto POMs."
-  },
-  {
-    "hex_coord": [
-      24,
+      8,
       -12
     ],
     "country": 2,
     "MSU_ids": [
-      623
+      1314,
+      1425
     ],
-    "summary": "Clustering and summarizing temporal flow field data to reveal evolution patterns across time."
+    "summary": "Semantic annotation bridges expert interpretations with natural language outputs. Semantic annotation supports communication and automation. Report generation bridges expert interpretations with natural language outputs."
   },
   {
     "hex_coord": [
-      26,
-      -21
+      8,
+      -11
     ],
     "country": 2,
     "MSU_ids": [
-      966
+      1370,
+      1402,
+      1457
     ],
-    "summary": "We drawed dashed circles around them to illustrate."
+    "summary": "Clicking a point triggers semantic generation in the Report View. The Report View supports quick review, edit, and export for documentation or cross-expert discussion. Users could access semantic summaries by clicking on points in the Temporal Trajectory View."
   },
   {
     "hex_coord": [
-      26,
-      0
-    ],
-    "country": 2,
-    "MSU_ids": [
-      946
-    ],
-    "summary": "Less active regions, such as the left portion of the domain, received smaller weights."
-  },
-  {
-    "hex_coord": [
-      27,
-      -16
-    ],
-    "country": 2,
-    "MSU_ids": [
-      586,
-      587
-    ],
-    "summary": "The core of KERP is the Graph Transformer, a novel implementation unit that dynamically transforms high-level semantics between graph-structured data across multiple domains. The Graph Transformer operates across domains such as knowledge graphs, images, and sequences."
-  },
-  {
-    "hex_coord": [
-      34,
+      8,
       -10
     ],
     "country": 2,
     "MSU_ids": [
-      741
+      1460,
+      1461
     ],
-    "summary": "t-SNE tends to preserve local neighborhood relationships."
+    "summary": "The ability to toggle between frame- and trajectory-level summaries allowed for efficient browsing of simulation outcomes. The ability to toggle between frame- and trajectory-level summaries allowed for efficient interpretation of different simulation outcomes."
+  },
+  {
+    "hex_coord": [
+      8,
+      -9
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1339
+    ],
+    "summary": "These outputs help contextualize visual observations. This mechanism supports multiple levels of semantic abstraction. These views support multilevel visual reasoning."
+  },
+  {
+    "hex_coord": [
+      8,
+      -8
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1011,
+      1061,
+      1381
+    ],
+    "summary": "The system supports coordinated multi-view exploration to facilitate in-depth analysis. The system supports embedding-space exploration. This approach supports seamless multi-view inspection and cross-case pattern recognition."
+  },
+  {
+    "hex_coord": [
+      8,
+      -7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1424
+    ],
+    "summary": "The system facilitated interpretation through trajectory-based comparison. Task-specific fine-tuning could further enhance sensitivity to subtle flow structures. Task-specific fine-tuning could enhance sensitivity to transitional events."
+  },
+  {
+    "hex_coord": [
+      8,
+      -6
+    ],
+    "country": 1,
+    "MSU_ids": [
+      803
+    ],
+    "summary": "This work aims to identify large-scale coherent structures that exert a dominant influence on the flow field. Proper Orthogonal Decomposition (POD) is applied to identify large-scale coherent structures."
+  },
+  {
+    "hex_coord": [
+      8,
+      -6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1563
+    ],
+    "summary": "The system enables experts to interpret dynamic flow structures via visual cues. The system enables experts to interpret dynamic flow structures via semantic cues. This process establishes a reusable semantic layer that transforms complex flow field patterns into interpretable textual narratives."
+  },
+  {
+    "hex_coord": [
+      8,
+      -5
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1057,
+      1219
+    ],
+    "summary": "The large scale and high dimensionality of simulation-generated temporal flow field data present significant challenges for visual interpretation, feature differentiation, and cross-case comparison. The workflow incorporates temporal trajectory modeling to capture flow evolution. Visualization techniques for flow fields have evolved to address the challenges of interpreting complex, high-dimensional fluid dynamics data."
+  },
+  {
+    "hex_coord": [
+      8,
+      -2
+    ],
+    "country": 1,
+    "MSU_ids": [
+      916
+    ],
+    "summary": "Adaptive mesh-based combustion simulations were conducted."
+  },
+  {
+    "hex_coord": [
+      8,
+      -2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1063,
+      1405,
+      1406,
+      1407
+    ],
+    "summary": "The system supports coordinated multi-view interpretation of combustion behavior. The system enables experts to compare combustion evolution across cases. The system enables experts to explore complex combustion simulations with high precision and interactivity."
+  },
+  {
+    "hex_coord": [
+      8,
+      -1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1003,
+      1049,
+      1056,
+      1149,
+      1202
+    ],
+    "summary": "Dimensionality reduction and density-based clustering are applied to uncover latent combustion modes. Dimensionality reduction and clustering are applied to identify latent combustion modes. The workflow includes dimensionality reduction and clustering to uncover combustion mode patterns."
+  },
+  {
+    "hex_coord": [
+      8,
+      0
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1286
+    ],
+    "summary": "Many combustion sequences in BLIP-2 formed U-shaped manifolds indicative of progressive evolution. Latent-space trajectories are constructed for each simulation case to capture the dynamic evolution of combustion behavior over time. The temporal trajectory reveals the evolution of combustion dynamics in latent space."
+  },
+  {
+    "hex_coord": [
+      8,
+      1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      912
+    ],
+    "summary": "Fig. 15(a) presents a comparison of the frequency between POMs and flame oscillation modes. Consistency is observed in the lower-frequency modes between POMs and flame oscillation modes. Image-based methods were used to study ethylene/air combustion instability."
+  },
+  {
+    "hex_coord": [
+      8,
+      2
+    ],
+    "country": 1,
+    "MSU_ids": [
+      422
+    ],
+    "summary": "The local flame structure and flow regime were investigated using a modified flame index and filter functions. According to a series of well-known studies, once the heat release reached a high enough level, there was a noticeable unsteadiness."
+  },
+  {
+    "hex_coord": [
+      8,
+      4
+    ],
+    "country": 1,
+    "MSU_ids": [
+      783
+    ],
+    "summary": "The waveform of flame oscillation in case 2 is shown in Fig. 13(a). This work utilizes the height variation of the $T = 1800 ~ \\mathrm{K}$ isoline at $x = 220$ mm in the center slice to characterize the flame oscillation level. The temporal evolution of the flame covers a maximum oscillation period (mode #3) from $t = 3.05$ ms to $t = 4.45$ ms, during which the flame exhibits the largest amplitude and almost touches the cavity floor."
+  },
+  {
+    "hex_coord": [
+      8,
+      8
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1427,
+      1464
+    ],
+    "summary": "Larger weights were assigned to subregions with more pronounced combustion activity. Higher weights were assigned to the upper region of the engine, where the OH field exhibited stronger variation and contains more informative flame structures."
+  },
+  {
+    "hex_coord": [
+      9,
+      -15
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1115
+    ],
+    "summary": "Wang et al. (2023) introduce the Chat-CAD to integrate LLMs with medical-image CAD networks. The proposed approach uses LLMs to enhance the outputs of multiple CAD networks, including diagnosis, lesion segmentation, and report generation networks. Li, C.Y., Liang, X., Hu, Z., Xing, E.P. proposed a knowledge-driven approach for medical image report generation."
+  },
+  {
+    "hex_coord": [
+      9,
+      -14
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1107,
+      1108,
+      1116
+    ],
+    "summary": "The framework harnesses LLM agents to automate code generation. The framework harnesses LLM agents to automate text summarization for subsequent analysis. Li et al. (2019) propose a novel approach for generating medical image reports by integrating knowledge-driven encoding, retrieval, and paraphrasing mechanisms."
+  },
+  {
+    "hex_coord": [
+      9,
+      -13
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1051,
+      1058,
+      1392,
+      1393
+    ],
+    "summary": "Expert annotations are integrated into a VLM-based summarization pipeline to generate descriptive, domain-aligned reports. The workflow uses vision–language summarization grounded in expert annotation. Descriptions may be VLM-generated."
+  },
+  {
+    "hex_coord": [
+      9,
+      -12
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1564,
+      1573
+    ],
+    "summary": "The multimodal annotation pipeline enables automated reporting, similarity-driven retrieval, and collaborative analysis with minimal manual overhead. A multimodal annotation workflow powered by large vision–language models will be developed to support scalable, automated labeling of scientific phenomena. The multimodal annotation workflow will reduce expert workload and help surface recurring knowledge patterns across large simulation corpora."
+  },
+  {
+    "hex_coord": [
+      9,
+      -10
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1084,
+      1085,
+      1642
+    ],
+    "summary": "Li et al. (2025) propose the ParamsDrag model to facilitate parameter space exploration. The ParamsDrag model allows users to directly drag structure-related features in the visualizations. Paramsdrag is an interactive parameter space exploration technique."
+  },
+  {
+    "hex_coord": [
+      9,
+      -9
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1334,
+      1538
+    ],
+    "summary": "At the frame level, the workflow produces direct semantic interpretations based on nearby cluster exemplars. This mechanism links low-level visual data to expert interpretation. The system links visual clusters to semantic summaries."
+  },
+  {
+    "hex_coord": [
+      9,
+      -8
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1537,
+      1594,
+      1597,
+      1598
+    ],
+    "summary": "Visual analytics systems enable trajectory-based interpretation through cluster-based interaction. The system turns latent trajectory structure into interpretable visual clusters. Salientime is a user-driven method for selecting salient time steps in large-scale geospatial data visualization."
+  },
+  {
+    "hex_coord": [
+      9,
+      -7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1340
+    ],
+    "summary": "The system enables experts to move fluidly from parameter-level filtering to latent structure inspection, raw field validation, and case-level reporting. The system allows domain specialists to move from raw images to hypothesis-driven analysis at a significantly accelerated pace."
+  },
+  {
+    "hex_coord": [
+      9,
+      -6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1083
+    ],
+    "summary": "Complementary approaches, such as saliency-guided importance sampling (Bae et al. 2020), have been proposed to focus visualization effort on regions of greatest dynamical interest."
+  },
+  {
+    "hex_coord": [
+      9,
+      -5
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1078,
+      1079
+    ],
+    "summary": "He et al. (2023) present a parallel visualization framework for large-scale flow-field data. The framework combines grid-segmented data partitioning with optimized communication strategies. The framework achieves real-time interactivity on millions of grid cells."
+  },
+  {
+    "hex_coord": [
+      9,
+      -1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1151,
+      1153
+    ],
+    "summary": "Trajectory-based visualization supports stable combustion detection. Trajectory-based comparison supports stable combustion detection. Spatially focusing on expert-identified regions enhances latent structure clarity and combustion mode separability."
+  },
+  {
+    "hex_coord": [
+      9,
+      0
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1152,
+      1154
+    ],
+    "summary": "Trajectory-based visualization supports interpretation of transitional combustion behaviors. Trajectory-based comparison supports interpretation of transitional combustion behaviors."
+  },
+  {
+    "hex_coord": [
+      9,
+      2
+    ],
+    "country": 1,
+    "MSU_ids": [
+      672,
+      673
+    ],
+    "summary": "Takeno Flame Index (TFI) can be used to characterize the flame regimes. The current work proposes a Modified Flame Index (MFI) that incorporates the unit-volume heat-release rate. MFI is designed to differentiate the flame from the flow field."
+  },
+  {
+    "hex_coord": [
+      9,
+      3
+    ],
+    "country": 0,
+    "MSU_ids": [
+      256
+    ],
+    "summary": "In Eq. (1), n is the number of pixels of the combustion flame."
+  },
+  {
+    "hex_coord": [
+      9,
+      5
+    ],
+    "country": 0,
+    "MSU_ids": [
+      143
+    ],
+    "summary": "OH-PLIF images showed instantaneous structures of the hydrogen flame. Images of OH from t = 0.07 s to 0.25 s were used to analyze the dynamic evolution of the pure hydrogen or the ethylene flame."
+  },
+  {
+    "hex_coord": [
+      9,
+      6
+    ],
+    "country": 0,
+    "MSU_ids": [
+      64
+    ],
+    "summary": "The flame zone was visualized by capturing intermediates such as OH, C2HO, H, and CH. The instantaneous area of the chemical reaction zone and the distribution of OH reflected the characteristics of unstable combustion."
+  },
+  {
+    "hex_coord": [
+      10,
+      -15
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1672
+    ],
+    "summary": "The model enables frozen LLMs to generate radiology reports that integrate both visual insights and clinical language. R2GenGPT is a method for radiology report generation using frozen large language models (LLMs). The method is described in the paper titled 'R2GenGPT: Radiology Report Generation with Frozen LLMs'."
+  },
+  {
+    "hex_coord": [
+      10,
+      -14
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1332,
+      1455
+    ],
+    "summary": "The retrieved images and annotations are used as context inputs to Gemma-3, which generates descriptive summaries of the selected frame. The auto-generated description was produced by the Gemma-3 VLM using nearest centroid descriptions and images as context."
+  },
+  {
+    "hex_coord": [
+      10,
+      -13
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1006,
+      1007,
+      1008,
+      1207,
+      1208,
+      1214,
+      1397
+    ],
+    "summary": "These annotations are used as contextual prompts for a vision-language model. The vision-language model generates natural-language summaries for individual frames. The vision-language model generates natural-language summaries for full simulation cases."
+  },
+  {
+    "hex_coord": [
+      10,
+      -12
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1111
+    ],
+    "summary": "The first step encodes visual features into a structured abnormality graph."
+  },
+  {
+    "hex_coord": [
+      10,
+      -8
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1052
+    ],
+    "summary": "Visual analytics systems enable multi-view exploration through cluster-based interaction. Visual analytics systems enable reasoning through cluster-based interaction. An interactive multi-view interface connects the workflow components through coordinated filtering, trajectory exploration, case retrieval, and frame-level semantic inspection."
+  },
+  {
+    "hex_coord": [
+      10,
+      -7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1670
+    ],
+    "summary": "Wu, C., Chen, Y., Dong, Y., Zhou, F., Zhao, Y., Liang, C.J. introduced Vizoptics, an interactive visual analysis tool for optics. Vizoptics aims to provide insights into optics through interactive visual analysis."
+  },
+  {
+    "hex_coord": [
+      10,
+      -6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1074
+    ],
+    "summary": "Domain-specific applications such as FlowVisual have tailored flow visualization for educational contexts. FlowVisual integrates 3D volume rendering and glyph techniques to teach fluid concepts. Flowvisual is a visualization app for teaching and understanding 3D flow field concepts."
+  },
+  {
+    "hex_coord": [
+      10,
+      -3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1321,
+      1561
+    ],
+    "summary": "Domain experts interactively assign combustion-specific terminology to selected centroids through an annotation interface. TemporalFlowViz demonstrates strong performance across combustion interpretation tasks. TemporalFlowViz demonstrates expert usability across combustion interpretation tasks."
+  },
+  {
+    "hex_coord": [
+      10,
+      -2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1571
+    ],
+    "summary": "The pretrained Vision Transformers successfully capture combustion-relevant features in pressure and OH fields. A domain-adaptive Vision Transformer will be constructed through fine-tuning on large-scale combustion simulation datasets."
+  },
+  {
+    "hex_coord": [
+      10,
+      1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      62
+    ],
+    "summary": "Vortex structures induced by transverse jets have been investigated using planar laser-induced fluorescence (PLIF) measurements. PLIF is a highly developed combustion laser diagnostic technique for two-dimensional flame structure visualization."
+  },
+  {
+    "hex_coord": [
+      10,
+      6
+    ],
+    "country": 0,
+    "MSU_ids": [
+      129
+    ],
+    "summary": "These 2D images were used to track OH and CH and provide information on the chemical reaction zone. According to the OH-PLIF images, the main chemical reaction zone was sustained in the shear layer at y = 20-40 mm. Figure 11 shows areas of the chemical reaction zones (OH) with varying jet locations."
+  },
+  {
+    "hex_coord": [
+      11,
+      -15
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1118
+    ],
+    "summary": "R2GenGPT leverages the pre-trained knowledge of LLMs while overcoming their inability to process visual data directly (Wang et al. 2023). R2GenGPT aligns image features with the LLM’s text embedding space."
+  },
+  {
+    "hex_coord": [
+      11,
+      -13
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1315,
+      1396
+    ],
+    "summary": "Recent developments in vision–language models (VLMs) offer mechanisms for converting visual input into natural language. Vision–language modeling is integrated into a unified semantic pipeline. The vision-language model produces a frame-specific description."
+  },
+  {
+    "hex_coord": [
+      11,
+      -10
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1233,
+      1248,
+      1285
+    ],
+    "summary": "Both inputs were passed through the same embedding extraction pipeline. Frame-level embeddings were extracted from the same cropped input images for each model. This consistent configuration ensures that embeddings from different backbone models can be analyzed under the same projection basis."
+  },
+  {
+    "hex_coord": [
+      11,
+      -8
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1059,
+      1130,
+      1194,
+      1483
+    ],
+    "summary": "Keywords include Visual Analytics. The workflow is implemented into an interactive visual analytics system. The representative domain challenges guided the design of our visual analytics workflow and system."
+  },
+  {
+    "hex_coord": [
+      11,
+      -6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1212,
+      1542
+    ],
+    "summary": "TemporalFlowViz supports interpretable pattern discovery. TemporalFlowViz enables temporal trajectory-based exploration. Clustering in TemporalFlowViz relies on manually selected parameters such as ε and minPts."
+  },
+  {
+    "hex_coord": [
+      11,
+      -4
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1000,
+      1047,
+      1054,
+      1191
+    ],
+    "summary": "TemporalFlowViz is a parameter-aware visual analytics workflow and system designed to support expert-driven clustering, visualization, and interpretation of temporal flow fields from scramjet combustion simulations. TemporalFlowViz enhances knowledge discovery in large-scale scramjet combustion analysis. TemporalFlowViz is a parameter-aware visual analytics workflow and system designed to support expert-driven interpretation of scramjet combustion simulations."
+  },
+  {
+    "hex_coord": [
+      11,
+      1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      57,
+      371
+    ],
+    "summary": "Chemiluminescence images at eight orientations using two customized fiber-based endoscope (FBE) bundles at 20 kHz have been captured to gain knowledge of the detailed spatiotemporal dynamics of the transition from an ignition kernel to a stable flame. The research utilizes 3D tomographic chemiluminescence at 20k Hz."
+  },
+  {
+    "hex_coord": [
+      11,
+      1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      887
+    ],
+    "summary": "Fig. 5 compares time-averaged temperature and chemiluminescence. Time-resolved CH* chemiluminescence was used for characterization."
+  },
+  {
+    "hex_coord": [
+      11,
+      2
+    ],
+    "country": 0,
+    "MSU_ids": [
+      106,
+      122
+    ],
+    "summary": "Optical glasses made of quartz were assembled on the side walls of the combustor. Quartz glasses were mounted on the sidewall and the bottom wall for optical access."
+  },
+  {
+    "hex_coord": [
+      12,
+      -13
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1647
+    ],
+    "summary": "InternVL scales up vision foundation models. BLIP-2 is a method for bootstrapping language-image pretraining. BLIP-2 uses frozen image encoders and large language models."
+  },
+  {
+    "hex_coord": [
+      12,
+      -12
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1428
+    ],
+    "summary": "ResNet introduces residual connections to facilitate training of very deep architectures. The resulting weighted images were encoded into high-dimensional embeddings using Blip2-opt-2.7b, InternViT-6B-v2.5, and AIMv2-1B. CViT: Continuous Vision Transformer for Operator Learning is introduced."
+  },
+  {
+    "hex_coord": [
+      12,
+      -11
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1002,
+      1048,
+      1055,
+      1466
+    ],
+    "summary": "We use pretrained Vision Transformers to extract high-dimensional embeddings from these frames. The workflow extracts high-dimensional embeddings from flow field images using pretrained ViTs. The workflow integrates pretrained Vision Transformer–based embedding."
+  },
+  {
+    "hex_coord": [
+      12,
+      -10
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1186,
+      1657
+    ],
+    "summary": "Each physical field’s VTK data is processed by a python program to map into an image under a uniform colormap. Twins-pivnet is a spatial attention-based deep learning framework for particle image velocimetry."
+  },
+  {
+    "hex_coord": [
+      12,
+      -9
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1337,
+      1403
+    ],
+    "summary": "The visual analytics system interface is composed of five tightly coordinated views. The interface integrates five views into an environment that operationalizes the entire workflow."
+  },
+  {
+    "hex_coord": [
+      12,
+      -8
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1404
+    ],
+    "summary": "The five views include coordinated filtering, embedding visualization, trajectory comparison, raw flow inspection, and semantic interpretation."
+  },
+  {
+    "hex_coord": [
+      12,
+      -7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1193,
+      1211,
+      1223,
+      1264,
+      1429
+    ],
+    "summary": "TemporalFlowViz achieves these requirements via deep feature embedding, temporal trajectory modeling, and expert-guided semantic summarization. TemporalFlowViz includes preprocessing and embedding of flow fields. TemporalFlowViz begins with preprocessing simulation outputs into multichannel flow field frames."
+  },
+  {
+    "hex_coord": [
+      12,
+      -6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1190,
+      1213,
+      1215,
+      1265
+    ],
+    "summary": "TemporalFlowViz enhances hypothesis generation. Results show that TemporalFlowViz facilitates hypothesis generation. TemporalFlowViz is an end-to-end visual analytics workflow and system."
+  },
+  {
+    "hex_coord": [
+      12,
+      1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      126
+    ],
+    "summary": "The chemiluminescence of CH was used to mark the chemical reaction of C2H4 in the combustor."
+  },
+  {
+    "hex_coord": [
+      13,
+      -13
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1262
+    ],
+    "summary": "BLIP-2 tended to generate smooth, temporally ordered embeddings. BLIP-2 can be used for trajectory-based reasoning."
+  },
+  {
+    "hex_coord": [
+      13,
+      -12
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1545
+    ],
+    "summary": "The pretrained Vision Transformers used in our pipeline are sourced from general-purpose corpora. The paper introduces multimodal autoregressive pre-training for large vision encoders. The study focuses on pre-training large vision encoders using multimodal data."
+  },
+  {
+    "hex_coord": [
+      13,
+      -11
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1242,
+      1243,
+      1245
+    ],
+    "summary": "Vision Transformers (ViTs) have demonstrated strong capabilities in extracting semantically rich features from images by modeling them as sequences of patches. ViTs model images as sequences of patches (Dosovitskiy et al. 2021). Vision Transformers achieve state-of-the-art results on various benchmarks."
+  },
+  {
+    "hex_coord": [
+      13,
+      -9
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1335
+    ],
+    "summary": "For entire simulation cases, Gemma-3 aggregates information along latent trajectories to generate case-level overviews."
+  },
+  {
+    "hex_coord": [
+      13,
+      -7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1148,
+      1192,
+      1195,
+      1338
+    ],
+    "summary": "These requirements guided the design of TemporalFlowViz. TemporalFlowViz addresses four core requirements: temporal summarization (R1), trajectory-based pattern recognition (R2), semantic communication (R3), and parameter-aware case comparison (R4). The TemporalFlowViz consists of three main stages."
+  },
+  {
+    "hex_coord": [
+      13,
+      -6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1266
+    ],
+    "summary": "TemporalFlowViz was demonstrated through two expert-informed case studies and expert feedback. TemporalFlowViz maintains a consistent analysis pipeline. TemporalFlowViz was validated for its effectiveness in supporting real-world analytical workflows."
+  },
+  {
+    "hex_coord": [
+      14,
+      -12
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1658
+    ],
+    "summary": "Keywords include Vision Transformer. Twins-pivnet uses a vision transformer."
+  },
+  {
+    "hex_coord": [
+      14,
+      -10
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1326
+    ],
+    "summary": "Gemma-3 offers lightweight 4-bit and 8-bit quantizations. Gemma-3 provides efficient image-to-text generation speed. Gemma-3 successfully processes multiple images in a single pass without out-of-memory failures."
   }
 ]

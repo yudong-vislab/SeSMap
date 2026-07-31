@@ -8,11 +8,11 @@ export SESMAP_STAGES_DIR=/Users/yudong/Desktop/SeSMap/SeSMap-backend/data/bio_ev
 POLLUTION_MODEL=/Users/yudong/Desktop/SeSMap/SeSMap-backend/data/stages/05_model/bert2d_mapper_all_v10.pt
 S=$SESMAP_STAGES_DIR
 
-echo "########## ① MinerU: 5 篇基因组 PDF -> markdown ##########"
-python3 code_for_data/mineru_pdf.py --pdf-dir data/pdf --corpus $S/01_corpus
+echo "########## ① MinerU: case3 新增 PDF -> markdown ##########"
+python3 code_for_data/mineru_pdf.py --pdf-dir data/case3/pdf --corpus $S/01_corpus --skip-existing
 
-echo "########## ② build_corpus: markdown -> MSU (LLM 抽取) ##########"
-python3 code_for_data/build_corpus.py --corpus $S/01_corpus
+echo "########## ② build_corpus: 仅新增 markdown -> MSU (LLM 抽取) ##########"
+python3 code_for_data/build_corpus.py --corpus $S/01_corpus --reuse-existing
 
 echo "########## ③ precompute: bge 向量缓存 ##########"
 python3 code_for_model/precompute_embeddings.py

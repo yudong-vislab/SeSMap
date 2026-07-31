@@ -1,0 +1,4440 @@
+[
+  {
+    "idx": 63,
+    "MSU_id": 63,
+    "sentence": "The evaluation demonstrates the framework’s effectiveness in enhancing usability.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 13,
+    "paper_id": 0,
+    "2d_coord": [
+      3.11177894500144,
+      1.284331901596672
+    ]
+  },
+  {
+    "idx": 64,
+    "MSU_id": 64,
+    "sentence": "The evaluation demonstrates the framework’s effectiveness in enhancing efficiency.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 13,
+    "paper_id": 0,
+    "2d_coord": [
+      3.1070792298919607,
+      1.2777873086196403
+    ]
+  },
+  {
+    "idx": 121,
+    "MSU_id": 121,
+    "sentence": "A taxonomy of three major layout styles was derived: ring-based, radial, and chord-based circular genome visualizations.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 22,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.9629910693988175,
+      -1.2409070245751008
+    ]
+  },
+  {
+    "idx": 123,
+    "MSU_id": 123,
+    "sentence": "Most tools relied on static platforms, such as Circos, which offer limited customization and interactivity.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 22,
+    "paper_id": 0,
+    "2d_coord": [
+      2.4851323009881487,
+      -1.5178692703809404
+    ]
+  },
+  {
+    "idx": 130,
+    "MSU_id": 130,
+    "sentence": "The feedback validated the proposed layout taxonomy.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 23,
+    "paper_id": 0,
+    "2d_coord": [
+      2.5919363896831293,
+      1.3662560511449529
+    ]
+  },
+  {
+    "idx": 131,
+    "MSU_id": 131,
+    "sentence": "The feedback further shaped the understanding of critical challenges.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 23,
+    "paper_id": 0,
+    "2d_coord": [
+      2.7724246297044792,
+      1.5178661960878999
+    ]
+  },
+  {
+    "idx": 183,
+    "MSU_id": 183,
+    "sentence": "Figure 2 compares LLM output assessments across five evaluation dimensions.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 37,
+    "paper_id": 0,
+    "2d_coord": [
+      2.2909062968301477,
+      1.7342555542462454
+    ]
+  },
+  {
+    "idx": 192,
+    "MSU_id": 192,
+    "sentence": "GPT-4o performed best in semantic parsing and explanation tasks.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 39,
+    "paper_id": 0,
+    "2d_coord": [
+      1.375358814876226,
+      1.2510105152466813
+    ]
+  },
+  {
+    "idx": 193,
+    "MSU_id": 193,
+    "sentence": "Deep-Seek-R1 excelled in structured code generation.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 39,
+    "paper_id": 0,
+    "2d_coord": [
+      2.8146431029095997,
+      0.5346074078345304
+    ]
+  },
+  {
+    "idx": 194,
+    "MSU_id": 194,
+    "sentence": "GPT-o1 showed moderate performance but struggled with layout consistency.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 39,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.16704536528341174,
+      -2.118712456286778
+    ]
+  },
+  {
+    "idx": 221,
+    "MSU_id": 221,
+    "sentence": "The textual rationales improve transparency and help users understand the rationale behind the system’s suggestions.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 45,
+    "paper_id": 0,
+    "2d_coord": [
+      2.1474797545778843,
+      0.4948123641237557
+    ]
+  },
+  {
+    "idx": 247,
+    "MSU_id": 247,
+    "sentence": "This approach improves fidelity to biological conventions.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 50,
+    "paper_id": 0,
+    "2d_coord": [
+      3.469251809095298,
+      -0.4760884683263159
+    ]
+  },
+  {
+    "idx": 248,
+    "MSU_id": 248,
+    "sentence": "This approach reduces hallucinated code patterns.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 50,
+    "paper_id": 0,
+    "2d_coord": [
+      3.5176931652450243,
+      -0.3378305187822362
+    ]
+  },
+  {
+    "idx": 249,
+    "MSU_id": 249,
+    "sentence": "This approach enhances output stability, especially in multiturn interactions or layout-specific tasks.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 50,
+    "paper_id": 0,
+    "2d_coord": [
+      2.2897671652463036,
+      -0.6885334671907335
+    ]
+  },
+  {
+    "idx": 255,
+    "MSU_id": 255,
+    "sentence": "This restructuring reduces the generation complexity.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 51,
+    "paper_id": 0,
+    "2d_coord": [
+      3.3205574156298554,
+      -0.34417169344796783
+    ]
+  },
+  {
+    "idx": 256,
+    "MSU_id": 256,
+    "sentence": "This restructuring enables LLMs to focus on higher level content specification rather than low-level implementation details.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 51,
+    "paper_id": 0,
+    "2d_coord": [
+      3.241858137977318,
+      -0.10314466149506485
+    ]
+  },
+  {
+    "idx": 262,
+    "MSU_id": 262,
+    "sentence": "The modular architecture shortens the prompt length.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 52,
+    "paper_id": 0,
+    "2d_coord": [
+      3.2611002017636497,
+      0.4673253018138393
+    ]
+  },
+  {
+    "idx": 263,
+    "MSU_id": 263,
+    "sentence": "The modular architecture reduces cognitive load for agents.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 52,
+    "paper_id": 0,
+    "2d_coord": [
+      3.1250772449742525,
+      -0.049245394016289634
+    ]
+  },
+  {
+    "idx": 264,
+    "MSU_id": 264,
+    "sentence": "The modular architecture improves output generalizability across diverse tasks.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 52,
+    "paper_id": 0,
+    "2d_coord": [
+      3.131159358617128,
+      -0.08089193700415184
+    ]
+  },
+  {
+    "idx": 265,
+    "MSU_id": 265,
+    "sentence": "The modular architecture supports structured prompt construction.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 52,
+    "paper_id": 0,
+    "2d_coord": [
+      3.270309153521204,
+      0.4853360047351057
+    ]
+  },
+  {
+    "idx": 266,
+    "MSU_id": 266,
+    "sentence": "The system can reference and invoke specific functionality through scoped instructions.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 52,
+    "paper_id": 0,
+    "2d_coord": [
+      2.7171856559454284,
+      -0.13464744250330607
+    ]
+  },
+  {
+    "idx": 287,
+    "MSU_id": 287,
+    "sentence": "This architecture significantly reduces hallucinations.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 65,
+    "paper_id": 0,
+    "2d_coord": [
+      3.5326736583735117,
+      -0.3395846105281425
+    ]
+  },
+  {
+    "idx": 288,
+    "MSU_id": 288,
+    "sentence": "This architecture improves reasoning traceability.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 65,
+    "paper_id": 0,
+    "2d_coord": [
+      2.9854954642754925,
+      -0.17089932390046933
+    ]
+  },
+  {
+    "idx": 289,
+    "MSU_id": 289,
+    "sentence": "This architecture facilitates integration with RAG and utility libraries.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 65,
+    "paper_id": 0,
+    "2d_coord": [
+      2.90808004664514,
+      -0.41737737981263434
+    ]
+  },
+  {
+    "idx": 402,
+    "MSU_id": 402,
+    "sentence": "The first-generation result uses a default color scheme.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 89,
+    "paper_id": 0,
+    "2d_coord": [
+      -2.148467866508801,
+      -1.4678179340927557
+    ]
+  },
+  {
+    "idx": 415,
+    "MSU_id": 415,
+    "sentence": "The studies validate the multiagent workflow of the AuraGenome framework.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 91,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.5467321200823525,
+      1.3552493927519154
+    ]
+  },
+  {
+    "idx": 416,
+    "MSU_id": 416,
+    "sentence": "The studies validate the visual analytics system of the AuraGenome framework.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 91,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.5634205407544868,
+      1.3491239588528803
+    ]
+  },
+  {
+    "idx": 423,
+    "MSU_id": 423,
+    "sentence": "This enabled assessment of AuraGenome's usability and effectiveness in real-world contexts.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 92,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.5601070733389981,
+      1.5372106907089833
+    ]
+  },
+  {
+    "idx": 433,
+    "MSU_id": 433,
+    "sentence": "The chord layout highlighted recurrent co-occurrences of breakpoints across different chromosomes.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 94,
+    "paper_id": 0,
+    "2d_coord": [
+      -1.659901830562539,
+      -1.3447435967310146
+    ]
+  },
+  {
+    "idx": 436,
+    "MSU_id": 436,
+    "sentence": "Red bars indicated regions of upregulated expression.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 95,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.054871942411286,
+      -0.9354709094559187
+    ]
+  },
+  {
+    "idx": 437,
+    "MSU_id": 437,
+    "sentence": "Blue bars represented downregulated zones.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 95,
+    "paper_id": 0,
+    "2d_coord": [
+      -1.7680850185104062,
+      -2.2763368722374886
+    ]
+  },
+  {
+    "idx": 438,
+    "MSU_id": 438,
+    "sentence": "This integration enabled visual alignment of structural variants with transcriptional activity.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 95,
+    "paper_id": 0,
+    "2d_coord": [
+      -1.484450932022786,
+      -0.3458077764940492
+    ]
+  },
+  {
+    "idx": 447,
+    "MSU_id": 447,
+    "sentence": "$E _ { A }$ identified that the genomic region chr1:16816819–18551718 exhibited a high frequency of translocation breakpoints.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 97,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.093668401872162,
+      -0.838196012199332
+    ]
+  },
+  {
+    "idx": 448,
+    "MSU_id": 448,
+    "sentence": "$E _ { A }$ identified that the genomic region chr1:16816819–18551718 exhibited significant gene upregulation.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 97,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.0873480801765156,
+      -0.8621459104278933
+    ]
+  },
+  {
+    "idx": 454,
+    "MSU_id": 454,
+    "sentence": "The Sequence Log View facilitates the inheritance and contextual reuse of prior visualization logic.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 98,
+    "paper_id": 0,
+    "2d_coord": [
+      1.0105498905939247,
+      -0.1863223437876461
+    ]
+  },
+  {
+    "idx": 456,
+    "MSU_id": 456,
+    "sentence": "The visual outputs were independent.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 99,
+    "paper_id": 0,
+    "2d_coord": [
+      0.8164668002699845,
+      -1.3995160633903176
+    ]
+  },
+  {
+    "idx": 471,
+    "MSU_id": 471,
+    "sentence": "The system accurately filtered and visualized mutations according to the user’s intent.",
+    "category": "Result",
+    "rank": 5,
+    "type": "text",
+    "para_id": 103,
+    "paper_id": 0,
+    "2d_coord": [
+      0.1838765745909533,
+      1.1500997438692173
+    ]
+  },
+  {
+    "idx": 476,
+    "MSU_id": 476,
+    "sentence": "The resulting chart included seven fully customized genomic tracks.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 105,
+    "paper_id": 0,
+    "2d_coord": [
+      -1.5764116676824491,
+      -0.8238944009513758
+    ]
+  },
+  {
+    "idx": 477,
+    "MSU_id": 477,
+    "sentence": "The chart reproduced the structure of the original Nature visualizations with high fidelity.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 105,
+    "paper_id": 0,
+    "2d_coord": [
+      0.4504839369944665,
+      -1.3821845624748115
+    ]
+  },
+  {
+    "idx": 502,
+    "MSU_id": 502,
+    "sentence": "Task completion time and accuracy are compared.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 110,
+    "paper_id": 0,
+    "2d_coord": [
+      2.4333703289818307,
+      1.673434978725472
+    ]
+  },
+  {
+    "idx": 503,
+    "MSU_id": 503,
+    "sentence": "User ratings are provided across six evaluation questions.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 110,
+    "paper_id": 0,
+    "2d_coord": [
+      2.5376194548504105,
+      1.766518871985679
+    ]
+  },
+  {
+    "idx": 504,
+    "MSU_id": 504,
+    "sentence": "AuraGenome significantly outperformed Circos in both task efficiency and output accuracy.",
+    "category": "Result",
+    "rank": 5,
+    "type": "text",
+    "para_id": 111,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.6066993477272876,
+      1.6490655954280302
+    ]
+  },
+  {
+    "idx": 505,
+    "MSU_id": 505,
+    "sentence": "Participants completed the assigned visualization task in an average of 34 minutes (SD = 9.16) using AuraGenome.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 111,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.6975475110112066,
+      1.8779373401099038
+    ]
+  },
+  {
+    "idx": 506,
+    "MSU_id": 506,
+    "sentence": "Participants completed the assigned visualization task in an average of 112 minutes (SD = 16.5) using Circos.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 111,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.6968618105453573,
+      1.879392628611999
+    ]
+  },
+  {
+    "idx": 507,
+    "MSU_id": 507,
+    "sentence": "Using AuraGenome resulted in a 69% reduction in task completion time compared to Circos.",
+    "category": "Result",
+    "rank": 5,
+    "type": "text",
+    "para_id": 111,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.6612148442586576,
+      1.687629534567289
+    ]
+  },
+  {
+    "idx": 508,
+    "MSU_id": 508,
+    "sentence": "One participant was unable to complete the task within the allotted time when using Circos.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 111,
+    "paper_id": 0,
+    "2d_coord": [
+      2.3001412029277084,
+      -1.4886216291065364
+    ]
+  },
+  {
+    "idx": 509,
+    "MSU_id": 509,
+    "sentence": "Accuracy scores, evaluated by two independent genomics experts, averaged 89% (SD = 4.61) with AuraGenome.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 111,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.9102593288747997,
+      1.6105955416632183
+    ]
+  },
+  {
+    "idx": 510,
+    "MSU_id": 510,
+    "sentence": "Accuracy scores, evaluated by two independent genomics experts, averaged 76% (SD = 18.31) with Circos.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 111,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.9127599635488141,
+      1.608465778023173
+    ]
+  },
+  {
+    "idx": 511,
+    "MSU_id": 511,
+    "sentence": "AuraGenome exhibited lower performance variance across participants, suggesting improved consistency.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 111,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.6846655802386672,
+      1.6132852272447533
+    ]
+  },
+  {
+    "idx": 521,
+    "MSU_id": 521,
+    "sentence": "AuraGenome achieved significantly higher ratings than Circos on five of six questions (Q1–Q3, Q5, and Q6; p < 0.05, Mann–Whitney U test).",
+    "category": "Result",
+    "rank": 5,
+    "type": "text",
+    "para_id": 119,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.5554138468145209,
+      1.8464891299755595
+    ]
+  },
+  {
+    "idx": 522,
+    "MSU_id": 522,
+    "sentence": "Q4 (functionality) also trended positively (p = 0.0588).",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 119,
+    "paper_id": 0,
+    "2d_coord": [
+      3.083727582303247,
+      1.686629655329435
+    ]
+  },
+  {
+    "idx": 523,
+    "MSU_id": 523,
+    "sentence": "11 out of 12 participants reported that AuraGenome was easier to use and customize.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 119,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.4752558472728056,
+      1.7126908661140354
+    ]
+  },
+  {
+    "idx": 524,
+    "MSU_id": 524,
+    "sentence": "Eight participants expressed greater confidence in the correctness of AuraGenome.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 119,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.7520729053841045,
+      1.5488513035731521
+    ]
+  },
+  {
+    "idx": 525,
+    "MSU_id": 525,
+    "sentence": "AuraGenome provides notable improvements in usability over traditional tools.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 120,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.44898054226077705,
+      1.6495792918622407
+    ]
+  },
+  {
+    "idx": 526,
+    "MSU_id": 526,
+    "sentence": "AuraGenome provides notable improvements in efficiency over traditional tools.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 120,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.45028513276216214,
+      1.652283451439003
+    ]
+  },
+  {
+    "idx": 527,
+    "MSU_id": 527,
+    "sentence": "AuraGenome provides notable improvements in accuracy over traditional tools.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 120,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.45059894932660494,
+      1.6543935904278615
+    ]
+  },
+  {
+    "idx": 528,
+    "MSU_id": 528,
+    "sentence": "AuraGenome particularly benefits users with limited programming expertise.",
+    "category": "Result",
+    "rank": 5,
+    "type": "text",
+    "para_id": 120,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.4306966445223545,
+      1.5754157138855145
+    ]
+  },
+  {
+    "idx": 531,
+    "MSU_id": 531,
+    "sentence": "The result revealed four recurring reflections about AuraGenome’s usability.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 121,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.8584751417130525,
+      1.8116912983151345
+    ]
+  },
+  {
+    "idx": 532,
+    "MSU_id": 532,
+    "sentence": "The result revealed four recurring reflections about AuraGenome’s functionality.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 121,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.8569585724389449,
+      1.8139622160077324
+    ]
+  },
+  {
+    "idx": 533,
+    "MSU_id": 533,
+    "sentence": "The result revealed four recurring reflections about AuraGenome’s areas for growth.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 121,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.859215610235356,
+      1.8145401326459911
+    ]
+  },
+  {
+    "idx": 534,
+    "MSU_id": 534,
+    "sentence": "Participants embraced the natural language interface as a major improvement over traditional config file editing.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 122,
+    "paper_id": 0,
+    "2d_coord": [
+      2.676527302517138,
+      0.12249644833320303
+    ]
+  },
+  {
+    "idx": 535,
+    "MSU_id": 535,
+    "sentence": "Chat with Aura lowered the barrier to entry for users.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 122,
+    "paper_id": 0,
+    "2d_coord": [
+      2.3107138572957724,
+      0.3823995260076081
+    ]
+  },
+  {
+    "idx": 536,
+    "MSU_id": 536,
+    "sentence": "Chat with Aura allowed users to express visualization intent more directly.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 122,
+    "paper_id": 0,
+    "2d_coord": [
+      2.291417025452987,
+      0.3608878439930544
+    ]
+  },
+  {
+    "idx": 537,
+    "MSU_id": 537,
+    "sentence": "Real-time visualization generation reduced trial-and-error in the configuration process.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 122,
+    "paper_id": 0,
+    "2d_coord": [
+      1.6149089049827507,
+      -0.7068495909707456
+    ]
+  },
+  {
+    "idx": 538,
+    "MSU_id": 538,
+    "sentence": "Real-time visualization generation streamlined the configuration process.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 122,
+    "paper_id": 0,
+    "2d_coord": [
+      1.616342662316075,
+      -0.7016008769537803
+    ]
+  },
+  {
+    "idx": 539,
+    "MSU_id": 539,
+    "sentence": "AuraGenome reduced the burden of preselecting visualization strategies by automatically recommending composite charts tailored to the input data type.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 123,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.2878252612037896,
+      1.368450654371725
+    ]
+  },
+  {
+    "idx": 541,
+    "MSU_id": 541,
+    "sentence": "$P _ { 6 }$ noted, 'The variant + heatmap combo matched my study better than my own plan.'",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 123,
+    "paper_id": 0,
+    "2d_coord": [
+      0.9479550609633758,
+      2.7712869299210645
+    ]
+  },
+  {
+    "idx": 543,
+    "MSU_id": 543,
+    "sentence": "The system accelerated chart creation.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 123,
+    "paper_id": 0,
+    "2d_coord": [
+      1.5246332218552037,
+      -0.598120547635349
+    ]
+  },
+  {
+    "idx": 544,
+    "MSU_id": 544,
+    "sentence": "The system introduced users to more informative visual encodings than they might have initially decided.",
+    "category": "Result",
+    "rank": 5,
+    "type": "text",
+    "para_id": 123,
+    "paper_id": 0,
+    "2d_coord": [
+      1.0092922048637802,
+      -1.4893672354552647
+    ]
+  },
+  {
+    "idx": 545,
+    "MSU_id": 545,
+    "sentence": "The system was seen as accessible to both computational and wet-lab users.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 124,
+    "paper_id": 0,
+    "2d_coord": [
+      2.7851094834545966,
+      -0.548066864212803
+    ]
+  },
+  {
+    "idx": 546,
+    "MSU_id": 546,
+    "sentence": "Experienced users valued the ability to issue fine-grained commands, including suggestions for direct SVG editing (P_4 and P_10).",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 124,
+    "paper_id": 0,
+    "2d_coord": [
+      2.4041536604077542,
+      -0.6273859228138153
+    ]
+  },
+  {
+    "idx": 547,
+    "MSU_id": 547,
+    "sentence": "Wet-lab participants noted that they could independently produce publication-ready charts, an empowering capability for nonprogrammers (P_11 and P_12).",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 124,
+    "paper_id": 0,
+    "2d_coord": [
+      2.8008426524432717,
+      -0.5671512833070347
+    ]
+  },
+  {
+    "idx": 549,
+    "MSU_id": 549,
+    "sentence": "Few participants identified opportunities for refinement in balancing automation with control.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 125,
+    "paper_id": 0,
+    "2d_coord": [
+      2.503993847755741,
+      -1.1293614200063131
+    ]
+  },
+  {
+    "idx": 550,
+    "MSU_id": 550,
+    "sentence": "Some participants expressed a desire for richer data previews $( P _ { 1 } ) _ { i }$.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 125,
+    "paper_id": 0,
+    "2d_coord": [
+      2.75721868574119,
+      1.3154506327450688
+    ]
+  },
+  {
+    "idx": 551,
+    "MSU_id": 551,
+    "sentence": "Participants expressed a desire for editable annotation history $( P _ { 4 } ) _ { \bullet }$.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 125,
+    "paper_id": 0,
+    "2d_coord": [
+      2.7345200757412833,
+      1.3343070212162962
+    ]
+  },
+  {
+    "idx": 552,
+    "MSU_id": 552,
+    "sentence": "Participants expressed a desire for better visibility into the sequence of steps taken.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 125,
+    "paper_id": 0,
+    "2d_coord": [
+      2.771447162865591,
+      1.3033034626470381
+    ]
+  },
+  {
+    "idx": 553,
+    "MSU_id": 553,
+    "sentence": "Participants noted that automated defaults occasionally misaligned with their intent.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 125,
+    "paper_id": 0,
+    "2d_coord": [
+      3.406396116352481,
+      0.7736896922733154
+    ]
+  },
+  {
+    "idx": 558,
+    "MSU_id": 558,
+    "sentence": "The system produces customized, multitrack genome visualizations.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 126,
+    "paper_id": 0,
+    "2d_coord": [
+      -1.0533948745861426,
+      -0.8491442204269589
+    ]
+  },
+  {
+    "idx": 562,
+    "MSU_id": 562,
+    "sentence": "User experience varied with domain expertise.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 127,
+    "paper_id": 0,
+    "2d_coord": [
+      2.4476507147862447,
+      1.8277966171214646
+    ]
+  },
+  {
+    "idx": 563,
+    "MSU_id": 563,
+    "sentence": "AuraGenome proved adaptable across the spectrum—from bioinformatics specialists to experimental researchers with limited visualization backgrounds.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 127,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.6577526342802081,
+      1.3981371119744008
+    ]
+  },
+  {
+    "idx": 565,
+    "MSU_id": 565,
+    "sentence": "Participants consistently highlighted the system’s predefined interactive mechanisms—such as dynamic track reordering, attribute refinement, and visual reuse—as unexpectedly intuitive and powerful.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 127,
+    "paper_id": 0,
+    "2d_coord": [
+      3.2071670832301793,
+      0.815734529467438
+    ]
+  },
+  {
+    "idx": 566,
+    "MSU_id": 566,
+    "sentence": "These features facilitated iterative correction and fine-tuning.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 127,
+    "paper_id": 0,
+    "2d_coord": [
+      2.231737660032488,
+      -0.7313200314420706
+    ]
+  },
+  {
+    "idx": 567,
+    "MSU_id": 567,
+    "sentence": "These features encouraged exploratory behavior, allowing users to experiment with alternative layout patterns, highlight strategies, or comparative track compositions.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 127,
+    "paper_id": 0,
+    "2d_coord": [
+      1.1513968353919841,
+      -0.8864909096072495
+    ]
+  },
+  {
+    "idx": 574,
+    "MSU_id": 574,
+    "sentence": "Performance is modestly affected by the agents when handling ambiguous, conflicting, or poorly structured prompts.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 128,
+    "paper_id": 0,
+    "2d_coord": [
+      3.3685181765853933,
+      0.7339006956934295
+    ]
+  },
+  {
+    "idx": 575,
+    "MSU_id": 575,
+    "sentence": "Occasionally, handling such prompts leads to redundant tracks or minor layout inconsistencies.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 128,
+    "paper_id": 0,
+    "2d_coord": [
+      3.429699154541691,
+      0.788905300460869
+    ]
+  },
+  {
+    "idx": 576,
+    "MSU_id": 576,
+    "sentence": "These issues do not interrupt task execution.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 128,
+    "paper_id": 0,
+    "2d_coord": [
+      3.516486948290825,
+      -0.05177293173237454
+    ]
+  },
+  {
+    "idx": 583,
+    "MSU_id": 583,
+    "sentence": "Natural language-driven visualization generation significantly improves both efficiency and output quality.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 129,
+    "paper_id": 0,
+    "2d_coord": [
+      1.0995245574406387,
+      0.868882135316824
+    ]
+  },
+  {
+    "idx": 650,
+    "MSU_id": 650,
+    "sentence": "The methods in these approaches are effective for illustrating local alignments between similar sequences.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 149,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.4000653444124727,
+      -0.7759753058339506
+    ]
+  },
+  {
+    "idx": 651,
+    "MSU_id": 651,
+    "sentence": "The shortcoming of the linear layout becomes apparent in representations associating many ideograms with numerous relationships, where multitudes of lines transgress unrelated ideograms and make patterns difficult to discern.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 149,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.65774856516758,
+      -1.6797349581222658
+    ]
+  },
+  {
+    "idx": 653,
+    "MSU_id": 653,
+    "sentence": "Color maps reduce the texture and richness of the data despite addressing the problem of overburdened visualizations.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 149,
+    "paper_id": 1,
+    "2d_coord": [
+      0.6269046590399276,
+      -1.2603635948619294
+    ]
+  },
+  {
+    "idx": 690,
+    "MSU_id": 690,
+    "sentence": "Figure 1 shows a whole-genome visual representation of genomic rearrangements in multiple genomes.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 155,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.659945865927903,
+      -1.0430275591779163
+    ]
+  },
+  {
+    "idx": 693,
+    "MSU_id": 693,
+    "sentence": "For each sample, the figure shows large-scale rearrangements, density of small-scale events, and copy number profile.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 155,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.838894661663615,
+      -0.910552035925259
+    ]
+  },
+  {
+    "idx": 694,
+    "MSU_id": 694,
+    "sentence": "At 130Mb on chromosome 1, each sample has large deletions, inversions, and translocations involving chromosomes 4, 16, and 17.",
+    "category": "Result",
+    "rank": 5,
+    "type": "text",
+    "para_id": 155,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.8096993284368312,
+      -0.8952676273617439
+    ]
+  },
+  {
+    "idx": 695,
+    "MSU_id": 695,
+    "sentence": "This region marks the beginning of significantly increased copy number in three samples that continues to the end of the 1q arm.",
+    "category": "Result",
+    "rank": 5,
+    "type": "text",
+    "para_id": 155,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.007705208298319,
+      -0.789244569152057
+    ]
+  },
+  {
+    "idx": 698,
+    "MSU_id": 698,
+    "sentence": "In Figure 1E, glyph size is proportional to the number of small-scale events in each 5Mb region.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 156,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.908221473280223,
+      -3.5620378753360282
+    ]
+  },
+  {
+    "idx": 708,
+    "MSU_id": 708,
+    "sentence": "Figure 2 demonstrates three large-scale structural changes at the magnification level of a single fingerprint map contig (1-10Mb).",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 158,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.8533199958584037,
+      -0.7008868265225742
+    ]
+  },
+  {
+    "idx": 710,
+    "MSU_id": 710,
+    "sentence": "Each contig contains at least two BAC clones whose alignments indicate a rearrangement breakpoint captured within the BACs.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 158,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.301524393670178,
+      -1.0193361065217894
+    ]
+  },
+  {
+    "idx": 711,
+    "MSU_id": 711,
+    "sentence": "The correspondence between the order of BACs in the map contig and on the sequence assembly can be demonstrated clearly at this magnification.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 159,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.6104183866345165,
+      -1.7052876883267918
+    ]
+  },
+  {
+    "idx": 712,
+    "MSU_id": 712,
+    "sentence": "This correspondence can be used to identify structural changes in tumor genomes.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 159,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.9361345760662063,
+      -0.5905814216709525
+    ]
+  },
+  {
+    "idx": 713,
+    "MSU_id": 713,
+    "sentence": "Fingerprint-based alignments map BACs 163K07 and 252O11 from a contig of patient 10 onto two regions of chromosome 4 (97.1-98.1Mb, 127.5-128.5Mb).",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 159,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.1002207729636293,
+      -0.4669403817573447
+    ]
+  },
+  {
+    "idx": 714,
+    "MSU_id": 714,
+    "sentence": "These BACs capture a rearrangement.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 159,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.3074571598819986,
+      -1.0125115525740125
+    ]
+  },
+  {
+    "idx": 715,
+    "MSU_id": 715,
+    "sentence": "Alignments from the second half of this contig are inverted in their progression relative to clone order.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 159,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.374451909999748,
+      -1.1740846308983133
+    ]
+  },
+  {
+    "idx": 716,
+    "MSU_id": 716,
+    "sentence": "This inversion suggests that the rearrangement is an inversion.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 159,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.363533710986343,
+      -1.1483647325687314
+    ]
+  },
+  {
+    "idx": 717,
+    "MSU_id": 717,
+    "sentence": "The classical t(14;18) translocation is exemplified by the alignments of BACs 175B19 and 278H11 from a contig of patient 13.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 159,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.305581848840513,
+      -0.8729886280056213
+    ]
+  },
+  {
+    "idx": 718,
+    "MSU_id": 718,
+    "sentence": "The rearrangement in the map contig from patient 21 presents in a more complex fashion.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 159,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.3918586940147732,
+      -0.9231150725933633
+    ]
+  },
+  {
+    "idx": 719,
+    "MSU_id": 719,
+    "sentence": "This rearrangement is likely due to either an inversion or deletion.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 159,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.361205298754914,
+      -1.1476963208612145
+    ]
+  },
+  {
+    "idx": 720,
+    "MSU_id": 720,
+    "sentence": "The magnification of ideograms in Figure 2 is sufficiently high to allow for the display of small-scale events such as indels or SNPs.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 160,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.891808697465206,
+      -1.9848624250729554
+    ]
+  },
+  {
+    "idx": 722,
+    "MSU_id": 722,
+    "sentence": "The layout in Figure 2 permits identification of any correlation between small-scale events and rearrangements.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 160,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.31518684429407,
+      -1.7360296718111339
+    ]
+  },
+  {
+    "idx": 725,
+    "MSU_id": 725,
+    "sentence": "Figure 2 shows the structural correspondence between representations of two genomes, such as those of a tumor sample and a reference.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 161,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.9369939286628615,
+      -0.5907678884563111
+    ]
+  },
+  {
+    "idx": 729,
+    "MSU_id": 729,
+    "sentence": "The sequence assembly of nine BACs from patients 6, 8, 10, 11, 12, 13, 16, 24, and 25 is shown in Figure 3.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 162,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.3120713136502697,
+      -0.7078462102997646
+    ]
+  },
+  {
+    "idx": 730,
+    "MSU_id": 730,
+    "sentence": "These BACs capture the t(14;18) translocation.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 162,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.281707595219127,
+      -0.8974466808233734
+    ]
+  },
+  {
+    "idx": 731,
+    "MSU_id": 731,
+    "sentence": "The breakpoint position of the t(14;18) translocation is variable.",
+    "category": "Result",
+    "rank": 5,
+    "type": "text",
+    "para_id": 162,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.2376709985013483,
+      -0.8326055293401112
+    ]
+  },
+  {
+    "idx": 733,
+    "MSU_id": 733,
+    "sentence": "Sequence contigs capturing the t(14;18) translocation can be easily identified in Figure 3.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 163,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.1660682532722784,
+      -1.035454399765283
+    ]
+  },
+  {
+    "idx": 734,
+    "MSU_id": 734,
+    "sentence": "The coverage of adjacent sequence by neighboring sequence contigs can also be identified in Figure 3.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 163,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.158842828956914,
+      -1.0401434526334654
+    ]
+  },
+  {
+    "idx": 738,
+    "MSU_id": 738,
+    "sentence": "Sequence contigs that were found to span the breakpoint are shown at higher magnification in Figure 4.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 165,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.4487589205276996,
+      -1.901739704843331
+    ]
+  },
+  {
+    "idx": 739,
+    "MSU_id": 739,
+    "sentence": "Figure 4 demonstrates the precise structure of alignments within the breakpoint cluster on 14q32 and 18q21.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 165,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.4589798715934728,
+      -1.8697988572858504
+    ]
+  },
+  {
+    "idx": 740,
+    "MSU_id": 740,
+    "sentence": "The alignments are shown vis-à-vis exon structure of BCL2 and IGH in these regions.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 165,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.193924078612287,
+      -1.2340472636119062
+    ]
+  },
+  {
+    "idx": 744,
+    "MSU_id": 744,
+    "sentence": "In Figure 4, the scale of sequence contigs progresses counterclockwise.",
+    "category": "Result",
+    "rank": 2,
+    "type": "text",
+    "para_id": 166,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.4414714697387607,
+      -1.9645234626626842
+    ]
+  },
+  {
+    "idx": 745,
+    "MSU_id": 745,
+    "sentence": "In Figure 4, the scale of reference sequence ideograms progresses clockwise.",
+    "category": "Result",
+    "rank": 2,
+    "type": "text",
+    "para_id": 166,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.440557349085651,
+      -1.9732970509046972
+    ]
+  },
+  {
+    "idx": 748,
+    "MSU_id": 748,
+    "sentence": "For example, the position 58,910kb is shown as 910kb, which are the only digits that change in the labels across the image.",
+    "category": "Result",
+    "rank": 2,
+    "type": "text",
+    "para_id": 166,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.259702009119633,
+      -2.2601679852088767
+    ]
+  },
+  {
+    "idx": 751,
+    "MSU_id": 751,
+    "sentence": "Local scale adjustment emphasizes fine structure of data in a region while preserving context.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 167,
+    "paper_id": 1,
+    "2d_coord": [
+      0.6577182343685135,
+      -0.3157611967623771
+    ]
+  },
+  {
+    "idx": 754,
+    "MSU_id": 754,
+    "sentence": "There are several large regions in which copy number values are consistently altered.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 168,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.976922921146563,
+      -0.7835393375018461
+    ]
+  },
+  {
+    "idx": 755,
+    "MSU_id": 755,
+    "sentence": "Most of the statistically significant variation in the figure occurs over short distances which cannot be effectively shown at this resolution.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 168,
+    "paper_id": 1,
+    "2d_coord": [
+      0.34512101526695405,
+      -1.1209765432937788
+    ]
+  },
+  {
+    "idx": 756,
+    "MSU_id": 756,
+    "sentence": "Very few of the array probe values depart sufficiently from the average to be meaningful.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 168,
+    "paper_id": 1,
+    "2d_coord": [
+      2.1247490315810205,
+      2.9105078565349864
+    ]
+  },
+  {
+    "idx": 757,
+    "MSU_id": 757,
+    "sentence": "Regions of interest in the data set are sparse.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 168,
+    "paper_id": 1,
+    "2d_coord": [
+      0.42828126384311604,
+      -1.0544493669610837
+    ]
+  },
+  {
+    "idx": 758,
+    "MSU_id": 758,
+    "sentence": "Figure 5 suggests an abrupt change in copy number at about 60Mb of chromosome 6 (F).",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 169,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.1678834724499207,
+      -1.8848286017711795
+    ]
+  },
+  {
+    "idx": 759,
+    "MSU_id": 759,
+    "sentence": "Figure 5 shows spikes in copy number increase on chromosome 17.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 169,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.140774604217218,
+      -1.8734215287759461
+    ]
+  },
+  {
+    "idx": 760,
+    "MSU_id": 760,
+    "sentence": "Detail of these features cannot be discerned at the scale of Figure 5.",
+    "category": "Result",
+    "rank": 2,
+    "type": "text",
+    "para_id": 169,
+    "paper_id": 1,
+    "2d_coord": [
+      0.3319086890454126,
+      -1.154381350710856
+    ]
+  },
+  {
+    "idx": 773,
+    "MSU_id": 773,
+    "sentence": "Figure 8 illustrates how synteny between two genomes can be shown at a scale of 250kb.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 172,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.4003529766554403,
+      -1.4409007364462758
+    ]
+  },
+  {
+    "idx": 774,
+    "MSU_id": 774,
+    "sentence": "Each panel in Figure 8 represents the synteny between a single dog chromosome and the entire human reference sequence.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 172,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.3567741001203184,
+      -1.336167167775339
+    ]
+  },
+  {
+    "idx": 776,
+    "MSU_id": 776,
+    "sentence": "Dog chromosome 31 shows similarity to both human chromosomes 3 and 21, rather than a single consensus target.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 172,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.457619028359404,
+      -1.158787313095812
+    ]
+  },
+  {
+    "idx": 818,
+    "MSU_id": 818,
+    "sentence": "Rearrangements, including translocations, inversions, and deletions, were identified from alignments of fingerprinted BACs onto the reference sequence.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 180,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.0446292160941515,
+      -0.5064869878158084
+    ]
+  },
+  {
+    "idx": 828,
+    "MSU_id": 828,
+    "sentence": "Each set is represented in Figure 8 as a ribbon, whose ends represent the extent of the set alignments on the dog and human chromosomes.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 181,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.3304253861169584,
+      -1.4493720659411127
+    ]
+  },
+  {
+    "idx": 829,
+    "MSU_id": 829,
+    "sentence": "Figure 8 shows sets that spanned at least 250kb on both human and dog chromosome.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 181,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.3900726385404996,
+      -1.4383264516374978
+    ]
+  },
+  {
+    "idx": 852,
+    "MSU_id": 852,
+    "sentence": "The ordered clone structure of three fingerprint map contigs from three follicular lymphoma tumor samples is shown in Figure 2.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 185,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.322755923603616,
+      -0.6000174233882257
+    ]
+  },
+  {
+    "idx": 855,
+    "MSU_id": 855,
+    "sentence": "Clones with multiple alignments to distant genomic regions are highlighted in red, such as clone 175B19 in sample 13.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 185,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.9718857996169996,
+      -1.2138317865483028
+    ]
+  },
+  {
+    "idx": 856,
+    "MSU_id": 856,
+    "sentence": "The alignments and extent of these clones on the map contig and genomic region are highlighted in Figure 2F.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 185,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.793798995902351,
+      -1.1335879570089937
+    ]
+  },
+  {
+    "idx": 857,
+    "MSU_id": 857,
+    "sentence": "Small-scale indels detected by fingerprints in each of the three samples are shown in track G, in three concentric rings.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 185,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.5932502156471913,
+      -3.570766085647059
+    ]
+  },
+  {
+    "idx": 859,
+    "MSU_id": 859,
+    "sentence": "Figure 3 shows the alignment of short-read Illumina assemblies of BAC clones capturing the t(14;18) translocation in nine distinct follicular lymphoma tumor samples.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 186,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.3308688543759817,
+      -0.6812016714282393
+    ]
+  },
+  {
+    "idx": 863,
+    "MSU_id": 863,
+    "sentence": "Sequence contigs that capture a translocation are highlighted in red (E) and have their alignment ribbons strongly colored.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 186,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.9865343851262516,
+      -1.2199012152135533
+    ]
+  },
+  {
+    "idx": 864,
+    "MSU_id": 864,
+    "sentence": "These alignments are shown in red in track D.",
+    "category": "Result",
+    "rank": 2,
+    "type": "text",
+    "para_id": 186,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.6631800606940214,
+      -3.2187566961738696
+    ]
+  },
+  {
+    "idx": 870,
+    "MSU_id": 870,
+    "sentence": "The sequence contigs were found to span translocations.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 187,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.1572336598765127,
+      -1.0336591027717028
+    ]
+  },
+  {
+    "idx": 872,
+    "MSU_id": 872,
+    "sentence": "Sequence alignments of the contigs are shown as ribbons to regions of chromosome 14 (105.396-105.403 Mb and 105.436 Mb).",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 187,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.4303293595547917,
+      -1.650764539495185
+    ]
+  },
+  {
+    "idx": 873,
+    "MSU_id": 873,
+    "sentence": "The extent of each alignment is shown as tiles in track E, colored after the corresponding sequence contig.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 188,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.029608206832843,
+      -2.43965804407544
+    ]
+  },
+  {
+    "idx": 874,
+    "MSU_id": 874,
+    "sentence": "Gene exons in the vicinity are labeled in track F and suffixed with their order within the gene (e.g., BCL2-0 is the first exon, BCL2-1 the next, etc.).",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 188,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.202284895326917,
+      -1.2450388938252146
+    ]
+  },
+  {
+    "idx": 876,
+    "MSU_id": 876,
+    "sentence": "Samples are represented in each of the five histograms in tracks A-E.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 189,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.5632608555778367,
+      -3.403869967384356
+    ]
+  },
+  {
+    "idx": 877,
+    "MSU_id": 877,
+    "sentence": "A crop of histogram region F is shown in the center of the figure to demonstrate the structure of each histogram track.",
+    "category": "Result",
+    "rank": 2,
+    "type": "text",
+    "para_id": 189,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.5831989025876044,
+      -3.3376596541904173
+    ]
+  },
+  {
+    "idx": 880,
+    "MSU_id": 880,
+    "sentence": "Variability within each 1,000 probe set is shown in histogram components H and I, which show the maximum and minimum of 3-probe average values within the set, respectively.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 189,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.09811717176977,
+      -3.3692283505553013
+    ]
+  },
+  {
+    "idx": 884,
+    "MSU_id": 884,
+    "sentence": "Several regions showing large copy number changes are shown on ideograms with an expanded scale.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 190,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.894729660476105,
+      -1.9401059631108386
+    ]
+  },
+  {
+    "idx": 886,
+    "MSU_id": 886,
+    "sentence": "Regions A and B on chromosomes 6 are shown at 10x magnification on ideograms C and D, respectively, with ribbons E connecting these regions with their zoomed ideograms.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 190,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.006178036368008,
+      -1.820412281607287
+    ]
+  },
+  {
+    "idx": 887,
+    "MSU_id": 887,
+    "sentence": "Region F on chromosome 17 is shown at 5x magnification as ideogram G.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 190,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.1176574254966987,
+      -1.8650785092928526
+    ]
+  },
+  {
+    "idx": 888,
+    "MSU_id": 888,
+    "sentence": "Regions H and I on ideogram G are shown at 40x magnification on ideograms J and K, respectively.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 190,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.9027939818489665,
+      -1.909552011168096
+    ]
+  },
+  {
+    "idx": 889,
+    "MSU_id": 889,
+    "sentence": "Individual probe values are shown as scatter plots on ideograms J and K.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 190,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.1539339595220157,
+      -3.105379935614318
+    ]
+  },
+  {
+    "idx": 891,
+    "MSU_id": 891,
+    "sentence": "Regions of interest A and B on chromosome 6 and J and K on chromosome 17 are magnified by a continuous scale expansion in these regions.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 191,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.062698890580938,
+      -1.7892287760703403
+    ]
+  },
+  {
+    "idx": 892,
+    "MSU_id": 892,
+    "sentence": "Individual probe values are shown as a scatter plot in the vicinity of regions J and K.",
+    "category": "Result",
+    "rank": 2,
+    "type": "text",
+    "para_id": 191,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.1595391071792631,
+      -3.1266668795137904
+    ]
+  },
+  {
+    "idx": 915,
+    "MSU_id": 915,
+    "sentence": "The nucleotide sequence of a t(14;18) chromosomal breakpoint in follicular lymphoma was determined.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 214,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.380294495877648,
+      -0.6916440722010363
+    ]
+  },
+  {
+    "idx": 916,
+    "MSU_id": 916,
+    "sentence": "A breakpoint-cluster region near a transcriptionally active locus on chromosome 18 was demonstrated.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 214,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.1567341488074048,
+      -0.8303473252919693
+    ]
+  },
+  {
+    "idx": 949,
+    "MSU_id": 949,
+    "sentence": "The grapevine genome sequence suggests ancestral hexaploidization in major angiosperm phyla.",
+    "category": "Result",
+    "rank": 5,
+    "type": "text",
+    "para_id": 229,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.617270287437654,
+      0.4999325725344476
+    ]
+  },
+  {
+    "idx": 1012,
+    "MSU_id": 1012,
+    "sentence": "Distinctive chromosomal abnormalities are observed in histologic subtypes of non-Hodgkin's lymphoma.",
+    "category": "Result",
+    "rank": 5,
+    "type": "text",
+    "para_id": 255,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.4191056921247993,
+      -0.6079251798436778
+    ]
+  },
+  {
+    "idx": 1035,
+    "MSU_id": 1035,
+    "sentence": "Through the recommendation, GenoREC allows the user to avoid a wide range of similar but sub-optimal visualization options given the data and task.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 270,
+    "paper_id": 2,
+    "2d_coord": [
+      0.3045363045290315,
+      1.7371578510819954
+    ]
+  },
+  {
+    "idx": 1047,
+    "MSU_id": 1047,
+    "sentence": "Two user studies demonstrate that GenoREC recommends visualizations accepted by domain experts and suited to address the given genomics analysis problem.",
+    "category": "Result",
+    "rank": 5,
+    "type": "text",
+    "para_id": 271,
+    "paper_id": 2,
+    "2d_coord": [
+      0.2615864426965088,
+      1.4599284883462202
+    ]
+  },
+  {
+    "idx": 1086,
+    "MSU_id": 1086,
+    "sentence": "The results of the user study demonstrate that GenoREC’s recommendations are helpful for analysts working in the space of genomics data analysis.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 276,
+    "paper_id": 2,
+    "2d_coord": [
+      0.3653218637162896,
+      2.2002921212897344
+    ]
+  },
+  {
+    "idx": 1161,
+    "MSU_id": 1161,
+    "sentence": "GenoREC recommends linear and circular layouts when a user specifies a BED file and a VCF file with categorical data.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 287,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.6385713322432564,
+      -2.0632115955973953
+    ]
+  },
+  {
+    "idx": 1162,
+    "MSU_id": 1162,
+    "sentence": "GenoREC switches to a linear recommendation when a user adds a BIGWIG file with quantitative data.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 287,
+    "paper_id": 2,
+    "2d_coord": [
+      0.44499280697281957,
+      1.7592709210784194
+    ]
+  },
+  {
+    "idx": 1186,
+    "MSU_id": 1186,
+    "sentence": "The system recommends two tracks stacked in a linear and circular layout (Fig. 3A).",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 293,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.5490973192914602,
+      -2.841309064494438
+    ]
+  },
+  {
+    "idx": 1187,
+    "MSU_id": 1187,
+    "sentence": "The recommended visualizations allow an overview of the genetic features from the two files.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 293,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.2736038125150402,
+      -0.5252055147424061
+    ]
+  },
+  {
+    "idx": 1190,
+    "MSU_id": 1190,
+    "sentence": "The updated recommendation removes the circular layout recommendation and shows two linear tracks.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 293,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.5881742725836353,
+      -2.795713110809147
+    ]
+  },
+  {
+    "idx": 1193,
+    "MSU_id": 1193,
+    "sentence": "Both visualizations support looking up high and low values of the BIGWIG file.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 293,
+    "paper_id": 2,
+    "2d_coord": [
+      0.6901558805278015,
+      -0.7461116721860955
+    ]
+  },
+  {
+    "idx": 1194,
+    "MSU_id": 1194,
+    "sentence": "Both visualizations support analyzing genes in the corresponding BED and VCF tracks.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 293,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.2687232968336517,
+      -0.5292064660537087
+    ]
+  },
+  {
+    "idx": 1256,
+    "MSU_id": 1256,
+    "sentence": "We noticed that it was not possible to recommend an orthogonal 'Arrangement' if the 'Layout' of the tracks were circular.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 304,
+    "paper_id": 2,
+    "2d_coord": [
+      0.8847350176763148,
+      -3.04220185922229
+    ]
+  },
+  {
+    "idx": 1257,
+    "MSU_id": 1257,
+    "sentence": "This exercise allowed us to develop the sequence and led to the creation of the sequential model.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 304,
+    "paper_id": 2,
+    "2d_coord": [
+      2.815467263180823,
+      0.7846475987297263
+    ]
+  },
+  {
+    "idx": 1268,
+    "MSU_id": 1268,
+    "sentence": "Fig. 3A shows an example of stacked alignment where BED1 and VCF1 files are shown as two separate tracks that are vertically stacked.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 306,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.46998827099966795,
+      -2.95307934198013
+    ]
+  },
+  {
+    "idx": 1306,
+    "MSU_id": 1306,
+    "sentence": "This combination will lead to stacked and overlayed tracks.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 315,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.37393422798813514,
+      -3.109645982712078
+    ]
+  },
+  {
+    "idx": 1318,
+    "MSU_id": 1318,
+    "sentence": "The adjacent circular arrangement allows the analyst to look at overall connections between sequences in a space-efficient manner.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 317,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.7850046737876685,
+      -1.749774490630082
+    ]
+  },
+  {
+    "idx": 1331,
+    "MSU_id": 1331,
+    "sentence": "In the 'Quant.' column (Fig. 5), all the cells corresponding to position (e.g., 'Point'), length (e.g., 'Rect'), and saturation (i.e., 'Saturation') have a value of 1.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 319,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.981639482645509,
+      -2.2661761275880306
+    ]
+  },
+  {
+    "idx": 1332,
+    "MSU_id": 1332,
+    "sentence": "Since the hue channel is not used to represent quantitative data, all cells corresponding to the hue channel have a value of 1 (i.e., empty cells).",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 319,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.0327097055050438,
+      -2.1856735916835808
+    ]
+  },
+  {
+    "idx": 1387,
+    "MSU_id": 1387,
+    "sentence": "This enables quick inspection of many different visualization options.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 332,
+    "paper_id": 2,
+    "2d_coord": [
+      1.0718134605389718,
+      -0.9281125128373313
+    ]
+  },
+  {
+    "idx": 1400,
+    "MSU_id": 1400,
+    "sentence": "Feedback from this study helped refine GenoREC’s design goals.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 335,
+    "paper_id": 2,
+    "2d_coord": [
+      0.3927469817328109,
+      2.132616674669019
+    ]
+  },
+  {
+    "idx": 1401,
+    "MSU_id": 1401,
+    "sentence": "Feedback from this study helped improve the user interface and the system’s overall workflow.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 335,
+    "paper_id": 2,
+    "2d_coord": [
+      2.7343733677346367,
+      1.4640579452637963
+    ]
+  },
+  {
+    "idx": 1411,
+    "MSU_id": 1411,
+    "sentence": "Most participants found GenoREC’s recommendations accurate and only required minor modifications for the scenarios included in the study.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 337,
+    "paper_id": 2,
+    "2d_coord": [
+      0.3597357968979877,
+      2.3066695967879562
+    ]
+  },
+  {
+    "idx": 1412,
+    "MSU_id": 1412,
+    "sentence": "This feedback led to the export feature in GenoREC’s user interface.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 337,
+    "paper_id": 2,
+    "2d_coord": [
+      0.14348439405450109,
+      1.9326068588481993
+    ]
+  },
+  {
+    "idx": 1413,
+    "MSU_id": 1413,
+    "sentence": "One participant expected the visualizations to include additional biological contexts such as gene annotation track and ideogram plots that provide a summary of chromosomes coupled with genomic location information.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 337,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.435625649597795,
+      -1.0710323928080867
+    ]
+  },
+  {
+    "idx": 1414,
+    "MSU_id": 1414,
+    "sentence": "An option to add a gene annotation track and ideograms to the visualization in GenoREC was added.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 337,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.371092492668033,
+      -1.1494328090994121
+    ]
+  },
+  {
+    "idx": 1415,
+    "MSU_id": 1415,
+    "sentence": "Another participant asked for an additional interactive component as a tabular view in the GenoREC interface that enables a faster lookup of gene location.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 337,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.5776619850194562,
+      0.0450511201323394
+    ]
+  },
+  {
+    "idx": 1418,
+    "MSU_id": 1418,
+    "sentence": "GenoREC’s user interface was well-received, and participants understood the data and task descriptions.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 337,
+    "paper_id": 2,
+    "2d_coord": [
+      0.19512946499152334,
+      1.967961874126693
+    ]
+  },
+  {
+    "idx": 1419,
+    "MSU_id": 1419,
+    "sentence": "One participant stated that it is possible to further abstract the domain-specific file inputs.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 337,
+    "paper_id": 2,
+    "2d_coord": [
+      1.8709048086679596,
+      -0.48376881354144224
+    ]
+  },
+  {
+    "idx": 1428,
+    "MSU_id": 1428,
+    "sentence": "Scenarios where GenoREC’s responses were significantly higher than the alternate stimulus are marked with an asterisk.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 341,
+    "paper_id": 2,
+    "2d_coord": [
+      0.5548170845400162,
+      2.551257818350328
+    ]
+  },
+  {
+    "idx": 1483,
+    "MSU_id": 1483,
+    "sentence": "The median score is higher for GenoREC’s combined responses (median = 4) than for the alternate stimuli (median = 3).",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 352,
+    "paper_id": 2,
+    "2d_coord": [
+      0.6127192100321687,
+      2.520034672321948
+    ]
+  },
+  {
+    "idx": 1484,
+    "MSU_id": 1484,
+    "sentence": "The interquartile range (IQR = 1; Q1 = 4, Q3 = 5) of GenoREC is less dispersed than the alternate stimuli’s interquartile range (IQR = 2; Q1 = 2, Q3 = 4).",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 352,
+    "paper_id": 2,
+    "2d_coord": [
+      0.6264014912682554,
+      2.708727453829556
+    ]
+  },
+  {
+    "idx": 1490,
+    "MSU_id": 1490,
+    "sentence": "For Scenarios 1, 2, 6, and 8, GenoREC’s responses are significantly higher than alternate stimulus responses with p < 0.0055 for the Wilcoxon test.",
+    "category": "Result",
+    "rank": 5,
+    "type": "text",
+    "para_id": 352,
+    "paper_id": 2,
+    "2d_coord": [
+      0.5399088731486869,
+      2.539161600627388
+    ]
+  },
+  {
+    "idx": 1491,
+    "MSU_id": 1491,
+    "sentence": "GenoREC's recommendation performed better in Scenario 1 (p = 0.0018) and Scenario 8 (p = 0.0021).",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 353,
+    "paper_id": 2,
+    "2d_coord": [
+      0.511701179542362,
+      2.4355583075477023
+    ]
+  },
+  {
+    "idx": 1492,
+    "MSU_id": 1492,
+    "sentence": "Scenario 1 and Scenario 8 have the strongest signal for GenoREC's stimuli among all the scenarios.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 353,
+    "paper_id": 2,
+    "2d_coord": [
+      0.5122447909942774,
+      2.549880050480328
+    ]
+  },
+  {
+    "idx": 1495,
+    "MSU_id": 1495,
+    "sentence": "Some analysts did not like the circular layout based on participant feedback.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 354,
+    "paper_id": 2,
+    "2d_coord": [
+      0.9166114012329628,
+      -3.150998839057807
+    ]
+  },
+  {
+    "idx": 1496,
+    "MSU_id": 1496,
+    "sentence": "Multiple participants (P5, P6, P7, and P10) explicitly noted that they do not prefer to use circular layouts.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 354,
+    "paper_id": 2,
+    "2d_coord": [
+      0.9368178997001704,
+      -3.241727317788414
+    ]
+  },
+  {
+    "idx": 1497,
+    "MSU_id": 1497,
+    "sentence": "P7 mentioned that they generally avoid using circular layouts for their genomics visualization.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 354,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.8228765648738223,
+      -1.3190492560866987
+    ]
+  },
+  {
+    "idx": 1498,
+    "MSU_id": 1498,
+    "sentence": "An additional reason for preferring GenoREC’s recommendation was the focus+context interaction.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 354,
+    "paper_id": 2,
+    "2d_coord": [
+      0.10666821774331434,
+      2.1628967942696264
+    ]
+  },
+  {
+    "idx": 1499,
+    "MSU_id": 1499,
+    "sentence": "The focus+context interaction simplified the task of navigating to a specific genome region.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 354,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.6547408760378601,
+      -0.012086605981245157
+    ]
+  },
+  {
+    "idx": 1502,
+    "MSU_id": 1502,
+    "sentence": "Participants found the overlayed tracks overwhelming and did not add any benefits to the stacked layout.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 354,
+    "paper_id": 2,
+    "2d_coord": [
+      0.4723233043737347,
+      -3.511161390923543
+    ]
+  },
+  {
+    "idx": 1503,
+    "MSU_id": 1503,
+    "sentence": "For Scenario 3 (p = 0.08) and Scenario 7 (p = 0.35), we did not find a large difference between the GenoREC and the alternate stimuli.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 355,
+    "paper_id": 2,
+    "2d_coord": [
+      0.6446735665848529,
+      2.6471901547523315
+    ]
+  },
+  {
+    "idx": 1504,
+    "MSU_id": 1504,
+    "sentence": "For Scenario 3, participants found both GenoREC (median = 5) and alternate stimulus (median = 4) useful.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 355,
+    "paper_id": 2,
+    "2d_coord": [
+      0.6345658358285572,
+      2.5187670893705687
+    ]
+  },
+  {
+    "idx": 1506,
+    "MSU_id": 1506,
+    "sentence": "P2 mentioned that a circular segregated layout allowed them to see more granular data, which supported them in searching visual patterns.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 355,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.8276274188311953,
+      -1.8289668039755917
+    ]
+  },
+  {
+    "idx": 1507,
+    "MSU_id": 1507,
+    "sentence": "In Scenario 7, the interquartile range of GenoREC (IQR = 2, Q1 = 2, Q3 = 4) was less than the alternate stimulus (IQR = 2, Q1 = 3, Q3 = 5) based on the summary.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 355,
+    "paper_id": 2,
+    "2d_coord": [
+      0.6285036828327635,
+      2.692378228644195
+    ]
+  },
+  {
+    "idx": 1509,
+    "MSU_id": 1509,
+    "sentence": "Participants in Scenario 7 preferred to interact with the tracks and zoom into specific regions of the circular tracks.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 355,
+    "paper_id": 2,
+    "2d_coord": [
+      0.9560717309203183,
+      -2.6736835090308277
+    ]
+  },
+  {
+    "idx": 1513,
+    "MSU_id": 1513,
+    "sentence": "The results from the quantitative evaluation show that GenoREC’s recommendations are rated higher than the alternate recommendation.",
+    "category": "Result",
+    "rank": 5,
+    "type": "text",
+    "para_id": 356,
+    "paper_id": 2,
+    "2d_coord": [
+      0.5184771318763425,
+      2.388980730114033
+    ]
+  },
+  {
+    "idx": 1514,
+    "MSU_id": 1514,
+    "sentence": "The qualitative feedback indicated that circular layouts do not work well with tasks requiring navigation with zooming and panning.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 356,
+    "paper_id": 2,
+    "2d_coord": [
+      0.9019667198723137,
+      -3.1020832550077166
+    ]
+  },
+  {
+    "idx": 1515,
+    "MSU_id": 1515,
+    "sentence": "Users liked the focus+context recommendation because it simplifies navigation to specific regions in the genome.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 356,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.6518023168642448,
+      -0.006400607793160416
+    ]
+  },
+  {
+    "idx": 1679,
+    "MSU_id": 1679,
+    "sentence": "The analysis reveals limited genetic overlap between systemic lupus erythematosus (SLE) and sixteen autoimmune diseases.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 402,
+    "paper_id": 2,
+    "2d_coord": [
+      -3.4414240050580003,
+      0.03361868504637008
+    ]
+  },
+  {
+    "idx": 1757,
+    "MSU_id": 1757,
+    "sentence": "Gosling supports the design of novel genomics visualizations.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 429,
+    "paper_id": 3,
+    "2d_coord": [
+      -0.30415406030041026,
+      0.04021615374470495
+    ]
+  },
+  {
+    "idx": 1809,
+    "MSU_id": 1809,
+    "sentence": "Gosling supports the design of novel genomics visualizations using semantic zooming.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 436,
+    "paper_id": 3,
+    "2d_coord": [
+      -0.35494521901686704,
+      0.14279342311768017
+    ]
+  },
+  {
+    "idx": 2015,
+    "MSU_id": 2015,
+    "sentence": "A matrix visualization can show the strength of interactions between two genomic regions.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 470,
+    "paper_id": 3,
+    "2d_coord": [
+      -1.4795376434883385,
+      -0.653707991503388
+    ]
+  },
+  {
+    "idx": 2170,
+    "MSU_id": 2170,
+    "sentence": "The two matrices are linked to show the same genomic regions when zooming and panning, enabling effective visual comparison.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 520,
+    "paper_id": 3,
+    "2d_coord": [
+      -1.5747717053172936,
+      -0.6401793698383734
+    ]
+  },
+  {
+    "idx": 2176,
+    "MSU_id": 2176,
+    "sentence": "The expressiveness of Gosling allows users to easily create interactive versions of static figures.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 520,
+    "paper_id": 3,
+    "2d_coord": [
+      0.3113520131931491,
+      -0.21547466532771653
+    ]
+  },
+  {
+    "idx": 2240,
+    "MSU_id": 2240,
+    "sentence": "The examples represent the wide spectrum of visual representations and interactions supported by Gosling.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 530,
+    "paper_id": 3,
+    "2d_coord": [
+      0.13519877344147826,
+      -0.35513228932916746
+    ]
+  },
+  {
+    "idx": 2283,
+    "MSU_id": 2283,
+    "sentence": "The analyses implicate candidate causal variants at inherited risk loci.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 544,
+    "paper_id": 3,
+    "2d_coord": [
+      -2.0962448750393166,
+      -0.19470643812205998
+    ]
+  },
+  {
+    "idx": 2331,
+    "MSU_id": 2331,
+    "sentence": "Iterative correction of Hi-C data reveals hallmarks of chromosome organization.",
+    "category": "Result",
+    "rank": 5,
+    "type": "text",
+    "para_id": 562,
+    "paper_id": 3,
+    "2d_coord": [
+      -2.719406159122584,
+      0.16777253976360962
+    ]
+  },
+  {
+    "idx": 2376,
+    "MSU_id": 2376,
+    "sentence": "Comprehensive mapping of long-range interactions reveals folding principles of the human genome.",
+    "category": "Result",
+    "rank": 5,
+    "type": "text",
+    "para_id": 578,
+    "paper_id": 3,
+    "2d_coord": [
+      -2.677265768889517,
+      0.18171634341784254
+    ]
+  },
+  {
+    "idx": 2379,
+    "MSU_id": 2379,
+    "sentence": "Highly integrated single-base resolution maps of the epigenome in Arabidopsis were created.",
+    "category": "Result",
+    "rank": 5,
+    "type": "text",
+    "para_id": 580,
+    "paper_id": 3,
+    "2d_coord": [
+      -2.740269049447117,
+      0.4668335771651764
+    ]
+  },
+  {
+    "idx": 2400,
+    "MSU_id": 2400,
+    "sentence": "An improved reference genome of the arboviral vector Aedes albopictus is presented.",
+    "category": "Result",
+    "rank": 5,
+    "type": "text",
+    "para_id": 588,
+    "paper_id": 3,
+    "2d_coord": [
+      -2.669006130110505,
+      -0.29898296757433773
+    ]
+  },
+  {
+    "idx": 2418,
+    "MSU_id": 2418,
+    "sentence": "A 3D map of the human genome at kilobase resolution reveals principles of chromatin looping.",
+    "category": "Result",
+    "rank": 5,
+    "type": "text",
+    "para_id": 596,
+    "paper_id": 3,
+    "2d_coord": [
+      -2.70029188746798,
+      0.18079391961390698
+    ]
+  },
+  {
+    "idx": 2511,
+    "MSU_id": 2511,
+    "sentence": "This figure shows an example that overlays rectangular, triangular, and textual marks to create ideograms.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 638,
+    "paper_id": 3,
+    "2d_coord": [
+      -1.1189854509191346,
+      -3.036033590121164
+    ]
+  },
+  {
+    "idx": 2515,
+    "MSU_id": 2515,
+    "sentence": "This figure shows an area chart that is juxtaposed with an ideogram (i.e., overlaid tracks).",
+    "category": "Result",
+    "rank": 2,
+    "type": "text",
+    "para_id": 641,
+    "paper_id": 3,
+    "2d_coord": [
+      -1.0602393419786993,
+      -3.044865595929499
+    ]
+  },
+  {
+    "idx": 2529,
+    "MSU_id": 2529,
+    "sentence": "A multi-scale sequence plot shows the overall distribution of nucleotides using stacked bar charts.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 654,
+    "paper_id": 3,
+    "2d_coord": [
+      -1.4303770441875856,
+      -1.4851661257414965
+    ]
+  },
+  {
+    "idx": 2530,
+    "MSU_id": 2530,
+    "sentence": "The stacked bar charts change to show individual nucleotides in detail upon zooming in enough.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 654,
+    "paper_id": 3,
+    "2d_coord": [
+      -1.425874626052563,
+      -1.4874258945458791
+    ]
+  },
+  {
+    "idx": 2534,
+    "MSU_id": 2534,
+    "sentence": "Fig. 12 compares Micro-C and Hi-C.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 661,
+    "paper_id": 3,
+    "2d_coord": [
+      -2.6738945640651157,
+      -1.354737955633537
+    ]
+  },
+  {
+    "idx": 2535,
+    "MSU_id": 2535,
+    "sentence": "Comparative matrix visualizations of Micro-C and Hi-C for HFFc6 cells are presented.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 662,
+    "paper_id": 3,
+    "2d_coord": [
+      -2.7028156171055597,
+      -1.3863661127355702
+    ]
+  },
+  {
+    "idx": 2536,
+    "MSU_id": 2536,
+    "sentence": "The Micro-C visualization is shown on the left.",
+    "category": "Result",
+    "rank": 2,
+    "type": "text",
+    "para_id": 662,
+    "paper_id": 3,
+    "2d_coord": [
+      -2.65471122747185,
+      -1.3246769019066378
+    ]
+  },
+  {
+    "idx": 2537,
+    "MSU_id": 2537,
+    "sentence": "The Hi-C visualization is shown on the right.",
+    "category": "Result",
+    "rank": 2,
+    "type": "text",
+    "para_id": 662,
+    "paper_id": 3,
+    "2d_coord": [
+      -2.6492062679660684,
+      -1.329158363780211
+    ]
+  },
+  {
+    "idx": 2550,
+    "MSU_id": 2550,
+    "sentence": "Vega-Lite and GenomeSpy lack coordinated interactivity features such as 'view' composition and brushing and linking, respectively.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 673,
+    "paper_id": 3,
+    "2d_coord": [
+      -0.458087436274577,
+      -0.5132863752673797
+    ]
+  },
+  {
+    "idx": 2551,
+    "MSU_id": 2551,
+    "sentence": "Gosling.js supports multi-scale encoding with semantic zoom.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 673,
+    "paper_id": 3,
+    "2d_coord": [
+      0.29120475055808537,
+      -0.4682655998969259
+    ]
+  },
+  {
+    "idx": 2552,
+    "MSU_id": 2552,
+    "sentence": "ggBio provides limited semantic zoom for multi-scale encoding.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 673,
+    "paper_id": 3,
+    "2d_coord": [
+      0.25217447521161573,
+      -0.8047108806285618
+    ]
+  },
+  {
+    "idx": 2569,
+    "MSU_id": 2569,
+    "sentence": "The results demonstrate the usability and effectiveness of IntelliCircos in authoring circos plots.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 679,
+    "paper_id": 4,
+    "2d_coord": [
+      2.5887077137767296,
+      -2.2605025822516955
+    ]
+  },
+  {
+    "idx": 2602,
+    "MSU_id": 2602,
+    "sentence": "The manual process in ShinyCircos-V2.0 is cognitively overwhelming for users.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 684,
+    "paper_id": 4,
+    "2d_coord": [
+      2.0921037507016806,
+      -1.521616079199471
+    ]
+  },
+  {
+    "idx": 2605,
+    "MSU_id": 2605,
+    "sentence": "The predefined rules in GenoREC make it difficult to adapt to new tasks, limiting its quality and applicability.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 684,
+    "paper_id": 4,
+    "2d_coord": [
+      0.35324125944444823,
+      0.9230051099645111
+    ]
+  },
+  {
+    "idx": 2606,
+    "MSU_id": 2606,
+    "sentence": "It is difficult for bioinformatics analysts to specify their design requirements using GenoREC.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 684,
+    "paper_id": 4,
+    "2d_coord": [
+      0.34037436789223036,
+      1.010264617831704
+    ]
+  },
+  {
+    "idx": 2618,
+    "MSU_id": 2618,
+    "sentence": "The results demonstrate that IntelliCircos can effectively assist users in the design of circos plots.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 686,
+    "paper_id": 4,
+    "2d_coord": [
+      2.551677469148498,
+      -2.2767810022171613
+    ]
+  },
+  {
+    "idx": 2619,
+    "MSU_id": 2619,
+    "sentence": "The results demonstrate that IntelliCircos greatly simplifies the implementation of circos plots.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 686,
+    "paper_id": 4,
+    "2d_coord": [
+      2.546331095059197,
+      -2.414556224460963
+    ]
+  },
+  {
+    "idx": 2655,
+    "MSU_id": 2655,
+    "sentence": "Ideogram (Figure 1 (B1)) and highlight (Figure 1 (B2)) have a synthesized relationship.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 694,
+    "paper_id": 4,
+    "2d_coord": [
+      -1.1144431114899493,
+      -2.911622950929803
+    ]
+  },
+  {
+    "idx": 2656,
+    "MSU_id": 2656,
+    "sentence": "The synthesized track and other tracks have a stacked relationship.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 694,
+    "paper_id": 4,
+    "2d_coord": [
+      -0.2959484197457337,
+      -3.180169807276413
+    ]
+  },
+  {
+    "idx": 2750,
+    "MSU_id": 2750,
+    "sentence": "The process resulted in 29,701 matched pairs with metadata such as paper source, page number, and position.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 712,
+    "paper_id": 4,
+    "2d_coord": [
+      1.5074654157250682,
+      2.038450035288374
+    ]
+  },
+  {
+    "idx": 2757,
+    "MSU_id": 2757,
+    "sentence": "The model was trained for 5 epochs and achieved 99.23% accuracy on the test set.",
+    "category": "Result",
+    "rank": 5,
+    "type": "text",
+    "para_id": 712,
+    "paper_id": 4,
+    "2d_coord": [
+      1.9881202169140997,
+      1.199495316896165
+    ]
+  },
+  {
+    "idx": 2758,
+    "MSU_id": 2758,
+    "sentence": "Using the trained model, 4,531 illustration-annotation pairs were extracted.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 712,
+    "paper_id": 4,
+    "2d_coord": [
+      1.503637370526146,
+      1.8043250127171666
+    ]
+  },
+  {
+    "idx": 2759,
+    "MSU_id": 2759,
+    "sentence": "After manual verification for accuracy and completeness, 4,396 valid pairs were retained.",
+    "category": "Result",
+    "rank": 5,
+    "type": "text",
+    "para_id": 712,
+    "paper_id": 4,
+    "2d_coord": [
+      1.5137030354559484,
+      2.031521946635999
+    ]
+  },
+  {
+    "idx": 2771,
+    "MSU_id": 2771,
+    "sentence": "On average, each annotator labeled approximately 1,800 illustrations.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 715,
+    "paper_id": 4,
+    "2d_coord": [
+      1.5052765630591827,
+      1.864913613125245
+    ]
+  },
+  {
+    "idx": 2772,
+    "MSU_id": 2772,
+    "sentence": "The entire annotation process took six weeks.",
+    "category": "Result",
+    "rank": 2,
+    "type": "text",
+    "para_id": 715,
+    "paper_id": 4,
+    "2d_coord": [
+      -2.6120550497191624,
+      3.6332044787457023
+    ]
+  },
+  {
+    "idx": 2776,
+    "MSU_id": 2776,
+    "sentence": "The results show that many plots use more than five rings.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 716,
+    "paper_id": 4,
+    "2d_coord": [
+      -0.42714046003739853,
+      -3.749985963269381
+    ]
+  },
+  {
+    "idx": 2779,
+    "MSU_id": 2779,
+    "sentence": "The analysis revealed that multiple tracks are typically stacked rather than synthesized within the same ring.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 716,
+    "paper_id": 4,
+    "2d_coord": [
+      -0.38850165119685826,
+      -3.3221899524087246
+    ]
+  },
+  {
+    "idx": 2781,
+    "MSU_id": 2781,
+    "sentence": "The number of rings in each circos plot is analyzed.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 718,
+    "paper_id": 4,
+    "2d_coord": [
+      -0.43374545465298886,
+      -3.733713019950758
+    ]
+  },
+  {
+    "idx": 2782,
+    "MSU_id": 2782,
+    "sentence": "The number of track types in each circos plot is analyzed.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 718,
+    "paper_id": 4,
+    "2d_coord": [
+      -0.2280368270684543,
+      -3.6379348120384707
+    ]
+  },
+  {
+    "idx": 2783,
+    "MSU_id": 2783,
+    "sentence": "The number of tracks in each ring is analyzed.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 718,
+    "paper_id": 4,
+    "2d_coord": [
+      -0.4181690014885053,
+      -3.54474158143594
+    ]
+  },
+  {
+    "idx": 2784,
+    "MSU_id": 2784,
+    "sentence": "The number of tracks of each type is analyzed.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 718,
+    "paper_id": 4,
+    "2d_coord": [
+      -0.30242413755336806,
+      -3.4219397724528
+    ]
+  },
+  {
+    "idx": 2785,
+    "MSU_id": 2785,
+    "sentence": "The conditional probability of stacked relationship is analyzed.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 718,
+    "paper_id": 4,
+    "2d_coord": [
+      1.3453118273739757,
+      2.6367501011138956
+    ]
+  },
+  {
+    "idx": 2786,
+    "MSU_id": 2786,
+    "sentence": "The conditional probability of synthesized relationship is analyzed.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 718,
+    "paper_id": 4,
+    "2d_coord": [
+      1.3454269722637502,
+      2.636351088272499
+    ]
+  },
+  {
+    "idx": 2799,
+    "MSU_id": 2799,
+    "sentence": "The results (Figure 3 (E)) reveal that many track types like histogram, line, scatter, and heatmaps have probabilities above 0.5 (diagonal cells).",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 722,
+    "paper_id": 4,
+    "2d_coord": [
+      -0.6351185802022669,
+      -3.104077536836581
+    ]
+  },
+  {
+    "idx": 2801,
+    "MSU_id": 2801,
+    "sentence": "The high proportion of chord and other views in the end track column indicates that the central position is often reserved for displaying chord or other customized, user-defined views.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 722,
+    "paper_id": 4,
+    "2d_coord": [
+      -0.24213918919538754,
+      -2.778386304162363
+    ]
+  },
+  {
+    "idx": 2806,
+    "MSU_id": 2806,
+    "sentence": "The results indicate that the ideogram and highlight exhibit the strongest connection.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 725,
+    "paper_id": 4,
+    "2d_coord": [
+      -1.1130068247082345,
+      -2.9023442072147274
+    ]
+  },
+  {
+    "idx": 2807,
+    "MSU_id": 2807,
+    "sentence": "Ideograms and highlights are frequently combined within the same track.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 725,
+    "paper_id": 4,
+    "2d_coord": [
+      -1.0491865323205152,
+      -2.9754587465283686
+    ]
+  },
+  {
+    "idx": 2810,
+    "MSU_id": 2810,
+    "sentence": "Histogram and line are often paired with themselves to present multiple data attributes.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 725,
+    "paper_id": 4,
+    "2d_coord": [
+      0.6463398407120698,
+      -1.6988119446243537
+    ]
+  },
+  {
+    "idx": 2819,
+    "MSU_id": 2819,
+    "sentence": "GPT-4 generates the recommendation results.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 728,
+    "paper_id": 4,
+    "2d_coord": [
+      1.0051527625727885,
+      1.9111378816393834
+    ]
+  },
+  {
+    "idx": 2948,
+    "MSU_id": 2948,
+    "sentence": "Alex felt the <scatter> track was improper for displaying gene sequencing sampling.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 752,
+    "paper_id": 4,
+    "2d_coord": [
+      -1.8005769928220807,
+      -1.3046613224527928
+    ]
+  },
+  {
+    "idx": 2951,
+    "MSU_id": 2951,
+    "sentence": "IntelliCircos explained: 'I suggest using a <tile> track instead of a <scatter> track as it can display overlapping ranges effectively.'",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 752,
+    "paper_id": 4,
+    "2d_coord": [
+      0.661544739903198,
+      -3.207472456543537
+    ]
+  },
+  {
+    "idx": 2952,
+    "MSU_id": 2952,
+    "sentence": "One file included an illustration with two stacked heatmaps representing the values of gene segments with different meanings.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 753,
+    "paper_id": 4,
+    "2d_coord": [
+      -1.306465856123841,
+      -0.5492242622455612
+    ]
+  },
+  {
+    "idx": 2953,
+    "MSU_id": 2953,
+    "sentence": "The illustration aligned with the requirement described in Alex’s initial prompt for comparing gene conservation scores.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 753,
+    "paper_id": 4,
+    "2d_coord": [
+      -1.5774505011388102,
+      -2.370718013619473
+    ]
+  },
+  {
+    "idx": 2954,
+    "MSU_id": 2954,
+    "sentence": "The figure legend in the paper file mentioned 'homology,' which aligns with Alex’s request for displaying homologous relationships in the prompt.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 753,
+    "paper_id": 4,
+    "2d_coord": [
+      -1.5762732078770756,
+      -2.3715228199126437
+    ]
+  },
+  {
+    "idx": 2956,
+    "MSU_id": 2956,
+    "sentence": "The <line> track was found less readable for presenting homology scores.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 754,
+    "paper_id": 4,
+    "2d_coord": [
+      -1.5931353906560328,
+      -1.5300767161933293
+    ]
+  },
+  {
+    "idx": 2958,
+    "MSU_id": 2958,
+    "sentence": "The <histogram> track was highly recommended.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 754,
+    "paper_id": 4,
+    "2d_coord": [
+      -0.02906838211837856,
+      -3.2860375634292036
+    ]
+  },
+  {
+    "idx": 2964,
+    "MSU_id": 2964,
+    "sentence": "Alex exported the final design as an SVG (Scalable Vector Graphics) file to share with colleagues.",
+    "category": "Result",
+    "rank": 2,
+    "type": "text",
+    "para_id": 755,
+    "paper_id": 4,
+    "2d_coord": [
+      1.1792622286454693,
+      -2.517289513070778
+    ]
+  },
+  {
+    "idx": 2999,
+    "MSU_id": 2999,
+    "sentence": "We report user study results including challenges of current circos plot creation tools.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 761,
+    "paper_id": 4,
+    "2d_coord": [
+      2.1618404228746915,
+      -2.037020444846634
+    ]
+  },
+  {
+    "idx": 3000,
+    "MSU_id": 3000,
+    "sentence": "Participants provided questionnaire ratings as shown in Figure 7.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 761,
+    "paper_id": 4,
+    "2d_coord": [
+      2.446597364495643,
+      2.5179826249085284
+    ]
+  },
+  {
+    "idx": 3001,
+    "MSU_id": 3001,
+    "sentence": "Participants gave feedback on our tool.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 761,
+    "paper_id": 4,
+    "2d_coord": [
+      2.664992797904596,
+      1.43439737133727
+    ]
+  },
+  {
+    "idx": 3012,
+    "MSU_id": 3012,
+    "sentence": "The results confirm the hypothesis that the current practice of creating circos plots has significant shortcomings.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 763,
+    "paper_id": 4,
+    "2d_coord": [
+      2.071819114274411,
+      -1.7056658377516452
+    ]
+  },
+  {
+    "idx": 3013,
+    "MSU_id": 3013,
+    "sentence": "The results validate the design goals of IntelliCircos.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 763,
+    "paper_id": 4,
+    "2d_coord": [
+      2.948014757881724,
+      -1.8207844327998843
+    ]
+  },
+  {
+    "idx": 3014,
+    "MSU_id": 3014,
+    "sentence": "The results validate the development of IntelliCircos.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 763,
+    "paper_id": 4,
+    "2d_coord": [
+      2.9530833325521426,
+      -1.8162359472006644
+    ]
+  },
+  {
+    "idx": 3015,
+    "MSU_id": 3015,
+    "sentence": "The quantitative results of the user study reflect participants’ ratings on the usability of IntelliCircos.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 764,
+    "paper_id": 4,
+    "2d_coord": [
+      3.15162941460902,
+      -1.6870718393425426
+    ]
+  },
+  {
+    "idx": 3016,
+    "MSU_id": 3016,
+    "sentence": "The quantitative results of the user study reflect participants’ ratings on the effectiveness of IntelliCircos.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 764,
+    "paper_id": 4,
+    "2d_coord": [
+      3.156271502285603,
+      -1.6889448525627475
+    ]
+  },
+  {
+    "idx": 3017,
+    "MSU_id": 3017,
+    "sentence": "The distribution of ratings for effectiveness is shown in Figure 7 (Q5 - Q9).",
+    "category": "Result",
+    "rank": 2,
+    "type": "text",
+    "para_id": 766,
+    "paper_id": 4,
+    "2d_coord": [
+      2.441328853426361,
+      2.533340446619006
+    ]
+  },
+  {
+    "idx": 3018,
+    "MSU_id": 3018,
+    "sentence": "Most participants were satisfied with IntelliCircos.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 766,
+    "paper_id": 4,
+    "2d_coord": [
+      3.2491088567765867,
+      -1.5378444269652323
+    ]
+  },
+  {
+    "idx": 3019,
+    "MSU_id": 3019,
+    "sentence": "7 out of 8 participants appreciated how IntelliCircos simplified the creation process of circos plots (Q5), with a median rating of 6.5 (IQR = 1).",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 766,
+    "paper_id": 4,
+    "2d_coord": [
+      2.6526757039552487,
+      -2.4656152637682056
+    ]
+  },
+  {
+    "idx": 3020,
+    "MSU_id": 3020,
+    "sentence": "Participants praised the quality of the final circos plot (Q9).",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 766,
+    "paper_id": 4,
+    "2d_coord": [
+      2.7369606635100285,
+      -2.504353412435603
+    ]
+  },
+  {
+    "idx": 3021,
+    "MSU_id": 3021,
+    "sentence": "Participants found design recommendation (Q6) and the design-to-implementation process (Q7) useful and aligned with their expectations.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 766,
+    "paper_id": 4,
+    "2d_coord": [
+      2.542526144823839,
+      1.1625288797819264
+    ]
+  },
+  {
+    "idx": 3022,
+    "MSU_id": 3022,
+    "sentence": "The rating for customization support (Q8) was relatively lower, with most participants providing more neutral scores.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 766,
+    "paper_id": 4,
+    "2d_coord": [
+      3.1129686655530926,
+      1.9438691918911615
+    ]
+  },
+  {
+    "idx": 3023,
+    "MSU_id": 3023,
+    "sentence": "One participant, P6, gave a negative score of 3 for customization support, stating that 'The tool does not support customization of the chart or legend in the center.'",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 766,
+    "paper_id": 4,
+    "2d_coord": [
+      1.0234096611990435,
+      -3.157714512050497
+    ]
+  },
+  {
+    "idx": 3025,
+    "MSU_id": 3025,
+    "sentence": "Feedback from all participants on IntelliCircos was positive.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 767,
+    "paper_id": 4,
+    "2d_coord": [
+      3.2519242428111883,
+      -1.5436363721904525
+    ]
+  },
+  {
+    "idx": 3026,
+    "MSU_id": 3026,
+    "sentence": "Participants found the user interface of IntelliCircos intuitive and well-organized.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 767,
+    "paper_id": 4,
+    "2d_coord": [
+      3.1632675166295536,
+      -1.496816779124877
+    ]
+  },
+  {
+    "idx": 3027,
+    "MSU_id": 3027,
+    "sentence": "Participants expressed a strong willingness to use the IntelliCircos tool.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 767,
+    "paper_id": 4,
+    "2d_coord": [
+      3.190968055833591,
+      -1.539308256428475
+    ]
+  },
+  {
+    "idx": 3029,
+    "MSU_id": 3029,
+    "sentence": "Almost all participants mentioned that the design provided by IntelliCircos was useful.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 768,
+    "paper_id": 4,
+    "2d_coord": [
+      3.2519348005088182,
+      -1.5234311964387675
+    ]
+  },
+  {
+    "idx": 3030,
+    "MSU_id": 3030,
+    "sentence": "All participants agreed that natural language provided an intuitive and precise means to communicate their design needs.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 768,
+    "paper_id": 4,
+    "2d_coord": [
+      2.4690322520068397,
+      0.1346857038542928
+    ]
+  },
+  {
+    "idx": 3031,
+    "MSU_id": 3031,
+    "sentence": "P2 mentioned that describing design requirements in natural language is very intuitive.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 768,
+    "paper_id": 4,
+    "2d_coord": [
+      2.433669683700041,
+      0.11797189046483186
+    ]
+  },
+  {
+    "idx": 3032,
+    "MSU_id": 3032,
+    "sentence": "P2 stated that they can simply describe what they want, and the tool would recommend proper designs.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 768,
+    "paper_id": 4,
+    "2d_coord": [
+      2.395060623372093,
+      0.11351383473669356
+    ]
+  },
+  {
+    "idx": 3033,
+    "MSU_id": 3033,
+    "sentence": "P2 was pleasantly surprised by the predefined templates and auto-completion features, which ease prompt formulation.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 768,
+    "paper_id": 4,
+    "2d_coord": [
+      3.233962519814499,
+      0.7515626046689011
+    ]
+  },
+  {
+    "idx": 3034,
+    "MSU_id": 3034,
+    "sentence": "All participants agreed that the progressive recommendation met their expectations.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 768,
+    "paper_id": 4,
+    "2d_coord": [
+      3.2161288089015696,
+      1.5607252607117263
+    ]
+  },
+  {
+    "idx": 3035,
+    "MSU_id": 3035,
+    "sentence": "Participants preferred the progressive recommendation of the design compared to fully automated or fully manual circos plot design.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 768,
+    "paper_id": 4,
+    "2d_coord": [
+      2.2730668671643355,
+      0.9278822106738372
+    ]
+  },
+  {
+    "idx": 3036,
+    "MSU_id": 3036,
+    "sentence": "P6 stated that progressive recommendation better aligns with their evolving design needs.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 768,
+    "paper_id": 4,
+    "2d_coord": [
+      2.194488783082507,
+      0.803483213431903
+    ]
+  },
+  {
+    "idx": 3037,
+    "MSU_id": 3037,
+    "sentence": "Most participants were satisfied with the recommended results.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 768,
+    "paper_id": 4,
+    "2d_coord": [
+      3.154249263285437,
+      1.5476637839827592
+    ]
+  },
+  {
+    "idx": 3038,
+    "MSU_id": 3038,
+    "sentence": "P4 noted that the recommendation results meet their expectations and can be seamlessly applied without adjustments.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 768,
+    "paper_id": 4,
+    "2d_coord": [
+      3.2217334066787324,
+      1.553185613161916
+    ]
+  },
+  {
+    "idx": 3039,
+    "MSU_id": 3039,
+    "sentence": "All users acknowledged the effectiveness of the Reference Panel.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 768,
+    "paper_id": 4,
+    "2d_coord": [
+      3.2358213344534374,
+      1.5731538587394776
+    ]
+  },
+  {
+    "idx": 3040,
+    "MSU_id": 3040,
+    "sentence": "P1 stated that the presentation of track configurations in the Reference Panel allows them to intuitively overview others’ designs.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 768,
+    "paper_id": 4,
+    "2d_coord": [
+      0.510949273514293,
+      -2.8479316344908017
+    ]
+  },
+  {
+    "idx": 3041,
+    "MSU_id": 3041,
+    "sentence": "P8 noted that the Reference Panel inspires alternative designs to try, further contributing to the design process.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 768,
+    "paper_id": 4,
+    "2d_coord": [
+      2.6779503921768155,
+      0.9283769812998178
+    ]
+  },
+  {
+    "idx": 3042,
+    "MSU_id": 3042,
+    "sentence": "Some users felt that the Reference Panel provided some explanation for the recommendations in the Recom Edit Panel.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 768,
+    "paper_id": 4,
+    "2d_coord": [
+      2.5846177057053694,
+      0.988358666143108
+    ]
+  },
+  {
+    "idx": 3043,
+    "MSU_id": 3043,
+    "sentence": "P3 noticed in the Reference Panel that four papers have used the recommended results from the model, which increases their trust in those recommendations.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 768,
+    "paper_id": 4,
+    "2d_coord": [
+      2.5179590422955,
+      1.0805975747337533
+    ]
+  },
+  {
+    "idx": 3044,
+    "MSU_id": 3044,
+    "sentence": "P2 suggested that the directed acyclic graph display has a certain learning curve.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 768,
+    "paper_id": 4,
+    "2d_coord": [
+      2.0267015632857697,
+      -1.399524408756935
+    ]
+  },
+  {
+    "idx": 3047,
+    "MSU_id": 3047,
+    "sentence": "All participants agreed that IntelliCircos streamlined the process from design to implementation of circos plots.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 769,
+    "paper_id": 4,
+    "2d_coord": [
+      2.553817602438863,
+      -2.5131775944627344
+    ]
+  },
+  {
+    "idx": 3048,
+    "MSU_id": 3048,
+    "sentence": "Most participants favored the direct application feature for recommended results.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 769,
+    "paper_id": 4,
+    "2d_coord": [
+      3.1333643777575086,
+      1.536029951728967
+    ]
+  },
+  {
+    "idx": 3049,
+    "MSU_id": 3049,
+    "sentence": "Participants found it easy to apply the recommended results in Recom Edit Panel and Reference Panel to experiment with designs and assess their effects.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 769,
+    "paper_id": 4,
+    "2d_coord": [
+      2.5753948969696756,
+      1.022176813700912
+    ]
+  },
+  {
+    "idx": 3051,
+    "MSU_id": 3051,
+    "sentence": "Participants agreed that IntelliCircos supports easy refinement of created circos plots.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 769,
+    "paper_id": 4,
+    "2d_coord": [
+      2.557782897706972,
+      -2.4941642413811045
+    ]
+  },
+  {
+    "idx": 3052,
+    "MSU_id": 3052,
+    "sentence": "The tool provides clear options for adjusting visual elements, making it easy to tailor the track to user needs.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 769,
+    "paper_id": 4,
+    "2d_coord": [
+      0.4817083277344685,
+      -2.696820516392308
+    ]
+  },
+  {
+    "idx": 3053,
+    "MSU_id": 3053,
+    "sentence": "IntelliCircos provides immediate visual feedback, allowing users to see results after modifying configurations.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 769,
+    "paper_id": 4,
+    "2d_coord": [
+      2.639487599951446,
+      -1.837165083506414
+    ]
+  },
+  {
+    "idx": 3068,
+    "MSU_id": 3068,
+    "sentence": "Most participants preferred the progressive recommendation approach over fully-automated suggestions or manual design.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 774,
+    "paper_id": 4,
+    "2d_coord": [
+      2.26675270412564,
+      0.9252317540202449
+    ]
+  },
+  {
+    "idx": 3069,
+    "MSU_id": 3069,
+    "sentence": "The progressive recommendation approach allowed participants to iteratively refine the results to better align with their preferences.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 774,
+    "paper_id": 4,
+    "2d_coord": [
+      2.2432684254604527,
+      0.8748184741290022
+    ]
+  },
+  {
+    "idx": 3074,
+    "MSU_id": 3074,
+    "sentence": "Predefined templates and auto-completion features were well-received by participants.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 774,
+    "paper_id": 4,
+    "2d_coord": [
+      3.2448437668861994,
+      0.7231052141947197
+    ]
+  },
+  {
+    "idx": 3077,
+    "MSU_id": 3077,
+    "sentence": "Participants found track-level configuration cumbersome when many adjustments were needed.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 774,
+    "paper_id": 4,
+    "2d_coord": [
+      2.223576779716721,
+      -1.3409172461369114
+    ]
+  },
+  {
+    "idx": 3084,
+    "MSU_id": 3084,
+    "sentence": "Participants in the study praised the tool for fostering creativity and inspiration.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 775,
+    "paper_id": 4,
+    "2d_coord": [
+      2.6497184488587475,
+      1.2428258621347894
+    ]
+  },
+  {
+    "idx": 3085,
+    "MSU_id": 3085,
+    "sentence": "Creativity and inspiration are achieved by AI recommendations and reference examples.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 775,
+    "paper_id": 4,
+    "2d_coord": [
+      2.4612175761925146,
+      0.70809780008491
+    ]
+  },
+  {
+    "idx": 3086,
+    "MSU_id": 3086,
+    "sentence": "The references guided participants' designs and increased trust in the recommendations.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 775,
+    "paper_id": 4,
+    "2d_coord": [
+      2.5110747635847974,
+      1.0963159260618318
+    ]
+  },
+  {
+    "idx": 3089,
+    "MSU_id": 3089,
+    "sentence": "Participants appreciated the ability to combine AI recommendations with user-driven refinements.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 775,
+    "paper_id": 4,
+    "2d_coord": [
+      2.398075285949456,
+      0.7987833458161607
+    ]
+  },
+  {
+    "idx": 3090,
+    "MSU_id": 3090,
+    "sentence": "Combining AI recommendations with user-driven refinements allowed participants to control the pace of design and implementation.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 775,
+    "paper_id": 4,
+    "2d_coord": [
+      2.401095887231736,
+      0.8025156724896918
+    ]
+  },
+  {
+    "idx": 3120,
+    "MSU_id": 3120,
+    "sentence": "A user study indicates the effectiveness and usability of IntelliCircos in aiding the authoring of circos plots.",
+    "category": "Result",
+    "rank": 4,
+    "type": "text",
+    "para_id": 779,
+    "paper_id": 4,
+    "2d_coord": [
+      2.603735056688449,
+      -2.242897509786761
+    ]
+  },
+  {
+    "idx": 3121,
+    "MSU_id": 3121,
+    "sentence": "Participants highly appreciated IntelliCircos’ support for the iterative creation of circos plots.",
+    "category": "Result",
+    "rank": 3,
+    "type": "text",
+    "para_id": 779,
+    "paper_id": 4,
+    "2d_coord": [
+      2.6591849644480607,
+      -2.4814662444872333
+    ]
+  }
+]

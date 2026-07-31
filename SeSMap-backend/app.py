@@ -2,7 +2,7 @@
 import os, json, sys, pathlib, hashlib, time
 from typing import List, Dict, Any, Optional
 import re
-from flask import Flask, jsonify, request, abort, make_response, send_from_directory
+from flask import Flask, jsonify, request, abort, make_response, send_from_directory, url_for
 from flask_cors import CORS
 from dotenv import load_dotenv
 from services.llm_config import LLM_CONFIG, get_openai_client, model_for
@@ -165,8 +165,17 @@ def get_data_path(project_id: Optional[str] = None) -> pathlib.Path:
     return CASE_DATA_ROOT / cid / "semantic_map_data.json"
 
 
-PDF_ROOT = ROOT_DIR / "data" / "pdf"        # e.g., data/pdf/case1/*.pdf
+PDF_ROOT = CASE_DATA_ROOT                      # e.g., data/case1/pdf/*.pdf
 INDEX_ROOT = ROOT_DIR / "data" / "indexes"  # e.g., data/indexes/case1/<doc_stem>/
+
+def _case_pdf_dir(project_id: str) -> pathlib.Path:
+    """Canonical PDF location shared by every case."""
+    return CASE_DATA_ROOT / project_id / "pdf"
+
+
+def _paper_filename_key(value: Any) -> str:
+    """Match corpus titles to source PDF stems despite spaces/underscores/punctuation."""
+    return re.sub(r"[^a-z0-9]+", "", str(value or "").casefold())
 
 # ================= Helpers for semantic map (kept minimal) =================
 def _file_etag(path: pathlib.Path) -> str:
@@ -548,7 +557,7 @@ class RAGService:
 
     # ---- paths ----
     def _project_pdf_dir(self, project_id: str) -> pathlib.Path:
-        return self.pdf_root / project_id
+        return self.pdf_root / project_id / "pdf"
 
     def _project_index_dir(self, project_id: str) -> pathlib.Path:
         return self.index_root / project_id
@@ -561,7 +570,7 @@ class RAGService:
         if not self.pdf_root.exists(): return []
         out = []
         for p in sorted([p for p in self.pdf_root.iterdir() if p.is_dir()]):
-            has_pdf = any(x.suffix.lower() == ".pdf" for x in p.glob("*.pdf"))
+            has_pdf = any(x.suffix.lower() == ".pdf" for x in (p / "pdf").glob("*.pdf"))
             if has_pdf: out.append(p.name)
         return out
 
@@ -856,9 +865,21 @@ def get_gallery():
         items = json.loads(gpath.read_text(encoding="utf-8"))
     except Exception as e:
         abort(500, f"gallery manifest error: {e}")
+    pdf_dir = _case_pdf_dir(pid)
+    pdf_names = {
+        _paper_filename_key(p.stem): p.name
+        for p in pdf_dir.glob("*.pdf")
+        if p.is_file()
+    } if pdf_dir.exists() else {}
     for it in items:
         if it.get("thumbnail"):
             it["thumbnail_url"] = f"/api/gallery/thumb/{pid}/{it['thumbnail']}"
+        # The gallery manifest identifies a paper by its corpus-folder title, which
+        # is the original PDF stem.  Expose that source PDF through the backend so
+        # gallery entries do not depend on separately bundled frontend filenames.
+        pdf_name = pdf_names.get(_paper_filename_key(it.get("title")))
+        if pdf_name:
+            it["pdf_url"] = url_for("get_gallery_pdf", project=pid, fname=pdf_name)
     return jsonify({"project_id": pid, "items": items})
 
 @app.get("/api/gallery/thumb/<project>/<path:fname>")
@@ -867,6 +888,15 @@ def get_gallery_thumb(project, fname):
     d = CASE_DATA_ROOT / pid / "thumbnails"
     if not (d / fname).exists():
         abort(404, "thumbnail not found")
+    return send_from_directory(str(d), fname)
+
+@app.get("/api/gallery/pdf/<project>/<path:fname>")
+def get_gallery_pdf(project, fname):
+    """Serve a case PDF selected by the generated gallery manifest."""
+    pid = _normalize_case_id(project)
+    d = _case_pdf_dir(pid)
+    if not (d / fname).is_file():
+        abort(404, "PDF not found")
     return send_from_directory(str(d), fname)
 
 @app.post("/api/rag/index")

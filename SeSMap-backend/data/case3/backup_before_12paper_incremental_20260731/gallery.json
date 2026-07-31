@@ -1,0 +1,42 @@
+[
+  {
+    "paper_id": 0,
+    "title": "AuraGenome An LLM-Powered Framework for On-the-Fly Reusable and Scalable Circular Genome Visualizations",
+    "semanticCountryId": "c0",
+    "sourceId": "c8",
+    "thumbnail": "c0.png",
+    "caption": "FIGURE 1 Overview of the AuraGenome framework, which integrates a modular multiagent workflow with an interactive visua analytics system to enable end-to-end generation, refinement, and exploration of"
+  },
+  {
+    "paper_id": 1,
+    "title": "Circos an Information Aesthetic for Comparative Genomics",
+    "semanticCountryId": "c1",
+    "sourceId": "c9",
+    "thumbnail": "c1.png",
+    "caption": "Figure 1"
+  },
+  {
+    "paper_id": 2,
+    "title": "GenoREC A Recommendation System for Interactive Genomics Data Visualization",
+    "semanticCountryId": "c2",
+    "sourceId": "c10",
+    "thumbnail": "c2.png",
+    "caption": "Fig. 1. Top: GenoREC maps data and task specifications (A) to appropriate visualizations. In this figure, the knowledge-based recommendation (B) shows the component-wise model of GenoREC and the subse"
+  },
+  {
+    "paper_id": 3,
+    "title": "Gosling",
+    "semanticCountryId": "c3",
+    "sourceId": "c11",
+    "thumbnail": "c3.png",
+    "caption": "Fig. 1. Genomics Data Visualizations Using Gosling."
+  },
+  {
+    "paper_id": 4,
+    "title": "IntelliCircos",
+    "semanticCountryId": "c4",
+    "sourceId": "c12",
+    "thumbnail": "c4.png",
+    "caption": "Figure 1: (A) Structure of a Circos Plot. A circos plot consists of multiple nested rings surrounding a genomics axis, with each ring containing one or more tracks. (B) Example of a Circos Plot. The t"
+  }
+]

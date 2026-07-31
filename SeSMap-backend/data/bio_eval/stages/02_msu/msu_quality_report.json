@@ -1,0 +1,236 @@
+{
+  "input_records": 5546,
+  "input_text_msus": 5459,
+  "kept_records": 5502,
+  "kept_text_msus": 5415,
+  "removed_count": 44,
+  "removed_by_reason": {
+    "bibliography_fragment": 1,
+    "isolated_figure_label": 2,
+    "publication_metadata": 20,
+    "same_paper_duplicate": 21
+  },
+  "removed": [
+    {
+      "MSU_id": 616,
+      "reason": "publication_metadata",
+      "sentence": "DOI: 10.21105/joss.09930"
+    },
+    {
+      "MSU_id": 617,
+      "reason": "publication_metadata",
+      "sentence": "Review"
+    },
+    {
+      "MSU_id": 618,
+      "reason": "publication_metadata",
+      "sentence": "Repository."
+    },
+    {
+      "MSU_id": 619,
+      "reason": "publication_metadata",
+      "sentence": "Editor: Abhishek Tiwari"
+    },
+    {
+      "MSU_id": 622,
+      "reason": "publication_metadata",
+      "sentence": "Published: 01 June 2026"
+    },
+    {
+      "MSU_id": 1025,
+      "reason": "same_paper_duplicate",
+      "sentence": "Copy number profiles for chromosomes 6 and 17 of five follicular lymphoma tumor samples were generated from the Affymetrix Mapping 500K array."
+    },
+    {
+      "MSU_id": 1037,
+      "reason": "isolated_figure_label",
+      "sentence": "Figure 3"
+    },
+    {
+      "MSU_id": 1038,
+      "reason": "isolated_figure_label",
+      "sentence": "Figure 6"
+    },
+    {
+      "MSU_id": 1100,
+      "reason": "same_paper_duplicate",
+      "sentence": "The paper was published in Bioinformatics in 2007."
+    },
+    {
+      "MSU_id": 1380,
+      "reason": "same_paper_duplicate",
+      "sentence": "The contamination is denoted by arrows for illustration purposes."
+    },
+    {
+      "MSU_id": 1674,
+      "reason": "same_paper_duplicate",
+      "sentence": "The work is published in IEEE Transactions on Visualization and Computer Graphics."
+    },
+    {
+      "MSU_id": 1677,
+      "reason": "same_paper_duplicate",
+      "sentence": "The paper was published in IEEE Transactions on Visualization and Computer Graphics."
+    },
+    {
+      "MSU_id": 1701,
+      "reason": "same_paper_duplicate",
+      "sentence": "The paper was published in IEEE Transactions on Visualization and Computer Graphics."
+    },
+    {
+      "MSU_id": 1709,
+      "reason": "publication_metadata",
+      "sentence": "ISBN: 9783905674552."
+    },
+    {
+      "MSU_id": 1711,
+      "reason": "publication_metadata",
+      "sentence": "DOI: 10.2312/PE.EUROVAST.EUROVA13.037-041."
+    },
+    {
+      "MSU_id": 1718,
+      "reason": "same_paper_duplicate",
+      "sentence": "The study was published in IEEE Transactions on Visualization and Computer Graphics."
+    },
+    {
+      "MSU_id": 2345,
+      "reason": "same_paper_duplicate",
+      "sentence": "The paper was published in IEEE Transactions on Visualization and Computer Graphics."
+    },
+    {
+      "MSU_id": 2357,
+      "reason": "same_paper_duplicate",
+      "sentence": "The paper introduces actionable and extensible models in Draco."
+    },
+    {
+      "MSU_id": 3131,
+      "reason": "same_paper_duplicate",
+      "sentence": "The paper was published in IEEE Transactions on Visualization and Computer Graphics."
+    },
+    {
+      "MSU_id": 3152,
+      "reason": "same_paper_duplicate",
+      "sentence": "The paper was published in IEEE Transactions on Visualization and Computer Graphics in 2020."
+    },
+    {
+      "MSU_id": 3169,
+      "reason": "same_paper_duplicate",
+      "sentence": "No scientific content is present in the provided text."
+    },
+    {
+      "MSU_id": 3170,
+      "reason": "bibliography_fragment",
+      "sentence": "p. 15, 2004."
+    },
+    {
+      "MSU_id": 3208,
+      "reason": "same_paper_duplicate",
+      "sentence": "The paper was published in IEEE Transactions on Visualization and Computer Graphics in 2020."
+    },
+    {
+      "MSU_id": 3222,
+      "reason": "publication_metadata",
+      "sentence": "Accessed: 2021-6-30."
+    },
+    {
+      "MSU_id": 3257,
+      "reason": "same_paper_duplicate",
+      "sentence": "The paper was published in IEEE Transactions on Visualization and Computer Graphics in 2021."
+    },
+    {
+      "MSU_id": 3259,
+      "reason": "same_paper_duplicate",
+      "sentence": "The paper was published in IEEE Transactions on Visualization and Computer Graphics."
+    },
+    {
+      "MSU_id": 3260,
+      "reason": "same_paper_duplicate",
+      "sentence": "The publication year of the paper is 2016."
+    },
+    {
+      "MSU_id": 3262,
+      "reason": "same_paper_duplicate",
+      "sentence": "The paper was published in IEEE Transactions on Visualization and Computer Graphics."
+    },
+    {
+      "MSU_id": 3289,
+      "reason": "same_paper_duplicate",
+      "sentence": "The paper was published in IEEE Transactions on Visualization and Computer Graphics in 2019."
+    },
+    {
+      "MSU_id": 3362,
+      "reason": "same_paper_duplicate",
+      "sentence": "Gosling balances expressiveness for comprehensive multi-scale genomics data visualizations with accessibility for domain scientists."
+    },
+    {
+      "MSU_id": 4960,
+      "reason": "same_paper_duplicate",
+      "sentence": "The paper was published in IEEE Transactions on Visualization and Computer Graphics in 2021."
+    },
+    {
+      "MSU_id": 5069,
+      "reason": "publication_metadata",
+      "sentence": "Accessed: 2024-11-29."
+    },
+    {
+      "MSU_id": 5129,
+      "reason": "publication_metadata",
+      "sentence": "Received May 15, 2020."
+    },
+    {
+      "MSU_id": 5130,
+      "reason": "publication_metadata",
+      "sentence": "Revised August 04, 2020."
+    },
+    {
+      "MSU_id": 5132,
+      "reason": "publication_metadata",
+      "sentence": "Accepted August 25, 2020."
+    },
+    {
+      "MSU_id": 5157,
+      "reason": "same_paper_duplicate",
+      "sentence": "NG-Circos promotes reproducible research in biomedical sciences and beyond."
+    },
+    {
+      "MSU_id": 5236,
+      "reason": "publication_metadata",
+      "sentence": "No external funding."
+    },
+    {
+      "MSU_id": 5238,
+      "reason": "publication_metadata",
+      "sentence": "None declared."
+    },
+    {
+      "MSU_id": 5248,
+      "reason": "publication_metadata",
+      "sentence": "Received on 5 November 2015."
+    },
+    {
+      "MSU_id": 5249,
+      "reason": "publication_metadata",
+      "sentence": "Revised on 18 January 2016."
+    },
+    {
+      "MSU_id": 5250,
+      "reason": "publication_metadata",
+      "sentence": "Accepted on 19 January 2016."
+    },
+    {
+      "MSU_id": 5357,
+      "reason": "publication_metadata",
+      "sentence": "Received on December 24, 2020."
+    },
+    {
+      "MSU_id": 5358,
+      "reason": "publication_metadata",
+      "sentence": "Revised on March 30, 2021."
+    },
+    {
+      "MSU_id": 5360,
+      "reason": "publication_metadata",
+      "sentence": "Accepted on April 7, 2021."
+    }
+  ],
+  "policy": "Only Markdown/parse artifacts and exact duplicates within the same paper are removed; no category or importance filtering is applied."
+}

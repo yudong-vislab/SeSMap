@@ -42,7 +42,8 @@ npm run dev                          # http://localhost:5173
 
 ## Building a New Case
 
-Put PDFs into `SeSMap-backend/data/pdf/` and run the pipeline steps in order (see the backend README):
+Put PDFs into `SeSMap-backend/data/caseN/pdf/` and run that case's pipeline
+steps in order (see the backend README):
 
 ```text
 mineru_pdf → build_corpus → precompute_embeddings → train_all_v10

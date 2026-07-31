@@ -1,0 +1,1338 @@
+[
+  {
+    "hex_coord": [
+      -12,
+      -1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      948
+    ],
+    "summary": "The study identifies somatically acquired rearrangements in cancer. The study provides insights into the evolution of a cancer genome. The paper provides new insights into the MLL recombinome of acute leukemias."
+  },
+  {
+    "hex_coord": [
+      -12,
+      0
+    ],
+    "country": 0,
+    "MSU_ids": [
+      439,
+      449
+    ],
+    "summary": "Data upload and autoparsing of chromosomal translocation and gene expression profiles are performed. $E _ { A }$ aimed to investigate chromosomal translocation patterns in AML. A curated dataset of chromosomal translocations was uploaded by $E _ { A }$."
+  },
+  {
+    "hex_coord": [
+      -10,
+      -4
+    ],
+    "country": 0,
+    "MSU_ids": [
+      450
+    ],
+    "summary": "Red bars indicated regions of upregulated expression. $E _ { A }$ identified that the genomic region chr1:16816819–18551718 exhibited a high frequency of translocation breakpoints. $E _ { A }$ identified that the genomic region chr1:16816819–18551718 exhibited significant gene upregulation."
+  },
+  {
+    "hex_coord": [
+      -8,
+      1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1217
+    ],
+    "summary": "The system should support common file formats and tasks used for the analysis of genomics data. The system should support file formats that accommodate common data types and structures available in genomics."
+  },
+  {
+    "hex_coord": [
+      -6,
+      6
+    ],
+    "country": 0,
+    "MSU_ids": [
+      579
+    ],
+    "summary": "AuraGenome is available at https://github.com/Darius18/AuraGenome. AuraGenome is grounded in task-specific requirements identified through close collaboration with genomics experts. Two real-world case studies involving distinct genomic analysis tasks were conducted."
+  },
+  {
+    "hex_coord": [
+      -5,
+      -5
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2023
+    ],
+    "summary": "In tracks with one genomic field, users can specify a displacement option for overlap reduction. The 'pile' displacement adjusts the position of visual marks on the nongenomic axis. The 'spread' displacement distributes marks along the genomic axis."
+  },
+  {
+    "hex_coord": [
+      -5,
+      -2
+    ],
+    "country": 0,
+    "MSU_ids": [
+      589
+    ],
+    "summary": "This integration enabled visual alignment of structural variants with transcriptional activity. We aim to enable multiview genomic representations that accommodate diverse analytical needs."
+  },
+  {
+    "hex_coord": [
+      -5,
+      0
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1417
+    ],
+    "summary": "Heatmaps are common in genomics. We plan to add the tabular view feature to further enable effective visual exploration of genomics data."
+  },
+  {
+    "hex_coord": [
+      -5,
+      3
+    ],
+    "country": 0,
+    "MSU_ids": [
+      222
+    ],
+    "summary": "An effective multiagent workflow for genomic visualizations was constructed. This agent bridges the gap between raw genomic data and visualization design."
+  },
+  {
+    "hex_coord": [
+      -5,
+      7
+    ],
+    "country": 0,
+    "MSU_ids": [
+      569
+    ],
+    "summary": "AuraGenome’s interface preserved full interactivity throughout the process. AuraGenome provides notable improvements in usability over traditional tools. AuraGenome provides notable improvements in efficiency over traditional tools."
+  },
+  {
+    "hex_coord": [
+      -4,
+      -4
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2134
+    ],
+    "summary": "Nusrat et al. introduce the visual representation of a dataset as a unit building block in the visualization of genome-mapped data, referred to as a track. A view is a group of tracks that are aligned and linked on their genomic coordinate axes for synchronous zooming and panning interactions. Multiple tracks can be grouped into a view for concurrent analysis of multiple genomic features."
+  },
+  {
+    "hex_coord": [
+      -4,
+      -1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      132,
+      146
+    ],
+    "summary": "Six key requirements for a genome visual analytics framework were distilled based on these findings. The six core requirements ensure scalability, interpretability, and reproducibility in genomic data visualizations. Monolithic prompting strategies often suffer from instability and lack of control in genomic visualization tasks."
+  },
+  {
+    "hex_coord": [
+      -4,
+      1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1201
+    ],
+    "summary": "The specification can be used by genomics analysts to customize the recommended visualization for further use. There are several resources that can assist genomics analysts in choosing an appropriate visualization technique. Nusrat et al. surveyed over a hundred genomics visualization tools."
+  },
+  {
+    "hex_coord": [
+      -4,
+      2
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1944
+    ],
+    "summary": "Five design principles were identified through iterative discussions based on domain knowledge and research papers in genomics visualizations and programming languages. The grammar should use the language and concepts familiar to genomics data analysts to ensure learnability. Using language and concepts familiar to genomics data analysts is an important aspect in designing a programming language."
+  },
+  {
+    "hex_coord": [
+      -4,
+      8
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1160
+    ],
+    "summary": "The tasks and data introduced in this section play a critical role in the design of the GenoREC system. The user interface of GenoREC consists of two main panels. GenoREC’s user interface is implemented in JavaScript, HTML, and CSS."
+  },
+  {
+    "hex_coord": [
+      -4,
+      9
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1512
+    ],
+    "summary": "GenoREC supports two interaction patterns: coordinated interaction and focus+context. GenoREC suggests 'Focus+Context' interaction because it allows users to see a focused region in the genome. This feedback led to the export feature in GenoREC’s user interface."
+  },
+  {
+    "hex_coord": [
+      -4,
+      12
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1487
+    ],
+    "summary": "The interquartile range (IQR = 1; Q1 = 4, Q3 = 5) of GenoREC is less dispersed than the alternate stimuli’s interquartile range (IQR = 2; Q1 = 2, Q3 = 4). Participants are less confident with the rating of the alternate stimulus, leading to a more dispersed interquartile range (IQR = 2; Q1 = 2, Q3 = 4). For Scenario 3 (p = 0.08) and Scenario 7 (p = 0.35), we did not find a large difference between the GenoREC and the alternate stimuli."
+  },
+  {
+    "hex_coord": [
+      -3,
+      -2
+    ],
+    "country": 0,
+    "MSU_ids": [
+      410,
+      411,
+      412
+    ],
+    "summary": "The Sequence Log View is a node-link-based visualization designed to encode and navigate the LLM-driven process of genomic visualization generation. The Sequence Log View enhances control in the genomic visualization process. The Sequence Log View enhances reliability in the genomic visualization process."
+  },
+  {
+    "hex_coord": [
+      -3,
+      1
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1946
+    ],
+    "summary": "The goal is to make the grammar expressive enough to cover the wide range of genomics visualizations reported by Nusrat et al. Informal weekly discussions were held with all co-authors and an additional genomics visualization developer during the design process of Gosling to improve the domain-specificity of the grammar. The grammar should be expressive to cover a wide range of genomics visualizations."
+  },
+  {
+    "hex_coord": [
+      -3,
+      2
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1943
+    ],
+    "summary": "The grammar must provide effective and flexible coordinated interactivity to support various analytical setups, such as genome-wide overviews with single nucleotide level detail views or comparative visualizations. The grammar and its toolkit should be domain specific to allow the target audience to learn the grammar quickly and author genomics visualizations efficiently. Track-level visual representations in genomics share many properties of plots supported by general visualization grammars such as the Grammar of Graphics or Vega-Lite."
+  },
+  {
+    "hex_coord": [
+      -3,
+      7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1550
+    ],
+    "summary": "An overview of GenoREC’s system components and their interactions to generate output visualizations is provided. GenoREC enables genomics analysts to select effective visualizations based on a description of their data and analysis tasks. GenoREC includes a web application that enables analysts to input their requirements, explore recommended visualizations, and export them for their usage."
+  },
+  {
+    "hex_coord": [
+      -3,
+      9
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1253
+    ],
+    "summary": "GenoREC was developed through an iterative design process. A key design aspect of GenoREC is its modular architecture. One of the main contributions of GenoREC is the use of sequential order to better reflect the dependencies between these components."
+  },
+  {
+    "hex_coord": [
+      -3,
+      10
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1426,
+      1486
+    ],
+    "summary": "Participants were asked to use GenoREC and comment on the accuracy of the recommended visualization. The study measured the difference in utility between GenoREC’s top-ranked visualizations and mid-ranked visualizations for a given set of datasets and analysis tasks. We hypothesized that participants will find GenoREC’s top-ranked recommendation to be more useful than a mid-ranked visualization."
+  },
+  {
+    "hex_coord": [
+      -2,
+      -2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1065
+    ],
+    "summary": "Many visualizations used in genomics do not consider appropriate visualization best practices, results from empirical studies, or theoretical guidance. Ineffective and, in many cases, wrong visual designs can result from limitations in common and specialized visualization approaches in genomics. The limitations of current visualization approaches in genomics indicate a need for better visualization guidance."
+  },
+  {
+    "hex_coord": [
+      -2,
+      2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1544
+    ],
+    "summary": "The output of GenoREC is a specification for Gosling, a grammar-based genomics visualization toolkit. GenoREC uses Gosling, a grammar-based visualization toolkit for genomics, for rendering recommendation. GenoREC was used to generate and score all possible visualizations that can be rendered by Gosling for the data and tasks of a given scenario."
+  },
+  {
+    "hex_coord": [
+      -2,
+      6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1523
+    ],
+    "summary": "GenoREC maps data and task specifications to appropriate visualizations. Two user studies demonstrate that GenoREC recommends visualizations accepted by domain experts and suited to address the given genomics analysis problem. Using subjective responses from domain users presents a practical way of assessing visualization recommendations for genomics."
+  },
+  {
+    "hex_coord": [
+      -2,
+      7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1258
+    ],
+    "summary": "Based on the recommendation model, GenoREC generates and recommends an appropriate visualization to the user. GenoREC is a novel visualization recommendation system for genomics. The recommendation model in GenoREC uses a knowledge-based method for choosing appropriate visualizations."
+  },
+  {
+    "hex_coord": [
+      -2,
+      8
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1399,
+      1548
+    ],
+    "summary": "This work primarily focuses on the evaluation of GenoREC’s recommendation model. GenoREC switches to a linear recommendation when a user adds a BIGWIG file with quantitative data. The recommendation knowledge used by GenoREC is presented in this section."
+  },
+  {
+    "hex_coord": [
+      -2,
+      9
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1541
+    ],
+    "summary": "When there is a lack of empirical results, GenoREC factors the genomics-specific knowledge for the recommendation. GenoREC uses the ranking for recommendation. These scores are used for ranking in the GenoREC recommendation system."
+  },
+  {
+    "hex_coord": [
+      -1,
+      -4
+    ],
+    "country": 0,
+    "MSU_ids": [
+      417
+    ],
+    "summary": "We introduce AuraGenome, a large language model (LLM)-powered framework for rapid, reusable, and scalable generation of multilayered circular genome visualizations. The AuraGenome framework enables end-to-end generation, refinement, and exploration of genome-scale circular visualizations. AuraGenome is a framework that supports the intelligent generation and interactive refinement of circular genome visualizations."
+  },
+  {
+    "hex_coord": [
+      -1,
+      -3
+    ],
+    "country": 0,
+    "MSU_ids": [
+      33
+    ],
+    "summary": "These limitations highlight the demand for intelligent, automated visualization solutions tailored to the unique characteristics of circular genomic data."
+  },
+  {
+    "hex_coord": [
+      -1,
+      0
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2243,
+      2245
+    ],
+    "summary": "Gosling supports the design of novel genomics visualizations. The target audience for Gosling includes computational biologists, bioinformaticians, and software developers who create visualizations or visualization tools for genomics data analysis. In Gosling, visual representations of genomic features are organized into tracks and views."
+  },
+  {
+    "hex_coord": [
+      -1,
+      1
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2246
+    ],
+    "summary": "The accompanying JavaScript toolkit called Gosling.js provides scalable and interactive rendering. Gosling.js is built on top of an existing platform for web-based genomics data visualization. Gosling.js simplifies the visualization of common genomics data formats."
+  },
+  {
+    "hex_coord": [
+      -1,
+      4
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1416
+    ],
+    "summary": "Since we mainly focused on the recommendation of visual representations in the GenoREC interface, the tabular view is not included. The autoplot feature of ggBio [59], which is the closest alternative to GenoREC, does not support interactive visualizations. The autoplot feature of ggBio [59] does not support task-based recommendations."
+  },
+  {
+    "hex_coord": [
+      -1,
+      5
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2607
+    ],
+    "summary": "It is difficult for bioinformatics analysts to specify their design requirements using GenoREC. The difficulty in specifying design requirements results in poor usability of GenoREC."
+  },
+  {
+    "hex_coord": [
+      0,
+      -5
+    ],
+    "country": 0,
+    "MSU_ids": [
+      561
+    ],
+    "summary": "AuraGenome is an LLM-powered framework that enables genomics experts to rapidly generate multilayered circular genome visualizations. AuraGenome allows genomics experts to flexibly customize multilayered circular genome visualizations. AuraGenome enables genomics experts to efficiently reuse multilayered circular genome visualizations."
+  },
+  {
+    "hex_coord": [
+      0,
+      -1
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1961,
+      2244
+    ],
+    "summary": "The use of general language ensures Gosling is expressive enough to cover all use cases. The core concepts of Gosling’s grammar will be introduced. The adoption of Vega-Lite's building blocks in Gosling satisfies the expressiveness principle."
+  },
+  {
+    "hex_coord": [
+      1,
+      -8
+    ],
+    "country": 1,
+    "MSU_ids": [
+      656
+    ],
+    "summary": "The report hinted at the benefit of adopting the circular layout for application to structural data."
+  },
+  {
+    "hex_coord": [
+      1,
+      -3
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1948
+    ],
+    "summary": "A grammar that supports both linear and circular layouts should provide a unified interface. Gosling supports ideograms. Gosling supports pileup tracks."
+  },
+  {
+    "hex_coord": [
+      1,
+      -2
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2153
+    ],
+    "summary": "The goal was to provide first-class support for these concepts in Gosling. Gosling supports the creation of multiple views, which can be linked. In Gosling, a view contains the following key components."
+  },
+  {
+    "hex_coord": [
+      1,
+      0
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2224
+    ],
+    "summary": "Interactive versions of all visualizations in this paper are available at https://gosling.js.org. We provide a high-level comparison of Gosling to other visualization tools concerning our design principles. Data needs to be stored in an abstracted and consistent format, such as a tabular format, to facilitate the Grammar of Graphics approach."
+  },
+  {
+    "hex_coord": [
+      2,
+      -9
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1310
+    ],
+    "summary": "GenoREC recommends linear and circular layouts when a user specifies a BED file and a VCF file with categorical data. GenoREC supports three layouts: linear, circular, and space-filling. In overview tasks, where the user’s goal is to look for trends and patterns, GenoREC recommends both circular layouts and linear layouts."
+  },
+  {
+    "hex_coord": [
+      2,
+      -8
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1362
+    ],
+    "summary": "If views have a circular layout, GenoREC only permits parallel and adjacent arrangements. Based on the results of these studies, GenoREC maps quantitative values using position and length channels. GenoREC only supports overlaying position and color channels because they can co-exist without causing occlusion."
+  },
+  {
+    "hex_coord": [
+      2,
+      1
+    ],
+    "country": 3,
+    "MSU_ids": [
+      1949,
+      2241,
+      2242
+    ],
+    "summary": "Visualization grammar provides a structured framework for creating visual representations of data. Several grammar-based approaches have been proposed to overcome the limitations of template-based approaches in data visualization. Grammar-based approaches aim to increase the expressiveness of visualization tools by supporting the creation of more diverse visualizations."
+  },
+  {
+    "hex_coord": [
+      3,
+      -1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1374
+    ],
+    "summary": "'Focus+Context' interaction is vital for local comparison tasks. The state of the art in visualizing multivariate networks is reviewed."
+  },
+  {
+    "hex_coord": [
+      3,
+      6
+    ],
+    "country": 0,
+    "MSU_ids": [
+      590,
+      591
+    ],
+    "summary": "We introduce a retrieval-augmented generation (RAG) mechanism for grounded code synthesis to enhance agent execution quality. We will enhance the robustness of LLM-driven generation through improved retrieval grounding. We will enhance the robustness of LLM-driven generation through improved validation strategies."
+  },
+  {
+    "hex_coord": [
+      3,
+      10
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1420
+    ],
+    "summary": "All supplemental materials are available at https://osf.io/y73pt/. Study materials from both studies, including the stimuli, tasks, and data analysis code, are included in the Supplemental Material and on OSF (https://osf.io/y73pt/). We decided to keep data descriptions in domain-specific terminology because other participants found it helpful."
+  },
+  {
+    "hex_coord": [
+      4,
+      -11
+    ],
+    "country": 0,
+    "MSU_ids": [
+      588
+    ],
+    "summary": "The multilayered circular layouts include ring, radial, and chord layouts. We aim to extend support beyond circular layouts."
+  },
+  {
+    "hex_coord": [
+      4,
+      -9
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1309,
+      1645
+    ],
+    "summary": "Waldner et al. [54] found that length and position channels make it easier to identify and compare visual representations in linear layouts. This study recommends linear layouts when length and position are used in the encoding component for identifying and comparing tasks. The paper revisits comparative layouts."
+  },
+  {
+    "hex_coord": [
+      4,
+      -2
+    ],
+    "country": 0,
+    "MSU_ids": [
+      24,
+      25,
+      26
+    ],
+    "summary": "Visualization plays a crucial role in helping researchers explore complex relationships. Visualization helps researchers uncover patterns. Visualization helps researchers effectively communicate findings."
+  },
+  {
+    "hex_coord": [
+      4,
+      -2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1511
+    ],
+    "summary": "Users could solve correlation tasks through an overview or a region-based focus approach."
+  },
+  {
+    "hex_coord": [
+      4,
+      -2
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2812
+    ],
+    "summary": "Histogram and line are ideal for visualizing complex datasets."
+  },
+  {
+    "hex_coord": [
+      4,
+      -1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      106
+    ],
+    "summary": "A visual analytics system enables iterative refinement. The PanVa visual analysis tool introduces novel aggregated graphical encoding techniques. These approaches address basic visualization needs."
+  },
+  {
+    "hex_coord": [
+      4,
+      6
+    ],
+    "country": 0,
+    "MSU_ids": [
+      107
+    ],
+    "summary": "These approaches mitigate limitations in semantic understanding and long-context reasoning."
+  },
+  {
+    "hex_coord": [
+      5,
+      -3
+    ],
+    "country": 0,
+    "MSU_ids": [
+      233
+    ],
+    "summary": "This design promotes continuity in the visualization process. All adjustments are reflected in real time within each visualization. Each visualization remains fully interactive after each step."
+  },
+  {
+    "hex_coord": [
+      5,
+      1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1557,
+      1558,
+      1559
+    ],
+    "summary": "Visualization researchers have contributed many visualization recommendation systems, spanning general to domain-specific systems. There is work on the recommendation of layouts for multi-view visualizations. The right panel is a visualization gallery that displays recommended visualizations."
+  },
+  {
+    "hex_coord": [
+      5,
+      3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1532
+    ],
+    "summary": "It is possible to develop a recommendation model using existing knowledge and best practices from the information visualization field and domain theory. After ordering the components, domain experts can systematically curate recommendation knowledge for each component and create a sequential recommendation model for tree visualizations. Using a sequential model can simplify the process of designing a knowledge-based recommendation model for domains and visualization techniques where it is possible to break down visualization into components and apply order to them."
+  },
+  {
+    "hex_coord": [
+      5,
+      10
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1518,
+      1519
+    ],
+    "summary": "A 30-minute evaluation session was arranged with each participant via Zoom. The study could not exhaustively evaluate all possible data and task combinations. A small sample size of 13 participants is a limitation of the study."
+  },
+  {
+    "hex_coord": [
+      6,
+      -16
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2777
+    ],
+    "summary": "In Figure 1 (A), there are three nested rings. The ring Figure 1 (A1) is composed of a tile. The ring Figure 1 (A2) is composed of two tracks: line and histogram."
+  },
+  {
+    "hex_coord": [
+      6,
+      -3
+    ],
+    "country": 0,
+    "MSU_ids": [
+      587
+    ],
+    "summary": "This view supports two primary interaction pathways for visualization specification. We plan to support richer interactions with visualization outcomes."
+  },
+  {
+    "hex_coord": [
+      6,
+      -2
+    ],
+    "country": 0,
+    "MSU_ids": [
+      124
+    ],
+    "summary": "These findings informed the visual design and motivated the choice of a D3-based code to support extensibility and dynamic control. D3.js is a flexible and expressive library for interactive visualizations. The D3-based script supports rich interactivity, dynamic interaction, and reuse."
+  },
+  {
+    "hex_coord": [
+      6,
+      4
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1229,
+      1230,
+      1551
+    ],
+    "summary": "Current task-oriented recommendation systems support domain-independent low-level analytical tasks, such as compare and summarize. User preference involves factoring end users’ preferences into the recommendation system output. The system should ensure that domain practices are not eliminated from the recommendation."
+  },
+  {
+    "hex_coord": [
+      6,
+      5
+    ],
+    "country": 4,
+    "MSU_ids": [
+      3088,
+      3107
+    ],
+    "summary": "Embedding contextual information, such as provenance or real-world examples, can enhance user confidence in AI-driven tools. Evaluating AI assistance in terms of trust and perceived cognitive load could provide empirical insights. The study investigates whether visual design affects trust and perceived bias in machine learning."
+  },
+  {
+    "hex_coord": [
+      7,
+      -8
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1546,
+      1547
+    ],
+    "summary": "Data characteristics involve identifying visual encodings corresponding to the data type of attributes. These rules are usually formalized based on the properties of data, such as trends or outliers, and the effectiveness of visual encodings. Future features may include optimal color scales based on data."
+  },
+  {
+    "hex_coord": [
+      7,
+      -7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1224
+    ],
+    "summary": "Alternative designs of the same data should be recommended to analysts."
+  },
+  {
+    "hex_coord": [
+      7,
+      2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1553
+    ],
+    "summary": "Explanations will justify the reasons behind recommendations to answer domain user questions, e.g., 'Why was a linear layout recommended over a circular layout?'"
+  },
+  {
+    "hex_coord": [
+      7,
+      3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1218,
+      1220,
+      1552
+    ],
+    "summary": "The recommendation system should enable users to steer the recommendation progressively. Users may come to a recommendation system when they are not sure what they want and need assistance to find an item of interest. Users may need methods to interact with recommendation inputs in a flexible way and update them until they find an item of interest."
+  },
+  {
+    "hex_coord": [
+      7,
+      3
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2718
+    ],
+    "summary": "The tool should provide recommendations in a progressive manner, offering incremental recommendations based on users’ current needs and the current design. P6 stated that progressive recommendation better aligns with their evolving design needs."
+  },
+  {
+    "hex_coord": [
+      7,
+      4
+    ],
+    "country": 4,
+    "MSU_ids": [
+      3087,
+      3091
+    ],
+    "summary": "Participants preferred the progressive recommendation of the design compared to fully automated or fully manual circos plot design. Most participants preferred the progressive recommendation approach over fully-automated suggestions or manual design. The progressive recommendation approach allowed participants to iteratively refine the results to better align with their preferences."
+  },
+  {
+    "hex_coord": [
+      7,
+      9
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1520,
+      1521
+    ],
+    "summary": "Since we mainly used subjective responses from participants, additional follow-up studies would be required to validate objective aspects of the recommendation model. Validating actual coverage of the design space would require additional follow-up studies."
+  },
+  {
+    "hex_coord": [
+      8,
+      -17
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2800
+    ],
+    "summary": "In Figure 1 (B), a circos plot with eight tracks is shown, listed from outer to inner as follows: ideogram, highlight, tile, scatter, line, heatmaps, histogram, and chord. The tracks in a circos plot (B1-B8) are arranged from outermost to innermost. Tracks in circos plots are typically combined in practice."
+  },
+  {
+    "hex_coord": [
+      8,
+      -4
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1545
+    ],
+    "summary": "It will be possible to generate visualizations based on actual data files rather than descriptions of the files."
+  },
+  {
+    "hex_coord": [
+      8,
+      6
+    ],
+    "country": 0,
+    "MSU_ids": [
+      554
+    ],
+    "summary": "Some participants expressed a desire for richer data previews $( P _ { 1 } ) _ { i }$. Participants expressed a desire for editable annotation history $( P _ { 4 } ) _ { \bullet }$. Participants expressed a desire for better visibility into the sequence of steps taken."
+  },
+  {
+    "hex_coord": [
+      8,
+      6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1228
+    ],
+    "summary": "Options can improve the trust in the system."
+  },
+  {
+    "hex_coord": [
+      8,
+      6
+    ],
+    "country": 4,
+    "MSU_ids": [
+      3104,
+      3114
+    ],
+    "summary": "The evaluation process could be improved from several perspectives. A better design approach would involve inverting the polarity of questions to validate participants’ responses."
+  },
+  {
+    "hex_coord": [
+      9,
+      -5
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1526,
+      1530,
+      1531
+    ],
+    "summary": "The sequential method can be applied in other domains and visualization techniques. The sequential model may not apply universally across all domains and visualization techniques. Applying the sequential model to infographics can be challenging because they offer a lot of design freedom, making it difficult to identify their design space and decompose visualization into smaller components."
+  },
+  {
+    "hex_coord": [
+      9,
+      0
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2712
+    ],
+    "summary": "Our tool should support users in naturally expressing their design needs. Users can describe their design requirements in the input box, which offers an auto-complete feature to enhance input. P2 stated that they can simply describe what they want, and the tool would recommend proper designs."
+  },
+  {
+    "hex_coord": [
+      9,
+      3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1533,
+      1543
+    ],
+    "summary": "We anticipate the sequential model to be adopted more in the future. The model will be packaged into a library for programmatic access in the future."
+  },
+  {
+    "hex_coord": [
+      9,
+      5
+    ],
+    "country": 4,
+    "MSU_ids": [
+      3112
+    ],
+    "summary": "Future work should involve a larger and more diverse participant group, including those not experienced creators, to better assess the tool’s real-world value."
+  },
+  {
+    "hex_coord": [
+      10,
+      -14
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1510
+    ],
+    "summary": "Circular tracks are not effective for tasks in which users have to focus on a local region, as discussed in the feedback from Scenario 1. The qualitative feedback indicated that circular layouts do not work well with tasks requiring navigation with zooming and panning."
+  },
+  {
+    "hex_coord": [
+      10,
+      -13
+    ],
+    "country": 0,
+    "MSU_ids": [
+      79
+    ],
+    "summary": "Circular layouts largely rely on manual design, limiting their efficiency and general applicability."
+  },
+  {
+    "hex_coord": [
+      10,
+      -13
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2230
+    ],
+    "summary": "A common limitation of existing tools is the lack of support for both linear and circular layouts. The utility of space-filling and 3D layouts in the context of a grammar is limited as they do not afford alignment with other tracks."
+  },
+  {
+    "hex_coord": [
+      10,
+      -7
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2717
+    ],
+    "summary": "Current recommendation methods mainly focus on general domains and are not suitable for recommending circos plots. Relying on recommendation to generate a circos plot entirely from scratch is often impractical."
+  },
+  {
+    "hex_coord": [
+      10,
+      -6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1206
+    ],
+    "summary": "Experts noted that it might require additional effort to understand and communicate the results of an unfamiliar visualization technique or design."
+  },
+  {
+    "hex_coord": [
+      10,
+      -4
+    ],
+    "country": 0,
+    "MSU_ids": [
+      235
+    ],
+    "summary": "This design supports real-time iteration and visual feedback."
+  },
+  {
+    "hex_coord": [
+      10,
+      -4
+    ],
+    "country": 4,
+    "MSU_ids": [
+      3054
+    ],
+    "summary": "Immediate visual feedback reduces the costs associated with trial-and-error."
+  },
+  {
+    "hex_coord": [
+      10,
+      -3
+    ],
+    "country": 0,
+    "MSU_ids": [
+      334
+    ],
+    "summary": "These layouts can be selected, composed, and refined interactively through novel interface elements, such as the parameter panel and sequence log. This approach enhances output stability, especially in multiturn interactions or layout-specific tasks. Real-time adjustments promote iterative refinement."
+  },
+  {
+    "hex_coord": [
+      10,
+      -1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1227
+    ],
+    "summary": "The design of the system should account for users changing between different data and task inputs. The system should recommend design alternatives to users whenever it is possible."
+  },
+  {
+    "hex_coord": [
+      10,
+      0
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2707
+    ],
+    "summary": "Users should be enabled to describe their design requirements in a natural way. Requirements capture the user’s natural language input. Users can express their design requirements in natural language."
+  },
+  {
+    "hex_coord": [
+      11,
+      -9
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2623
+    ],
+    "summary": "ShinyCircos-V2.0 introduces a sample gallery to inspire users with circos plot designs. The dataset aims to support and enhance the design recommendation process for circos plots. We developed an ML-based recommendation method for circos plots."
+  },
+  {
+    "hex_coord": [
+      11,
+      -3
+    ],
+    "country": 4,
+    "MSU_ids": [
+      3102
+    ],
+    "summary": "This enhancement could streamline the customization process."
+  },
+  {
+    "hex_coord": [
+      11,
+      -2
+    ],
+    "country": 0,
+    "MSU_ids": [
+      548
+    ],
+    "summary": "The task-specific requirements reflect real-world workflow needs. This cross-disciplinary flexibility was highlighted as a key advantage over traditional tools."
+  },
+  {
+    "hex_coord": [
+      11,
+      -2
+    ],
+    "country": 4,
+    "MSU_ids": [
+      3064,
+      3067,
+      3070
+    ],
+    "summary": "The design lessons learned are presented. The design lessons can serve as inspiration for developing future tools. Balancing simplicity and flexibility in the design-to-implementation workflow was an important lesson learned."
+  },
+  {
+    "hex_coord": [
+      11,
+      0
+    ],
+    "country": 0,
+    "MSU_ids": [
+      586
+    ],
+    "summary": "LLMs can automate complex workflows. The modular steps include intent recognition, layout recommendation, code generation, validation, explanation, and refinement. Key subtasks include intent recognition, data parsing (R1), visualization recommendation (R2), and code generation and refinement (R3–R5)."
+  },
+  {
+    "hex_coord": [
+      11,
+      1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      195,
+      223
+    ],
+    "summary": "GPT-4o and DeepSeek-R1 were selected as the foundation of a semantics-driven multiagent workflow. A semantics-driven multiagent workflow orchestrates seven LLM-based agents. These agents are configured based on preevaluation of model capabilities."
+  },
+  {
+    "hex_coord": [
+      12,
+      -9
+    ],
+    "country": 4,
+    "MSU_ids": [
+      3078,
+      3079,
+      3101
+    ],
+    "summary": "We utilize a Large Language Model (LLM) to provide domain-specific design recommendations and configuration references to navigate the design of circos plots. Allowing users to exert control over the circos plot creation process can refine the recommended design to better meet users’ individual preferences and needs. The Configuration Generator was created to recommend circos plot configurations."
+  },
+  {
+    "hex_coord": [
+      12,
+      -8
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2705,
+      2706
+    ],
+    "summary": "Support for designing circos plots remains limited, as evidenced in the literature. These challenges highlight the need for a streamlined approach to simplify the circos plot design stage. A streamlined approach is needed to better support users in their circos plot creation efforts."
+  },
+  {
+    "hex_coord": [
+      12,
+      -6
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2668
+    ],
+    "summary": "Despite these advancements, these tools still require intensive manual configuration from users. These tools still require manual configuration. Creating the sketches still requires additional user efforts."
+  },
+  {
+    "hex_coord": [
+      12,
+      -4
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2726,
+      2727
+    ],
+    "summary": "The tool addresses both design and implementation aspects. An intelligent, interactive authoring tool is needed to streamline the design process. An intelligent, interactive authoring tool is needed to enable more efficient implementation."
+  },
+  {
+    "hex_coord": [
+      12,
+      -1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      203,
+      228,
+      229
+    ],
+    "summary": "The modular design enables finer grained orchestration, greater controllability, and better task transparency. By modularizing intent routing, the system supports extensibility to new task types. The modularity improves maintainability."
+  },
+  {
+    "hex_coord": [
+      12,
+      1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      198
+    ],
+    "summary": "The workflow introduces specialized LLM-based agents responsible for key subtasks. This division supports a modular workflow where each agent operates on tasks aligned with the LLM’s strengths. Each LLM-based agent in the workflow is responsible for a specific subtask aligned with its model capabilities."
+  },
+  {
+    "hex_coord": [
+      13,
+      -9
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2732
+    ],
+    "summary": "The tool should automatically apply selected designs and update the Circos plot in real time. We report user study results including challenges of current circos plot creation tools. The tool automatically applies the recommended design and supports easy refinement of the created circos plots."
+  },
+  {
+    "hex_coord": [
+      13,
+      -7
+    ],
+    "country": 4,
+    "MSU_ids": [
+      3024
+    ],
+    "summary": "This reflects IntelliCircos’s limited editing capabilities compared to mature software (e.g., Circos)."
+  },
+  {
+    "hex_coord": [
+      13,
+      -4
+    ],
+    "country": 0,
+    "MSU_ids": [
+      133
+    ],
+    "summary": "The requirements aim to enhance analytical efficiency, expressiveness, and usability."
+  },
+  {
+    "hex_coord": [
+      13,
+      -3
+    ],
+    "country": 0,
+    "MSU_ids": [
+      376,
+      482
+    ],
+    "summary": "This process facilitates downstream reporting and publication. The case study built on the workflow established by E_A. The new workflow retained structural and contextual linkage to its source."
+  },
+  {
+    "hex_coord": [
+      14,
+      -11
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2697,
+      2733
+    ],
+    "summary": "Bioinformatics analysts often manually create circos plots to analyze the data and extract valuable insights. The process of creating circos plots consists of two main steps: design and implementation. Once the initial design is established, analysts use Circos-based programming tools to implement the circos plot configuration."
+  },
+  {
+    "hex_coord": [
+      14,
+      -10
+    ],
+    "country": 1,
+    "MSU_ids": [
+      626
+    ],
+    "summary": "This makes Circos suitable for rapid deployment in data analysis and reporting pipelines. Circos is driven by flat-text configuration files to integrate into analysis pipelines."
+  },
+  {
+    "hex_coord": [
+      14,
+      -7
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2973,
+      3055,
+      3093,
+      3094,
+      3095,
+      3098,
+      3100
+    ],
+    "summary": "It is difficult and unfair to compare IntelliCircos with existing tools. More than half of the participants mentioned that IntelliCircos could evolve to support more complex, customizable features beyond those currently available in Circos. This section discusses future work regarding the functionalities of IntelliCircos."
+  },
+  {
+    "hex_coord": [
+      14,
+      -2
+    ],
+    "country": 0,
+    "MSU_ids": [
+      142,
+      234
+    ],
+    "summary": "This results in low generation efficiency. This approach reduces manual trial-and-error. This design avoids unintended side effects."
+  },
+  {
+    "hex_coord": [
+      14,
+      -2
+    ],
+    "country": 4,
+    "MSU_ids": [
+      3075,
+      3080
+    ],
+    "summary": "This underscores the value of intuitive UI enhancements in reducing the learning curve. This approach could reduce the need for manual adjustments."
+  },
+  {
+    "hex_coord": [
+      14,
+      -1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      398,
+      592
+    ],
+    "summary": "The system reduces unnecessary computation and maintains contextual focus. This approach reduces hallucinated code patterns. This architecture significantly reduces hallucinations."
+  },
+  {
+    "hex_coord": [
+      15,
+      -11
+    ],
+    "country": 4,
+    "MSU_ids": [
+      3046
+    ],
+    "summary": "IntelliCircos supports easy refinement of the created circos plot. The results demonstrate that IntelliCircos greatly simplifies the implementation of circos plots. IntelliCircos supports the implementation of circos plots."
+  },
+  {
+    "hex_coord": [
+      15,
+      -9
+    ],
+    "country": 4,
+    "MSU_ids": [
+      3050
+    ],
+    "summary": "IntelliCircos enhances input efficiency with an auto-complete feature. IntelliCircos constructs a path from the <start> to the selected node to form the configuration for the new plot. When constructing the path, IntelliCircos preserves segments from the user’s current configuration."
+  },
+  {
+    "hex_coord": [
+      15,
+      -7
+    ],
+    "country": 4,
+    "MSU_ids": [
+      3092
+    ],
+    "summary": "The user study aimed to reveal the limitations of IntelliCircos. A qualitative assessment of users’ experiences with IntelliCircos was conducted, comparing it to their current practices. The semi-structured interview included topics on practices with existing tools and experience with IntelliCircos."
+  },
+  {
+    "hex_coord": [
+      15,
+      -3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1216
+    ],
+    "summary": "Experts noted that the ability to specify data requirements in familiar file formats could reduce the learning curve associated with the system."
+  },
+  {
+    "hex_coord": [
+      16,
+      -10
+    ],
+    "country": 4,
+    "MSU_ids": [
+      3056
+    ],
+    "summary": "IntelliCircos provided the recommendation: <ideogram><split><highlight><split><line><split><scatter><split><chord>. IntelliCircos recommended: <ideogram><split><highlight><split><line><split><tile><split><chord>. Participants suggested features such as split karyotype plots and log-scale color mappings for future development of IntelliCircos."
+  },
+  {
+    "hex_coord": [
+      16,
+      -8
+    ],
+    "country": 4,
+    "MSU_ids": [
+      3110
+    ],
+    "summary": "We conduct a user study with 8 bioinformatics analysts to evaluate IntelliCircos. A user study with 8 participants was conducted to evaluate the effectiveness and usability of IntelliCircos. A user study was conducted to demonstrate the effectiveness of IntelliCircos."
+  }
+]

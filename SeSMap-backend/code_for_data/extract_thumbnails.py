@@ -60,6 +60,22 @@ def find_content_list(paper_dir: Path):
     return Path(cands[0]) if cands else None
 
 
+def find_fallback_image(paper_dir: Path):
+    """Return a MinerU-extracted image when the content list has no image block.
+
+    Some PDFs expose valid files under ``images/`` but omit their image blocks
+    from ``*_content_list.json``.  Keeping this fallback avoids an empty gallery
+    card while still using an asset extracted from the same source paper.
+    """
+    patterns = ("*.png", "*.jpg", "*.jpeg", "*.webp")
+    candidates = []
+    for folder in (paper_dir / "images", paper_dir / "_mineru"):
+        if folder.exists():
+            for pattern in patterns:
+                candidates.extend(folder.rglob(pattern))
+    return sorted(candidates)[0] if candidates else None
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--corpus", type=Path, required=True)
@@ -99,6 +115,15 @@ def main() -> int:
                 im.save(out)
                 entry["thumbnail"] = out.name
                 entry["caption"] = caption_text(fig)[:200]
+        else:
+            img_src = find_fallback_image(args.corpus / folder)
+            if img_src:
+                out = thumbs_dir / f"c{pid}.png"
+                im = Image.open(img_src).convert("RGB")
+                im.thumbnail((args.size, args.size))
+                im.save(out)
+                entry["thumbnail"] = out.name
+                entry["caption"] = "MinerU-extracted figure fallback"
         manifest.append(entry)
         tag = ("-> " + entry["thumbnail"]) if entry["thumbnail"] else "NO FIGURE"
         print(f"  paper {pid} {folder[:44]:44} {tag}")

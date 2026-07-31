@@ -48,8 +48,14 @@ def paper_msus(sections, use_llm: bool):
     return out
 
 
-def build_one(paper_dir: str, use_llm: bool):
+def build_one(paper_dir: str, use_llm: bool, reuse_existing: bool = False):
     name = os.path.basename(paper_dir.rstrip("/"))
+    rewrite_path = os.path.join(paper_dir, f"{name}_rewrite.json")
+    if reuse_existing and os.path.isfile(rewrite_path):
+        rewrite = json.load(open(rewrite_path, encoding="utf-8"))
+        n_msu = sum(len(p.get("resultmsu") or []) for p in rewrite)
+        print(f"  {name}: reuse {len(rewrite)} paragraphs, {n_msu} MSUs")
+        return name, rewrite
     md = os.path.join(paper_dir, f"{name}.md")
     if not os.path.isfile(md):
         cands = [f for f in os.listdir(paper_dir) if f.endswith(".md")]
@@ -61,7 +67,7 @@ def build_one(paper_dir: str, use_llm: bool):
     json.dump(sections, open(os.path.join(paper_dir, f"{name}.json"), "w", encoding="utf-8"),
               ensure_ascii=False, indent=2)
     rewrite = paper_msus(sections, use_llm)
-    json.dump(rewrite, open(os.path.join(paper_dir, f"{name}_rewrite.json"), "w", encoding="utf-8"),
+    json.dump(rewrite, open(rewrite_path, "w", encoding="utf-8"),
               ensure_ascii=False, indent=2)
     n_msu = sum(len(p.get("resultmsu", [])) for p in rewrite)
     print(f"  {name}: {len(sections)} sections, {len(rewrite)} paragraphs, {n_msu} MSUs")
@@ -100,6 +106,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--corpus", default=str(cfg.CORPUS_DIR))
     ap.add_argument("--no-llm", action="store_true", help="跳过 MSU 抽取(仅解析, 无需 API key)")
+    ap.add_argument("--reuse-existing", action="store_true",
+                    help="复用已有 <paper>_rewrite.json；仅为新增论文调用 LLM")
     args = ap.parse_args()
 
     corpus = args.corpus
@@ -111,7 +119,7 @@ def main():
     print(f"[build_corpus] {len(dirs)} papers, use_llm={not args.no_llm}")
     papers = []
     for d in dirs:
-        r = build_one(d, not args.no_llm)
+        r = build_one(d, not args.no_llm, args.reuse_existing)
         if r:
             papers.append(r)
     aggregate(papers)

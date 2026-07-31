@@ -1,0 +1,1551 @@
+[
+  {
+    "paragraph": "Leidy-Alejandra G. Molano <sup>1,2</sup>, Pascal Hirsch <sup>1</sup>, Andreas Keller <sup>1,2,3</sup>, Monika Dolejska<sup>4,5,6,7,8</sup>, Jana Palkovicova <sup>5,6,\\*</sup>",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "No scientific content is present in the provided text.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "<sup>1</sup>Chair for Clinical Bioinformatics, Saarland University, Saarbrücken 66123, Germany",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Chair for Clinical Bioinformatics is located at Saarland University, Saarbrücken, Germany.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "<sup>2</sup>Helmholtz Institute for Pharmaceutical Research Saarland, Helmholtz Center for Infection Research, Saarbrücken 66123, Germany <sup>3</sup>PharmaScienceHub, Saarland University, Saarbrücken 66123, Germany",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Helmholtz Institute for Pharmaceutical Research Saarland is located in Saarbrücken, Germany.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Helmholtz Center for Infection Research is located in Saarbrücken, Germany.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "PharmaScienceHub is part of Saarland University in Saarbrücken, Germany.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "<sup>4</sup>Department of Biology and Wildlife Diseases, University of Veterinary Sciences Brno, Brno 61242, Czech Republic",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Department of Biology and Wildlife Diseases, University of Veterinary Sciences Brno, Brno 61242, Czech Republic.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "<sup>5</sup>Central European Institute of Technology, University of Veterinary Sciences Brno, Brno 61242, Czech Republic",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Central European Institute of Technology is affiliated with the University of Veterinary Sciences Brno.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "The location of the University of Veterinary Sciences Brno is Brno 61242, Czech Republic.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "<sup>6</sup>Department of Microbiology, Faculty of Medicine in Pilsen, Charles University, Pilsen 32300, Czech Republic",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Department of Microbiology, Faculty of Medicine in Pilsen, Charles University, Pilsen 32300, Czech Republic.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "<sup>7</sup>Division of Clinical Microbiology and Immunology, Department of Laboratory Medicine, University Hospital Brno, Brno 61242, Czech Republic <sup>8</sup>Department of Chemistry and Biochemistry, Faculty of AgriSciences, Mendel University in Brno, Brno 61242, Czech Republic",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Division of Clinical Microbiology and Immunology is part of the Department of Laboratory Medicine at University Hospital Brno.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "The Department of Chemistry and Biochemistry is part of the Faculty of AgriSciences at Mendel University in Brno.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "∗To whom correspondence should be addressed. Email: palkovicova.jane@gmail.com",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "To whom correspondence should be addressed.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Email: palkovicova.jane@gmail.com.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Plasmids play a central role in bacterial adaptation and in the dissemination of antimicrobial resistance, driving a growing need for accessible tools that support their comparative analysis without requiring local computational infrastructure. Although several circular genome visualization platforms exist, most are designed for general bacterial genome analysis rather than focused on plasmid comparison. Host element referencebased aligner (HERA) is a web server for intuitive visualization and comparison of plasmids and other circular molecules through BLAST alignment against reference sequences. Built on interactive circular genome visualization, HERA simplifies comparative genomics by providing an accessible interface for exploring sequence similarity, identifying conserved regions, and analyzing genetic elements without the complexity of traditiona local tools. HERA includes a plasmid-oriented annotation pipeline covering replicon and mobility typing, antimicrobial resistance detection, mobile element identification, and homology search against the PLSDB plasmid database. HERA also provides an automatic selection of the reference which is the most appropriate from the uploaded sequences. The web server is available without login or any restriction at https: //web.ccb.uni-saarland.de/hera/.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Plasmids play a central role in bacterial adaptation and in the dissemination of antimicrobial resistance.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "There is a growing need for accessible tools that support plasmid comparative analysis without requiring local computational infrastructure.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Several circular genome visualization platforms exist, but most are designed for general bacterial genome analysis rather than focused on plasmid comparison.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Host element reference-based aligner (HERA) is a web server for intuitive visualization and comparison of plasmids and other circular molecules through BLAST alignment against reference sequences.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "HERA is built on interactive circular genome visualization.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "HERA simplifies comparative genomics by providing an accessible interface for exploring sequence similarity, identifying conserved regions, and analyzing genetic elements without the complexity of traditional local tools.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "HERA includes a plasmid-oriented annotation pipeline covering replicon and mobility typing, antimicrobial resistance detection, mobile element identification, and homology search against the PLSDB plasmid database.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "HERA provides an automatic selection of the reference which is the most appropriate from the uploaded sequences.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The web server is available without login or any restriction at https://web.ccb.uni-saarland.de/hera/.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "images/de6620b5f4e274f2281792001828a2612c388a805ee6a978e25a8a2abbee05ea.jpg",
+    "type": "figure"
+  },
+  {
+    "paragraph": "In the era of genomic data, thousands of prokaryotic genome sequences are now available in public databases [1, 2]. Among these, plasmids and other mobile genetic elements are of particular interest due to their role in antimicrobial resistance dissemination and bacterial adaptation [3–5]. Effective visualization of these circular molecules is essential for interpreting comparative genomics results, identifying conserved regions, and detecting gene gain and loss events.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Thousands of prokaryotic genome sequences are now available in public databases.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Plasmids and other mobile genetic elements play a role in antimicrobial resistance dissemination.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Plasmids and other mobile genetic elements contribute to bacterial adaptation.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Effective visualization of circular molecules is essential for interpreting comparative genomics results.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Effective visualization of circular molecules aids in identifying conserved regions.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Effective visualization of circular molecules helps in detecting gene gain and loss events.",
+        "category": "Background",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Due to the inherent difficulty of rendering circular images in common visualization packages (i.e. ggplot package), several tools have been developed, each with distinct capabilities and limitations. Circos is a very flexible framework capable of rendering complex multi-track plots with ribbon and link diagrams connecting genomic positions [6]. However, it is Perl-dependent and offers no graphical user interface. GenoVi attempted to improve its accessibility by creating a Python command-line wrapper around Circos [7], automating the creation of circular genome representations from Gen-Bank input files. However, both Circos and GenoVi are limited to static image generators. The CGView family of tools extended these capabilities by allowing BLAST-based comparisons of a reference genome against other sequences with automatic Clusters of Orthologous Genes classification and base composition plots [8, 9]. However, like Circos and Genovi, GCView Comparison Tool is command-line-driven, produces only static images, and requires installation of multiple dependencies including Perl, Java, and BLAST . BRIG (BLAST Ring Image Generator) addressed the usability challenge by providing a cross-platform Java desktop application with a graphical user interface for generating circular BLAST comparison images [10, 11]. Despite its popularity, BRIG produces also only static images without interactive exploration capabilities. More recent web-based tools have expanded the landscape of circular genome visualization, such as Proksee, a comprehensive web server that integrates genome assembly, annotation, and visualization into a unified platform, generating interactive maps powered by CGView.js [5, 12]. While Proksee represents the most feature-rich option currently available, its BLAST comparison functionality is limited to approximately five comparison genomes, and it is primarily oriented toward comprehensive bacterial genome analysis rather than plasmid comparison.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Rendering circular images in common visualization packages like ggplot is inherently difficult.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Several tools have been developed to address the challenges of rendering circular images, each with distinct capabilities and limitations.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Circos is a flexible framework capable of rendering complex multi-track plots with ribbon and link diagrams connecting genomic positions.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Circos is Perl-dependent and offers no graphical user interface.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "GenoVi created a Python command-line wrapper around Circos to improve accessibility.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "GenoVi automates the creation of circular genome representations from GenBank input files.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Both Circos and GenoVi are limited to static image generation.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The CGView family of tools extended capabilities by allowing BLAST-based comparisons of a reference genome against other sequences.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The CGView family of tools includes automatic Clusters of Orthologous Genes classification and base composition plots.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The CGView Comparison Tool is command-line-driven, produces only static images, and requires installation of multiple dependencies including Perl, Java, and BLAST.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "BRIG (BLAST Ring Image Generator) addressed usability challenges by providing a cross-platform Java desktop application with a graphical user interface for generating circular BLAST comparison images.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "BRIG produces only static images without interactive exploration capabilities.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Recent web-based tools have expanded the landscape of circular genome visualization.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Proksee is a comprehensive web server that integrates genome assembly, annotation, and visualization into a unified platform.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Proksee generates interactive maps powered by CGView.js.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Proksee's BLAST comparison functionality is limited to approximately five comparison genomes.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Proksee is primarily oriented toward comprehensive bacterial genome analysis rather than plasmid comparison.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "To address these gaps, we developed HERA (host element reference-based aligner), a web server that combines the analytical power of BLAST-based multi-sequence comparison with an intuitive, highly customizable web interface for interactive circular genome visualization. HERA is designed for comparing plasmids and contig-based genome assemblies against a reference sequence, providing researchers with an accessible platform that requires no software installation, no programming knowledge, and no computational infrastructure.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "HERA (host element reference-based aligner) is a web server.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "HERA combines the analytical power of BLAST-based multi-sequence comparison with an intuitive, highly customizable web interface for interactive circular genome visualization.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "HERA is designed for comparing plasmids and contig-based genome assemblies against a reference sequence.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "HERA provides researchers with an accessible platform that requires no software installation, no programming knowledge, and no computational infrastructure.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "HERA is implemented as a Django 5.2 web application with a modular architecture composed of three main components. First, the initial submission interface, where users are prompted to upload the sequences. Second, our server-side data pipeline to align the plasmids and generate the plot data. Lastly, the result interface offers interactive data exploration, optimization of plot features, and exporting capabilities.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "HERA is implemented as a Django 5.2 web application with a modular architecture composed of three main components.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The initial submission interface prompts users to upload the sequences.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The server-side data pipeline aligns the plasmids and generates the plot data.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The result interface offers interactive data exploration.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The result interface provides optimization of plot features and exporting capabilities.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "The web application is served via a containerized deployment with an allocated capacity of 16 CPU cores and 32 GB of RAM. Asynchronous analysis jobs are managed via a Celery task queue, configured with four workers, allowing up to four concurrent submissions to be processed simultaneously. Upload file sizes are currently limited to 120 MB per file.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The web application is served via a containerized deployment.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The containerized deployment is allocated 16 CPU cores and 32 GB of RAM.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Asynchronous analysis jobs are managed via a Celery task queue.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The Celery task queue is configured with four workers.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The configuration allows up to four concurrent submissions to be processed simultaneously.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Upload file sizes are currently limited to 120 MB per file.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "HERA accepts GenBank-formatted or FASTA files as reference and query sequences. Reference selection can be provided by the user or delegated to HERA via three modes: fully automatic, random, or advanced (user-defined length and align ment scoring policies). In fully automatic mode, HERA evaluates all uploaded single-contig files as candidate references and selects the one that best represents the dataset. Each candidate is scored on two independent criteria: sequence length and pairwise alignment similarity.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "HERA accepts GenBank-formatted or FASTA files as reference and query sequences.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Reference selection can be provided by the user or delegated to HERA via three modes: fully automatic, random, or advanced.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "In fully automatic mode, HERA evaluates all uploaded single-contig files as candidate references.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "HERA selects the candidate reference that best represents the dataset.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Each candidate is scored on two independent criteria: sequence length and pairwise alignment similarity.",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "The length score rewards longer assemblies, under the assumption that more complete sequences provide a better reference backbone. Scores are normalized so that the longest candidate receives the maximum value and the others are scaled proportionally.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The length score rewards longer assemblies.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Longer assemblies are assumed to provide a better reference backbone.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Scores are normalized so that the longest candidate receives the maximum value.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Other candidates are scaled proportionally.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "The alignment score captures how well each candidate represents the rest of the dataset. For each candidate, a local BLAST database is built and all other uploaded sequences are aligned against it using BLASTn. The resulting query coverage and percentage identity values are averaged per candidate, normalized across candidates, and combined with equal weighting. If no alignments are produced, all candidates receive a score of zero for that metric.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The alignment score captures how well each candidate represents the rest of the dataset.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "For each candidate, a local BLAST database is built.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "All other uploaded sequences are aligned against the candidate using BLASTn.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The resulting query coverage and percentage identity values are averaged per candidate.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The averaged values are normalized across candidates and combined with equal weighting.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "If no alignments are produced, all candidates receive a score of zero for that metric.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "The final score is the mean of the length and alignment scores, giving equal importance to assembly completeness and sequence representativeness. The highest-scoring candidate is selected as reference, with ties broken by upload order, and the remaining files are used as queries.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The final score is the mean of the length and alignment scores.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The scoring method gives equal importance to assembly completeness and sequence representativeness.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The highest-scoring candidate is selected as reference.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Ties are broken by upload order.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The remaining files are used as queries.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Upon submission, the selected reference file is used to construct a local BLAST database (v. 2.17.0) [11], which is used to align the queries using the BLASTn algorithm. BLAST results undergo a cross-contig best-hit filtering step based on the NCBI Best-Hits filtering algorithm. This filter removes redundant HSPs (high-scoring segment pairs) from different contigs of the same query file using three criteria: (i) the e-value of HSP A must be greater than or equal to that of HSP B; (ii) the bit score density of A must be strictly lower than that of B by a configurable score-edge factor; and (iii) the subject regions of A and B must overlap, with A extending beyond B by no more than a configurable overhang fraction of B’s subject length.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The selected reference file is used to construct a local BLAST database (v. 2.17.0).",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The BLAST database is used to align the queries using the BLASTn algorithm.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "BLAST results undergo a cross-contig best-hit filtering step based on the NCBI Best-Hits filtering algorithm.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The filtering step removes redundant HSPs (high-scoring segment pairs) from different contigs of the same query file.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The filtering step uses three criteria: (i) the e-value of HSP A must be greater than or equal to that of HSP B.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The second criterion is that the bit score density of A must be strictly lower than that of B by a configurable score-edge factor.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The third criterion is that the subject regions of A and B must overlap, with A extending beyond B by no more than a configurable overhang fraction of B’s subject length.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "The reference sequence is processed through an asynchronous Snakemake pipeline (v 9.19.0) [13] comprising: PLSDB (BLASTn search, database v.2024\\_05\\_31\\_v2) [14], AM-RFinderPlus (v. 4.0.19, database v.2025-03-25.1) [15], PlasmidFinder (v. 2.1.6, database v.2.2.0) [16], pMLST (v. 2.23.0, database download on 2025-06-14) [17], MOB-typer (v.3.1.9, database v.3.1.8,) [18], and Bakta (v.1.12.0, database v6) [19].",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The reference sequence is processed through an asynchronous Snakemake pipeline (v 9.19.0).",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The Snakemake pipeline includes PLSDB (BLASTn search, database v.2024_05_31_v2).",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The Snakemake pipeline includes AM-RFinderPlus (v. 4.0.19, database v.2025-03-25.1).",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The Snakemake pipeline includes PlasmidFinder (v. 2.1.6, database v.2.2.0).",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The Snakemake pipeline includes pMLST (v. 2.23.0, database download on 2025-06-14).",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The Snakemake pipeline includes MOB-typer (v.3.1.9, database v.3.1.8).",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The Snakemake pipeline includes Bakta (v.1.12.0, database v6).",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Upon completion of BLAST alignments, HERA generates an interactive circular map powered by CGView.js (v.1.8.0), augmented with D3.js (v.7) for custom legend rendering, jsPanel (v. 4.15.0,) for draggable control windows, and DataTables (v.2.3.4) for interactive tabular data management. Image ex porting is supported by html2canvas (v.1.4.1).",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "HERA generates an interactive circular map upon completion of BLAST alignments.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The circular map is powered by CGView.js (v.1.8.0).",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The map is augmented with D3.js (v.7) for custom legend rendering.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Draggable control windows are supported by jsPanel (v.4.15.0).",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Interactive tabular data management is enabled by DataTables (v.2.3.4).",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Image exporting is supported by html2canvas (v.1.4.1).",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "HERA provides three reference selection modes: (i) In automatic mode, all uploaded sequences are scored based on length metrics and pairwise BLAST alignment to select the optimal reference. (ii) A random mode is available for exploratory use. (iii) An advanced mode allows users to define their own length policy (longest, shortest, or closest to average) and alignment scoring policy (coverage, similarity, balanced, or ignored).",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "HERA provides three reference selection modes.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "In automatic mode, all uploaded sequences are scored based on length metrics and pairwise BLAST alignment to select the optimal reference.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "A random mode is available for exploratory use.",
+        "category": "Method",
+        "rank": 2
+      },
+      {
+        "sentence": "An advanced mode allows users to define their own length policy (longest, shortest, or closest to average).",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "An advanced mode allows users to define their own alignment scoring policy (coverage, similarity, balanced, or ignored).",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "HERA also allows an extended annotation pipeline that automatically annotated selected the reference sequence upon submission. Users can select their analysis of interest and specify their own parameters. Currently, the extended analysis options are: PLSDB (BLASTn search), AMRFinderPlus, PlasmidFinder, pMLST, MOB-typer, and Bakta. Results are displayed in a dedicated “Extended Analysis” panel with searchable and sortable DataTables. All annotated features are automatically integrated into the CGView circular map and are subject to the same interactive visibility and labeling controls available for user-defined annotations.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "HERA allows an extended annotation pipeline that automatically annotates the selected reference sequence upon submission.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Users can select their analysis of interest and specify their own parameters.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The extended analysis options currently include PLSDB (BLASTn search), AMRFinderPlus, PlasmidFinder, pMLST, MOB-typer, and Bakta.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Results are displayed in a dedicated 'Extended Analysis' panel with searchable and sortable DataTables.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "All annotated features are automatically integrated into the CGView circular map.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Annotated features are subject to the same interactive visibility and labeling controls available for user-defined annotations.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "HERA provides real-time customization through independent draggable control panels: HERA Controls, Tracks Data, and Extended Analysis (if automatic reference annotation was selected). HERA Controls represents the main control panel, organized into tabbed sections for General settings and Export options. The General tab provides controls for identity thresholds, ring display properties, map format switching between circular and linear views, reference title customization, query title positioning and styling, backbone appearance, tick mark properties, and annotation display options. The Export tab provides controls for saving and downloading session data, as well as a comprehensive image export interface.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "HERA provides real-time customization through independent draggable control panels: HERA Controls, Tracks Data, and Extended Analysis.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "HERA Controls represents the main control panel, organized into tabbed sections for General settings and Export options.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The General tab provides controls for identity thresholds, ring display properties, map format switching between circular and linear views, reference title customization, query title positioning and styling, backbone appearance, tick mark properties, and annotation display options.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The Export tab provides controls for saving and downloading session data, as well as a comprehensive image export interface.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "The second control panel (Tracks Data) provides three tabbed views: Samples, Annotations, and BLAST. The Samples tab presents an interactive table listing all query rings, where users can reorder rings via drag-and-drop, toggle individual ring and label visibility. The Annotations tab displays all reference annotation features in a searchable and selectable table and provides an annotation grouping system where users can create named tag groups, assign selected features to groups, and automatically generate color-coded legend entries for each group. This annotation tagging system allows users to highlight important genetic features such as resistance genes, virulence factors, or other genetic elements in distinct colors. The BLAST tab presents all BLAST hits in a filterable table with adjustable minimum thresholds for query coverage, subject coverage, percentage identity, and alignment length.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The second control panel (Tracks Data) provides three tabbed views: Samples, Annotations, and BLAST.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The Samples tab presents an interactive table listing all query rings.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Users can reorder rings via drag-and-drop in the Samples tab.",
+        "category": "Method",
+        "rank": 2
+      },
+      {
+        "sentence": "Users can toggle individual ring and label visibility in the Samples tab.",
+        "category": "Method",
+        "rank": 2
+      },
+      {
+        "sentence": "The Annotations tab displays all reference annotation features in a searchable and selectable table.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The Annotations tab provides an annotation grouping system where users can create named tag groups.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Users can assign selected features to groups in the annotation grouping system.",
+        "category": "Method",
+        "rank": 2
+      },
+      {
+        "sentence": "The annotation grouping system automatically generates color-coded legend entries for each group.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The annotation tagging system allows users to highlight important genetic features such as resistance genes, virulence factors, or other genetic elements in distinct colors.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The BLAST tab presents all BLAST hits in a filterable table.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The BLAST tab allows users to adjust minimum thresholds for query coverage, subject coverage, percentage identity, and alignment length.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "The third panel (Extended Analysis) displays the results of the automated reference annotation pipeline. When extended analysis tools are selected, the panel provides one tab per tool, each presenting results in a searchable and sortable table.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The third panel (Extended Analysis) displays the results of the automated reference annotation pipeline.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "When extended analysis tools are selected, the panel provides one tab per tool.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Each tab presents results in a searchable and sortable table.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Three interactive legends are displayed directly on the map: an identity opacity legend, a layout legend displaying query ring assignments, and an annotation tags legend showing usercreated feature groups. All three legends are independently toggleable and draggable.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Three interactive legends are displayed directly on the map.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "An identity opacity legend is displayed on the map.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "A layout legend displaying query ring assignments is displayed on the map.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "An annotation tags legend showing user-created feature groups is displayed on the map.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "All three legends are independently toggleable.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "All three legends are independently draggable.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Session data can be saved to the server for later retrieval (with 28-day retention) or downloaded as a ZIP archive containing the CGView JSON configuration, session state JSON, original GenBank and FASTA files, and all BLAST alignment results. Additionally, tables in CSV/TSV formats for reference annotation and selection scoring will be included if these options were selected. Saved sessions can be restored either by entering the job ID on the Results page or by uploading a previously downloaded ZIP file, which restores the complete visualization state including all customizations. The ZIP file incorporates a README.md file that includes all tools specifications to ensure reproducibility.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Session data can be saved to the server for later retrieval with 28-day retention.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Session data can be downloaded as a ZIP archive containing the CGView JSON configuration, session state JSON, original GenBank and FASTA files, and all BLAST alignment results.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Tables in CSV/TSV formats for reference annotation and selection scoring will be included if these options were selected.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Saved sessions can be restored by entering the job ID on the Results page.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Saved sessions can be restored by uploading a previously downloaded ZIP file, which restores the complete visualization state including all customizations.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The ZIP file incorporates a README.md file that includes all tools specifications to ensure reproducibility.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "HERA supports image export in five formats: SVG for scalable vector graphics, PNG, JPEG, TIFF, and BMP for raster formats. The export interface provides configurable dimensions, adjustable DPI, aspect ratio locking, transparent background option, custom cropping, and a live image preview.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "HERA supports image export in five formats: SVG for scalable vector graphics, PNG, JPEG, TIFF, and BMP for raster formats.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The export interface provides configurable dimensions.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The export interface allows adjustable DPI.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The export interface supports aspect ratio locking.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The export interface includes a transparent background option.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The export interface enables custom cropping.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The export interface offers a live image preview.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "The complete annotated reference reflecting the current map state, including extended analysis features, can be exported in GenBank format.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The complete annotated reference reflects the current map state.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The annotated reference includes extended analysis features.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The annotated reference can be exported in GenBank format.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "To illustrate HERA’s capabilities (Fig. 1), we analyzed IncFtype plasmids carrying antimicrobial resistance and colicin genes from cephalosporin-resistant Escherichia coli isolated from Caspian gulls, as described by Ruzickova et al. [20]. The IncF replicon sequencing type (RST) F24:A-:B1 plasmid corresponding to E. coli ST11138 (isolate RMSe 103e2), was uploaded as the GenBank-formatted reference. Five query plasmid sequences from the same F24:A-:B1 RST, representing two E. coli sequence types, were uploaded as FASTA files: ST616 was represented by RMSe81.2, whereas ST11138 was represented by RMSe85.2, RMSe80.1, SRMSe.102.1, and RMSe81.5. The resulting circular map displayed the reference backbone with annotated CDS features, with each query plasmid rendered as a separate concentric ring. Identity thresholds were adjusted to 99%, 98%, and 95% using the HERA Controls panel to resolve fine-scale differences among these closely related plasmids. The annotation tagging system was then used to create custom feature groups highlighting antimicrobial resistance genes, colicin and colicin immunity genes, iron acquisition genes, and plasmid transfer regions, each displayed in a distinct color on the reference ring. Ring order was adjusted to place the most dissimilar plasmid (RMSe81.2, ST616) adjacent to the reference for clearer visual contrast.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "HERA’s capabilities were illustrated by analyzing IncFtype plasmids carrying antimicrobial resistance and colicin genes from cephalosporin-resistant Escherichia coli isolated from Caspian gulls.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The analysis was based on methods described by Ruzickova et al. [20].",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The IncF replicon sequencing type (RST) F24:A-:B1 plasmid corresponding to E. coli ST11138 (isolate RMSe 103e2) was uploaded as the GenBank-formatted reference.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Five query plasmid sequences from the same F24:A-:B1 RST, representing two E. coli sequence types, were uploaded as FASTA files.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "ST616 was represented by RMSe81.2.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "ST11138 was represented by RMSe85.2, RMSe80.1, SRMSe.102.1, and RMSe81.5.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The resulting circular map displayed the reference backbone with annotated CDS features, with each query plasmid rendered as a separate concentric ring.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Identity thresholds were adjusted to 99%, 98%, and 95% using the HERA Controls panel to resolve fine-scale differences among closely related plasmids.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The annotation tagging system was used to create custom feature groups highlighting antimicrobial resistance genes, colicin and colicin immunity genes, iron acquisition genes, and plasmid transfer regions.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Each feature group was displayed in a distinct color on the reference ring.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Ring order was adjusted to place the most dissimilar plasmid (RMSe81.2, ST616) adjacent to the reference for clearer visual contrast.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "The HERA visualization revealed several biologically informative patterns. The plasmids from the four ST11138 isolates showed near-complete coverage at the highest identity level. In contrast, the same F24:A-:B1 RST from ST616 isolates displayed visible gaps in the colicin-producing operon region, including the cvaC colicin gene, cvaB, and mchE, as well as differences in the antimicrobial resistance genes macA and macB. This presumably explained the domination of ST11138 over other STs.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The HERA visualization revealed several biologically informative patterns.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The plasmids from the four ST11138 isolates showed near-complete coverage at the highest identity level.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The F24:A-:B1 RST from ST616 isolates displayed visible gaps in the colicin-producing operon region, including the cvaC colicin gene, cvaB, and mchE.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Differences were observed in the antimicrobial resistance genes macA and macB between the isolates.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "This presumably explained the domination of ST11138 over other STs.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "HERA addresses a specific gap in the landscape of circular genome visualization tools: the need for an accessible, webbased platform that combines BLAST-based multi-sequence",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "HERA addresses a specific gap in the landscape of circular genome visualization tools.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "There is a need for an accessible, web-based platform that combines BLAST-based multi-sequence analysis.",
+        "category": "Background",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "images/93eccd0d2df9399b78ed61c797312a803319da6898a4e65a05abf3395e7f4f9e.jpg",
+    "type": "figure"
+  },
+  {
+    "paragraph": "Figure 1. Circular comparison of F24:A-:B1 plasmids from E. coli ST11138 and ST616 isolates generated using HERA. The F24:A-:B1 plasmid from isolate",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Figure 1 shows a circular comparison of F24:A-:B1 plasmids from E. coli ST11138 and ST616 isolates.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The comparison was generated using HERA.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The F24:A-:B1 plasmid is from the E. coli ST11138 isolate.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The F24:A-:B1 plasmid is from the E. coli ST616 isolate.",
+        "category": "Background",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "RMSe 103e2 (ST11138) was used as the reference sequence (outermost annotation ring). Each concentric ring represents a query plasmid aligned by BLASTn, with rings ordered by decreasing similarity to the reference. BLAST hits are colored by a three-level opacity system reflecting percentage identity thresholds set at 99%, 98%, and 95%. Annotated features on the reference ring are grouped into user-defined categories: antimicrobial resistance genes, colicin and colicin immunity genes, iron acquisition genes, and plasmid transfer region. GC content and GC skew are displayed as the innermost tracks. Original plasmid data were published in Ruzickova et al. [20].",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "RMSe 103e2 (ST11138) was used as the reference sequence.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The outermost annotation ring represents the reference sequence.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Each concentric ring represents a query plasmid aligned by BLASTn.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Rings are ordered by decreasing similarity to the reference.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "BLAST hits are colored by a three-level opacity system reflecting percentage identity thresholds set at 99%, 98%, and 95%.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Annotated features on the reference ring are grouped into user-defined categories: antimicrobial resistance genes, colicin and colicin immunity genes, iron acquisition genes, and plasmid transfer region.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "GC content and GC skew are displayed as the innermost tracks.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Original plasmid data were published in Ruzickova et al. [20].",
+        "category": "Background",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "Table 1. Feature comparison of circular genome visualization tools",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Table 1 provides a feature comparison of circular genome visualization tools.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "<table><tr><td>Feature</td><td>HERA</td><td>BRIG</td><td>Proksee</td><td>CGView CT</td><td>Circos</td></tr><tr><td>Web-based</td><td>√</td><td>x</td><td>√</td><td>x</td><td>x</td></tr><tr><td>Automatic reference selection</td><td>√</td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td>BLAST-based comparison</td><td>√</td><td>√</td><td>√</td><td>√</td><td>x</td></tr><tr><td>Best-hit HSP filtering</td><td>√</td><td>x</td><td>x</td><td>x</td><td></td></tr><tr><td>AMR detection</td><td>√</td><td>x</td><td>√</td><td>X</td><td>x</td></tr><tr><td>Plasmid typing (replicon, MOB, MLST)</td><td>√</td><td>x</td><td>x</td><td>X</td><td>x</td></tr><tr><td>IS element / transposon annotation</td><td>√</td><td>×</td><td>x</td><td>x</td><td>x</td></tr><tr><td>Structural &amp; functional annotation (CDS, tRNA, ncRNA)</td><td>√</td><td>x</td><td>√</td><td>x</td><td>x</td></tr><tr><td>Plasmid homology search (PLSDB)</td><td>√</td><td>x</td><td>X</td><td>x</td><td>x</td></tr><tr><td>Interactive visualization</td><td>√</td><td>×</td><td>√</td><td>x</td><td>x</td></tr><tr><td>Real-time adjustments</td><td>√</td><td>x</td><td>x</td><td>X</td><td>x</td></tr><tr><td>Annotation grouping/tagging</td><td>√</td><td>x</td><td>x</td><td>x</td><td>x</td></tr><tr><td>Session save/restore</td><td>√</td><td>x</td><td>√</td><td>x</td><td>X</td></tr><tr><td>GenBank export of reference sequence</td><td>√</td><td>x</td><td>x</td><td>x</td><td>X</td></tr><tr><td>Multi-format image export</td><td>√</td><td>√</td><td>√</td><td>√</td><td>√</td></tr></table>",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "HERA is a web-based tool.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "HERA supports automatic reference selection.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "HERA enables BLAST-based comparison.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "HERA includes best-hit HSP filtering.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "HERA supports AMR detection.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "HERA provides plasmid typing, including replicon, MOB, and MLST.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "HERA annotates IS elements and transposons.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "HERA performs structural and functional annotation, including CDS, tRNA, and ncRNA.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "HERA supports plasmid homology search using PLSDB.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "HERA offers interactive visualization.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "HERA allows real-time adjustments.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "HERA supports annotation grouping and tagging.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "HERA enables session save and restore functionality.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "HERA allows GenBank export of reference sequences.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "HERA supports multi-format image export.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "BRIG supports BLAST-based comparison.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "BRIG supports multi-format image export.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Proksee is a web-based tool.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Proksee enables BLAST-based comparison.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Proksee supports AMR detection.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Proksee performs structural and functional annotation, including CDS, tRNA, and ncRNA.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Proksee supports interactive visualization.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Proksee enables session save and restore functionality.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Proksee supports multi-format image export.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "CGView CT supports BLAST-based comparison.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "CGView CT supports multi-format image export.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Circos supports multi-format image export.",
+        "category": "Background",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "comparison with extensive real-time interactive customization specifically oriented toward plasmid analysis. While existing tools require either command-line expertise (CCT, Circos, GenoVi), desktop software installation (BRIG), or are designed for broader purposes (Proksee), HERA provides a focused and intuitive workflow for comparison of assembled plasmids or contig-based genome assemblies against a selected reference sequence, with visualization optimized for circular maps but adaptable to linear layouts.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Existing tools for plasmid analysis require command-line expertise, such as CCT, Circos, and GenoVi.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Some tools for plasmid analysis require desktop software installation, such as BRIG.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Other tools, such as Proksee, are designed for broader purposes.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "HERA provides a focused and intuitive workflow for comparison of assembled plasmids or contig-based genome assemblies against a selected reference sequence.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "HERA's visualization is optimized for circular maps but is adaptable to linear layouts.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "While HERA intentionally builds on established, well validated tools such as BLAST for sequence alignment and CGView.js for circular rendering, its main contribution lies in their integration with features not previously combined in a single accessible platform. Several features distinguish",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "HERA builds on established, well-validated tools such as BLAST for sequence alignment.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "HERA uses CGView.js for circular rendering.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "HERA's main contribution lies in the integration of features not previously combined in a single accessible platform.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "HERA from other existing tools (Table 1). First, HERA’s annotation tagging system allows users to create custom feature groups and assign reference annotations to visually distinct categories. This is particularly valuable for highlighting functionally relevant genomic features such as antimicrobial resistance determinants or virulence factors. Second, the draggable panel-based interface allows users to position controls alongside the visualization without obscuring the map, unlike fixed sidebar approaches. Third, HERA implements a best-hit filtering algorithm adapted from the NCBI specification that reduces redundant HSPs before visualization, and provides posthoc filtering by query coverage, subject coverage, identity, and alignment length in the interactive BLAST table.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "HERA’s annotation tagging system allows users to create custom feature groups.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "HERA’s annotation tagging system allows users to assign reference annotations to visually distinct categories.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "This is valuable for highlighting functionally relevant genomic features such as antimicrobial resistance determinants.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "This is valuable for highlighting functionally relevant genomic features such as virulence factors.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The draggable panel-based interface allows users to position controls alongside the visualization without obscuring the map.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The draggable panel-based interface differs from fixed sidebar approaches.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "HERA implements a best-hit filtering algorithm adapted from the NCBI specification that reduces redundant HSPs before visualization.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "HERA provides posthoc filtering by query coverage, subject coverage, identity, and alignment length in the interactive BLAST table.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "HERA’s visualization is built upon CGView.js and inherits its constraints, including a maximum sequence capacity of 10 Mb and the inability to display structural links between query and reference sequences. Currently, only BLAST is available for sequence comparison; alternative alignment methods such as minimap2 [21] are not yet supported. Additionally, HERA operates on a single-reference paradigm and does not offer clustering-based approaches for grouping related sequences or selecting representative references from large collections. Finally, support for long-read data through Mash-based distance estimation, multi-reference comparison workflows, and automatic identification of plasmid-associated contigs from draft genome assemblies, represent further directions for future development.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "HERA’s visualization is built upon CGView.js and inherits its constraints, including a maximum sequence capacity of 10 Mb.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "HERA’s visualization cannot display structural links between query and reference sequences.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Currently, only BLAST is available for sequence comparison.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Alternative alignment methods such as minimap2 are not yet supported.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "HERA operates on a single-reference paradigm.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "HERA does not offer clustering-based approaches for grouping related sequences.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "HERA does not support selecting representative references from large collections.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Support for long-read data through Mash-based distance estimation represents a direction for future development.",
+        "category": "Conclusion",
+        "rank": 2
+      },
+      {
+        "sentence": "Multi-reference comparison workflows represent a direction for future development.",
+        "category": "Conclusion",
+        "rank": 2
+      },
+      {
+        "sentence": "Automatic identification of plasmid-associated contigs from draft genome assemblies represents a direction for future development.",
+        "category": "Conclusion",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "The circular plot included in the graphical abstract was created in BioRender: Gonzalez, A. (2026) https://BioRender. com/uibjz51.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The circular plot included in the graphical abstract was created in BioRender.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Author contributions: Leidy Alejandra González Molano (Methodology [lead], Software [lead], Writing – original draft [lead], Writing – review & editing [lead]), Pascal Hirsch (Methodology [equal], Resources [equal], Software [equal]), Andreas Keller (Funding acquisition [equal], Resources [equal], Supervision [supporting], Writing – review & editing [supporting]), Monika Dolejska (Funding acquisition [equal], Resources [equal], Supervision [supporting], Writing – review & editing [supporting]), and Jana Palkovicova (Conceptualization [lead], Methodology [equal], Software [equal], Supervision [lead], Writing – review & editing [lead])",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Leidy Alejandra González Molano led the methodology, software development, and original draft writing.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "Leidy Alejandra González Molano led the review and editing of the manuscript.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "Pascal Hirsch contributed equally to the methodology, resources, and software development.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "Andreas Keller contributed equally to funding acquisition and resources.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "Andreas Keller provided supporting supervision and review and editing of the manuscript.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "Monika Dolejska contributed equally to funding acquisition and resources.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "Monika Dolejska provided supporting supervision and review and editing of the manuscript.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "Jana Palkovicova led the conceptualization, supervision, and review and editing of the manuscript.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "Jana Palkovicova contributed equally to the methodology and software development.",
+        "category": "Other",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "A.K. is co-founder of MooH GmbH, a company developing metagenomic-based oral health tests.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A.K. is co-founder of MooH GmbH.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "MooH GmbH develops metagenomic-based oral health tests.",
+        "category": "Background",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "The authors acknowledge HPC resources support with hardware funded by the Deutsche Forschungsgemeinschaft (DFG) within project 469073465. Leidy-Alejandra G. Molano was supported by the TALENTS Marie Skłodowska-Curie COFUND-Action of the European Commission. The views and opinions expressed are, however, those of the authors only and do not necessarily reflect those of the European Union, which cannot be held responsible for them. Monika Dolejska was supported by Internal Grant Agency of University of Veterinary Sciences in Brno within project 205/2025/FVHE. Funding to pay the Open Access publication charges for this article and to support Monika Dolejska and Jana Palkovicova was provided by the Czech Science Foundation within project 24-12527S.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "HPC resources support was funded by the Deutsche Forschungsgemeinschaft (DFG) within project 469073465.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Leidy-Alejandra G. Molano was supported by the TALENTS Marie Skłodowska-Curie COFUND-Action of the European Commission.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Monika Dolejska was supported by the Internal Grant Agency of University of Veterinary Sciences in Brno within project 205/2025/FVHE.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Funding for Open Access publication charges and support for Monika Dolejska and Jana Palkovicova was provided by the Czech Science Foundation within project 24-12527S.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "HERA is freely available without any login requirement at https://web.ccb.uni-saarland.de/hera/.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "HERA is freely available without any login requirement.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "HERA is accessible at https://web.ccb.uni-saarland.de/hera/.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

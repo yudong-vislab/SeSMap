@@ -1,0 +1,1346 @@
+[
+  {
+    "idx": 18,
+    "MSU_id": 18,
+    "sentence": "We validate its effectiveness through two case studies and a comprehensive user study.",
+    "category": "Experiment",
+    "rank": 4,
+    "type": "text",
+    "para_id": 5,
+    "paper_id": 0,
+    "2d_coord": [
+      3.0108068844867293,
+      1.480758849414271
+    ]
+  },
+  {
+    "idx": 44,
+    "MSU_id": 44,
+    "sentence": "Feasibility studies were conducted using LLMs for D3-based genome visualizations.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 9,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.6805937182101077,
+      0.11071689815448894
+    ]
+  },
+  {
+    "idx": 52,
+    "MSU_id": 52,
+    "sentence": "AuraGenome is validated through two real-world case studies.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 10,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.6583145567389501,
+      1.4961431415844886
+    ]
+  },
+  {
+    "idx": 53,
+    "MSU_id": 53,
+    "sentence": "AuraGenome is validated through both quantitative and qualitative user evaluations.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 10,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.5428418284578216,
+      1.4645739236341913
+    ]
+  },
+  {
+    "idx": 61,
+    "MSU_id": 61,
+    "sentence": "A comprehensive evaluation was conducted through two case studies.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 13,
+    "paper_id": 0,
+    "2d_coord": [
+      3.008107853078089,
+      1.4740055570736257
+    ]
+  },
+  {
+    "idx": 62,
+    "MSU_id": 62,
+    "sentence": "Mixed-method user studies were conducted.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 13,
+    "paper_id": 0,
+    "2d_coord": [
+      2.4382781187154294,
+      1.9691583910654706
+    ]
+  },
+  {
+    "idx": 71,
+    "MSU_id": 71,
+    "sentence": "Zhao et al. employed a circular layout analysis method to explore gene functions and regulatory mechanisms in the bZIP gene family in poplar.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 15,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.8947616185384714,
+      -1.474338012555349
+    ]
+  },
+  {
+    "idx": 72,
+    "MSU_id": 72,
+    "sentence": "Zhao et al. visualized gene density, homologous blocks, and the distribution of segmental duplicated gene pairs.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 15,
+    "paper_id": 0,
+    "2d_coord": [
+      -1.1270948624589565,
+      -1.6828764670683238
+    ]
+  },
+  {
+    "idx": 73,
+    "MSU_id": 73,
+    "sentence": "Peng et al. utilized circular layouts to depict plasmid structures carrying various genes.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 15,
+    "paper_id": 0,
+    "2d_coord": [
+      -1.0346869643142664,
+      -1.4872675933728543
+    ]
+  },
+  {
+    "idx": 74,
+    "MSU_id": 74,
+    "sentence": "Peng et al. visualized sequence alignment results of other Enterobacteriaceae bacteria sharing similar plasmid backbones.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 15,
+    "paper_id": 0,
+    "2d_coord": [
+      -1.0963486474407689,
+      -1.6154226942483847
+    ]
+  },
+  {
+    "idx": 75,
+    "MSU_id": 75,
+    "sentence": "Peng et al. illustrated plasmid gene structures, multidrug resistance regions, and homology.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 15,
+    "paper_id": 0,
+    "2d_coord": [
+      -1.0886748509041915,
+      -1.594565536729711
+    ]
+  },
+  {
+    "idx": 76,
+    "MSU_id": 76,
+    "sentence": "Garcia et al. used circular layouts to display multiple features of the Lima bean genome to understand genome organization and evolution.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 15,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.9241482000587771,
+      -1.4314070995408006
+    ]
+  },
+  {
+    "idx": 77,
+    "MSU_id": 77,
+    "sentence": "Zhang et al. adopted circular layouts to present genome characteristics in tea tree research.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 15,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.8588547789236557,
+      -1.446609749590735
+    ]
+  },
+  {
+    "idx": 78,
+    "MSU_id": 78,
+    "sentence": "Zhang et al. visualized genetic diversity and evolutionary history in tea tree research.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 15,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.8395153863623,
+      -1.4437034756662066
+    ]
+  },
+  {
+    "idx": 178,
+    "MSU_id": 178,
+    "sentence": "A prestudy was conducted to evaluate the capabilities of LLMs on domain-specific tasks.",
+    "category": "Experiment",
+    "rank": 4,
+    "type": "text",
+    "para_id": 35,
+    "paper_id": 0,
+    "2d_coord": [
+      2.3318582862237656,
+      1.7894805614500153
+    ]
+  },
+  {
+    "idx": 184,
+    "MSU_id": 184,
+    "sentence": "The comparison is conducted using the GenoVis-300 dataset.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 37,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.31567096875023587,
+      1.9352155030960978
+    ]
+  },
+  {
+    "idx": 413,
+    "MSU_id": 413,
+    "sentence": "The AuraGenome framework was evaluated for practical effectiveness and generalizability.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 91,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.5908487243524813,
+      1.467771763804917
+    ]
+  },
+  {
+    "idx": 414,
+    "MSU_id": 414,
+    "sentence": "Two real-world case studies involving distinct genomic analysis tasks were conducted.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 91,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.799147589570862,
+      1.4181355117086856
+    ]
+  },
+  {
+    "idx": 422,
+    "MSU_id": 422,
+    "sentence": "The experts applied AuraGenome to authentic genomic analysis scenarios.",
+    "category": "Experiment",
+    "rank": 4,
+    "type": "text",
+    "para_id": 92,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.7225281783513865,
+      1.4938585322747835
+    ]
+  },
+  {
+    "idx": 451,
+    "MSU_id": 451,
+    "sentence": "A second case study was conducted to evaluate the reusability and task adaptability of AuraGenome.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 98,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.6140291942707707,
+      1.5056175450278375
+    ]
+  },
+  {
+    "idx": 452,
+    "MSU_id": 452,
+    "sentence": "The case study involved expert E_B, who aimed to replicate and extend insights from a widely cited study in Nature that mapped the somatic mutation landscape of the COLO-829 melanoma genome.",
+    "category": "Experiment",
+    "rank": 4,
+    "type": "text",
+    "para_id": 98,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.373097445374664,
+      -0.1785380726788618
+    ]
+  },
+  {
+    "idx": 459,
+    "MSU_id": 459,
+    "sentence": "A new mutation dataset for the COLO-829 genome was uploaded.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 99,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.0151642216737415,
+      -0.05227965196167812
+    ]
+  },
+  {
+    "idx": 469,
+    "MSU_id": 469,
+    "sentence": "$E _ { B }$ uploaded an additional dataset with insertion and deletion events.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 103,
+    "paper_id": 0,
+    "2d_coord": [
+      -1.402410582974499,
+      -1.8877784280777428
+    ]
+  },
+  {
+    "idx": 483,
+    "MSU_id": 483,
+    "sentence": "The effectiveness and usability of the AuraGenome were evaluated.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 106,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.5742297535350678,
+      1.480393804822934
+    ]
+  },
+  {
+    "idx": 484,
+    "MSU_id": 484,
+    "sentence": "An in-lab user study was conducted.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 106,
+    "paper_id": 0,
+    "2d_coord": [
+      2.430721446636932,
+      1.975186353690341
+    ]
+  },
+  {
+    "idx": 485,
+    "MSU_id": 485,
+    "sentence": "The study focused on system learnability.",
+    "category": "Experiment",
+    "rank": 4,
+    "type": "text",
+    "para_id": 106,
+    "paper_id": 0,
+    "2d_coord": [
+      2.366696268929585,
+      1.8513276822629123
+    ]
+  },
+  {
+    "idx": 486,
+    "MSU_id": 486,
+    "sentence": "The study focused on user experience across disciplines.",
+    "category": "Experiment",
+    "rank": 4,
+    "type": "text",
+    "para_id": 106,
+    "paper_id": 0,
+    "2d_coord": [
+      2.4344298379293834,
+      1.8697107645703945
+    ]
+  },
+  {
+    "idx": 487,
+    "MSU_id": 487,
+    "sentence": "The study focused on the utility of the AuraGenome in real analysis tasks.",
+    "category": "Experiment",
+    "rank": 5,
+    "type": "text",
+    "para_id": 106,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.5670283589794132,
+      1.5663963937155236
+    ]
+  },
+  {
+    "idx": 488,
+    "MSU_id": 488,
+    "sentence": "12 participants with a background in biology were recruited for the experiment.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 107,
+    "paper_id": 0,
+    "2d_coord": [
+      -1.1801356355906787,
+      1.3523828897151733
+    ]
+  },
+  {
+    "idx": 489,
+    "MSU_id": 489,
+    "sentence": "The participants had an average experience of 4 ± 1.5 years.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 107,
+    "paper_id": 0,
+    "2d_coord": [
+      -1.1224385878761833,
+      1.6483249441407313
+    ]
+  },
+  {
+    "idx": 490,
+    "MSU_id": 490,
+    "sentence": "The participants included 10 bioinformatics researchers (P1–P10) and two wet-lab researchers (P11 and P12).",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 107,
+    "paper_id": 0,
+    "2d_coord": [
+      -1.1744244710530658,
+      1.3001924990467635
+    ]
+  },
+  {
+    "idx": 529,
+    "MSU_id": 529,
+    "sentence": "Open-ended feedback was collected from 12 participants through posttask interviews and questionnaires.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 121,
+    "paper_id": 0,
+    "2d_coord": [
+      2.672279588837433,
+      1.541660205475974
+    ]
+  },
+  {
+    "idx": 584,
+    "MSU_id": 584,
+    "sentence": "Two real-world case studies demonstrate the effectiveness of AuraGenome in enhancing task performance.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 129,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.6549646322738338,
+      1.5216586436301196
+    ]
+  },
+  {
+    "idx": 585,
+    "MSU_id": 585,
+    "sentence": "A comprehensive user study demonstrates the effectiveness of AuraGenome in reducing cognitive load in genomic research workflows.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 129,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.6382405793721992,
+      1.590187143194763
+    ]
+  },
+  {
+    "idx": 661,
+    "MSU_id": 661,
+    "sentence": "Circos' initial application was to visualize end-sequence profiling of cancer genomes.",
+    "category": "Experiment",
+    "rank": 4,
+    "type": "text",
+    "para_id": 150,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.2324305064166915,
+      -1.1584662772737468
+    ]
+  },
+  {
+    "idx": 662,
+    "MSU_id": 662,
+    "sentence": "Circos' initial application was to visualize fingerprint profiling of cancer genomes.",
+    "category": "Experiment",
+    "rank": 4,
+    "type": "text",
+    "para_id": 150,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.23118615527860528,
+      -1.1591880210898031
+    ]
+  },
+  {
+    "idx": 684,
+    "MSU_id": 684,
+    "sentence": "A series of image archetypes (Figures 1-4) are presented with data used in a multipatient whole-genome analysis of genomic rearrangements in follicular lymphoma.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 154,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.4622714987401566,
+      -0.4875240981229435
+    ]
+  },
+  {
+    "idx": 686,
+    "MSU_id": 686,
+    "sentence": "The images range in resolution from whole-genome (3 Gb), to a fingerprint-map contig (10 Mb), to a single Bacterial Artificial Chromosome (BAC) clone (100kb), and finally to a sequence contig (10kb).",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 154,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.8457358297756623,
+      -0.7105075998726122
+    ]
+  },
+  {
+    "idx": 687,
+    "MSU_id": 687,
+    "sentence": "A second image series (Figures 5-7) demonstrates how axis breaks and ideogram magnification can be used to zoom in on regions of interest.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 154,
+    "paper_id": 1,
+    "2d_coord": [
+      0.3886560663593104,
+      -0.6773084275048432
+    ]
+  },
+  {
+    "idx": 688,
+    "MSU_id": 688,
+    "sentence": "Batch image generation is demonstrated in Figure 8, which comprises 39 images illustrating synteny between the dog and human genomes.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 154,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.382178779993952,
+      -1.335273170376444
+    ]
+  },
+  {
+    "idx": 709,
+    "MSU_id": 709,
+    "sentence": "Each contig in Figure 2 was selected from the map of a different sample (patients 10, 13, and 21).",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 158,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.4146063533182516,
+      -0.9085264589715787
+    ]
+  },
+  {
+    "idx": 835,
+    "MSU_id": 835,
+    "sentence": "bundlelinks was used for Figure 8.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 182,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.4063511336387884,
+      -2.3238238338397537
+    ]
+  },
+  {
+    "idx": 869,
+    "MSU_id": 869,
+    "sentence": "Sequence alignments of sequence contigs from nine follicular lymphoma tumor samples were analyzed.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 187,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.389731757846446,
+      -0.5703510794230615
+    ]
+  },
+  {
+    "idx": 1085,
+    "MSU_id": 1085,
+    "sentence": "This work primarily focuses on the evaluation of GenoREC’s recommendation model.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 276,
+    "paper_id": 2,
+    "2d_coord": [
+      0.6056787928713636,
+      1.884797296667628
+    ]
+  },
+  {
+    "idx": 1189,
+    "MSU_id": 1189,
+    "sentence": "Ada adds a BIGWIG file description.",
+    "category": "Experiment",
+    "rank": 2,
+    "type": "text",
+    "para_id": 293,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.547606309411865,
+      -1.762391120199433
+    ]
+  },
+  {
+    "idx": 1389,
+    "MSU_id": 1389,
+    "sentence": "GenoREC was evaluated in a two-phase user study.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 333,
+    "paper_id": 2,
+    "2d_coord": [
+      0.3811661634701198,
+      2.1723398373899836
+    ]
+  },
+  {
+    "idx": 1390,
+    "MSU_id": 1390,
+    "sentence": "Qualitative feedback was gathered from domain experts to validate the recommendation output.",
+    "category": "Experiment",
+    "rank": 4,
+    "type": "text",
+    "para_id": 333,
+    "paper_id": 2,
+    "2d_coord": [
+      2.5668721955580556,
+      1.3966341636051387
+    ]
+  },
+  {
+    "idx": 1391,
+    "MSU_id": 1391,
+    "sentence": "Qualitative feedback was gathered from domain experts to validate the user interface design.",
+    "category": "Experiment",
+    "rank": 4,
+    "type": "text",
+    "para_id": 333,
+    "paper_id": 2,
+    "2d_coord": [
+      2.5822525614842697,
+      1.4121775719255898
+    ]
+  },
+  {
+    "idx": 1392,
+    "MSU_id": 1392,
+    "sentence": "A quantitative evaluation was conducted to measure the utility of GenoREC’s recommendation given a set of data and analysis task combinations.",
+    "category": "Experiment",
+    "rank": 5,
+    "type": "text",
+    "para_id": 333,
+    "paper_id": 2,
+    "2d_coord": [
+      0.6054497678160098,
+      1.917202811630442
+    ]
+  },
+  {
+    "idx": 1402,
+    "MSU_id": 1402,
+    "sentence": "Five domain experts were recruited for the formative study.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 336,
+    "paper_id": 2,
+    "2d_coord": [
+      2.4516973923069165,
+      1.4483142481445261
+    ]
+  },
+  {
+    "idx": 1421,
+    "MSU_id": 1421,
+    "sentence": "In the second part of the study, we conducted a controlled within-subject quantitative study.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 338,
+    "paper_id": 2,
+    "2d_coord": [
+      2.4162444237141636,
+      2.157131841089559
+    ]
+  },
+  {
+    "idx": 1422,
+    "MSU_id": 1422,
+    "sentence": "The study measured the difference in utility between GenoREC’s top-ranked visualizations and mid-ranked visualizations for a given set of datasets and analysis tasks.",
+    "category": "Experiment",
+    "rank": 4,
+    "type": "text",
+    "para_id": 338,
+    "paper_id": 2,
+    "2d_coord": [
+      0.5612135096394104,
+      2.297439490912698
+    ]
+  },
+  {
+    "idx": 1427,
+    "MSU_id": 1427,
+    "sentence": "Utility ratings for GenoREC and Alternate stimulus were collected across all participants and scenarios.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 341,
+    "paper_id": 2,
+    "2d_coord": [
+      0.6563515074175366,
+      2.393170495345055
+    ]
+  },
+  {
+    "idx": 1447,
+    "MSU_id": 1447,
+    "sentence": "There were a total of nine data and task scenarios (Scenario 1–9) in the study.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 346,
+    "paper_id": 2,
+    "2d_coord": [
+      2.047128618655024,
+      2.1258008572769196
+    ]
+  },
+  {
+    "idx": 1449,
+    "MSU_id": 1449,
+    "sentence": "In Scenario 1, the feature combinations are point and sparse with no connection, the attribute used is categorical, and it is an identify task.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 346,
+    "paper_id": 2,
+    "2d_coord": [
+      1.6411892139035518,
+      2.6430713251375577
+    ]
+  },
+  {
+    "idx": 1474,
+    "MSU_id": 1474,
+    "sentence": "The participant saw one of the two visualization options at a time along with the description.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 351,
+    "paper_id": 2,
+    "2d_coord": [
+      0.815234134083702,
+      -1.3428964019887824
+    ]
+  },
+  {
+    "idx": 1475,
+    "MSU_id": 1475,
+    "sentence": "In each scenario, the data and task description remained the same for both visualization options.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 351,
+    "paper_id": 2,
+    "2d_coord": [
+      1.9943359514176013,
+      2.2110023561724104
+    ]
+  },
+  {
+    "idx": 1476,
+    "MSU_id": 1476,
+    "sentence": "Participants were asked to perform the task with the visualization and then answer the question: 'I would use this visualization for the analysis of the data given the task description.'",
+    "category": "Experiment",
+    "rank": 4,
+    "type": "text",
+    "para_id": 351,
+    "paper_id": 2,
+    "2d_coord": [
+      2.1737543447458028,
+      1.6391367606930902
+    ]
+  },
+  {
+    "idx": 1477,
+    "MSU_id": 1477,
+    "sentence": "The responses were recorded on a 1–5 scale as shown in Fig. 7.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 351,
+    "paper_id": 2,
+    "2d_coord": [
+      2.4787294972797698,
+      2.524545212582329
+    ]
+  },
+  {
+    "idx": 1494,
+    "MSU_id": 1494,
+    "sentence": "A linear layout with a focus+context (GenoREC) was compared to a circular layout (alternate) in an identify task.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 354,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.6569973739836211,
+      -1.9047581196317818
+    ]
+  },
+  {
+    "idx": 1500,
+    "MSU_id": 1500,
+    "sentence": "For Scenario 8, GenoREC recommended a visualization stacked alignment.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 354,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.0078265281863465,
+      1.4974127456793456
+    ]
+  },
+  {
+    "idx": 1501,
+    "MSU_id": 1501,
+    "sentence": "The alternate recommendation for Scenario 8 overlayed the tracks into a single view.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 354,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.3322283529981424,
+      -2.880564365099411
+    ]
+  },
+  {
+    "idx": 1505,
+    "MSU_id": 1505,
+    "sentence": "In Scenario 3, participants were asked to perform an overview task (look for patterns) using a linear track with contiguous partition (GenoREC’s stimulus) and a circular track with segregated partition, i.e., one circle per chromosome (alternate stimulus).",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 355,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.9344359065668549,
+      -1.9286629007220673
+    ]
+  },
+  {
+    "idx": 1508,
+    "MSU_id": 1508,
+    "sentence": "In Scenario 7, GenoREC presented two circular tracks stacked, and participants had to perform a correlation task.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 355,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.9390617177929256,
+      -1.9289012652560782
+    ]
+  },
+  {
+    "idx": 1756,
+    "MSU_id": 1756,
+    "sentence": "The expressiveness of the grammar is demonstrated through a variety of real-world examples.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 429,
+    "paper_id": 3,
+    "2d_coord": [
+      1.7479266571322447,
+      1.4199750456651556
+    ]
+  },
+  {
+    "idx": 1808,
+    "MSU_id": 1808,
+    "sentence": "The expressiveness of the grammar is demonstrated through various usage scenarios.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 436,
+    "paper_id": 3,
+    "2d_coord": [
+      1.7494501548954218,
+      1.422387769392074
+    ]
+  },
+  {
+    "idx": 2151,
+    "MSU_id": 2151,
+    "sentence": "A series of published visualizations were reproduced and extended using Gosling.",
+    "category": "Experiment",
+    "rank": 4,
+    "type": "text",
+    "para_id": 517,
+    "paper_id": 3,
+    "2d_coord": [
+      0.21897529153089673,
+      -0.13660358339880213
+    ]
+  },
+  {
+    "idx": 2169,
+    "MSU_id": 2169,
+    "sentence": "Fig. 12 shows comparative visualizations of two genomic interaction matrices using Gosling.",
+    "category": "Experiment",
+    "rank": 2,
+    "type": "text",
+    "para_id": 520,
+    "paper_id": 3,
+    "2d_coord": [
+      -0.44691766712233805,
+      -0.004335390348047159
+    ]
+  },
+  {
+    "idx": 2175,
+    "MSU_id": 2175,
+    "sentence": "One can use data of a SARS-CoV2 reference sequence along with gene and protein annotations and recombination sites to author visualizations as found in the WashU Virus Browser.",
+    "category": "Experiment",
+    "rank": 4,
+    "type": "text",
+    "para_id": 520,
+    "paper_id": 3,
+    "2d_coord": [
+      -3.1143766659168257,
+      1.5685464991866986
+    ]
+  },
+  {
+    "idx": 2234,
+    "MSU_id": 2234,
+    "sentence": "We plan to conduct a controlled user study with members of our target audience to assess the grammar’s learnability and overall ease-of-use.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 528,
+    "paper_id": 3,
+    "2d_coord": [
+      1.650949585410227,
+      1.5553318067424893
+    ]
+  },
+  {
+    "idx": 2239,
+    "MSU_id": 2239,
+    "sentence": "The capabilities of the grammar and the proposed toolkit were demonstrated through a series of examples.",
+    "category": "Experiment",
+    "rank": 4,
+    "type": "text",
+    "para_id": 530,
+    "paper_id": 3,
+    "2d_coord": [
+      1.7510085150559802,
+      1.4167283720600823
+    ]
+  },
+  {
+    "idx": 2568,
+    "MSU_id": 2568,
+    "sentence": "We conduct a user study with 8 bioinformatics analysts to evaluate IntelliCircos.",
+    "category": "Experiment",
+    "rank": 4,
+    "type": "text",
+    "para_id": 679,
+    "paper_id": 4,
+    "2d_coord": [
+      3.1155953327425623,
+      -1.7988264692658267
+    ]
+  },
+  {
+    "idx": 2617,
+    "MSU_id": 2617,
+    "sentence": "A user study with 8 participants was conducted to evaluate the effectiveness and usability of IntelliCircos.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 686,
+    "paper_id": 4,
+    "2d_coord": [
+      3.092383134743375,
+      -1.7689093731130787
+    ]
+  },
+  {
+    "idx": 2627,
+    "MSU_id": 2627,
+    "sentence": "A user study was conducted to demonstrate the effectiveness of IntelliCircos.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 689,
+    "paper_id": 4,
+    "2d_coord": [
+      3.064883851650405,
+      -1.7048511213356163
+    ]
+  },
+  {
+    "idx": 2628,
+    "MSU_id": 2628,
+    "sentence": "The user study aimed to reveal the advantages of IntelliCircos.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 689,
+    "paper_id": 4,
+    "2d_coord": [
+      3.047413941401635,
+      -1.6997479296490428
+    ]
+  },
+  {
+    "idx": 2629,
+    "MSU_id": 2629,
+    "sentence": "The user study aimed to reveal the limitations of IntelliCircos.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 689,
+    "paper_id": 4,
+    "2d_coord": [
+      2.96457362680586,
+      -1.5995706703585295
+    ]
+  },
+  {
+    "idx": 2741,
+    "MSU_id": 2741,
+    "sentence": "A track combination analysis was conducted to identify common patterns.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 710,
+    "paper_id": 4,
+    "2d_coord": [
+      -0.15468763519579137,
+      -3.1893147643329027
+    ]
+  },
+  {
+    "idx": 2770,
+    "MSU_id": 2770,
+    "sentence": "Each circos plot was labeled by two annotators.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 715,
+    "paper_id": 4,
+    "2d_coord": [
+      1.4636846232227776,
+      -2.115574337645908
+    ]
+  },
+  {
+    "idx": 2773,
+    "MSU_id": 2773,
+    "sentence": "A detailed analysis of the track combinations used in circos plots within the dataset was conducted.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 716,
+    "paper_id": 4,
+    "2d_coord": [
+      -0.20303410953687062,
+      -3.635592371946034
+    ]
+  },
+  {
+    "idx": 2774,
+    "MSU_id": 2774,
+    "sentence": "The analysis examined the number of rings per plot (Figure 3 (A)).",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 716,
+    "paper_id": 4,
+    "2d_coord": [
+      -0.45749565532722586,
+      -3.719954118325643
+    ]
+  },
+  {
+    "idx": 2775,
+    "MSU_id": 2775,
+    "sentence": "The analysis examined the track types per plot (Figure 3 (B)).",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 716,
+    "paper_id": 4,
+    "2d_coord": [
+      -0.6557368838650437,
+      -3.0052590075484726
+    ]
+  },
+  {
+    "idx": 2778,
+    "MSU_id": 2778,
+    "sentence": "The number of tracks per ring was analyzed (Figure 3 (C)).",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 716,
+    "paper_id": 4,
+    "2d_coord": [
+      -0.45391082208984745,
+      -3.6074982168137857
+    ]
+  },
+  {
+    "idx": 2955,
+    "MSU_id": 2955,
+    "sentence": "Alex applied the recommendation results to the Circos Dashboard.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 754,
+    "paper_id": 4,
+    "2d_coord": [
+      2.3215183411076237,
+      -2.8432530133308913
+    ]
+  },
+  {
+    "idx": 2957,
+    "MSU_id": 2957,
+    "sentence": "Alex explored alternatives in the Reference Panel.",
+    "category": "Experiment",
+    "rank": 2,
+    "type": "text",
+    "para_id": 754,
+    "paper_id": 4,
+    "2d_coord": [
+      2.672062496179921,
+      0.928520938873969
+    ]
+  },
+  {
+    "idx": 2959,
+    "MSU_id": 2959,
+    "sentence": "Alex deleted the line track and applied the histogram design to the Circos Dashboard.",
+    "category": "Experiment",
+    "rank": 4,
+    "type": "text",
+    "para_id": 754,
+    "paper_id": 4,
+    "2d_coord": [
+      2.3333922317085554,
+      -2.819090569046292
+    ]
+  },
+  {
+    "idx": 2965,
+    "MSU_id": 2965,
+    "sentence": "A user study with 8 participants (P1-P8) was conducted to evaluate the usability and effectiveness of IntelliCircos.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 756,
+    "paper_id": 4,
+    "2d_coord": [
+      3.093513688197895,
+      -1.7732959064413782
+    ]
+  },
+  {
+    "idx": 2966,
+    "MSU_id": 2966,
+    "sentence": "Participants were asked to use IntelliCircos to create circos plots and provide both qualitative and quantitative feedback.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 756,
+    "paper_id": 4,
+    "2d_coord": [
+      2.720887668628895,
+      -2.301939153056306
+    ]
+  },
+  {
+    "idx": 2980,
+    "MSU_id": 2980,
+    "sentence": "Participants were asked to create a circos plot using IntelliCircos in the user study.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 759,
+    "paper_id": 4,
+    "2d_coord": [
+      2.697432203680156,
+      -2.2867375461771986
+    ]
+  },
+  {
+    "idx": 2981,
+    "MSU_id": 2981,
+    "sentence": "Participants were required to use the provided data as sufficiently as possible.",
+    "category": "Experiment",
+    "rank": 2,
+    "type": "text",
+    "para_id": 759,
+    "paper_id": 4,
+    "2d_coord": [
+      2.1138372111766004,
+      2.175430100569156
+    ]
+  },
+  {
+    "idx": 3072,
+    "MSU_id": 3072,
+    "sentence": "Early testing revealed challenges in formulating complex prompts.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 774,
+    "paper_id": 4,
+    "2d_coord": [
+      3.3199589261454685,
+      0.6723545459637187
+    ]
+  },
+  {
+    "idx": 3103,
+    "MSU_id": 3103,
+    "sentence": "Participants were tasked to create circos plots using IntelliCircos to evaluate its support for plot creation.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 778,
+    "paper_id": 4,
+    "2d_coord": [
+      2.680690554615805,
+      -2.3157585585893976
+    ]
+  },
+  {
+    "idx": 3105,
+    "MSU_id": 3105,
+    "sentence": "The study assessed the usability and effectiveness of IntelliCircos’s main features.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 778,
+    "paper_id": 4,
+    "2d_coord": [
+      3.0836367421132245,
+      -1.6879392358853442
+    ]
+  },
+  {
+    "idx": 3106,
+    "MSU_id": 3106,
+    "sentence": "The study did not evaluate AI assistance in terms of trust and perceived cognitive load.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 778,
+    "paper_id": 4,
+    "2d_coord": [
+      2.1746343728336495,
+      1.331262331562636
+    ]
+  },
+  {
+    "idx": 3109,
+    "MSU_id": 3109,
+    "sentence": "The study did not include a baseline comparison.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 778,
+    "paper_id": 4,
+    "2d_coord": [
+      2.834938956890601,
+      2.3610495704235324
+    ]
+  },
+  {
+    "idx": 3111,
+    "MSU_id": 3111,
+    "sentence": "The study’s participant pool was limited.",
+    "category": "Experiment",
+    "rank": 3,
+    "type": "text",
+    "para_id": 778,
+    "paper_id": 4,
+    "2d_coord": [
+      2.66133257610758,
+      2.339813481101885
+    ]
+  },
+  {
+    "idx": 3113,
+    "MSU_id": 3113,
+    "sentence": "All questions in the questionnaire are positive.",
+    "category": "Experiment",
+    "rank": 2,
+    "type": "text",
+    "para_id": 778,
+    "paper_id": 4,
+    "2d_coord": [
+      3.2565916249716755,
+      1.6986529162926496
+    ]
+  }
+]

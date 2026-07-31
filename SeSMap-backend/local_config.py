@@ -40,7 +40,8 @@ BGE_MODEL_PATH = _p("BGE_MODEL_PATH", BACKEND_DIR / "models" / "bge-large-en-v1.
 
 # --- 数据根 ---
 DATA_ROOT   = _p("SESMAP_DATA_ROOT",   BACKEND_DIR / "data")
-PDF_DIR     = _p("SESMAP_PDF_DIR",     DATA_ROOT / "pdf")        # 训练主语料输入 PDF
+# 通用脚本的兼容默认值；case 构建脚本必须显式传入 data/caseN/pdf，避免混入多个 case。
+PDF_DIR     = _p("SESMAP_PDF_DIR",     DATA_ROOT / "pdf")
 OUTPUT_DIR  = _p("SESMAP_OUTPUT_DIR",  DATA_ROOT / "outputs")    # 杂项输出（评测结果/缓存等）
 ARCHIVE_DIR = _p("SESMAP_ARCHIVE_DIR", DATA_ROOT / "archive")    # 旧文件/备份
 CASE_ROOT   = _p("SESMAP_CASE_ROOT",   DATA_ROOT)                # 各 case 归档在 CASE_ROOT/caseN（app 读 data/caseN）

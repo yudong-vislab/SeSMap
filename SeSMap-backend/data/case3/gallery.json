@@ -9,34 +9,90 @@
   },
   {
     "paper_id": 1,
-    "title": "Circos an Information Aesthetic for Comparative Genomics",
+    "title": "CGView.js Circular Genome Visualization in the Web Browser",
     "semanticCountryId": "c1",
     "sourceId": "c9",
     "thumbnail": "c1.png",
-    "caption": "Figure 1"
+    "caption": "MinerU-extracted figure fallback"
   },
   {
     "paper_id": 2,
-    "title": "GenoREC A Recommendation System for Interactive Genomics Data Visualization",
+    "title": "Circos an Information Aesthetic for Comparative Genomics",
     "semanticCountryId": "c2",
     "sourceId": "c10",
     "thumbnail": "c2.png",
-    "caption": "Fig. 1. Top: GenoREC maps data and task specifications (A) to appropriate visualizations. In this figure, the knowledge-based recommendation (B) shows the component-wise model of GenoREC and the subse"
+    "caption": "Figure 1"
   },
   {
     "paper_id": 3,
-    "title": "Gosling",
+    "title": "Computer Graphics Forum - 2024 - Ståhlbom - Should I make it round  Suitability of circular and linear layouts for",
     "semanticCountryId": "c3",
     "sourceId": "c11",
     "thumbnail": "c3.png",
-    "caption": "Fig. 1. Genomics Data Visualizations Using Gosling."
+    "caption": "Figure 1: Introduction to the biological concepts of the study, which each participant was presented with at the beginning of the study. In addition, a text reading as follows: A specific base is refe"
   },
   {
     "paper_id": 4,
-    "title": "IntelliCircos",
+    "title": "GenoREC A Recommendation System for Interactive Genomics Data Visualization",
     "semanticCountryId": "c4",
     "sourceId": "c12",
     "thumbnail": "c4.png",
+    "caption": "Fig. 1. Top: GenoREC maps data and task specifications (A) to appropriate visualizations. In this figure, the knowledge-based recommendation (B) shows the component-wise model of GenoREC and the subse"
+  },
+  {
+    "paper_id": 5,
+    "title": "GlyphCreator Towards Example-based Automatic Generation of Circular Glyphs",
+    "semanticCountryId": "c5",
+    "sourceId": "c13",
+    "thumbnail": "c5.png",
+    "caption": "Fig. 1. Circular glyphs in (a1) EnsembleLens [68], (b1) SmartAdP [35], (c1) VisMatcher [28], (d1) VAICo [51], (e1) SeqDynamics [65], (f1) Visual IVO Editor [38], (g1) DropoutSeer [8], (h1) MutualRanke"
+  },
+  {
+    "paper_id": 6,
+    "title": "Gosling",
+    "semanticCountryId": "c6",
+    "sourceId": "c14",
+    "thumbnail": "c6.png",
+    "caption": "Fig. 1. Genomics Data Visualizations Using Gosling."
+  },
+  {
+    "paper_id": 7,
+    "title": "HERA Interactive Circular Comparison of Plasmids and Other Genomic Sequences",
+    "semanticCountryId": "c7",
+    "sourceId": "c15",
+    "thumbnail": "c7.png",
+    "caption": "Figure 1. Circular comparison of F24:A-:B1 plasmids from E. coli ST11138 and ST616 isolates generated using HERA. The F24:A-:B1 plasmid from isolate"
+  },
+  {
+    "paper_id": 8,
+    "title": "IntelliCircos",
+    "semanticCountryId": "c8",
+    "sourceId": "c16",
+    "thumbnail": "c8.png",
     "caption": "Figure 1: (A) Structure of a Circos Plot. A circos plot consists of multiple nested rings surrounding a genomics axis, with each ring containing one or more tracks. (B) Example of a Circos Plot. The t"
+  },
+  {
+    "paper_id": 9,
+    "title": "NG-Circos Next-generation Circos for Data Visualization and Interpretation",
+    "semanticCountryId": "c9",
+    "sourceId": "c17",
+    "thumbnail": "c9.png",
+    "caption": "Figure 1. Demos of NG-Circos. (A) Complex published Circos plots reproduced using NG-Circos; detailed descriptions can be found in Akdemir et al. (15). (B) Demo showing gene structures using NG-Circos"
+  },
+  {
+    "paper_id": 10,
+    "title": "bioinformatics 32 11 1740",
+    "semanticCountryId": "c10",
+    "sourceId": "c18",
+    "thumbnail": "c10.png",
+    "caption": "Fig. 1. Plots constructed with BioCircos.js. (A) Reproduced plots of published somatic mutations from a human cancer genome. The outer ring represents chromosome ideograms. From outside and inwards, t"
+  },
+  {
+    "paper_id": 11,
+    "title": "interacCircos An R Package Based on JavaScript Libraries for the Generation of Interactive Circos Plots",
+    "semanticCountryId": "c11",
+    "sourceId": "c19",
+    "thumbnail": "c11.png",
+    "caption": "Fig. 1. Reproduced plots by interacCircos. (A) This plot indicates a QTL involved in net blotch resistance, i.e., average ordinate and reaction type. The most inner circle is the barley chromosome and"
   }
 ]

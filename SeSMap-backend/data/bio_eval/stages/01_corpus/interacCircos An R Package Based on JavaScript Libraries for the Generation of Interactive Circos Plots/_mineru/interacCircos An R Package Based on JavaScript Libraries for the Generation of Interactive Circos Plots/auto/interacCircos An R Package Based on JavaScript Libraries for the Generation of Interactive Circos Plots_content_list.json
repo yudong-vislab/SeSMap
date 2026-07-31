@@ -1,0 +1,514 @@
+[
+    {
+        "type": "text",
+        "text": "Genome analysis",
+        "bbox": [
+            99,
+            149,
+            263,
+            169
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "interacCircos: an R package based on JavaScript libraries for the generation of interactive circos plots",
+        "text_level": 1,
+        "bbox": [
+            98,
+            170,
+            898,
+            226
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Zhe Cui <sup>1,†</sup>, Ya Cui<sup>2,†</sup>, Tianyi Zang<sup>1,</sup>\\* and Yadong Wang<sup>1,</sup>\\*",
+        "bbox": [
+            96,
+            236,
+            648,
+            256
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\*To whom correspondence should be addressed.",
+        "bbox": [
+            98,
+            265,
+            380,
+            281
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "<sup>†</sup>The authors wish it to be known that, in their opinion, the first two authors should be regarded as Joint First Authors. Associate editor: Can Alkan",
+        "bbox": [
+            98,
+            281,
+            761,
+            311
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Received on December 24, 2020; revised on March 30, 2021; editorial decision on March 31, 2021; accepted on April 7, 202",
+        "bbox": [
+            98,
+            325,
+            669,
+            339
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Abstract",
+        "text_level": 2,
+        "bbox": [
+            99,
+            356,
+            171,
+            372
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Summary: JavaScript-based Circos libraries have been widely implemented to generate interactive Circos plots in web applications. However, these libraries require either local installation, which requires the compilation of extra libraries, or extra data processing procedures to prepare input and configuration for each track of plot, which limits the utility and capability of integration with powerful R packages. In this report, we present interacCircos, an R package for creating interactive Circos plots through the integration of JavaScript-based libraries. interacCircos can simply and flexibly implement 14 track-plot functions and 7 auxiliary functions for presenting large-scale genomic data in interactive Circos plots.",
+        "bbox": [
+            96,
+            377,
+            900,
+            475
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Availability and implementation: InteracCircos and its manual are freely available at https://github.com/mrcuizhe/ interacCircos under the GPL license. The online documentation is available at https://mrcuizhe.github.io/ interacCircos\\_documentation/index.html.",
+        "bbox": [
+            98,
+            475,
+            900,
+            518
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Contact: tianyi.zang@hit.edu.cn or ydwang@hit.edu.cn",
+        "bbox": [
+            98,
+            520,
+            483,
+            534
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Supplementary information: Supplementary data are available at Bioinformatics online.",
+        "bbox": [
+            98,
+            534,
+            707,
+            550
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1 Introduction",
+        "text_level": 2,
+        "bbox": [
+            99,
+            583,
+            214,
+            598
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Circos (Krzywinski et al., 2009) has been widely employed in genomic analysis for the visualization of genomic elements and biological relationships. However, the inherent limitation of Circos, such as the difficulty of installation and laborious preparation of input files, limit its ability to be integrated with powerful packages developed in other popular languages, such as R. In recent years, some Circosderived tools, such as Circoletto (Darzentas, 2010), CIRCUS (Naquin et al., 2014) and Rcircos (Zhang et al., 2013), have been developed to facilitate the drawing of Circos plots. Among these tools, BioCircos.js (Cui et al., 2016), circosJS (Nicolas Girault, 2020) and NG-Circos (Cui et al., 2020) try to address the fact that the original Circos implementation is not interactive. These softwares do not require compiling third-party libraries; however, it is still not possible to integrate them with many popular R packages to use their output directly. Moreover, the JavaScript language-based input of these libraries also requires an extra data processing procedure, which may cost considerable time understanding language grammar and data formats. BioCircos.R (Loan, 2019) is an R implementation that can generate interactive Circos plots, but this package was developed based on BioCircos.js, which limited it to only five functional modules. Hence, we develop and present a userfriendly R package, interacCircos, which combines BioCircos.js, circosJS and NG-Circos based on the htmlwidgets package to simply and flexibly generate interactive Circos plots and effectively integrate with other popular R pipelines.",
+        "bbox": [
+            96,
+            603,
+            488,
+            892
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            508,
+            581,
+            898,
+            607
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2 Implementation",
+        "text_level": 2,
+        "bbox": [
+            509,
+            630,
+            653,
+            645
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "BioCircos.js, circosJS and NG-Circos were originally developed in JavaScript based on JQuery and Data-Driven Documents (D3) (Bostock et al., 2011). We combined the functional modules from these libraries and ported parameters into an R package based on htmlwidgets. The modules and parameters of these libraries are inherited and integrated by packaging each module into a function. To promote ease of usage, we strictly set the input format for each module through a simple data frame, which significantly reduces the additional learning costs for JavaScript grammar and data preprocessing. Data in the data frame are directly passed to functions without further processing.",
+        "bbox": [
+            508,
+            649,
+            900,
+            789
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "interacCircos provides a total of 21 functions that correspond to 21 functional modules, 14 of which are designed to display genomic and biological features, such as genome-wide genetic variations (i.e., SNPs, CNVs and chromosome-scale rearrangements), gene expression and biomolecular interactions. The other seven auxiliary functions are all integrated and compatible with one another in interacCircos. Note that the interactive Circos plot drawn through interacCircos is displayed in an SVG element of HTML, which is multiplatform-compatible and can be easily embedded into the user’s website.",
+        "bbox": [
+            508,
+            788,
+            900,
+            891
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "Bioinformatics, 37(20), 2021, 3642–3644 doi: 10.1093/bioinformatics/btab232 Advance Access Publication Date: 8 April 2021 Applications Note",
+        "bbox": [
+            531,
+            55,
+            782,
+            116
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "OXFORD",
+        "bbox": [
+            805,
+            48,
+            895,
+            116
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "aside_text",
+        "text": "Downloaded from https://academic.oup.com/bioinformatics/article/37/20/3642/6217356 by guest on 30 July 2026",
+        "bbox": [
+            957,
+            243,
+            977,
+            751
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "footer",
+        "text": "VC The Author(s) 2021. Published by Oxford University Press. All rights reserved. For permissions, please e-mail: journals.permissions@oup.com",
+        "bbox": [
+            98,
+            925,
+            759,
+            937
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "page_number",
+        "text": "3642",
+        "bbox": [
+            866,
+            925,
+            898,
+            936
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/13cdb04fd5408c5aeb376d066dbe3678865723378f57a17ade7b2d5b3d452d59.jpg",
+        "image_caption": [
+            "Fig. 1. Reproduced plots by interacCircos. (A) This plot indicates a QTL involved in net blotch resistance, i.e., average ordinate and reaction type. The most inner circle is the barley chromosome and all other functions’ coordinates are based on it. Grey connector lines representing the genetic position are displayed through CircosArc() function. The red and blue bar plot representing the marker trait associations and count of significant marker trait associations are displayed through CircosHistogram() function and the red and blue line plot. The most outer labels are displayed through CircosLink() function. (B) This plot represents the comparative genome mapping of C.rubella with A.lyrata. The most outer ring (yellow and red) showing the percentage of the genomic window and the second most outer ring (green and blue) showing gene density is displayed through the CircosWig() function. The inner ring and chords showing orthologous regions between species are drawn through the CircosChord() function"
+        ],
+        "image_footnote": [],
+        "bbox": [
+            173,
+            72,
+            820,
+            317
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            96,
+            432,
+            486,
+            458
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3 Results",
+        "text_level": 2,
+        "bbox": [
+            98,
+            479,
+            174,
+            494
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Compared with JavaScript libraries, interacCircos can (i) conveniently construct an interactive multitrack Circos plot by adding/ removing modules through ‘þ’ or ‘-’ in main functions, a common strategy widely utilized by many R drawing packages. (ii) Easily take advantage of web-client JavaScript to achieve interactive effects, such as binding mouse events to data points and achieving animation effects. Additionally, interacCircos uses a data frame as the input format, which is the most commonly used data format in R and is considerably more user-friendly than that in JavaScript libraries. These data structures also enable interacCircos to easily cooperate with other popular R pipelines. (iii) be directly visualized through popular integrated development environments (IDEs) of R, such as RStudio, or web browsers, such as Chrome and Safari. This kind of display strategy can circumvent numerous problems, such as fixing dependencies or upgrading Perl modules, when installing Circos on a local computer.",
+        "bbox": [
+            96,
+            498,
+            488,
+            693
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A set of demos and a complete vignette are included in the package to show the interactive Circos plot construction procedures for each track-plot function. Additionally, a website with details of all parameters and functions is available online. To illustrate the utilities of interacCircos in displaying diverse biological data and relationships in an interactive Circos plot, we reproduced Circos figures from published articles using interacCircos. A study published in 2017 indicated that a QTL was involved in net blotch resistance, i.e., average ordinate (AO) and reaction type (RT) (Vatter et al., 2017). We reproduced this plot by applying functions of interacCircos to represent the genetic position of SNPs, marker trait associations and count of significant marker trait associations in circular (Fig. 1A). The second plot that we reproduced was first published in 2013, displaying comparative genomic mapping in Capsella rubella and Arabidopsis lyrata (Slotte et al., 2013). interacCircos is able to display the percentage of the genomic window that comprises transposable elements, gene density and orthologous regions between species (Fig. 1B). Note that we artificially simulated some of the unavailable data. The source code is available in the Supplementary Material.",
+        "bbox": [
+            96,
+            692,
+            488,
+            935
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Conclusion and outlook",
+        "text_level": 2,
+        "bbox": [
+            509,
+            430,
+            700,
+            446
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The interacCircos package provides simple and flexible functionality to display comprehensive biological data and relationships as an interactive Circos plot. Through the 21 functions corresponding to modules of BioCircos.js/circosJS/NG-Circos, interacCircos is able to display more than 10 types of common plots in circular, as well as more than 10 types of animation and mouse events. More importantly, interacCircos simplifies and standardizes the input of functions through a data frame, one of the most commonly used data structures of R, which also makes the cooperation of interacCircos and other R pipelines possible and compatible.",
+        "bbox": [
+            508,
+            450,
+            900,
+            578
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "However, as this package is dedicated to being user-friendly and less coding-intensive, we realized that we still need to provide more flexible choices for the plot to accommodate additional types of biological data, such as protein–protein interaction networks. With the updating and upgrading of BioCircos.js/circosJS/NG-Circos, we expect that interacCircos can adapt to more types of biological data and plots and subsequently facilitate research in the bioinformatics field in the future.",
+        "bbox": [
+            508,
+            577,
+            900,
+            679
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Acknowledgement",
+        "text_level": 2,
+        "bbox": [
+            509,
+            707,
+            665,
+            724
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "We thank the teams of BioCircos.js, BioCircos.R, NGCircos and circosJS for sharing the code.",
+        "bbox": [
+            508,
+            726,
+            898,
+            751
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Funding",
+        "text_level": 2,
+        "bbox": [
+            509,
+            781,
+            580,
+            796
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "This work was supported by the National Key Research and Development Program of China [2017YFC1201201, 2018YFC0910504, 2017YFC0907503 and 2016YFC0901605] and National Natural Science Foundation of China [62076082].",
+        "bbox": [
+            508,
+            800,
+            898,
+            849
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Conflict of Interest: none declared.",
+        "bbox": [
+            509,
+            855,
+            686,
+            868
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "References",
+        "text_level": 2,
+        "bbox": [
+            509,
+            889,
+            602,
+            905
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "ref_text",
+        "list_items": [
+            "Bostock,M. et al. (2011) D<sup>3</sup> data-driven documents. IEEE Transactions on Visualization and Computer Graphics, 17, 2301–2309."
+        ],
+        "bbox": [
+            511,
+            910,
+            898,
+            934
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "header",
+        "text": "interacCircos: an R package based on JavaScript libraries for the generation of interactive Circos plots",
+        "bbox": [
+            98,
+            37,
+            722,
+            51
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "page_number",
+        "text": "3643",
+        "bbox": [
+            864,
+            37,
+            898,
+            49
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "aside_text",
+        "text": "Downloaded from https://academic.oup.com/bioinformatics/article/37/20/3642/6217356 by guest on 30 July 2026",
+        "bbox": [
+            957,
+            244,
+            977,
+            751
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "ref_text",
+        "list_items": [
+            "Cui,Y. et al. (2016) BioCircos.js: an interactive Circos JavaScript library for biological data visualization on web applications. Bioinformatics, 32, 1740–1742.",
+            "Cui,Y. et al. (2020) NG-Circos: next-generation Circos for data visualization and interpretation. NAR Genomics and Bioinformatics, 2, lqaa069.",
+            "Darzentas,N. (2010) Circoletto: visualizing sequence similarity with Circos. Bioinformatics, 26, 2620–2621.",
+            "Krzywinski,M. et al. (2009) Circos: an information aesthetic for comparative genomics. Genome Res, 19, 1639–1645.",
+            "Loan,V. (2019) BioCircos.R: Zenodo release. Zenodo. doi:10.5281/zenodo. 1216781",
+            "Naquin,D. et al. (2014) CIRCUS: a package for Circos display of structural genome variations from paired-end and mate-pair sequencing data. BMC Bioinformatics, 15, 198.",
+            "Nicolas Girault,R.C. et al. (2020) circosJS: a d3 library to build circular graphs. https://github.com/nicgirault/circosJS. [18 November 2020].",
+            "Slotte,T. et al. (2013) The Capsella rubella genome and the genomic consequences of rapid mating system evolution. Nature Genetics, 45, 831–835.",
+            "Vatter,T. et al. (2017) A nested association mapping population identifies multiple small effect QTL conferring resistance against net blotch (Pyrenophora teres f. teres) in wild barley. PLoS One, 12, e0186803.",
+            "Zhang,H. et al. (2013) RCircos: an R package for Circos 2D track plots. BMC Bioinformatics, 14, 244."
+        ],
+        "bbox": [
+            101,
+            72,
+            485,
+            105
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "page_number",
+        "text": "3644",
+        "bbox": [
+            99,
+            37,
+            133,
+            49
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "Z.Cui et al.",
+        "bbox": [
+            830,
+            37,
+            898,
+            50
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "aside_text",
+        "text": "Downloaded from https://academic.oup.com/bioinformatics/article/37/20/3642/6217356 by guest on 30 July 2026",
+        "bbox": [
+            957,
+            245,
+            977,
+            751
+        ],
+        "page_idx": 2
+    }
+]

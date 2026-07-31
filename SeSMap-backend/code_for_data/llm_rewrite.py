@@ -15,6 +15,31 @@ def clean_json_text(text: str) -> str:
     text = re.sub(r"```$", "", text.strip())
     return text.strip()
 
+
+def parse_msu_json(text: str):
+    """Decode an LLM JSON response, including unescaped LaTex backslashes.
+
+    Models occasionally return valid-looking JSON whose LaTex fragments use a
+    single backslash (for example ``\\in``).  That is not valid JSON and used
+    to make the complete paragraph disappear from the corpus.  Preserve the
+    text by escaping only backslashes that are not already valid JSON escapes.
+    """
+    try:
+        data = json.loads(text)
+    except json.JSONDecodeError:
+        repaired = re.sub(r'\\(?!(?:["\\\\/bfnrt]|u[0-9a-fA-F]{4}))', r'\\\\', text)
+        try:
+            data = json.loads(repaired)
+        except json.JSONDecodeError:
+            print("⚠️ JSON 解析失败，返回原始输出：")
+            print(text)
+            return None
+    if not isinstance(data, list) or not all(isinstance(item, dict) for item in data):
+        print("⚠️ MSU 输出不是对象列表，返回原始输出：")
+        print(text)
+        return None
+    return data
+
 def extract_msu(paragraph: str):
     """
     输入科研论文文本，输出 Minimum Semantic Units (MSUs)
@@ -64,13 +89,7 @@ Paragraph:
     # 提取结果
     text_output = response.choices[0].message.content.strip()
     text_output = clean_json_text(text_output)
-    try:
-        msus = json.loads(text_output)
-    except json.JSONDecodeError:
-        print("⚠️ JSON 解析失败，返回原始输出：")
-        print(text_output)
-        return None
-    return msus
+    return parse_msu_json(text_output)
 
 # def batch_process(root_dir: str):
 #     root = Path(root_dir)

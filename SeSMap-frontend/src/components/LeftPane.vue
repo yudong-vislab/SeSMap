@@ -373,6 +373,7 @@ function isAutoGalleryTopic(text) {
 }
 
 function pdfUrlForImage(folder, img) {
+  if (img?.pdfUrl) return img.pdfUrl
   const pdfDir = FOLDER_PDF_DIR[folder] || folder
   const base = (img.name.split('/').pop() || img.name)
     .replace(/\.(png|jpe?g|gif|webp|svg)$/i, '')
@@ -422,16 +423,21 @@ function toPaperItems(folder, items) {
 // 之后完全复用现有 toPaperItems / paperSourceInfoForImage 渲染链路（后者会自动读 item 自带的 semanticCountryId）。
 const backendGalleryLoaded = ref({})
 async function ensureBackendGallery(folder) {
-  if (galleryByFolder.value[folder]?.length) return true      // 已有(bundled 资产 或 已拉过)
-  if (backendGalleryLoaded.value[folder]) return false
+  // Prefer the generated manifest when present: it is the only source that
+  // stays in sync after a case is rebuilt with newly added papers.  Bundled
+  // images remain a fallback for cases that have no generated manifest.
+  if (backendGalleryLoaded.value[folder]) return Boolean(galleryByFolder.value[folder]?.length)
   const projectId = FOLDER_PROJECT[folder] || folder
   try {
-    const res = await fetch(`/api/gallery?project_id=${encodeURIComponent(projectId)}`)
-    backendGalleryLoaded.value = { ...backendGalleryLoaded.value, [folder]: true }
-    if (!res.ok) return false
+    // Do not cache a fallback result.  A case can finish building while this
+    // page is open, and the next gallery command must then pick up its newly
+    // generated manifest instead of retaining bundled demo images.
+    const res = await fetch(`/api/gallery?project_id=${encodeURIComponent(projectId)}`, { cache: 'no-store' })
+    if (!res.ok) return Boolean(galleryByFolder.value[folder]?.length)
     const data = await res.json()
     const items = (data.items || []).filter(it => it.thumbnail_url)
-    if (!items.length) return false
+    if (!items.length) return Boolean(galleryByFolder.value[folder]?.length)
+    backendGalleryLoaded.value = { ...backendGalleryLoaded.value, [folder]: true }
     galleryByFolder.value = {
       ...galleryByFolder.value,
       [folder]: items.map(it => ({
@@ -440,12 +446,13 @@ async function ensureBackendGallery(folder) {
         path: `${folder}/${it.thumbnail || it.paper_id}`,
         semanticCountryId: it.semanticCountryId,
         sourceId: it.sourceId,
+        pdfUrl: it.pdf_url || null,
       }))
     }
     return true
   } catch (e) {
     console.warn('[gallery] backend manifest fetch failed:', e)
-    return false
+    return Boolean(galleryByFolder.value[folder]?.length)
   }
 }
 
@@ -466,9 +473,13 @@ async function showFolder(folder) {
   const imgs = (galleryByFolder.value[folder] || []).slice()
   // 外层标题也更新为最近一次加载的分组名（可选）
   paperQuery.value = folderTitle(folder)
-   // 改为“追加一个分组”，而不是覆盖
+  // 同一主题再次执行时刷新原分组，避免保留构建前的静态两篇图片。
+  paperGroups.value = paperGroups.value.filter(g =>
+    g?.folder !== folder && !String(g?.key || '').startsWith(`${folder}-`)
+  )
   paperGroups.value.push({
      key: `${folder}-${Date.now()}-${Math.random().toString(36).slice(2,7)}`,
+     folder,
      title: folderTitle(folder),
      items: toPaperItems(folder, imgs)
   })

@@ -59,6 +59,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--pdf-dir", default=str(cfg.PDF_DIR))
     ap.add_argument("--corpus", default=str(cfg.CORPUS_DIR))
+    ap.add_argument("--skip-existing", action="store_true",
+                    help="保留已有 corpus/<paper>/<paper>.md；仅转换新增 PDF")
     args = ap.parse_args()
 
     cfg.ensure_dirs()
@@ -70,6 +72,10 @@ def main():
     for pdf in pdfs:
         name = os.path.splitext(os.path.basename(pdf))[0]
         paper_dir = os.path.join(args.corpus, name)
+        normalized_md = os.path.join(paper_dir, f"{name}.md")
+        if args.skip_existing and os.path.isfile(normalized_md):
+            print(f"- {name} (skip: existing markdown)")
+            continue
         out_dir = os.path.join(paper_dir, "_mineru")
         os.makedirs(out_dir, exist_ok=True)
         print(f"- {name}")

@@ -1,0 +1,3364 @@
+[
+  {
+    "idx": 0,
+    "MSU_id": 0,
+    "sentence": "Cite as: Phys. Fluids 33, 055130 (2021).",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 0,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.94171892488559,
+      -1.5159365909872289
+    ]
+  },
+  {
+    "idx": 1,
+    "MSU_id": 1,
+    "sentence": "DOI: https://doi.org/10.1063/5.0048229.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 0,
+    "paper_id": 0,
+    "2d_coord": [
+      -2.6987308321614525,
+      -2.4772725235237725
+    ]
+  },
+  {
+    "idx": 2,
+    "MSU_id": 2,
+    "sentence": "The paper was submitted on 20 February 2021.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 1,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.1535309251458603,
+      -2.6620167010888838
+    ]
+  },
+  {
+    "idx": 3,
+    "MSU_id": 3,
+    "sentence": "The paper was accepted on 30 April 2021.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 1,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.2894851698208876,
+      -2.7133663592797963
+    ]
+  },
+  {
+    "idx": 4,
+    "MSU_id": 4,
+    "sentence": "The paper was published online on 25 May 2021.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 1,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.082678573827533,
+      -2.8017104927464307
+    ]
+  },
+  {
+    "idx": 5,
+    "MSU_id": 5,
+    "sentence": "Wen Shi (时文), Ye Tian (田野), Jialing Le (乐嘉陵), and Fuyu Zhong (钟富宇) are authors of the paper.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 2,
+    "paper_id": 0,
+    "2d_coord": [
+      -2.122322836754536,
+      -1.8010095808325768
+    ]
+  },
+  {
+    "type": "figure",
+    "para_id": 3,
+    "paper_id": 0
+  },
+  {
+    "idx": 7,
+    "MSU_id": 7,
+    "sentence": "The paper is published in Physics of Fluids, volume 32, article 126102, in 2020.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 4,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.8275994838359417,
+      -1.5123321989366456
+    ]
+  },
+  {
+    "idx": 8,
+    "MSU_id": 8,
+    "sentence": "The DOI for the paper is https://doi.org/10.1063/5.0023972.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 4,
+    "paper_id": 0,
+    "2d_coord": [
+      -2.584679900865676,
+      -2.3575740372545573
+    ]
+  },
+  {
+    "idx": 13,
+    "MSU_id": 13,
+    "sentence": "Physics of Fluids 33, 065111 (2021); https://doi.org/10.1063/5.0052453",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 7,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.948043992507017,
+      -1.5391525368243106
+    ]
+  },
+  {
+    "idx": 14,
+    "MSU_id": 14,
+    "sentence": "The paper was published in Phys. Fluids 33, 055130 (2021).",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 8,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.8974198274825436,
+      -1.5307927715373257
+    ]
+  },
+  {
+    "idx": 15,
+    "MSU_id": 15,
+    "sentence": "The paper was submitted on 20 February 2021.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 8,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.1535309251458603,
+      -2.6620167010888838
+    ]
+  },
+  {
+    "idx": 16,
+    "MSU_id": 16,
+    "sentence": "The paper was accepted on 30 April 2021.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 8,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.2894851698208876,
+      -2.7133663592797963
+    ]
+  },
+  {
+    "idx": 17,
+    "MSU_id": 17,
+    "sentence": "The paper was published online on 25 May 2021.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 8,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.082678573827533,
+      -2.8017104927464307
+    ]
+  },
+  {
+    "type": "figure",
+    "para_id": 9,
+    "paper_id": 0
+  },
+  {
+    "idx": 18,
+    "MSU_id": 18,
+    "sentence": "Wen Shi, Ye Tian, Jialing Le, and Fuyu Zhong are the authors of the paper.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 10,
+    "paper_id": 0,
+    "2d_coord": [
+      -2.1203716716953145,
+      -1.8034736628648798
+    ]
+  },
+  {
+    "idx": 19,
+    "MSU_id": 19,
+    "sentence": "Science and Technology on Scramjet Laboratory is part of the China Aerodynamics Research and Development Center.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 12,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.41094938946439014,
+      0.9957895365793722
+    ]
+  },
+  {
+    "idx": 20,
+    "MSU_id": 20,
+    "sentence": "The laboratory is located in Mianyang, China, with postal code 621000.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 12,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.3748332892364315,
+      0.9491022209335076
+    ]
+  },
+  {
+    "idx": 34,
+    "MSU_id": 34,
+    "sentence": "Published under an exclusive license by AIP Publishing.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 15,
+    "paper_id": 0,
+    "2d_coord": [
+      -2.7888029861549675,
+      -2.133691847837069
+    ]
+  },
+  {
+    "idx": 35,
+    "MSU_id": 35,
+    "sentence": "https://doi.org/10.1063/5.0048229",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 15,
+    "paper_id": 0,
+    "2d_coord": [
+      -2.6622323970786193,
+      -2.4417254963576376
+    ]
+  },
+  {
+    "idx": 96,
+    "MSU_id": 96,
+    "sentence": "The pulse combustion wind tunnel is shown in Fig. 1.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 22,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.597090004572916,
+      1.1720425430059624
+    ]
+  },
+  {
+    "type": "figure",
+    "para_id": 25,
+    "paper_id": 0
+  },
+  {
+    "idx": 107,
+    "MSU_id": 107,
+    "sentence": "FIG 1 illustrates a schematic of a direct-connected pulse combustion wind tunnel.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 26,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.5989049451646401,
+      1.1760788437221381
+    ]
+  },
+  {
+    "idx": 121,
+    "MSU_id": 121,
+    "sentence": "The experimental arrangements of the optical measurements are shown in Fig. 4.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 28,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.49840314087122867,
+      -0.35840515523409106
+    ]
+  },
+  {
+    "type": "figure",
+    "para_id": 30,
+    "paper_id": 0
+  },
+  {
+    "type": "figure",
+    "para_id": 33,
+    "paper_id": 0
+  },
+  {
+    "idx": 131,
+    "MSU_id": 131,
+    "sentence": "FIG 3 shows a schematic of fuel injection and spark.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 34,
+    "paper_id": 0,
+    "2d_coord": [
+      0.9189443482413138,
+      1.352997498426346
+    ]
+  },
+  {
+    "type": "figure",
+    "para_id": 35,
+    "paper_id": 0
+  },
+  {
+    "type": "figure",
+    "para_id": 37,
+    "paper_id": 0
+  },
+  {
+    "type": "figure",
+    "para_id": 38,
+    "paper_id": 0
+  },
+  {
+    "idx": 132,
+    "MSU_id": 132,
+    "sentence": "FIG. 5 illustrates the operating sequence of tests.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 39,
+    "paper_id": 0,
+    "2d_coord": [
+      -1.185337375894036,
+      -0.8413633866326593
+    ]
+  },
+  {
+    "idx": 144,
+    "MSU_id": 144,
+    "sentence": "The parameters of injection for various cases are listed in Table I.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 41,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.8557528053886633,
+      -0.6748962512675653
+    ]
+  },
+  {
+    "type": "figure",
+    "para_id": 43,
+    "paper_id": 0
+  },
+  {
+    "idx": 158,
+    "MSU_id": 158,
+    "sentence": "Table I provides the location and parameters of fuel injection for different cases.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 44,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.837069950180993,
+      -0.6631046795434418
+    ]
+  },
+  {
+    "idx": 176,
+    "MSU_id": 176,
+    "sentence": "Other characteristics of the oscillation are discussed in Sec. III.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 47,
+    "paper_id": 0,
+    "2d_coord": [
+      -1.1863285866433628,
+      -0.41154202877279045
+    ]
+  },
+  {
+    "type": "figure",
+    "para_id": 48,
+    "paper_id": 0
+  },
+  {
+    "type": "figure",
+    "para_id": 49,
+    "paper_id": 0
+  },
+  {
+    "type": "figure",
+    "para_id": 50,
+    "paper_id": 0
+  },
+  {
+    "idx": 177,
+    "MSU_id": 177,
+    "sentence": "FIG 7 shows internal structures of supersonic flow under various injection strategies.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 51,
+    "paper_id": 0,
+    "2d_coord": [
+      -1.1784385163684932,
+      1.452187916026065
+    ]
+  },
+  {
+    "type": "figure",
+    "para_id": 58,
+    "paper_id": 0
+  },
+  {
+    "type": "figure",
+    "para_id": 60,
+    "paper_id": 0
+  },
+  {
+    "type": "figure",
+    "para_id": 68,
+    "paper_id": 0
+  },
+  {
+    "type": "figure",
+    "para_id": 70,
+    "paper_id": 0
+  },
+  {
+    "type": "figure",
+    "para_id": 74,
+    "paper_id": 0
+  },
+  {
+    "type": "figure",
+    "para_id": 77,
+    "paper_id": 0
+  },
+  {
+    "type": "figure",
+    "para_id": 80,
+    "paper_id": 0
+  },
+  {
+    "idx": 258,
+    "MSU_id": 258,
+    "sentence": "FIG. 14 illustrates CH image processing in case 6.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 81,
+    "paper_id": 0,
+    "2d_coord": [
+      -1.7570753503198215,
+      -0.6191556812546126
+    ]
+  },
+  {
+    "idx": 259,
+    "MSU_id": 259,
+    "sentence": "(a) shows the CH image.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 81,
+    "paper_id": 0,
+    "2d_coord": [
+      -1.9563648634914177,
+      -0.643364866531732
+    ]
+  },
+  {
+    "idx": 260,
+    "MSU_id": 260,
+    "sentence": "(b) shows the gray image.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 81,
+    "paper_id": 0,
+    "2d_coord": [
+      -2.017537804239111,
+      -0.6395322072627322
+    ]
+  },
+  {
+    "idx": 261,
+    "MSU_id": 261,
+    "sentence": "(c) shows the gray image with edge.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 81,
+    "paper_id": 0,
+    "2d_coord": [
+      -2.009677900062764,
+      -0.6410448452611864
+    ]
+  },
+  {
+    "type": "figure",
+    "para_id": 82,
+    "paper_id": 0
+  },
+  {
+    "type": "figure",
+    "para_id": 87,
+    "paper_id": 0
+  },
+  {
+    "type": "figure",
+    "para_id": 89,
+    "paper_id": 0
+  },
+  {
+    "type": "figure",
+    "para_id": 94,
+    "paper_id": 0
+  },
+  {
+    "type": "figure",
+    "para_id": 96,
+    "paper_id": 0
+  },
+  {
+    "idx": 284,
+    "MSU_id": 284,
+    "sentence": "For the combined injection of hydrogen and ethylene in stage b of case 6, the results of FFT are not discussed here because unstable combustion occurred without a dominant frequency.",
+    "category": "Other",
+    "rank": 2,
+    "type": "text",
+    "para_id": 99,
+    "paper_id": 0,
+    "2d_coord": [
+      0.8036830476732131,
+      2.3629983328492146
+    ]
+  },
+  {
+    "type": "figure",
+    "para_id": 100,
+    "paper_id": 0
+  },
+  {
+    "type": "figure",
+    "para_id": 101,
+    "paper_id": 0
+  },
+  {
+    "type": "figure",
+    "para_id": 102,
+    "paper_id": 0
+  },
+  {
+    "type": "figure",
+    "para_id": 103,
+    "paper_id": 0
+  },
+  {
+    "type": "figure",
+    "para_id": 104,
+    "paper_id": 0
+  },
+  {
+    "type": "figure",
+    "para_id": 105,
+    "paper_id": 0
+  },
+  {
+    "type": "figure",
+    "para_id": 106,
+    "paper_id": 0
+  },
+  {
+    "type": "figure",
+    "para_id": 108,
+    "paper_id": 0
+  },
+  {
+    "type": "figure",
+    "para_id": 110,
+    "paper_id": 0
+  },
+  {
+    "type": "figure",
+    "para_id": 115,
+    "paper_id": 0
+  },
+  {
+    "idx": 337,
+    "MSU_id": 337,
+    "sentence": "This project was supported by the National Nature Science Foundation of China (Grant No. 51706237).",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 122,
+    "paper_id": 0,
+    "2d_coord": [
+      -2.4663777303601173,
+      -1.264609389951606
+    ]
+  },
+  {
+    "idx": 338,
+    "MSU_id": 338,
+    "sentence": "This project was supported by the CARDC Fundamental and Frontier Technology Research Fund.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 122,
+    "paper_id": 0,
+    "2d_coord": [
+      -2.529801225608689,
+      -1.23198475778253
+    ]
+  },
+  {
+    "idx": 339,
+    "MSU_id": 339,
+    "sentence": "The data that support the findings of this study are available from the corresponding author upon reasonable request.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 124,
+    "paper_id": 0,
+    "2d_coord": [
+      -2.472171256787708,
+      -2.10374581552977
+    ]
+  },
+  {
+    "idx": 340,
+    "MSU_id": 340,
+    "sentence": "H. B. Wang, Z. G. Wang, M. B. Sun, and H. Y. Wu authored the study 'Combustion modes of hydrogen jet combustion in a cavity-based supersonic combustor.'",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 125,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.2297569231308981,
+      1.6665310393338233
+    ]
+  },
+  {
+    "idx": 341,
+    "MSU_id": 341,
+    "sentence": "The study was published in the International Journal of Hydrogen Energy, volume 38, pages 12078–12089, in 2013.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 125,
+    "paper_id": 0,
+    "2d_coord": [
+      -4.026784778588849,
+      -1.841565626678891
+    ]
+  },
+  {
+    "idx": 342,
+    "MSU_id": 342,
+    "sentence": "C. Y. Liu, Z. G. Wang, M. B. Sun, H. B. Wang, and P. B. Li authored the study 'Characteristics of a cavity-stabilized hydrogen jet flame in a model scramjet combustor.'",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 126,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.22589432230937925,
+      1.6686744391006376
+    ]
+  },
+  {
+    "idx": 343,
+    "MSU_id": 343,
+    "sentence": "The study was published in AIAA Journal, volume 57, pages 1624–1635, in 2019.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 126,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.636199586630503,
+      -2.05972341876166
+    ]
+  },
+  {
+    "idx": 348,
+    "MSU_id": 348,
+    "sentence": "The study was published in J. Propul. Power 18, 990–1002 (2002).",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 128,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.2897846501242864,
+      -2.112282749559847
+    ]
+  },
+  {
+    "idx": 350,
+    "MSU_id": 350,
+    "sentence": "The research was published in the International Journal of Hydrogen Energy in 2018.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 129,
+    "paper_id": 0,
+    "2d_coord": [
+      -4.15875382723624,
+      -1.8937074138447096
+    ]
+  },
+  {
+    "idx": 351,
+    "MSU_id": 351,
+    "sentence": "S. J. Beresh, J. L. Wagner, B. O. M. Pruett, J. F. Henfling, and R. W. Spillers authored the study 'Supersonic flow over a finite-width rectangular cavity.'",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 130,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.3726987197499009,
+      1.6750250150740695
+    ]
+  },
+  {
+    "idx": 352,
+    "MSU_id": 352,
+    "sentence": "The study was published in AIAA Journal, volume 53, pages 296–310, in 2015.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 130,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.6770535702035483,
+      -2.061566794548859
+    ]
+  },
+  {
+    "idx": 355,
+    "MSU_id": 355,
+    "sentence": "The study was published in Acta Astronautica, volume 148, pages 285–293, in 2018.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 131,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.887646375008385,
+      -2.2217396511897745
+    ]
+  },
+  {
+    "idx": 356,
+    "MSU_id": 356,
+    "sentence": "Y. X. Yang, Y. X. Zhang, J. F. Yu, M. B. Sun, H. B. Wang, and Z. G. Wang authored the study 'Rear-wall-expansion effect of cavity flameholder on supersonic combustion.'",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 132,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.2733668569322439,
+      1.6431979842735087
+    ]
+  },
+  {
+    "idx": 357,
+    "MSU_id": 357,
+    "sentence": "The study was published in J. Propul. Power 35, 1029–1033 (2019).",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 132,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.274935660712058,
+      -2.144019622675699
+    ]
+  },
+  {
+    "idx": 359,
+    "MSU_id": 359,
+    "sentence": "The research is published in Acta Astronautica, volume 136, pages 90–100, in 2017.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 133,
+    "paper_id": 0,
+    "2d_coord": [
+      -4.000566077609586,
+      -2.210630418543776
+    ]
+  },
+  {
+    "idx": 361,
+    "MSU_id": 361,
+    "sentence": "The study was published in Phys. Fluids 30, 106102 (2018).",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 134,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.7732685231629635,
+      -1.6481485261025182
+    ]
+  },
+  {
+    "idx": 363,
+    "MSU_id": 363,
+    "sentence": "The paper is authored by C. Liu, J. Yu, Z. Wang, M. Sun, H. Wang, and H. Grosshans.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 135,
+    "paper_id": 0,
+    "2d_coord": [
+      -2.0756024556363855,
+      -1.9616024436829844
+    ]
+  },
+  {
+    "idx": 364,
+    "MSU_id": 364,
+    "sentence": "The study was published in Phys. Fluids 31, 046105 (2019).",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 135,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.7759780203253914,
+      -1.646175591396625
+    ]
+  },
+  {
+    "idx": 367,
+    "MSU_id": 367,
+    "sentence": "The findings were published in Combustion and Flame, volume 162, pages 1176–1192, in 2015.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 136,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.56580027196046,
+      -1.2172151778612956
+    ]
+  },
+  {
+    "idx": 369,
+    "MSU_id": 369,
+    "sentence": "The research was published in Combustion and Flame, volume 174, pages 152–165, in 2016.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 137,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.4724169343454423,
+      -1.2636440597189742
+    ]
+  },
+  {
+    "idx": 372,
+    "MSU_id": 372,
+    "sentence": "The findings are published in Combustion and Flame, volume 165, pages 1–10, in 2016.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 138,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.4653409852836967,
+      -1.26724393704483
+    ]
+  },
+  {
+    "idx": 376,
+    "MSU_id": 376,
+    "sentence": "The study was published in Flow Turbulence and Combustion, volume 82, pages 271–286, in 2009.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 140,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.5429016590534688,
+      -1.3497783038364441
+    ]
+  },
+  {
+    "idx": 378,
+    "MSU_id": 378,
+    "sentence": "The study was presented at the Joint Propulsion Conference and Exhibit in 1997.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 141,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.5989350053346048,
+      -1.899610758450444
+    ]
+  },
+  {
+    "idx": 382,
+    "MSU_id": 382,
+    "sentence": "The study was published in Phys. Fluids 18, 026101 (2006).",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 143,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.7316189541722706,
+      -1.6523650053782708
+    ]
+  },
+  {
+    "idx": 384,
+    "MSU_id": 384,
+    "sentence": "The research was published in the Proceedings of the Combustion Institute, volume 34, pages 2073–2082, in 2013.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 144,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.3333768431704023,
+      -1.4648989960418712
+    ]
+  },
+  {
+    "idx": 386,
+    "MSU_id": 386,
+    "sentence": "The study was published in the Journal of Propulsion and Power in 2001.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 145,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.4705757119946896,
+      -1.7892717069707416
+    ]
+  },
+  {
+    "idx": 388,
+    "MSU_id": 388,
+    "sentence": "The study was presented at the 21st AIAA International Space Planes and Hypersonics Technologies Conference in 2017.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 146,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.5019219228287524,
+      -1.9799041800591628
+    ]
+  },
+  {
+    "idx": 389,
+    "MSU_id": 389,
+    "sentence": "J. Li, L. W. Zhang, J. Y. Choi, V. Yang, and K. C. Lin authored the study 'Ignition transients in a scramjet engine with air throttling part 1: Nonreacting flow.'",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 147,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.4069546501143586,
+      1.5768917271097735
+    ]
+  },
+  {
+    "idx": 390,
+    "MSU_id": 390,
+    "sentence": "The study was published in J. Propul. Power 30, 438–448 (2014).",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 147,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.2804573288059804,
+      -2.137297060746694
+    ]
+  },
+  {
+    "idx": 391,
+    "MSU_id": 391,
+    "sentence": "J. Li, L. W. Zhang, J. Y. Choi, and V. Yang authored the paper 'Ignition transients in a scramjet engine with air throttling part II: Reacting flow.'",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 148,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.40649566202193727,
+      1.5747884126261456
+    ]
+  },
+  {
+    "idx": 392,
+    "MSU_id": 392,
+    "sentence": "The paper was published in J. Propul. Power 31, 79–88 (2015).",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 148,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.209029822657399,
+      -2.1742425580996145
+    ]
+  },
+  {
+    "idx": 394,
+    "MSU_id": 394,
+    "sentence": "The study was presented at the AIAA Propulsion and Energy 2019 Forum.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 149,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.56469393938334,
+      -1.978596825225967
+    ]
+  },
+  {
+    "idx": 396,
+    "MSU_id": 396,
+    "sentence": "The study was published in the International Journal of Aerospace Engineering in 2015.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 150,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.7725405388817634,
+      -2.0880862875978683
+    ]
+  },
+  {
+    "idx": 398,
+    "MSU_id": 398,
+    "sentence": "The study was published in Aerospace Science and Technology in 2016.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 151,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.6690628251179493,
+      -2.1656558252876956
+    ]
+  },
+  {
+    "idx": 401,
+    "MSU_id": 401,
+    "sentence": "The study was published in Combustion and Flame, volume 179, pages 74–85, in 2017.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 153,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.497759001232716,
+      -1.3342295918751252
+    ]
+  },
+  {
+    "idx": 402,
+    "MSU_id": 402,
+    "sentence": "Y. Ju and T. Nioka authored the paper 'Ignition simulation of methane/hydrogen mixtures in a supersonic mixing layer.'",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 154,
+    "paper_id": 0,
+    "2d_coord": [
+      -0.10200985621219172,
+      1.646826044426451
+    ]
+  },
+  {
+    "idx": 403,
+    "MSU_id": 403,
+    "sentence": "The paper was published in Combustion and Flame, volume 102, pages 462–470, in 1995.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 154,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.371635633653131,
+      -1.1689723343320664
+    ]
+  },
+  {
+    "idx": 405,
+    "MSU_id": 405,
+    "sentence": "The study was published in the Journal of Propulsion and Power in 2001.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 155,
+    "paper_id": 0,
+    "2d_coord": [
+      -3.4705757119946896,
+      -1.7892717069707416
+    ]
+  },
+  {
+    "type": "figure",
+    "para_id": 156,
+    "paper_id": 1
+  },
+  {
+    "idx": 406,
+    "MSU_id": 406,
+    "sentence": "Institutefor Energy Research, Jiangsu University, Zhenjiang, 212013, China.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 158,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.392891478849152,
+      -1.5249498968809714
+    ]
+  },
+  {
+    "idx": 407,
+    "MSU_id": 407,
+    "sentence": "Science and Technology on Scramjet Laboratory is located at the China Aerodynamics Research and Development Center in Mianyang, China.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 159,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.4026246820440989,
+      0.9844655808891398
+    ]
+  },
+  {
+    "idx": 408,
+    "MSU_id": 408,
+    "sentence": "Article history:",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 160,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.7502628877173474,
+      -2.5302836004143843
+    ]
+  },
+  {
+    "idx": 409,
+    "MSU_id": 409,
+    "sentence": "Available online 18 May 2023.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 164,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.1366829773978364,
+      -2.8372616242077724
+    ]
+  },
+  {
+    "idx": 495,
+    "MSU_id": 495,
+    "sentence": "(k = 1, ~Ns - 1) is presented as an equation or notation.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 180,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.8743458640065405,
+      -0.13003173817921743
+    ]
+  },
+  {
+    "idx": 530,
+    "MSU_id": 530,
+    "sentence": "The equation \\( \\tau _ { c } = \\sum _ { r = 1 } ^ { N r } \\frac { N r \\cdot c _ { t o t } } { \\sum _ { s = 1 } ^ { N s , R H S } \\nu _ { s , r } \\tilde { K } _ { f , r } } \\) is presented.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 194,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.897196683636958,
+      -0.02480999036823327
+    ]
+  },
+  {
+    "idx": 536,
+    "MSU_id": 536,
+    "sentence": "The equation \\( \\tau _ { m } = C _ { m i x } \\sqrt { \\frac { \\mu + \\mu _ { t } } { \\bar { \\rho } \\tilde { \\varepsilon } } } \\) is presented.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 196,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.8973838588265823,
+      -0.028567404225109016
+    ]
+  },
+  {
+    "type": "figure",
+    "para_id": 202,
+    "paper_id": 1
+  },
+  {
+    "type": "figure",
+    "para_id": 214,
+    "paper_id": 1
+  },
+  {
+    "type": "figure",
+    "para_id": 216,
+    "paper_id": 1
+  },
+  {
+    "type": "figure",
+    "para_id": 219,
+    "paper_id": 1
+  },
+  {
+    "type": "figure",
+    "para_id": 220,
+    "paper_id": 1
+  },
+  {
+    "idx": 610,
+    "MSU_id": 610,
+    "sentence": "Case 1 is shown on the left and case 2 on the right in Fig. 3.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 221,
+    "paper_id": 1,
+    "2d_coord": [
+      0.07739529149930724,
+      -0.8565327249070326
+    ]
+  },
+  {
+    "type": "figure",
+    "para_id": 225,
+    "paper_id": 1
+  },
+  {
+    "type": "figure",
+    "para_id": 228,
+    "paper_id": 1
+  },
+  {
+    "idx": 646,
+    "MSU_id": 646,
+    "sentence": "Fig. 6 shows pictures of the flow field and flame structures that have been overlapped to highlight the combustion stabilization mode.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 230,
+    "paper_id": 1,
+    "2d_coord": [
+      0.3232967422993368,
+      0.21615156087955492
+    ]
+  },
+  {
+    "type": "figure",
+    "para_id": 236,
+    "paper_id": 1
+  },
+  {
+    "type": "figure",
+    "para_id": 237,
+    "paper_id": 1
+  },
+  {
+    "type": "figure",
+    "para_id": 239,
+    "paper_id": 1
+  },
+  {
+    "type": "figure",
+    "para_id": 241,
+    "paper_id": 1
+  },
+  {
+    "idx": 685,
+    "MSU_id": 685,
+    "sentence": "Fig. 7 illustrates the schematics of the flame stabilization mechanism in the cavity-floor direct-injection scramjet.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 243,
+    "paper_id": 1,
+    "2d_coord": [
+      0.7819607308850947,
+      1.398235655839621
+    ]
+  },
+  {
+    "idx": 708,
+    "MSU_id": 708,
+    "sentence": "The equation \\dot{q}_{m,sup} = \\int \\frac{1 + sign(Ma - 1)}{2} \\rho u_{x} dA is presented.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 247,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.8721177523560693,
+      -0.06014499648447851
+    ]
+  },
+  {
+    "type": "figure",
+    "para_id": 252,
+    "paper_id": 1
+  },
+  {
+    "type": "figure",
+    "para_id": 253,
+    "paper_id": 1
+  },
+  {
+    "type": "figure",
+    "para_id": 254,
+    "paper_id": 1
+  },
+  {
+    "type": "figure",
+    "para_id": 255,
+    "paper_id": 1
+  },
+  {
+    "type": "figure",
+    "para_id": 256,
+    "paper_id": 1
+  },
+  {
+    "type": "figure",
+    "para_id": 257,
+    "paper_id": 1
+  },
+  {
+    "type": "figure",
+    "para_id": 259,
+    "paper_id": 1
+  },
+  {
+    "idx": 745,
+    "MSU_id": 745,
+    "sentence": "Fig. 11 depicts the developmental process of the low-energy stream.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 262,
+    "paper_id": 1,
+    "2d_coord": [
+      3.5481119161576213,
+      1.3578921440800968
+    ]
+  },
+  {
+    "type": "figure",
+    "para_id": 263,
+    "paper_id": 1
+  },
+  {
+    "type": "figure",
+    "para_id": 264,
+    "paper_id": 1
+  },
+  {
+    "type": "figure",
+    "para_id": 266,
+    "paper_id": 1
+  },
+  {
+    "type": "figure",
+    "para_id": 267,
+    "paper_id": 1
+  },
+  {
+    "idx": 762,
+    "MSU_id": 762,
+    "sentence": "Fig. 12 presents the temporal evolutions of pressure signals and flame flashback distance.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 270,
+    "paper_id": 1,
+    "2d_coord": [
+      1.082970691719856,
+      0.619945098879648
+    ]
+  },
+  {
+    "type": "figure",
+    "para_id": 271,
+    "paper_id": 1
+  },
+  {
+    "type": "figure",
+    "para_id": 273,
+    "paper_id": 1
+  },
+  {
+    "type": "figure",
+    "para_id": 275,
+    "paper_id": 1
+  },
+  {
+    "type": "figure",
+    "para_id": 280,
+    "paper_id": 1
+  },
+  {
+    "type": "figure",
+    "para_id": 283,
+    "paper_id": 1
+  },
+  {
+    "type": "figure",
+    "para_id": 285,
+    "paper_id": 1
+  },
+  {
+    "idx": 819,
+    "MSU_id": 819,
+    "sentence": "The equation \\mathbf{a}_i(t) = \\Phi_i^T(x, y) \\boldsymbol{\\psi}(x, y, t) is presented.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 293,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.770269916529868,
+      -0.25254713905867776
+    ]
+  },
+  {
+    "idx": 823,
+    "MSU_id": 823,
+    "sentence": "The spatial structures of the first three POMs are depicted in Fig. 15(b).",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 295,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.23925247496551016,
+      -0.8960811662800855
+    ]
+  },
+  {
+    "idx": 863,
+    "MSU_id": 863,
+    "sentence": "No data was used for the research described in the article.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 301,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.6298125638947494,
+      -2.8043853987425216
+    ]
+  },
+  {
+    "idx": 864,
+    "MSU_id": 864,
+    "sentence": "The computation work was performed at the HPC Center of Jiangsu University.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 302,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.3986234010153025,
+      -1.5367069241204379
+    ]
+  },
+  {
+    "idx": 865,
+    "MSU_id": 865,
+    "sentence": "The blastFoam code is open-source by Synthetik Applied Technologies LLC.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 302,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.4326245919662717,
+      -0.965997287888013
+    ]
+  },
+  {
+    "idx": 867,
+    "MSU_id": 867,
+    "sentence": "The survey is published in Progress in Aeronautical Sciences, volume 101, pages 13–30, in 2018.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 303,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.7619198915201975,
+      -2.363559741384107
+    ]
+  },
+  {
+    "idx": 870,
+    "MSU_id": 870,
+    "sentence": "The study was published in Progress in Aeronautical Sciences in 2015.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 305,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.7656782966384625,
+      -2.0845508477067587
+    ]
+  },
+  {
+    "idx": 872,
+    "MSU_id": 872,
+    "sentence": "The survey was conducted by W. Huang, L. Yan, and J.G. Tan.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 306,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.0254146086995704,
+      -1.9043954089926534
+    ]
+  },
+  {
+    "idx": 873,
+    "MSU_id": 873,
+    "sentence": "The survey was published in Aerosp. Sci. Technol. 39 (2014) 685–691.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 306,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.549830775539276,
+      -2.2007010339598834
+    ]
+  },
+  {
+    "idx": 875,
+    "MSU_id": 875,
+    "sentence": "The research was published in the International Journal of Hydrogen Energy in 2016.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 307,
+    "paper_id": 1,
+    "2d_coord": [
+      -4.106248097247328,
+      -1.9471535460272391
+    ]
+  },
+  {
+    "idx": 878,
+    "MSU_id": 878,
+    "sentence": "The paper was published in Aerospace Science and Technology in 2018.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 308,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.6694578919744965,
+      -2.2421196658488203
+    ]
+  },
+  {
+    "idx": 881,
+    "MSU_id": 881,
+    "sentence": "The study is published in the International Journal of Hydrogen Energy.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 309,
+    "paper_id": 1,
+    "2d_coord": [
+      -4.100602312013102,
+      -1.898410799341825
+    ]
+  },
+  {
+    "idx": 883,
+    "MSU_id": 883,
+    "sentence": "The research was published in Energy 208 (2020) with the identifier 118419.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 310,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.9951558186060967,
+      -2.296784500088079
+    ]
+  },
+  {
+    "idx": 885,
+    "MSU_id": 885,
+    "sentence": "The research was published in the International Journal of Hydrogen Energy in 2013.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 311,
+    "paper_id": 1,
+    "2d_coord": [
+      -4.044809567626201,
+      -1.847991721684127
+    ]
+  },
+  {
+    "idx": 888,
+    "MSU_id": 888,
+    "sentence": "The research was published in the Proceedings of the Combustion Institute, volume 36, in 2017.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 312,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.250617605663167,
+      -1.5044628969268696
+    ]
+  },
+  {
+    "idx": 895,
+    "MSU_id": 895,
+    "sentence": "The research was published in Aerospace Science and Technology in 2022.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 315,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.6295663159783933,
+      -2.3038422461256367
+    ]
+  },
+  {
+    "idx": 899,
+    "MSU_id": 899,
+    "sentence": "The research is published in Aerospace Science and Technology, volume 115, in 2021.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 317,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.6244547977902792,
+      -2.3408566956380312
+    ]
+  },
+  {
+    "idx": 900,
+    "MSU_id": 900,
+    "sentence": "The publication identifier for the study is 106756.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 317,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.8750763924165312,
+      -2.28309147679958
+    ]
+  },
+  {
+    "idx": 902,
+    "MSU_id": 902,
+    "sentence": "The research was published in Acta Astronautica in 2015.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 318,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.8354314025955882,
+      -2.1227139526376875
+    ]
+  },
+  {
+    "idx": 905,
+    "MSU_id": 905,
+    "sentence": "The research is published in Aerospace Science and Technology, volume 87, 2019, pages 190–206.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 319,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.65358325521252,
+      -2.289119318359919
+    ]
+  },
+  {
+    "idx": 907,
+    "MSU_id": 907,
+    "sentence": "The study was published in the Journal of Propulsion and Power in 2013.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 320,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.652792758052455,
+      -1.843712446691711
+    ]
+  },
+  {
+    "idx": 910,
+    "MSU_id": 910,
+    "sentence": "The research was published in the International Journal of Hydrogen Energy in 2013.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 321,
+    "paper_id": 1,
+    "2d_coord": [
+      -4.044809567626201,
+      -1.847991721684127
+    ]
+  },
+  {
+    "idx": 914,
+    "MSU_id": 914,
+    "sentence": "The review was published in Progress in Aeronautical Sciences, volume 119, in 2020.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 323,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.721341764197491,
+      -2.387905599691612
+    ]
+  },
+  {
+    "idx": 915,
+    "MSU_id": 915,
+    "sentence": "The publication is identified with the DOI 100636.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 323,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.772563993805421,
+      -2.256935897925571
+    ]
+  },
+  {
+    "idx": 919,
+    "MSU_id": 919,
+    "sentence": "The study was published in the Annual Review of Fluid Mechanics, volume 46, in 2014.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 325,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.665600629280352,
+      -1.5544707242048492
+    ]
+  },
+  {
+    "idx": 921,
+    "MSU_id": 921,
+    "sentence": "The paper is titled 'Incipient thermal choking and stable shock-train formation in the heat-release region of a scramjet combustor. Part I: shock-tunnel experiments.'",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 326,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.5083336819405149,
+      1.8624075704079317
+    ]
+  },
+  {
+    "idx": 922,
+    "MSU_id": 922,
+    "sentence": "The research was published in Combustion and Flame, volume 162, in 2015.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 326,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.562095656993776,
+      -1.2195135831770858
+    ]
+  },
+  {
+    "idx": 925,
+    "MSU_id": 925,
+    "sentence": "The study is published in Acta Astronautica, volume 161, pages 222–233, in 2019.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 327,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.8687238719547756,
+      -2.2203017797690037
+    ]
+  },
+  {
+    "idx": 928,
+    "MSU_id": 928,
+    "sentence": "The study was published in Physics of Fluids in 2021.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 328,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.8640593935399394,
+      -1.592897735317573
+    ]
+  },
+  {
+    "idx": 930,
+    "MSU_id": 930,
+    "sentence": "The study is published in the International Journal of Hydrogen Energy.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 329,
+    "paper_id": 1,
+    "2d_coord": [
+      -4.100602312013102,
+      -1.898410799341825
+    ]
+  },
+  {
+    "idx": 933,
+    "MSU_id": 933,
+    "sentence": "The findings were published in the Proceedings of the Combustion Institute in 2020.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 330,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.358428879375501,
+      -1.508032676087876
+    ]
+  },
+  {
+    "idx": 935,
+    "MSU_id": 935,
+    "sentence": "The research was presented in the Proceedings of the Combustion Institute, volume 36, in 2017.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 331,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.2510386589780795,
+      -1.506960497370028
+    ]
+  },
+  {
+    "idx": 936,
+    "MSU_id": 936,
+    "sentence": "M.B. Sun, Z. Cai, Y. Wang, G. Zhao, Y. Sun, P. Li, M. Wan, and L. Li authored a paper on unsteady supersonic combustion.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 332,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.2830223935800265,
+      1.579099427501494
+    ]
+  },
+  {
+    "idx": 938,
+    "MSU_id": 938,
+    "sentence": "The paper was published in Acta Aerodyn. Sin. in 2019.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 332,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.7525974767359878,
+      -2.2354198143532926
+    ]
+  },
+  {
+    "idx": 945,
+    "MSU_id": 945,
+    "sentence": "The work was presented at the 4th OpenFOAM User Conference in Cologne, 2016.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 335,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.0296304118297632,
+      -2.383009175509938
+    ]
+  },
+  {
+    "idx": 950,
+    "MSU_id": 950,
+    "sentence": "The work was published in the Journal of the Physical Society of Japan, volume 54, pages 2834–2839.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 337,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.1379037957705522,
+      -1.9082507102902109
+    ]
+  },
+  {
+    "idx": 952,
+    "MSU_id": 952,
+    "sentence": "The model was presented at the 33rd Aerospace Sciences Meeting and Exhibition in Reno, 1995.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 338,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.4004008258287115,
+      -1.9942092905728313
+    ]
+  },
+  {
+    "idx": 953,
+    "MSU_id": 953,
+    "sentence": "A. Karlsson authored 'Modeling Auto-Ignition, Flame Propagation and Combustion in Non-Stationary Turbulent Sprays' in 1995.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 339,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.389184852330049,
+      -1.1118413659129007
+    ]
+  },
+  {
+    "idx": 955,
+    "MSU_id": 955,
+    "sentence": "The work was published in Transp. Phenom. Combust. in 1996.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 340,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.3064706822471113,
+      -1.1899461036976906
+    ]
+  },
+  {
+    "idx": 962,
+    "MSU_id": 962,
+    "sentence": "The research was published in the International Journal of Hydrogen Energy in 2017.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 342,
+    "paper_id": 1,
+    "2d_coord": [
+      -4.179198809647786,
+      -1.8987593908147202
+    ]
+  },
+  {
+    "idx": 964,
+    "MSU_id": 964,
+    "sentence": "The work was presented at the User’s Group Meeting at the SAE Congress in 2001.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 343,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.4212376040740726,
+      -1.8503878092258383
+    ]
+  },
+  {
+    "idx": 966,
+    "MSU_id": 966,
+    "sentence": "The work was published in SIAM Journal on Numerical Analysis in 2002.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 344,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.789704892405465,
+      -2.495876199217329
+    ]
+  },
+  {
+    "idx": 969,
+    "MSU_id": 969,
+    "sentence": "The study is published in the International Journal of Numerical Methods in Fluids, volume 89, 2019, pages 430–463.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 345,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.855780798453986,
+      -1.7301348326741885
+    ]
+  },
+  {
+    "idx": 970,
+    "MSU_id": 970,
+    "sentence": "The reference is to the book 'Solving Ordinary Differential Equations II' by G. Wanner and E. Hairer.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 346,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.8728177638146515,
+      0.03354983823829848
+    ]
+  },
+  {
+    "idx": 971,
+    "MSU_id": 971,
+    "sentence": "The book was published by Springer Berlin Heidelberg, New York, in 1996.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 346,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.2496226695823958,
+      -1.1942290725557931
+    ]
+  },
+  {
+    "idx": 978,
+    "MSU_id": 978,
+    "sentence": "The study was published in the Journal of Computational Physics in 1998.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 349,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.6539361622205297,
+      -1.7376894720514455
+    ]
+  },
+  {
+    "idx": 980,
+    "MSU_id": 980,
+    "sentence": "The results were presented at the 17th AIAA International Space Planes and Hypersonic Systems and Technologies Conference in 2011.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 350,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.4585452538359327,
+      -1.9786332166434673
+    ]
+  },
+  {
+    "idx": 986,
+    "MSU_id": 986,
+    "sentence": "The research was published in Combustion and Flame, volume 80, in 1990.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 353,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.351644778230781,
+      -1.3605453750720384
+    ]
+  },
+  {
+    "idx": 988,
+    "MSU_id": 988,
+    "sentence": "The research is published in Acta Astronautica, volume 136, pages 90–100, in 2017.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 354,
+    "paper_id": 1,
+    "2d_coord": [
+      -4.000566077609586,
+      -2.210630418543776
+    ]
+  },
+  {
+    "idx": 992,
+    "MSU_id": 992,
+    "sentence": "No scientific content is present in the provided text.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 356,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.628902856128477,
+      -2.790495095664417
+    ]
+  },
+  {
+    "idx": 993,
+    "MSU_id": 993,
+    "sentence": "Computer Network Information Center, Chinese Academy of Sciences, Beijing, China.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 357,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.1871396059631567,
+      -1.4381543139958508
+    ]
+  },
+  {
+    "idx": 994,
+    "MSU_id": 994,
+    "sentence": "University of Chinese Academy of Sciences (UCAS) is located in Beijing, China.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 358,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.079721581872519,
+      -1.4227864646433102
+    ]
+  },
+  {
+    "idx": 995,
+    "MSU_id": 995,
+    "sentence": "Institute of Mechanics, Chinese Academy of Sciences, is located in Beijing, China.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 358,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.162908233016645,
+      -1.4353109950864422
+    ]
+  },
+  {
+    "idx": 996,
+    "MSU_id": 996,
+    "sentence": "Hangzhou Institute for Advanced Study, UCAS, is located in Hangzhou, China.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 358,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.063121504958134,
+      -1.4237151298387616
+    ]
+  },
+  {
+    "idx": 997,
+    "MSU_id": 997,
+    "sentence": "These authors contributed equally to this work.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 359,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.6914211992919872,
+      -1.9863974486959497
+    ]
+  },
+  {
+    "idx": 1016,
+    "MSU_id": 1016,
+    "sentence": "Keywords include Visual Analytics.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 362,
+    "paper_id": 2,
+    "2d_coord": [
+      1.887926862597663,
+      -1.7259247834609266
+    ]
+  },
+  {
+    "idx": 1017,
+    "MSU_id": 1017,
+    "sentence": "Keywords include Temporal Flow Field.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 362,
+    "paper_id": 2,
+    "2d_coord": [
+      1.956037188249735,
+      -1.6876270576472159
+    ]
+  },
+  {
+    "idx": 1018,
+    "MSU_id": 1018,
+    "sentence": "Keywords include Scientific Data Simulation.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 362,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.552863674831557,
+      -1.1471993218798437
+    ]
+  },
+  {
+    "idx": 1019,
+    "MSU_id": 1019,
+    "sentence": "Keywords include Vision Transformer.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 362,
+    "paper_id": 2,
+    "2d_coord": [
+      1.970951234669619,
+      -2.6156972671033865
+    ]
+  },
+  {
+    "idx": 1053,
+    "MSU_id": 1053,
+    "sentence": "We summarize our contributions as follows.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 369,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.6637878718431793,
+      -2.0158335907287284
+    ]
+  },
+  {
+    "type": "figure",
+    "para_id": 401,
+    "paper_id": 2
+  },
+  {
+    "type": "figure",
+    "para_id": 413,
+    "paper_id": 2
+  },
+  {
+    "type": "figure",
+    "para_id": 425,
+    "paper_id": 2
+  },
+  {
+    "type": "figure",
+    "para_id": 438,
+    "paper_id": 2
+  },
+  {
+    "idx": 1391,
+    "MSU_id": 1391,
+    "sentence": "Report View (Figure 4(d)) displays the description of the currently selected frame in the scatter plot.",
+    "category": "Other",
+    "rank": 2,
+    "type": "text",
+    "para_id": 449,
+    "paper_id": 2,
+    "2d_coord": [
+      0.46714042121703553,
+      -2.3114765088299047
+    ]
+  },
+  {
+    "idx": 1419,
+    "MSU_id": 1419,
+    "sentence": "Case Study 1 was performed by E3, a postdoctoral researcher specializing in reactive flow diagnostics.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 455,
+    "paper_id": 2,
+    "2d_coord": [
+      0.12539427905842637,
+      0.39250489594741317
+    ]
+  },
+  {
+    "idx": 1421,
+    "MSU_id": 1421,
+    "sentence": "Case Study 2 was conducted by E4, a senior simulation engineer engaged in engine configuration evaluation.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 455,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.08047957571692343,
+      0.44050356811429997
+    ]
+  },
+  {
+    "idx": 1447,
+    "MSU_id": 1447,
+    "sentence": "A zoomed-in view was shown in Figure 6(a1).",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 460,
+    "paper_id": 2,
+    "2d_coord": [
+      0.03347063533725184,
+      -0.2346906503075135
+    ]
+  },
+  {
+    "idx": 1448,
+    "MSU_id": 1448,
+    "sentence": "Frame snapshots were shown in Figure 6(af).",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 460,
+    "paper_id": 2,
+    "2d_coord": [
+      0.05271660619428994,
+      -0.11947159182696439
+    ]
+  },
+  {
+    "type": "figure",
+    "para_id": 464,
+    "paper_id": 2
+  },
+  {
+    "type": "figure",
+    "para_id": 465,
+    "paper_id": 2
+  },
+  {
+    "idx": 1468,
+    "MSU_id": 1468,
+    "sentence": "c2f1.3h20.10 (Diff 174.08) (b1)",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 466,
+    "paper_id": 2,
+    "2d_coord": [
+      -3.658104172074149,
+      0.04276765774194809
+    ]
+  },
+  {
+    "type": "figure",
+    "para_id": 467,
+    "paper_id": 2
+  },
+  {
+    "idx": 1469,
+    "MSU_id": 1469,
+    "sentence": "c2f1.3h2o.11 (Diff: 203.78) (c1)",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 468,
+    "paper_id": 2,
+    "2d_coord": [
+      -3.657072709572878,
+      0.04291973898058886
+    ]
+  },
+  {
+    "type": "figure",
+    "para_id": 469,
+    "paper_id": 2
+  },
+  {
+    "type": "figure",
+    "para_id": 470,
+    "paper_id": 2
+  },
+  {
+    "type": "figure",
+    "para_id": 472,
+    "paper_id": 2
+  },
+  {
+    "type": "figure",
+    "para_id": 476,
+    "paper_id": 2
+  },
+  {
+    "type": "figure",
+    "para_id": 479,
+    "paper_id": 2
+  },
+  {
+    "type": "figure",
+    "para_id": 480,
+    "paper_id": 2
+  },
+  {
+    "idx": 1575,
+    "MSU_id": 1575,
+    "sentence": "The code is available at: https://github.com/JYF98/temporalflowviz.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 495,
+    "paper_id": 2,
+    "2d_coord": [
+      2.6915709899132483,
+      -1.3741097971107252
+    ]
+  },
+  {
+    "idx": 1576,
+    "MSU_id": 1576,
+    "sentence": "The demonstration video is available at: https://github.com/JYF98/temporalflowviz.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 495,
+    "paper_id": 2,
+    "2d_coord": [
+      2.6925639270356836,
+      -1.3677075070176883
+    ]
+  },
+  {
+    "idx": 1577,
+    "MSU_id": 1577,
+    "sentence": "This work was supported by the Strategic Priority Research Program of Chinese Academy of Sciences (Grant No. XDB0500103).",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 496,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.391026450721855,
+      -1.2879502431728136
+    ]
+  },
+  {
+    "idx": 1578,
+    "MSU_id": 1578,
+    "sentence": "This work was supported by the National Natural Science Foundation of China (No. 62202446).",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 496,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.4553645602707954,
+      -1.2714102071092201
+    ]
+  },
+  {
+    "idx": 1579,
+    "MSU_id": 1579,
+    "sentence": "This work was supported by the Beijing Natural Science Foundation (No. 4254090).",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 496,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.441045658264523,
+      -1.2876603431213753
+    ]
+  },
+  {
+    "idx": 1580,
+    "MSU_id": 1580,
+    "sentence": "Bae, J., Helldin, T., Riveiro, M., Nowaczyk, S., Bouguelia, M.-R., Falkman, G. authored the paper 'Interactive clustering: A comprehensive review.'",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 497,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.5806423028007639,
+      -2.5652612250255005
+    ]
+  },
+  {
+    "idx": 1581,
+    "MSU_id": 1581,
+    "sentence": "The paper was published in ACM Computing Surveys, volume 53, issue 1, in 2020.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 497,
+    "paper_id": 2,
+    "2d_coord": [
+      -3.2130451847835566,
+      -2.4322878063395157
+    ]
+  },
+  {
+    "idx": 1585,
+    "MSU_id": 1585,
+    "sentence": "The work was published in IEEE Transactions on Visualization and Computer Graphics.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 498,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.0441982750105847,
+      -2.6860703335776672
+    ]
+  },
+  {
+    "idx": 1586,
+    "MSU_id": 1586,
+    "sentence": "The publication appeared in volume 17, issue 12, pages 2301–2309, in 2011.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 498,
+    "paper_id": 2,
+    "2d_coord": [
+      -3.226375147584066,
+      -1.7602674736035555
+    ]
+  },
+  {
+    "idx": 1587,
+    "MSU_id": 1587,
+    "sentence": "The DOI for the publication is https://doi.org/10.1109/TVCG.2011.185.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 498,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.485987329910785,
+      -2.3752080048005944
+    ]
+  },
+  {
+    "idx": 1589,
+    "MSU_id": 1589,
+    "sentence": "The work is published in the Annual Review of Fluid Mechanics.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 499,
+    "paper_id": 2,
+    "2d_coord": [
+      -3.6732351963352095,
+      -1.5447128991605992
+    ]
+  },
+  {
+    "idx": 1592,
+    "MSU_id": 1592,
+    "sentence": "The work was presented at the 21st International Joint Conference on Artificial Intelligence (IJCAI’09).",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 500,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.1191826549324864,
+      -3.005958554753783
+    ]
+  },
+  {
+    "idx": 1593,
+    "MSU_id": 1593,
+    "sentence": "The publication was by Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, in 2009.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 500,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.9577574888251856,
+      -2.042234743265942
+    ]
+  },
+  {
+    "idx": 1596,
+    "MSU_id": 1596,
+    "sentence": "The method was presented at the 2024 CHI Conference on Human Factors in Computing Systems.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 501,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.9636219908677803,
+      -3.0278046236606855
+    ]
+  },
+  {
+    "idx": 1600,
+    "MSU_id": 1600,
+    "sentence": "The work was published in Pattern Recognition 10(2), 105–112 (1978).",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 503,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.6639171681028082,
+      -2.6560750497278867
+    ]
+  },
+  {
+    "idx": 1601,
+    "MSU_id": 1601,
+    "sentence": "The publication is accessible via https://doi.org/10.1016/0031-3203(78)90018-3.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 503,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.589551180606524,
+      -2.200461343119808
+    ]
+  },
+  {
+    "idx": 1604,
+    "MSU_id": 1604,
+    "sentence": "The work was presented at the IEEE/CVF Conference on Computer Vision and Pattern Recognition.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 504,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.8785024378746833,
+      -2.891856685428516
+    ]
+  },
+  {
+    "idx": 1606,
+    "MSU_id": 1606,
+    "sentence": "The dataset is described in the publication 'Visual Informatics 8(1), 1–5 (2024)'.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 505,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.6788559415107462,
+      -3.200937202846491
+    ]
+  },
+  {
+    "idx": 1609,
+    "MSU_id": 1609,
+    "sentence": "The paper is titled 'An image is worth 16x16 words: Transformers for image recognition at scale.'",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 506,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.6180862325823444,
+      -3.012744049209292
+    ]
+  },
+  {
+    "idx": 1610,
+    "MSU_id": 1610,
+    "sentence": "The work was presented at the International Conference on Learning Representations in 2021.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 506,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.170324550165931,
+      -2.93514769679078
+    ]
+  },
+  {
+    "idx": 1612,
+    "MSU_id": 1612,
+    "sentence": "The work was presented at the 2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR’05).",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 507,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.8701017246067606,
+      -2.857298793407212
+    ]
+  },
+  {
+    "idx": 1613,
+    "MSU_id": 1613,
+    "sentence": "The publication appeared in volume 1, pages 886–893, in 2005.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 507,
+    "paper_id": 2,
+    "2d_coord": [
+      -3.012583464271501,
+      -1.8320634992260227
+    ]
+  },
+  {
+    "idx": 1616,
+    "MSU_id": 1616,
+    "sentence": "The study was published in IEEE Transactions on Visualization and Computer Graphics 28(1), 11–21 (2021).",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 508,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.1502226616942024,
+      -2.6996544562333464
+    ]
+  },
+  {
+    "idx": 1618,
+    "MSU_id": 1618,
+    "sentence": "The algorithm was presented at the Second International Conference on Knowledge Discovery and Data Mining (KDD) in 1996.",
+    "category": "Other",
+    "rank": 2,
+    "type": "text",
+    "para_id": 509,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.6635163769564814,
+      -2.8639362596155973
+    ]
+  },
+  {
+    "idx": 1622,
+    "MSU_id": 1622,
+    "sentence": "The study was published in Applied Sciences 13(16), 9092 (2023).",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 511,
+    "paper_id": 2,
+    "2d_coord": [
+      -3.4188135945066933,
+      -2.3322248155788374
+    ]
+  },
+  {
+    "idx": 1624,
+    "MSU_id": 1624,
+    "sentence": "The method was published in Pattern Recognition 50, pages 131–142, in 2016.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 512,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.6136013878325024,
+      -2.543354959788898
+    ]
+  },
+  {
+    "idx": 1625,
+    "MSU_id": 1625,
+    "sentence": "The method is accessible via https://doi.org/10.1016/j.patcog.2015.08.015.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 512,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.5359843671882745,
+      -2.2015757960782856
+    ]
+  },
+  {
+    "idx": 1627,
+    "MSU_id": 1627,
+    "sentence": "The work was presented at the IEEE conference on computer vision and pattern recognition.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 513,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.8845117609407969,
+      -2.899035644984514
+    ]
+  },
+  {
+    "idx": 1628,
+    "MSU_id": 1628,
+    "sentence": "The paper spans pages 770 to 778 in the conference proceedings.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 513,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.8854889663876895,
+      -1.8235143891201655
+    ]
+  },
+  {
+    "idx": 1629,
+    "MSU_id": 1629,
+    "sentence": "Krizhevsky, A., Sutskever, I., and Hinton, G.E. authored the paper 'Imagenet classification with deep convolutional neural networks.'",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 514,
+    "paper_id": 2,
+    "2d_coord": [
+      1.311924110562458,
+      -2.5483654833773204
+    ]
+  },
+  {
+    "idx": 1634,
+    "MSU_id": 1634,
+    "sentence": "The publication is accessible via https://doi.org/10.2514/6.2009-127.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 515,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.5985261400872752,
+      -2.1836643781762706
+    ]
+  },
+  {
+    "idx": 1635,
+    "MSU_id": 1635,
+    "sentence": "The publication is also available at https://arc.aiaa.org/doi/abs/10.2514/6.2009-127.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 515,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.64387559923404,
+      -2.1442423490955864
+    ]
+  },
+  {
+    "idx": 1638,
+    "MSU_id": 1638,
+    "sentence": "The work was presented at the AAAI Conference on Artificial Intelligence in 2019.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 516,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.1242660059804144,
+      -3.0272070382785805
+    ]
+  },
+  {
+    "idx": 1639,
+    "MSU_id": 1639,
+    "sentence": "The paper is published in volume 33(01), pages 6666–6673.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 516,
+    "paper_id": 2,
+    "2d_coord": [
+      -3.1694035629495017,
+      -1.8054134895894385
+    ]
+  },
+  {
+    "idx": 1640,
+    "MSU_id": 1640,
+    "sentence": "The DOI for the paper is https://doi.org/10.1609/aaai.v33i01.33016666.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 516,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.60789889227685,
+      -2.3416791963974672
+    ]
+  },
+  {
+    "idx": 1643,
+    "MSU_id": 1643,
+    "sentence": "The paper was published in IEEE Transactions on Visualization and Computer Graphics.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 517,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.043829376335888,
+      -2.6839590841233054
+    ]
+  },
+  {
+    "idx": 1644,
+    "MSU_id": 1644,
+    "sentence": "The publication date is 2025.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 517,
+    "paper_id": 2,
+    "2d_coord": [
+      -3.4958505411924867,
+      -2.5902563828347156
+    ]
+  },
+  {
+    "idx": 1645,
+    "MSU_id": 1645,
+    "sentence": "The DOI for the paper is https://doi.org/10.1109/TVCG.2024.3456338.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 517,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.5097901988794966,
+      -2.3680717299147473
+    ]
+  },
+  {
+    "idx": 1648,
+    "MSU_id": 1648,
+    "sentence": "The paper was published in 2023.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 518,
+    "paper_id": 2,
+    "2d_coord": [
+      -3.367391845106237,
+      -2.5019048616367097
+    ]
+  },
+  {
+    "idx": 1650,
+    "MSU_id": 1650,
+    "sentence": "The work was published in the International Journal of Computer Vision, volume 60, issue 2, pages 91–110, in 2004.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 519,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.851542577661553,
+      -2.7583729660384897
+    ]
+  },
+  {
+    "idx": 1653,
+    "MSU_id": 1653,
+    "sentence": "The paper was authored by McInnes, Healy, and Melville in 2020.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 520,
+    "paper_id": 2,
+    "2d_coord": [
+      -3.235084245606156,
+      -2.5414617852198567
+    ]
+  },
+  {
+    "idx": 1654,
+    "MSU_id": 1654,
+    "sentence": "The paper is available at https://arxiv.org/abs/1802.03426.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 520,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.5486859301774034,
+      -1.9051906845938849
+    ]
+  },
+  {
+    "idx": 1661,
+    "MSU_id": 1661,
+    "sentence": "The study was published in Physics of Fluids 33(5) (2021).",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 523,
+    "paper_id": 2,
+    "2d_coord": [
+      -3.886436096597803,
+      -1.5782583983642338
+    ]
+  },
+  {
+    "idx": 1662,
+    "MSU_id": 1662,
+    "sentence": "Gemma 3 technical report was authored by Team G., Kamath A., Ferret J., Pathak S., Vieillard N., Merhej R., Perrin S., Matejovicova T., Ramé A., and Rivière M.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 524,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.051528273504461,
+      -2.086464817371515
+    ]
+  },
+  {
+    "idx": 1663,
+    "MSU_id": 1663,
+    "sentence": "The report is available as an arXiv preprint with identifier arXiv:2503.19786 (2025).",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 524,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.5067619587242516,
+      -1.951038535060125
+    ]
+  },
+  {
+    "idx": 1668,
+    "MSU_id": 1668,
+    "sentence": "The study was published in the Journal of Machine Learning Research in 2010.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 526,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.6569792380279753,
+      -2.599686137882105
+    ]
+  },
+  {
+    "idx": 1671,
+    "MSU_id": 1671,
+    "sentence": "The study was published in Computers and Electrical Engineering, volume 107, article 108624, in 2023.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 527,
+    "paper_id": 2,
+    "2d_coord": [
+      -3.3146898537534466,
+      -2.4185479940856593
+    ]
+  },
+  {
+    "idx": 1676,
+    "MSU_id": 1676,
+    "sentence": "The paper is authored by Wang, S., Seidman, J.H., Sankaran, S., Wang, H., Pappas, G.J., and Perdikaris, P.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 529,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.0858658346262997,
+      -1.9646039147676937
+    ]
+  },
+  {
+    "idx": 1677,
+    "MSU_id": 1677,
+    "sentence": "The publication year is 2025.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 529,
+    "paper_id": 2,
+    "2d_coord": [
+      -3.4976114417628374,
+      -2.587114955283456
+    ]
+  },
+  {
+    "idx": 1678,
+    "MSU_id": 1678,
+    "sentence": "The paper is available at https://arxiv.org/abs/2405.13998.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 529,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.5482387086806404,
+      -1.905634085286056
+    ]
+  },
+  {
+    "idx": 1680,
+    "MSU_id": 1680,
+    "sentence": "The work was presented in the IEEE Pacific Visualization Symposium.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 530,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.0444243390260146,
+      -2.743886445676682
+    ]
+  },
+  {
+    "idx": 1682,
+    "MSU_id": 1682,
+    "sentence": "The method was presented at the 2012 IEEE Conference on Computer Vision and Pattern Recognition.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 531,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.8615916138008244,
+      -2.948462851300576
+    ]
+  },
+  {
+    "idx": 1683,
+    "MSU_id": 1683,
+    "sentence": "The publication is titled 'Fast approximate k-means via cluster closures.'",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 531,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.6531145372650261,
+      -2.675620524361556
+    ]
+  },
+  {
+    "idx": 1685,
+    "MSU_id": 1685,
+    "sentence": "The paper was published in IEEE Transactions on Knowledge and Data Engineering, volume 27, issue 1, pages 180–192, in 2015.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 532,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.1809301144782363,
+      -2.5414210158874693
+    ]
+  },
+  {
+    "idx": 1686,
+    "MSU_id": 1686,
+    "sentence": "The DOI for the paper is https://doi.org/10.1109/TKDE.2014.2324592.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 532,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.52925024000195,
+      -2.3280214700477466
+    ]
+  },
+  {
+    "idx": 1688,
+    "MSU_id": 1688,
+    "sentence": "The work was presented at the 2015 International Conference on Machine Learning and Cybernetics (ICMLC).",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 533,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.022189016839537,
+      -2.904283123216206
+    ]
+  },
+  {
+    "idx": 1689,
+    "MSU_id": 1689,
+    "sentence": "The publication is available in volume 1, pages 445–451 of the conference proceedings.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 533,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.8814975917615615,
+      -1.8268968756099033
+    ]
+  },
+  {
+    "idx": 1690,
+    "MSU_id": 1690,
+    "sentence": "The DOI for the publication is https://doi.org/10.1109/ICMLC.2015.7340962.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 533,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.531447095212989,
+      -2.4176685804326894
+    ]
+  },
+  {
+    "idx": 1693,
+    "MSU_id": 1693,
+    "sentence": "The study was conducted in 2023.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 534,
+    "paper_id": 2,
+    "2d_coord": [
+      -3.3894007398303145,
+      -2.4522108761322072
+    ]
+  },
+  {
+    "idx": 1698,
+    "MSU_id": 1698,
+    "sentence": "The work was presented at Neural Information Processing Systems in 2004.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 537,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.6559907531309244,
+      -2.7910119632407895
+    ]
+  },
+  {
+    "idx": 1699,
+    "MSU_id": 1699,
+    "sentence": "The publication is associated with CorpusID:17066951.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 537,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.8379938980526758,
+      -2.2834980756447303
+    ]
+  },
+  {
+    "idx": 1703,
+    "MSU_id": 1703,
+    "sentence": "The paper was published in Visual Computing for Industry, Biomedicine, and Art.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 539,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.9703697473154853,
+      -2.6532991780697097
+    ]
+  },
+  {
+    "idx": 1704,
+    "MSU_id": 1704,
+    "sentence": "The publication year of the study is 2025.",
+    "category": "Other",
+    "rank": 1,
+    "type": "text",
+    "para_id": 539,
+    "paper_id": 2,
+    "2d_coord": [
+      -3.472810183967139,
+      -2.555423776654239
+    ]
+  }
+]

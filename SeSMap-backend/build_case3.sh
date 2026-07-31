@@ -45,9 +45,9 @@ python3 code_for_data/build_case_files.py --out-dir data/case3
 echo "########## 4. build_semantic_map -> data/case3/semantic_map_data.json ##########"
 python3 build_semantic_map_from_db_summary.py --case-dir data/case3 --out data/case3/semantic_map_data.json
 
-echo "########## 5. PDFs -> data/pdf/case3 (供 gallery/RAG) ##########"
-mkdir -p data/pdf/case3 && cp data/pdf/*.pdf data/pdf/case3/ 2>/dev/null || true
-ls data/pdf/case3/ | wc -l | xargs echo "case3 PDFs:"
+echo "########## 5. case3 PDFs (供 gallery/RAG) ##########"
+# data/case3/pdf 是 case3 唯一的 PDF 源；构建时不再复制一套顶层 PDF。
+ls data/case3/pdf/*.pdf | wc -l | xargs echo "case3 PDFs:"
 
 echo "########## 6. gallery 缩略图 + manifest(方案B,自动选每篇主图) ##########"
 python3 code_for_data/extract_thumbnails.py \

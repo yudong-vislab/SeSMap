@@ -112,7 +112,7 @@ Note: `pipeline.py` still defaults to the v5 training command for historical com
 
 | Stage | Command | Input | Output |
 |---|---|---|---|
-| PDF to Markdown | `python3 code_for_data/mineru_pdf.py` | `data/pdf/**/*.pdf` | `data/stages/01_corpus/<paper>/<paper>.md` |
+| PDF to Markdown | `python3 code_for_data/mineru_pdf.py --pdf-dir data/caseN/pdf` | `data/caseN/pdf/*.pdf` | `data/<case>/stages/01_corpus/<paper>/<paper>.md` |
 | Markdown to MSUs | `python3 code_for_data/build_corpus.py` | `data/stages/01_corpus/<paper>/<paper>.md` | `data/stages/02_msu/formdatabase.json` (+ `paragraphs.json`, `papers.json`) |
 | Raw triplets | `python3 code_for_model/generate_triplets.py` | `data/stages/02_msu/formdatabase.json` | `data/stages/03_triplets/contrastive_triplets_raw.json` |
 | Refined triplets | `python3 code_for_model/refine_triplets.py` | raw triplets + formdatabase | `data/stages/03_triplets/contrastive_triplets.json` |
