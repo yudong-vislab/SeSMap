@@ -52,11 +52,12 @@ def load_corpus_and_emb(corpus_path, emb_path):
 
 def gen_candidates(X, rows, tau_lo, tau_hi, per_anchor, max_candidates, seed,
                    allowed_categories=None, min_rank=1):
-    """Generate locally filtered, cross-paper semantic-pair candidates.
+    """Generate cross-paper semantic-pair candidates with even anchor coverage.
 
-    Only MSUs that pass the category/importance filter can become anchors or
-    candidates.  This keeps the complete corpus local while sending only a
-    small, high-value subset to the external judge.
+    Candidates are collected round by round: every eligible anchor contributes its
+    best still-unclaimed partner before any anchor contributes a second one.  A
+    single pass that fills the budget anchor by anchor would leave the anchors
+    visited late with no candidate at all.
     """
     Xn = X / (np.linalg.norm(X, axis=1, keepdims=True) + 1e-9)
     N = Xn.shape[0]
@@ -67,31 +68,44 @@ def gen_candidates(X, rows, tau_lo, tau_hi, per_anchor, max_candidates, seed,
     eligible = ranks >= min_rank
     if allowed:
         eligible &= np.array([c.lower() in allowed for c in categories])
-    rng = random.Random(seed)
-    order = list(range(N)); rng.shuffle(order)
-    seen = set(); cands = []
-    for a in order:
-        if not eligible[a]:
-            continue
-        sims = Xn @ Xn[a]                       # (N,)
-        cross = (papers != papers[a]) & eligible # 只跨论文，且另一端也须通过本地筛选
-        band = (sims >= tau_lo) & (sims <= tau_hi) & cross
+
+    anchors = [a for a in range(N) if eligible[a]]
+    rng = random.Random(seed); rng.shuffle(anchors)
+
+    # Per-anchor ranked shortlist, capped so memory stays bounded.
+    shortlist_len = max(per_anchor * 8, 24)
+    ranked = {}
+    for a in anchors:
+        sims = Xn @ Xn[a]
+        band = (sims >= tau_lo) & (sims <= tau_hi) & (papers != papers[a]) & eligible
         idxs = np.where(band)[0]
-        # Do not slice before de-duplication: an anchor whose nearest pair was
-        # already claimed by another anchor should still get its next-best pair.
-        idxs = idxs[np.argsort(-sims[idxs])]
-        added_for_anchor = 0
-        for b in idxs:
-            key = (a, int(b)) if a < b else (int(b), a)
-            if key in seen:
+        if idxs.size == 0:
+            continue
+        idxs = idxs[np.argsort(-sims[idxs])][:shortlist_len]
+        ranked[a] = [(int(b), float(sims[b])) for b in idxs]
+
+    seen = set(); cands = []; ptr = {a: 0 for a in ranked}
+    for _ in range(per_anchor):
+        progressed = False
+        for a in anchors:
+            lst = ranked.get(a)
+            if not lst:
                 continue
-            seen.add(key)
-            cands.append((key[0], key[1], float(sims[b])))
-            added_for_anchor += 1
-            if added_for_anchor >= per_anchor:
+            k = ptr[a]
+            while k < len(lst):
+                b, sim = lst[k]; k += 1
+                key = (a, b) if a < b else (b, a)
+                if key in seen:
+                    continue
+                seen.add(key); cands.append((key[0], key[1], sim))
+                progressed = True
                 break
-        if len(cands) >= max_candidates:
+            ptr[a] = k
+            if len(cands) >= max_candidates:
+                break
+        if len(cands) >= max_candidates or not progressed:
             break
+
     cands.sort(key=lambda t: -t[2])
     return cands[:max_candidates], int(eligible.sum())
 

@@ -1,0 +1,56 @@
+
+========================================================================
+### Case 1 (combustion+vis)  |  3 papers  |  1705 MSUs  |  train 535 / test 133
+  encoder (1024-D) co-loc      : 0.767
+/Users/yudong/.pyenv/versions/3.10.14/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+  PCA                     : trust 0.778  knnOv 0.070  co-loc 0.060
+  t-SNE                   : trust 0.930  knnOv 0.336  co-loc 0.323
+  UMAP                    : trust 0.913  knnOv 0.289  co-loc 0.256
+  ours                    : trust 0.932  knnOv 0.326  co-loc 0.301
+  ours+sup                : trust 0.934  knnOv 0.318  co-loc 0.323
+  [362s]
+
+========================================================================
+### Main (atmos+vis/AI)  |  6 papers  |  2689 MSUs  |  train 1069 / test 267
+  encoder (1024-D) co-loc      : 0.719
+/Users/yudong/.pyenv/versions/3.10.14/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+  PCA                     : trust 0.740  knnOv 0.043  co-loc 0.075
+  t-SNE                   : trust 0.934  knnOv 0.323  co-loc 0.255
+  UMAP                    : trust 0.896  knnOv 0.260  co-loc 0.225
+  ours                    : trust 0.931  knnOv 0.304  co-loc 0.243
+  ours+sup                : trust 0.934  knnOv 0.304  co-loc 0.348
+  [606s]
+
+========================================================================
+### General  |  7 papers  |  3425 MSUs  |  train 888 / test 221
+  encoder (1024-D) co-loc      : 0.697
+/Users/yudong/.pyenv/versions/3.10.14/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+  PCA                     : trust 0.726  knnOv 0.036  co-loc 0.045
+  t-SNE                   : trust 0.933  knnOv 0.322  co-loc 0.213
+  UMAP                    : trust 0.905  knnOv 0.252  co-loc 0.145
+  ours                    : trust 0.933  knnOv 0.300  co-loc 0.213
+  ours+sup                : trust 0.928  knnOv 0.292  co-loc 0.258
+  [797s]
+
+========================================================================
+### Genomics  |  12 papers  |  5415 MSUs  |  train 1612 / test 403
+  encoder (1024-D) co-loc      : 0.908
+/Users/yudong/.pyenv/versions/3.10.14/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+  PCA                     : trust 0.705  knnOv 0.025  co-loc 0.030
+  t-SNE                   : trust 0.938  knnOv 0.313  co-loc 0.462
+  UMAP                    : trust 0.908  knnOv 0.233  co-loc 0.352
+  ours                    : trust 0.943  knnOv 0.290  co-loc 0.424
+  ours+sup                : trust 0.939  knnOv 0.287  co-loc 0.469
+  [1465s]
+
+
+==========================================================================================
+Collection                  Pap    MSU    enc   tSNE   UMAP   ours   +sup    gain
+Case 1 (combustion+vis)       3   1705  0.767  0.323  0.256  0.301  0.323     +0%
+Main (atmos+vis/AI)           6   2689  0.719  0.255  0.225  0.243  0.348    +37%
+General                       7   3425  0.697  0.213  0.145  0.213  0.258    +21%
+Genomics                     12   5415  0.908  0.462  0.352  0.424  0.469     +2%

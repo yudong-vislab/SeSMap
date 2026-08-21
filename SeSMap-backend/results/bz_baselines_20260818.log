@@ -1,0 +1,13 @@
+[data] N=2689 dim=1024 test_pos=267
+[encoder 1024-D] BZ either=0.719  mutual=0.311
+  PCA done 0s
+  t-SNE done 4s
+/Users/yudong/.pyenv/versions/3.10.14/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+  UMAP done 10s
+[PCA   ] Trust=0.740  knnOv=0.043  BZ_either=0.075  BZ_mutual=0.045
+[t-SNE ] Trust=0.934  knnOv=0.323  BZ_either=0.255  BZ_mutual=0.228
+[UMAP  ] Trust=0.896  knnOv=0.260  BZ_either=0.225  BZ_mutual=0.180
+
+Saved.
+[data] N=2689 train=1069 test=267

@@ -1,0 +1,6 @@
+/Users/yudong/.pyenv/versions/3.10.14/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+held-out MSUs = 538
+  Ours lambda=0.0  trust=0.834  knnOv=0.212
+  Ours lambda=0.1  trust=0.830  knnOv=0.213
+  UMAP.transform    trust=0.836  knnOv=0.228
