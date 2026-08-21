@@ -1042,6 +1042,31 @@ function filterBucketToVisibleCountries(bucket) {
   return { ...bucket, items, countries, msuCount };
 }
 
+// One SVG hex represents an HSU, not a particular record within that HSU.
+// Never let whichever raw MSU happened to be first/last determine the HSU's
+// country identity: a multi-source HSU deliberately has no single country.
+function buildHsuDisplayRecord(bucket) {
+  const scoped = filterBucketToVisibleCountries(bucket);
+  const items = scoped?.items || [];
+  const first = items[0] || bucket?.items?.[0] || {};
+  const msuIds = Array.from(new Set(
+    items.flatMap(item => Array.isArray(item?.msu_ids) ? item.msu_ids : [])
+  ));
+  const countries = scoped?.countries || new Set();
+
+  return {
+    ...first,
+    panelIdx: bucket?.panelIdx ?? first.panelIdx,
+    q: bucket?.q ?? first.q,
+    r: bucket?.r ?? first.r,
+    // A conflict remains neutral; with gallery filtering, exactly one visible
+    // source correctly becomes the HSU's colour owner.
+    country_id: countries.size === 1 ? Array.from(countries)[0] : null,
+    msu_ids: msuIds,
+    _hsuCountryIds: Array.from(countries)
+  };
+}
+
 // 安全获取 bucket：优先用 getBucket；失败则从坐标索引兜底组一个“临时 bucket”
 function getBucketSafe(panelIdx, q, r) {
   let b = (typeof getBucket === 'function') ? getBucket(panelIdx, q, r) : null;
@@ -1147,9 +1172,10 @@ function getConflictContextCountryId(panelIdx, q, r, key, focusCid = null) {
       const hoveredCid = normalizeCountryId(Array.from(hoveredBucket.countries)[0]);
       if (countries.has(hoveredCid)) return hoveredCid;
     }
-    const hoveredHex = App.hexMapsByPanel?.[App.hoveredHex.panelIdx]?.get?.(`${App.hoveredHex.q},${App.hoveredHex.r}`);
-    const hoveredCid = hoveredHex?.country_id ? normalizeCountryId(hoveredHex.country_id) : null;
-    if (hoveredCid && countries.has(hoveredCid)) return hoveredCid;
+    // A multi-source HSU has no source owner on hover.  In particular, do not
+    // fall back to its visual representative here: after aggregation that
+    // representative may be a filtered source and would recolor the whole
+    // conflict HSU according to one underlying MSU.
   }
 
   if (focusCid && countries.has(focusCid)) return focusCid;
@@ -1775,7 +1801,16 @@ function refreshHoveredBucketTooltip() {
   if (!bucket || !pos) return;
   if (!App.hoveredHex) return;
   if (App.hoveredHex.panelIdx !== bucket.panelIdx || App.hoveredHex.q !== bucket.q || App.hoveredHex.r !== bucket.r) return;
+  // Dynamic summaries resolve independently. Replacing innerHTML must not kick
+  // a reader back to the top of a long tooltip while they are scrolling it.
+  const tip = getVisibleHexTooltip();
+  const previousScrollTop = tip ? tip.scrollTop : 0;
+  const previousScrollLeft = tip ? tip.scrollLeft : 0;
   showHexTooltip(pos.x, pos.y, { _rawHTML: true, html: renderBucketTooltipHTML(bucket) });
+  if (tip) {
+    tip.scrollTop = Math.min(previousScrollTop, Math.max(0, tip.scrollHeight - tip.clientHeight));
+    tip.scrollLeft = Math.min(previousScrollLeft, Math.max(0, tip.scrollWidth - tip.clientWidth));
+  }
 }
 
 function cleanHsuSummaryLine(line) {
@@ -1986,7 +2021,18 @@ function renderBucketTooltipHTML(bucket) {
     (msuIds || []).forEach((id) => {
       // 兼容字符串/数字 id
       const rec = idx[id] ?? idx[String(id)];
-      if (rec) out.push(rec);
+      if (!rec) return;
+
+      // Dynamic re-aggregation only changes HSU membership.  Preserve a
+      // canonical, stable MSU identity on every record handed to Stepwise so
+      // it never falls back to a local array index such as "0|q,r#2".
+      const canonicalId = rec.MSU_id ?? rec.msu_id ?? rec.msuid ?? rec.id ?? id;
+      out.push({
+        ...rec,
+        MSU_id: canonicalId,
+        id: canonicalId,
+        sentence: rec.sentence ?? rec.text ?? rec.content ?? ''
+      });
     });
     return out;
   }
@@ -3177,15 +3223,36 @@ function isPointInsideHexTooltip(clientX, clientY) {
   return clientX >= rect.left && clientX <= rect.right && clientY >= rect.top && clientY <= rect.bottom;
 }
 
+function wheelDeltaInPixels(delta, deltaMode = 0) {
+  // WheelEvent.deltaY is normally pixels, but trackpads/mice may also report
+  // lines or pages. Convert them so manual tooltip scrolling stays natural.
+  if (deltaMode === 1) return delta * 16;
+  if (deltaMode === 2) return delta * window.innerHeight;
+  return delta;
+}
+
 function consumeHexTooltipWheel(event) {
   const tip = getVisibleHexTooltip();
   if (!tip) return false;
-  if (!isPointInsideHexTooltip(event.clientX, event.clientY)) return false;
+
+  // Prefer the actual event path. This still works when a browser does not
+  // provide useful client coordinates for a high-precision wheel event.
+  const eventPath = typeof event.composedPath === 'function' ? event.composedPath() : [];
+  const targetsTooltip = eventPath.includes(tip)
+    || isHexTooltipNode(event.target)
+    || isPointInsideHexTooltip(event.clientX, event.clientY);
+  if (!targetsTooltip) return false;
+
+  // The map owns wheel-to-zoom, so consume every wheel gesture over a tooltip
+  // even if it is currently at its top/bottom boundary.
   event.preventDefault();
   event.stopPropagation();
   if (typeof event.stopImmediatePropagation === 'function') event.stopImmediatePropagation();
-  tip.scrollTop += event.deltaY;
-  tip.scrollLeft += event.deltaX;
+
+  const maxScrollTop = Math.max(0, tip.scrollHeight - tip.clientHeight);
+  const maxScrollLeft = Math.max(0, tip.scrollWidth - tip.clientWidth);
+  tip.scrollTop = Math.min(maxScrollTop, Math.max(0, tip.scrollTop + wheelDeltaInPixels(event.deltaY, event.deltaMode)));
+  tip.scrollLeft = Math.min(maxScrollLeft, Math.max(0, tip.scrollLeft + wheelDeltaInPixels(event.deltaX, event.deltaMode)));
   return true;
 }
 
@@ -3207,6 +3274,8 @@ function ensureHexTooltip() {
     overflowY: 'auto',
     overflowX: 'hidden',
     overscrollBehavior: 'contain',
+    scrollbarGutter: 'stable',
+    touchAction: 'pan-y',
     boxSizing: 'border-box',
     padding: '10px 12px',
     borderRadius: '12px',
@@ -4825,11 +4894,7 @@ const mode = getPanelLayoutMode(panelIdx);
 
     var uniqueHexes = [];
     _buckets.forEach(function(b){
-      // Use first item as representative for drawing (q,r kept the same)
-      var rep = b.items[0];
-      // Ensure q,r are explicit on the representative (some pipelines overwrite)
-      rep.q = b.q; rep.r = b.r;
-      uniqueHexes.push(rep);
+      uniqueHexes.push(buildHsuDisplayRecord(b));
     });
 
     // Ensure hatch pattern exists (for conflict visualization)
@@ -5096,11 +5161,11 @@ const mode = getPanelLayoutMode(panelIdx);
     // 国家边界
     drawCountries(space, svg, hexRadius);
 
-    // 构建 map
+    // Build the coordinate map from the HSU display records, rather than the
+    // raw list.  Raw entries overwrite one another at a shared coordinate and
+    // used to make hover/Alt read a random underlying MSU as the HSU source.
     const hexMap = new Map();
-    // hexList.forEach(d => hexMap.set(`${d.q},${d.r}`, d));
-    hexList.forEach(d => {
-      // console.log('Building hexMap:', d.q, d.r, 'summary:', d.summary, 'full object:', d);
+    uniqueHexes.forEach(d => {
       hexMap.set(`${d.q},${d.r}`, d);
     });
     App.hexMapsByPanel[panelIdx] = hexMap;

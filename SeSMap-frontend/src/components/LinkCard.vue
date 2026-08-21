@@ -48,8 +48,8 @@
     <!-- ② 原文句子 - 显示当前link关联的MSU句子（含勾选） -->
     <div class="subcard__source" ref="sourceRef" :style="sourcePanelStyle">
        <div v-if="displayMsuSentences.length > 0" class="msu-sentences">
-         <!-- ★ 使用 displayMsuSentences：点击节点时仅显示该 HSU 的 MSU，点击空白恢复全部 -->
-         <div v-for="(msu, index) in displayMsuSentences" :key="msu.uid" class="msu-sentence">
+         <!-- ★ 点击 HSU 后只显示该 HSU 的 MSU；聚合后默认折叠过长的证据列表 -->
+         <div v-for="(msu, index) in visibleMsuSentences" :key="msu.uid" class="msu-sentence">
           <div class="msu-meta">
             <label class="msu-checkwrap">
               <input
@@ -83,6 +83,14 @@
             <pre v-else class="para-info-content para-info-raw">{{ formatRawForDebug(msu.raw) }}</pre>
           </div>
         </div>
+        <button
+          v-if="hasCollapsedMsus"
+          class="msu-list-toggle"
+          type="button"
+          @click="msuListExpanded = !msuListExpanded"
+        >
+          {{ msuListExpanded ? 'Show fewer MSUs' : `Show all ${displayMsuSentences.length} MSUs` }}
+        </button>
       </div>
       <div v-else class="placeholder">No MSU sentences for this link</div>
     </div>
@@ -253,6 +261,8 @@ const selectedMsus = ref(new Set())
 
 // ★ 新增：当前点击选中的 HSU 键（"panelIdx:q,r"），null 表示不筛选
 const pickedNodeKey = ref(null)
+const msuListExpanded = ref(false)
+const MSU_PREVIEW_LIMIT = 8
 
 // 切换显示/隐藏原文
 const toggleOriginal = () => { showOriginal.value = !showOriginal.value }
@@ -556,6 +566,16 @@ const displayMsuSentences = computed(() => {
   if (!pickedNodeKey.value) return all
   return all.filter(m => m.hsuKey === pickedNodeKey.value)
 })
+
+const hasCollapsedMsus = computed(() => displayMsuSentences.value.length > MSU_PREVIEW_LIMIT)
+const visibleMsuSentences = computed(() => (
+  msuListExpanded.value
+    ? displayMsuSentences.value
+    : displayMsuSentences.value.slice(0, MSU_PREVIEW_LIMIT)
+))
+
+watch(pickedNodeKey, () => { msuListExpanded.value = false })
+watch(() => props.link, () => { msuListExpanded.value = false })
 
 function getSemanticMsuCandidates() {
   return (linkMsuSentences.value || []).map(msu => ({
@@ -865,6 +885,19 @@ onBeforeUnmount(() => {
 .msu-sentences { font-size: 11px; line-height: 1.4; }
 .msu-sentence { margin-bottom: 8px; padding: 6px; background: #f9fafb; border-radius: 4px; border-left: 3px solid #e5e7eb; }
 .msu-sentence:last-child { margin-bottom: 0; }
+.msu-list-toggle{
+  display:block;
+  width:100%;
+  margin-top:8px;
+  padding:5px 8px;
+  border:1px solid #d1d5db;
+  border-radius:5px;
+  background:#fff;
+  color:#374151;
+  font-size:11px;
+  cursor:pointer;
+}
+.msu-list-toggle:hover{ background:#f3f4f6; }
 
 .msu-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
 .msu-id { font-weight: 600; color: #374151; font-size: 10px; }

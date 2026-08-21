@@ -210,7 +210,10 @@ function normalizePanelName(name, idx) {
 function textOfMsu(msu, fallback = '') {
   if (msu == null) return fallback
   if (typeof msu === 'string') return msu
-  return String(msu.text ?? msu.summary ?? msu.sentence ?? msu.content ?? fallback)
+  // `sentence` is the semantic unit shown in Stepwise.  Some data sources
+  // also carry a longer raw `text`/`content` field, which must stay in the
+  // detail view instead of replacing the MSU sentence after re-aggregation.
+  return String(msu.sentence ?? msu.text ?? msu.summary ?? msu.content ?? fallback)
 }
 
 function msuIdOf(msu, idx) {
@@ -548,8 +551,8 @@ function onDragEnd() { dragging.from = dragging.to = null; }
      // 兼容两种：n.msu 或 n.msu_ids（无文本时用 id 兜底字符串）
      if (Array.isArray(n.msu) && n.msu.length) {
        n.msu.forEach((m, idx) => bucket.msus.push({
-         id: m.id ?? `${k}#${idx}`,
-         text: (m.text ?? m.summary ?? String(m.id ?? idx)).toString(),
+         id: m.MSU_id ?? m.msuId ?? m.id ?? `${k}#${idx}`,
+         text: (m.sentence ?? m.text ?? m.summary ?? String(m.MSU_id ?? m.id ?? idx)).toString(),
          checked: false
        }))
      } else if (Array.isArray(n.msu_ids) && n.msu_ids.length) {
