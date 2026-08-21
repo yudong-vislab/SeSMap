@@ -286,20 +286,25 @@ function fallbackGlobalSourceId(folder, index) {
 }
 function paperSourceInfoForImage(folder, img, index) {
   const base = normalizeAssetBase(img.name)
-  const projectId = FOLDER_PROJECT[folder] || folder
+  const defaultProjectId = FOLDER_PROJECT[folder] || folder
   const registered = GALLERY_PAPER_SOURCE_REGISTRY[base]
-  const semanticCountryId = registered?.semanticCountryId
-    || img.semanticCountryId
-    || img.countryId
-    || img.paperCountryId
-    || img.paper_id
-    || fallbackSemanticCountryId(projectId, index)
-  const sourceId = registered?.sourceId || fallbackGlobalSourceId(folder, index)
+  // Generated gallery manifests are the source of truth.  A few case3 paper
+  // titles happen to match legacy short-name entries in the static registry;
+  // preferring that registry remapped them to another paper's country id, so
+  // coloring one gallery card also colored its incorrectly aliased neighbour.
+  const projectId = img.projectId ?? img.project_id ?? registered?.projectId ?? defaultProjectId
+  const semanticCountryId = img.semanticCountryId
+    ?? img.countryId
+    ?? img.paperCountryId
+    ?? img.paper_id
+    ?? registered?.semanticCountryId
+    ?? fallbackSemanticCountryId(projectId, index)
+  const sourceId = img.sourceId ?? registered?.sourceId ?? fallbackGlobalSourceId(folder, index)
   return {
-    projectId: registered?.projectId || projectId,
+    projectId,
     semanticCountryId,
     sourceId,
-    sourceKey: makeSourceKey(registered?.projectId || projectId, semanticCountryId)
+    sourceKey: makeSourceKey(projectId, semanticCountryId)
   }
 }
 function folderTitle(folder) {

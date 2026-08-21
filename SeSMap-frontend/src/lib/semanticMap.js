@@ -800,16 +800,17 @@ export async function initSemanticMap({
   // === helpers for click payload (full multi-country data) ===
   function ensureBucketFor(panelIdx, q, r, d) {
     const b = (typeof getBucket === 'function') ? getBucket(panelIdx, q, r) : null;
-    if (b && Array.isArray(b.items)) return b;
+    if (b && Array.isArray(b.items)) return filterBucketToVisibleCountries(b);
     const one = (App.hexMapsByPanel && App.hexMapsByPanel[panelIdx] && App.hexMapsByPanel[panelIdx].get(`${q},${r}`)) || d || {};
     let cid = '—'; try { cid = normalizeCountryId(one && one.country_id ? one.country_id : '—'); } catch(e) {}
     const set = new Set(); if (cid && cid !== '—') set.add(cid);
     const msuCount = (one && Array.isArray(one.msu_ids)) ? one.msu_ids.length : 0;
-    return { panelIdx, q, r, items: [one], countries: set, msuCount, _cycleIdx: 0 };
+    return filterBucketToVisibleCountries({ panelIdx, q, r, items: [one], countries: set, msuCount, _cycleIdx: 0 });
   }
   
   function bucketGroupsFor(panelIdx, q, r) {
-    const b = (typeof getBucket === 'function') ? getBucket(panelIdx, q, r) : null;
+    const rawBucket = (typeof getBucket === 'function') ? getBucket(panelIdx, q, r) : null;
+    const b = filterBucketToVisibleCountries(rawBucket);
     const out = new Map();
     if (!b) return out;
     (b.items || []).forEach(it => {
@@ -1014,10 +1015,37 @@ function ensureCoordIndex(panelIdx) {
   return m;
 }
 
+// Gallery filtering is applied at two levels: rendering hides an HSU, while
+// detail/selection code reads the underlying bucket.  Keep the latter on the
+// same source set, otherwise a visible HSU can still expose MSUs belonging to
+// papers that the gallery has filtered out.
+function isVisibleCountry(rawCountryId) {
+  if (!App.visibleCountries) return true;
+  if (rawCountryId == null || rawCountryId === '') return false;
+  return App.visibleCountries.has(normalizeCountryId(String(rawCountryId)));
+}
+
+function filterBucketToVisibleCountries(bucket) {
+  if (!bucket || !Array.isArray(bucket.items) || !App.visibleCountries) return bucket;
+
+  const items = bucket.items.filter(item => isVisibleCountry(item?.country_id));
+  const countries = new Set(
+    items
+      .map(item => item?.country_id == null ? null : normalizeCountryId(String(item.country_id)))
+      .filter(Boolean)
+  );
+  const msuCount = items.reduce(
+    (total, item) => total + (Array.isArray(item?.msu_ids) ? item.msu_ids.length : 0),
+    0
+  );
+
+  return { ...bucket, items, countries, msuCount };
+}
+
 // 安全获取 bucket：优先用 getBucket；失败则从坐标索引兜底组一个“临时 bucket”
 function getBucketSafe(panelIdx, q, r) {
   let b = (typeof getBucket === 'function') ? getBucket(panelIdx, q, r) : null;
-  if (b && Array.isArray(b.items) && b.items.length) return b;
+  if (b && Array.isArray(b.items) && b.items.length) return filterBucketToVisibleCountries(b);
 
   const idx = ensureCoordIndex(panelIdx);
   const items = (idx.get(`${q},${r}`) || []).slice();
@@ -1032,7 +1060,7 @@ function getBucketSafe(panelIdx, q, r) {
     items.map(it => normCid(it.country_id)).filter(Boolean)
   );
 
-  return { items, countries };
+  return filterBucketToVisibleCountries({ panelIdx, q, r, items, countries });
 }
 
 
@@ -1176,7 +1204,7 @@ function computeHexBaseFill(panelIdx, q, r, modality) {
 
 // === Per-country split builders ===
 function _bucketCountrySlices(panelIdx, q, r) {
-  const b = getBucket(panelIdx, q, r);
+  const b = filterBucketToVisibleCountries(getBucket(panelIdx, q, r));
   const out = new Map();
   if (!b) return out;
   b.items.forEach(it => {
@@ -1846,6 +1874,7 @@ function renderHsuSummaryHTML(summary) {
 
 function renderBucketTooltipHTML(bucket) {
   if (!bucket) return '<span style="opacity:.62">No data</span>';
+  bucket = filterBucketToVisibleCountries(bucket);
   var panelIdx = bucket.panelIdx != null ? bucket.panelIdx : 0;
 
   var groups = new Map();
@@ -1872,6 +1901,8 @@ function renderBucketTooltipHTML(bucket) {
     }
     return (a.cid < b.cid) ? -1 : (a.cid > b.cid) ? 1 : 0;
   });
+
+  if (!items.length) return '<span style="opacity:.62">No visible source data</span>';
 
   var totalMSU = bucket.msuCount || 0;
   var totalCountries = groups.size;
@@ -4888,9 +4919,10 @@ const mode = getPanelLayoutMode(panelIdx);
             // console.log('renderHexgridfromdata', color, msuCount, summary);
             // —— Tooltip: 统一使用“按国家分组”的模板 —— //
             const _b = getBucket(panelIdx, d.q, d.r);
-            const _bucket = (_b && _b.items)
+            const _rawBucket = (_b && _b.items)
               ? _b
               : buildSingleBucket(panelIdx, d.q, d.r, hex);  // 单条也转成 bucket
+            const _bucket = filterBucketToVisibleCountries(_rawBucket);
             App.hoveredTooltipBucket = _bucket;
             App.lastHexTooltipClient = { x: event.clientX, y: event.clientY };
             scheduleBucketDynamicSummaries(_bucket);
@@ -6034,19 +6066,22 @@ function updateHexStyles() {
       uniq.push(it);
     }
 
-    if (!uniq.length) return { ok: false };
+    // The visible gallery sources are the authoritative data scope for details
+    // and saved selections as well as rendering.
+    const visibleItems = uniq.filter(it => isVisibleCountry(it.country_id));
+    if (!visibleItems.length) return { ok: false };
 
     // 国家集合
-    const countries = new Set(uniq.map(it => _normCid(it.country_id)).filter(Boolean));
+    const countries = new Set(visibleItems.map(it => _normCid(it.country_id)).filter(Boolean));
 
     // 合并 msu 并去重
     const merged_msu_ids = Array.from(new Set(
-      uniq.flatMap(it => Array.isArray(it.msu_ids) ? it.msu_ids : [])
+      visibleItems.flatMap(it => Array.isArray(it.msu_ids) ? it.msu_ids : [])
     ));
 
     // 分国明细（给右侧等用）
     const groupsMap = new Map();
-    for (const it of uniq) {
+    for (const it of visibleItems) {
       const cid = _normCid(it.country_id) || '—';
       if (!groupsMap.has(cid)) groupsMap.set(cid, { items: [], msu_ids: [] });
       const g = groupsMap.get(cid);
@@ -6055,10 +6090,10 @@ function updateHexStyles() {
     }
     for (const [, g] of groupsMap) g.msu_ids = Array.from(new Set(g.msu_ids));
 
-    const first = uniq[0] || {};
+    const first = visibleItems[0] || {};
     return {
       ok: true,
-      items: uniq,
+      items: visibleItems,
       countries,
       merged_msu_ids,
       groupsMap,
@@ -6230,6 +6265,11 @@ function updateHexStyles() {
         });
         return; // 已经用 bucket 成功聚合，提前返回
       }
+
+      // A previously selected route can contain a hex that the gallery has
+      // since hidden.  Do not fall back to its raw representative record,
+      // because that would reintroduce MSUs from an excluded paper.
+      if (App.visibleCountries) return;
 
       // 兜底：仍然保留原来的“顶层单条”逻辑，避免没有 bucket 时直接丢数据
       const hex = App.hexMapsByPanel?.[panelIdx]?.get(`${q},${r}`);
@@ -7512,6 +7552,8 @@ function _deleteSubspaceByIndex(idx) {
           }));
           return { panelIdx, q, r, modality, country_id, label, msu_ids, msu, groups, conflict: agg.countries.size > 1 };
         }
+
+        if (App.visibleCountries) return null;
 
         // 兜底：单条顶层
         const hex = App.hexMapsByPanel?.[panelIdx]?.get(`${q},${r}`);
