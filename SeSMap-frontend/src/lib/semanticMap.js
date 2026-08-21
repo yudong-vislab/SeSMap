@@ -7530,6 +7530,66 @@ function _deleteSubspaceByIndex(idx) {
       return App.aggregationRange || DEFAULT_AGGREGATION_RANGE;
     },
 
+    /**
+     * 当前聚合尺度下，一个 HSU 连同其六个相邻格所包含的 MSU 数（中位数）。
+     * 该值即用户一次读图所考察的语义邻域规模，随语料与尺度动态变化。
+     * 返回 { neighborhood, perHsu, hsuCount } ；数据未就绪时返回 null。
+     */
+    getNeighborhoodSize(panelIdx = null) {
+      try {
+        // 未指定面板时，取第一个已有数据的面板；避免面板 0 尚未就绪导致取不到值
+        let idx = null;
+        if (panelIdx === null) {
+          const n = (App.currentData?.subspaces || []).length || 1;
+          for (let i = 0; i < n; i++) {
+            const cand = ensureCoordIndex(i);
+            if (cand && cand.size > 0) { idx = cand; break; }
+          }
+        } else {
+          idx = ensureCoordIndex(panelIdx);
+        }
+        if (!idx || idx.size === 0) return null;
+
+        // 每格 MSU 数：同一 (q,r) 下可能有多条来源记录，按 msu_ids 累加
+        const counts = new Map();
+        idx.forEach((arr, key) => {
+          let n = 0;
+          for (const it of arr) {
+            const ids = it && Array.isArray(it.msu_ids) ? it.msu_ids : null;
+            n += ids ? ids.length : 1;
+          }
+          if (n > 0) counts.set(key, n);
+        });
+        if (counts.size === 0) return null;
+
+        const NB = [[1, 0], [-1, 0], [0, 1], [0, -1], [1, -1], [-1, 1]];
+        const perHsu = [];
+        const neigh = [];
+        counts.forEach((n, key) => {
+          const [q, r] = key.split(',').map(Number);
+          if (!Number.isFinite(q) || !Number.isFinite(r)) return;
+          let tot = n;
+          for (const [dq, dr] of NB) tot += counts.get(`${q + dq},${r + dr}`) || 0;
+          perHsu.push(n);
+          neigh.push(tot);
+        });
+        if (!neigh.length) return null;
+
+        const median = (a) => {
+          const v = a.slice().sort((x, y) => x - y);
+          const m = v.length >> 1;
+          return v.length % 2 ? v[m] : Math.round((v[m - 1] + v[m]) / 2);
+        };
+        return {
+          neighborhood: median(neigh),
+          perHsu: median(perHsu),
+          hsuCount: counts.size,
+        };
+      } catch (e) {
+        return null;
+      }
+    },
+
     pulseSelection() { publishToStepAnalysis(); },
     releaseSelectionSnapshot(selection) {
       releaseSelectionSnapshot(selection);

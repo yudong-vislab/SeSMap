@@ -91,11 +91,17 @@ function onSemanticColorsChange(event) {
 onMounted(() => {
   window.addEventListener('semanticmap:colorschange', onSemanticColorsChange)
   window.addEventListener('semanticMap:ready', refreshGalleryColorsFromSemanticMap)
+  // 语料或子空间变化后，邻域规模随之改变，需要重新读取
+  window.addEventListener('semanticMap:ready', refreshNeighborhoodSize)
+  window.addEventListener('semantic-map:project-changed', refreshNeighborhoodSize)
   refreshGalleryColorsFromSemanticMap()
+  refreshNeighborhoodSize()
 })
 onBeforeUnmount(() => {
   window.removeEventListener('semanticmap:colorschange', onSemanticColorsChange)
   window.removeEventListener('semanticMap:ready', refreshGalleryColorsFromSemanticMap)
+  window.removeEventListener('semanticMap:ready', refreshNeighborhoodSize)
+  window.removeEventListener('semantic-map:project-changed', refreshNeighborhoodSize)
 })
 
 function openPdfModal(pdfUrl, name){ console.log('[openPdfModal]', pdfUrl, name) }
@@ -124,7 +130,21 @@ watch(() => messages.value.length, async () => { await nextTick(); if (atBottom.
 function handleUploadFiles(files){ /* 占位 */ }
 
 // ====== Watchers（向父抛出） ==========================================
-watch(hexRadius, v => emit('updateHexRadius', v))
+const neighborhoodSize = ref(null)
+
+function refreshNeighborhoodSize() {
+  const ctrl = window?.SemanticMapCtrl
+  const stat = ctrl?.getNeighborhoodSize?.()
+  neighborhoodSize.value = (stat && Number.isFinite(stat.neighborhood) && stat.neighborhood > 0)
+    ? stat.neighborhood
+    : null
+}
+
+// 重聚合在 setAggregationRange 内同步完成，下一帧读取即为新尺度下的结果
+watch(hexRadius, v => {
+  emit('updateHexRadius', v)
+  requestAnimationFrame(refreshNeighborhoodSize)
+})
 watch(systemPrompt, v => emit('updateSystemPrompt', v))
 watch(markdownModel, v => emit('updateMarkdownModel', v))
 
@@ -865,13 +885,15 @@ async function handleSend(msg) {
         <div class="cp-divider"></div>
 
         <div class="cp-block">
-          <div class="cp-label-top">HSU Aggregation Scale</div>
+          <div class="cp-label-top">
+            HSU Aggregation Scale
+            <span class="cp-note" v-if="neighborhoodSize">~{{ neighborhoodSize }} MSUs / neighborhood</span>
+          </div>
           <div class="cp-slider">
             <input type="range" :min="hexMin" :max="hexMax" :step="hexStep" v-model="hexRadius" aria-label="HSU aggregation scale" />
             <input class="cp-number" type="number" :min="hexMin" :max="hexMax" :step="hexStep" v-model.number="hexRadius" aria-label="HSU aggregation scale value" />
             <span class="cp-unit">scale</span>
           </div>
-          <!-- <div class="cp-hint">Controls HSU aggregation radius.</div> -->
         </div>
       </div>
     </section>
@@ -956,7 +978,9 @@ async function handleSend(msg) {
 .cp-stack{ display:flex; flex-direction:column; gap:7px; }
 .cp-block{ display:flex; flex-direction:column; gap:5px; }
 
-.cp-label-top{ font-size:11px; color:#374151; font-weight:650; }
+.cp-label-top{ font-size:11px; color:#374151; font-weight:650;
+  display:flex; align-items:baseline; justify-content:space-between; gap:8px; }
+.cp-note{ font-size:10px; color:#8a8a8a; font-weight:400; white-space:nowrap; }
 
 .cp-input{
   width:100%; box-sizing:border-box; font-size:12px;
