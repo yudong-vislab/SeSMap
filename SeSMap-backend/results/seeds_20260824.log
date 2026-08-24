@@ -1,0 +1,13 @@
+种子 [0, 1, 2]   方法                                 Trust       knnOv@12      Co-loc@12
+PCA                        0.740±0.000  0.043±0.000  0.065±0.000
+t-SNE                      0.932±0.002  0.321±0.003  0.184±0.008
+/Users/yudong/.pyenv/versions/3.10.14/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/Users/yudong/.pyenv/versions/3.10.14/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/Users/yudong/.pyenv/versions/3.10.14/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+UMAP                       0.897±0.002  0.258±0.002  0.149±0.016
+Ours                       0.932±0.000  0.303±0.002  0.182±0.011
+/Users/yudong/.pyenv/versions/3.10.14/lib/python3.10/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

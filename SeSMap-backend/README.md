@@ -6,11 +6,30 @@ Flask backend + data/model pipeline: turns scientific PDFs into MSU semantic uni
 
 ```bash
 python3 -m pip install -r requirements.txt          # Python 3.10 (pyenv, pinned in .python-version)
-cp .env.example .env                                # set LLM_API_KEY / LLM_BASE_URL
+cp .env.example .env                                # set LLM_API_KEY (and LLM_BASE_URL if needed)
 python3 scripts/install_models.py                   # bge-large-en-v1.5 encoder → models/
 # MinerU (PDF → Markdown) lives in its own venv:
 /opt/homebrew/bin/python3.12 -m venv .venv-mineru && .venv-mineru/bin/pip install -U "mineru[core]"
 ```
+
+## Environment variables
+
+`.env` is local and ignored by Git. Start from `.env.example`; do not add API
+keys to source files, shell scripts, or frontend variables.
+
+- `LLM_API_KEY` is required for chat, RAG, HSU summaries, and LLM-based data-pipeline steps.
+- `LLM_BASE_URL` is optional when using the template's configured
+  OpenAI-compatible endpoint; change it for another provider.
+- `LLM_*_MODEL` variables are optional per-feature model overrides. The
+  template contains the current defaults.
+- `DEFAULT_CASE`, `FLASK_HOST`, `FLASK_PORT`, and `RAG_TEMPERATURE` are optional runtime settings.
+- `BGE_MODEL_PATH`, `SESMAP_DATA_ROOT`, `SESMAP_MAPPER_CKPT`, and `MINERU_*`
+  are optional local pipeline overrides. `SESMAP_MAPPER_CKPT_URL` and
+  `SESMAP_MAPPER_CKPT_SHA256` enable private checkpoint download/verification.
+
+Legacy `OPENAI_*`, `RAG_MODEL`, `INTENT_MODEL`, `CONDENSE_MODEL`, and
+`EMBEDDING_MODEL` names remain supported for compatibility, but new setups
+should configure the `LLM_*` names.
 
 All paths are centralized in `local_config.py` (overridable via env vars). Data layout:
 

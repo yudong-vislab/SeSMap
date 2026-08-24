@@ -12,6 +12,28 @@ SeSMap/
 
 The frontend proxies `/api/*` to the backend at `http://127.0.0.1:5000`.
 
+## Environment Configuration
+
+Real `.env` files are intentionally ignored by Git. Copy the provided templates
+locally; never commit API keys. The backend template is the important one:
+
+| Location | Required setting | Purpose |
+| --- | --- | --- |
+| `SeSMap-backend/.env` | `LLM_API_KEY` | Enables chat, RAG, summaries, and case-building LLM steps. |
+| `SeSMap-backend/.env` | `LLM_BASE_URL` (optional) | OpenAI-compatible provider endpoint; the template preserves the current default. |
+| `SeSMap-frontend/.env` | `VITE_API_TARGET` (optional) | Backend URL for Vite's development proxy; defaults to `http://127.0.0.1:5000`. |
+
+Use the templates as follows:
+
+```bash
+cp SeSMap-backend/.env.example SeSMap-backend/.env
+cp SeSMap-frontend/.env.example SeSMap-frontend/.env  # only needed to override the default API URL
+```
+
+`VITE_*` values are visible in the browser bundle, so frontend `.env` files
+must not contain secrets. See the component READMEs for optional model, data
+path, checkpoint, and MinerU settings.
+
 ## Pipeline Overview
 
 ```text
@@ -27,7 +49,7 @@ PDF → Markdown (MinerU) → MSU corpus (LLM) → sentence embeddings (bge)
 ```bash
 cd SeSMap-backend
 python3 -m pip install -r requirements.txt
-cp .env.example .env                 # set LLM_API_KEY / LLM_BASE_URL
+cp .env.example .env                 # set LLM_API_KEY (and LLM_BASE_URL if needed)
 python3 scripts/install_models.py    # download the bge encoder
 python3 app.py                       # http://127.0.0.1:5000
 ```
@@ -37,6 +59,7 @@ python3 app.py                       # http://127.0.0.1:5000
 ```bash
 cd SeSMap-frontend
 npm install
+cp .env.example .env                 # optional: override the backend proxy URL
 npm run dev                          # http://localhost:5173
 ```
 

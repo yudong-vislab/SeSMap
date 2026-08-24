@@ -6,10 +6,24 @@ Vue 3 + Vite frontend for SeSMap: the semantic subspace map, Semantic Source Gal
 
 ```bash
 npm install
+cp .env.example .env  # optional; only needed to use a backend other than 127.0.0.1:5000
 npm run dev        # http://localhost:5173
 ```
 
 Start the backend first (`python3 app.py`); Vite proxies `/api/*` to `http://127.0.0.1:5000`.
+
+## Environment variables
+
+`.env` is optional for the normal local setup. To point the Vite development
+proxy at another backend, set this non-secret value in `.env`:
+
+```dotenv
+VITE_API_TARGET=http://127.0.0.1:5000
+```
+
+The Vite config reads this value when the dev server starts, so restart
+`npm run dev` after changing it. Never place API keys or other secrets in this
+file: every `VITE_*` value can be exposed to the browser bundle.
 
 ```bash
 npm run build      # production build → dist/
