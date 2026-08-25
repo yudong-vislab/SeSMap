@@ -1104,14 +1104,16 @@ function getPanelCountryColor(panelIdx, cidRaw) {
   let cid = cidRaw;
   try { cid = normalizeCountryId(cidRaw); } catch(e) {}
 
-  // 1) 面板内覆盖优先
+  // 1) Gallery/source-wide color is authoritative. It keeps every HSU for a
+  // paper aligned with the one color shown on that paper's Gallery card.
+  const g = App.globalCountryColors?.get?.(cid);
+  if (g) return g;
+
+  // 2) Panel-local override is only a fallback when no source-wide color has
+  // been assigned.
   const panelMap = App.panelCountryColors?.get?.(panelIdx);
   const rec = panelMap?.get?.(cid);
   if (rec?.color) return rec.color;
-
-  // 2) ★ 新增：全局（跨面板）颜色兜底
-  const g = App.globalCountryColors?.get?.(cid);
-  if (g) return g;
 
   // 3) 旧的“getCountryColorOverride(panelIdx, cid)”兜底（如果你保留了它）
   if (typeof getCountryColorOverride === 'function') {
@@ -1128,12 +1130,12 @@ function getExplicitCountryColor(panelIdx, cidRaw) {
   let cid = cidRaw;
   try { cid = normalizeCountryId(cidRaw); } catch(e) {}
 
+  const global = App.globalCountryColors?.get?.(cid) || App.globalCountryColors?.get?.(cidRaw);
+  if (global) return global;
+
   const panelMap = App.panelCountryColors?.get?.(panelIdx);
   const rec = panelMap?.get?.(cid) || panelMap?.get?.(cidRaw);
   if (rec?.color) return rec.color;
-
-  const global = App.globalCountryColors?.get?.(cid) || App.globalCountryColors?.get?.(cidRaw);
-  if (global) return global;
 
   const ov = (typeof getCountryColorOverride === 'function') ? getCountryColorOverride(panelIdx, cid) : null;
   return ov?.color || null;
@@ -1191,8 +1193,12 @@ function emitSemanticColorSnapshot() {
   } catch (_) {}
 }
 
-function applySourceColorFromGallery({ countryId, color } = {}) {
+function applySourceColorFromGallery({ countryId, projectId = null, color } = {}) {
   if (countryId == null || countryId === '' || !color) return false;
+  const activeProjectId = App.currentProjectId || App.currentData?.project_id || App.currentData?.projectId || window.__activeProjectId || null;
+  // c0/c1/... are only unique within a case. Ignore a gallery card from a
+  // different case instead of recolouring its same-named country here.
+  if (projectId && activeProjectId && String(projectId) !== String(activeProjectId)) return false;
   const chosen = normalizeColorToHex(color, '#4C78A8').toUpperCase();
   App._isConfirmingAltColor = true;
   try {
@@ -1920,7 +1926,7 @@ function renderBucketTooltipHTML(bucket) {
     var g = groups.get(cid);
     if (!g) {
       var colRec = getCountryColorOverride(panelIdx, cid);
-      var col = (colRec && colRec.color) ? colRec.color : '#999';
+      var col = getExplicitCountryColor(panelIdx, cid) || (colRec && colRec.color) || '#999';
       g = { cid: cid, items: [], msuCount: 0, color: col };
       groups.set(cid, g);
     }
@@ -5704,10 +5710,15 @@ function updateHexStyles() {
       // —— 覆盖色（国家） —— //
       const countryOv = thisCid ? getCountryColorOverride(panelIdx, thisCid) : null;
       const confirmedCountryAlphaMap = countryOv?.alphaByKey || null;
-      let confirmedCountryColor =
-        (countryOv?.color && confirmedCountryAlphaMap?.has?.(key))
-          ? countryOv.color
-          : null;
+      const sourceWideCountryColor = thisCid
+        ? App.globalCountryColors?.get?.(thisCid)
+        : null;
+      let confirmedCountryColor = null;
+      if (sourceWideCountryColor) {
+        confirmedCountryColor = sourceWideCountryColor;
+      } else if (countryOv?.color && confirmedCountryAlphaMap?.has?.(key)) {
+        confirmedCountryColor = countryOv.color;
+      }
       
       // —— 预览（国家） —— //
       let previewColor = null;
@@ -7648,8 +7659,11 @@ function _deleteSubspaceByIndex(idx) {
         return _buildMiniSnapshot();
       },
 
-      setSourceColor(countryId, color) {
-        return applySourceColorFromGallery({ countryId, color });
+      setSourceColor(countryOrSource, color) {
+        const source = (countryOrSource && typeof countryOrSource === 'object')
+          ? countryOrSource
+          : { countryId: countryOrSource };
+        return applySourceColorFromGallery({ ...source, color });
       },
 
       // 可选

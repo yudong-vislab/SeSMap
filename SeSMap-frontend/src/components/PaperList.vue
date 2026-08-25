@@ -193,27 +193,32 @@ watch(
 // 收集所有分组里被选中项的 country_id，发给上层（gallery → subspace 联动）
 function emitSelectedCountries() {
   const cids = new Set()
+  const sources = new Map()
+  const addSelectedSource = (it) => {
+    const countryId = countryIdOfItem(it)
+    if (countryId == null || countryId === '') return
+    const projectId = projectIdOfItem(it)
+    cids.add(String(countryId))
+    const key = `${projectId || ''}|${countryId}`
+    sources.set(key, { projectId: projectId || null, countryId: String(countryId) })
+  }
   // 分组视图：selectedByGroup 存的是 it.globalIndex（非局部下标）
   const groups = (groupsLocal.value && groupsLocal.value.length) ? groupsLocal.value : (props.groups || [])
   groups.forEach((g, gi) => {
     const sel = selectedByGroup.value[gi] || []
     ;(g.items || []).forEach((it) => {
-      if (sel.includes(it.globalIndex)) {
-        const c = countryIdOfItem(it)
-        if (c != null && c !== '') cids.add(String(c))
-      }
+      if (sel.includes(it.globalIndex)) addSelectedSource(it)
     })
   })
   // 非分组视图：selected 存的也是 globalIndex
   if (!groups.length && Array.isArray(selected.value) && selected.value.length) {
     ;(displayItems.value || []).forEach((it) => {
-      if (selected.value.includes(it.globalIndex)) {
-        const c = countryIdOfItem(it)
-        if (c != null && c !== '') cids.add(String(c))
-      }
+      if (selected.value.includes(it.globalIndex)) addSelectedSource(it)
     })
   }
-  emit('update:selectedCountries', [...cids])
+  // Keep the country-id array for existing listeners, and include the full
+  // source identity so a c3 card from another case cannot filter this case.
+  emit('update:selectedCountries', [...cids], [...sources.values()])
 }
 function toggleSelectInGroup(groupIdx, gi) {
   if (!selectedByGroup.value[groupIdx]) selectedByGroup.value[groupIdx] = []
@@ -339,14 +344,15 @@ function randomGalleryColor() {
 function applyGalleryColor() {
   const item = galleryColorMenu.value.item
   const cid = normalizedCountryIdForItem(item)
+  const projectId = projectIdOfItem(item)
   const color = normalizeHexColor(galleryColorMenu.value.hex, galleryColorMenu.value.color)
   if (cid == null || cid === '') return closeGalleryColorMenu()
 
   const ctrl = window?.SemanticMapCtrl || window?.SemanticMap || null
-  const applied = ctrl?.setSourceColor?.(cid, color)
+  const applied = ctrl?.setSourceColor?.({ countryId: cid, projectId }, color)
   if (!applied) {
     window?.dispatchEvent?.(new CustomEvent('semanticmap:sourcecolorrequest', {
-      detail: { countryId: cid, color }
+      detail: { countryId: cid, projectId, color }
     }))
   }
   closeGalleryColorMenu()

@@ -76,3 +76,16 @@ python3 app.py        # Flask, http://127.0.0.1:5000
 ```
 
 Main APIs: `GET /api/semantic-map` · `POST /api/subspaces` · `POST /api/query` · `GET /api/gallery`.
+
+## 5. Verify paper mappings
+
+Before shipping a rebuilt case, verify that every gallery item, HSU
+`country_id`, and MSU `paper_id` identifies the same paper:
+
+```bash
+python3 scripts/audit_source_mappings.py        # all cases
+python3 scripts/audit_source_mappings.py case2  # one case
+```
+
+The command fails on missing gallery items, duplicate country mappings, orphan
+MSU references, or any cross-paper HSU.

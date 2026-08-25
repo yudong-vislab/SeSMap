@@ -1,0 +1,32 @@
+[
+  {
+    "paper_id": 0,
+    "title": "Compass Towards Better Causal Analysis of Urban Time Series",
+    "semanticCountryId": "c0",
+    "sourceId": "c0"
+  },
+  {
+    "paper_id": 1,
+    "title": "Improving WRF-Chem PM2.5 predictions by combining data assimilation and deep-learning-based bias correction",
+    "semanticCountryId": "c1",
+    "sourceId": "c1"
+  },
+  {
+    "paper_id": 2,
+    "title": "Threefold reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols",
+    "semanticCountryId": "c2",
+    "sourceId": "c2"
+  },
+  {
+    "paper_id": 4,
+    "title": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
+    "semanticCountryId": "c4",
+    "sourceId": "c4"
+  },
+  {
+    "paper_id": 3,
+    "title": "Visualizing Large-Scale Spatial Time Series with GeoChron",
+    "semanticCountryId": "c3",
+    "sourceId": "c3"
+  }
+]

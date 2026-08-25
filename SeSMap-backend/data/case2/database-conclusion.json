@@ -1417,13 +1417,13 @@
     "rank": 3,
     "msuid": 1488,
     "para_id": 228,
-    "paper_id": 4,
+    "paper_id": 3,
     "2d_coord": [
       0.6936034824936184,
       -1.3235707338396399
     ],
     "MSU_id": 1488,
-    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
+    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
     "paragraph_info": "We propose GeoChron (chronicle of geo- space), an interactive visualization for large- scale ST series. For the first challenge, GeoChron includes a carefully- designed data mining framework. The framework slices the time span and captures reliable correlation relations between ST series in each time slice. Afterward, it employs a network formulation to fuse the correlation relations above and the spatial proximity in a semantic- preserving way and detect communities as evolution patterns. Consequently, the Storyline layout algorithm can be applied by considering each ST series as an entity and considering an evolution pattern as a session. For the second challenge, GeoChron supports a novel two- level visualization mechanism to present the spatiotemporal information of large- scale ST series. At the first level, we revise the Storyline with new interactions and visual encodings, and link it with a geographic map, to present evolution patterns from a high level of perspective. At the second level, we employ an EvoLens, a lens placed on the Storyline, to display more details regarding the temporal trends of evolution patterns in a narrative- preserving manner. The map is coordinated with the EvoLens to provide the detailed spatial context of evolution patterns. GeoChron is comprehensively evaluated by a series of studies and analyses. In sum, our contributions are as follows:",
     "idx": 1567
   },
@@ -1434,13 +1434,13 @@
     "rank": 4,
     "msuid": 1496,
     "para_id": 229,
-    "paper_id": 4,
+    "paper_id": 3,
     "2d_coord": [
       0.46325724448627803,
       -1.3338043459203666
     ],
     "MSU_id": 1496,
-    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
+    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
     "paragraph_info": "We propose a technique called GeoChron by leveraging the evolution pattern notion to meaningfully organize large- scale ST series into spatiotemporal partitions and visualize large- scale ST series in a pattern- aware and narrative- preserving way. We develop a data mining framework to extract evolution patterns (i.e., sessions) from large- scale ST series. We design a two- level visualization mechanism based on the classic Storyline representation to support effective visual analysis of large- scale ST series in a spatiotemporal context. We demonstrate the successful application of GeoChron through two real- world cases, which expands Storyline's impact to the field of big spatiotemporal data analysis.",
     "idx": 1568
   },
@@ -1451,13 +1451,13 @@
     "rank": 3,
     "msuid": 1536,
     "para_id": 236,
-    "paper_id": 4,
+    "paper_id": 3,
     "2d_coord": [
       0.5749951300674514,
       -0.607493477814273
     ],
     "MSU_id": 1536,
-    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
+    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
     "paragraph_info": "If large- scale ST series are depicted directly, analysts may find it hard to gain insights into data due to the sheer number of ST series to be investigated. By means of summarization or pattern extraction of large- scale ST series, analysts may not easily follow the temporal trends and dynamics of ST series between summaries or patterns. We define the evolution pattern in ST series and develop a framework to detect the patterns. Visualizing these patterns over time can retain the temporal trends of ST series. We aim to propose an evolution pattern- aware and narrative- preserving visualization for large- scale ST series.",
     "idx": 1569
   },
@@ -1468,13 +1468,13 @@
     "rank": 3,
     "msuid": 1588,
     "para_id": 246,
-    "paper_id": 4,
+    "paper_id": 3,
     "2d_coord": [
       -0.2129459569386484,
       -0.8875582056036909
     ],
     "MSU_id": 1588,
-    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
+    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
     "paragraph_info": "According to our observations, each ST series is not isolated and is oftentimes correlated with others nearby due to the influence of certain events, exhibiting the evolution patterns defined above. Evolution patterns serve as an effective and meaningful entry to analyze multiple ST series at once. Furthermore, analysts can recover the trends of ST series by examining the patterns in two adjacent time periods if the patterns are placed over time. In this way, the narrative of temporal trends and dynamics is preserved between adjacent evolution patterns.",
     "idx": 1570
   },
@@ -1485,13 +1485,13 @@
     "rank": 4,
     "msuid": 1593,
     "para_id": 248,
-    "paper_id": 4,
+    "paper_id": 3,
     "2d_coord": [
       -0.09462432802262812,
       -0.9711587906644307
     ],
     "MSU_id": 1593,
-    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
+    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
     "paragraph_info": "Finally, evolution patterns may imply causation since they are built on correlation. Visualizing these patterns can aid in further analysis.",
     "idx": 1571
   },
@@ -1502,13 +1502,13 @@
     "rank": 3,
     "msuid": 1689,
     "para_id": 270,
-    "paper_id": 4,
+    "paper_id": 3,
     "2d_coord": [
       -1.261019225167088,
       -0.14944137751799877
     ],
     "MSU_id": 1689,
-    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
+    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
     "paragraph_info": "shortcomings and then improve the prototype for the next iteration. After multiple iterations, we conclude five design goals as follows.",
     "idx": 1572
   },
@@ -1519,13 +1519,13 @@
     "rank": 4,
     "msuid": 1706,
     "para_id": 272,
-    "paper_id": 4,
+    "paper_id": 3,
     "2d_coord": [
       -0.8371457247746651,
       -1.879983040022869
     ],
     "MSU_id": 1706,
-    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
+    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
     "paragraph_info": "The final design satisfies these goals to effectively visualize largescale ST series. Below, we introduce the design from two aspects, namely, layout refinement and two- level visualization.",
     "idx": 1573
   },
@@ -1536,13 +1536,13 @@
     "rank": 3,
     "msuid": 1793,
     "para_id": 289,
-    "paper_id": 4,
+    "paper_id": 3,
     "2d_coord": [
       -1.6099542307654837,
       -1.4879007354797615
     ],
     "MSU_id": 1793,
-    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
+    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
     "paragraph_info": "The coloring process is difficult to automate, nor should it be automated. There are innumerable coloring results with different visual patterns. We leave the process of visual pattern discovery to users because users know what their concerns are better than the machine.",
     "idx": 1574
   },
@@ -1553,13 +1553,13 @@
     "rank": 3,
     "msuid": 1806,
     "para_id": 291,
-    "paper_id": 4,
+    "paper_id": 3,
     "2d_coord": [
       -3.272951732699603,
       0.671340172973197
     ],
     "MSU_id": 1806,
-    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
+    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
     "paragraph_info": "Showing detailed temporal trends (G3). The EvoLens (e.g., Fig. 6C) can be viewed as a len that enlarges the brushed sessions (e.g., Fig. 6A). Each session (e.g., Fig. 6A) is replaced with a line chart (e.g., Fig. 6C). If the entities belong to the same session, the corresponding time series are displayed as lines in the same line chart. Each line has the same color (without shades) as the curve in Storyline. The y- axis of all line charts represents the value range of all records. In this way, the recorded values in ST series are encoded by the height rather than the gradient shade and thus can be perceived more accurately. The line chart is the most common temporal visualization in people's daily life and most people are very familiar with it.",
     "idx": 1575
   },
@@ -1570,13 +1570,13 @@
     "rank": 5,
     "msuid": 1819,
     "para_id": 292,
-    "paper_id": 4,
+    "paper_id": 3,
     "2d_coord": [
       0.7771514746130176,
       -0.1738677467702499
     ],
     "MSU_id": 1819,
-    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
+    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
     "paragraph_info": "Evolution patterns consider the correlated trends between time series. However, correlated ST series are sometimes not necessarily similar by values (e.g., Fig. 6E) but should have similar trends. To reveal their correlative trends, we design a trend motif (Fig. 6F). We denote the subpart of an ST series in a line chart as a sub- ST series. For a line chart, we respectively normalize each sub- ST series there according to its max and min values. For each time stamp in the line chart, we have a set of values, each of which is from a normalized sub- ST series. Afterward, we obtain the lower quartile  $q_{n}(0.25)$ , median, and upper quartile  $q_{n}(0.75)$  for these values. Finally, the lower and upper quartiles in all time stamps are visualized with an area. The medians in all time stamps form a median line. The line is superimposed with the area, constituting a trend motif. Via the trend motif, the correlative trends of multiple ST series can be revealed in circumstances where the ST series are dissimilar in values from each other. For example, the trend motif of Fig. 6F clearly shows an upward trend of the ST series in Fig. 6E.",
     "idx": 1576
   },
@@ -1587,13 +1587,13 @@
     "rank": 4,
     "msuid": 1838,
     "para_id": 295,
-    "paper_id": 4,
+    "paper_id": 3,
     "2d_coord": [
       0.039850789067359754,
       -1.3939512661121038
     ],
     "MSU_id": 1838,
-    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
+    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
     "paragraph_info": "Investigating evolution patterns in space and time. EvoLens is coordinated with the map (G4). When users hover over a time slice (Day 3 in Fig. 6C), the map displays the geographic distribution of each session in this time slice (Fig. 6B). Specifically, we generate a convex hull on the map for each session to cover the dots the session comprises. The number of sessions in this view is less than in the Storyline so that we can overlay visual elements on the map. When users hover over a line chart, the borders of both the line chart and the hull become thicker. Via the above interactions, users can interactively investigate how ST time series evolve correlatively from a spatiotemporal perspective.",
     "idx": 1577
   },
@@ -1604,13 +1604,13 @@
     "rank": 4,
     "msuid": 1918,
     "para_id": 307,
-    "paper_id": 4,
+    "paper_id": 3,
     "2d_coord": [
       -0.2417380650287105,
       0.5357793786292305
     ],
     "MSU_id": 1918,
-    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
+    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
     "paragraph_info": "First, the purple and green ST series were distributed in the center and geographically close (Fig. 1D, D2, and D3). Their readings had correlatively increased and reached a high level of air pollution within the first three days (Fig. 1E and F). Afterward (Day 4), the purple and green ST series became uncorrelated as the purple ST ones continuously increased while the green ones fluctuated. They separated into left and right regions (Fig. 1D4). Second, the black ST series were less correlated with others and the readings did not rise very high (Fig. 1E1). It might be because of the sea breeze blowing from three sides blew away air pollution quickly. Finally, the red ST series experienced a decrease on the third day, followed by an increase during the final three days, whereas the other ST series remained on a downward trend (Fig. 1E and F). A hypothesis suggests that during the last three days, an additional pollution source may have polluted the BTH region. Testing the hypotheses requires additional data and in- depth analysis [10, 13].",
     "idx": 1578
   },
@@ -1621,13 +1621,13 @@
     "rank": 4,
     "msuid": 1937,
     "para_id": 310,
-    "paper_id": 4,
+    "paper_id": 3,
     "2d_coord": [
       3.169368974366834,
       0.6457887445546318
     ],
     "MSU_id": 1937,
-    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
+    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
     "paragraph_info": "At first, half of the orange ST series were correlated with the purple ones (Day 1 in Fig. 6C). Afterward, the orange ST series separated into another session because they had a subtle drop during the period of Fig. 6D1. As a result, the orange ST series reached a high level of air pollution one day later than the purple one. In the last three days (Days 3, 4, and 5 in Fig. 6C), the orange and purple ST series had slightly different trends and both exhibited subtle declines around 4 pm each day, indicated by the red dashed line in Fig. 6D. The above observations implied that there might be propagation processes of air pollution from north to south in the first two/three days. Afterwards, the air in both regions was filled with air pollutants. The fluctuation/decline trends in the orange and purple ST series were different since the industrial structure and pollution purification capabilities of the two regions were different. We consulted historical weather data, and at that time Yangtze River Delta did receive strong cold air from the north, which caused blizzards and brought massive air pollutants.",
     "idx": 1579
   },
@@ -1638,13 +1638,13 @@
     "rank": 4,
     "msuid": 1939,
     "para_id": 310,
-    "paper_id": 4,
+    "paper_id": 3,
     "2d_coord": [
       1.2637559829753744,
       0.28922433855124025
     ],
     "MSU_id": 1939,
-    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
+    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
     "paragraph_info": "At first, half of the orange ST series were correlated with the purple ones (Day 1 in Fig. 6C). Afterward, the orange ST series separated into another session because they had a subtle drop during the period of Fig. 6D1. As a result, the orange ST series reached a high level of air pollution one day later than the purple one. In the last three days (Days 3, 4, and 5 in Fig. 6C), the orange and purple ST series had slightly different trends and both exhibited subtle declines around 4 pm each day, indicated by the red dashed line in Fig. 6D. The above observations implied that there might be propagation processes of air pollution from north to south in the first two/three days. Afterwards, the air in both regions was filled with air pollutants. The fluctuation/decline trends in the orange and purple ST series were different since the industrial structure and pollution purification capabilities of the two regions were different. We consulted historical weather data, and at that time Yangtze River Delta did receive strong cold air from the north, which caused blizzards and brought massive air pollutants.",
     "idx": 1580
   },
@@ -1655,13 +1655,13 @@
     "rank": 4,
     "msuid": 2004,
     "para_id": 321,
-    "paper_id": 4,
+    "paper_id": 3,
     "2d_coord": [
       0.4439653436398525,
       -2.749115653666579
     ],
     "MSU_id": 2004,
-    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
+    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
     "paragraph_info": "Results. All participants quickly and correctly located the periods in Fig. 5G and H for task 1 and the period in Fig. 6A for task 2. For task 3, all participants made descriptions similar to the case presented in Sec. 8.1.1. In particular, they all noticed 1) a small decline in the orange ST series on the first day (Fig. 6D1), 2) a rise in the orange ST series a day after the rise in the purple ST series, and 3) the medium/high level all ST series reached on the third day (Day 3 in Fig. 6C). It can be seen that all participants, even P6, did understand GeoChron's visualizations.",
     "idx": 1581
   },
@@ -1672,13 +1672,13 @@
     "rank": 4,
     "msuid": 2042,
     "para_id": 326,
-    "paper_id": 4,
+    "paper_id": 3,
     "2d_coord": [
       -3.6926853837876172,
       -0.3190781347237514
     ],
     "MSU_id": 2042,
-    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
+    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
     "paragraph_info": "We test the curve hiding and sliding windows via ablation studies following the first case. First, we set  $th_w = +Infinity$  to disable the curve hiding. Fig. 9A shows a snapshot of the result. The nearly vertical curves bounce up and down on the screen, resulting in visual distractions. Moreover, some aligned sessions are meant to be visually continuous, but this continuity is broken by these curves (e.g., Fig. 9B). Smaller the  $th_w$ , the less clutter. Second, we directly use the correlation coefficients in time slices rather than sliding windows and generate the layout in Fig. 9C with the same parameters in the first case ( $th_s = 7$  and  $th_c = 3$ ). We remove the gradient shade and focus on the layout. Compared with the time window- based results in Fig. 5D, the correlation relationship between ST series is more dynamic. In particular, the dashed ellipses in Fig. 9D and E highlight the unexpected deviation of curves. Entities part suddenly and come back together again, which may be due to the slightly offset time slices, subtle pollution events, or errors. Such deviations lead to visual clusters and prevent users from locating prominent visual patterns. It can be concluded that the sliding window does improve the readability of representations.",
     "idx": 1582
   },
@@ -1689,13 +1689,13 @@
     "rank": 3,
     "msuid": 2050,
     "para_id": 327,
-    "paper_id": 4,
+    "paper_id": 3,
     "2d_coord": [
       -3.6874232357948884,
       0.6364931676768362
     ],
     "MSU_id": 2050,
-    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
+    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
     "paragraph_info": "Afterward, we study how loose alignment and session filtering affect the layout of GeoChron via parameter analysis on  $th_s$  and  $th_c$ . We obtain different layouts generated under different combinations of  $th_s$  and  $th_c$ . Then, we use the average height of all time slices to quantify each layout's height (Fig. 10A). The layout is high when these two parameters are small (e.g., Fig. 10F). Users may have difficulty browsing the visualization. Increasing the two parameters can compact the layout. They work by different principles. On the one hand, in creasing  $th_c$  results in the layout with looser alignment (e.g., Fig. 10G). Users can still analyze those sessions with small sizes. On the other hand, increasing  $th_s$  results in the layout of Fig. 5A or D, where fewer sessions are displayed (Fig. 10B).",
     "idx": 1583
   },
@@ -1706,13 +1706,13 @@
     "rank": 3,
     "msuid": 2080,
     "para_id": 333,
-    "paper_id": 4,
+    "paper_id": 3,
     "2d_coord": [
       -1.6074216905893501,
       -1.6278151678549257
     ],
     "MSU_id": 2080,
-    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
+    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
     "paragraph_info": "Lessons. We have two lessons. First, interactive layout refining is useful. There are many possibilities for the visual layout of large- scale data. An ideal layout for the proposed visualization is hard to determine automatically. Users may have personalized analysis interests that are hard to quantify for automated optimization. In GeoChron, users are able to interactively refine the layout according to their needs, making a trade- off between information completeness and readability. In this way, the smoothness of layout adjustment needs to be guaranteed.",
     "idx": 1584
   },
@@ -1723,13 +1723,13 @@
     "rank": 3,
     "msuid": 2085,
     "para_id": 333,
-    "paper_id": 4,
+    "paper_id": 3,
     "2d_coord": [
       -1.8364894275123769,
       -1.612212388221694
     ],
     "MSU_id": 2085,
-    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
+    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
     "paragraph_info": "Lessons. We have two lessons. First, interactive layout refining is useful. There are many possibilities for the visual layout of large- scale data. An ideal layout for the proposed visualization is hard to determine automatically. Users may have personalized analysis interests that are hard to quantify for automated optimization. In GeoChron, users are able to interactively refine the layout according to their needs, making a trade- off between information completeness and readability. In this way, the smoothness of layout adjustment needs to be guaranteed.",
     "idx": 1585
   },
@@ -1740,13 +1740,13 @@
     "rank": 4,
     "msuid": 2090,
     "para_id": 334,
-    "paper_id": 4,
+    "paper_id": 3,
     "2d_coord": [
       -1.2738264118351943,
       -0.45605138864967354
     ],
     "MSU_id": 2090,
-    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
+    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
     "paragraph_info": "Second, multilevel visualization is suitable for large- scale data. GeoChron adopts the two- level visualization in a compactly laid- out Storyline such that the Storyline becomes applicable to large- scale ST series. We suggest that the multilevel strategy [12, 18, 21, 34] could be the first choice to improve the scalability of big data analysis.",
     "idx": 1586
   },
@@ -1757,13 +1757,13 @@
     "rank": 4,
     "msuid": 2100,
     "para_id": 336,
-    "paper_id": 4,
+    "paper_id": 3,
     "2d_coord": [
       0.9033992844332517,
       -1.1579679618376397
     ],
     "MSU_id": 2100,
-    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
+    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
     "paragraph_info": "Generalizability. GeoChron can be applied to various kinds of data in addition to geo- spatial time series. First, visualizing cross- domain geo- spatial time series can reveal in- depth knowledge. For example, air quality is oftentimes correlated to temperature or traffic conditions [61]. To accommodate potential heterogeneity, the correlation modeling method should be replaced with one suitable for heterogeneous data.",
     "idx": 1587
   },
@@ -1774,13 +1774,13 @@
     "rank": 4,
     "msuid": 2101,
     "para_id": 336,
-    "paper_id": 4,
+    "paper_id": 3,
     "2d_coord": [
       1.0726697188085348,
       -1.1866525110047523
     ],
     "MSU_id": 2101,
-    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
+    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
     "paragraph_info": "Generalizability. GeoChron can be applied to various kinds of data in addition to geo- spatial time series. First, visualizing cross- domain geo- spatial time series can reveal in- depth knowledge. For example, air quality is oftentimes correlated to temperature or traffic conditions [61]. To accommodate potential heterogeneity, the correlation modeling method should be replaced with one suitable for heterogeneous data.",
     "idx": 1588
   },
@@ -1791,13 +1791,13 @@
     "rank": 3,
     "msuid": 2111,
     "para_id": 338,
-    "paper_id": 4,
+    "paper_id": 3,
     "2d_coord": [
       -1.1823020193316647,
       -1.4104879461541362
     ],
     "MSU_id": 2111,
-    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
+    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
     "paragraph_info": "Limitations and Future Work. Our study has two limitations. First, GeoChron may take up a lot of horizontal space if there are too many time slices, requiring the user to scroll a lot horizontally. Although this issue can be potentially solved by increasing the size of slices, it may reduce the granularity and result in information loss. Besides, GeoChron may take up a lot of vertical space when the number of ST series increases. Although we allow users to refine and compress the layout, small but important patterns may be hidden in this way. In the future, we plan to study level- of- detail rendering to support larger scale data [8], for example, by abstracting the representation further [73].",
     "idx": 1589
   },
@@ -1808,13 +1808,13 @@
     "rank": 3,
     "msuid": 2112,
     "para_id": 338,
-    "paper_id": 4,
+    "paper_id": 3,
     "2d_coord": [
       -1.187091845114191,
       -1.4105797731817797
     ],
     "MSU_id": 2112,
-    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
+    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
     "paragraph_info": "Limitations and Future Work. Our study has two limitations. First, GeoChron may take up a lot of horizontal space if there are too many time slices, requiring the user to scroll a lot horizontally. Although this issue can be potentially solved by increasing the size of slices, it may reduce the granularity and result in information loss. Besides, GeoChron may take up a lot of vertical space when the number of ST series increases. Although we allow users to refine and compress the layout, small but important patterns may be hidden in this way. In the future, we plan to study level- of- detail rendering to support larger scale data [8], for example, by abstracting the representation further [73].",
     "idx": 1590
   },
@@ -1825,13 +1825,13 @@
     "rank": 3,
     "msuid": 2116,
     "para_id": 339,
-    "paper_id": 4,
+    "paper_id": 3,
     "2d_coord": [
       -1.2882375736372718,
       -1.5163708044972004
     ],
     "MSU_id": 2116,
-    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
+    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
     "paragraph_info": "Second, one ST series can be in multiple patterns. To reflect the situation, the curve should be split into multiple sessions. Yet, the splitting curve may exacerbate visual clutter. Addressing such an issue needs further studies of the layout algorithm and visualization.",
     "idx": 1591
   },
@@ -1842,13 +1842,13 @@
     "rank": 5,
     "msuid": 2121,
     "para_id": 341,
-    "paper_id": 4,
+    "paper_id": 3,
     "2d_coord": [
       0.4491081536878936,
       -1.2332665586757445
     ],
     "MSU_id": 2121,
-    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
+    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
     "paragraph_info": "Conclusion. This paper presents GeoChron, an effective visualization for large- scale ST series. We formulate the problem of visualizing large- scale ST series as an evolution pattern visualization problem that Storyline techniques can solve well. To apply Storyline techniques, GeoChron includes a mining framework for extracting evolution patterns from ST series and a two- level visualization mechanism for improved visual scalability. As a result, GeoChron enables pattern- aware and narrative- preserving visualization of large- scale ST series.",
     "idx": 1592
   },
@@ -1859,13 +1859,13 @@
     "rank": 5,
     "msuid": 2126,
     "para_id": 341,
-    "paper_id": 4,
+    "paper_id": 3,
     "2d_coord": [
       0.4177142726485502,
       -1.2203419588061992
     ],
     "MSU_id": 2126,
-    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
+    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
     "paragraph_info": "Conclusion. This paper presents GeoChron, an effective visualization for large- scale ST series. We formulate the problem of visualizing large- scale ST series as an evolution pattern visualization problem that Storyline techniques can solve well. To apply Storyline techniques, GeoChron includes a mining framework for extracting evolution patterns from ST series and a two- level visualization mechanism for improved visual scalability. As a result, GeoChron enables pattern- aware and narrative- preserving visualization of large- scale ST series.",
     "idx": 1593
   },
@@ -1876,13 +1876,13 @@
     "rank": 2,
     "msuid": 2162,
     "para_id": 345,
-    "paper_id": 3,
+    "paper_id": 4,
     "2d_coord": [
       -0.5877096974184587,
       -2.2417952053045167
     ],
     "MSU_id": 2162,
-    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
+    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
     "paragraph_info": "The effective composition of spatial and temporal visualizations has long been the most challenging problem in the visualization of spatiotemporal data beyond ST series [4], [5]. Linked views require users to pay context- switching costs to browse the spatial and temporal visualizations separately. In contrast, an integrated view tightly organizes the spatial and temporal visualizations to reduce such costs. The spacetime cube (STC) [6] is a kind of integrated view in a three- dimensional space, in which the space naturally occupies two dimensions (i.e., x- y plane), and the time constitutes the third dimension (i.e., z- axis). The position of the visual graphics can be directly related to both space and time dimensions. It is easy for users to accept and learn, and thus, users can perceive time and space simultaneously [7]. Moreover, in the STC, the evolution of spatiotemporal phenomena can be effectively conveyed through temporal narratives, as geographic- related information is visualized along a continuous timeline [8].",
     "idx": 1594
   },
@@ -1893,13 +1893,13 @@
     "rank": 3,
     "msuid": 2163,
     "para_id": 345,
-    "paper_id": 3,
+    "paper_id": 4,
     "2d_coord": [
       -0.6022330576545647,
       -2.2616925808901684
     ],
     "MSU_id": 2163,
-    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
+    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
     "paragraph_info": "The effective composition of spatial and temporal visualizations has long been the most challenging problem in the visualization of spatiotemporal data beyond ST series [4], [5]. Linked views require users to pay context- switching costs to browse the spatial and temporal visualizations separately. In contrast, an integrated view tightly organizes the spatial and temporal visualizations to reduce such costs. The spacetime cube (STC) [6] is a kind of integrated view in a three- dimensional space, in which the space naturally occupies two dimensions (i.e., x- y plane), and the time constitutes the third dimension (i.e., z- axis). The position of the visual graphics can be directly related to both space and time dimensions. It is easy for users to accept and learn, and thus, users can perceive time and space simultaneously [7]. Moreover, in the STC, the evolution of spatiotemporal phenomena can be effectively conveyed through temporal narratives, as geographic- related information is visualized along a continuous timeline [8].",
     "idx": 1595
   },
@@ -1910,13 +1910,13 @@
     "rank": 4,
     "msuid": 2164,
     "para_id": 345,
-    "paper_id": 3,
+    "paper_id": 4,
     "2d_coord": [
       -0.5029107668219421,
       -2.3292442762897627
     ],
     "MSU_id": 2164,
-    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
+    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
     "paragraph_info": "The effective composition of spatial and temporal visualizations has long been the most challenging problem in the visualization of spatiotemporal data beyond ST series [4], [5]. Linked views require users to pay context- switching costs to browse the spatial and temporal visualizations separately. In contrast, an integrated view tightly organizes the spatial and temporal visualizations to reduce such costs. The spacetime cube (STC) [6] is a kind of integrated view in a three- dimensional space, in which the space naturally occupies two dimensions (i.e., x- y plane), and the time constitutes the third dimension (i.e., z- axis). The position of the visual graphics can be directly related to both space and time dimensions. It is easy for users to accept and learn, and thus, users can perceive time and space simultaneously [7]. Moreover, in the STC, the evolution of spatiotemporal phenomena can be effectively conveyed through temporal narratives, as geographic- related information is visualized along a continuous timeline [8].",
     "idx": 1596
   },
@@ -1927,13 +1927,13 @@
     "rank": 4,
     "msuid": 2327,
     "para_id": 376,
-    "paper_id": 3,
+    "paper_id": 4,
     "2d_coord": [
       -0.9617126108723911,
       -2.225242678044948
     ],
     "MSU_id": 2327,
-    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
+    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
     "paragraph_info": "We realize that many spatiotemporal phenomena are essentially continuous in both the space and time domains, such as meteorological phenomena like rainfall, humidity, and temperature, and air pollution. Due to the limited number of sensors and their limited monitoring capabilities, the recorded ST series of these phenomena exhibit discreteness in the time and space domains. Targeting such a kind of ST series, we propose VolumeSTCube towards better visualization of large- scale ST series. It first transforms the discrete ST series data into continuous space- time volumetric data following the strategy of the space- time cube. Afterward, the volume- based visualization is designed and then equipped with a set of flexible interactions. The combination of the space- time cube and 3D volume visualization effectively presents large- scale ST series with less context switching cost and visual occlusion.",
     "idx": 1597
   },
@@ -1944,13 +1944,13 @@
     "rank": 3,
     "msuid": 2445,
     "para_id": 400,
-    "paper_id": 3,
+    "paper_id": 4,
     "2d_coord": [
       0.31654137683474065,
       -2.2934404189156234
     ],
     "MSU_id": 2445,
-    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
+    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
     "paragraph_info": "action hides any voxels below the selected position. Next, the user activates a second x- y plane and moves it to the endpoint of the time range, filtering out any voxels above this position. This dual- plane approach slices the volume along the desired time interval, as illustrated in Figure 6E1, F1, and G1. While dragging each plane, the associated timestamp is displayed. It also becomes easier for the user to relate the visualization to the spatial context as the map is closer to the visualization.",
     "idx": 1598
   },
@@ -1961,13 +1961,13 @@
     "rank": 3,
     "msuid": 2501,
     "para_id": 411,
-    "paper_id": 3,
+    "paper_id": 4,
     "2d_coord": [
       -0.9062003864209397,
       1.5386548153261073
     ],
     "MSU_id": 2501,
-    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
+    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
     "paragraph_info": "We have a real- world AQI (air quality index) ST series dataset, collected from 448 air quality monitoring stations in China (Figure 5(left)). In the whole evaluation section, the geographic space is divided into a  $350 \\times 350$  grid. The time span is from January 1 to December 20, 2018, and the temporal granularity is one hour. In sum, the dataset comprises 448 (stations)  $\\times 8,472$  (timesteps) values, ranging from 0 to 500. Each value in the dataset is the AQI at the timestamp of a monitoring station. The higher the value, the worse the air quality. In the data transformation procedure, the parameters of the Gaussian model are automatically determined by the PyKridge library. We evaluated the accuracy of the adopted Kriging interpolation on the dataset and found it to be acceptable, ensuring the reliability of subsequent analyses. For detailed results, please refer to Appendix D. The parameters of DBSCAN,  $\\epsilon$  and MinPts, are configured as 10 and 100, respectively, after multiple trials. The window size for smoothing is set as 24 hours.",
     "idx": 1599
   },
@@ -1978,13 +1978,13 @@
     "rank": 3,
     "msuid": 2534,
     "para_id": 417,
-    "paper_id": 3,
+    "paper_id": 4,
     "2d_coord": [
       2.960226101871702,
       1.214622416651724
     ],
     "MSU_id": 2534,
-    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
+    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
     "paragraph_info": "Western China. To analyze the air pollution situation in western China further, PA applied the volume highlight tool to select the spatial range of interest. Recall that VolumeSTCube allows us to easily locate the spotlight on the target region by directly pointing to the region on the map. The region was exactly the Xinjiang. PA clearly observed that starting around March, multiple significant air pollution events occurred (Figure 6C). During these events, the air quality in Xinjiang deteriorated notably, possibly due to the poor atmospheric dispersion conditions and the influence of dust storms [65].",
     "idx": 1600
   },
@@ -1995,13 +1995,13 @@
     "rank": 4,
     "msuid": 2585,
     "para_id": 426,
-    "paper_id": 3,
+    "paper_id": 4,
     "2d_coord": [
       3.1051130355050285,
       0.5380854879763873
     ],
     "MSU_id": 2585,
-    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
+    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
     "paragraph_info": "4) Spatiotemporal Analysis: VolumeSTCube can also support spatiotemporal analysis well because it enables perceiving time and space simultaneously. The evidence was that PA could quickly identify many hotspots in Figure 6B and C. Beyond hotspots, PA could also easily identify the propagation process of air pollution, which expands the impact of air pollution over geographic space and time.",
     "idx": 1601
   },
@@ -2012,13 +2012,13 @@
     "rank": 3,
     "msuid": 2622,
     "para_id": 432,
-    "paper_id": 3,
+    "paper_id": 4,
     "2d_coord": [
       1.043680200152882,
       -1.1675946037781975
     ],
     "MSU_id": 2622,
-    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
+    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
     "paragraph_info": "5) Case Study Summary: This case study demonstrates VolumeSTCube's effectiveness in supporting large-scale spatiotemporal analysis oriented to space, time, and even spatiotemporal patterns. Particularly, the visualization based on the space-time cube enables users to directly map temporal trends to geographic space, facilitating space-oriented analysis. Moreover, VolumeSTCube does not require the trial-and-error parameter adjustment process, allowing for the direct revelation of spatiotemporal patterns through spatial and temporal integrated presentations.",
     "idx": 1602
   },
@@ -2029,13 +2029,13 @@
     "rank": 4,
     "msuid": 2637,
     "para_id": 434,
-    "paper_id": 3,
+    "paper_id": 4,
     "2d_coord": [
       -0.5223956725986281,
       0.8242386407635585
     ],
     "MSU_id": 2637,
-    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
+    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
     "paragraph_info": "1) Study Setup: Subjects. Due to the challenge of recruiting a sufficient number of domain experts, we opted to involve undergraduate students. If undergraduate students, who are less familiar with advanced visualization techniques and domain-specific problems, were able to complete the tasks successfully after the introduction or tutorials, it stands to reason that domain experts, with their greater expertise and experience, would be even better equipped to utilize the system effectively.",
     "idx": 1603
   },
@@ -2046,13 +2046,13 @@
     "rank": 3,
     "msuid": 2757,
     "para_id": 452,
-    "paper_id": 3,
+    "paper_id": 4,
     "2d_coord": [
       -0.4913832814760989,
       -1.977468609752907
     ],
     "MSU_id": 2757,
-    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
+    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
     "paragraph_info": "The above questions (tasks) are either space- oriented or spatiotemporal pattern- oriented, but through observation and test, VolumeSTCube has advantages on time- oriented tasks as well compared to the baseline.For Q3,Q4,Q10,Q15,and Q16, the correctness of subjects' answers using VolumeSTCube was slightly higher compared to using the baseline method. The average response time for questions Q9 and Q10 was at least 7 seconds shorter when using VolumeSTCube than when using the baseline. For Q4 and Q9, the Wilcoxon test on the response times of using the two systems results in  $p = 0.03$  (significance) and  $p = 0.06$  (weak significance), respectively. These observed results may be attributed to a preference for continuous visual representations along a timeline (e.g., Figure 6C), which allows for clear and fine division of events, as opposed to discrete visual elements such as stacked disks.",
     "idx": 1604
   },
@@ -2063,13 +2063,13 @@
     "rank": 3,
     "msuid": 2758,
     "para_id": 452,
-    "paper_id": 3,
+    "paper_id": 4,
     "2d_coord": [
       -0.42986814312605265,
       -1.9601048352065669
     ],
     "MSU_id": 2758,
-    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
+    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
     "paragraph_info": "The above questions (tasks) are either space- oriented or spatiotemporal pattern- oriented, but through observation and test, VolumeSTCube has advantages on time- oriented tasks as well compared to the baseline.For Q3,Q4,Q10,Q15,and Q16, the correctness of subjects' answers using VolumeSTCube was slightly higher compared to using the baseline method. The average response time for questions Q9 and Q10 was at least 7 seconds shorter when using VolumeSTCube than when using the baseline. For Q4 and Q9, the Wilcoxon test on the response times of using the two systems results in  $p = 0.03$  (significance) and  $p = 0.06$  (weak significance), respectively. These observed results may be attributed to a preference for continuous visual representations along a timeline (e.g., Figure 6C), which allows for clear and fine division of events, as opposed to discrete visual elements such as stacked disks.",
     "idx": 1605
   },
@@ -2080,13 +2080,13 @@
     "rank": 3,
     "msuid": 2759,
     "para_id": 452,
-    "paper_id": 3,
+    "paper_id": 4,
     "2d_coord": [
       -0.4692515509613863,
       -1.9694470955721524
     ],
     "MSU_id": 2759,
-    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
+    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
     "paragraph_info": "The above questions (tasks) are either space- oriented or spatiotemporal pattern- oriented, but through observation and test, VolumeSTCube has advantages on time- oriented tasks as well compared to the baseline.For Q3,Q4,Q10,Q15,and Q16, the correctness of subjects' answers using VolumeSTCube was slightly higher compared to using the baseline method. The average response time for questions Q9 and Q10 was at least 7 seconds shorter when using VolumeSTCube than when using the baseline. For Q4 and Q9, the Wilcoxon test on the response times of using the two systems results in  $p = 0.03$  (significance) and  $p = 0.06$  (weak significance), respectively. These observed results may be attributed to a preference for continuous visual representations along a timeline (e.g., Figure 6C), which allows for clear and fine division of events, as opposed to discrete visual elements such as stacked disks.",
     "idx": 1606
   },
@@ -2097,13 +2097,13 @@
     "rank": 3,
     "msuid": 2769,
     "para_id": 454,
-    "paper_id": 3,
+    "paper_id": 4,
     "2d_coord": [
       -4.152961929724324,
       0.3375345269402855
     ],
     "MSU_id": 2769,
-    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
+    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
     "paragraph_info": "Visualization. All subjects quickly grasped the space- time cube and confirmed the intuitiveness of VolumeSTCube.Moreover, all subjects using VolumeSTCube for analysis experienced minimal occlusion problems and remarked that \"due to the opacity of voxels (actually the volume visualization they meant), they experienced no visual occlusion during analysis.\" Two subjects noted that the opacity of voxels could potentially hinder analyzing low pollution levels, which corresponds to VolumeSTCube's poor performance in Q15. In the future, we plan to implement a rendering parameter adjustment control to alleviate this problem. For example, the mapping of values to transparency and color can be adjusted interactively. Finally, most subjects expressed that surface rendering offered clear boundaries for voxel clusters, aiding in obtaining specific values at spatiotemporal positions and assessing propagation processes. This capability could be difficult to achieve solely with volume rendering. Interestingly, some subjects with strong spatial perception felt relying solely on volume visualization was sufficient.",
     "idx": 1607
   },
@@ -2114,13 +2114,13 @@
     "rank": 3,
     "msuid": 2779,
     "para_id": 456,
-    "paper_id": 3,
+    "paper_id": 4,
     "2d_coord": [
       -1.8550035741675581,
       -2.766186797401421
     ],
     "MSU_id": 2779,
-    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
+    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
     "paragraph_info": "This section discusses the implications, generalizability, and limitations of VolumeSTCube, and posts the future work.",
     "idx": 1608
   },
@@ -2131,13 +2131,13 @@
     "rank": 3,
     "msuid": 2780,
     "para_id": 456,
-    "paper_id": 3,
+    "paper_id": 4,
     "2d_coord": [
       -1.849159215512365,
       -2.8073266082967896
     ],
     "MSU_id": 2780,
-    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
+    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
     "paragraph_info": "This section discusses the implications, generalizability, and limitations of VolumeSTCube, and posts the future work.",
     "idx": 1609
   },
@@ -2148,13 +2148,13 @@
     "rank": 3,
     "msuid": 2782,
     "para_id": 456,
-    "paper_id": 3,
+    "paper_id": 4,
     "2d_coord": [
       -0.14090325528872563,
       0.6695381998419677
     ],
     "MSU_id": 2782,
-    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
+    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
     "paragraph_info": "This section discusses the implications, generalizability, and limitations of VolumeSTCube, and posts the future work.",
     "idx": 1610
   },
@@ -2165,13 +2165,13 @@
     "rank": 4,
     "msuid": 2791,
     "para_id": 457,
-    "paper_id": 3,
+    "paper_id": 4,
     "2d_coord": [
       -2.1916292441787215,
       -2.6967729453986897
     ],
     "MSU_id": 2791,
-    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
+    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
     "paragraph_info": "A. ImplicationsThe STC, a form of 3D visualization, has historically seen mixed reception in the visualization community, particularly due to inherent occlusion issues [66]. Nonetheless, our study shows that the STC's effectiveness can be enhanced by reducing occlusion through data transformation combined with volume and surface visualizations. Furthermore, to improve the STC's adaptability to large-scale datasets, we design interactions for users to manipulate the STC from time and space dimensions, corresponding to spatial and temporal selection interactions common in 2D views. In the case study, the expert comprehensively analyzed an quality in China, demonstrating VolumeSTCube's effectiveness. The user study employed carefully designed tasks that required participants to utilize both volume and surface visualizations, alongside interactions such as volume spotlight, slicing, and voxel cluster-based techniques, to complete the analyses. The high accuracy and efficiency observed in task completion indicate that participants mastered VolumeSTCube, further underscoring its usability, effectiveness, and broad applicability.",
     "idx": 1611
   },
@@ -2182,13 +2182,13 @@
     "rank": 4,
     "msuid": 2824,
     "para_id": 463,
-    "paper_id": 3,
+    "paper_id": 4,
     "2d_coord": [
       -2.0984255473213453,
       -2.417321157591664
     ],
     "MSU_id": 2824,
-    "paper_info": "Visualizing Large-Scale Spatial Time Series with GeoChron",
+    "paper_info": "Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series",
     "paragraph_info": "Uncertainty Visualization. Given the inherent uncertainty in the interpolation process, uncertainty visualizations are desirable for reliable analysis, helping assess whether observed patterns are uncertain and if local but important patterns are being overlooked [63]. In the future, we plan to incorporate uncertainty into VolumeSTCube, using methods such as the uncertain volume visualization technique.",
     "idx": 1612
   }

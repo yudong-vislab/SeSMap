@@ -56,10 +56,14 @@ function mergeGalleryProjectColors(projectId, snap = {}) {
     if (!cid || !color) return
     next[makeSourceKey(projectId, cid)] = color
   }
-  Object.entries(snap.colorByCountry || {}).forEach(([cid, color]) => add(cid, color))
+  // colorByCountry is the source-wide color. Do not overwrite it with an
+  // arbitrary panel's old override below: doing so made one Gallery card show
+  // the color of another panel while its hovered HSU showed a different one.
+  const sourceWideColors = snap.colorByCountry || {}
+  Object.entries(sourceWideColors).forEach(([cid, color]) => add(cid, color))
   Object.entries(snap.colorByPanelCountry || {}).forEach(([key, color]) => {
     const cid = String(key).split('|').pop()
-    add(cid, color)
+    if (!(cid in sourceWideColors)) add(cid, color)
   })
   galleryProjectColorCache.value = next
 }
@@ -327,6 +331,43 @@ function paperSourceInfoForImage(folder, img, index) {
     sourceKey: makeSourceKey(projectId, semanticCountryId)
   }
 }
+
+function enrichLocalGalleryFromManifest(folder, manifestItems) {
+  const localItems = galleryByFolder.value[folder] || []
+  if (!localItems.length || !Array.isArray(manifestItems) || !manifestItems.length) return false
+
+  // The manifest is the authoritative Gallery order as well as the
+  // paper→country mapping.  Local filenames are only thumbnail assets.
+  const localByTitle = new Map()
+  localItems.forEach((img) => {
+    const key = normalizeAssetBase(img.name)
+    if (key && !localByTitle.has(key)) localByTitle.set(key, img)
+  })
+
+  const used = new Set()
+  const enriched = []
+  manifestItems.forEach((record) => {
+    if (!record?.semanticCountryId) return
+    const key = normalizeAssetBase(String(record.title || ''))
+    const img = localByTitle.get(key)
+    if (!img) return
+    used.add(img)
+    enriched.push({
+      ...img,
+      projectId: FOLDER_PROJECT[folder] || folder,
+      semanticCountryId: record.semanticCountryId,
+      sourceId: record.sourceId ?? record.semanticCountryId,
+      paperId: record.paper_id
+    })
+  })
+  if (!enriched.length) return false
+  // Keep any non-manifest local assets visible, after the ordered papers.
+  localItems.forEach((img) => {
+    if (!used.has(img)) enriched.push(img)
+  })
+  galleryByFolder.value = { ...galleryByFolder.value, [folder]: enriched }
+  return true
+}
 function folderTitle(folder) {
   // 优先用映射；没有映射就把下划线转空格并首字母大写
   if (FOLDER_TITLES[folder]) return FOLDER_TITLES[folder]
@@ -451,7 +492,9 @@ async function ensureBackendGallery(folder) {
   // Prefer the generated manifest when present: it is the only source that
   // stays in sync after a case is rebuilt with newly added papers.  Bundled
   // images remain a fallback for cases that have no generated manifest.
-  if (backendGalleryLoaded.value[folder]) return Boolean(galleryByFolder.value[folder]?.length)
+  // Always re-read the manifest when a gallery is shown. Apart from picking up
+  // rebuilt case data, this repairs cards that were kept in memory before a
+  // corrected paper→country mapping arrived.
   const projectId = FOLDER_PROJECT[folder] || folder
   try {
     // Do not cache a fallback result.  A case can finish building while this
@@ -460,8 +503,19 @@ async function ensureBackendGallery(folder) {
     const res = await fetch(`/api/gallery?project_id=${encodeURIComponent(projectId)}`, { cache: 'no-store' })
     if (!res.ok) return Boolean(galleryByFolder.value[folder]?.length)
     const data = await res.json()
-    const items = (data.items || []).filter(it => it.thumbnail_url)
-    if (!items.length) return Boolean(galleryByFolder.value[folder]?.length)
+    const manifestItems = Array.isArray(data.items) ? data.items : []
+    const items = manifestItems.filter(it => it.thumbnail_url)
+    if (!items.length) {
+      // case2 ships its thumbnails with the frontend, but its paper identity
+      // still comes from the backend manifest.  Merge the authoritative IDs
+      // into those local image records instead of falling back to index order.
+      const matchedLocalItems = enrichLocalGalleryFromManifest(folder, manifestItems)
+      if (matchedLocalItems) {
+        backendGalleryLoaded.value = { ...backendGalleryLoaded.value, [folder]: true }
+        return true
+      }
+      return Boolean(galleryByFolder.value[folder]?.length)
+    }
     backendGalleryLoaded.value = { ...backendGalleryLoaded.value, [folder]: true }
     galleryByFolder.value = {
       ...galleryByFolder.value,
@@ -469,6 +523,7 @@ async function ensureBackendGallery(folder) {
         name: it.title || `paper ${it.paper_id}`,
         url: it.thumbnail_url,
         path: `${folder}/${it.thumbnail || it.paper_id}`,
+        projectId,
         semanticCountryId: it.semanticCountryId,
         sourceId: it.sourceId,
         pdfUrl: it.pdf_url || null,
@@ -482,13 +537,23 @@ async function ensureBackendGallery(folder) {
 }
 
 // gallery 选论文 → 只显示选中论文(country)的子空间内容，冲突区随选择重算；未选=全部
-function onGallerySelection(countryIds) {
+function onGallerySelection(countryIds, selectedSources) {
+  const activeProjectId = getActiveProjectId?.() || null
+  const hasSourceIdentity = Array.isArray(selectedSources)
+  const activeSources = hasSourceIdentity
+    ? selectedSources.filter(source => !source?.projectId || source.projectId === activeProjectId)
+    : []
+  // Full source identities are emitted by PaperList. Fall back to the old
+  // country-id-only event shape for callers outside this component.
+  const activeCountryIds = hasSourceIdentity
+    ? activeSources.map(source => source.countryId)
+    : (Array.isArray(countryIds) ? countryIds : [])
   const ctrl = window?.SemanticMapCtrl
   if (ctrl && typeof ctrl.setVisibleCountries === 'function') {
-    ctrl.setVisibleCountries(Array.isArray(countryIds) ? countryIds : [])
+    ctrl.setVisibleCountries(activeCountryIds)
   } else {
     // 控制器未就绪时排队，地图初始化后再应用
-    window.__pendingVisibleCountries = Array.isArray(countryIds) ? countryIds : []
+    window.__pendingVisibleCountries = activeCountryIds
   }
 }
 
