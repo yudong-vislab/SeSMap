@@ -1,0 +1,45 @@
+[data] N=2689  train=5214  held-out=1303  pairs=data/stages/02_msu/llm_pairs_30k.json
+
+==========================================================================
+TABLE 1  投影质量
+==========================================================================
+Method                        Trust   knnOv@12   Co-loc@12
+Encoder space (1024-D)           --         --       0.345
+/Users/yudong/.pyenv/versions/3.10.14/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+PCA                           0.740      0.043       0.038
+t-SNE (non-param.)            0.934      0.323       0.105
+UMAP                          0.896      0.260       0.094
+Ours (projection)             0.931      0.304       0.105   [298s]
+  + correspondence sup.       0.931      0.303       0.134   [297s]
+
+==========================================================================
+§4.3 诊断：高维 vs 二维
+==========================================================================
+  encoder space : 0.345
+  after project : 0.105
+
+==========================================================================
+TABLE 2a  同角色 vs 跨角色
+==========================================================================
+Pair type             n     Ours     +sup     gain
+Same-role           518    0.141    0.141       0%
+Cross-role          785    0.082    0.129      58%
+All                1303    0.105    0.134      27%
+
+==========================================================================
+TABLE 2b  子空间视图 vs 全局视图（同角色对）
+==========================================================================
+Subspace         MSUs  pairs    Trust    knnOv   global   in-sub
+Background        548     89    0.868    0.295    0.213    0.416
+Method            873    297    0.901    0.325    0.138    0.226
+Experiment         64      5    0.783    0.456    0.000    0.400
+Result            703     55    0.879    0.300    0.091    0.200
+Conclusion        329     66    0.851    0.304    0.106    0.258
+/Users/yudong/.pyenv/versions/3.10.14/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+
+==========================================================================
+样本外（无泄漏 80/20 按 MSU 划分）
+==========================================================================
+  held-out MSUs=538   Ours knnOv=0.219   UMAP.transform knnOv=0.228
