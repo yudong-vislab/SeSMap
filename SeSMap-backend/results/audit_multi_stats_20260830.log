@@ -1,0 +1,73 @@
+====================================================================
+MSU AUDIT
+====================================================================
+
+A  atmospheric / air quality  (6 papers)
+  n = 538 MSUs   raw agreement = 94.8%   Cohen's k = 0.307
+    semantic fidelity        = 95.5%
+    self-containedness       = 86.1%
+    condition preservation   = 96.8%
+    source traceability      = 95.0%
+    role accuracy            = 94.1%
+    all-criterion acceptance = 77.3%
+
+B  spatiotemporal + env.      (7 papers)
+  n = 687 MSUs   raw agreement = 95.3%   Cohen's k = 0.311
+    semantic fidelity        = 97.1%
+    self-containedness       = 83.0%
+    condition preservation   = 99.0%
+    source traceability      = 95.6%
+    role accuracy            = 96.2%
+    all-criterion acceptance = 76.7%
+
+C  genomics visualization     (12 papers)
+  n = 1067 MSUs   raw agreement = 95.0%   Cohen's k = 0.833
+    semantic fidelity        = 99.9%
+    self-containedness       = 94.8%
+    condition preservation   = 99.8%
+    source traceability      = 1.5%
+    role accuracy            = 99.1%
+    all-criterion acceptance = 1.4%
+
+POOLED (25 papers)                
+  n = 2292 MSUs   raw agreement = 95.0%   Cohen's k = 0.737
+    semantic fidelity        = 98.0%
+    self-containedness       = 89.2%
+    condition preservation   = 98.9%
+    source traceability      = 51.7%
+    role accuracy            = 97.0%
+    all-criterion acceptance = 41.8%
+
+====================================================================
+CORRESPONDENCE AUDIT
+====================================================================
+
+A  atmospheric / air quality  (6 papers)
+  n = 534 pairs   raw agreement = 85.0%   Cohen's k = 0.507
+    accepted candidate pairs   = 74.9%   (n=400)
+    uncertain pairs            = 24.7%   (n=132)
+    invalid pairs              = 0.4%   (n=2)
+    audit precision            = 0.749
+
+B  spatiotemporal + env.      (7 papers)
+  n = 258 pairs   raw agreement = 78.7%   Cohen's k = 0.331
+    accepted candidate pairs   = 70.9%   (n=183)
+    uncertain pairs            = 27.9%   (n=72)
+    invalid pairs              = 1.2%   (n=3)
+    audit precision            = 0.709
+
+C  genomics visualization     (12 papers)
+  n = 425 pairs   raw agreement = 67.8%   Cohen's k = 0.513
+    accepted candidate pairs   = 24.9%   (n=106)
+    uncertain pairs            = 46.4%   (n=197)
+    invalid pairs              = 28.7%   (n=122)
+    audit precision            = 0.249
+
+POOLED (25 papers)                
+  n = 1217 pairs   raw agreement = 77.6%   Cohen's k = 0.570
+    accepted candidate pairs   = 56.6%   (n=689)
+    uncertain pairs            = 32.9%   (n=401)
+    invalid pairs              = 10.4%   (n=127)
+    audit precision            = 0.566
+
+抽样中来自各留出集的对数: A=112, B=54, C=79

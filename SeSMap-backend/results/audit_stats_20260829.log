@@ -1,0 +1,29 @@
+======================================================
+MSU AUDIT
+======================================================
+n = 538 MSUs
+raw agreement = 95.2%
+Cohen's kappa = 0.253
+
+semantic fidelity        = 89.2%
+self-containedness       = 94.6%
+condition preservation   = 98.1%
+source traceability      = 94.6%
+role accuracy            = 94.6%
+all-criterion acceptance = 82.9%
+
+======================================================
+CORRESPONDENCE AUDIT
+======================================================
+n = 534 pairs
+raw agreement = 82.8%
+Cohen's kappa = 0.428
+
+accepted candidate pairs   = 75.5%   (n=403)
+uncertain pairs            = 23.2%   (n=124)
+invalid pairs              = 1.3%   (n=7)
+
+audit precision = 403/534 = 0.755
+  (uncertain 单独报告，不并入 accepted)
+
+抽样中来自留出集的对数 = 112

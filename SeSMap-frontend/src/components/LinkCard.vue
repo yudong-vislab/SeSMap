@@ -38,9 +38,9 @@
          type="button"
          :disabled="selectedCount === 0 || llmLoading"
          @click="summarizeSelected"
-         title="Summarize checked MSUs in this link"
-       >
-         Summarize<span v-if="selectedCount"> ({{ selectedCount }})</span>
+        title="Synthesize checked MSUs in this link"
+      >
+        Synthesize<span v-if="selectedCount"> ({{ selectedCount }})</span>
        </button>
      </div>
 
@@ -103,7 +103,7 @@
     <!-- ③ 大模型总结（展示点击按钮后的结果） -->
     <div class="subcard__llm" ref="llmRef" :style="llmPanelStyle">
       <div v-if="llmSummary" class="llm-content">
-        <span class="llm-label">Summary:</span>
+        <span class="llm-label">Evidence Synthesis:</span>
         <span class="llm-text">{{ llmSummary }}</span>
       </div>
       <div v-else-if="llmLoading" class="llm-loading">

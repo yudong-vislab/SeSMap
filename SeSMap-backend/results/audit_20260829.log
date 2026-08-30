@@ -1,0 +1,28 @@
+model=gpt-4o  MSU=538  pairs=534
+
+  [r1] MSU 10/538
+  [r1] MSU 110/538
+  [r1] MSU 210/538
+  [r1] MSU 310/538
+  [r1] MSU 410/538
+  [r1] MSU 510/538
+  [r1] pair 10/534
+  [r1] pair 110/534
+  [r1] pair 210/534
+  [r1] pair 310/534
+  [r1] pair 410/534
+  [r1] pair 510/534
+  [r2] MSU 10/538
+  [r2] MSU 110/538
+  [r2] MSU 210/538
+  [r2] MSU 310/538
+  [r2] MSU 410/538
+  [r2] MSU 510/538
+  [r2] pair 10/534
+  [r2] pair 110/534
+  [r2] pair 210/534
+  [r2] pair 310/534
+  [r2] pair 410/534
+  [r2] pair 510/534
+
+[saved] results/audit_raw.json
