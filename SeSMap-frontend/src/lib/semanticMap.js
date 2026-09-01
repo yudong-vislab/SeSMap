@@ -1947,9 +1947,12 @@ function renderBucketTooltipHTML(bucket) {
 
   var totalMSU = bucket.msuCount || 0;
   var totalCountries = groups.size;
+  var regionLabel = totalCountries === 1
+    ? '1 Exclusive Region'
+    : ('Boundary Zone with ' + totalCountries + ' Regions');
   var html = '';
   html += '<div style="margin-bottom:6px;font-weight:600;overflow-wrap:anywhere">'
-       +  ' · ' + (totalCountries === 1 ? '1 Country' : (totalCountries + ' Countries'))
+       +  ' · ' + regionLabel
        +  ' · ' + (totalMSU === 1 ? '1 MSU' : (totalMSU + ' MSUs'))
        +  '</div>';
 
