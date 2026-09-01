@@ -76,6 +76,7 @@ def main():
     ap.add_argument("--eval-k", type=int, default=12)
     ap.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
     ap.add_argument("--seed", type=int, default=0)
+    ap.add_argument("--p-cache", type=Path, default=None, help="P 矩阵缓存(存在则读，不存在则算完写入)")
     args = ap.parse_args()
     set_seed(args.seed)
     device = torch.device(args.device)
@@ -92,7 +93,18 @@ def main():
 
     P = None
     if args.lambda_tsne > 0:
-        P_np = compute_joint_P(x_np, args.perplexity)
+        P_np = None
+        if args.p_cache and args.p_cache.exists():
+            cached = np.load(args.p_cache)
+            if cached.shape == (n, n):
+                P_np = cached; print(f"[P] loaded cache {args.p_cache}")
+            else:
+                print(f"[P] 缓存维度 {cached.shape} != ({n}, {n})，忽略并重算")
+        if P_np is None:
+            P_np = compute_joint_P(x_np, args.perplexity)
+            if args.p_cache:
+                args.p_cache.parent.mkdir(parents=True, exist_ok=True)
+                np.save(args.p_cache, P_np); print(f"[P] cached -> {args.p_cache}")
         P = torch.tensor(P_np, dtype=torch.float32, device=device)
         print(f"[P] ready {P_np.shape}")
 

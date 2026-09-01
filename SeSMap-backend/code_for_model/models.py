@@ -101,13 +101,14 @@ class Bert2DMapper(nn.Module):
 def compute_joint_P(x: np.ndarray, perplexity: float = 30.0, tol: float = 1e-4, max_iter: int = 60) -> np.ndarray:
     """逐点二分搜索 sigma 使条件分布熵=log(perplexity)，再对称化。"""
     n = x.shape[0]
-    if n <= 1200:
-        D2 = np.square(np.linalg.norm(x[:, None, :] - x[None, :, :], axis=-1))
-    else:
-        D2 = np.empty((n, n), dtype=np.float32)
-        for s in range(0, n, 512):
-            e = min(n, s + 512)
-            D2[s:e] = np.square(x[s:e, None, :] - x[None, :, :]).sum(-1)
+    # ||a-b||^2 = ||a||^2 + ||b||^2 - 2 a.b  —— 用 Gram 矩阵，避免 (chunk, n, dim) 的巨型临时量
+    xf = np.ascontiguousarray(x, dtype=np.float64)
+    sq = np.einsum("ij,ij->i", xf, xf)
+    D2 = np.empty((n, n), dtype=np.float64)
+    for s in range(0, n, 1024):
+        e = min(n, s + 1024)
+        D2[s:e] = sq[s:e, None] + sq[None, :] - 2.0 * (xf[s:e] @ xf.T)
+    np.maximum(D2, 0.0, out=D2)
     np.fill_diagonal(D2, np.inf)
     target = np.log(perplexity)
     P = np.zeros((n, n), dtype=np.float64)
@@ -164,7 +165,8 @@ def standardize_layout(z: np.ndarray) -> np.ndarray:
 def evaluate_quick(x: np.ndarray, z: np.ndarray, k: int):
     """返回 (trustworthiness, knnOv@k)。"""
     from sklearn.manifold import trustworthiness
-    ix = NearestNeighbors(n_neighbors=k + 1).fit(x).kneighbors(return_distance=False)[:, 1:]
-    iz = NearestNeighbors(n_neighbors=k + 1).fit(z).kneighbors(return_distance=False)[:, 1:]
+    # 注意: kneighbors(X=None) 已自动排除自身, 不可再切 [:, 1:], 否则丢掉最近邻、变成第2..k+1近邻
+    ix = NearestNeighbors(n_neighbors=k).fit(x).kneighbors(return_distance=False)
+    iz = NearestNeighbors(n_neighbors=k).fit(z).kneighbors(return_distance=False)
     overlap = float(np.mean([len(set(a) & set(b)) / k for a, b in zip(ix, iz)]))
     return float(trustworthiness(x, z, n_neighbors=k)), overlap
