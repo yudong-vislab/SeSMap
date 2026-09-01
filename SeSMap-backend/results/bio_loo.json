@@ -1,0 +1,136 @@
+{
+  "loo": [
+    {
+      "paper": "AuraGenome_An_LLM-Powered_Framework_for_On-t",
+      "n_msu": 623,
+      "n_pairs": 296,
+      "unsup": 0.34797297297297297,
+      "sup": 0.5135135135135135,
+      "gain": 47.57281553398058
+    },
+    {
+      "paper": "CGView.js Circular Genome Visualization in t",
+      "n_msu": 131,
+      "n_pairs": 386,
+      "unsup": 0.3471502590673575,
+      "sup": 0.47668393782383417,
+      "gain": 37.31343283582089
+    },
+    {
+      "paper": "Circos an Information Aesthetic for Comparat",
+      "n_msu": 420,
+      "n_pairs": 352,
+      "unsup": 0.3522727272727273,
+      "sup": 0.48863636363636365,
+      "gain": 38.709677419354826
+    },
+    {
+      "paper": "Computer Graphics Forum - 2024 - Ståhlbom - ",
+      "n_msu": 570,
+      "n_pairs": 321,
+      "unsup": 0.35202492211838005,
+      "sup": 0.4517133956386293,
+      "gain": 28.31858407079646
+    },
+    {
+      "paper": "GenoREC_A_Recommendation_System_for_Interact",
+      "n_msu": 719,
+      "n_pairs": 273,
+      "unsup": 0.2967032967032967,
+      "sup": 0.4542124542124542,
+      "gain": 53.08641975308641
+    },
+    {
+      "paper": "GlyphCreator_Towards_Example-based_Automatic",
+      "n_msu": 863,
+      "n_pairs": 337,
+      "unsup": 0.3649851632047478,
+      "sup": 0.49851632047477745,
+      "gain": 36.585365853658544
+    },
+    {
+      "paper": "Gosling",
+      "n_msu": 830,
+      "n_pairs": 282,
+      "unsup": 0.31560283687943264,
+      "sup": 0.49645390070921985,
+      "gain": 57.30337078651684
+    },
+    {
+      "paper": "HERA Interactive Circular Comparison of Plas",
+      "n_msu": 255,
+      "n_pairs": 362,
+      "unsup": 0.36187845303867405,
+      "sup": 0.4889502762430939,
+      "gain": 35.114503816793885
+    },
+    {
+      "paper": "IntelliCircos",
+      "n_msu": 762,
+      "n_pairs": 276,
+      "unsup": 0.32608695652173914,
+      "sup": 0.4492753623188406,
+      "gain": 37.77777777777778
+    },
+    {
+      "paper": "NG-Circos Next-generation Circos for Data Vi",
+      "n_msu": 112,
+      "n_pairs": 378,
+      "unsup": 0.3386243386243386,
+      "sup": 0.47883597883597884,
+      "gain": 41.40625
+    },
+    {
+      "paper": "bioinformatics_32_11_1740",
+      "n_msu": 115,
+      "n_pairs": 377,
+      "unsup": 0.35278514588859416,
+      "sup": 0.4854111405835544,
+      "gain": 37.593984962406026
+    },
+    {
+      "paper": "interacCircos An R Package Based on JavaScri",
+      "n_msu": 15,
+      "n_pairs": 403,
+      "unsup": 0.337468982630273,
+      "sup": 0.4739454094292804,
+      "gain": 40.441176470588225
+    }
+  ],
+  "side_by_side": [
+    {
+      "corpus": "空气污染 (开发语料)",
+      "papers": 6,
+      "n_msu": 2689,
+      "n_test": 267,
+      "unsup": 0.24344569288389514,
+      "sup": 0.3408239700374532,
+      "gain": 39.99999999999999,
+      "trust": [
+        0.93014141047291,
+        0.9339733300357308
+      ],
+      "knnOv": [
+        0.3741477624891533,
+        0.373465972480476
+      ]
+    },
+    {
+      "corpus": "生信 (未见领域)",
+      "papers": 12,
+      "n_msu": 5415,
+      "n_test": 403,
+      "unsup": 0.337468982630273,
+      "sup": 0.4739454094292804,
+      "gain": 40.441176470588225,
+      "trust": [
+        0.8754665348712019,
+        0.9393831404182065
+      ],
+      "knnOv": [
+        0.25672514619883036,
+        0.3582025238534934
+      ]
+    }
+  ]
+}

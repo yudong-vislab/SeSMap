@@ -29,3 +29,13 @@ model_train/
 
 # Local ML caches / indexes that are reproducible or too large for GitHub
 data/indexes/
+
+# t-SNE P 矩阵缓存：由 compute_joint_P 秒级再生，体积大，不入库
+**/05_model/tsne_P_perp30.npy
+
+# merged13 λ 扫描档 checkpoint：仅保留最优 λ=0.3 三个种子入库，
+# 其余按 REPRODUCE 重训即可（sweep13.sh / seeds13.sh）
+data/merged13/stages/05_model/m13_lam0.0_*.pt
+data/merged13/stages/05_model/m13_lam0.05_*.pt
+data/merged13/stages/05_model/m13_lam0.1_*.pt
+data/merged13/stages/05_model/m13_lam0.5_*.pt
