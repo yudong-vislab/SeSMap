@@ -37,7 +37,7 @@ python3 code_for_data/augment_pairs_llm.py --corpus $G/02_msu/formdatabase.json 
 
 echo "########## 4. 训练通用 v11 (t-SNE + 语义监督 λ=0.1) ##########"
 python3 code_for_model/train_contrastive_v11.py --cache $G/04_embeddings/emb_corpus.npy \
-    --pairs $G/02_msu/llm_pairs.json --lambda-tsne 1 --lambda-con 0.1 --out $G/05_model/v11_general.pt
+    --pairs $G/02_msu/llm_pairs.json --lambda-tsne 1 --lambda-con 0.3 --out $G/05_model/v11_general.pt
 
 echo "########## 5. 用通用模型投影合并语料 ##########"
 python3 code_for_data/formdatabase.py --input $G/02_msu/formdatabase.json \
