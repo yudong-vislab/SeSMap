@@ -43,7 +43,7 @@ python3 code_for_data/augment_pairs_llm.py \
 echo "########## 5. Train v11 projection ##########"
 python3 code_for_model/train_contrastive_v11.py \
   --cache "$S/04_embeddings/emb_corpus.npy" --pairs "$S/02_msu/llm_pairs.json" \
-  --lambda-tsne 1 --lambda-con 0.1 --out "$S/05_model/v11_genomics.pt"
+  --lambda-tsne 1 --lambda-con 0.3 --out "$S/05_model/v11_genomics.pt"
 
 echo "########## 6. Project and normalize 2D coordinates ##########"
 python3 code_for_data/formdatabase.py --input "$S/02_msu/formdatabase.json" \

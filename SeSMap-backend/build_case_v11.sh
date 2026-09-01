@@ -44,7 +44,7 @@ python3 code_for_data/augment_pairs_llm.py --corpus $S/02_msu/formdatabase.json 
 
 echo "########## [$CASE] 3. 训练 v11 (t-SNE + 语义监督 λ=0.1) ##########"
 python3 code_for_model/train_contrastive_v11.py --cache $S/04_embeddings/emb_corpus.npy \
-    --pairs $S/02_msu/llm_pairs.json --lambda-tsne 1 --lambda-con 0.1 --out $S/05_model/v11.pt
+    --pairs $S/02_msu/llm_pairs.json --lambda-tsne 1 --lambda-con 0.3 --out $S/05_model/v11.pt
 
 echo "########## [$CASE] 4. 投影 -> 2d_coord ##########"
 python3 code_for_data/formdatabase.py --input $S/02_msu/formdatabase.json \
