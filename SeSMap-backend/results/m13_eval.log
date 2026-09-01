@@ -1,0 +1,20 @@
+merged13: N=6113  13 篇  留出对 744  k=12  随机基线≈0.0020
+
+/Users/yudong/.pyenv/versions/3.10.14/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+method                 |  trust  knnOv@12  Co-loc@12  hexAdj@32
+---------------------------------------------------------------
+Ours λ_con=0.0         |  0.941     0.284      0.165      0.312
+Ours λ_con=0.05        |  0.942     0.284      0.208      0.380
+Ours λ_con=0.1         |  0.940     0.279      0.227      0.423
+Ours λ_con=0.3         |  0.937     0.259      0.298      0.492
+Ours λ_con=0.5         |  0.931     0.236      0.289      0.499
+PCA                    |  0.716     0.020      0.030      0.052
+t-SNE                  |  0.942     0.307      0.175      0.319
+UMAP                   |  0.895     0.214      0.121      0.324
+
+最优 λ_con = 0.3   (按留出 Co-loc@12 选)
+对应监督增益: 0.165 -> 0.298  (+80%)
+配对 bootstrap (R=1000): 差值 0.133 ± 0.018  95%CI [0.099, 0.169]  差值<=0 比例 0.0000
+
+saved -> /Users/yudong/Desktop/SeSMap/SeSMap-backend/results/merged13_eval.json

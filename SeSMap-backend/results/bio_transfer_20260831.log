@@ -1,0 +1,15 @@
+  warn(
+  warn(
+生信: N=5415  评测对=403 (test)  k=12  随机基线≈0.0022
+其中跨论文对 = 390/403 (97%)
+
+method                     |  trust  knnOv  Co-loc  hexAdj
+----------------------------------------------------------
+Ours-v11 (zero-shot)       |  0.717  0.036   0.047   0.266
+Ours-v10 (zero-shot)       |  0.719  0.036   0.035   0.258
+PCA.transform              |  0.614  0.014   0.022   0.060
+UMAP.transform             |  0.713  0.027   0.022   0.236
+[ref] v11 refit on bio     |  0.939  0.286   0.434   0.613
+[ref] UMAP fresh           |  0.908  0.233   0.357   0.650
+
+saved -> /Users/yudong/Desktop/SeSMap/SeSMap-backend/results/bio_transfer.json

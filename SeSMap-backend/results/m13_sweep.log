@@ -1,0 +1,121 @@
+############ lambda_con=0.0 ############
+[v11] N=6113 dim=1024 | lambda_tsne=1.0 lambda_con=0.0
+[v11] positives: train=2984 test(held-out)=744 | pairs meta=pairs are ROW indices into merged EMB_CACHE
+[P] cached -> data/merged13/stages/05_model/tsne_P_perp30.npy
+[P] ready (6113, 6113)
+[v11] it 0001/1500 loss=5.0685 trust=0.671 knnOv=0.015 BZrec@12_2d=0.024
+[v11] it 0100/1500 loss=2.8567 trust=0.881 knnOv=0.156 BZrec@12_2d=0.099
+[v11] it 0200/1500 loss=2.4370 trust=0.920 knnOv=0.231 BZrec@12_2d=0.138
+[v11] it 0300/1500 loss=2.2258 trust=0.931 knnOv=0.259 BZrec@12_2d=0.153
+[v11] it 0400/1500 loss=2.0863 trust=0.935 knnOv=0.267 BZrec@12_2d=0.157
+[v11] it 0500/1500 loss=2.0109 trust=0.938 knnOv=0.273 BZrec@12_2d=0.157
+[v11] it 0600/1500 loss=1.9490 trust=0.940 knnOv=0.274 BZrec@12_2d=0.168
+[v11] it 0700/1500 loss=1.8968 trust=0.940 knnOv=0.278 BZrec@12_2d=0.168
+[v11] it 0800/1500 loss=1.8711 trust=0.941 knnOv=0.280 BZrec@12_2d=0.167
+[v11] it 0900/1500 loss=1.8327 trust=0.942 knnOv=0.282 BZrec@12_2d=0.167
+[v11] it 1000/1500 loss=1.8108 trust=0.941 knnOv=0.282 BZrec@12_2d=0.164
+[v11] it 1100/1500 loss=1.7939 trust=0.941 knnOv=0.283 BZrec@12_2d=0.169
+[v11] it 1200/1500 loss=1.7854 trust=0.941 knnOv=0.284 BZrec@12_2d=0.168
+[v11] it 1300/1500 loss=1.7875 trust=0.941 knnOv=0.284 BZrec@12_2d=0.169
+[v11] it 1400/1500 loss=1.7783 trust=0.941 knnOv=0.284 BZrec@12_2d=0.167
+[v11] it 1500/1500 loss=1.7797 trust=0.941 knnOv=0.284 BZrec@12_2d=0.167
+
+[v11] FINAL trust=0.941 knnOv=0.284 {'n': 744, 'bz_recall@12_2d': 0.16666666666666666, 'bz_recall@12_highD': 0.5981182795698925}
+[save] data/merged13/stages/05_model/m13_lam0.0_s0.pt
+############ lambda_con=0.05 ############
+[v11] N=6113 dim=1024 | lambda_tsne=1.0 lambda_con=0.05
+[v11] positives: train=2984 test(held-out)=744 | pairs meta=pairs are ROW indices into merged EMB_CACHE
+[P] loaded cache data/merged13/stages/05_model/tsne_P_perp30.npy
+[P] ready (6113, 6113)
+[v11] it 0001/1500 loss=5.5038 trust=0.671 knnOv=0.015 BZrec@12_2d=0.024
+[v11] it 0100/1500 loss=3.2165 trust=0.882 knnOv=0.155 BZrec@12_2d=0.129
+[v11] it 0200/1500 loss=2.7946 trust=0.922 knnOv=0.231 BZrec@12_2d=0.176
+[v11] it 0300/1500 loss=2.5762 trust=0.933 knnOv=0.258 BZrec@12_2d=0.195
+[v11] it 0400/1500 loss=2.4518 trust=0.938 knnOv=0.268 BZrec@12_2d=0.203
+[v11] it 0500/1500 loss=2.3655 trust=0.940 knnOv=0.273 BZrec@12_2d=0.199
+[v11] it 0600/1500 loss=2.3028 trust=0.940 knnOv=0.275 BZrec@12_2d=0.194
+[v11] it 0700/1500 loss=2.2649 trust=0.940 knnOv=0.278 BZrec@12_2d=0.208
+[v11] it 0800/1500 loss=2.2274 trust=0.942 knnOv=0.280 BZrec@12_2d=0.210
+[v11] it 0900/1500 loss=2.1949 trust=0.942 knnOv=0.281 BZrec@12_2d=0.204
+[v11] it 1000/1500 loss=2.1718 trust=0.942 knnOv=0.282 BZrec@12_2d=0.212
+[v11] it 1100/1500 loss=2.1629 trust=0.942 knnOv=0.283 BZrec@12_2d=0.214
+[v11] it 1200/1500 loss=2.1477 trust=0.942 knnOv=0.284 BZrec@12_2d=0.207
+[v11] it 1300/1500 loss=2.1400 trust=0.942 knnOv=0.284 BZrec@12_2d=0.211
+[v11] it 1400/1500 loss=2.1427 trust=0.942 knnOv=0.284 BZrec@12_2d=0.208
+[v11] it 1500/1500 loss=2.1386 trust=0.942 knnOv=0.284 BZrec@12_2d=0.208
+
+[v11] FINAL trust=0.942 knnOv=0.284 {'n': 744, 'bz_recall@12_2d': 0.20833333333333334, 'bz_recall@12_highD': 0.5981182795698925}
+[save] data/merged13/stages/05_model/m13_lam0.05_s0.pt
+############ lambda_con=0.1 ############
+[v11] N=6113 dim=1024 | lambda_tsne=1.0 lambda_con=0.1
+[v11] positives: train=2984 test(held-out)=744 | pairs meta=pairs are ROW indices into merged EMB_CACHE
+[P] loaded cache data/merged13/stages/05_model/tsne_P_perp30.npy
+[P] ready (6113, 6113)
+[v11] it 0001/1500 loss=5.9392 trust=0.672 knnOv=0.014 BZrec@12_2d=0.022
+[v11] it 0100/1500 loss=3.5648 trust=0.883 knnOv=0.155 BZrec@12_2d=0.137
+[v11] it 0200/1500 loss=3.1315 trust=0.923 knnOv=0.233 BZrec@12_2d=0.208
+[v11] it 0300/1500 loss=2.9169 trust=0.933 knnOv=0.255 BZrec@12_2d=0.206
+[v11] it 0400/1500 loss=2.8020 trust=0.937 knnOv=0.264 BZrec@12_2d=0.216
+[v11] it 0500/1500 loss=2.7160 trust=0.939 knnOv=0.271 BZrec@12_2d=0.223
+[v11] it 0600/1500 loss=2.6429 trust=0.940 knnOv=0.273 BZrec@12_2d=0.222
+[v11] it 0700/1500 loss=2.6019 trust=0.940 knnOv=0.276 BZrec@12_2d=0.224
+[v11] it 0800/1500 loss=2.5669 trust=0.940 knnOv=0.277 BZrec@12_2d=0.227
+[v11] it 0900/1500 loss=2.5470 trust=0.940 knnOv=0.277 BZrec@12_2d=0.227
+[v11] it 1000/1500 loss=2.5154 trust=0.940 knnOv=0.279 BZrec@12_2d=0.223
+[v11] it 1100/1500 loss=2.5063 trust=0.940 knnOv=0.279 BZrec@12_2d=0.233
+[v11] it 1200/1500 loss=2.4974 trust=0.940 knnOv=0.279 BZrec@12_2d=0.222
+[v11] it 1300/1500 loss=2.4909 trust=0.940 knnOv=0.279 BZrec@12_2d=0.224
+[v11] it 1400/1500 loss=2.4844 trust=0.940 knnOv=0.279 BZrec@12_2d=0.222
+[v11] it 1500/1500 loss=2.4930 trust=0.940 knnOv=0.279 BZrec@12_2d=0.220
+
+[v11] FINAL trust=0.940 knnOv=0.279 {'n': 744, 'bz_recall@12_2d': 0.22043010752688172, 'bz_recall@12_highD': 0.5981182795698925}
+[save] data/merged13/stages/05_model/m13_lam0.1_s0.pt
+############ lambda_con=0.3 ############
+[v11] N=6113 dim=1024 | lambda_tsne=1.0 lambda_con=0.3
+[v11] positives: train=2984 test(held-out)=744 | pairs meta=pairs are ROW indices into merged EMB_CACHE
+[P] loaded cache data/merged13/stages/05_model/tsne_P_perp30.npy
+[P] ready (6113, 6113)
+[v11] it 0001/1500 loss=7.6807 trust=0.672 knnOv=0.015 BZrec@12_2d=0.022
+[v11] it 0100/1500 loss=4.8875 trust=0.875 knnOv=0.143 BZrec@12_2d=0.177
+[v11] it 0200/1500 loss=4.3577 trust=0.916 knnOv=0.216 BZrec@12_2d=0.249
+[v11] it 0300/1500 loss=4.1115 trust=0.932 knnOv=0.241 BZrec@12_2d=0.265
+[v11] it 0400/1500 loss=3.9685 trust=0.936 knnOv=0.249 BZrec@12_2d=0.292
+[v11] it 0500/1500 loss=3.8587 trust=0.936 knnOv=0.255 BZrec@12_2d=0.290
+[v11] it 0600/1500 loss=3.7916 trust=0.937 knnOv=0.255 BZrec@12_2d=0.286
+[v11] it 0700/1500 loss=3.7412 trust=0.938 knnOv=0.258 BZrec@12_2d=0.286
+[v11] it 0800/1500 loss=3.6963 trust=0.937 knnOv=0.257 BZrec@12_2d=0.290
+[v11] it 0900/1500 loss=3.6715 trust=0.937 knnOv=0.258 BZrec@12_2d=0.290
+[v11] it 1000/1500 loss=3.6374 trust=0.937 knnOv=0.258 BZrec@12_2d=0.289
+[v11] it 1100/1500 loss=3.6290 trust=0.937 knnOv=0.258 BZrec@12_2d=0.285
+[v11] it 1200/1500 loss=3.6224 trust=0.937 knnOv=0.259 BZrec@12_2d=0.292
+[v11] it 1300/1500 loss=3.6101 trust=0.937 knnOv=0.259 BZrec@12_2d=0.293
+[v11] it 1400/1500 loss=3.5957 trust=0.937 knnOv=0.259 BZrec@12_2d=0.288
+[v11] it 1500/1500 loss=3.5995 trust=0.937 knnOv=0.259 BZrec@12_2d=0.289
+
+[v11] FINAL trust=0.937 knnOv=0.259 {'n': 744, 'bz_recall@12_2d': 0.28897849462365593, 'bz_recall@12_highD': 0.5981182795698925}
+[save] data/merged13/stages/05_model/m13_lam0.3_s0.pt
+############ lambda_con=0.5 ############
+[v11] N=6113 dim=1024 | lambda_tsne=1.0 lambda_con=0.5
+[v11] positives: train=2984 test(held-out)=744 | pairs meta=pairs are ROW indices into merged EMB_CACHE
+[P] loaded cache data/merged13/stages/05_model/tsne_P_perp30.npy
+[P] ready (6113, 6113)
+[v11] it 0001/1500 loss=9.4221 trust=0.672 knnOv=0.015 BZrec@12_2d=0.024
+[v11] it 0100/1500 loss=6.1221 trust=0.868 knnOv=0.134 BZrec@12_2d=0.165
+[v11] it 0200/1500 loss=5.5075 trust=0.911 knnOv=0.198 BZrec@12_2d=0.257
+[v11] it 0300/1500 loss=5.1890 trust=0.922 knnOv=0.218 BZrec@12_2d=0.272
+[v11] it 0400/1500 loss=5.0268 trust=0.928 knnOv=0.227 BZrec@12_2d=0.284
+[v11] it 0500/1500 loss=4.8942 trust=0.930 knnOv=0.231 BZrec@12_2d=0.270
+[v11] it 0600/1500 loss=4.8028 trust=0.931 knnOv=0.232 BZrec@12_2d=0.270
+[v11] it 0700/1500 loss=4.7431 trust=0.931 knnOv=0.234 BZrec@12_2d=0.284
+[v11] it 0800/1500 loss=4.6904 trust=0.932 knnOv=0.235 BZrec@12_2d=0.278
+[v11] it 0900/1500 loss=4.6460 trust=0.931 knnOv=0.236 BZrec@12_2d=0.281
+[v11] it 1000/1500 loss=4.6350 trust=0.931 knnOv=0.236 BZrec@12_2d=0.277
+[v11] it 1100/1500 loss=4.6044 trust=0.930 knnOv=0.235 BZrec@12_2d=0.276
+[v11] it 1200/1500 loss=4.5900 trust=0.931 knnOv=0.235 BZrec@12_2d=0.273
+[v11] it 1300/1500 loss=4.5871 trust=0.931 knnOv=0.237 BZrec@12_2d=0.277
+[v11] it 1400/1500 loss=4.5844 trust=0.931 knnOv=0.236 BZrec@12_2d=0.274
+[v11] it 1500/1500 loss=4.5760 trust=0.931 knnOv=0.236 BZrec@12_2d=0.276
+
+[v11] FINAL trust=0.931 knnOv=0.236 {'n': 744, 'bz_recall@12_2d': 0.27553763440860213, 'bz_recall@12_highD': 0.5981182795698925}
+[save] data/merged13/stages/05_model/m13_lam0.5_s0.pt
+SWEEP_DONE
