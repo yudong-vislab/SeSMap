@@ -1,0 +1,95 @@
+[
+  {
+    "paragraph": "Circos is a Perl language based software package for visualizing similarities and differences of genome structure and positional relationships between genomic intervals. Running Circos requires extra data processing procedures to prepare plot data files and configure files from datasets, which limits its capability of integrating directly with other software tools such as R. Recently published R Bioconductor package ggbio provides a function to display genomic data in circular layout based on multiple other packages, which increases its complexity of usage and decreased the flexibility in integrating with other R pipelines.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Circos is a Perl language-based software package for visualizing similarities and differences of genome structure and positional relationships between genomic intervals.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Running Circos requires extra data processing procedures to prepare plot data files and configure files from datasets.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "This requirement limits Circos' capability of integrating directly with other software tools such as R.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "The recently published R Bioconductor package ggbio provides a function to display genomic data in circular layout based on multiple other packages.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The use of multiple packages in ggbio increases its complexity of usage.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The complexity of ggbio decreases its flexibility in integrating with other R pipelines.",
+        "category": "Background",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "We implemented an R package, RCircos, using only R packages that come with R base installation. The package supports Circos 2D data track plots such as scatter, line, histogram, heatmap, tile, connectors, links, and text labels. Each plot is implemented with a specific function and input data for all functions are data frames which can be objects read from text files or generated with other R pipelines.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "We implemented an R package, RCircos.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "RCircos uses only R packages that come with the R base installation.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The package supports Circos 2D data track plots such as scatter, line, histogram, heatmap, tile, connectors, links, and text labels.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Each plot is implemented with a specific function.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Input data for all functions are data frames.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Data frames can be objects read from text files or generated with other R pipelines.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "RCircos package provides a simple and flexible way to make Circos 2D track plots with R and could be easily integrated into other R data processing and graphic manipulation pipelines for presenting large-scale multi-sample genomic research data. It can also serve as a base tool to generate complex Circos images.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The RCircos package provides a simple and flexible way to make Circos 2D track plots with R.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The RCircos package can be easily integrated into other R data processing and graphic manipulation pipelines for presenting large-scale multi-sample genomic research data.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The RCircos package can serve as a base tool to generate complex Circos images.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  }
+]

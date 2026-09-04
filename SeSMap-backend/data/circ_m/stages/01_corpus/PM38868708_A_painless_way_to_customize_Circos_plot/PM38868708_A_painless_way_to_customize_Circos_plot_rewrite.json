@@ -1,0 +1,48 @@
+[
+  {
+    "paragraph": "Circos plots enable scientists to easily inspect big biological data genome-widely on a macroscopic scale, but cumbersome preparation of input data and complex parameter configuration limits its application. We have developed the \"Advanced Circos\" function in TBtools, to provide a simple way to construct Circos plots. As an out-of-the-box combo toolkit, TBtools has integrated a set of functions convenient for input data preparation. The \"Advanced Circos\" function is supplied with a user-friendly interface for the customization of parameter settings and can be deployed to visualize all kinds of genomic data, such as genomic associations, alignment data, gene density, and QTL locations. In the present article, we introduce the main features of \"Advance Circos\" and the protocols of upstream data preparation, aiming to endow more users with the ability to use Circos plots in big genomic data exploration.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Circos plots enable scientists to inspect big biological data genome-widely on a macroscopic scale.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Cumbersome preparation of input data and complex parameter configuration limits the application of Circos plots.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "We have developed the 'Advanced Circos' function in TBtools to provide a simple way to construct Circos plots.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "TBtools integrates a set of functions convenient for input data preparation.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The 'Advanced Circos' function is supplied with a user-friendly interface for the customization of parameter settings.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The 'Advanced Circos' function can be deployed to visualize all kinds of genomic data, such as genomic associations, alignment data, gene density, and QTL locations.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "This article introduces the main features of 'Advanced Circos' and the protocols of upstream data preparation.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "The aim is to enable more users to use Circos plots in big genomic data exploration.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  }
+]

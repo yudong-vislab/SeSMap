@@ -1,0 +1,5 @@
+# The HuGeMap Database: interconnection and visualization of human genome maps
+
+## Abstract
+
+The HuGeMap database stores the major genetic and physical maps of the human genome. HuGeMap is accessible on the Web at http://www. infobiogen.fr/services/Hugemap and through a CORBA server. A standard genome map data format for the interconnection of genome map databases was defined in collaboration with the EBI. The HuGeMap CORBA server provides this interconnection using the interface definition language IDL. Two graphical user interfaces were developed for the visualization of the HuGeMap data: ZoomMap (http://www.infobiogen.fr/services/zomit/Zoom Map.html) for navigation by zooming and data transformation via magic lenses, and MappetShow (http://www.infobiogen.fr/services/Mappet) for visualizing and comparing maps.

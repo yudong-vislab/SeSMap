@@ -1,0 +1,83 @@
+[
+  {
+    "paragraph": "Originally released in 2005, BASys (Bacterial Annotation System) was one of the first web servers to support online bacterial genome annotation and interactive genomic display. Over the past 20 years, web technologies and annotation algorithms have advanced considerably. To keep current with these advances and changing needs of microbial genomics, we have developed BASys2 (Bacterial Annotation System 2.0). BASys2 represents a significant upgrade to BASys, offering much more rapid (up to 8000× faster) and far more complete (2× as many data fields) genome annotation with significantly improved genome visualization capabilities. More specifically, BASys2 reduces annotation time from 24 h to as little as 10 s through a fast genome-matching and a novel annotation transfer strategy. Accepting either FASTA or FASTQ files, BASys2 is able to generate up to 62 annotation fields per gene/protein, leveraging over 30 bioinformatics tools and 10 different databases. Among the more unique features of BASys2 is its extensive support for whole metabolome annotation and complete structural proteome generation. BASys2's new interactive genome viewer allows rapid, dynamic visualization of complete bacterial genome maps with options to display/hide multiple concentric annotation tracks, show/remove color-coded legends, manipulate the genome map, and select/view individual gene and metabolite annotations. Available as a web server, a desktop viewer application, and a locally installable Docker image, BASys2 allows researchers to achieve unprecedented annotation depth and to easily upload, download, and display these rich genome/metabolome annotations. The BASys2 web server is freely accessible at https://basys2.ca.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "BASys (Bacterial Annotation System) was one of the first web servers to support online bacterial genome annotation and interactive genomic display.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "BASys was originally released in 2005.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Over the past 20 years, web technologies and annotation algorithms have advanced considerably.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "BASys2 (Bacterial Annotation System 2.0) has been developed to keep current with advances in web technologies and annotation algorithms and the changing needs of microbial genomics.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "BASys2 represents a significant upgrade to BASys, offering much more rapid (up to 8000× faster) and far more complete (2× as many data fields) genome annotation with significantly improved genome visualization capabilities.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "BASys2 reduces annotation time from 24 hours to as little as 10 seconds through a fast genome-matching and a novel annotation transfer strategy.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "BASys2 accepts either FASTA or FASTQ files.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "BASys2 is able to generate up to 62 annotation fields per gene/protein.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "BASys2 leverages over 30 bioinformatics tools and 10 different databases.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "BASys2 provides extensive support for whole metabolome annotation and complete structural proteome generation.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "BASys2's new interactive genome viewer allows rapid, dynamic visualization of complete bacterial genome maps.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The genome viewer offers options to display/hide multiple concentric annotation tracks, show/remove color-coded legends, manipulate the genome map, and select/view individual gene and metabolite annotations.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "BASys2 is available as a web server, a desktop viewer application, and a locally installable Docker image.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "BASys2 allows researchers to achieve unprecedented annotation depth and to easily upload, download, and display rich genome/metabolome annotations.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The BASys2 web server is freely accessible at https://basys2.ca.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

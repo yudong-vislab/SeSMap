@@ -1,0 +1,33 @@
+[
+  {
+    "paragraph": "As a high-value processed aquatic product, wet-aged tuna has gradually become a popular food, but its lipidomics characteristics during the aging process have not been investigated. Herein, the lipidomics phenotypic data of tuna at different wet-aging stages were acquired using iKnife rapid evaporative ionization mass spectrometry, in which the dominant lipid components, including fatty acid (FA), phosphatidylcholine (PC), phosphatidylethanolamine (PE), and phosphatidylinositol (PI), were structurally identified. Principal component analysis, permutation test, heatmap, and circos plot analysis were performed to characterize lipids in wet-aged tuna, among which FA",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Wet-aged tuna is a high-value processed aquatic product that has become a popular food.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The lipidomics characteristics of wet-aged tuna during the aging process have not been investigated.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Lipidomics phenotypic data of tuna at different wet-aging stages were acquired using iKnife rapid evaporative ionization mass spectrometry.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Dominant lipid components, including fatty acid (FA), phosphatidylcholine (PC), phosphatidylethanolamine (PE), and phosphatidylinositol (PI), were structurally identified.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Principal component analysis, permutation test, heatmap, and circos plot analysis were performed to characterize lipids in wet-aged tuna.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  }
+]

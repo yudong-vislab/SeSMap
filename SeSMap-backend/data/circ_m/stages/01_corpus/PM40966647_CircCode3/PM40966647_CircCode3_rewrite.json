@@ -1,0 +1,63 @@
+[
+  {
+    "paragraph": "Translatable circular RNAs (circRNAs), distinguished by their capacity to encode proteins or peptides, rely on cap-independent mechanisms such as m6A-mediated or internal ribosome entry site (IRES)-driven translation initiation. Currently, identification translatable circRNAs and their open reading frame accurately are challenging. In this study, we developed an integrated analysis pipeline, CircCode3, to mine translatable circRNAs from high throughput sequencing data, building upon existing tools and significantly enhancing their functionalities. CircCode3 also introduces new capabilities, including the identification and assessment of open reading frames (ORFs) spanning back-splice junction sites. To evaluate IRES potential, we incorporated IRESfinder into the pipeline. Furthermore, we developed two deep learning tools: DeepCircm6A for predicting m6A modification sites in circRNAs, and DLMSC for assessing the reliability of stop codons. These enhancements make CircCode3 a comprehensive solution for analyzing ribosome profiling sequencing and mass spectrometry data, identifying and evaluating ORFs, and visualizing results. The CircCode3 tool is publicly available and can be downloaded from https://github.com/Lilab-SNNU/CircCode3.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Translatable circular RNAs (circRNAs) are distinguished by their capacity to encode proteins or peptides.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Translatable circRNAs rely on cap-independent mechanisms such as m6A-mediated or internal ribosome entry site (IRES)-driven translation initiation.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Identifying translatable circRNAs and their open reading frames accurately is challenging.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "In this study, we developed an integrated analysis pipeline, CircCode3, to mine translatable circRNAs from high throughput sequencing data.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "CircCode3 builds upon existing tools and significantly enhances their functionalities.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "CircCode3 introduces new capabilities, including the identification and assessment of open reading frames (ORFs) spanning back-splice junction sites.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "To evaluate IRES potential, we incorporated IRESfinder into the pipeline.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "We developed two deep learning tools: DeepCircm6A for predicting m6A modification sites in circRNAs, and DLMSC for assessing the reliability of stop codons.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "These enhancements make CircCode3 a comprehensive solution for analyzing ribosome profiling sequencing and mass spectrometry data.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "CircCode3 identifies and evaluates ORFs and visualizes results.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "The CircCode3 tool is publicly available and can be downloaded from https://github.com/Lilab-SNNU/CircCode3.",
+        "category": "Other",
+        "rank": 2
+      }
+    ]
+  }
+]

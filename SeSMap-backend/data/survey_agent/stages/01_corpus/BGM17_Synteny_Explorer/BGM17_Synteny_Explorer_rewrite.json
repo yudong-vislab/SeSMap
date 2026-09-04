@@ -1,0 +1,53 @@
+[
+  {
+    "paragraph": "Rapid advances in biology demand new tools for more active research dissemination and engaged teaching. This paper presents Synteny Explorer, an interactive visualization application designed to let college students explore genome evolution of mammalian species. The tool visualizes synteny blocks: segments of homologous DNA shared between various extant species that can be traced back or reconstructed in extinct, ancestral species. We take a karyogram-based approach to create an interactive synteny visualization, leading to a more appealing and engaging design for undergraduate-level genome evolution education. For validation, we conduct three user studies: two focused studies on color and animation design choices and a larger study that performs overall system usability testing while comparing our karyogram-based designs with two more common genome mapping representations in an educational context. While existing views communicate the same information, study participants found the interactive, karyogram-based views much easier and likable to use. We additionally discuss feedback from biology and genomics faculty, who judge Synteny Explorer's fitness for use in classrooms.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Rapid advances in biology demand new tools for more active research dissemination and engaged teaching.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "This paper presents Synteny Explorer, an interactive visualization application designed to let college students explore genome evolution of mammalian species.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Synteny Explorer visualizes synteny blocks, which are segments of homologous DNA shared between various extant species that can be traced back or reconstructed in extinct, ancestral species.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "We take a karyogram-based approach to create an interactive synteny visualization.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The karyogram-based approach leads to a more appealing and engaging design for undergraduate-level genome evolution education.",
+        "category": "Conclusion",
+        "rank": 3
+      },
+      {
+        "sentence": "For validation, we conduct three user studies: two focused studies on color and animation design choices and a larger study that performs overall system usability testing.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "The larger study compares our karyogram-based designs with two more common genome mapping representations in an educational context.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "While existing views communicate the same information, study participants found the interactive, karyogram-based views much easier and likable to use.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "We additionally discuss feedback from biology and genomics faculty, who judge Synteny Explorer's fitness for use in classrooms.",
+        "category": "Result",
+        "rank": 3
+      }
+    ]
+  }
+]

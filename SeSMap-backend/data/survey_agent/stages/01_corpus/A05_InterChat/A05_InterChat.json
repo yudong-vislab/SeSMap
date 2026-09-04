@@ -1,0 +1,16 @@
+[
+  {
+    "title": "InterChat: Enhancing Generative Visual Analytics using Multimodal Interactions",
+    "paragraphs": []
+  },
+  {
+    "title": "InterChat: Enhancing Generative Visual Analytics using Multimodal Interactions-Abstract",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "The rise of Large Language Models (LLMs) and generative visual analytics systems has transformed data‐driven insights, yet significant challenges persist in accurately interpreting users analytical and interaction intents. While language inputs offer flexibility, they often lack precision, making the expression of complex intents inefficient, error‐prone, and time‐intensive. To address these limitations, we investigate the design space of multimodal interactions for generative visual analytics through a literature review and pilot brainstorming sessions. Building on these insights, we introduce a highly extensible workflow that integrates multiple LLM agents for intent inference and visualization generation. We develop InterChat, a generative visual analytics system that combines direct manipulation of visual elements with natural language inputs. This integration enables precise intent communication and supports progressive, visually driven exploratory data analyses. By employing effective prompt engineering, and contextual interaction linking, alongside intuitive visualization and interaction designs, InterChat bridges the gap between user interactions and LLM‐driven visualizations, enhancing both interpretability and usability. Extensive evaluations, including two usage scenarios, a user study, and expert feedback, demonstrate the effectiveness of InterChat. Results show significant improvements in the accuracy and efficiency of handling complex visual analytics tasks, highlighting the potential of multimodal interactions to redefine user engagement and analytical depth in generative visual analytics.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

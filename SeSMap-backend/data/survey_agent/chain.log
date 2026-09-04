@@ -1,0 +1,517 @@
+########## 1. 跨论文对应对 ##########
+[data] N=2486  papers=107
+[filter] local-only eligible MSUs: 2486/2486 categories=ALL, min_rank=1
+[cand] 4000 cross-paper candidate pairs in cosine[0.55,0.95]
+[coverage] 2467/2486 eligible MSUs occur in at least one submitted pair
+[judge] 10/4000  kept=5
+[judge] 20/4000  kept=11
+[judge] 30/4000  kept=17
+[judge] 40/4000  kept=24
+[judge] 50/4000  kept=29
+[judge] 60/4000  kept=35
+[judge] 70/4000  kept=39
+[judge] 80/4000  kept=45
+[judge] 90/4000  kept=50
+[judge] 100/4000  kept=57
+[judge] 110/4000  kept=63
+[judge] 120/4000  kept=68
+[judge] 130/4000  kept=73
+[judge] 140/4000  kept=77
+[judge] 150/4000  kept=82
+[judge] 160/4000  kept=87
+[judge] 170/4000  kept=95
+[judge] 180/4000  kept=100
+[judge] 190/4000  kept=104
+[judge] 200/4000  kept=110
+[judge] 210/4000  kept=116
+[judge] 220/4000  kept=121
+[judge] 230/4000  kept=124
+[judge] 240/4000  kept=129
+[judge] 250/4000  kept=133
+[judge] 260/4000  kept=138
+[judge] 270/4000  kept=145
+[judge] 280/4000  kept=150
+[judge] 290/4000  kept=153
+[judge] 300/4000  kept=158
+[judge] 310/4000  kept=164
+[judge] 320/4000  kept=167
+[judge] 330/4000  kept=174
+[judge] 340/4000  kept=179
+[judge] 350/4000  kept=187
+[judge] 360/4000  kept=192
+[judge] 370/4000  kept=197
+[judge] 380/4000  kept=205
+[judge] 390/4000  kept=211
+[judge] 400/4000  kept=216
+[judge] 410/4000  kept=223
+[judge] 420/4000  kept=228
+[judge] 430/4000  kept=233
+[judge] 440/4000  kept=236
+[judge] 450/4000  kept=243
+[judge] 460/4000  kept=248
+[judge] 470/4000  kept=252
+[judge] 480/4000  kept=256
+[judge] 490/4000  kept=262
+[judge] 500/4000  kept=266
+[judge] 510/4000  kept=272
+[judge] 520/4000  kept=277
+[judge] 530/4000  kept=284
+[judge] 540/4000  kept=289
+[judge] 550/4000  kept=295
+[judge] 560/4000  kept=300
+[judge] 570/4000  kept=305
+[judge] 580/4000  kept=310
+[judge] 590/4000  kept=313
+[judge] 600/4000  kept=318
+[judge] 610/4000  kept=322
+[judge] 620/4000  kept=329
+[judge] 630/4000  kept=335
+[judge] 640/4000  kept=338
+[judge] 650/4000  kept=342
+[judge] 660/4000  kept=347
+[judge] 670/4000  kept=353
+[judge] 680/4000  kept=357
+[judge] 690/4000  kept=360
+[judge] 700/4000  kept=366
+[judge] 710/4000  kept=371
+[judge] 720/4000  kept=376
+[judge] 730/4000  kept=380
+[judge] 740/4000  kept=386
+[judge] 750/4000  kept=394
+[judge] 760/4000  kept=399
+[judge] 770/4000  kept=404
+[judge] 780/4000  kept=408
+[judge] 790/4000  kept=413
+[judge] 800/4000  kept=417
+[judge] 810/4000  kept=421
+[judge] 820/4000  kept=425
+[judge] 830/4000  kept=430
+[judge] 840/4000  kept=434
+[judge] 850/4000  kept=440
+[judge] 860/4000  kept=444
+[judge] 870/4000  kept=447
+[judge] 880/4000  kept=453
+[judge] 890/4000  kept=456
+[judge] 900/4000  kept=460
+[judge] 910/4000  kept=465
+[judge] 920/4000  kept=469
+[judge] 930/4000  kept=472
+[judge] 940/4000  kept=477
+[judge] 950/4000  kept=481
+[judge] 960/4000  kept=484
+[judge] 970/4000  kept=489
+[judge] 980/4000  kept=493
+[judge] 990/4000  kept=496
+[judge] 1000/4000  kept=499
+[judge] 1010/4000  kept=502
+[judge] 1020/4000  kept=506
+[judge] 1030/4000  kept=511
+[judge] 1040/4000  kept=516
+[judge] 1050/4000  kept=520
+[judge] 1060/4000  kept=524
+[judge] 1070/4000  kept=528
+[judge] 1080/4000  kept=532
+[judge] 1090/4000  kept=538
+[judge] 1100/4000  kept=542
+[judge] 1110/4000  kept=548
+[judge] 1120/4000  kept=553
+[judge] 1130/4000  kept=559
+[judge] 1140/4000  kept=563
+[judge] 1150/4000  kept=567
+[judge] 1160/4000  kept=572
+[judge] 1170/4000  kept=577
+[judge] 1180/4000  kept=582
+[judge] 1190/4000  kept=587
+[judge] 1200/4000  kept=591
+[judge] 1210/4000  kept=597
+[judge] 1220/4000  kept=601
+[judge] 1230/4000  kept=605
+[judge] 1240/4000  kept=612
+[judge] 1250/4000  kept=615
+[judge] 1260/4000  kept=619
+[judge] 1270/4000  kept=623
+[judge] 1280/4000  kept=629
+[judge] 1290/4000  kept=634
+[judge] 1300/4000  kept=638
+[judge] 1310/4000  kept=642
+[judge] 1320/4000  kept=647
+[judge] 1330/4000  kept=651
+[judge] 1340/4000  kept=658
+[judge] 1350/4000  kept=661
+[judge] 1360/4000  kept=666
+[judge] 1370/4000  kept=669
+[judge] 1380/4000  kept=674
+[judge] 1390/4000  kept=678
+[judge] 1400/4000  kept=682
+[judge] 1410/4000  kept=685
+[judge] 1420/4000  kept=691
+[judge] 1430/4000  kept=696
+[judge] 1440/4000  kept=699
+[judge] 1450/4000  kept=704
+[judge] 1460/4000  kept=710
+[judge] 1470/4000  kept=714
+[judge] 1480/4000  kept=717
+[judge] 1490/4000  kept=719
+[judge] 1500/4000  kept=724
+[judge] 1510/4000  kept=730
+[judge] 1520/4000  kept=733
+[judge] 1530/4000  kept=736
+[judge] 1540/4000  kept=739
+[judge] 1550/4000  kept=741
+[judge] 1560/4000  kept=744
+[judge] 1570/4000  kept=748
+[judge] 1580/4000  kept=753
+[judge] 1590/4000  kept=757
+[judge] 1600/4000  kept=760
+[judge] 1610/4000  kept=763
+[judge] 1620/4000  kept=768
+[judge] 1630/4000  kept=771
+[judge] 1640/4000  kept=775
+[judge] 1650/4000  kept=778
+[judge] 1660/4000  kept=781
+[judge] 1670/4000  kept=783
+[judge] 1680/4000  kept=786
+[judge] 1690/4000  kept=789
+[judge] 1700/4000  kept=792
+[judge] 1710/4000  kept=793
+[judge] 1720/4000  kept=797
+[judge] 1730/4000  kept=803
+[judge] 1740/4000  kept=806
+[judge] 1750/4000  kept=811
+[judge] 1760/4000  kept=816
+[judge] 1770/4000  kept=819
+[judge] 1780/4000  kept=823
+[judge] 1790/4000  kept=828
+[judge] 1800/4000  kept=832
+[judge] 1810/4000  kept=836
+[judge] 1820/4000  kept=841
+[judge] 1830/4000  kept=843
+[judge] 1840/4000  kept=848
+[judge] 1850/4000  kept=851
+[judge] 1860/4000  kept=853
+[judge] 1870/4000  kept=858
+[judge] 1880/4000  kept=862
+[judge] 1890/4000  kept=865
+[judge] 1900/4000  kept=869
+[judge] 1910/4000  kept=873
+[judge] 1920/4000  kept=878
+[judge] 1930/4000  kept=882
+[judge] 1940/4000  kept=886
+[judge] 1950/4000  kept=891
+[judge] 1960/4000  kept=895
+[judge] 1970/4000  kept=899
+[judge] 1980/4000  kept=902
+[judge] 1990/4000  kept=904
+[judge] 2000/4000  kept=908
+[judge] 2010/4000  kept=912
+[judge] 2020/4000  kept=916
+[judge] 2030/4000  kept=921
+[judge] 2040/4000  kept=925
+[judge] 2050/4000  kept=928
+[judge] 2060/4000  kept=933
+[judge] 2070/4000  kept=936
+[judge] 2080/4000  kept=938
+[judge] 2090/4000  kept=943
+[judge] 2100/4000  kept=948
+[judge] 2110/4000  kept=950
+[judge] 2120/4000  kept=953
+[judge] 2130/4000  kept=958
+[judge] 2140/4000  kept=961
+[judge] 2150/4000  kept=965
+[judge] 2160/4000  kept=967
+[judge] 2170/4000  kept=971
+[judge] 2180/4000  kept=974
+[judge] 2190/4000  kept=977
+[judge] 2200/4000  kept=980
+[judge] 2210/4000  kept=984
+[judge] 2220/4000  kept=989
+[judge] 2230/4000  kept=992
+[judge] 2240/4000  kept=996
+[judge] 2250/4000  kept=999
+[judge] 2260/4000  kept=1003
+[judge] 2270/4000  kept=1005
+[judge] 2280/4000  kept=1009
+[judge] 2290/4000  kept=1012
+[judge] 2300/4000  kept=1016
+[judge] 2310/4000  kept=1020
+[judge] 2320/4000  kept=1024
+[judge] 2330/4000  kept=1028
+[judge] 2340/4000  kept=1031
+[judge] 2350/4000  kept=1033
+[judge] 2360/4000  kept=1037
+[judge] 2370/4000  kept=1040
+[judge] 2380/4000  kept=1043
+[judge] 2390/4000  kept=1047
+[judge] 2400/4000  kept=1051
+[judge] 2410/4000  kept=1055
+[judge] 2420/4000  kept=1058
+[judge] 2430/4000  kept=1060
+[judge] 2440/4000  kept=1063
+[judge] 2450/4000  kept=1067
+[judge] 2460/4000  kept=1070
+[judge] 2470/4000  kept=1072
+[judge] 2480/4000  kept=1076
+[judge] 2490/4000  kept=1081
+[judge] 2500/4000  kept=1083
+[judge] 2510/4000  kept=1087
+[judge] 2520/4000  kept=1090
+[judge] 2530/4000  kept=1093
+[judge] 2540/4000  kept=1095
+[judge] 2550/4000  kept=1099
+[judge] 2560/4000  kept=1102
+[judge] 2570/4000  kept=1104
+[judge] 2580/4000  kept=1109
+[judge] 2590/4000  kept=1115
+[judge] 2600/4000  kept=1120
+[judge] 2610/4000  kept=1123
+[judge] 2620/4000  kept=1127
+[judge] 2630/4000  kept=1130
+[judge] 2640/4000  kept=1133
+[judge] 2650/4000  kept=1138
+[judge] 2660/4000  kept=1140
+[judge] 2670/4000  kept=1145
+[judge] 2680/4000  kept=1148
+[judge] 2690/4000  kept=1150
+[judge] 2700/4000  kept=1155
+[judge] 2710/4000  kept=1159
+[judge] 2720/4000  kept=1163
+[judge] 2730/4000  kept=1167
+[judge] 2740/4000  kept=1172
+[judge] 2750/4000  kept=1175
+[judge] 2760/4000  kept=1178
+[judge] 2770/4000  kept=1182
+[judge] 2780/4000  kept=1186
+[judge] 2790/4000  kept=1187
+[judge] 2800/4000  kept=1190
+[judge] 2810/4000  kept=1193
+[judge] 2820/4000  kept=1197
+[judge] 2830/4000  kept=1200
+[judge] 2840/4000  kept=1202
+[judge] 2850/4000  kept=1205
+[judge] 2860/4000  kept=1209
+[judge] 2870/4000  kept=1212
+[judge] 2880/4000  kept=1214
+[judge] 2890/4000  kept=1218
+[judge] 2900/4000  kept=1221
+[judge] 2910/4000  kept=1224
+[judge] 2920/4000  kept=1226
+[judge] 2930/4000  kept=1229
+[judge] 2940/4000  kept=1232
+[judge] 2950/4000  kept=1237
+[judge] 2960/4000  kept=1240
+[judge] 2970/4000  kept=1244
+[judge] 2980/4000  kept=1247
+[judge] 2990/4000  kept=1250
+[judge] 3000/4000  kept=1254
+[judge] 3010/4000  kept=1256
+[judge] 3020/4000  kept=1259
+[judge] 3030/4000  kept=1261
+[judge] 3040/4000  kept=1263
+[judge] 3050/4000  kept=1268
+[judge] 3060/4000  kept=1272
+[judge] 3070/4000  kept=1276
+[judge] 3080/4000  kept=1280
+[judge] 3090/4000  kept=1285
+[judge] 3100/4000  kept=1288
+[judge] 3110/4000  kept=1289
+[judge] 3120/4000  kept=1291
+[judge] 3130/4000  kept=1294
+[judge] 3140/4000  kept=1296
+[judge] 3150/4000  kept=1299
+[judge] 3160/4000  kept=1302
+[judge] 3170/4000  kept=1306
+[judge] 3180/4000  kept=1308
+[judge] 3190/4000  kept=1311
+[judge] 3200/4000  kept=1315
+[judge] 3210/4000  kept=1315
+[judge] 3220/4000  kept=1316
+[judge] 3230/4000  kept=1319
+[judge] 3240/4000  kept=1323
+[judge] 3250/4000  kept=1325
+[judge] 3260/4000  kept=1328
+[judge] 3270/4000  kept=1329
+[judge] 3280/4000  kept=1330
+[judge] 3290/4000  kept=1331
+[judge] 3300/4000  kept=1335
+[judge] 3310/4000  kept=1338
+[judge] 3320/4000  kept=1343
+[judge] 3330/4000  kept=1346
+[judge] 3340/4000  kept=1350
+[judge] 3350/4000  kept=1351
+[judge] 3360/4000  kept=1354
+[judge] 3370/4000  kept=1358
+[judge] 3380/4000  kept=1360
+[judge] 3390/4000  kept=1362
+[judge] 3400/4000  kept=1364
+[judge] 3410/4000  kept=1368
+[judge] 3420/4000  kept=1370
+[judge] 3430/4000  kept=1373
+[judge] 3440/4000  kept=1377
+[judge] 3450/4000  kept=1379
+[judge] 3460/4000  kept=1382
+[judge] 3470/4000  kept=1386
+[judge] 3480/4000  kept=1389
+[judge] 3490/4000  kept=1392
+[judge] 3500/4000  kept=1396
+[judge] 3510/4000  kept=1399
+[judge] 3520/4000  kept=1402
+[judge] 3530/4000  kept=1405
+[judge] 3540/4000  kept=1407
+[judge] 3550/4000  kept=1409
+[judge] 3560/4000  kept=1411
+[judge] 3570/4000  kept=1413
+[judge] 3580/4000  kept=1415
+[judge] 3590/4000  kept=1417
+[judge] 3600/4000  kept=1420
+[judge] 3610/4000  kept=1420
+[judge] 3620/4000  kept=1423
+[judge] 3630/4000  kept=1425
+[judge] 3640/4000  kept=1428
+[judge] 3650/4000  kept=1430
+[judge] 3660/4000  kept=1432
+[judge] 3670/4000  kept=1435
+[judge] 3680/4000  kept=1437
+[judge] 3690/4000  kept=1439
+[judge] 3700/4000  kept=1441
+[judge] 3710/4000  kept=1444
+[judge] 3720/4000  kept=1447
+[judge] 3730/4000  kept=1451
+[judge] 3740/4000  kept=1455
+[judge] 3750/4000  kept=1457
+[judge] 3760/4000  kept=1459
+[judge] 3770/4000  kept=1461
+[judge] 3780/4000  kept=1463
+[judge] 3790/4000  kept=1466
+[judge] 3800/4000  kept=1468
+[judge] 3810/4000  kept=1470
+[judge] 3820/4000  kept=1472
+[judge] 3830/4000  kept=1473
+[judge] 3840/4000  kept=1476
+[judge] 3850/4000  kept=1477
+[judge] 3860/4000  kept=1478
+[judge] 3870/4000  kept=1479
+[judge] 3880/4000  kept=1480
+[judge] 3890/4000  kept=1482
+[judge] 3900/4000  kept=1484
+[judge] 3910/4000  kept=1486
+[judge] 3920/4000  kept=1486
+[judge] 3930/4000  kept=1487
+[judge] 3940/4000  kept=1489
+[judge] 3950/4000  kept=1490
+[judge] 3960/4000  kept=1491
+[judge] 3970/4000  kept=1492
+[judge] 3980/4000  kept=1494
+[judge] 3990/4000  kept=1497
+[judge] 4000/4000  kept=1498
+[pos] 1498 positive cross-paper pairs
+[save] data/survey_agent/stages/02_msu/llm_pairs.json  train_pos=1199  test_pos=299
+########## 2. 训练 ##########
+#### lambda_con=0.3 seed=0 ####
+[v11] N=2486 dim=1024 | lambda_tsne=1.0 lambda_con=0.3
+[v11] positives: train=1199 test(held-out)=299 | pairs meta=pairs are ROW indices into EMB_CACHE; positives are cross-pa
+[P] cached -> data/survey_agent/stages/05_model/tsne_P_perp30.npy
+[P] ready (2486, 2486)
+[v11] it 0001/1500 loss=6.4648 trust=0.645 knnOv=0.030 BZrec@12_2d=0.037
+[v11] it 0100/1500 loss=3.8440 trust=0.871 knnOv=0.252 BZrec@12_2d=0.298
+[v11] it 0200/1500 loss=3.4692 trust=0.898 knnOv=0.315 BZrec@12_2d=0.371
+[v11] it 0300/1500 loss=3.2392 trust=0.905 knnOv=0.334 BZrec@12_2d=0.395
+[v11] it 0400/1500 loss=3.0922 trust=0.908 knnOv=0.338 BZrec@12_2d=0.425
+[v11] it 0500/1500 loss=3.0171 trust=0.910 knnOv=0.342 BZrec@12_2d=0.418
+[v11] it 0600/1500 loss=2.9464 trust=0.911 knnOv=0.343 BZrec@12_2d=0.428
+[v11] it 0700/1500 loss=2.9039 trust=0.910 knnOv=0.344 BZrec@12_2d=0.431
+[v11] it 0800/1500 loss=2.8750 trust=0.909 knnOv=0.343 BZrec@12_2d=0.438
+[v11] it 0900/1500 loss=2.8526 trust=0.910 knnOv=0.343 BZrec@12_2d=0.435
+[v11] it 1000/1500 loss=2.8302 trust=0.910 knnOv=0.344 BZrec@12_2d=0.431
+[v11] it 1100/1500 loss=2.8152 trust=0.909 knnOv=0.343 BZrec@12_2d=0.435
+[v11] it 1200/1500 loss=2.8081 trust=0.910 knnOv=0.344 BZrec@12_2d=0.435
+[v11] it 1300/1500 loss=2.8055 trust=0.909 knnOv=0.344 BZrec@12_2d=0.431
+[v11] it 1400/1500 loss=2.8024 trust=0.909 knnOv=0.344 BZrec@12_2d=0.438
+[v11] it 1500/1500 loss=2.8070 trust=0.909 knnOv=0.344 BZrec@12_2d=0.435
+
+[v11] FINAL trust=0.909 knnOv=0.344 {'n': 299, 'bz_recall@12_2d': 0.43478260869565216, 'bz_recall@12_highD': 0.9096989966555183}
+[save] data/survey_agent/stages/05_model/v11_agent_lam0.3_s0.pt
+#### lambda_con=0.3 seed=1 ####
+[v11] N=2486 dim=1024 | lambda_tsne=1.0 lambda_con=0.3
+[v11] positives: train=1199 test(held-out)=299 | pairs meta=pairs are ROW indices into EMB_CACHE; positives are cross-pa
+[P] loaded cache data/survey_agent/stages/05_model/tsne_P_perp30.npy
+[P] ready (2486, 2486)
+[v11] it 0001/1500 loss=6.4672 trust=0.639 knnOv=0.030 BZrec@12_2d=0.067
+[v11] it 0100/1500 loss=3.8374 trust=0.880 knnOv=0.259 BZrec@12_2d=0.344
+[v11] it 0200/1500 loss=3.4128 trust=0.903 knnOv=0.317 BZrec@12_2d=0.391
+[v11] it 0300/1500 loss=3.2216 trust=0.909 knnOv=0.333 BZrec@12_2d=0.431
+[v11] it 0400/1500 loss=3.0871 trust=0.912 knnOv=0.339 BZrec@12_2d=0.435
+[v11] it 0500/1500 loss=3.0258 trust=0.912 knnOv=0.342 BZrec@12_2d=0.431
+[v11] it 0600/1500 loss=2.9496 trust=0.912 knnOv=0.344 BZrec@12_2d=0.445
+[v11] it 0700/1500 loss=2.9179 trust=0.913 knnOv=0.343 BZrec@12_2d=0.435
+[v11] it 0800/1500 loss=2.8933 trust=0.913 knnOv=0.342 BZrec@12_2d=0.445
+[v11] it 0900/1500 loss=2.8688 trust=0.913 knnOv=0.342 BZrec@12_2d=0.448
+[v11] it 1000/1500 loss=2.8538 trust=0.912 knnOv=0.342 BZrec@12_2d=0.435
+[v11] it 1100/1500 loss=2.8318 trust=0.912 knnOv=0.343 BZrec@12_2d=0.445
+[v11] it 1200/1500 loss=2.8290 trust=0.912 knnOv=0.342 BZrec@12_2d=0.445
+[v11] it 1300/1500 loss=2.8246 trust=0.912 knnOv=0.343 BZrec@12_2d=0.438
+[v11] it 1400/1500 loss=2.8147 trust=0.912 knnOv=0.343 BZrec@12_2d=0.441
+[v11] it 1500/1500 loss=2.8119 trust=0.912 knnOv=0.343 BZrec@12_2d=0.441
+
+[v11] FINAL trust=0.912 knnOv=0.343 {'n': 299, 'bz_recall@12_2d': 0.4414715719063545, 'bz_recall@12_highD': 0.9096989966555183}
+[save] data/survey_agent/stages/05_model/v11_agent_lam0.3_s1.pt
+#### lambda_con=0.3 seed=2 ####
+[v11] N=2486 dim=1024 | lambda_tsne=1.0 lambda_con=0.3
+[v11] positives: train=1199 test(held-out)=299 | pairs meta=pairs are ROW indices into EMB_CACHE; positives are cross-pa
+[P] loaded cache data/survey_agent/stages/05_model/tsne_P_perp30.npy
+[P] ready (2486, 2486)
+[v11] it 0001/1500 loss=6.4678 trust=0.695 knnOv=0.038 BZrec@12_2d=0.067
+[v11] it 0100/1500 loss=3.8576 trust=0.880 knnOv=0.264 BZrec@12_2d=0.348
+[v11] it 0200/1500 loss=3.4360 trust=0.905 knnOv=0.325 BZrec@12_2d=0.391
+[v11] it 0300/1500 loss=3.2138 trust=0.911 knnOv=0.338 BZrec@12_2d=0.448
+[v11] it 0400/1500 loss=3.1111 trust=0.914 knnOv=0.342 BZrec@12_2d=0.445
+[v11] it 0500/1500 loss=3.0335 trust=0.914 knnOv=0.344 BZrec@12_2d=0.452
+[v11] it 0600/1500 loss=2.9717 trust=0.915 knnOv=0.344 BZrec@12_2d=0.452
+[v11] it 0700/1500 loss=2.9328 trust=0.915 knnOv=0.344 BZrec@12_2d=0.455
+[v11] it 0800/1500 loss=2.9102 trust=0.916 knnOv=0.344 BZrec@12_2d=0.455
+[v11] it 0900/1500 loss=2.8834 trust=0.915 knnOv=0.343 BZrec@12_2d=0.452
+[v11] it 1000/1500 loss=2.8730 trust=0.914 knnOv=0.343 BZrec@12_2d=0.455
+[v11] it 1100/1500 loss=2.8589 trust=0.914 knnOv=0.343 BZrec@12_2d=0.452
+[v11] it 1200/1500 loss=2.8519 trust=0.914 knnOv=0.342 BZrec@12_2d=0.452
+[v11] it 1300/1500 loss=2.8459 trust=0.914 knnOv=0.343 BZrec@12_2d=0.455
+[v11] it 1400/1500 loss=2.8481 trust=0.914 knnOv=0.343 BZrec@12_2d=0.452
+[v11] it 1500/1500 loss=2.8488 trust=0.914 knnOv=0.343 BZrec@12_2d=0.452
+
+[v11] FINAL trust=0.914 knnOv=0.343 {'n': 299, 'bz_recall@12_2d': 0.451505016722408, 'bz_recall@12_highD': 0.9096989966555183}
+[save] data/survey_agent/stages/05_model/v11_agent_lam0.3_s2.pt
+########## 3. 冻结迁移评测 ##########
+生信评测集: N=5415  12 篇  留出对=403  k=12  随机基线≈0.0022
+
+/Users/yudong/.pyenv/versions/3.10.14/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+方法                                 |  trust  knnOv@12  Co-loc@12   hexAdj
+----------------------------------------------------------------------------
+Ours-survey (zero-shot, 同领域)       |  0.757     0.067      0.114    0.285
+Ours-v11 air (zero-shot, 跨领域)      |  0.717     0.043      0.047    0.266
+PCA.transform (survey fit)         |  0.689     0.029      0.037    0.077
+UMAP.transform (survey fit)        |  0.731     0.040      0.062    0.218
+[参照] 生信重拟合                         |  0.939     0.358      0.474    0.613
+
+高维天花板 bz_recall@12_highD = 0.598 (编码器空间中本就 12-近邻的比例)
+
+========================================================================================
+逐篇 Co-loc@12（检验训练语料缺 LLM 语义是否造成系统性劣势）
+========================================================================================
+论文                                             对数   LLM%      迁移     重拟合     追回率
+----------------------------------------------------------------------------------------
+AuraGenome_An_LLM-Powered_Framework_for_On    107  19.6%   0.065   0.393    17%
+CGView.js Circular Genome Visualization in     17   2.3%   0.118   0.529    22%
+Circos an Information Aesthetic for Compar     51   0.0%   0.196   0.412    48%
+Computer Graphics Forum - 2024 - Ståhlbom      82   0.2%   0.195   0.610    32%
+GenoREC_A_Recommendation_System_for_Intera    130   0.0%   0.146   0.523    28%
+GlyphCreator_Towards_Example-based_Automat     66   0.3%   0.061   0.379    16%
+Gosling                                       121   0.0%   0.124   0.430    29%
+HERA Interactive Circular Comparison of Pl     41   0.4%   0.000   0.366     0%
+IntelliCircos                                 127   7.2%   0.102   0.559    18%
+NG-Circos Next-generation Circos for Data      25   0.0%   0.120   0.480    25%
+bioinformatics_32_11_1740                      26   0.0%   0.115   0.462    25%
+
+LLM 语义占比 vs 迁移追回率  相关系数 r = -0.265
+  LLM 重的论文(2篇) 追回率 17%   其余(9篇) 25%
+
+saved -> results/agent_transfer.json
+AGENT_CHAIN_DONE

@@ -1,0 +1,94 @@
+[
+  {
+    "paragraph": "Phylogenetic trees are ubiquitous and central to biology, but most published trees are available only as visual diagrams and not in the machine-readable Newick format. There are, thus, thousands of published trees in the scientific literature that are unavailable for follow-up analyses, comparisons, and supertree construction. Experts can easily read such diagrams, but the manual construction of a Newick string from a diagram is laborious, error-prone, and time-consuming. Previous attempts to semi-automate the reading of tree images relied on image processing techniques. These often encounter difficulties as typical published tree diagrams contain various graphical elements and annotations that overlap the branches, such as error bars on internal nodes. Here we introduce Treemble, a user-friendly desktop application for generating Newick strings from tree images. The user simply clicks to mark node locations, assisted by a deep learning-based node detection tool, and Treemble algorithmically assembles the tree from the node coordinates alone. Treemble also facilitates the automatic reading of tip name labels and can be used for both rectangular and circular trees.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Phylogenetic trees are central to biology.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Most published phylogenetic trees are available only as visual diagrams and not in the machine-readable Newick format.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Thousands of published phylogenetic trees in the scientific literature are unavailable for follow-up analyses, comparisons, and supertree construction.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Experts can easily read phylogenetic tree diagrams.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The manual construction of a Newick string from a diagram is laborious, error-prone, and time-consuming.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Previous attempts to semi-automate the reading of tree images relied on image processing techniques.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Image processing techniques often encounter difficulties with typical published tree diagrams containing various graphical elements and annotations that overlap the branches, such as error bars on internal nodes.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Treemble is a user-friendly desktop application for generating Newick strings from tree images.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The user of Treemble simply clicks to mark node locations, assisted by a deep learning-based node detection tool.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Treemble algorithmically assembles the tree from the node coordinates alone.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Treemble facilitates the automatic reading of tip name labels.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Treemble can be used for both rectangular and circular trees.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Treemble is a native desktop application for macOS and Windows and is freely available, with documentation, at treemble.org. Source code is available at github.com/John-Allard/Treemble. The trained node detection model is available at huggingface.co/John-Allard/treemble-1.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Treemble is a native desktop application for macOS and Windows.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "Treemble is freely available with documentation at treemble.org.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "The source code for Treemble is available at github.com/John-Allard/Treemble.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "The trained node detection model is available at huggingface.co/John-Allard/treemble-1.",
+        "category": "Other",
+        "rank": 3
+      }
+    ]
+  }
+]

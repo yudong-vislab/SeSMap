@@ -1,0 +1,48 @@
+[
+  {
+    "paragraph": "Neuroimmune signaling across the peripheral-vascular-glial axis is increasingly recognized as a driver of both age-related brain vulnerability and the earliest stages of neurodegenerative disease, including Alzheimer disease. Evaluating this axis in vivo remains challenging due to limited neuroinflammatory imaging biomarkers. We utilized [11C]CS1P1 positron emission tomography (PET) to quantify sphingosine-1-phosphate receptor 1 (S1PR1) availability alongside plasma proteomics in 42 cognitively normal individuals (age 21-82). Through differential abundance analysis and structural equation modeling (SEM), we identified a multi-compartment neuroimmune cascade linking peripheral T-cell activation (CD40LG), vascular endothelial disruption (ICAM1/TEK), central S1PR1 upregulation, and reactive astrogliosis (GFAP). Mediation analysis estimated this S1PR1 axis accounts for 25.5% of the total effect of CD40LG on GFAP. This cascade appears coupled to the astrocytic immune response and is exacerbated by underlying amyloid-beta pathology. These findings suggest [11C]CS1P1 may serve as an in vivo tool for evaluating peripheral-to-central immune crosstalk.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Neuroimmune signaling across the peripheral-vascular-glial axis is increasingly recognized as a driver of both age-related brain vulnerability and the earliest stages of neurodegenerative disease, including Alzheimer disease.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Evaluating the peripheral-vascular-glial axis in vivo remains challenging due to limited neuroinflammatory imaging biomarkers.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "We utilized [11C]CS1P1 positron emission tomography (PET) to quantify sphingosine-1-phosphate receptor 1 (S1PR1) availability alongside plasma proteomics in 42 cognitively normal individuals (age 21-82).",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Differential abundance analysis and structural equation modeling (SEM) were used to identify a multi-compartment neuroimmune cascade.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The neuroimmune cascade links peripheral T-cell activation (CD40LG), vascular endothelial disruption (ICAM1/TEK), central S1PR1 upregulation, and reactive astrogliosis (GFAP).",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "Mediation analysis estimated that the S1PR1 axis accounts for 25.5% of the total effect of CD40LG on GFAP.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "This neuroimmune cascade appears coupled to the astrocytic immune response and is exacerbated by underlying amyloid-beta pathology.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "These findings suggest [11C]CS1P1 may serve as an in vivo tool for evaluating peripheral-to-central immune crosstalk.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

@@ -1,0 +1,95 @@
+[
+  {
+    "paragraph": "Circos plots are graphical outputs that display three dimensional chromosomal interactions and fusion transcripts. However, the Circos plot tool is not an interactive visualization tool, but rather a figure generator. For example, it does not enable data to be added dynamically nor does it provide information for specific data points interactively. Recently, an R-based Circos tool (RCircos) has been developed to integrate Circos to R, but similarly, Rcircos can only be used to generate plots. Thus, we have developed a Circos plot tool (J-Circos) that is an interactive visualization tool that can plot Circos figures, as well as being able to dynamically add data to the figure, and providing information for specific data points using mouse hover display and zoom in/out functions. J-Circos uses the Java computer language to enable, it to be used on most operating systems (Windows, MacOS, Linux). Users can input data into J-Circos using flat data formats, as well as from the Graphical user interface (GUI). J-Circos will enable biologists to better study more complex chromosomal interactions and fusion transcripts that are otherwise difficult to visualize from next-generation sequencing data.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Circos plots are graphical outputs that display three-dimensional chromosomal interactions and fusion transcripts.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The Circos plot tool is not an interactive visualization tool, but rather a figure generator.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The Circos plot tool does not enable data to be added dynamically.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The Circos plot tool does not provide information for specific data points interactively.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "An R-based Circos tool (RCircos) has been developed to integrate Circos to R.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "RCircos can only be used to generate plots.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "We have developed a Circos plot tool (J-Circos) that is an interactive visualization tool.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "J-Circos can plot Circos figures, dynamically add data to the figure, and provide information for specific data points using mouse hover display and zoom in/out functions.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "J-Circos uses the Java computer language to enable it to be used on most operating systems (Windows, MacOS, Linux).",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Users can input data into J-Circos using flat data formats.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Users can input data into J-Circos from the Graphical User Interface (GUI).",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "J-Circos will enable biologists to better study more complex chromosomal interactions and fusion transcripts.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "These chromosomal interactions and fusion transcripts are otherwise difficult to visualize from next-generation sequencing data.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "J-circos and its manual are freely available at http://www.australianprostatecentre.org/research/software/jcircos",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "J-circos and its manual are freely available at http://www.australianprostatecentre.org/research/software/jcircos.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Supplementary data are available at Bioinformatics online.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Supplementary data are available at Bioinformatics online.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

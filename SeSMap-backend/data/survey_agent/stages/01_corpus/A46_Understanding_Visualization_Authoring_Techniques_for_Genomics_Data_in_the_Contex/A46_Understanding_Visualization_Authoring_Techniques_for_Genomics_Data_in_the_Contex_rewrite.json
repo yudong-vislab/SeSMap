@@ -1,0 +1,58 @@
+[
+  {
+    "paragraph": "Genomics experts rely on visualization to extract and share insights from complex and large-scale datasets. Beyond off-the-shelf tools for data exploration, there is an increasing need for platforms that aid experts in authoring customized visualizations for both exploration and communication of insights. A variety of interactive techniques have been proposed for authoring data visualizations, such as template editing, shelf configuration, natural language input, and code editors. However, it remains unclear how genomics experts create visualizations and which techniques best support their visualization tasks and needs. To address this gap, we conducted two user studies with genomics researchers: (1) semi-structured interviews (n=20) to identify the tasks, user contexts, and current visualization authoring techniques and (2) an exploratory study (n=13) using visual probes to elicit users’ intents and desired techniques when creating visualizations. Our contributions include (1) a characterization of how visualization authoring is currently utilized in genomics visualization, identifying limitations and benefits in light of common criteria for authoring tools, and (2) generalizable design implications for genomics visualization authoring tools based on our findings on task- and user-specific usefulness of authoring techniques.All supplemental materials are available at https://osf.io/bdj4v/",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Genomics experts rely on visualization to extract and share insights from complex and large-scale datasets.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "There is an increasing need for platforms that aid experts in authoring customized visualizations for both exploration and communication of insights.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "A variety of interactive techniques have been proposed for authoring data visualizations, such as template editing, shelf configuration, natural language input, and code editors.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "It remains unclear how genomics experts create visualizations and which techniques best support their visualization tasks and needs.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Two user studies were conducted with genomics researchers.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "The first study involved semi-structured interviews (n=20) to identify the tasks, user contexts, and current visualization authoring techniques.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "The second study was an exploratory study (n=13) using visual probes to elicit users’ intents and desired techniques when creating visualizations.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "Our contributions include a characterization of how visualization authoring is currently utilized in genomics visualization, identifying limitations and benefits in light of common criteria for authoring tools.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "Our contributions include generalizable design implications for genomics visualization authoring tools based on our findings on task- and user-specific usefulness of authoring techniques.",
+        "category": "Conclusion",
+        "rank": 5
+      },
+      {
+        "sentence": "All supplemental materials are available at https://osf.io/bdj4v/.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

@@ -1,0 +1,113 @@
+[
+  {
+    "paragraph": "Type B adverse drug reactions (ADRs) are iatrogenic immune-mediated syndromes with mechanistic etiologies that remain incompletely understood. Some of the most severe ADRs, including delayed drug hypersensitivity reactions, are T-cell mediated, restricted by specific human leukocyte antigen risk alleles and sometimes by public or oligoclonal T-cell receptors (TCRs), central to the immunopathogenesis of tissue-damaging response. However, the specific cellular signatures of effector, regulatory, and accessory immune populations that mediate disease, define reaction phenotype, and determine severity have not been defined. Recent development of single-cell platforms bringing together advances in genomics and immunology provides the tools to simultaneously examine the full transcriptome, TCRs, and surface protein markers of highly heterogeneous immune cell populations at the site of the pathological response at a single-cell level. However, the requirement for advanced bioinformatics expertise and computational hardware and software has often limited the ability of investigators with the understanding of diseases and biological models to exploit these new approaches. Here we describe the features and use of a state-of-the-art, fully integrated application for analysis and visualization of multiomic single-cell data called Visual Genomics Analysis Studio (VGAS). This unique user-friendly, Windows-based graphical user interface is specifically designed to enable investigators to interrogate their own data. While VGAS also includes tools for sequence alignment and identification of associations with host or organism genetic polymorphisms, in this review we focus on its application for analysis of single-cell TCR-RNA-Cellular Indexing of Transcriptomes and Epitopes by Sequencing (CITE)-seq, enabling holistic cellular characterization by unbiased transcriptome and select surface proteome. Critically, VGAS does not require user-directed coding or access to high-performance computers, instead incorporating performance-optimized hidden code to provide application-based fast and intuitive tools for data analyses and production of high-resolution publication-ready graphics on standard specification laptops. Specifically, it allows analyses of comprehensive single-cell TCR sequencing (scTCR-seq) data, detailing (i) functional pairings of α-β heterodimer TCRs, (ii) one-click histograms to display entropy and gene rearrangements, and (iii) Circos and Sankey plots to visualize clonality and dominance. For unbiased single-cell RNA sequencing (scRNA-seq) analyses, users extract cell transcriptome signatures according to global structure via principal component analysis, t-distributed stochastic neighborhood embedding, or uniform manifold approximation and projection plots, with overlay of scTCR-seq enabling identification and selection of the immunodominant TCR-expressing populations. Further integration with similar sequence-based detection of surface protein markers using oligo-labeled antibodies (CITE-seq) provides comparative understanding of surface protein expression, with differential gene or protein analyses visualized using volcano plot or heatmap functions. These data can be compared to reference cell atlases or suitable controls to reveal discrete disease-specific subsets, from epithelial to tissue-resident memory T-cells, and activation status, from senescence through exhaustion, with more finite transcript expression displayed as violin and box plots. Importantly, guided tutorial videos are available, as are regular application updates based on the latest advances in bioinformatics and user feedback.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Type B adverse drug reactions (ADRs) are iatrogenic immune-mediated syndromes with mechanistic etiologies that remain incompletely understood.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Some of the most severe ADRs, including delayed drug hypersensitivity reactions, are T-cell mediated, restricted by specific human leukocyte antigen risk alleles and sometimes by public or oligoclonal T-cell receptors (TCRs).",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "T-cell receptors (TCRs) are central to the immunopathogenesis of tissue-damaging responses in severe ADRs.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The specific cellular signatures of effector, regulatory, and accessory immune populations that mediate disease, define reaction phenotype, and determine severity have not been defined.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Recent development of single-cell platforms bringing together advances in genomics and immunology provides tools to simultaneously examine the full transcriptome, TCRs, and surface protein markers of highly heterogeneous immune cell populations at the site of the pathological response at a single-cell level.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "The requirement for advanced bioinformatics expertise and computational hardware and software has often limited the ability of investigators with the understanding of diseases and biological models to exploit these new approaches.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "We describe the features and use of a state-of-the-art, fully integrated application for analysis and visualization of multiomic single-cell data called Visual Genomics Analysis Studio (VGAS).",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "VGAS is a unique user-friendly, Windows-based graphical user interface specifically designed to enable investigators to interrogate their own data.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "VGAS includes tools for sequence alignment and identification of associations with host or organism genetic polymorphisms.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "VGAS enables analysis of single-cell TCR-RNA-Cellular Indexing of Transcriptomes and Epitopes by Sequencing (CITE-seq), allowing holistic cellular characterization by unbiased transcriptome and select surface proteome.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "VGAS does not require user-directed coding or access to high-performance computers, instead incorporating performance-optimized hidden code to provide application-based fast and intuitive tools for data analyses and production of high-resolution publication-ready graphics on standard specification laptops.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "VGAS allows analyses of comprehensive single-cell TCR sequencing (scTCR-seq) data, detailing functional pairings of α-β heterodimer TCRs.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "VGAS provides one-click histograms to display entropy and gene rearrangements.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "VGAS generates Circos and Sankey plots to visualize clonality and dominance.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "For unbiased single-cell RNA sequencing (scRNA-seq) analyses, VGAS enables users to extract cell transcriptome signatures according to global structure via principal component analysis, t-distributed stochastic neighborhood embedding, or uniform manifold approximation and projection plots.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "VGAS allows overlay of scTCR-seq data to identify and select immunodominant TCR-expressing populations.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "VGAS integrates sequence-based detection of surface protein markers using oligo-labeled antibodies (CITE-seq) to provide comparative understanding of surface protein expression.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "VGAS enables differential gene or protein analyses visualized using volcano plot or heatmap functions.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "VGAS allows comparison of data to reference cell atlases or suitable controls to reveal discrete disease-specific subsets, from epithelial to tissue-resident memory T-cells, and activation status, from senescence through exhaustion.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "VGAS enables visualization of more finite transcript expression using violin and box plots.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Guided tutorial videos are available for VGAS, as are regular application updates based on the latest advances in bioinformatics and user feedback.",
+        "category": "Other",
+        "rank": 2
+      }
+    ]
+  }
+]

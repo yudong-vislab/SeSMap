@@ -1,0 +1,457 @@
+########## 1. M 内部对应对（不含任何研究集端点）##########
+[data] N=2241  papers=162
+[filter] local-only eligible MSUs: 2241/2241 categories=ALL, min_rank=1
+[cand] 3500 cross-paper candidate pairs in cosine[0.55,0.95]
+[coverage] 2238/2241 eligible MSUs occur in at least one submitted pair
+[judge] 10/3500  kept=4
+[judge] 20/3500  kept=13
+[judge] 30/3500  kept=20
+[judge] 40/3500  kept=26
+[judge] 50/3500  kept=31
+[judge] 60/3500  kept=36
+[judge] 70/3500  kept=42
+[judge] 80/3500  kept=47
+[judge] 90/3500  kept=50
+[judge] 100/3500  kept=53
+[judge] 110/3500  kept=59
+[judge] 120/3500  kept=66
+[judge] 130/3500  kept=74
+[judge] 140/3500  kept=79
+[judge] 150/3500  kept=85
+[judge] 160/3500  kept=89
+[judge] 170/3500  kept=92
+[judge] 180/3500  kept=98
+[judge] 190/3500  kept=102
+[judge] 200/3500  kept=106
+[judge] 210/3500  kept=110
+[judge] 220/3500  kept=114
+[judge] 230/3500  kept=120
+[judge] 240/3500  kept=125
+[judge] 250/3500  kept=127
+[judge] 260/3500  kept=131
+[judge] 270/3500  kept=137
+[judge] 280/3500  kept=141
+[judge] 290/3500  kept=145
+[judge] 300/3500  kept=151
+[judge] 310/3500  kept=156
+[judge] 320/3500  kept=160
+[judge] 330/3500  kept=164
+[judge] 340/3500  kept=168
+[judge] 350/3500  kept=174
+[judge] 360/3500  kept=177
+[judge] 370/3500  kept=181
+[judge] 380/3500  kept=184
+[judge] 390/3500  kept=189
+[judge] 400/3500  kept=193
+[judge] 410/3500  kept=197
+[judge] 420/3500  kept=204
+[judge] 430/3500  kept=207
+[judge] 440/3500  kept=211
+[judge] 450/3500  kept=215
+[judge] 460/3500  kept=219
+[judge] 470/3500  kept=222
+[judge] 480/3500  kept=228
+[judge] 490/3500  kept=231
+[judge] 500/3500  kept=235
+[judge] 510/3500  kept=236
+[judge] 520/3500  kept=239
+[judge] 530/3500  kept=243
+[judge] 540/3500  kept=246
+[judge] 550/3500  kept=250
+[judge] 560/3500  kept=252
+[judge] 570/3500  kept=256
+[judge] 580/3500  kept=260
+[judge] 590/3500  kept=265
+[judge] 600/3500  kept=268
+[judge] 610/3500  kept=271
+[judge] 620/3500  kept=272
+[judge] 630/3500  kept=276
+[judge] 640/3500  kept=279
+[judge] 650/3500  kept=283
+[judge] 660/3500  kept=285
+[judge] 670/3500  kept=287
+[judge] 680/3500  kept=290
+[judge] 690/3500  kept=294
+[judge] 700/3500  kept=296
+[judge] 710/3500  kept=298
+[judge] 720/3500  kept=299
+[judge] 730/3500  kept=300
+[judge] 740/3500  kept=303
+[judge] 750/3500  kept=308
+[judge] 760/3500  kept=311
+[judge] 770/3500  kept=312
+[judge] 780/3500  kept=316
+[judge] 790/3500  kept=319
+[judge] 800/3500  kept=321
+[judge] 810/3500  kept=325
+[judge] 820/3500  kept=329
+[judge] 830/3500  kept=331
+[judge] 840/3500  kept=335
+[judge] 850/3500  kept=340
+[judge] 860/3500  kept=342
+[judge] 870/3500  kept=347
+[judge] 880/3500  kept=351
+[judge] 890/3500  kept=353
+[judge] 900/3500  kept=356
+[judge] 910/3500  kept=361
+[judge] 920/3500  kept=363
+[judge] 930/3500  kept=365
+[judge] 940/3500  kept=367
+[judge] 950/3500  kept=369
+[judge] 960/3500  kept=373
+[judge] 970/3500  kept=376
+[judge] 980/3500  kept=379
+[judge] 990/3500  kept=382
+[judge] 1000/3500  kept=384
+[judge] 1010/3500  kept=387
+[judge] 1020/3500  kept=390
+[judge] 1030/3500  kept=392
+[judge] 1040/3500  kept=394
+[judge] 1050/3500  kept=397
+[judge] 1060/3500  kept=400
+[judge] 1070/3500  kept=403
+[judge] 1080/3500  kept=407
+[judge] 1090/3500  kept=412
+[judge] 1100/3500  kept=412
+[judge] 1110/3500  kept=415
+[judge] 1120/3500  kept=419
+[judge] 1130/3500  kept=423
+[judge] 1140/3500  kept=426
+[judge] 1150/3500  kept=429
+[judge] 1160/3500  kept=432
+[judge] 1170/3500  kept=434
+[judge] 1180/3500  kept=436
+[judge] 1190/3500  kept=440
+[judge] 1200/3500  kept=442
+[judge] 1210/3500  kept=445
+[judge] 1220/3500  kept=448
+[judge] 1230/3500  kept=454
+[judge] 1240/3500  kept=457
+[judge] 1250/3500  kept=460
+[judge] 1260/3500  kept=463
+[judge] 1270/3500  kept=466
+[judge] 1280/3500  kept=468
+[judge] 1290/3500  kept=470
+[judge] 1300/3500  kept=471
+[judge] 1310/3500  kept=473
+[judge] 1320/3500  kept=475
+[judge] 1330/3500  kept=476
+[judge] 1340/3500  kept=479
+[judge] 1350/3500  kept=483
+[judge] 1360/3500  kept=487
+[judge] 1370/3500  kept=489
+[judge] 1380/3500  kept=492
+[judge] 1390/3500  kept=495
+[judge] 1400/3500  kept=498
+[judge] 1410/3500  kept=501
+[judge] 1420/3500  kept=504
+[judge] 1430/3500  kept=507
+[judge] 1440/3500  kept=509
+[judge] 1450/3500  kept=512
+[judge] 1460/3500  kept=515
+[judge] 1470/3500  kept=518
+[judge] 1480/3500  kept=520
+[judge] 1490/3500  kept=524
+[judge] 1500/3500  kept=527
+[judge] 1510/3500  kept=531
+[judge] 1520/3500  kept=533
+[judge] 1530/3500  kept=536
+[judge] 1540/3500  kept=540
+[judge] 1550/3500  kept=542
+[judge] 1560/3500  kept=543
+[judge] 1570/3500  kept=544
+[judge] 1580/3500  kept=546
+[judge] 1590/3500  kept=548
+[judge] 1600/3500  kept=551
+[judge] 1610/3500  kept=551
+[judge] 1620/3500  kept=553
+[judge] 1630/3500  kept=557
+[judge] 1640/3500  kept=559
+[judge] 1650/3500  kept=560
+[judge] 1660/3500  kept=562
+[judge] 1670/3500  kept=566
+[judge] 1680/3500  kept=569
+[judge] 1690/3500  kept=571
+[judge] 1700/3500  kept=572
+[judge] 1710/3500  kept=574
+[judge] 1720/3500  kept=577
+[judge] 1730/3500  kept=580
+[judge] 1740/3500  kept=583
+[judge] 1750/3500  kept=586
+[judge] 1760/3500  kept=589
+[judge] 1770/3500  kept=590
+[judge] 1780/3500  kept=592
+[judge] 1790/3500  kept=594
+[judge] 1800/3500  kept=598
+[judge] 1810/3500  kept=600
+[judge] 1820/3500  kept=605
+[judge] 1830/3500  kept=609
+[judge] 1840/3500  kept=613
+[judge] 1850/3500  kept=615
+[judge] 1860/3500  kept=617
+[judge] 1870/3500  kept=619
+[judge] 1880/3500  kept=622
+[judge] 1890/3500  kept=623
+[judge] 1900/3500  kept=625
+[judge] 1910/3500  kept=629
+[judge] 1920/3500  kept=632
+[judge] 1930/3500  kept=634
+[judge] 1940/3500  kept=636
+[judge] 1950/3500  kept=637
+[judge] 1960/3500  kept=641
+[judge] 1970/3500  kept=644
+[judge] 1980/3500  kept=648
+[judge] 1990/3500  kept=649
+[judge] 2000/3500  kept=652
+[judge] 2010/3500  kept=656
+[judge] 2020/3500  kept=658
+[judge] 2030/3500  kept=661
+[judge] 2040/3500  kept=663
+[judge] 2050/3500  kept=666
+[judge] 2060/3500  kept=670
+[judge] 2070/3500  kept=671
+[judge] 2080/3500  kept=674
+[judge] 2090/3500  kept=678
+[judge] 2100/3500  kept=681
+[judge] 2110/3500  kept=682
+[judge] 2120/3500  kept=685
+[judge] 2130/3500  kept=690
+[judge] 2140/3500  kept=691
+[judge] 2150/3500  kept=694
+[judge] 2160/3500  kept=696
+[judge] 2170/3500  kept=697
+[judge] 2180/3500  kept=699
+[judge] 2190/3500  kept=702
+[judge] 2200/3500  kept=702
+[judge] 2210/3500  kept=706
+[judge] 2220/3500  kept=708
+[judge] 2230/3500  kept=712
+[judge] 2240/3500  kept=717
+[judge] 2250/3500  kept=719
+[judge] 2260/3500  kept=720
+[judge] 2270/3500  kept=723
+[judge] 2280/3500  kept=725
+[judge] 2290/3500  kept=726
+[judge] 2300/3500  kept=730
+[judge] 2310/3500  kept=734
+[judge] 2320/3500  kept=736
+[judge] 2330/3500  kept=739
+[judge] 2340/3500  kept=742
+[judge] 2350/3500  kept=743
+[judge] 2360/3500  kept=744
+[judge] 2370/3500  kept=747
+[judge] 2380/3500  kept=748
+[judge] 2390/3500  kept=751
+[judge] 2400/3500  kept=753
+[judge] 2410/3500  kept=756
+[judge] 2420/3500  kept=760
+[judge] 2430/3500  kept=762
+[judge] 2440/3500  kept=765
+[judge] 2450/3500  kept=768
+[judge] 2460/3500  kept=770
+[judge] 2470/3500  kept=773
+[judge] 2480/3500  kept=776
+[judge] 2490/3500  kept=779
+[judge] 2500/3500  kept=780
+[judge] 2510/3500  kept=782
+[judge] 2520/3500  kept=783
+[judge] 2530/3500  kept=786
+[judge] 2540/3500  kept=787
+[judge] 2550/3500  kept=789
+[judge] 2560/3500  kept=790
+[judge] 2570/3500  kept=792
+[judge] 2580/3500  kept=796
+[judge] 2590/3500  kept=799
+[judge] 2600/3500  kept=801
+[judge] 2610/3500  kept=805
+[judge] 2620/3500  kept=805
+[judge] 2630/3500  kept=805
+[judge] 2640/3500  kept=806
+[judge] 2650/3500  kept=809
+[judge] 2660/3500  kept=811
+[judge] 2670/3500  kept=813
+[judge] 2680/3500  kept=814
+[judge] 2690/3500  kept=816
+[judge] 2700/3500  kept=818
+[judge] 2710/3500  kept=819
+[judge] 2720/3500  kept=819
+[judge] 2730/3500  kept=821
+[judge] 2740/3500  kept=822
+[judge] 2750/3500  kept=826
+[judge] 2760/3500  kept=828
+[judge] 2770/3500  kept=830
+[judge] 2780/3500  kept=833
+[judge] 2790/3500  kept=836
+[judge] 2800/3500  kept=838
+[judge] 2810/3500  kept=840
+[judge] 2820/3500  kept=841
+[judge] 2830/3500  kept=842
+[judge] 2840/3500  kept=845
+[judge] 2850/3500  kept=847
+[judge] 2860/3500  kept=850
+[judge] 2870/3500  kept=852
+[judge] 2880/3500  kept=854
+[judge] 2890/3500  kept=856
+[judge] 2900/3500  kept=857
+[judge] 2910/3500  kept=859
+[judge] 2920/3500  kept=862
+[judge] 2930/3500  kept=863
+[judge] 2940/3500  kept=866
+[judge] 2950/3500  kept=866
+[judge] 2960/3500  kept=868
+[judge] 2970/3500  kept=871
+[judge] 2980/3500  kept=872
+[judge] 2990/3500  kept=873
+[judge] 3000/3500  kept=875
+[judge] 3010/3500  kept=878
+[judge] 3020/3500  kept=880
+[judge] 3030/3500  kept=882
+[judge] 3040/3500  kept=883
+[judge] 3050/3500  kept=885
+[judge] 3060/3500  kept=886
+[judge] 3070/3500  kept=889
+[judge] 3080/3500  kept=891
+[judge] 3090/3500  kept=892
+[judge] 3100/3500  kept=893
+[judge] 3110/3500  kept=894
+[judge] 3120/3500  kept=895
+[judge] 3130/3500  kept=897
+[judge] 3140/3500  kept=898
+[judge] 3150/3500  kept=899
+[judge] 3160/3500  kept=900
+[judge] 3170/3500  kept=903
+[judge] 3180/3500  kept=905
+[judge] 3190/3500  kept=908
+[judge] 3200/3500  kept=910
+[judge] 3210/3500  kept=910
+[judge] 3220/3500  kept=911
+[judge] 3230/3500  kept=913
+[judge] 3240/3500  kept=913
+[judge] 3250/3500  kept=915
+[judge] 3260/3500  kept=916
+[judge] 3270/3500  kept=918
+[judge] 3280/3500  kept=918
+[judge] 3290/3500  kept=919
+[judge] 3300/3500  kept=921
+[judge] 3310/3500  kept=922
+[judge] 3320/3500  kept=923
+[judge] 3330/3500  kept=923
+[judge] 3340/3500  kept=924
+[judge] 3350/3500  kept=927
+[judge] 3360/3500  kept=927
+[judge] 3370/3500  kept=929
+[judge] 3380/3500  kept=931
+[judge] 3390/3500  kept=932
+[judge] 3400/3500  kept=932
+[judge] 3410/3500  kept=933
+[judge] 3420/3500  kept=933
+[judge] 3430/3500  kept=935
+[judge] 3440/3500  kept=935
+[judge] 3450/3500  kept=936
+[judge] 3460/3500  kept=939
+[judge] 3470/3500  kept=940
+[judge] 3480/3500  kept=941
+[judge] 3490/3500  kept=941
+[judge] 3500/3500  kept=941
+[pos] 941 positive cross-paper pairs
+[save] data/circ_m/stages/02_msu/llm_pairs.json  train_pos=753  test_pos=188
+########## 2. 索引偏移到合并坐标系 ##########
+  监督对 941  端点范围 [5417, 7655]  最小端点>=5415: True
+########## 3. 训练（邻域项覆盖全部 7656 点，InfoNCE 仅 M）##########
+#### seed=0 ####
+[v11] N=7656 dim=1024 | lambda_tsne=1.0 lambda_con=0.3
+[v11] positives: train=941 test(held-out)=0 | pairs meta=positives are M-internal only; no endpoint in the 12 study p
+[P] cached -> data/bio_m/stages/05_model/tsne_P_perp30.npy
+[P] ready (7656, 7656)
+[v11] it 0001/1500 loss=7.9345 trust=0.645 knnOv=0.016 BZrec@12_2d=nan
+[v11] it 0100/1500 loss=4.8756 trust=0.865 knnOv=0.159 BZrec@12_2d=nan
+[v11] it 0200/1500 loss=4.1987 trust=0.907 knnOv=0.254 BZrec@12_2d=nan
+[v11] it 0300/1500 loss=3.8377 trust=0.924 knnOv=0.294 BZrec@12_2d=nan
+[v11] it 0400/1500 loss=3.6161 trust=0.932 knnOv=0.317 BZrec@12_2d=nan
+[v11] it 0500/1500 loss=3.4466 trust=0.935 knnOv=0.327 BZrec@12_2d=nan
+[v11] it 0600/1500 loss=3.3457 trust=0.938 knnOv=0.337 BZrec@12_2d=nan
+[v11] it 0700/1500 loss=3.2871 trust=0.938 knnOv=0.337 BZrec@12_2d=nan
+[v11] it 0800/1500 loss=3.2624 trust=0.938 knnOv=0.336 BZrec@12_2d=nan
+[v11] it 0900/1500 loss=3.1826 trust=0.940 knnOv=0.341 BZrec@12_2d=nan
+[v11] it 1000/1500 loss=3.1239 trust=0.940 knnOv=0.343 BZrec@12_2d=nan
+[v11] it 1100/1500 loss=3.1031 trust=0.940 knnOv=0.344 BZrec@12_2d=nan
+[v11] it 1200/1500 loss=3.0804 trust=0.940 knnOv=0.344 BZrec@12_2d=nan
+[v11] it 1300/1500 loss=3.0721 trust=0.941 knnOv=0.345 BZrec@12_2d=nan
+[v11] it 1400/1500 loss=3.0658 trust=0.941 knnOv=0.345 BZrec@12_2d=nan
+[v11] it 1500/1500 loss=3.0722 trust=0.941 knnOv=0.345 BZrec@12_2d=nan
+
+[v11] FINAL trust=0.941 knnOv=0.345 {'n': 0}
+[save] data/bio_m/stages/05_model/bio_m_lam0.3_s0.pt
+#### seed=1 ####
+[v11] N=7656 dim=1024 | lambda_tsne=1.0 lambda_con=0.3
+[v11] positives: train=941 test(held-out)=0 | pairs meta=positives are M-internal only; no endpoint in the 12 study p
+[P] loaded cache data/bio_m/stages/05_model/tsne_P_perp30.npy
+[P] ready (7656, 7656)
+[v11] it 0001/1500 loss=7.9358 trust=0.645 knnOv=0.018 BZrec@12_2d=nan
+[v11] it 0100/1500 loss=4.7325 trust=0.882 knnOv=0.179 BZrec@12_2d=nan
+[v11] it 0200/1500 loss=4.1091 trust=0.914 knnOv=0.265 BZrec@12_2d=nan
+[v11] it 0300/1500 loss=3.7652 trust=0.926 knnOv=0.304 BZrec@12_2d=nan
+[v11] it 0400/1500 loss=3.5457 trust=0.932 knnOv=0.322 BZrec@12_2d=nan
+[v11] it 0500/1500 loss=3.4035 trust=0.934 knnOv=0.329 BZrec@12_2d=nan
+[v11] it 0600/1500 loss=3.3111 trust=0.937 knnOv=0.336 BZrec@12_2d=nan
+[v11] it 0700/1500 loss=3.2281 trust=0.937 knnOv=0.337 BZrec@12_2d=nan
+[v11] it 0800/1500 loss=3.1749 trust=0.938 knnOv=0.340 BZrec@12_2d=nan
+[v11] it 0900/1500 loss=3.1201 trust=0.938 knnOv=0.343 BZrec@12_2d=nan
+[v11] it 1000/1500 loss=3.0934 trust=0.938 knnOv=0.343 BZrec@12_2d=nan
+[v11] it 1100/1500 loss=3.0604 trust=0.939 knnOv=0.343 BZrec@12_2d=nan
+[v11] it 1200/1500 loss=3.0299 trust=0.939 knnOv=0.344 BZrec@12_2d=nan
+[v11] it 1300/1500 loss=3.0307 trust=0.939 knnOv=0.345 BZrec@12_2d=nan
+[v11] it 1400/1500 loss=3.0192 trust=0.939 knnOv=0.345 BZrec@12_2d=nan
+[v11] it 1500/1500 loss=3.0194 trust=0.939 knnOv=0.345 BZrec@12_2d=nan
+
+[v11] FINAL trust=0.939 knnOv=0.345 {'n': 0}
+[save] data/bio_m/stages/05_model/bio_m_lam0.3_s1.pt
+#### seed=2 ####
+[v11] N=7656 dim=1024 | lambda_tsne=1.0 lambda_con=0.3
+[v11] positives: train=941 test(held-out)=0 | pairs meta=positives are M-internal only; no endpoint in the 12 study p
+[P] loaded cache data/bio_m/stages/05_model/tsne_P_perp30.npy
+[P] ready (7656, 7656)
+[v11] it 0001/1500 loss=7.9359 trust=0.682 knnOv=0.017 BZrec@12_2d=nan
+[v11] it 0100/1500 loss=4.7423 trust=0.879 knnOv=0.178 BZrec@12_2d=nan
+[v11] it 0200/1500 loss=4.1028 trust=0.915 knnOv=0.265 BZrec@12_2d=nan
+[v11] it 0300/1500 loss=3.7653 trust=0.928 knnOv=0.303 BZrec@12_2d=nan
+[v11] it 0400/1500 loss=3.5804 trust=0.932 knnOv=0.321 BZrec@12_2d=nan
+[v11] it 0500/1500 loss=3.4477 trust=0.936 knnOv=0.330 BZrec@12_2d=nan
+[v11] it 0600/1500 loss=3.3433 trust=0.937 knnOv=0.335 BZrec@12_2d=nan
+[v11] it 0700/1500 loss=3.2664 trust=0.939 knnOv=0.339 BZrec@12_2d=nan
+[v11] it 0800/1500 loss=3.2034 trust=0.938 knnOv=0.340 BZrec@12_2d=nan
+[v11] it 0900/1500 loss=3.1614 trust=0.939 knnOv=0.341 BZrec@12_2d=nan
+[v11] it 1000/1500 loss=3.1225 trust=0.940 knnOv=0.344 BZrec@12_2d=nan
+[v11] it 1100/1500 loss=3.0925 trust=0.940 knnOv=0.344 BZrec@12_2d=nan
+[v11] it 1200/1500 loss=3.0672 trust=0.940 knnOv=0.345 BZrec@12_2d=nan
+[v11] it 1300/1500 loss=3.0611 trust=0.941 knnOv=0.346 BZrec@12_2d=nan
+[v11] it 1400/1500 loss=3.0538 trust=0.941 knnOv=0.346 BZrec@12_2d=nan
+[v11] it 1500/1500 loss=3.0532 trust=0.941 knnOv=0.346 BZrec@12_2d=nan
+
+[v11] FINAL trust=0.941 knnOv=0.346 {'n': 0}
+[save] data/bio_m/stages/05_model/bio_m_lam0.3_s2.pt
+#### 消融: 零对应监督 ####
+[v11] N=7656 dim=1024 | lambda_tsne=1.0 lambda_con=0.0
+[v11] positives: train=941 test(held-out)=0 | pairs meta=positives are M-internal only; no endpoint in the 12 study p
+[P] loaded cache data/bio_m/stages/05_model/tsne_P_perp30.npy
+[P] ready (7656, 7656)
+[v11] it 0001/1500 loss=5.2555 trust=0.650 knnOv=0.016 BZrec@12_2d=nan
+[v11] it 0100/1500 loss=3.0235 trust=0.874 knnOv=0.188 BZrec@12_2d=nan
+[v11] it 0200/1500 loss=2.5730 trust=0.916 knnOv=0.294 BZrec@12_2d=nan
+[v11] it 0300/1500 loss=2.3386 trust=0.931 knnOv=0.335 BZrec@12_2d=nan
+[v11] it 0400/1500 loss=2.1991 trust=0.937 knnOv=0.350 BZrec@12_2d=nan
+[v11] it 0500/1500 loss=2.0901 trust=0.940 knnOv=0.360 BZrec@12_2d=nan
+[v11] it 0600/1500 loss=2.0290 trust=0.941 knnOv=0.364 BZrec@12_2d=nan
+[v11] it 0700/1500 loss=1.9680 trust=0.942 knnOv=0.367 BZrec@12_2d=nan
+[v11] it 0800/1500 loss=1.9220 trust=0.942 knnOv=0.368 BZrec@12_2d=nan
+[v11] it 0900/1500 loss=1.8935 trust=0.942 knnOv=0.368 BZrec@12_2d=nan
+[v11] it 1000/1500 loss=1.8753 trust=0.943 knnOv=0.369 BZrec@12_2d=nan
+[v11] it 1100/1500 loss=1.8530 trust=0.943 knnOv=0.369 BZrec@12_2d=nan
+[v11] it 1200/1500 loss=1.8370 trust=0.943 knnOv=0.369 BZrec@12_2d=nan
+[v11] it 1300/1500 loss=1.8315 trust=0.943 knnOv=0.370 BZrec@12_2d=nan
+[v11] it 1400/1500 loss=1.8266 trust=0.943 knnOv=0.370 BZrec@12_2d=nan
+[v11] it 1500/1500 loss=1.8360 trust=0.943 knnOv=0.371 BZrec@12_2d=nan
+
+[v11] FINAL trust=0.943 knnOv=0.371 {'n': 0}
+[save] data/bio_m/stages/05_model/bio_m_lam0.0_s0.pt
+BIO_M_CHAIN_DONE

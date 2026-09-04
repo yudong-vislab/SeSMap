@@ -1,0 +1,5 @@
+# Visualization of Oligonucleotide-Based Probes Along Pseudochromosomes Using RIdeogram, KaryoploteR, and Circlize (Circos)
+
+## Abstract
+
+Fluorescence in situ hybridization (FISH) using oligonucleotide-based probes is an innovative modification of classic FISH techniques, enabling karyotypic identifications. Here, we exemplarily describe the design and in silico visualization of oligonucleotide-based probes derived from the Cucumis sativus genome. Additionally, the probes are also plotted comparatively to the closely related Cucumis melo genome. The visualization process is realized in R using various libraries for linear or circular plots including RIdeogram, KaryoploteR, and Circlize.

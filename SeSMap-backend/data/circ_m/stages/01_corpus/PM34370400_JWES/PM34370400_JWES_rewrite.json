@@ -1,0 +1,88 @@
+[
+  {
+    "paragraph": "Whole genome and exome sequencing (WGS/WES) are the most popular next-generation sequencing (NGS) methodologies and are at present often used to detect rare and common genetic variants of clinical significance. We emphasize that automated sequence data processing, management, and visualization should be an indispensable component of modern WGS and WES data analysis for sequence assembly, variant detection (SNPs, SVs), imputation, and resolution of haplotypes. In this manuscript, we present a newly developed findable, accessible, interoperable, and reusable (FAIR) bioinformatics-genomics pipeline Java based Whole Genome/Exome Sequence Data Processing Pipeline (JWES) for efficient variant discovery and interpretation, and big data modeling and visualization. JWES is a cross-platform, user-friendly, product line application, that entails three modules: (a) data processing, (b) storage, and (c) visualization. The data processing module performs a series of different tasks for variant calling, the data storage module efficiently manages high-volume gene-variant data, and the data visualization module supports variant data interpretation with Circos graphs. The performance of JWES was tested and validated in-house with different experiments, using Microsoft Windows, macOS Big Sur, and UNIX operating systems. JWES is an open-source and freely available pipeline, allowing scientists to take full advantage of all the computing resources available, without requiring much computer science knowledge. We have successfully applied JWES for processing, management, and gene-variant discovery, annotation, prediction, and genotyping of WGS and WES data to analyze variable complex disorders. In summary, we report the performance of JWES with some reproducible case studies, using open access and in-house generated, high-quality datasets.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Whole genome and exome sequencing (WGS/WES) are the most popular next-generation sequencing (NGS) methodologies.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "WGS/WES are often used to detect rare and common genetic variants of clinical significance.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Automated sequence data processing, management, and visualization should be an indispensable component of modern WGS and WES data analysis.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "Automated sequence data processing is essential for sequence assembly, variant detection (SNPs, SVs), imputation, and resolution of haplotypes.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "A newly developed findable, accessible, interoperable, and reusable (FAIR) bioinformatics-genomics pipeline, Java-based Whole Genome/Exome Sequence Data Processing Pipeline (JWES), is presented.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "JWES is designed for efficient variant discovery, interpretation, and big data modeling and visualization.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "JWES is a cross-platform, user-friendly, product line application with three modules: (a) data processing, (b) storage, and (c) visualization.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The data processing module performs tasks for variant calling.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The data storage module efficiently manages high-volume gene-variant data.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The data visualization module supports variant data interpretation with Circos graphs.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The performance of JWES was tested and validated in-house with different experiments using Microsoft Windows, macOS Big Sur, and UNIX operating systems.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "JWES is an open-source and freely available pipeline.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "JWES allows scientists to take full advantage of all available computing resources without requiring much computer science knowledge.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "JWES has been successfully applied for processing, management, and gene-variant discovery, annotation, prediction, and genotyping of WGS and WES data.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "JWES has been used to analyze variable complex disorders.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The performance of JWES is reported with reproducible case studies using open access and in-house generated, high-quality datasets.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  }
+]

@@ -1,0 +1,5 @@
+# Understanding the research-practice gap in visualization design guidelines
+
+## Abstract
+
+Empirical research on perception and cognition has laid the foundation for visualization design, often distilled into practical guidelines intended to support effective chart creation. However, it remains unclear how well these research-driven insights are reflected in the guidelines practitioners actually use. In this paper, we investigate the research-practice gap in visualization design guidelines through a mixed-methods approach. We first collected design guidelines from practitioner-facing sources and empirical studies from academic venues to assess their alignment. To complement this analysis, we conducted surveys and interviews with practitioners and researchers to examine their experiences, perceptions, and challenges surrounding the development and use of design guidelines. Our findings reveal misalignment between empirical evidence and widely used guidelines, differing perspectives between communities, and key barriers that contribute to the persistence of the research-practice gap.

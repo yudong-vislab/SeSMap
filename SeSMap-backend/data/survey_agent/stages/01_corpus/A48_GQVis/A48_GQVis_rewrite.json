@@ -1,0 +1,53 @@
+[
+  {
+    "paragraph": "Data visualization is a fundamental tool in genomics research, enabling the exploration, interpretation, and communication of complex genomic features. While machine learning models show promise for transforming data into insightful visualizations, current models lack the training foundation for domain-specific tasks. In an effort to provide a foundational resource for genomics-focused model training, we present a framework for generating a dataset that pairs abstract, low-level questions about genomics data with corresponding visualizations. Building on prior work with statistical plots, our approach adapts to the complexity of genomics data and the specialized representations used to depict them. We further incorporate multiple linked queries and visualizations, along with justifications for design choices, figure captions, and image alt-texts for each item in the dataset. We use genomics data retrieved from three distinct genomics data repositories (4DN, ENCODE, Chromoscope) to produce GQVis: a dataset consisting of 1.14 million single-query data points, 628k query pairs, and 589k query chains. The GQVis dataset and generation code are available at https://huggingface.co/datasets/HIDIVE/GQVis and https://github.com/hms-dbmi/GQVis-Generation.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Data visualization is a fundamental tool in genomics research, enabling the exploration, interpretation, and communication of complex genomic features.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Machine learning models show promise for transforming data into insightful visualizations.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Current machine learning models lack the training foundation for domain-specific tasks in genomics.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "We present a framework for generating a dataset that pairs abstract, low-level questions about genomics data with corresponding visualizations.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Our approach builds on prior work with statistical plots and adapts to the complexity of genomics data and the specialized representations used to depict them.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "We incorporate multiple linked queries and visualizations, along with justifications for design choices, figure captions, and image alt-texts for each item in the dataset.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "We use genomics data retrieved from three distinct genomics data repositories (4DN, ENCODE, Chromoscope) to produce GQVis.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The GQVis dataset consists of 1.14 million single-query data points, 628k query pairs, and 589k query chains.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "The GQVis dataset and generation code are available at https://huggingface.co/datasets/HIDIVE/GQVis and https://github.com/hms-dbmi/GQVis-Generation.",
+        "category": "Other",
+        "rank": 2
+      }
+    ]
+  }
+]

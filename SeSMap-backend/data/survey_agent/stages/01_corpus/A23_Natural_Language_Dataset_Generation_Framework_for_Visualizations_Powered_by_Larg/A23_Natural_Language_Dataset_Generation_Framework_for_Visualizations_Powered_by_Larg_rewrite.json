@@ -1,0 +1,68 @@
+[
+  {
+    "paragraph": "We introduce VL2NL, a Large Language Model (LLM) framework that generates rich and diverse NL datasets using only Vega-Lite specifications as input, thereby streamlining the development of Natural Language Interfaces (NLIs) for data visualization. To synthesize relevant chart semantics accurately and enhance syntactic diversity in each NL dataset, we leverage 1) a guided discovery incorporated into prompting so that LLMs can steer themselves to create faithful NL datasets in a self-directed manner; 2) a score-based paraphrasing to augment NL syntax along with four language axes. We also present a new collection of 1,981 real-world Vega-Lite specifications that have increased diversity and complexity than existing chart collections. When tested on our chart collection, VL2NL extracted chart semantics and generated L1/L2 captions with 89.4% and 76.0% accuracy, respectively. It also demonstrated generating and paraphrasing utterances and questions with greater diversity compared to the benchmarks. Last, we discuss how our NL datasets and framework can be utilized in real-world scenarios. The codes and chart collection are available at https://github.com/hyungkwonko/chart-llm.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "We introduce VL2NL, a Large Language Model (LLM) framework that generates rich and diverse NL datasets using only Vega-Lite specifications as input.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "VL2NL streamlines the development of Natural Language Interfaces (NLIs) for data visualization.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "To synthesize relevant chart semantics accurately and enhance syntactic diversity in each NL dataset, VL2NL leverages a guided discovery incorporated into prompting.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Guided discovery allows LLMs to steer themselves to create faithful NL datasets in a self-directed manner.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "VL2NL uses a score-based paraphrasing to augment NL syntax along four language axes.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "We present a new collection of 1,981 real-world Vega-Lite specifications.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "The new Vega-Lite collection has increased diversity and complexity compared to existing chart collections.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "When tested on our chart collection, VL2NL extracted chart semantics with 89.4% accuracy for L1 captions.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "When tested on our chart collection, VL2NL extracted chart semantics with 76.0% accuracy for L2 captions.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "VL2NL demonstrated generating and paraphrasing utterances and questions with greater diversity compared to the benchmarks.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Our NL datasets and framework can be utilized in real-world scenarios.",
+        "category": "Conclusion",
+        "rank": 3
+      },
+      {
+        "sentence": "The codes and chart collection are available at https://github.com/hyungkwonko/chart-llm.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

@@ -1,0 +1,199 @@
+[
+  {
+    "paragraph": "To investigate the associations of systolic blood pressure (SBP) and arterial stiffness, measured via the cardio-ankle vascular index (CAVI), with retinal arterial structure assessed by OCT, and examine age-related differences.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The study investigates the associations of systolic blood pressure (SBP) with retinal arterial structure assessed by OCT.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The study investigates the associations of arterial stiffness, measured via the cardio-ankle vascular index (CAVI), with retinal arterial structure assessed by OCT.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The study examines age-related differences in these associations.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "A cross-sectional analysis of a community-based Japanese cohort.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A cross-sectional analysis was conducted.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The analysis focused on a community-based Japanese cohort.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "A total of 6969 adults (mean age, 57.6 years; 69.6% women) who underwent OCT imaging between 2012 and 2016.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A total of 6969 adults underwent OCT imaging between 2012 and 2016.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "The mean age of participants was 57.6 years.",
+        "category": "Experiment",
+        "rank": 2
+      },
+      {
+        "sentence": "69.6% of participants were women.",
+        "category": "Experiment",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "Peripapillary circular OCT B-scans were used to assess the 4 largest retinal arteries. OCT-derived parameters included outer diameter (OD), inner diameter (ID), wall thickness, and wall reflectivity. Multivariable linear regression adjusted for demographic, ocular, and systemic covariates. Interaction analyses evaluated age modification, followed by analyses stratified by age (<65 vs. ≥65 years).",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Peripapillary circular OCT B-scans were used to assess the 4 largest retinal arteries.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "OCT-derived parameters included outer diameter (OD), inner diameter (ID), wall thickness, and wall reflectivity.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Multivariable linear regression adjusted for demographic, ocular, and systemic covariates.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Interaction analyses evaluated age modification.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Analyses were stratified by age (<65 vs. ≥65 years).",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "OCT-based measurements of OD, ID, wall thickness, and wall reflectivity.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "OCT-based measurements of outer diameter (OD).",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "OCT-based measurements of inner diameter (ID).",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "OCT-based measurements of wall thickness.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "OCT-based measurements of wall reflectivity.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Higher SBP was associated with smaller OD (β = -0.136, 95% confidence interval [CI]: -0.151 to -0.120) and ID (β = -0.136, 95% CI: -0.150 to -0.121). The CAVI was positively associated with wall reflectivity (β = 0.371, 95% CI: -0.081 to 0.822). Interaction analyses indicated age-related modification (SBP × age for OD: β = 0.005; ID: β = 0.005; CAVI × age for wall reflectivity: β = 0.030). In stratified analyses, the inverse associations of SBP with OD and ID were stronger in participants aged <65 years (OD: β = -0.186; ID: β = -0.178) than in those aged ≥65 years (OD: β = -0.076; ID: β = -0.085). For CAVI, no clear association with wall reflectivity was found in participants aged <65 years (β = -0.165), whereas a positive association was observed in those aged ≥65 years (β = 0.725).",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Higher SBP was associated with smaller OD (β = -0.136, 95% confidence interval [CI]: -0.151 to -0.120).",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Higher SBP was associated with smaller ID (β = -0.136, 95% CI: -0.150 to -0.121).",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The CAVI was positively associated with wall reflectivity (β = 0.371, 95% CI: -0.081 to 0.822).",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Interaction analyses indicated age-related modification (SBP × age for OD: β = 0.005; ID: β = 0.005; CAVI × age for wall reflectivity: β = 0.030).",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "In participants aged <65 years, the inverse associations of SBP with OD were stronger (β = -0.186) than in those aged ≥65 years (β = -0.076).",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "In participants aged <65 years, the inverse associations of SBP with ID were stronger (β = -0.178) than in those aged ≥65 years (β = -0.085).",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "For CAVI, no clear association with wall reflectivity was found in participants aged <65 years (β = -0.165).",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "For CAVI, a positive association with wall reflectivity was observed in participants aged ≥65 years (β = 0.725).",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "OCT-based retinal arterial measurements revealed age-dependent associations with systemic vascular factors. In younger adults, elevated SBP was linked to narrower arterial diameters, reflecting functional vasoconstriction, whereas in older adults, greater wall reflectivity was associated with arterial stiffness, suggesting structural remodeling. These findings support OCT as a noninvasive tool for assessing different stages of microvascular aging, warranting confirmation in longitudinal studies.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "OCT-based retinal arterial measurements revealed age-dependent associations with systemic vascular factors.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "In younger adults, elevated SBP was linked to narrower arterial diameters, reflecting functional vasoconstriction.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "In older adults, greater wall reflectivity was associated with arterial stiffness, suggesting structural remodeling.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "These findings support OCT as a noninvasive tool for assessing different stages of microvascular aging.",
+        "category": "Conclusion",
+        "rank": 5
+      },
+      {
+        "sentence": "Confirmation in longitudinal studies is warranted.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Proprietary or commercial disclosure may be found in the Footnotes and Disclosures at the end of this article.",
+    "type": "text",
+    "resultmsu": []
+  }
+]

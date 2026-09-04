@@ -1,0 +1,28 @@
+[
+  {
+    "paragraph": "Methods for visualizing protein or nucleic acid motifs have traditionally relied upon residue frequencies to graphically scale character heights. We describe the pLogo, a motif visualization in which residue heights are scaled relative to their statistical significance. A pLogo generation tool is publicly available at http://plogo.uconn.edu/ and supports real-time conditional probability calculations and visualizations.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Methods for visualizing protein or nucleic acid motifs have traditionally relied upon residue frequencies to graphically scale character heights.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "We describe the pLogo, a motif visualization in which residue heights are scaled relative to their statistical significance.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "A pLogo generation tool is publicly available at http://plogo.uconn.edu/.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The pLogo tool supports real-time conditional probability calculations and visualizations.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  }
+]

@@ -1,0 +1,126 @@
+[
+  {
+    "paragraph": "circSirt1 can ameliorate neointimal hyperplasia and provide protection against atherosclerosis. Single nucleotide polymorphisms (SNPs) in circRNA flanking introns, particularly within Alu elements, may alter back-splicing and influence circRNA formation efficiency. To investigate the association between polymorphisms in the circSirt1 flanking introns and susceptibility to myocardial infarction (MI), we performed a case-control study.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "circSirt1 can ameliorate neointimal hyperplasia.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "circSirt1 provides protection against atherosclerosis.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Single nucleotide polymorphisms (SNPs) in circRNA flanking introns, particularly within Alu elements, may alter back-splicing.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "SNPs in circRNA flanking introns may influence circRNA formation efficiency.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "A case-control study was performed to investigate the association between polymorphisms in the circSirt1 flanking introns and susceptibility to myocardial infarction (MI).",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "This study included 541 coronary artery disease (CAD) cases and 278 controls. Four SNPs (including rs33957861, rs2273773, rs145758730, and rs34416841 in circSirt1 gene) genotyping was conducted utilizing the polymerase chain reaction-ligation detection reaction (PCR-LDR) technique. The associations of these SNPs with the susceptibility were analyzed using multivariate logistic regression, and the haplotype analysis was performed using SHEsis software.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "This study included 541 coronary artery disease (CAD) cases and 278 controls.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "Four SNPs, including rs33957861, rs2273773, rs145758730, and rs34416841 in the circSirt1 gene, were genotyped.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Genotyping was conducted utilizing the polymerase chain reaction-ligation detection reaction (PCR-LDR) technique.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The associations of these SNPs with susceptibility were analyzed using multivariate logistic regression.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Haplotype analysis was performed using SHEsis software.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "The data showed the C allele of rs34416841 was significantly associated with an increased risk of MI (adjusted OR = 1.65, 95% CI = 1.07–2.56, P = 0.024). Consistent trends were observed in co-dominant (OR = 1.70, 95% CI = 1.04–2.77, P = 0.034) and dominant models (OR = 1.73, 95% CI = 1.07–2.79, P = 0.025). Notably, the C allele of rs34416841 specifically increased progression risk from stable CAD to MI (OR = 1.62, 95%CI:1.09–2.42, P = 0.018). Stratified analyses demonstrated stronger associations among younger individuals (≤ 60 years), males, smokers, non-drinkers and hypertension subjects. Consistent with these results, the C-T-C-G haplotype containing rs34416841C allele was also associated with increased MI risk (OR = 1.43, 95% CI = 1.03-2.00, P = 0.035). However, no statistically significant association was observed between the rs34416841 polymorphism and CAD risk across all tested genetic models.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The C allele of rs34416841 was significantly associated with an increased risk of MI (adjusted OR = 1.65, 95% CI = 1.07–2.56, P = 0.024).",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "Consistent trends were observed in co-dominant models (OR = 1.70, 95% CI = 1.04–2.77, P = 0.034).",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Consistent trends were observed in dominant models (OR = 1.73, 95% CI = 1.07–2.79, P = 0.025).",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The C allele of rs34416841 specifically increased progression risk from stable CAD to MI (OR = 1.62, 95% CI = 1.09–2.42, P = 0.018).",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "Stratified analyses demonstrated stronger associations among younger individuals (≤ 60 years), males, smokers, non-drinkers, and hypertension subjects.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The C-T-C-G haplotype containing the rs34416841C allele was associated with increased MI risk (OR = 1.43, 95% CI = 1.03-2.00, P = 0.035).",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "No statistically significant association was observed between the rs34416841 polymorphism and CAD risk across all tested genetic models.",
+        "category": "Result",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "The rs34416841 polymorphism, located within an Alu element in the flanking intron of circSirt1, demonstrates significant associations with both MI susceptibility and CAD progression in the Han Chinese population.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The rs34416841 polymorphism is located within an Alu element in the flanking intron of circSirt1.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The rs34416841 polymorphism demonstrates significant associations with MI susceptibility in the Han Chinese population.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The rs34416841 polymorphism demonstrates significant associations with CAD progression in the Han Chinese population.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  }
+]

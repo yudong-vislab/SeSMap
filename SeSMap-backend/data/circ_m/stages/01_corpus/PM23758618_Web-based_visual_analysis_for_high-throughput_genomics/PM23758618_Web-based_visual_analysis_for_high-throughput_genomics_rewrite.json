@@ -1,0 +1,150 @@
+[
+  {
+    "paragraph": "Visualization plays an essential role in genomics research by making it possible to observe correlations and trends in large datasets as well as communicate findings to others. Visual analysis, which combines visualization with analysis tools to enable seamless use of both approaches for scientific investigation, offers a powerful method for performing complex genomic analyses. However, there are numerous challenges that arise when creating rich, interactive Web-based visualizations/visual analysis applications for high-throughput genomics. These challenges include managing data flow from Web server to Web browser, integrating analysis tools and visualizations, and sharing visualizations with colleagues.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Visualization plays an essential role in genomics research by making it possible to observe correlations and trends in large datasets.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Visualization helps communicate findings to others.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Visual analysis combines visualization with analysis tools to enable seamless use of both approaches for scientific investigation.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Visual analysis offers a powerful method for performing complex genomic analyses.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Creating rich, interactive Web-based visualizations/visual analysis applications for high-throughput genomics presents numerous challenges.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Challenges include managing data flow from Web server to Web browser.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Challenges include integrating analysis tools and visualizations.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Challenges include sharing visualizations with colleagues.",
+        "category": "Background",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "We have created a platform simplifies the creation of Web-based visualization/visual analysis applications for high-throughput genomics. This platform provides components that make it simple to efficiently query very large datasets, draw common representations of genomic data, integrate with analysis tools, and share or publish fully interactive visualizations. Using this platform, we have created a Circos-style genome-wide viewer, a generic scatter plot for correlation analysis, an interactive phylogenetic tree, a scalable genome browser for next-generation sequencing data, and an application for systematically exploring tool parameter spaces to find good parameter values. All visualizations are interactive and fully customizable. The platform is integrated with the Galaxy (http://galaxyproject.org) genomics workbench, making it easy to integrate new visual applications into Galaxy.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A platform was created to simplify the creation of Web-based visualization and visual analysis applications for high-throughput genomics.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The platform provides components to efficiently query very large datasets.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The platform provides components to draw common representations of genomic data.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The platform provides components to integrate with analysis tools.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The platform provides components to share or publish fully interactive visualizations.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Using the platform, a Circos-style genome-wide viewer was created.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "Using the platform, a generic scatter plot for correlation analysis was created.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "Using the platform, an interactive phylogenetic tree was created.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "Using the platform, a scalable genome browser for next-generation sequencing data was created.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "Using the platform, an application for systematically exploring tool parameter spaces to find good parameter values was created.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "All visualizations created using the platform are interactive and fully customizable.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The platform is integrated with the Galaxy genomics workbench.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The integration with Galaxy makes it easy to integrate new visual applications into Galaxy.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Visualization and visual analysis play an important role in high-throughput genomics experiments, and approaches are needed to make it easier to create applications for these activities. Our framework provides a foundation for creating Web-based visualizations and integrating them into Galaxy. Finally, the visualizations we have created using the framework are useful tools for high-throughput genomics experiments.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Visualization and visual analysis play an important role in high-throughput genomics experiments.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Approaches are needed to make it easier to create applications for visualization and visual analysis in high-throughput genomics experiments.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Our framework provides a foundation for creating Web-based visualizations.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Our framework integrates Web-based visualizations into Galaxy.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The visualizations created using the framework are useful tools for high-throughput genomics experiments.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  }
+]

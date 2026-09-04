@@ -1,0 +1,109 @@
+[build_corpus] 107 papers, use_llm=True
+  A01_Understanding_Why_ChatGPT_Outperforms_Humans_in_Visualization_Design_Advice: reuse 1 paragraphs, 8 MSUs
+  A05_InterChat: reuse 1 paragraphs, 12 MSUs
+  A06_VisEval: reuse 1 paragraphs, 13 MSUs
+  A07_CoDA: reuse 1 paragraphs, 13 MSUs
+  A11_Charts-of-Thought: reuse 1 paragraphs, 13 MSUs
+  A12_LIDA: 2 sections, 1 paragraphs, 10 MSUs
+  A14_Probing_the_Visualization_Literacy_of_Vision_Language_Models: 2 sections, 1 paragraphs, 14 MSUs
+  A15_Fine-Tuned_Large_Language_Model_for_Visualization_System: 2 sections, 1 paragraphs, 13 MSUs
+  A18_Data_Has_Entered_the_Chat: 2 sections, 1 paragraphs, 7 MSUs
+  A19_VegaChat: 2 sections, 1 paragraphs, 11 MSUs
+  A20_Automatic_Synthesis_of_Visualization_Design_Knowledge_Bases: 2 sections, 1 paragraphs, 12 MSUs
+  A21_How_Good_Is_ChatGPT_in_Giving_Advice_on_Your_Visualization_Design: 2 sections, 1 paragraphs, 9 MSUs
+  A22_Understanding_the_research-practice_gap_in_visualization_design_guidelines: 2 sections, 1 paragraphs, 9 MSUs
+  A23_Natural_Language_Dataset_Generation_Framework_for_Visualizations_Powered_by_Larg: 2 sections, 1 paragraphs, 12 MSUs
+  A24_YAC: 2 sections, 1 paragraphs, 9 MSUs
+  A25_DQVis_Dataset: 2 sections, 1 paragraphs, 14 MSUs
+  A27_Prompt4Vis: 2 sections, 1 paragraphs, 13 MSUs
+  A28_MultiVis-Agent: 2 sections, 1 paragraphs, 15 MSUs
+  A30_Learnable_and_Expressive_Visualization_Authoring_Through_Blended_Interfaces: 2 sections, 1 paragraphs, 12 MSUs
+  A32_Chat2VIS: 2 sections, 1 paragraphs, 15 MSUs
+  A34_Formalizing_visualization_design_knowledge_as_constraints: 2 sections, 1 paragraphs, 11 MSUs
+  A37_NVAGENT: 2 sections, 1 paragraphs, 11 MSUs
+  A39_Talk_Me_Through_It: 2 sections, 1 paragraphs, 11 MSUs
+  A41_Qualitative_Study_for_LLM-assisted_Design_Study_Process: 2 sections, 1 paragraphs, 11 MSUs
+  A43_Collecting_and_Characterizing_Natural_Language_Utterances_for_Specifying_Data_Vi: 2 sections, 1 paragraphs, 8 MSUs
+  A45_ChartGPT: 2 sections, 1 paragraphs, 13 MSUs
+  A46_Understanding_Visualization_Authoring_Techniques_for_Genomics_Data_in_the_Contex: 2 sections, 1 paragraphs, 10 MSUs
+  A47_Are_LLMs_ready_for_Visualization: 2 sections, 1 paragraphs, 13 MSUs
+  A48_GQVis: 2 sections, 1 paragraphs, 9 MSUs
+  A49_DracoGPT: 2 sections, 1 paragraphs, 16 MSUs
+  A50_Draco_2: 2 sections, 1 paragraphs, 11 MSUs
+  A51_MatPlotAgent: 2 sections, 1 paragraphs, 10 MSUs
+  A52_Too_many_cooks: 2 sections, 1 paragraphs, 9 MSUs
+  ADG11_Sequence_surveyor: reuse 1 paragraphs, 10 MSUs
+  AHP18_IRscope: reuse 3 paragraphs, 14 MSUs
+  ARJ15_BactoGeNIE: reuse 3 paragraphs, 12 MSUs
+  AVPS12_GenomeView: reuse 1 paragraphs, 9 MSUs
+  And09_Visualization_of_genomic_data_with_the_Hilbert_curve: reuse 2 paragraphs, 7 MSUs
+  BGM17_Synteny_Explorer: reuse 1 paragraphs, 9 MSUs
+  BKS16_EDGAR_20: reuse 1 paragraphs, 12 MSUs
+  BMB15_A_low-latency_big_database_system_and_browser_for_storage_querying_and_visualiza: reuse 1 paragraphs, 8 MSUs
+  BWML06_MEME: reuse 1 paragraphs, 9 MSUs
+  BYD16_JBrowse: reuse 3 paragraphs, 12 MSUs
+  Brandt2026_AgenticGenomicsAuthoring: 33 sections, 63 paragraphs, 339 MSUs
+  CGD12_The_cBio_cancer_genomics_portal: reuse 1 paragraphs, 5 MSUs
+  CHCB04_WebLogo: reuse 1 paragraphs, 9 MSUs
+  CSGB14_Epiviz: reuse 1 paragraphs, 5 MSUs
+  CTB09_DNAPlotter: reuse 2 paragraphs, 8 MSUs
+  CYW18_GIVE: reuse 1 paragraphs, 6 MSUs
+  CZ13_Enabling_interspecies_epigenomic_comparison_with_CEpBrowser: reuse 2 paragraphs, 8 MSUs
+  DLS15_IslandViewer_3: reuse 1 paragraphs, 13 MSUs
+  DPH11_Dalliance: reuse 2 paragraphs, 11 MSUs
+  DRS16_Juicebox_provides_a_visualization_system_for_Hi-C_contact_maps_with_unlimited_zo: reuse 1 paragraphs, 5 MSUs
+  DWZG17_HiC-3DViewer: reuse 1 paragraphs, 14 MSUs
+  Don09_Using_the_Generic_Genome_Browser_GBrowse: reuse 1 paragraphs, 8 MSUs
+  EYB06_Combo: reuse 1 paragraphs, 9 MSUs
+  FNL16_Integrated_Genome_Browser: reuse 3 paragraphs, 12 MSUs
+  FNM13_Variant_View: reuse 1 paragraphs, 11 MSUs
+  FPP04_VISTA: reuse 1 paragraphs, 9 MSUs
+  FSB12_Savant_Genome_Browser_2: reuse 1 paragraphs, 10 MSUs
+  GCB18_The_UCSC_Xena_platform_for_public_and_private_cancer_genomics_data_visualization: reuse 1 paragraphs, 19 MSUs
+  GES16_HilbertCurve: reuse 1 paragraphs, 5 MSUs
+  GKA11_Identifying_elemental_genomic_track_types_and_representing_them_uniformly: reuse 3 paragraphs, 18 MSUs
+  HBB02_The_Ensembl_genome_database_project: reuse 1 paragraphs, 10 MSUs
+  HBSD17_SynMap2_and_SynMap3D: reuse 3 paragraphs, 14 MSUs
+  HJ10_MochiView: reuse 3 paragraphs, 11 MSUs
+  HJBN12_GenomeRing: reuse 3 paragraphs, 17 MSUs
+  HSD14_ReadXplorer--visualization_and_analysis_of_mapped_sequences: reuse 3 paragraphs, 12 MSUs
+  KAL18_HiGlass: reuse 1 paragraphs, 8 MSUs
+  KAR07_Gepard: reuse 2 paragraphs, 6 MSUs
+  KNS14_Sequence_bundles: reuse 4 paragraphs, 19 MSUs
+  KWS15_Quantitative_visualization_of_alternative_exon_expression_from_RNA-seq_data: reuse 3 paragraphs, 9 MSUs
+  KWZ12_ABrowse_-_a_customizable_next-generation_genome_browser_framework: reuse 3 paragraphs, 22 MSUs
+  KvEB04_Visualization_for_genomics: reuse 2 paragraphs, 9 MSUs
+  LB11_GenPlay_a_multipurpose_genome_analyzer_and_browser: reuse 3 paragraphs, 16 MSUs
+  LBK18_HiPiler: reuse 1 paragraphs, 13 MSUs
+  LJASH16_An_interactive_environment_for_agile_analysis_and_visualization_of_ChIP-sequenci: reuse 1 paragraphs, 9 MSUs
+  LLL08_SynteBaseSynteView: reuse 3 paragraphs, 18 MSUs
+  LSWQ17_Deep_Motif_Dashboard: reuse 1 paragraphs, 10 MSUs
+  Lar14_AliView: reuse 3 paragraphs, 9 MSUs
+  MBS00_VISTA: reuse 2 paragraphs, 6 MSUs
+  MMP09_MizBee: reuse 1 paragraphs, 12 MSUs
+  MVS10_Using_the_Generic_Synteny_Browser_GBrowse_syn: reuse 1 paragraphs, 9 MSUs
+  MXR17_HUGIn: reuse 4 paragraphs, 12 MSUs
+  Nusrat2019_GenomicVisSurvey: reuse 164 paragraphs, 1011 MSUs
+  OCQ13_pLogo: reuse 1 paragraphs, 4 MSUs
+  OKSF13_MGcV: reuse 3 paragraphs, 16 MSUs
+  OvHSF15_CiVi: reuse 3 paragraphs, 10 MSUs
+  PSESVD10_Interactive_microbial_genome_visualization_with_GView: reuse 2 paragraphs, 9 MSUs
+  RCK12_SpliceSeq: reuse 3 paragraphs, 12 MSUs
+  RRG16_deepTools2: reuse 1 paragraphs, 8 MSUs
+  RTD18_Juiceboxjs_Provides_a_Cloud-Based_Visualization_System_for_Hi-C_Data: reuse 1 paragraphs, 9 MSUs
+  RTRBH12_SpliceGrapher: reuse 1 paragraphs, 5 MSUs
+  SAB16_Vials: reuse 1 paragraphs, 12 MSUs
+  SM07_Cinteny: reuse 3 paragraphs, 21 MSUs
+  SS90_Sequence_logos: reuse 1 paragraphs, 9 MSUs
+  STK16_ALVIS: reuse 1 paragraphs, 13 MSUs
+  SW05_Circular_genome_visualization_and_exploration_using_CGView: reuse 2 paragraphs, 8 MSUs
+  TRM13_Integrative_Genomics_Viewer_IGV: reuse 1 paragraphs, 11 MSUs
+  VIR06_Two_Sample_Logo: reuse 1 paragraphs, 8 MSUs
+  WBN18_Galaxy_HiCExplorer: reuse 1 paragraphs, 7 MSUs
+  WKP17_WebMeV: reuse 1 paragraphs, 11 MSUs
+  WNM14_SplicePlot: reuse 2 paragraphs, 12 MSUs
+  WPM09_Jalview_Version_2--a_multiple_sequence_alignment_editor_and_analysis_workbench: reuse 2 paragraphs, 10 MSUs
+  WSZ18_The_3D_Genome_Browser: reuse 1 paragraphs, 6 MSUs
+  YCL12_ggbio: reuse 1 paragraphs, 10 MSUs
+  YWR16_MSAViewer: reuse 2 paragraphs, 10 MSUs
+[aggregate] 2486 MSUs / 107 papers -> data/survey_agent/stages/02_msu/formdatabase.json

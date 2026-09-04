@@ -1,0 +1,53 @@
+[
+  {
+    "paragraph": "Incorporating natural language input has the potential to improve the capabilities of biomedical data discovery interfaces. However, user interface elements and visualizations are still powerful tools for interacting with data. In our prototype system, YAC, Yet Another Chatbot, we integrate natural language and interactive visualizations. YAC uses a tool-calling multi-agent system to generate declarative output, which is interpreted to render linked interactive visualizations and apply data filters. We also include adjustment widgets, which allow users to directly modify the structured output. Structured text is also generated to clarify user intent, notify users of system boundaries, and explain aspects of the data with live data element links. We conducted a user study with domain experts to surface areas where YAC can be improved. Furthermore we reflect on the capabilities and design of this system with an analysis of its technical dimensions.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Incorporating natural language input has the potential to improve the capabilities of biomedical data discovery interfaces.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "User interface elements and visualizations are still powerful tools for interacting with data.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "In the prototype system YAC (Yet Another Chatbot), natural language and interactive visualizations are integrated.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "YAC uses a tool-calling multi-agent system to generate declarative output.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The declarative output is interpreted to render linked interactive visualizations and apply data filters.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Adjustment widgets are included to allow users to directly modify the structured output.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Structured text is generated to clarify user intent, notify users of system boundaries, and explain aspects of the data with live data element links.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "A user study was conducted with domain experts to surface areas where YAC can be improved.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "The capabilities and design of the system are analyzed with an evaluation of its technical dimensions.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  }
+]

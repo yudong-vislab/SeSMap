@@ -1,0 +1,16 @@
+[
+  {
+    "title": "ggalign: Bridging the Grammar of Graphics and Biological Multilayered Complexity",
+    "paragraphs": []
+  },
+  {
+    "title": "ggalign: Bridging the Grammar of Graphics and Biological Multilayered Complexity-Abstract",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Data visualization is essential for exploring and communicating complex biological datasets. As omics data grow in scale and complexity, there is an increasing demand for visualization tools that are both flexible and extensible. We present ggalign, an R package that extends the ggplot2 ecosystem by introducing an integrative framework for composable visualization. Designed to overcome limitations of existing tools, ggalign supports modular, data-aware layouts-including circular, stacked, and quadrant-based configurations-and enables the representation of diverse data relationships, such as one-to-many and many-to-one connections. Its ability to reorder and group observations using data-driven or domain-specific criteria enhances the interpretability of high-dimensional datasets. Moreover, ggalign introduces a novel linking mechanism for visualizing interconnections across heterogeneous data types, as demonstrated in genomic and microbiome case studies. Together, these features position ggalign as a versatile and reproducible solution for multi-omics research, supporting both exploratory data analysis and publication-ready presentation.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

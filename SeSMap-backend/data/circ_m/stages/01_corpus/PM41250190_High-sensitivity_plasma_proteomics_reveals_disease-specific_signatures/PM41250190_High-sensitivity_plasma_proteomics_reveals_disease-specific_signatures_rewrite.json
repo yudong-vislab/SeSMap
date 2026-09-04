@@ -1,0 +1,103 @@
+[
+  {
+    "paragraph": "Novel plasma assays enabled accurate blood-based biomarkers for neurodegenerative diseases with minimally invasive options for clinical use. Large-scale studies encompassing multiple neurodegenerative diseases using novel multiplex platforms are essential to uncover disease-specific biomarkers and pathways. We generated and analyzed plasma biomarker data using the NULISAseq™ CNS Panel from 3,232 participants with Alzheimer disease (AD), Dementia with Lewy bodies (DLB), Frontotemporal dementia (FTD), Parkinson disease (PD) and cognitively unimpaired individuals, from the Charles F. and Joanne Knight Alzheimer Disease Research Center. We identified proteins associated with disease status and AD-related phenotypes (Clinical Dementia Rating®, CSF Aβ42/Aβ40, Amyloid-PET, and Tau-PET). These proteins were used to identify disease-specific biomarkers and perform pathway analyses. We identified 81 proteins associated with AD, 21 with DLB, four with FTD, and 52 with PD after multiple test correction. Disease comparison showed that PD and DLB had the highest similarity, followed by AD and DLB. Concurrently, each disease also presented disease-specific signatures. Some AD-specific proteins included p-tau217; MSLN and SAA1 were specific to DLB, and FLT1 and PARK7 to PD. We also identified eight proteins associated with Amyloid-PET, eight with Tau-PET, 14 with CSF Aβ42/40 ratio, and 72 with CDR, some of which were specific to each phenotype. We used a data-driven approach to identify the p-tau217 cut-off for biomarker positivity. Plasma p-tau217 achieved an AUC of 0.81 (95% CI: 0.79-0.83) for AD diagnosis and 0.96 (95% CI: 0.94-0.98) for Amyloid positivity. P-tau217 had 93.77% agreement with Amyloid-PET status. Proteins associated with AD were enriched in protein-lipid complex binding pathway, whereas PD associated proteins were enriched in laminin-related pathways. FTD associated proteins were enriched in cytoskeleton proteins. This is the largest plasma NULISA CNS study performed till date and covers the four major neurodegenerative diseases: AD, PD, DLB and FTD. We validated the high classification accuracy of the NULISA plasma p-tau217 and its strong correlation with Amyloid-PET status. We also identified disease-specific proteins that could enhance differential diagnosis. These findings highlight the potential of the NULISA platform as a reliable quantitative tool for research and clinical applications in neurodegenerative diseases.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Novel plasma assays enabled accurate blood-based biomarkers for neurodegenerative diseases with minimally invasive options for clinical use.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Large-scale studies encompassing multiple neurodegenerative diseases using novel multiplex platforms are essential to uncover disease-specific biomarkers and pathways.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "We generated and analyzed plasma biomarker data using the NULISAseq™ CNS Panel from 3,232 participants with Alzheimer disease (AD), Dementia with Lewy bodies (DLB), Frontotemporal dementia (FTD), Parkinson disease (PD) and cognitively unimpaired individuals, from the Charles F. and Joanne Knight Alzheimer Disease Research Center.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "We identified proteins associated with disease status and AD-related phenotypes (Clinical Dementia Rating®, CSF Aβ42/Aβ40, Amyloid-PET, and Tau-PET).",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "These proteins were used to identify disease-specific biomarkers and perform pathway analyses.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "We identified 81 proteins associated with AD, 21 with DLB, four with FTD, and 52 with PD after multiple test correction.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Disease comparison showed that PD and DLB had the highest similarity, followed by AD and DLB.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Each disease also presented disease-specific signatures.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Some AD-specific proteins included p-tau217; MSLN and SAA1 were specific to DLB, and FLT1 and PARK7 to PD.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "We identified eight proteins associated with Amyloid-PET, eight with Tau-PET, 14 with CSF Aβ42/40 ratio, and 72 with CDR, some of which were specific to each phenotype.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "We used a data-driven approach to identify the p-tau217 cut-off for biomarker positivity.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Plasma p-tau217 achieved an AUC of 0.81 (95% CI: 0.79-0.83) for AD diagnosis and 0.96 (95% CI: 0.94-0.98) for Amyloid positivity.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "P-tau217 had 93.77% agreement with Amyloid-PET status.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "Proteins associated with AD were enriched in protein-lipid complex binding pathway, whereas PD associated proteins were enriched in laminin-related pathways.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "FTD associated proteins were enriched in cytoskeleton proteins.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "This is the largest plasma NULISA CNS study performed till date and covers the four major neurodegenerative diseases: AD, PD, DLB and FTD.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "We validated the high classification accuracy of the NULISA plasma p-tau217 and its strong correlation with Amyloid-PET status.",
+        "category": "Conclusion",
+        "rank": 5
+      },
+      {
+        "sentence": "We identified disease-specific proteins that could enhance differential diagnosis.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "These findings highlight the potential of the NULISA platform as a reliable quantitative tool for research and clinical applications in neurodegenerative diseases.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

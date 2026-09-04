@@ -1,0 +1,101 @@
+[
+  {
+    "paragraph": "Single cell RNA-Seq (scRNA-Seq) facilitates the characterization of cell type heterogeneity and developmental processes. Further study of single cell profiles across different conditions enables the understanding of biological processes and underlying mechanisms at the sub-population level. However, developing proper methodology to compare multiple scRNA-Seq datasets remains challenging.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Single cell RNA-Seq (scRNA-Seq) facilitates the characterization of cell type heterogeneity.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Single cell RNA-Seq (scRNA-Seq) facilitates the characterization of developmental processes.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Studying single cell profiles across different conditions enables the understanding of biological processes at the sub-population level.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Studying single cell profiles across different conditions enables the understanding of underlying mechanisms at the sub-population level.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Developing proper methodology to compare multiple scRNA-Seq datasets remains challenging.",
+        "category": "Background",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "We have developed ClusterMap, a systematic method and workflow to facilitate the comparison of scRNA-seq profiles across distinct biological contexts. Using hierarchical clustering of the marker genes of each sub-group, ClusterMap matches the sub-types of cells across different samples and provides 'similarity' as a metric to quantify the quality of the match. We introduce a purity tree cut method designed specifically for this matching problem. We use Circos plot and regrouping method to visualize the results concisely. Furthermore, we propose a new metric 'separability' to summarize sub-population changes among all sample pairs. In the case studies, we demonstrate that ClusterMap has the ability to provide us further insight into the different molecular mechanisms of cellular sub-populations across different conditions.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "ClusterMap is a systematic method and workflow to facilitate the comparison of scRNA-seq profiles across distinct biological contexts.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "ClusterMap uses hierarchical clustering of the marker genes of each sub-group to match the sub-types of cells across different samples.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "ClusterMap provides 'similarity' as a metric to quantify the quality of the match.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "A purity tree cut method is introduced specifically for the matching problem.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Circos plot and regrouping method are used to visualize the results concisely.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "A new metric 'separability' is proposed to summarize sub-population changes among all sample pairs.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "ClusterMap demonstrates the ability to provide further insight into the different molecular mechanisms of cellular sub-populations across different conditions.",
+        "category": "Result",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "ClusterMap is implemented in R and available at https://github.com/xgaoo/ClusterMap.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "ClusterMap is implemented in R.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "ClusterMap is available at https://github.com/xgaoo/ClusterMap.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Supplementary data are available at Bioinformatics online.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Supplementary data are available at Bioinformatics online.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

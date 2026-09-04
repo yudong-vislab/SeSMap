@@ -1,0 +1,110 @@
+[
+  {
+    "paragraph": "With the recent advances and availability of various high-throughput sequencing technologies, data on many molecular aspects, such as gene regulation, chromatin dynamics, and the three-dimensional organization of DNA, are rapidly being generated in an increasing number of laboratories. The variation in biological context, and the increasingly dispersed mode of data generation, imply a need for precise, interoperable and flexible representations of genomic features through formats that are easy to parse. A host of alternative formats are currently available and in use, complicating analysis and tool development. The issue of whether and how the multitude of formats reflects varying underlying characteristics of data has to our knowledge not previously been systematically treated.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Recent advances in high-throughput sequencing technologies have enabled the rapid generation of data on molecular aspects such as gene regulation, chromatin dynamics, and the three-dimensional organization of DNA.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The variation in biological context and the increasingly dispersed mode of data generation imply a need for precise, interoperable, and flexible representations of genomic features.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "These representations should use formats that are easy to parse.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "A host of alternative formats are currently available and in use, complicating analysis and tool development.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The issue of whether and how the multitude of formats reflects varying underlying characteristics of data has not previously been systematically treated.",
+        "category": "Background",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "We here identify intrinsic distinctions between genomic features, and argue that the distinctions imply that a certain variation in the representation of features as genomic tracks is warranted. Four core informational properties of tracks are discussed: gaps, lengths, values and interconnections. From this we delineate fifteen generic track types. Based on the track type distinctions, we characterize major existing representational formats and find that the track types are not adequately supported by any single format. We also find, in contrast to the XML formats, that none of the existing tabular formats are conveniently extendable to support all track types. We thus propose two unified formats for track data, an improved XML format, BioXSD 1.1, and a new tabular format, GTrack 1.0.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Intrinsic distinctions between genomic features are identified.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The distinctions imply that a certain variation in the representation of features as genomic tracks is warranted.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "Four core informational properties of tracks are discussed: gaps, lengths, values, and interconnections.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Fifteen generic track types are delineated based on the core informational properties.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Major existing representational formats are characterized based on track type distinctions.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The track types are not adequately supported by any single format.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "In contrast to XML formats, none of the existing tabular formats are conveniently extendable to support all track types.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Two unified formats for track data are proposed: an improved XML format, BioXSD 1.1, and a new tabular format, GTrack 1.0.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "The defined track types are shown to capture relevant distinctions between genomic annotation tracks, resulting in varying representational needs and analysis possibilities. The proposed formats, GTrack 1.0 and BioXSD 1.1, cater to the identified track distinctions and emphasize preciseness, flexibility and parsing convenience.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The defined track types capture relevant distinctions between genomic annotation tracks.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The distinctions result in varying representational needs and analysis possibilities.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The proposed formats are GTrack 1.0 and BioXSD 1.1.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "GTrack 1.0 and BioXSD 1.1 cater to the identified track distinctions.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "GTrack 1.0 and BioXSD 1.1 emphasize preciseness, flexibility, and parsing convenience.",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  }
+]

@@ -1,0 +1,186 @@
+[
+  {
+    "paragraph": "Extrachromosomal circular DNA (eccDNA) is increasingly recognized as a critical driver of oncogene amplification, therapeutic resistance, and intratumoral heterogeneity in cancer. However, existing computational approaches predominantly focus on eccDNA detection and structural identification, without addressing their functional or clinical significance in oncogenesis.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Extrachromosomal circular DNA (eccDNA) is increasingly recognized as a critical driver of oncogene amplification.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "eccDNA contributes to therapeutic resistance in cancer.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "eccDNA contributes to intratumoral heterogeneity in cancer.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Existing computational approaches predominantly focus on eccDNA detection.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Existing computational approaches predominantly focus on structural identification of eccDNA.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Existing computational approaches do not address the functional significance of eccDNA in oncogenesis.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Existing computational approaches do not address the clinical significance of eccDNA in oncogenesis.",
+        "category": "Background",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "We developed eccDNA2Ca, an interpretable ensemble learning framework that integrates extreme gradient boosting (XGBoost) with deep neural networks (CNN and LSTM) to predict cancer-associated eccDNAs directly from raw sequences. A manually curated dataset comprising 465 experimentally validated human eccDNAs across 16 cancer types was compiled from 21 studies. Models were trained using both engineered genomic features and deep sequence encodings. Interpretability was achieved through SHAP analysis and motif discovery. The final ensemble model was validated on external datasets and implemented as an open-source command-line tool.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "We developed eccDNA2Ca, an interpretable ensemble learning framework.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The framework integrates extreme gradient boosting (XGBoost) with deep neural networks (CNN and LSTM).",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The framework predicts cancer-associated eccDNAs directly from raw sequences.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "A manually curated dataset comprising 465 experimentally validated human eccDNAs across 16 cancer types was compiled from 21 studies.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Models were trained using both engineered genomic features and deep sequence encodings.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Interpretability was achieved through SHAP analysis and motif discovery.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The final ensemble model was validated on external datasets.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "The framework was implemented as an open-source command-line tool.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "eccDNA2Ca demonstrated superior performance (AUC > 0.96, AUPR > 0.95) across cross-validation and independent test sets, outperforming conventional classifiers. Feature interpretation revealed the dominant contribution of repeat content and specific k-mer frequencies, while motif analysis identified enrichment of zinc finger transcription factor binding sites among cancer-specific eccDNAs. Pan-cancer validation using TCGA data showed strong associations between predicted eccDNAs and tumor mutational burden, immune infiltration, microsatellite instability, and patient survival. Importantly, the model demonstrated robust generalizability across tumor types and eccDNA size categories.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "eccDNA2Ca demonstrated superior performance (AUC > 0.96, AUPR > 0.95) across cross-validation and independent test sets.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "eccDNA2Ca outperformed conventional classifiers.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Feature interpretation revealed the dominant contribution of repeat content and specific k-mer frequencies.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Motif analysis identified enrichment of zinc finger transcription factor binding sites among cancer-specific eccDNAs.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Pan-cancer validation using TCGA data showed strong associations between predicted eccDNAs and tumor mutational burden.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "Pan-cancer validation using TCGA data showed strong associations between predicted eccDNAs and immune infiltration.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "Pan-cancer validation using TCGA data showed strong associations between predicted eccDNAs and microsatellite instability.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "Pan-cancer validation using TCGA data showed strong associations between predicted eccDNAs and patient survival.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "The model demonstrated robust generalizability across tumor types.",
+        "category": "Conclusion",
+        "rank": 5
+      },
+      {
+        "sentence": "The model demonstrated robust generalizability across eccDNA size categories.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "eccDNA2Ca represents the first interpretable and publicly available computational framework specifically designed to prioritize cancer-relevant eccDNAs after experimental detection based on sequence features. By enabling scalable and biologically informed prioritization of eccDNAs, eccDNA2Ca provides a valuable resource for eccDNA functional studies, cancer biomarker discovery, and translational cancer genomics. Source code and datasets are freely available at: https://github.com/bread1006/eccDNA2Ca. An interactive web server implementing eccDNA2Ca is accessible at: http://43.138.143.50:5000/en.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "eccDNA2Ca represents the first interpretable and publicly available computational framework specifically designed to prioritize cancer-relevant eccDNAs after experimental detection based on sequence features.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "eccDNA2Ca enables scalable and biologically informed prioritization of eccDNAs.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "eccDNA2Ca provides a valuable resource for eccDNA functional studies.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "eccDNA2Ca supports cancer biomarker discovery.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "eccDNA2Ca contributes to translational cancer genomics.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "Source code and datasets are freely available at: https://github.com/bread1006/eccDNA2Ca.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "An interactive web server implementing eccDNA2Ca is accessible at: http://43.138.143.50:5000/en.",
+        "category": "Other",
+        "rank": 2
+      }
+    ]
+  }
+]

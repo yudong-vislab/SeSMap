@@ -1,0 +1,53 @@
+[
+  {
+    "paragraph": "This chapter describes methods currently available for visualizing results from systems genetics experiments. Here, we abstract from the statistical methods used for genetic mapping, which are dependent on the specific resource being used, i.e. F2, RILs, or outbred populations among others. We use a public dataset with results from a mouse eQTL experiment for three examples of visualization: genome-wide dot plots of marker-by-gene association, karyotype-like plots, and circos plots. Dot plots give a first overview of the results from eQTL mapping, allowing detecting genome-wide patterns of cis- and trans-genetic association to transcription level. Karyotype-like plots provide chromosomal context and allow integrating multiple tracks of information in a single plot. Circos plots can, in addition, display long-range interactions to provide an overview of genetic connectivity at the genome level. All examples are developed and explained using R code, an open-source language with powerful statistical and graphical capabilities. The principles reviewed here, however, can be applied with other software options, organisms, and to any type of molecular phenotype that can be assigned to a genomic position.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "This chapter describes methods currently available for visualizing results from systems genetics experiments.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The statistical methods used for genetic mapping depend on the specific resource being used, such as F2, RILs, or outbred populations.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "A public dataset with results from a mouse eQTL experiment is used for three examples of visualization.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "The three examples of visualization are genome-wide dot plots of marker-by-gene association, karyotype-like plots, and circos plots.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Dot plots provide a first overview of the results from eQTL mapping, allowing detection of genome-wide patterns of cis- and trans-genetic association to transcription level.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Karyotype-like plots provide chromosomal context and allow integrating multiple tracks of information in a single plot.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Circos plots display long-range interactions to provide an overview of genetic connectivity at the genome level.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "All examples are developed and explained using R code, an open-source language with powerful statistical and graphical capabilities.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The principles reviewed here can be applied with other software options, organisms, and to any type of molecular phenotype that can be assigned to a genomic position.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  }
+]

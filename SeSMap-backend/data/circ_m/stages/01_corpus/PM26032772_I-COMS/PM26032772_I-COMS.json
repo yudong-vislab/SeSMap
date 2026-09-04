@@ -1,0 +1,16 @@
+[
+  {
+    "title": "I-COMS: Interprotein-COrrelated Mutations Server",
+    "paragraphs": []
+  },
+  {
+    "title": "I-COMS: Interprotein-COrrelated Mutations Server-Abstract",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Interprotein contact prediction using multiple sequence alignments (MSAs) is a useful approach to help detect protein-protein interfaces. Different computational methods have been developed in recent years as an approximation to solve this problem. However, as there are discrepancies in the results provided by them, there is still no consensus on which is the best performing methodology. To address this problem, I-COMS (interprotein COrrelated Mutations Server) is presented. I-COMS allows to estimate covariation between residues of different proteins by four different covariation methods. It provides a graphical and interactive output that helps compare results obtained using different methods. I-COMS automatically builds the required MSA for the calculation and produces a rich visualization of either intraprotein and/or interprotein covariating positions in a circos representation. Furthermore, comparison between any two methods is available as well as the overlap between any or all four methodologies. In addition, as a complementary source of information, a matrix visualization of the corresponding scores is made available and the density plot distribution of the inter, intra and inter+intra scores are calculated. Finally, all the results can be downloaded (including MSAs, scores and graphics) for comparison and visualization and/or for further analysis.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

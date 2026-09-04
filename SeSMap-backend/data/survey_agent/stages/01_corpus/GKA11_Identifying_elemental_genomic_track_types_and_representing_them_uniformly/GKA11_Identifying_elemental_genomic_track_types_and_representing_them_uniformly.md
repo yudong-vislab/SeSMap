@@ -1,0 +1,13 @@
+# Identifying elemental genomic track types and representing them uniformly
+
+## Background
+
+With the recent advances and availability of various high-throughput sequencing technologies, data on many molecular aspects, such as gene regulation, chromatin dynamics, and the three-dimensional organization of DNA, are rapidly being generated in an increasing number of laboratories. The variation in biological context, and the increasingly dispersed mode of data generation, imply a need for precise, interoperable and flexible representations of genomic features through formats that are easy to parse. A host of alternative formats are currently available and in use, complicating analysis and tool development. The issue of whether and how the multitude of formats reflects varying underlying characteristics of data has to our knowledge not previously been systematically treated.
+
+## Results
+
+We here identify intrinsic distinctions between genomic features, and argue that the distinctions imply that a certain variation in the representation of features as genomic tracks is warranted. Four core informational properties of tracks are discussed: gaps, lengths, values and interconnections. From this we delineate fifteen generic track types. Based on the track type distinctions, we characterize major existing representational formats and find that the track types are not adequately supported by any single format. We also find, in contrast to the XML formats, that none of the existing tabular formats are conveniently extendable to support all track types. We thus propose two unified formats for track data, an improved XML format, BioXSD 1.1, and a new tabular format, GTrack 1.0.
+
+## Conclusions
+
+The defined track types are shown to capture relevant distinctions between genomic annotation tracks, resulting in varying representational needs and analysis possibilities. The proposed formats, GTrack 1.0 and BioXSD 1.1, cater to the identified track distinctions and emphasize preciseness, flexibility and parsing convenience.

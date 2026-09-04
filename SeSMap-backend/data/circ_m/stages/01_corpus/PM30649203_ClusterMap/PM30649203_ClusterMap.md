@@ -1,0 +1,17 @@
+# ClusterMap: compare multiple single cell RNA-Seq datasets across different experimental conditions
+
+## Motivation
+
+Single cell RNA-Seq (scRNA-Seq) facilitates the characterization of cell type heterogeneity and developmental processes. Further study of single cell profiles across different conditions enables the understanding of biological processes and underlying mechanisms at the sub-population level. However, developing proper methodology to compare multiple scRNA-Seq datasets remains challenging.
+
+## Results
+
+We have developed ClusterMap, a systematic method and workflow to facilitate the comparison of scRNA-seq profiles across distinct biological contexts. Using hierarchical clustering of the marker genes of each sub-group, ClusterMap matches the sub-types of cells across different samples and provides 'similarity' as a metric to quantify the quality of the match. We introduce a purity tree cut method designed specifically for this matching problem. We use Circos plot and regrouping method to visualize the results concisely. Furthermore, we propose a new metric 'separability' to summarize sub-population changes among all sample pairs. In the case studies, we demonstrate that ClusterMap has the ability to provide us further insight into the different molecular mechanisms of cellular sub-populations across different conditions.
+
+## Availability And Implementation
+
+ClusterMap is implemented in R and available at https://github.com/xgaoo/ClusterMap.
+
+## Supplementary Information
+
+Supplementary data are available at Bioinformatics online.

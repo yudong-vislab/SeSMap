@@ -1,0 +1,100 @@
+[
+  {
+    "paragraph": "Rapidly decreasing sequencing cost due to the emergence and improvement of massively parallel sequencing technologies has resulted in a dramatic increase in the quantity of data that needs to be analyzed. Therefore, software tools to process, visualize, analyze and integrate data produced on multiple platforms and using multiple methods are needed.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Rapidly decreasing sequencing cost is due to the emergence and improvement of massively parallel sequencing technologies.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The decrease in sequencing cost has resulted in a dramatic increase in the quantity of data that needs to be analyzed.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Software tools are needed to process, visualize, analyze, and integrate data produced on multiple platforms and using multiple methods.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "GenPlay is a fast, easy to use and stable tool for rapid analysis and data processing. It is written in Java and runs on all major operating systems. GenPlay recognizes a wide variety of common genomic data formats from microarray- or sequencing-based platforms and offers a library of operations (normalization, binning, smoothing) to process raw data into visualizable tracks. GenPlay displays tracks adapted to summarize gene structure, gene expression, repeat families, CPG islands, etc. as well as custom tracks to show the results of RNA-Seq, ChIP-Seq, TimEX-Seq and single nucleotide polymorphism (SNP) analysis. GenPlay can generate statistics (minimum, maximum, SD, correlation, etc.). The tools provided include Gaussian filter, peak finders, signal saturation, island finders. The software also offers graphical features such as scatter plots and bar charts to depict signal repartition. The library of operations is continuously growing based on the emerging needs.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "GenPlay is a fast, easy to use, and stable tool for rapid analysis and data processing.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "GenPlay is written in Java and runs on all major operating systems.",
+        "category": "Background",
+        "rank": 1
+      },
+      {
+        "sentence": "GenPlay recognizes a wide variety of common genomic data formats from microarray- or sequencing-based platforms.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "GenPlay offers a library of operations such as normalization, binning, and smoothing to process raw data into visualizable tracks.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "GenPlay displays tracks adapted to summarize gene structure, gene expression, repeat families, and CPG islands.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "GenPlay displays custom tracks to show the results of RNA-Seq, ChIP-Seq, TimEX-Seq, and single nucleotide polymorphism (SNP) analysis.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "GenPlay can generate statistics such as minimum, maximum, standard deviation, and correlation.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The tools provided by GenPlay include Gaussian filter, peak finders, signal saturation, and island finders.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "GenPlay offers graphical features such as scatter plots and bar charts to depict signal repartition.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The library of operations in GenPlay is continuously growing based on emerging needs.",
+        "category": "Conclusion",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "GenPlay is an open-source project available from http://www.genplay.net. The code source of the software is available at https://genplay.einstein.yu.edu/svn/GenPlay.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "GenPlay is an open-source project.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "GenPlay is available from http://www.genplay.net.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "The code source of the software is available at https://genplay.einstein.yu.edu/svn/GenPlay.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

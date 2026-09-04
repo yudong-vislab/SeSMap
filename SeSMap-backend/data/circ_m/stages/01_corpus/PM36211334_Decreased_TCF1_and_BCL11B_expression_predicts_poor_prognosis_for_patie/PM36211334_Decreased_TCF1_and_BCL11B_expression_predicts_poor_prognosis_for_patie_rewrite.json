@@ -1,0 +1,28 @@
+[
+  {
+    "paragraph": "T cell immune dysfunction is a prominent characteristic of chronic lymphocytic leukemia (CLL) and the main cause of failure for immunotherapy and multi-drug resistance. There remains a lack of specific biomarkers for evaluating T cell immune status with outcome for CLL patients. T cell factor 1 (TCF1, encoded by the",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "T cell immune dysfunction is a prominent characteristic of chronic lymphocytic leukemia (CLL).",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "T cell immune dysfunction is the main cause of failure for immunotherapy and multi-drug resistance in CLL.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "There remains a lack of specific biomarkers for evaluating T cell immune status with outcome for CLL patients.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "T cell factor 1 (TCF1) is encoded by the genome.",
+        "category": "Background",
+        "rank": 2
+      }
+    ]
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "paragraph": "Draco introduced a constraint-based framework to model visualization design in an extensible and testable form. It provides a way to abstract design guidelines from theoretical and empirical studies and applies the knowledge in automated design tools. However, Draco is challenging to use because there is limited tooling and documentation. In response, we present Draco 2, the successor with (1) a more flexible visualization specification format, (2) a comprehensive test suite and documentation, and (3) flexible and convenient APIs. We designed Draco 2 to be more extensible and easier to integrate into visualization systems. We demonstrate these advantages and believe that they make Draco 2 a platform for future research.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Draco introduced a constraint-based framework to model visualization design in an extensible and testable form.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Draco provides a way to abstract design guidelines from theoretical and empirical studies.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Draco applies the knowledge in automated design tools.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Draco is challenging to use because there is limited tooling and documentation.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "We present Draco 2, the successor to Draco.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Draco 2 introduces a more flexible visualization specification format.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Draco 2 includes a comprehensive test suite and documentation.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Draco 2 provides flexible and convenient APIs.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Draco 2 is designed to be more extensible and easier to integrate into visualization systems.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "We demonstrate the advantages of Draco 2.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "We believe that Draco 2 makes a platform for future research.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  }
+]

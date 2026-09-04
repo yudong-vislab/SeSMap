@@ -1,0 +1,35 @@
+生信评测集: N=5415  12 篇  留出对=403  k=12  随机基线≈0.0022
+
+/Users/yudong/.pyenv/versions/3.10.14/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+方法                                 |  trust  knnOv@12  Co-loc@12   hexAdj
+----------------------------------------------------------------------------
+Ours-survey (zero-shot, 同领域)       |  0.737     0.053      0.092    0.256
+Ours-v11 air (zero-shot, 跨领域)      |  0.717     0.043      0.047    0.266
+PCA.transform (survey fit)         |  0.689     0.029      0.037    0.077
+UMAP.transform (survey fit)        |  0.731     0.040      0.062    0.218
+[参照] 生信重拟合                         |  0.939     0.358      0.474    0.613
+
+高维天花板 bz_recall@12_highD = 0.598 (编码器空间中本就 12-近邻的比例)
+
+========================================================================================
+逐篇 Co-loc@12（检验训练语料缺 LLM 语义是否造成系统性劣势）
+========================================================================================
+论文                                             对数   LLM%      迁移     重拟合     追回率
+----------------------------------------------------------------------------------------
+AuraGenome_An_LLM-Powered_Framework_for_On    107  19.6%   0.093   0.393    24%
+CGView.js Circular Genome Visualization in     17   2.3%   0.176   0.529    33%
+Circos an Information Aesthetic for Compar     51   0.0%   0.039   0.412    10%
+Computer Graphics Forum - 2024 - Ståhlbom      82   0.2%   0.085   0.610    14%
+GenoREC_A_Recommendation_System_for_Intera    130   0.0%   0.108   0.523    21%
+GlyphCreator_Towards_Example-based_Automat     66   0.3%   0.061   0.379    16%
+Gosling                                       121   0.0%   0.107   0.430    25%
+HERA Interactive Circular Comparison of Pl     41   0.4%   0.122   0.366    33%
+IntelliCircos                                 127   7.2%   0.063   0.559    11%
+NG-Circos Next-generation Circos for Data      25   0.0%   0.160   0.480    33%
+bioinformatics_32_11_1740                      26   0.0%   0.115   0.462    25%
+
+LLM 语义占比 vs 迁移追回率  相关系数 r = -0.045
+  LLM 重的论文(2篇) 追回率 18%   其余(9篇) 23%
+
+saved -> /Users/yudong/Desktop/SeSMap/SeSMap-backend/results/survey_transfer.json

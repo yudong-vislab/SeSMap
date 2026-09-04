@@ -1,0 +1,84 @@
+[
+  {
+    "paragraph": "Circleator is a Perl application that generates circular figures of genome-associated data. It leverages BioPerl to support standard annotation and sequence file formats and produces publication-quality SVG output. It is designed to be both flexible and easy to use. It includes a library of circular track types and predefined configuration files for common use-cases, including. (i) visualizing gene annotation and DNA sequence data from a GenBank flat file, (ii) displaying patterns of gene conservation in related microbial strains, (iii) showing Single Nucleotide Polymorphisms (SNPs) and indels relative to a reference genome and gene set and (iv) viewing RNA-Seq plots.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Circleator is a Perl application that generates circular figures of genome-associated data.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Circleator leverages BioPerl to support standard annotation and sequence file formats.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Circleator produces publication-quality SVG output.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Circleator is designed to be both flexible and easy to use.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Circleator includes a library of circular track types and predefined configuration files for common use-cases.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Circleator can visualize gene annotation and DNA sequence data from a GenBank flat file.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Circleator can display patterns of gene conservation in related microbial strains.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Circleator can show Single Nucleotide Polymorphisms (SNPs) and indels relative to a reference genome and gene set.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Circleator can view RNA-Seq plots.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Circleator is freely available under the Artistic License 2.0 from http://jonathancrabtree.github.io/Circleator/ and is integrated with the CloVR cloud-based sequence analysis Virtual Machine (VM), which can be downloaded from http://clovr.org or run on Amazon EC2.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Circleator is freely available under the Artistic License 2.0.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Circleator is available from http://jonathancrabtree.github.io/Circleator/.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Circleator is integrated with the CloVR cloud-based sequence analysis Virtual Machine (VM).",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The CloVR Virtual Machine (VM) can be downloaded from http://clovr.org.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "The CloVR Virtual Machine (VM) can be run on Amazon EC2.",
+        "category": "Method",
+        "rank": 2
+      }
+    ]
+  }
+]

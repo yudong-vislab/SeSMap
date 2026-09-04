@@ -1,0 +1,68 @@
+[
+  {
+    "paragraph": "Tools for visualizing genomes are essential for investigating genomic features and their interactions. Currently, tools designed originally for animal mitogenomes and plant plastomes are used to visualize the mitogens of plants but cannot accurately display features specific to plant mitogenomes, such as nonlinear exon arrangement for genes, the prevalence of functional noncoding features and complex chromosomal architecture. To address these problems, a software package, plant mitochondrial genome map (PMGmap), was developed using the Python programming language. PMGmap can draw genes at exon levels; draw cis- and trans-splicing gene maps, noncoding features and repetitive sequences; and scale genic regions by using the scaling of the genic regions on the mitogenome (SAGM) algorithm. It can also draw multiple chromosomes simultaneously. Compared with other state-of-the-art tools, PMGmap showed better performance in visualizing 405 plant mitogenomes, showing potential as an invaluable tool for plant mitogenome research. The web and container versions and the source code of PMGmap can be accessed through the following link: http://www.1kmpg.cn/pmgmap.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Tools for visualizing genomes are essential for investigating genomic features and their interactions.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Tools originally designed for animal mitogenomes and plant plastomes are used to visualize the mitogens of plants.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Existing tools cannot accurately display features specific to plant mitogenomes, such as nonlinear exon arrangement for genes.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Plant mitogenomes have features like the prevalence of functional noncoding features and complex chromosomal architecture.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "A software package, plant mitochondrial genome map (PMGmap), was developed using the Python programming language to address these problems.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "PMGmap can draw genes at exon levels.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "PMGmap can draw cis- and trans-splicing gene maps, noncoding features, and repetitive sequences.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "PMGmap can scale genic regions by using the scaling of the genic regions on the mitogenome (SAGM) algorithm.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "PMGmap can draw multiple chromosomes simultaneously.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Compared with other state-of-the-art tools, PMGmap showed better performance in visualizing 405 plant mitogenomes.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "PMGmap shows potential as an invaluable tool for plant mitogenome research.",
+        "category": "Conclusion",
+        "rank": 5
+      },
+      {
+        "sentence": "The web and container versions and the source code of PMGmap can be accessed through the following link: http://www.1kmpg.cn/pmgmap.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

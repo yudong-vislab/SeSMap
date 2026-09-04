@@ -1,0 +1,88 @@
+[
+  {
+    "paragraph": "Plasmids are extrachromosomal mobile genetic elements that often carry genes responsible for antimicrobial resistance. Plasmid epidemiology aims to track the evolution and spread of plasmids, but the field currently faces significant barriers that make practical implementation using whole genome sequence data difficult. Hybrid-assembled genomes remain the most reliable way to identify and track complete plasmids; however, most genomic surveillance data exists in the form of short-read sequencing, which lacks the resolution required to accurately resolve plasmids. Despite recent advances, long-read-only assemblies have not yet reached the consistency seen in hybrid assemblies. The ideal approach to plasmid epidemiology using whole genome sequence data would consider the limitations of sequencing technologies and the constraints of existing genomic surveillance infrastructure, in addition to the unique evolutionary biology of plasmids. Here, we present ACCIO (Assembly-based Circular Contig Identification for Outbreaks), a tool which creates a reference plasmid database and uses it to infer which plasmids, and genetically related plasmid groupings, are present in an input assembly (Illumina, Nanopore, or hybrid assembly). We validated ACCIO using an internal dataset of 303 plasmid-harboring bacterial clinical and surveillance isolates collected from a single acute tertiary care center. When highly related database plasmids were grouped together, ACCIO achieved 100% sensitivity and 92.1% positive predictive value (PPV) for detection of plasmid groups using hybrid assemblies, and comparably strong performance for Illumina (93.0% sensitivity, 86.6% PPV) and Nanopore (79.3% sensitivity, 91.4% PPV) assemblies. Evaluation on three external datasets yielded consistently high performance. Finally, when benchmarked against MOB-suite, a tool for reconstruction and typing of plasmids, ACCIO demonstrated superior performance across nearly all assembly types and plasmid grouping levels. By integrating database construction, clustering, and plasmid calling into a single workflow compatible with all major sequencing platforms, ACCIO is intended to help advance plasmid epidemiology beyond its current technological and infrastructural barriers.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Plasmids are extrachromosomal mobile genetic elements that often carry genes responsible for antimicrobial resistance.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Plasmid epidemiology aims to track the evolution and spread of plasmids.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The field of plasmid epidemiology currently faces significant barriers that make practical implementation using whole genome sequence data difficult.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Hybrid-assembled genomes remain the most reliable way to identify and track complete plasmids.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Most genomic surveillance data exists in the form of short-read sequencing, which lacks the resolution required to accurately resolve plasmids.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Despite recent advances, long-read-only assemblies have not yet reached the consistency seen in hybrid assemblies.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The ideal approach to plasmid epidemiology using whole genome sequence data would consider the limitations of sequencing technologies and the constraints of existing genomic surveillance infrastructure, in addition to the unique evolutionary biology of plasmids.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "ACCIO (Assembly-based Circular Contig Identification for Outbreaks) is a tool which creates a reference plasmid database and uses it to infer which plasmids, and genetically related plasmid groupings, are present in an input assembly (Illumina, Nanopore, or hybrid assembly).",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "ACCIO was validated using an internal dataset of 303 plasmid-harboring bacterial clinical and surveillance isolates collected from a single acute tertiary care center.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "When highly related database plasmids were grouped together, ACCIO achieved 100% sensitivity and 92.1% positive predictive value (PPV) for detection of plasmid groups using hybrid assemblies.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "ACCIO demonstrated comparably strong performance for Illumina assemblies with 93.0% sensitivity and 86.6% PPV.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "ACCIO demonstrated comparably strong performance for Nanopore assemblies with 79.3% sensitivity and 91.4% PPV.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Evaluation of ACCIO on three external datasets yielded consistently high performance.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "When benchmarked against MOB-suite, a tool for reconstruction and typing of plasmids, ACCIO demonstrated superior performance across nearly all assembly types and plasmid grouping levels.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "ACCIO integrates database construction, clustering, and plasmid calling into a single workflow compatible with all major sequencing platforms.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "ACCIO is intended to help advance plasmid epidemiology beyond its current technological and infrastructural barriers.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

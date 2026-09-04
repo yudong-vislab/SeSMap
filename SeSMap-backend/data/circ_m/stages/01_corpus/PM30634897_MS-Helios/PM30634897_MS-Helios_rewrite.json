@@ -1,0 +1,80 @@
+[
+  {
+    "paragraph": "Advances in high-resolution mass spectrometry facilitate the identification of hundreds of metabolites, thousands of proteins and their post-translational modifications. This remarkable progress poses a challenge to data analysis and visualization, requiring methods to reduce dimensionality and represent the data in a compact way. To provide a more holistic view, we recently introduced circular proteome maps (CPMs). However, the CPM construction requires prior data transformation and extensive knowledge of the Perl-based tool, Circos.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Advances in high-resolution mass spectrometry facilitate the identification of hundreds of metabolites, thousands of proteins, and their post-translational modifications.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "This progress poses a challenge to data analysis and visualization, requiring methods to reduce dimensionality and represent the data in a compact way.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "We recently introduced circular proteome maps (CPMs) to provide a more holistic view.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The CPM construction requires prior data transformation.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The CPM construction requires extensive knowledge of the Perl-based tool, Circos.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "We present MS-Helios, an easy to use command line tool with multiple built-in data processing functions, allowing non-expert users to construct CPMs or in general terms circular plots with a non-genomic basis. MS-Helios automatically generates data and configuration files to create high quality and publishable circular plots with Circos. We showcase the software on large-scale multi-omic datasets to visualize global trends and/or to contextualize specific features.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "MS-Helios is an easy-to-use command line tool with multiple built-in data processing functions.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "MS-Helios allows non-expert users to construct CPMs or circular plots with a non-genomic basis.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "MS-Helios automatically generates data and configuration files to create high-quality and publishable circular plots with Circos.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The software is showcased on large-scale multi-omic datasets to visualize global trends.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "The software is showcased on large-scale multi-omic datasets to contextualize specific features.",
+        "category": "Experiment",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "MS-Helios provides the means to easily map and visualize multi-omic data in a comprehensive way. The software, datasets, source code, and tutorial are available at https://sourceforge.net/projects/ms-helios/ .",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "MS-Helios provides the means to easily map and visualize multi-omic data in a comprehensive way.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The software, datasets, source code, and tutorial are available at https://sourceforge.net/projects/ms-helios/.",
+        "category": "Other",
+        "rank": 2
+      }
+    ]
+  }
+]

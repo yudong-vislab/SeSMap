@@ -1,0 +1,16 @@
+[
+  {
+    "title": "The prognostic value of a seven-microRNA classifier as a novel biomarker for the prediction and detection of recurrence in glioma patients",
+    "paragraphs": []
+  },
+  {
+    "title": "The prognostic value of a seven-microRNA classifier as a novel biomarker for the prediction and detection of recurrence in glioma patients-Abstract",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Glioma is often diagnosed at a later stage, and the high risk of recurrence remains a major challenge. We hypothesized that the microRNA expression profile may serve as a biomarker for the prognosis and prediction of glioblastoma recurrence. We defined microRNAs that were associated with good and poor prognosis in 300 specimens of glioblastoma from the Cancer Genome Atlas. By analyzing microarray gene expression data and clinical information from three random groups, we identified 7 microRNAs that have prognostic and prognostic accuracy: microRNA-124a, microRNA-129, microRNA-139, microRNA-15b, microRNA-21, microRNA-218 and microRNA-7. The differential expression of these miRNAs was verified using an independent set of glioma samples from the Affiliated People's Hospital of Jiangsu University. We used the log-rank test and the Kaplan-Meier method to estimate correlations between the miRNA signature and disease-free survival/overall survival. Using the LASSO model, we observed a uniform significant difference in disease-free survival and overall survival between patients with high-risk and low-risk miRNA signature scores. Furthermore, the prognostic capability of the seven-miRNA signature was demonstrated by receiver operator characteristic curve analysis. A Circos plot was generated to examine the network of genes and pathways predicted to be targeted by the seven-miRNA signature. The seven-miRNA-based classifier should be useful in the stratification and individualized management of patients with glioma.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

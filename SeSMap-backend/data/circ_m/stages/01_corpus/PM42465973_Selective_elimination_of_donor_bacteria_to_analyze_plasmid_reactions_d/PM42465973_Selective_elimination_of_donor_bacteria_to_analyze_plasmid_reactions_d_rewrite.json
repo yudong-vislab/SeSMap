@@ -1,0 +1,53 @@
+[
+  {
+    "paragraph": "Bacterial conjugation is an important means of horizontal gene transfer in which DNA is transferred from a donor to a recipient cell by direct cell-to-cell contact. Dissemination of antibiotic resistance in bacteria is very often driven by conjugative plasmids harboring antibiotic resistance genes. Recent research highlighted the temporal cascade of DNA reactions that are critical for the establishment of a plasmid in the new host, which include prompt and robust induction of anti-defense genes as well as re-formation of double-stranded circular form of the plasmid after transfer as single-stranded linear DNA. The nature of conjugation which occurs in a mixture of cell populations, constrained the research on plasmid establishment. Since plasmid molecules before and after transfer are indistinguishable, distinction between donor and recipient/transconjugant cells is required, and physical separation is particularly necessary for the genomic approaches. We established a novel method exploiting a mutant donor which can be expeditiously eliminated from the conjugation, mixture with simple manipulation. This method, dubbed",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Bacterial conjugation is an important means of horizontal gene transfer in which DNA is transferred from a donor to a recipient cell by direct cell-to-cell contact.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Dissemination of antibiotic resistance in bacteria is very often driven by conjugative plasmids harboring antibiotic resistance genes.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Recent research highlighted the temporal cascade of DNA reactions that are critical for the establishment of a plasmid in the new host.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The temporal cascade includes prompt and robust induction of anti-defense genes.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The temporal cascade includes re-formation of double-stranded circular form of the plasmid after transfer as single-stranded linear DNA.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The nature of conjugation, which occurs in a mixture of cell populations, constrained the research on plasmid establishment.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Since plasmid molecules before and after transfer are indistinguishable, distinction between donor and recipient/transconjugant cells is required.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Physical separation is particularly necessary for genomic approaches.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "We established a novel method exploiting a mutant donor which can be expeditiously eliminated from the conjugation mixture with simple manipulation.",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  }
+]

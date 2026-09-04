@@ -1,0 +1,80 @@
+[
+  {
+    "paragraph": "SpliceSeq is a resource for RNA-Seq data that provides a clear view of alternative splicing and identifies potential functional changes that result from splice variation. It displays intuitive visualizations and prioritized lists of results that highlight splicing events and their biological consequences. SpliceSeq unambiguously aligns reads to gene splice graphs, facilitating accurate analysis of large, complex transcript variants that cannot be adequately represented in other formats.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "SpliceSeq is a resource for RNA-Seq data that provides a clear view of alternative splicing.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "SpliceSeq identifies potential functional changes that result from splice variation.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "SpliceSeq displays intuitive visualizations of splicing events.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "SpliceSeq provides prioritized lists of results that highlight splicing events and their biological consequences.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "SpliceSeq unambiguously aligns reads to gene splice graphs.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "SpliceSeq facilitates accurate analysis of large, complex transcript variants that cannot be adequately represented in other formats.",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "SpliceSeq is freely available at http://bioinformatics.mdanderson.org/main/SpliceSeq:Overview. The application is a Java program that can be launched via a browser or installed locally. Local installation requires MySQL and Bowtie.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "SpliceSeq is freely available at http://bioinformatics.mdanderson.org/main/SpliceSeq:Overview.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "The application is a Java program that can be launched via a browser.",
+        "category": "Method",
+        "rank": 2
+      },
+      {
+        "sentence": "The application can also be installed locally.",
+        "category": "Method",
+        "rank": 2
+      },
+      {
+        "sentence": "Local installation requires MySQL.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Local installation requires Bowtie.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Supplementary data are available at Bioinformatics online.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Supplementary data are available at Bioinformatics online.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

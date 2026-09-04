@@ -1,0 +1,53 @@
+[
+  {
+    "paragraph": "Electroactive microorganisms (EAMs) can be incorporated into active soil management as a strategy for regenerative agriculture. Through extracellular electron transfer, they drive nutrient cycling, biofertilization, and pollutant degradation while also producing bioelectricity. Soil microbial fuel cells exemplify their use as self-powered biosensors and platforms for bioremediation. Reframing soils as dynamic bioelectronic interfaces, EAMs enable nutrient recovery, waste valorisation, and resilience. The concept of \"gardening microorganisms\" integrates them as programmable agents within managed ecosystems. By coupling microbial consortia engineering, bioelectronic scaffolds, and circular nutrient recovery, soils work as intelligent, self-regulating systems. This review positions EAMs as a tool in soil management for shaping climate-smart, regenerative agroecosystems that sustain productivity and ecological balance.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Electroactive microorganisms (EAMs) can be incorporated into active soil management as a strategy for regenerative agriculture.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "EAMs drive nutrient cycling, biofertilization, and pollutant degradation through extracellular electron transfer.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "EAMs also produce bioelectricity through extracellular electron transfer.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Soil microbial fuel cells exemplify the use of EAMs as self-powered biosensors.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Soil microbial fuel cells serve as platforms for bioremediation.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Reframing soils as dynamic bioelectronic interfaces, EAMs enable nutrient recovery, waste valorisation, and resilience.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "The concept of 'gardening microorganisms' integrates EAMs as programmable agents within managed ecosystems.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "By coupling microbial consortia engineering, bioelectronic scaffolds, and circular nutrient recovery, soils work as intelligent, self-regulating systems.",
+        "category": "Conclusion",
+        "rank": 5
+      },
+      {
+        "sentence": "This review positions EAMs as a tool in soil management for shaping climate-smart, regenerative agroecosystems that sustain productivity and ecological balance.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

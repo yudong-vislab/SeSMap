@@ -1,0 +1,65 @@
+[
+  {
+    "paragraph": "Tryptophan plays a key role in regulating human lung homeostasis and immunity through the indoleamine 2,3-dioxygenase (IDO) and aryl hydrocarbon receptor (AhR) signalling pathways. In patients with chronic obstructive pulmonary disease (COPD), altered IDO and AhR activity is observed, potentially favouring infection by pathogens capable of synthesizing their own tryptophan. In this study, we investigated the contribution of tryptophan availability to lung infection by",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Tryptophan plays a key role in regulating human lung homeostasis and immunity through the indoleamine 2,3-dioxygenase (IDO) and aryl hydrocarbon receptor (AhR) signalling pathways.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "In patients with chronic obstructive pulmonary disease (COPD), altered IDO and AhR activity is observed.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Altered IDO and AhR activity in COPD potentially favours infection by pathogens capable of synthesizing their own tryptophan.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "This study investigated the contribution of tryptophan availability to lung infection.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "A chemically defined medium with controlled tryptophan levels was developed, and used to determine bacterial (i) metabolite consumption/excretion; (ii) genome-wide differential gene expression and post-transcriptional regulation; (iii)",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A chemically defined medium with controlled tryptophan levels was developed.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The medium was used to determine bacterial metabolite consumption and excretion.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "The medium was used to determine bacterial genome-wide differential gene expression.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "The medium was used to determine bacterial post-transcriptional regulation.",
+        "category": "Experiment",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Under tryptophan-rich conditions, we observed up-regulation of",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Under tryptophan-rich conditions, we observed up-regulation of specific genes.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  }
+]

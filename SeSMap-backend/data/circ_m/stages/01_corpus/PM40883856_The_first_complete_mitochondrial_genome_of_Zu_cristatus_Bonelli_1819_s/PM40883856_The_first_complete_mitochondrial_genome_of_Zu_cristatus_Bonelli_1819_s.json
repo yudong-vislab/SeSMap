@@ -1,0 +1,36 @@
+[
+  {
+    "title": "The first complete mitochondrial genome of Zu cristatus (Bonelli, 1819) sheds new light on its phylogenetic position and molecular evolution",
+    "paragraphs": []
+  },
+  {
+    "title": "The first complete mitochondrial genome of Zu cristatus (Bonelli, 1819) sheds new light on its phylogenetic position and molecular evolution-Background",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Fishes are key components of the megafauna of the deep sea, and evolutionary adaptations to deep-sea life appear to have occurred independently in at least 22 fish orders. In this context, the analysis of even more fish genomes and mitogenomes has fundamental importance, providing a valuable resource for understanding the molecular mechanisms underlying evolutionary adaptation, especially to extreme environments such as the deep sea. Here, we report the first complete mitochondrial genome of Zu cristatus (Bonelli, 1819), providing essential information on its structure and phylogeny.",
+        "abstract_summary": ""
+      }
+    ]
+  },
+  {
+    "title": "The first complete mitochondrial genome of Zu cristatus (Bonelli, 1819) sheds new light on its phylogenetic position and molecular evolution-Results",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "After sequencing on the Illumina HiSeq 4000 platform, processing, and assembly via MitoFinder software v.1.4.1, a single circular mtDNA molecule of 17,450 bp in length was annotated. A total of 37 genes were identified, including the first D-loop region for this species. The asymmetry for both AT skews and GC skews is negative, and the AT content is 56.4%. We also detected the presence of 15 small, noncoding, intergenic nucleotide (IGN) regions and some rare stop codons in bony fishes. Pairwise distance and phylogenetic analyses against a list of other mitochondrial sequences from 42 bony fishes confirmed the current phylogeny with previously related orders. EasycodeML analysis revealed that only 4 PCGs underwent positive selection. New questions about the phylogeny of Lampriformes emerged from our phylogenetic analyses of Lampriformes COI.",
+        "abstract_summary": ""
+      }
+    ]
+  },
+  {
+    "title": "The first complete mitochondrial genome of Zu cristatus (Bonelli, 1819) sheds new light on its phylogenetic position and molecular evolution-Conclusion",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Overall, the findings of this study highlight the need to elucidate the genetic features of bony fishes in relation to their deep-sea adaptation, with a focus on rare and interesting species.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

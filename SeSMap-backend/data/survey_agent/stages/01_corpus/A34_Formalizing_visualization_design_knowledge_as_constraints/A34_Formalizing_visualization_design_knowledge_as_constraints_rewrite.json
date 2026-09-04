@@ -1,0 +1,63 @@
+[
+  {
+    "paragraph": "There exists a gap between visualization design guidelines and their application in visualization tools. While empirical studies can provide design guidance, we lack a formal framework for representing design knowledge, integrating results across studies, and applying this knowledge in automated design tools that promote effective encodings and facilitate visual exploration. We propose modeling visualization design knowledge as a collection of constraints, in conjunction with a method to learn weights for soft constraints from experimental data. Using constraints, we can take theoretical design knowledge and express it in a concrete, extensible, and testable form: the resulting models can recommend visualization designs and can easily be augmented with additional constraints or updated weights. We implement our approach in Draco, a constraint-based system based on Answer Set Programming (ASP). We demonstrate how to construct increasingly sophisticated automated visualization design systems, including systems based on weights learned directly from the results of graphical perception experiments.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "There exists a gap between visualization design guidelines and their application in visualization tools.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Empirical studies can provide design guidance.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "We lack a formal framework for representing design knowledge, integrating results across studies, and applying this knowledge in automated design tools that promote effective encodings and facilitate visual exploration.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "We propose modeling visualization design knowledge as a collection of constraints.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "We propose a method to learn weights for soft constraints from experimental data.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Using constraints, we can take theoretical design knowledge and express it in a concrete, extensible, and testable form.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The resulting models can recommend visualization designs.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The resulting models can easily be augmented with additional constraints or updated weights.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "We implement our approach in Draco, a constraint-based system based on Answer Set Programming (ASP).",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "We demonstrate how to construct increasingly sophisticated automated visualization design systems.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "These systems include those based on weights learned directly from the results of graphical perception experiments.",
+        "category": "Experiment",
+        "rank": 4
+      }
+    ]
+  }
+]

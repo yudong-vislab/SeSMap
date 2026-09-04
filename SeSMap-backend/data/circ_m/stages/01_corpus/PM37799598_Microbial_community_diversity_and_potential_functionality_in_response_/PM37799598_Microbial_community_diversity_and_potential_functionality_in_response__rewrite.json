@@ -1,0 +1,58 @@
+[
+  {
+    "paragraph": "River and reservoir bacterial communities are the most basic part of river biomes and ecosystem structure, and play an important role in river biological processes. Yet, it remains unclear how highly regulated dam reservoirs affect both soil and sediment bacterial communities. A temporal distribution pattern of bacterial communities was investigated using Illumina MiSeq sequencing in a transition section of the Three Gorges Reservoir (TGR). In total, 106,682 features belong to the bacteria kingdom, encompassing 95 phyla, 228 classes, 514 orders, 871 families, 1959 genera, and 3,053 species. With water level regulation, Shannon diversity index, and observed species differed significantly, with no significant difference in Simpson evenness. Both in the high water level period (October) and the low water level period (June), Proteobacteria, Acidobacteri, and Chloroflexi were the most abundant phyla. Whereas, based on PCA plots and Circos plot, the microbial community structure has changed significantly. LEfSe method was used to identify the classified bacterial taxa with significant abundance differences between the low water level and high water level periods. KOs (KEGG Orthology) pathway enrichment analysis were conducted to investigate functional and related metabolic pathways in groups. To some extent, it can be inferred that water level regulation affects community growth by affecting the metabolism of the microbial community.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "River and reservoir bacterial communities are the most basic part of river biomes and ecosystem structure, and play an important role in river biological processes.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "It remains unclear how highly regulated dam reservoirs affect both soil and sediment bacterial communities.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "A temporal distribution pattern of bacterial communities was investigated using Illumina MiSeq sequencing in a transition section of the Three Gorges Reservoir (TGR).",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "In total, 106,682 features belong to the bacteria kingdom, encompassing 95 phyla, 228 classes, 514 orders, 871 families, 1959 genera, and 3,053 species.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "With water level regulation, Shannon diversity index and observed species differed significantly, with no significant difference in Simpson evenness.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Both in the high water level period (October) and the low water level period (June), Proteobacteria, Acidobacteri, and Chloroflexi were the most abundant phyla.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Based on PCA plots and Circos plot, the microbial community structure has changed significantly.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "LEfSe method was used to identify the classified bacterial taxa with significant abundance differences between the low water level and high water level periods.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "KOs (KEGG Orthology) pathway enrichment analysis was conducted to investigate functional and related metabolic pathways in groups.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "It can be inferred that water level regulation affects community growth by affecting the metabolism of the microbial community.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

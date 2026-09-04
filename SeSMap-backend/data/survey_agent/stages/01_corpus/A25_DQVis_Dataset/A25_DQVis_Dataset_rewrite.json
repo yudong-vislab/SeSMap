@@ -1,0 +1,78 @@
+[
+  {
+    "paragraph": "Biomedical research data portals are essential resources for scientific inquiry, and interactive exploratory visualizations are an integral component for querying such data repositories. Increasingly, machine learning is being integrated into visualization systems to create natural language interfaces where questions about data can be answered with visualizations, and follow-up questions can build on the previous state. This paper introduces a framework that takes abstract low-level questions about data and a visualization grammar specification that can answer such a question, reifies them with data entities and fields that meet certain constraints, and paraphrases the question language to produce the final collection of realized data-question-visualization triplets. Furthermore, we can link these foundational elements together to construct chains of queries, visualizations, and follow-up queries. We developed an open-source review interface for evaluating the results of these datasets. We applied this framework to five biomedical research data repositories, resulting in DQVis, a dataset of 1.08 million data-question-visualization triplets and 11.4 thousand two-step question samples. Five visualization experts provided feedback on the generated dataset through our review interface. We present a summary of their input and publish the full reviews as an additional resource alongside the dataset.The DQVis dataset and generation code are available at https://huggingface.co/datasets/HIDIVE/DQVis and https://github.com/hms-dbmi/DQVis-Generation.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Biomedical research data portals are essential resources for scientific inquiry.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Interactive exploratory visualizations are an integral component for querying data repositories.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Machine learning is increasingly being integrated into visualization systems to create natural language interfaces.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Natural language interfaces allow questions about data to be answered with visualizations and enable follow-up questions to build on the previous state.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "This paper introduces a framework that takes abstract low-level questions about data and a visualization grammar specification that can answer such a question.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The framework reifies abstract questions with data entities and fields that meet certain constraints.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The framework paraphrases the question language to produce the final collection of realized data-question-visualization triplets.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The framework links foundational elements together to construct chains of queries, visualizations, and follow-up queries.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "We developed an open-source review interface for evaluating the results of these datasets.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "We applied this framework to five biomedical research data repositories.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "The application of the framework resulted in DQVis, a dataset of 1.08 million data-question-visualization triplets and 11.4 thousand two-step question samples.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "Five visualization experts provided feedback on the generated dataset through our review interface.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "We present a summary of the experts' input and publish the full reviews as an additional resource alongside the dataset.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The DQVis dataset and generation code are available at https://huggingface.co/datasets/HIDIVE/DQVis and https://github.com/hms-dbmi/DQVis-Generation.",
+        "category": "Other",
+        "rank": 2
+      }
+    ]
+  }
+]

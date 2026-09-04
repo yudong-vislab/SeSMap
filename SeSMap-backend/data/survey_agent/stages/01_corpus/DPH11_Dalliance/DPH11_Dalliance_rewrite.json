@@ -1,0 +1,69 @@
+[
+  {
+    "paragraph": "Dalliance is a new genome viewer which offers a high level of interactivity while running within a web browser. All data is fetched using the established distributed annotation system (DAS) protocol, making it easy to customize the browser and add extra data.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Dalliance is a new genome viewer.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Dalliance offers a high level of interactivity while running within a web browser.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "All data is fetched using the established distributed annotation system (DAS) protocol.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The DAS protocol makes it easy to customize the browser and add extra data.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Dalliance runs entirely within your web browser, and relies on existing DAS server infrastructure. Browsers for several mammalian genomes are available at http://www.biodalliance.org/, and the use of DAS means you can add your own data to these browsers. In addition, the source code (Javascript) is available under the BSD license, and is straightforward to install on your own web server and embed within other documents.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Dalliance runs entirely within your web browser.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Dalliance relies on existing DAS server infrastructure.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Browsers for several mammalian genomes are available at http://www.biodalliance.org/.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The use of DAS means you can add your own data to these browsers.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The source code (Javascript) is available under the BSD license.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "The source code is straightforward to install on your own web server.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The source code can be embedded within other documents.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  }
+]

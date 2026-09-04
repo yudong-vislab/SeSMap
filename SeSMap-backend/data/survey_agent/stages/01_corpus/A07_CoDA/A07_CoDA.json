@@ -1,0 +1,16 @@
+[
+  {
+    "title": "CoDA: Agentic Systems for Collaborative Data Visualization",
+    "paragraphs": []
+  },
+  {
+    "title": "CoDA: Agentic Systems for Collaborative Data Visualization-Abstract",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Deep research has revolutionized data analysis, yet data scientists still devote substantial time to manually crafting visualizations, highlighting the need for robust automation from natural language queries. However, current systems struggle with complex datasets containing multiple files and iterative refinement. Existing approaches, including simple single- or multi-agent systems, often oversimplify the task, focusing on initial query parsing while failing to robustly manage data complexity, code errors, or final visualization quality. In this paper, we reframe this challenge as a collaborative multi-agent problem. We introduce CoDA, a multi-agent system that employs specialized LLM agents for metadata analysis, task planning, code generation, and self-reflection. We formalize this pipeline, demonstrating how metadata-focused analysis bypasses token limits and quality-driven refinement ensures robustness. Extensive evaluations show CoDA achieves substantial gains in the overall score, outperforming competitive baselines by up to 41.5%. This work demonstrates that the future of visualization automation lies not in isolated code generation but in integrated, collaborative agentic workflows.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

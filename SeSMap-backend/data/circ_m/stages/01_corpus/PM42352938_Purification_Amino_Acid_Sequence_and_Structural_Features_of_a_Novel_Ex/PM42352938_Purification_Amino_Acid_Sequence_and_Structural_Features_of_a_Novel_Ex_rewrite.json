@@ -1,0 +1,68 @@
+[
+  {
+    "paragraph": "Expansin-like A (EXLA) proteins belong to one of the four main families within the expansin superfamily, a group of plant proteins essential for cell wall loosening. Here, we report, for the first time, the purification of a novel EXLA, named cpEXLA, from canihua seeds. cpEXLA (yield ~0.16 mg per 100 g of seeds) is a 29 kDa glycoprotein with a high melting temperature (Tm of 86.75 ± 1.06 °C). Elucidation of its primary structure reveals that the mature protein consists of 246 amino acids, ten of which are cysteine residues forming five disulphide bridges. Structural studies based on 3D model prediction reveal the presence of N- and C-terminal domains, which are typical of EXLAs and rich in β-sheets, as confirmed by circular dichroism (CD) spectroscopy. Furthermore, comparative analysis of amino acid sequences between cpEXLA and 219 similar EXLAs, retrieved from dicotyledonous genomes and transcriptomes, identified eighteen invariant amino acid residues: eleven in the N-terminal domain and seven in the C-terminal domain. Finally, phylogenetic analysis of EXLAs in dicotyledonous species shows a close relationship with other EXLAs from the Amaranthaceae family, confirming that EXLA proteins are highly conserved among dicotyledonous plants. Overall, cpEXLA represents an intriguing native tool for studying cell wall evolution and the functional role of EXLAs.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Expansin-like A (EXLA) proteins belong to one of the four main families within the expansin superfamily, a group of plant proteins essential for cell wall loosening.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "We report, for the first time, the purification of a novel EXLA, named cpEXLA, from canihua seeds.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "cpEXLA is a 29 kDa glycoprotein with a high melting temperature (Tm of 86.75 ± 1.06 °C).",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The yield of cpEXLA is approximately 0.16 mg per 100 g of seeds.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Elucidation of the primary structure of cpEXLA reveals that the mature protein consists of 246 amino acids, ten of which are cysteine residues forming five disulphide bridges.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Structural studies based on 3D model prediction reveal the presence of N- and C-terminal domains in cpEXLA, which are typical of EXLAs and rich in β-sheets.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Circular dichroism (CD) spectroscopy confirms the presence of β-sheets in the N- and C-terminal domains of cpEXLA.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Comparative analysis of amino acid sequences between cpEXLA and 219 similar EXLAs, retrieved from dicotyledonous genomes and transcriptomes, identified eighteen invariant amino acid residues.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Eleven invariant amino acid residues are located in the N-terminal domain, and seven are located in the C-terminal domain of cpEXLA.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Phylogenetic analysis of EXLAs in dicotyledonous species shows a close relationship between cpEXLA and other EXLAs from the Amaranthaceae family.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Phylogenetic analysis confirms that EXLA proteins are highly conserved among dicotyledonous plants.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "cpEXLA represents an intriguing native tool for studying cell wall evolution and the functional role of EXLAs.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

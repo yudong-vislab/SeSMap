@@ -1,0 +1,100 @@
+[
+  {
+    "paragraph": "Incidence and mortality of lung cancer have dramatically decreased during the last decades, yet still approximately 160,000 deaths per year occurred in United States. Smoking intensity, duration, starting age, as well as environmental cofactors including air-pollution, showed strong association with major types of lung cancer. Lung squamous cell carcinoma is a subtype of non-small cell lung cancer, which represents 25% of the cases. Thus, exploring the molecular pathogenic mechanisms of lung squamous cell carcinoma plays crucial roles in lung cancer clinical diagnosis and therapy.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Incidence and mortality of lung cancer have dramatically decreased during the last decades.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Approximately 160,000 deaths per year occurred in the United States due to lung cancer.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Smoking intensity, duration, starting age, as well as environmental cofactors including air pollution, showed strong association with major types of lung cancer.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Lung squamous cell carcinoma is a subtype of non-small cell lung cancer, which represents 25% of the cases.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Exploring the molecular pathogenic mechanisms of lung squamous cell carcinoma plays crucial roles in lung cancer clinical diagnosis and therapy.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "In this study, we performed integrative analyses on 299 comparative datasets of RNA-seq and methylation data, collected from 513 lung squamous cell carcinoma cases in The Cancer Genome Atlas. The data were divided into high and low smoking groups based on smoking intensity (Numbers of packs per year). We identified 1002 significantly up-regulated genes and 534 significantly down-regulated genes, and explored their cellular functions and signaling pathways by bioconductor packages GOseq and KEGG. Global methylation status was analyzed and visualized in circular plot by CIRCOS. RNA-and methylation data were correlatively analyzed, and 24 unique genes were identified, for further investigation of regional CpG sites' interactive patterns by bioconductor package coMET. AIRE, PENK, and SLC6A3 were the top 3 genes in the high and low smoking groups with significant differences.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Integrative analyses were performed on 299 comparative datasets of RNA-seq and methylation data.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The datasets were collected from 513 lung squamous cell carcinoma cases in The Cancer Genome Atlas.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The data were divided into high and low smoking groups based on smoking intensity (numbers of packs per year).",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "1002 significantly up-regulated genes and 534 significantly down-regulated genes were identified.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "The cellular functions and signaling pathways of these genes were explored using bioconductor packages GOseq and KEGG.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Global methylation status was analyzed and visualized in a circular plot using CIRCOS.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "RNA and methylation data were correlatively analyzed, identifying 24 unique genes.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "Regional CpG sites' interactive patterns were further investigated using the bioconductor package coMET.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "AIRE, PENK, and SLC6A3 were the top 3 genes with significant differences between the high and low smoking groups.",
+        "category": "Result",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "Gene functions and DNA methylation patterns of these 24 genes are important and useful in disclosing the differences of gene expression and methylation profiling caused by different smoking levels.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Gene functions of these 24 genes are important in disclosing differences in gene expression caused by different smoking levels.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "DNA methylation patterns of these 24 genes are useful in disclosing differences in methylation profiling caused by different smoking levels.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  }
+]

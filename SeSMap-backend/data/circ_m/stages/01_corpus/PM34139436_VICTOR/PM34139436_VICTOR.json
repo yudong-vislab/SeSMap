@@ -1,0 +1,16 @@
+[
+  {
+    "title": "VICTOR: A visual analytics web application for comparing cluster sets",
+    "paragraphs": []
+  },
+  {
+    "title": "VICTOR: A visual analytics web application for comparing cluster sets-Abstract",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Clustering is the process of grouping different data objects based on similar properties. Clustering has applications in various case studies from several fields such as graph theory, image analysis, pattern recognition, statistics and others. Nowadays, there are numerous algorithms and tools able to generate clustering results. However, different algorithms or parameterizations may produce quite dissimilar cluster sets. In this way, the user is often forced to manually filter and compare these results in order to decide which of them generate the ideal clusters. To automate this process, in this study, we present VICTOR, the first fully interactive and dependency-free visual analytics web application which allows the visual comparison of the results of various clustering algorithms. VICTOR can handle multiple cluster set results simultaneously and compare them using ten different metrics. Clustering results can be filtered and compared to each other with the use of data tables or interactive heatmaps, bar plots, correlation networks, sankey and circos plots. We demonstrate VICTOR's functionality using three examples. In the first case, we compare five different network clustering algorithms on a Yeast protein-protein interaction dataset whereas in the second example, we test four different parameters of the MCL clustering algorithm on the same dataset. Finally, as a third example, we compare four different meta-analyses with hierarchically clustered differentially expressed genes found to be involved in myocardial infarction. VICTOR is available at http://victor.pavlopouloslab.info or http://bib.fleming.gr:3838/VICTOR.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

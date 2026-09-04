@@ -1,0 +1,108 @@
+[
+  {
+    "paragraph": "Hepatocellular carcinoma (HCC) is a common disease of the digestive system with no curative treatments. Long noncoding RNA tyrosine protein kinase transmembrane receptor 1 antisense RNA 1 (lncRNA ROR1‑AS1) is an lncRNA whose functions have been predicted in human diseases; however, its important role in cancer has been probed only in mantle cell lymphoma, not in HCC. Therefore, the present study aimed to elucidate the prognostic significance of lncRNA ROR1‑AS1 in HCC. The Cancer Genome Atlas Liver Hepatocellular Carcinoma was used to analyze the expression of ROR1‑AS1 in liver cancer. χ2 tests were performed to evaluate associations between clinical characteristics and ROR1‑AS1 expression. The role of ROR1‑AS1 in HCC prognosis was assessed using Kaplan‑Meier curves and proportional hazards model (Cox) analysis. Gene set enrichment analysis was performed by using a Gene Expression Omnibus dataset. At the same time, Multi Experiment Matrix was used to predict genes that may be co‑expressed with ROR1‑AS1. The Database for Annotation, Visualization and Integrated Discovery and KO‑Based Annotation System were used to analyze the most closely associated cytological behaviors and pathways in HCC. Then, the genes in the three databases were integrated to screen mRNAs, microRNAs and lncRNAs that had co‑expression relationships with ROR1‑AS1. Cytoscape, Search Tool for the Retrieval of Interacting Genes/Proteins and Molecular Evolutionary Genetics Analysis were used to map potential regulatory networks and developmental relationships associated with ROR1‑AS1. Finally, 12 genes most closely associated with ROR1‑AS1 were identified, and their relationship was described using a Circos plot. The results showed that ROR1‑AS1 was upregulated in HCC, and its expression was related to clinical stage, T stage and N stage. Furthermore, Kaplan‑Meier curves and Cox analysis indicated that high expression of ROR1‑AS1 was associated with poor prognosis, and that ROR1‑AS1 was an independent risk factor for HCC. Co‑expression data suggested that there may be a large regulatory network of 45 genes with indirect associations with ROR1‑AS1, a small regulatory network of 15 genes with direct or indirect regulatory relationships, and a special regulatory network containing 12 genes directly associated with ROR1‑AS1. The present findings indicated that high expression of ROR1‑AS1 suggests poor prognosis in patients with HCC.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Hepatocellular carcinoma (HCC) is a common disease of the digestive system with no curative treatments.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Long noncoding RNA tyrosine protein kinase transmembrane receptor 1 antisense RNA 1 (lncRNA ROR1‑AS1) is an lncRNA whose functions have been predicted in human diseases.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The role of lncRNA ROR1‑AS1 in cancer has been probed only in mantle cell lymphoma, not in HCC.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The present study aimed to elucidate the prognostic significance of lncRNA ROR1‑AS1 in HCC.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The Cancer Genome Atlas Liver Hepatocellular Carcinoma was used to analyze the expression of ROR1‑AS1 in liver cancer.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "χ2 tests were performed to evaluate associations between clinical characteristics and ROR1‑AS1 expression.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The role of ROR1‑AS1 in HCC prognosis was assessed using Kaplan‑Meier curves and proportional hazards model (Cox) analysis.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Gene set enrichment analysis was performed by using a Gene Expression Omnibus dataset.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Multi Experiment Matrix was used to predict genes that may be co‑expressed with ROR1‑AS1.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The Database for Annotation, Visualization and Integrated Discovery and KO‑Based Annotation System were used to analyze the most closely associated cytological behaviors and pathways in HCC.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The genes in the three databases were integrated to screen mRNAs, microRNAs and lncRNAs that had co‑expression relationships with ROR1‑AS1.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Cytoscape, Search Tool for the Retrieval of Interacting Genes/Proteins and Molecular Evolutionary Genetics Analysis were used to map potential regulatory networks and developmental relationships associated with ROR1‑AS1.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "12 genes most closely associated with ROR1‑AS1 were identified, and their relationship was described using a Circos plot.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "ROR1‑AS1 was upregulated in HCC, and its expression was related to clinical stage, T stage and N stage.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "Kaplan‑Meier curves and Cox analysis indicated that high expression of ROR1‑AS1 was associated with poor prognosis.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "ROR1‑AS1 was identified as an independent risk factor for HCC.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "Co‑expression data suggested a large regulatory network of 45 genes with indirect associations with ROR1‑AS1.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "A small regulatory network of 15 genes with direct or indirect regulatory relationships with ROR1‑AS1 was identified.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "A special regulatory network containing 12 genes directly associated with ROR1‑AS1 was identified.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "High expression of ROR1‑AS1 suggests poor prognosis in patients with HCC.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "paragraph": "Circos is a popular, highly flexible software package for the circular visualization of complex datasets. While especially popular in the field of genomic analysis, Circos enables interactive graphing of any analytical data, including alternative scientific domain data and non-scientific data. This high degree of flexibility also comes with a high degree of complexity, which may present an obstacle for researchers not trained in programming or the UNIX command line. The Galaxy platform provides a user-friendly browser-based graphical interface incorporating a broad range of \"wrapped\" command line tools to facilitate accessibility.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Circos is a highly flexible software package for the circular visualization of complex datasets.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Circos is especially popular in the field of genomic analysis.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Circos enables interactive graphing of analytical data from alternative scientific domains and non-scientific data.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The flexibility of Circos comes with a high degree of complexity.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The complexity of Circos may present an obstacle for researchers not trained in programming or the UNIX command line.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The Galaxy platform provides a user-friendly browser-based graphical interface.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The Galaxy platform incorporates a broad range of 'wrapped' command line tools to facilitate accessibility.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "We have developed a Galaxy wrapper for Circos, thus combining the power of Circos with the accessibility and ease of use of the Galaxy platform. The combination substantially simplifies the specification and configuration of Circos plots for end users while retaining the power to produce publication-quality visualizations of complex multidimensional datasets.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A Galaxy wrapper for Circos has been developed.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The combination of Circos and the Galaxy platform simplifies the specification and configuration of Circos plots for end users.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The combination retains the power to produce publication-quality visualizations of complex multidimensional datasets.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Galactic Circos enables the creation of publication-ready Circos plots using only a web browser, via the Galaxy platform. Users may download the full set of Circos configuration files of their plots for further manual customization. This version of Circos is available as an open-source installable application from the Galaxy ToolShed, with its use clarified in a training manual hosted by the Galaxy Training Network.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Galactic Circos enables the creation of publication-ready Circos plots using only a web browser via the Galaxy platform.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Users may download the full set of Circos configuration files of their plots for further manual customization.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "This version of Circos is available as an open-source installable application from the Galaxy ToolShed.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The use of this version of Circos is clarified in a training manual hosted by the Galaxy Training Network.",
+        "category": "Other",
+        "rank": 2
+      }
+    ]
+  }
+]

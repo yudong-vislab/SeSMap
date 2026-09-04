@@ -1,0 +1,68 @@
+[
+  {
+    "paragraph": "Rhodotorula toruloides is an emerging oleaginous yeast with strong potential as a microbial cell factory for the production of acetyl-CoA-derived bioproducts. However, engineering of this organism has been limited by the absence of a functional episomal plasmid system, a foundational genetic tool for rapid gene expression, pathway testing, and CRISPR-based genome engineering. Here, we report the first episomal plasmid system for R. toruloides. Through systematic screening of candidate autonomously replicating sequences (ARSs) from diverse sources, we identified multiple functional ARS elements and selected C63F4, a fragment derived from Contig 63 of R. toruloides CBS14, because of its stable performance. The resulting pC63F4 plasmid was maintained episomally, supported GFP reporter expression, exhibited a copy number of 2.39 ± 0.13, and showed good stability during long term cultivation. To overcome poor transformation efficiency, we developed a Cre-loxP-mediated in vivo re-circularization strategy that enabled reliable delivery of the episomal plasmid. Using this improved system, we demonstrated functional episomal expression of metabolic engineering genes and multi-gene pathways for the production of triacetic acid lactone, fatty alcohols, and limonene. Finally, we leveraged this platform to establish a redesigned CRISPR system that enables seamless genome editing in R. toruloides for the first time, while also simplifying marker recycling. Together, this work establishes a long-needed episomal plasmid platform and associated CRISPR toolkit that will accelerate metabolic engineering, synthetic biology, and fundamental studies in R. toruloides.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Rhodotorula toruloides is an emerging oleaginous yeast with strong potential as a microbial cell factory for the production of acetyl-CoA-derived bioproducts.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Engineering of R. toruloides has been limited by the absence of a functional episomal plasmid system.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "A functional episomal plasmid system is a foundational genetic tool for rapid gene expression, pathway testing, and CRISPR-based genome engineering.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "We report the first episomal plasmid system for R. toruloides.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Through systematic screening of candidate autonomously replicating sequences (ARSs) from diverse sources, we identified multiple functional ARS elements.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "We selected C63F4, a fragment derived from Contig 63 of R. toruloides CBS14, because of its stable performance.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The resulting pC63F4 plasmid was maintained episomally, supported GFP reporter expression, exhibited a copy number of 2.39 ± 0.13, and showed good stability during long term cultivation.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "To overcome poor transformation efficiency, we developed a Cre-loxP-mediated in vivo re-circularization strategy that enabled reliable delivery of the episomal plasmid.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Using this improved system, we demonstrated functional episomal expression of metabolic engineering genes and multi-gene pathways for the production of triacetic acid lactone, fatty alcohols, and limonene.",
+        "category": "Experiment",
+        "rank": 5
+      },
+      {
+        "sentence": "We leveraged this platform to establish a redesigned CRISPR system that enables seamless genome editing in R. toruloides for the first time.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The redesigned CRISPR system also simplifies marker recycling.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "This work establishes a long-needed episomal plasmid platform and associated CRISPR toolkit that will accelerate metabolic engineering, synthetic biology, and fundamental studies in R. toruloides.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

@@ -1,0 +1,128 @@
+{
+ "N": 5415,
+ "n_test": 403,
+ "k": 12,
+ "results": {
+  "Ours-survey (zero-shot, 同领域)": {
+   "trust": 0.7369099877983111,
+   "knnOv": 0.05315481686672822,
+   "coloc": 0.09181141439205956,
+   "hexadj": 0.2555831265508685
+  },
+  "Ours-v11 air (zero-shot, 跨领域)": {
+   "trust": 0.7168507528433796,
+   "knnOv": 0.04264389042782395,
+   "coloc": 0.04714640198511166,
+   "hexadj": 0.2655086848635236
+  },
+  "PCA.transform (survey fit)": {
+   "trust": 0.6890828890982628,
+   "knnOv": 0.028885811018775007,
+   "coloc": 0.03722084367245657,
+   "hexadj": 0.07692307692307693
+  },
+  "UMAP.transform (survey fit)": {
+   "trust": 0.7312403103626922,
+   "knnOv": 0.0399661434287473,
+   "coloc": 0.062034739454094295,
+   "hexadj": 0.21836228287841192
+  },
+  "[参照] 生信重拟合": {
+   "trust": 0.9393831404182065,
+   "knnOv": 0.3582025238534934,
+   "coloc": 0.4739454094292804,
+   "hexadj": 0.6129032258064516
+  }
+ },
+ "per_paper": [
+  {
+   "paper": "AuraGenome_An_LLM-Powered_Framework_for_On",
+   "n": 107,
+   "llm": 0.1958266452648475,
+   "transfer": 0.09345794392523364,
+   "refit": 0.3925233644859813,
+   "recover": 0.23809523809523808
+  },
+  {
+   "paper": "CGView.js Circular Genome Visualization in",
+   "n": 17,
+   "llm": 0.022900763358778626,
+   "transfer": 0.17647058823529413,
+   "refit": 0.5294117647058824,
+   "recover": 0.33333333333333337
+  },
+  {
+   "paper": "Circos an Information Aesthetic for Compar",
+   "n": 51,
+   "llm": 0.0,
+   "transfer": 0.0392156862745098,
+   "refit": 0.4117647058823529,
+   "recover": 0.09523809523809525
+  },
+  {
+   "paper": "Computer Graphics Forum - 2024 - Ståhlbom ",
+   "n": 82,
+   "llm": 0.0017543859649122807,
+   "transfer": 0.08536585365853659,
+   "refit": 0.6097560975609756,
+   "recover": 0.14
+  },
+  {
+   "paper": "GenoREC_A_Recommendation_System_for_Intera",
+   "n": 130,
+   "llm": 0.0,
+   "transfer": 0.1076923076923077,
+   "refit": 0.5230769230769231,
+   "recover": 0.20588235294117646
+  },
+  {
+   "paper": "GlyphCreator_Towards_Example-based_Automat",
+   "n": 66,
+   "llm": 0.0034762456546929316,
+   "transfer": 0.06060606060606061,
+   "refit": 0.3787878787878788,
+   "recover": 0.16
+  },
+  {
+   "paper": "Gosling",
+   "n": 121,
+   "llm": 0.0,
+   "transfer": 0.10743801652892562,
+   "refit": 0.4297520661157025,
+   "recover": 0.25
+  },
+  {
+   "paper": "HERA Interactive Circular Comparison of Pl",
+   "n": 41,
+   "llm": 0.00392156862745098,
+   "transfer": 0.12195121951219512,
+   "refit": 0.36585365853658536,
+   "recover": 0.3333333333333333
+  },
+  {
+   "paper": "IntelliCircos",
+   "n": 127,
+   "llm": 0.07217847769028872,
+   "transfer": 0.06299212598425197,
+   "refit": 0.5590551181102362,
+   "recover": 0.11267605633802817
+  },
+  {
+   "paper": "NG-Circos Next-generation Circos for Data ",
+   "n": 25,
+   "llm": 0.0,
+   "transfer": 0.16,
+   "refit": 0.48,
+   "recover": 0.33333333333333337
+  },
+  {
+   "paper": "bioinformatics_32_11_1740",
+   "n": 26,
+   "llm": 0.0,
+   "transfer": 0.11538461538461539,
+   "refit": 0.46153846153846156,
+   "recover": 0.25
+  }
+ ],
+ "highD_ceiling": 0.598
+}

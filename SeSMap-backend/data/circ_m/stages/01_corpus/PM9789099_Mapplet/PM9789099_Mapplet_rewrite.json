@@ -1,0 +1,85 @@
+[
+  {
+    "paragraph": "There are a large number of genetic and physical maps, distributed at many sites. Each site offers different kinds of access methods and viewers. CORBA, the de facto standard for distributed object-oriented computing, offers new opportunities to unify the view on these maps through standard interfaces. A collaboration of Infobiogen and the EBI proposes a common IDL for maps.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "There are a large number of genetic and physical maps distributed at many sites.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Each site offers different kinds of access methods and viewers.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "CORBA is the de facto standard for distributed object-oriented computing.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "CORBA offers new opportunities to unify the view on genetic and physical maps through standard interfaces.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "A collaboration of Infobiogen and the EBI proposes a common IDL for maps.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "A CORBA map viewer is presented which serves as a proof of concept for the proposed IDL. It demonstrates its usefulness in the context of map viewing and its ability to handle large maps with <1000 markers. The viewer gives access to the maps of the Radiation Hybrid Database at EBI. It gives a quick overview of several large maps side by side. The marker density at each map position is displayed and different marker types can be highlighted.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A CORBA map viewer is presented as a proof of concept for the proposed IDL.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The CORBA map viewer demonstrates its usefulness in the context of map viewing.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The CORBA map viewer can handle large maps with fewer than 1000 markers.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The viewer provides access to the maps of the Radiation Hybrid Database at EBI.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The viewer gives a quick overview of several large maps side by side.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The marker density at each map position is displayed.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Different marker types can be highlighted.",
+        "category": "Result",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Demonstration and source code at: http://sunny.ebi.ac.uk/ approximately jungfer/Mapplet",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Demonstration and source code are available at http://sunny.ebi.ac.uk/ approximately jungfer/Mapplet.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

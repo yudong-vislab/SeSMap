@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Decoding the circRNA-miRNA-mRNA regulatory network in hepatitis B virus-driven hepatocellular carcinoma",
+    "paragraphs": []
+  },
+  {
+    "title": "Decoding the circRNA-miRNA-mRNA regulatory network in hepatitis B virus-driven hepatocellular carcinoma-Background",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Integration of the hepatitis B virus (HBV) genome into the host chromosome of infected patients poses a threat to those with HBV-associated hepatocellular carcinoma (HBV-HCC) due to challenges in early diagnosis and poor prognosis. CircRNAs are known for their oncogenic and biomarker potential in various cancers, including HBV-HCC, by sequestering tumor suppressive miRNAs, which, when free, can silence the expression of oncogenic mRNAs. Therefore, we aimed to develop a bioinformatic model to identify the circRNA-miRNA-mRNA axis in HBV-integrated HCC cell lines and to identify prognostic biomarkers specific to HBV-HCC patients.",
+        "abstract_summary": ""
+      }
+    ]
+  },
+  {
+    "title": "Decoding the circRNA-miRNA-mRNA regulatory network in hepatitis B virus-driven hepatocellular carcinoma-Methods",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "We identified dysregulated host circRNAs and mRNAs in HBV-negative and HBV-integrated cells using RNA-seq, followed by differential gene expression analysis with DESeq, and performed pathway analysis using Gene Set Enrichment Analysis (GSEA). Junctional sequences of the circRNAs were validated by Sanger sequencing of the amplified products. RT-qPCR further confirmed the dysregulation of 9 randomly selected circRNAs chosen from those with the highest fold-change and adjusted p-values. The miRNA partners for each circRNA were identified using mirDB. miRNA expression validation was performed using the publicly available Gene Expression Omnibus (GEO) database of the same cells, and Empirical Cumulative Distribution Function (ECDF) plots were generated to assess the fold change of mRNAs in potential binding miRNA partners. The mRNA targets for 10 miRNA ECDF plots were subjected to Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway analysis, and hub genes were identified using Search Tool for the Retrieval of Interacting Genes (STRING) Cytohubba protein-protein interaction (PPI) analysis. Survival analysis of hub genes was plotted, and a competitive endogenous RNA (ceRNA) network was constructed using Cytoscape.",
+        "abstract_summary": ""
+      }
+    ]
+  },
+  {
+    "title": "Decoding the circRNA-miRNA-mRNA regulatory network in hepatitis B virus-driven hepatocellular carcinoma-Results",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "We identified 494 dysregulated circRNAs, 346 dysregulated miRNAs, and 10,419 dysregulated mRNA in HBV-integrated cells through a comprehensive bioinformatic model. circADGRL2 (~ 25-fold) showed the highest upregulation and miR-361-5p acted as a central node of multiple circRNAs: circADGRL2, circPROX1 and circPALS2. BDNF, a target mRNA of miR-361-5p, was identified as the highest risk ratio in HBV-HCC patients, suggesting a possible circADGRL2-miR-361-5p-BDNF axis involved in HBV-HCC. The target mRNAs of miRNAs were predicted to be associated with several cancer pathways, such as MAPK and RAS.",
+        "abstract_summary": ""
+      }
+    ]
+  },
+  {
+    "title": "Decoding the circRNA-miRNA-mRNA regulatory network in hepatitis B virus-driven hepatocellular carcinoma-Conclusion",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Our data suggest a potential dysregulated circRNA-miRNA-mRNA axis in HBV-integrated hepatocytes, which may indicate a poor prognosis for HBV-HCC patients.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

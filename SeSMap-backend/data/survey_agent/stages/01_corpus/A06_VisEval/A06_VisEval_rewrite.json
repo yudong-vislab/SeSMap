@@ -1,0 +1,73 @@
+[
+  {
+    "paragraph": "Translating natural language to visualization (NL2VIS) has shown great promise for visual data analysis, but it remains a challenging task that requires multiple low-level implementations, such as natural language processing and visualization design. Recent advancements in pre-trained large language models (LLMs) are opening new avenues for generating visualizations from natural language. However, the lack of a comprehensive and reliable benchmark hinders our understanding of LLMs' capabilities in visualization generation. In this paper, we address this gap by proposing a new NL2VIS benchmark called VisEval. Firstly, we introduce a high-quality and large-scale dataset. This dataset includes 2,524 representative queries covering 146 databases, paired with accurately labeled ground truths. Secondly, we advocate for a comprehensive automated evaluation methodology covering multiple dimensions, including validity, legality, and readability. By systematically scanning for potential issues with a number of heterogeneous checkers, VisEval provides reliable and trustworthy evaluation outcomes. We run VisEval on a series of state-of-the-art LLMs. Our evaluation reveals prevalent challenges and delivers essential insights for future advancements.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Translating natural language to visualization (NL2VIS) has shown great promise for visual data analysis.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "NL2VIS remains a challenging task that requires multiple low-level implementations, such as natural language processing and visualization design.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Recent advancements in pre-trained large language models (LLMs) are opening new avenues for generating visualizations from natural language.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "The lack of a comprehensive and reliable benchmark hinders our understanding of LLMs' capabilities in visualization generation.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "We propose a new NL2VIS benchmark called VisEval.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "VisEval includes a high-quality and large-scale dataset.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The dataset includes 2,524 representative queries covering 146 databases, paired with accurately labeled ground truths.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "We advocate for a comprehensive automated evaluation methodology covering multiple dimensions, including validity, legality, and readability.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "VisEval systematically scans for potential issues with a number of heterogeneous checkers.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "VisEval provides reliable and trustworthy evaluation outcomes.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "We run VisEval on a series of state-of-the-art LLMs.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "Our evaluation reveals prevalent challenges in visualization generation.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Our evaluation delivers essential insights for future advancements in NL2VIS.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

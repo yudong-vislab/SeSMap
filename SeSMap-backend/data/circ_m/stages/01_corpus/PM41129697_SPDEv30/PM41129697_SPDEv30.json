@@ -1,0 +1,16 @@
+[
+  {
+    "title": "SPDEv3.0: A multidisciplinary integrated data analysis platform",
+    "paragraphs": []
+  },
+  {
+    "title": "SPDEv3.0: A multidisciplinary integrated data analysis platform-Abstract",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Plant research faces persistent challenges in integrating heterogeneous data and ensuring compatibility across diverse analytical pipelines. The limited automation of existing tools often results in fragmented workflows, reducing analytical efficiency and reproducibility. To address these limitations, we developed SPDEv3.0 as a fully integrated bioinformatics platform with a graphical user interface, consolidating more than 130 functions across seven logically connected modules. SPDEv3.0 streamlines key tasks such as gene family identification, primer design, and genome feature extraction through high-level automation, enabling users to perform complex bioinformatic workflows with minimal manual intervention. For instance, collinearity analysis between Arabidopsis thaliana and A. halleri can be completed in under 2 min using only genome and annotation files, with all intermediate steps executed automatically. In addition, SPDEv3.0 offers over 30 customizable visualization functions, including genomic feature mapping, domain structure illustration, heatmaps, Circos plots, and statistical charting, all designed to help users generate publication-ready figures without coding. A total of 40 classical breeding methods have been implemented in SPDEv3.0, all of which support automated computation following user data input. Benchmarking across a range of plant genomes (including those exceeding 14 Gb) demonstrates SPDEv3.0's robust performance, scalability, and practical utility. By integrating high automation, module interoperability, and extensive visualization capacity, SPDEv3.0 provides a powerful and accessible solution for modern plant genomics and breeding research.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

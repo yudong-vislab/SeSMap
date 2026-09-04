@@ -1,0 +1,44 @@
+[
+  {
+    "paragraph": "We present Circoletto, an online visualization tool based on Circos, which provides a fast, aesthetically pleasing and informative overview of sequence similarity search results.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Circoletto is an online visualization tool.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Circoletto is based on Circos.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Circoletto provides a fast, aesthetically pleasing, and informative overview of sequence similarity search results.",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "Online version and downloadable software package for offline use (source code in PERL) freely available at http://bat.ina.certh.gr/tools/circoletto/",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "An online version and downloadable software package for offline use are available.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "The source code is written in PERL.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "The software is freely available at http://bat.ina.certh.gr/tools/circoletto/.",
+        "category": "Other",
+        "rank": 3
+      }
+    ]
+  }
+]

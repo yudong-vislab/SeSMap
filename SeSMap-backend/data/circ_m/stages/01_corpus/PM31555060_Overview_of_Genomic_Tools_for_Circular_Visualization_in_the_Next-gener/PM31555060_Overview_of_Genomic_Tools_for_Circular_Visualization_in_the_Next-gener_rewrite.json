@@ -1,0 +1,38 @@
+[
+  {
+    "paragraph": "After human genome sequencing and rapid changes in genome sequencing methods, we have entered into the era of rapidly accumulating genome-sequencing data. This has derived the development of several types of methods for representing results of genome sequencing data. Circular genome visual-ization tools are also critical in this area as they provide rapid interpretation and simple visualization of overall data. In the last 15 years, we have seen rapid changes in circular visualization tools after the de-velopment of the circos tool with 1-2 tools published per year. Herein we have summarized and revisited all these tools until the third quarter of 2018.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Human genome sequencing and rapid changes in genome sequencing methods have led to the era of rapidly accumulating genome-sequencing data.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Several types of methods have been developed for representing results of genome sequencing data.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Circular genome visualization tools are critical as they provide rapid interpretation and simple visualization of overall data.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "In the last 15 years, circular visualization tools have undergone rapid changes after the development of the circos tool.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Approximately 1-2 circular visualization tools have been published per year since the development of the circos tool.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "This study summarizes and revisits all circular genome visualization tools until the third quarter of 2018.",
+        "category": "Other",
+        "rank": 2
+      }
+    ]
+  }
+]

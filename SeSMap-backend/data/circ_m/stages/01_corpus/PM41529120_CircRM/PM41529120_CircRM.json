@@ -1,0 +1,16 @@
+[
+  {
+    "title": "CircRM: profiling circular RNA modifications from nanopore direct RNA sequencing",
+    "paragraphs": []
+  },
+  {
+    "title": "CircRM: profiling circular RNA modifications from nanopore direct RNA sequencing-Abstract",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Circular RNA (circRNA) represents a critical class of regulatory RNAs with distinctive structural and functional features. The functions of circRNAs are modulated by various RNA modifications. Here, we present CircRM, a nanopore direct RNA sequencing-based computational method for profiling RNA modifications in circRNAs at single-base and single-molecule resolution. By integrating circRNA detection, read-level modification detection, and quantitative assessment of methylation rates, CircRM identified 427 high-confidence circRNAs and enables systematic characterization of three major modifications, m5C (AUC = 0.855), m6A (AUC = 0.817) and m1A (AUC = 0.769). It revealed distinct modification patterns compared with linear RNAs, highlighting RNA-type-specific regulations. We also identified the key features of circRNA-specific modifications, such as the enrichment near the back-splice junctions. Cross-cell line analyses further demonstrated conserved and cell-type-specific modification patterns. Together, these findings reveal, at the computational level, a unique epitranscriptomic landscape associated with circRNAs and establish CircRM as a powerful tool for advancing the study of RNA modifications in circular RNA biology. CircRM is free accessible at: https://github.com/jiayiAnnie17/CircRM.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,103 @@
+[
+  {
+    "paragraph": "Resistance genes are critical for plant defence against biotic stresses, and building a comprehensive, integrated data resource platform for these genes holds great significance for plant research and agriculture. Here, we developed PlantRG (http://plantrg.bio2db.com), a user-friendly plant resistance gene database, which is built on 2 163 397 resistance genes identified from 1062 plant species. These genes were mined from all accessible plant genomic resources-systematically curated from 794 peer-reviewed publications and 107 public databases-to ensure data breadth and reliability. All resistance genes in PlantRG were further functionally annotated using five major reference databases, enhancing their utility for targeted studies. Additionally, 207 353 SSR markers and 141 582 miRNAs associated with these resistance genes were detected, providing insights into their regulatory networks and genetic markers. Key bioinformatic results, including gene duplication patterns, protein-protein interaction predictions and CRISPR guide sequences, were also generated and stored in the database. PlantRG allows free browsing and downloading of all resistance gene sequences, annotations and bioinformatic data. It also offers practical tools such as Blast (for homology search), CasViewer (for CRISPR guide visualization), Circos (for genomic landscape analysis), HmmerSearch (for domain-based identification) and Primer Design, to facilitate user-friendly comparative genomic analysis. Notably, PlantRG is the comprehensive platform to complete large-scale collection and bioinformatic analysis of plant resistance genes. It will support in-depth studies on the structure, function and evolutionary patterns of resistance genes, thereby contributing to agricultural development-for example, breeding stress-resistant crop varieties. In the future, PlantRG will be continuously updated to incorporate new data and features, maintaining its value for the global plant research community.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Resistance genes are critical for plant defence against biotic stresses.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Building a comprehensive, integrated data resource platform for resistance genes holds great significance for plant research and agriculture.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "We developed PlantRG, a user-friendly plant resistance gene database.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "PlantRG is available at http://plantrg.bio2db.com.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "PlantRG is built on 2,163,397 resistance genes identified from 1,062 plant species.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "These resistance genes were mined from all accessible plant genomic resources.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The genomic resources were systematically curated from 794 peer-reviewed publications and 107 public databases to ensure data breadth and reliability.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "All resistance genes in PlantRG were functionally annotated using five major reference databases.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Functional annotation enhances the utility of resistance genes for targeted studies.",
+        "category": "Conclusion",
+        "rank": 3
+      },
+      {
+        "sentence": "207,353 SSR markers and 141,582 miRNAs associated with resistance genes were detected.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "These SSR markers and miRNAs provide insights into regulatory networks and genetic markers of resistance genes.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Key bioinformatic results, including gene duplication patterns, protein-protein interaction predictions, and CRISPR guide sequences, were generated and stored in the database.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "PlantRG allows free browsing and downloading of all resistance gene sequences, annotations, and bioinformatic data.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "PlantRG offers practical tools such as Blast, CasViewer, Circos, HmmerSearch, and Primer Design to facilitate user-friendly comparative genomic analysis.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "PlantRG is the first comprehensive platform to complete large-scale collection and bioinformatic analysis of plant resistance genes.",
+        "category": "Conclusion",
+        "rank": 5
+      },
+      {
+        "sentence": "PlantRG will support in-depth studies on the structure, function, and evolutionary patterns of resistance genes.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "PlantRG will contribute to agricultural development, for example, breeding stress-resistant crop varieties.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "In the future, PlantRG will be continuously updated to incorporate new data and features.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "Continuous updates will maintain PlantRG's value for the global plant research community.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  }
+]

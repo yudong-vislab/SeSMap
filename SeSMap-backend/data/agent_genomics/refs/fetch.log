@@ -1,0 +1,44 @@
+[ 1/41] MISS (未命中)                        A01 Understanding Why ChatGPT Outperforms Humans in Visu
+[ 2/41] OK   crossref sim=1.00 len=1631  A05 InterChat: Enhancing Generative Visual Analytics usi
+[ 3/41] OK   pubmed   sim=1.00 len=1256  A06 VisEval: A Benchmark for Data Visualization in the E
+[ 4/41] MISS (未命中)                        A07 CoDA: Agentic Systems for Collaborative Data Visuali
+[ 5/41] MISS (未命中)                        A08 Waltzboard: Multi-criteria automated dashboard desig
+[ 6/41] MISS (未命中)                        A09 Bavisitter: Integrating design guidelines into large
+[ 7/41] OK   pubmed   sim=1.00 len=1538  A11 Charts-of-Thought: Enhancing LLM Visualization Liter
+[ 8/41] MISS (未命中)                        A12 LIDA: A Tool for Automatic Generation of Grammar-Agn
+[ 9/41] OK   pubmed   sim=1.00 len=1485  A14 Probing the Visualization Literacy of Vision Languag
+[10/41] MISS (未命中)                        A15 Fine-Tuned Large Language Model for Visualization Sy
+[11/41] MISS (未命中)                        A16 Democratizing AI scientists using ToolUniverse
+[12/41] MISS (未命中)                        A17 PlotGen: Multi-Agent LLM-based Scientific Data Visua
+[13/41] OK   crossref sim=1.00 len=1106  A18 Data Has Entered the Chat: How Data Workers Conduct 
+[14/41] MISS (未命中)                        A19 VegaChat: A Robust Framework for LLM-Based Chart Gen
+[15/41] MISS (未命中)                        A20 Automatic Synthesis of Visualization Design Knowledg
+[16/41] OK   crossref sim=0.94 len=1235  A21 How Good Is ChatGPT in Giving Advice on Your Visuali
+[17/41] OK   pubmed   sim=1.00 len=1007  A22 Understanding the research-practice gap in visualiza
+[18/41] MISS (未命中)                        A23 Natural Language Dataset Generation Framework for Vi
+[19/41] MISS (未命中)                        A24 YAC: Bridging Natural Language and Interactive Visua
+[20/41] OK   crossref sim=1.00 len=1565  A25 DQVis Dataset: Natural Language to Biomedical Visual
+[21/41] MISS (未命中)                        A26 Drawer-Advisor for Content-Aligned Visualization
+[22/41] OK   crossref sim=0.90 len=1704  A27 Prompt4Vis: Prompting Large Language Models with Exa
+[23/41] OK   crossref sim=1.00 len=1533  A28 MultiVis-Agent: A Multi-Agent Framework with Logic R
+[24/41] OK   crossref sim=1.00 len=1319  A29 Multi-View Design Patterns and Responsive Visualizat
+[25/41] OK   crossref sim=1.00 len=1926  A30 Learnable and Expressive Visualization Authoring Thr
+[26/41] OK   s2       sim=1.00 len=1882  A32 Chat2VIS: Generating Data Visualizations via Natural
+[27/41] OK   crossref sim=1.00 len=1111  A34 Formalizing visualization design knowledge as constr
+[28/41] OK   crossref sim=1.00 len=1541  A35 Geranium: Multimodal Retrieval of Genomics Data Visu
+[29/41] OK   s2       sim=1.00 len=1235  A37 NVAGENT: Automated Data Visualization from Natural L
+[30/41] MISS (未命中)                        A39 Talk Me Through It: Developing Effective Systems for
+[31/41] MISS (未命中)                        A40 Evaluating LLMs abilities to create charts a systema
+[32/41] OK   pubmed   sim=1.00 len=1171  A41 Qualitative Study for LLM-assisted Design Study Proc
+[33/41] MISS (未命中)                        A43 Collecting and Characterizing Natural Language Utter
+[34/41] OK   pubmed   sim=1.00 len=1620  A45 ChartGPT: Leveraging LLMs to Generate Charts From Ab
+[35/41] OK   crossref sim=1.00 len=1412  A46 Understanding Visualization Authoring Techniques for
+[36/41] MISS (未命中)                        A47 Are LLMs ready for Visualization
+[37/41] MISS (未命中)                        A48 GQVis: A Dataset of Genomics Data Questions and Visu
+[38/41] OK   s2       sim=1.00 len=1234  A49 DracoGPT: Extracting Visualization Design Preference
+[39/41] MISS (未命中)                        A50 Draco 2: An extensible platform to model visualizati
+[40/41] MISS (未命中)                        A51 MatPlotAgent: Method and Evaluation for LLM-Based Ag
+[41/41] OK   pubmed   sim=1.00 len=1308  A52 Too many cooks: Exploring how graphical perception s
+
+成功 21/41 (51%)   失败 20
+总摘要字数 29,819

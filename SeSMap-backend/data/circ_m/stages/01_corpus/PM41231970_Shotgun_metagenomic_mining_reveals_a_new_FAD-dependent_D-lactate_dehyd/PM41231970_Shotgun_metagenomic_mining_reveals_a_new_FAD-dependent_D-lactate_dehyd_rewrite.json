@@ -1,0 +1,64 @@
+[
+  {
+    "paragraph": "Shotgun metagenomic sequencing has emerged as a powerful tool for exploring microbial diversity and uncovering genes encoding novel biocatalysts from complex environments. Here, we report the discovery and characterization of a new FAD-dependent D-lactate dehydrogenase (PdG-D-LDH) from the gut microbiome of the isopod",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Shotgun metagenomic sequencing has emerged as a powerful tool for exploring microbial diversity.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Shotgun metagenomic sequencing is used to uncover genes encoding novel biocatalysts from complex environments.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "A new FAD-dependent D-lactate dehydrogenase (PdG-D-LDH) was discovered and characterized.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "The new FAD-dependent D-lactate dehydrogenase (PdG-D-LDH) was identified from the gut microbiome of the isopod.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "This study illustrates how metagenomics, structural biology, and computational tools can jointly drive the discovery of new enzymes with valuable biotechnological applications aligned with circular economic principles. The newly identified D-lactate dehydrogenase, PdG-D-LDH, exhibits thermostability, stereoselectivity, and high catalytic efficiency, providing new insights into the structure-function relationships of lactate-metabolizing enzymes.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "This study illustrates how metagenomics, structural biology, and computational tools can jointly drive the discovery of new enzymes with valuable biotechnological applications.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The study aligns with circular economic principles.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The newly identified D-lactate dehydrogenase, PdG-D-LDH, exhibits thermostability.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The newly identified D-lactate dehydrogenase, PdG-D-LDH, exhibits stereoselectivity.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The newly identified D-lactate dehydrogenase, PdG-D-LDH, exhibits high catalytic efficiency.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The findings provide new insights into the structure-function relationships of lactate-metabolizing enzymes.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

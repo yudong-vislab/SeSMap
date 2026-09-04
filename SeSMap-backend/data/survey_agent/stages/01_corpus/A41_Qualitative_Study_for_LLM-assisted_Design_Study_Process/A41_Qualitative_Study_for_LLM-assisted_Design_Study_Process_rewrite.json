@@ -1,0 +1,63 @@
+[
+  {
+    "paragraph": "Design studies aim to develop visualization solutions for real-world problems across various application domains. Recently, the emergence of large language models (LLMs) has introduced new opportunities to enhance the design study process, providing capabilities such as creative problem-solving, data handling, and insightful analysis. However, despite their growing popularity, there remains a lack of systematic understanding of how LLMs can effectively assist researchers in visualization-specific design studies. In this paper, we conducted a rnulti-stage qualitative study to fill this gap, which involved 30 design study researchers from diverse backgrounds and expertise levels. Through in-depth interviews and carefully-designed questionnaires, we investigated strategies for utilizing LLMs, the challenges encountered, and the practices used to overcome them. We further compiled the roles that LLMs can play across different stages of the design study process. Our findings highlight practical implications to inform visualization practitioners, and also provide a framework for leveraging LLMs to facilitate the design study process in visualization research.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Design studies aim to develop visualization solutions for real-world problems across various application domains.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The emergence of large language models (LLMs) has introduced new opportunities to enhance the design study process.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "LLMs provide capabilities such as creative problem-solving, data handling, and insightful analysis.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "There remains a lack of systematic understanding of how LLMs can effectively assist researchers in visualization-specific design studies.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "We conducted a multi-stage qualitative study to fill this gap.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The study involved 30 design study researchers from diverse backgrounds and expertise levels.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "We used in-depth interviews and carefully-designed questionnaires to investigate strategies for utilizing LLMs.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "We investigated the challenges encountered and the practices used to overcome them.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "We compiled the roles that LLMs can play across different stages of the design study process.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Our findings highlight practical implications to inform visualization practitioners.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "Our findings provide a framework for leveraging LLMs to facilitate the design study process in visualization research.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

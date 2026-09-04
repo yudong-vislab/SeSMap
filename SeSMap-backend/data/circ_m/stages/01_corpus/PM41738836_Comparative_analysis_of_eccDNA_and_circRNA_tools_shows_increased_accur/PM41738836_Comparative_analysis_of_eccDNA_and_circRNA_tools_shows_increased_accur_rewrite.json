@@ -1,0 +1,136 @@
+[
+  {
+    "paragraph": "Circular nucleic acids such as extrachromosomal circular DNA (eccDNA) and circular RNA (circRNA) are increasingly recognized for their biological relevance and potential as biomarkers in disease contexts. Despite their growing importance, their detection remains challenging due to tool-specific biases, limited validation frameworks, and high variability in performance across datasets.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Circular nucleic acids such as extrachromosomal circular DNA (eccDNA) and circular RNA (circRNA) are increasingly recognized for their biological relevance.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Circular nucleic acids have potential as biomarkers in disease contexts.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "The detection of circular nucleic acids remains challenging due to tool-specific biases.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The detection of circular nucleic acids is hindered by limited validation frameworks.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The detection of circular nucleic acids is affected by high variability in performance across datasets.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "We benchmarked 10 circle detection tools across diverse conditions using both simulated and biological datasets. Our evaluation included classical performance metrics and a novel internal measure of read distribution symmetry ($\\Delta$CJ) to assess circle prediction confidence. We explored the impact of sequencing protocols, filtering strategies, and combined tool consensus.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "We benchmarked 10 circle detection tools across diverse conditions.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "The benchmarking used both simulated and biological datasets.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "Our evaluation included classical performance metrics.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Our evaluation included a novel internal measure of read distribution symmetry ($\\Delta$CJ) to assess circle prediction confidence.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "We explored the impact of sequencing protocols on circle detection.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "We explored the impact of filtering strategies on circle detection.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "We explored the impact of combined tool consensus on circle detection.",
+        "category": "Experiment",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "We found that detection accuracy was highly influenced by sequencing depth, alignment algorithm, and experimental enrichment protocols. $\\Delta$CJ proved effective in flagging potential false positive circles, showing improved accuracy of Intersect (circles detected by all tools) and Rosette (circles detected by $\\ge$2 tools) combinations.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Detection accuracy was highly influenced by sequencing depth.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Detection accuracy was highly influenced by alignment algorithm.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Detection accuracy was highly influenced by experimental enrichment protocols.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "ΔCJ proved effective in flagging potential false positive circles.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "ΔCJ showed improved accuracy of Intersect combinations (circles detected by all tools).",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "ΔCJ showed improved accuracy of Rosette combinations (circles detected by ≥2 tools).",
+        "category": "Result",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "This study offers a broad evaluation of circular detection tools, suggesting that the combination of $\\ge$3 tools is necessary for a correct prediction. These insights will inform future experimental design and data analysis pipelines in both experimental and clinical settings.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "This study offers a broad evaluation of circular detection tools.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The combination of three or more tools is necessary for a correct prediction.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "These insights will inform future experimental design in experimental settings.",
+        "category": "Conclusion",
+        "rank": 2
+      },
+      {
+        "sentence": "These insights will inform future data analysis pipelines in clinical settings.",
+        "category": "Conclusion",
+        "rank": 2
+      }
+    ]
+  }
+]

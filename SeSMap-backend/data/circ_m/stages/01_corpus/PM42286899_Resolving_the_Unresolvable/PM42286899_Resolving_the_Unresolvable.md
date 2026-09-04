@@ -1,0 +1,5 @@
+# Resolving the Unresolvable: Nanopore Sequencing as a Comprehensive Quality Control Platform for Gene Therapy Vectors
+
+## Abstract
+
+Cell and gene therapy (CGT) manufacturing has outpaced traditional chemistry, manufacturing, and controls frameworks, leaving a "black box" in vector quality control (QC). Legacy assays such as Sanger and short-read next-generation sequencing often fail to resolve complex structures including adeno-associated virus (AAV) inverted terminal repeats, lentiviral recombination, and mRNA poly(A) tails. Oxford Nanopore Technologies enables long-read, native single-molecule sequencing to access these attributes directly. This review summarizes nanopore sequencing across the CGT lifecycle. For plasmid DNA, it confirms full-length circular identity and reveals structural heterogeneity missed by restriction mapping. For viral vectors (AAV and lentivirus), it functions as an integrity assay to distinguish full genomes from truncations and to detect sequence-resolved impurities, including reverse-packaged plasmid backbones. For mRNA therapeutics, direct RNA sequencing profiles poly(A) tail length distributions and base modifications (

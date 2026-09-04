@@ -1,0 +1,68 @@
+[
+  {
+    "paragraph": "Efforts to achieve a circular economy emphasize waste minimization while maximizing its value through recycling and reuse. Volatile Fatty Acids (VFAs), derived from organic waste streams, hold biotechnological potential as raw materials for producing value-added compounds offering sustainable alternatives to traditional petroleum-based approaches. The phenotypic and genomic plasticity of non-Saccharomyces yeasts positions them as ideal candidates for VFAs metabolization. In this study, the growth profiles of 48 yeasts were assessed using seven VFAs as sole carbon sources, as representative of a real organic waste stream composition. Growth was assessed individually and in mixtures of the VFAs, at concentrations representative of the organic biowastes. Using AMiGA tool we deepened yeasts growth dynamics based on the optical density growth curves measurements. Ten isolates showcased superior performance, through their varied growth under different VFAs combinations. Acetic and isobutyric acids were the most favourable VFAs for non-Saccharomyces yeasts growth, balancing efficiency and adaptability. In contrast, butyric and caproic acids were the less effective, likely due to metabolic constraints or inhibitory effects. Yeasts favoured lipid synthesis over TCA intermediates, glycerol and ethanol. Two C. jadinii strains stood out as particularly interesting considering their metabolic plasticity, successfully assimilating both individual and combined VFAs, achieving the highest growth coupled with a superior lipid production (19.5-26.7 % (w/w)). These findings establish C. jadinii as an oleaginous yeast, a trait firstly reported here, underscoring its promise as a cornerstone for biowaste valorisation.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Efforts to achieve a circular economy emphasize waste minimization while maximizing its value through recycling and reuse.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Volatile Fatty Acids (VFAs), derived from organic waste streams, hold biotechnological potential as raw materials for producing value-added compounds offering sustainable alternatives to traditional petroleum-based approaches.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The phenotypic and genomic plasticity of non-Saccharomyces yeasts positions them as ideal candidates for VFAs metabolization.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "In this study, the growth profiles of 48 yeasts were assessed using seven VFAs as sole carbon sources, as representative of a real organic waste stream composition.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Growth was assessed individually and in mixtures of the VFAs, at concentrations representative of the organic biowastes.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Using AMiGA tool we deepened yeasts growth dynamics based on the optical density growth curves measurements.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Ten isolates showcased superior performance, through their varied growth under different VFAs combinations.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Acetic and isobutyric acids were the most favourable VFAs for non-Saccharomyces yeasts growth, balancing efficiency and adaptability.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Butyric and caproic acids were the less effective, likely due to metabolic constraints or inhibitory effects.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Yeasts favoured lipid synthesis over TCA intermediates, glycerol and ethanol.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Two C. jadinii strains stood out as particularly interesting considering their metabolic plasticity, successfully assimilating both individual and combined VFAs, achieving the highest growth coupled with a superior lipid production (19.5-26.7 % (w/w)).",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "These findings establish C. jadinii as an oleaginous yeast, a trait firstly reported here, underscoring its promise as a cornerstone for biowaste valorisation.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

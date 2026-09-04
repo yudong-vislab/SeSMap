@@ -1,0 +1,75 @@
+[
+  {
+    "paragraph": "As high-throughput technologies rapidly generate genome-scale data, it becomes increasingly important to visually integrate these data so that specific hypotheses can be formulated and tested.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "High-throughput technologies rapidly generate genome-scale data.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "It is important to visually integrate genome-scale data.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Visual integration of genome-scale data enables specific hypotheses to be formulated and tested.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "We present MochiView, a platform-independent Java software that integrates browsing of genomic sequences, features, and data with DNA motif visualization and analysis in a visually-appealing and user-friendly application.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "MochiView is a platform-independent Java software.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "MochiView integrates browsing of genomic sequences, features, and data.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "MochiView provides DNA motif visualization and analysis.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "MochiView is designed to be visually appealing and user-friendly.",
+        "category": "Other",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "While highly versatile, the software is particularly useful for organizing, exploring, and analyzing large genomic data sets, such as those from deep RNA sequencing, chromatin immunoprecipitation experiments (ChIP-Seq and ChIP-Chip), and transcriptional profiling. MochiView provides an extensive suite of utilities to identify and to explore connections between these data sets and short sequence motifs present in DNA or RNA.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The software is particularly useful for organizing, exploring, and analyzing large genomic datasets.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The datasets include those from deep RNA sequencing, chromatin immunoprecipitation experiments (ChIP-Seq and ChIP-Chip), and transcriptional profiling.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "MochiView provides an extensive suite of utilities to identify connections between genomic datasets and short sequence motifs present in DNA or RNA.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "MochiView provides an extensive suite of utilities to explore connections between genomic datasets and short sequence motifs present in DNA or RNA.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  }
+]

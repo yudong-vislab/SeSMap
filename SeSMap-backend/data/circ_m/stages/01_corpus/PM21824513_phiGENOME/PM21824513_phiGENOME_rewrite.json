@@ -1,0 +1,58 @@
+[
+  {
+    "paragraph": "phiGENOME is a web-based genome browser generating dynamic and interactive graphical representation of phage genomes stored in the phiSITE, database of gene regulation in bacteriophages. phiGENOME is an integral part of the phiSITE web portal (http://www.phisite.org/phigenome) and it was optimised for visualisation of phage genomes with the emphasis on the gene regulatory elements. phiGENOME consists of three components: (i) genome map viewer built using Adobe Flash technology, providing dynamic and interactive graphical display of phage genomes; (ii) sequence browser based on precisely formatted HTML tags, providing detailed exploration of genome features on the sequence level and (iii) regulation illustrator, based on Scalable Vector Graphics (SVG) and designed for graphical representation of gene regulations. Bringing 542 complete genome sequences accompanied with their rich annotations and references, makes phiGENOME a unique information resource in the field of phage genomics.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "phiGENOME is a web-based genome browser generating dynamic and interactive graphical representation of phage genomes stored in the phiSITE database.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "phiSITE is a database of gene regulation in bacteriophages.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "phiGENOME is an integral part of the phiSITE web portal (http://www.phisite.org/phigenome).",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "phiGENOME was optimised for visualisation of phage genomes with an emphasis on gene regulatory elements.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "phiGENOME consists of three components: genome map viewer, sequence browser, and regulation illustrator.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The genome map viewer is built using Adobe Flash technology and provides dynamic and interactive graphical display of phage genomes.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The sequence browser is based on precisely formatted HTML tags and provides detailed exploration of genome features on the sequence level.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The regulation illustrator is based on Scalable Vector Graphics (SVG) and is designed for graphical representation of gene regulations.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "phiGENOME brings 542 complete genome sequences accompanied with their rich annotations and references.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "phiGENOME is a unique information resource in the field of phage genomics.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

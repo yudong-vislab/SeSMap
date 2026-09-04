@@ -1,0 +1,80 @@
+[
+  {
+    "paragraph": "JBrowse is a fast and full-featured genome browser built with JavaScript and HTML5. It is easily embedded into websites or apps but can also be served as a standalone web page.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "JBrowse is a fast and full-featured genome browser.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "JBrowse is built with JavaScript and HTML5.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "JBrowse is easily embedded into websites or apps.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "JBrowse can also be served as a standalone web page.",
+        "category": "Method",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "Overall improvements to speed and scalability are accompanied by specific enhancements that support complex interactive queries on large track sets. Analysis functions can readily be added using the plugin framework; most visual aspects of tracks can also be customized, along with clicks, mouseovers, menus, and popup boxes. JBrowse can also be used to browse local annotation files offline and to generate high-resolution figures for publication.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Overall improvements to speed and scalability are accompanied by specific enhancements that support complex interactive queries on large track sets.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Analysis functions can readily be added using the plugin framework.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Most visual aspects of tracks can be customized, along with clicks, mouseovers, menus, and popup boxes.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "JBrowse can be used to browse local annotation files offline.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "JBrowse can generate high-resolution figures for publication.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "JBrowse is a mature web application suitable for genome visualization and analysis.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "JBrowse is a mature web application.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "JBrowse is suitable for genome visualization.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "JBrowse is suitable for genome analysis.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  }
+]

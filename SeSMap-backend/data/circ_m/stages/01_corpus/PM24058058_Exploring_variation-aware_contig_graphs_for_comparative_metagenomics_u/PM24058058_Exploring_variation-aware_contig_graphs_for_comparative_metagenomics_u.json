@@ -1,0 +1,36 @@
+[
+  {
+    "title": "Exploring variation-aware contig graphs for (comparative) metagenomics using MaryGold",
+    "paragraphs": []
+  },
+  {
+    "title": "Exploring variation-aware contig graphs for (comparative) metagenomics using MaryGold-Motivation",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Although many tools are available to study variation and its impact in single genomes, there is a lack of algorithms for finding such variation in metagenomes. This hampers the interpretation of metagenomics sequencing datasets, which are increasingly acquired in research on the (human) microbiome, in environmental studies and in the study of processes in the production of foods and beverages. Existing algorithms often depend on the use of reference genomes, which pose a problem when a metagenome of a priori unknown strain composition is studied. In this article, we develop a method to perform reference-free detection and visual exploration of genomic variation, both within a single metagenome and between metagenomes.",
+        "abstract_summary": ""
+      }
+    ]
+  },
+  {
+    "title": "Exploring variation-aware contig graphs for (comparative) metagenomics using MaryGold-Results",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "We present the MaryGold algorithm and its implementation, which efficiently detects bubble structures in contig graphs using graph decomposition. These bubbles represent variable genomic regions in closely related strains in metagenomic samples. The variation found is presented in a condensed Circos-based visualization, which allows for easy exploration and interpretation of the found variation. We validated the algorithm on two simulated datasets containing three respectively seven Escherichia coli genomes and showed that finding allelic variation in these genomes improves assemblies. Additionally, we applied MaryGold to publicly available real metagenomic datasets, enabling us to find within-sample genomic variation in the metagenomes of a kimchi fermentation process, the microbiome of a premature infant and in microbial communities living on acid mine drainage. Moreover, we used MaryGold for between-sample variation detection and exploration by comparing sequencing data sampled at different time points for both of these datasets.",
+        "abstract_summary": ""
+      }
+    ]
+  },
+  {
+    "title": "Exploring variation-aware contig graphs for (comparative) metagenomics using MaryGold-Availability",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "MaryGold has been written in C++ and Python and can be downloaded from http://bioinformatics.tudelft.nl/software",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

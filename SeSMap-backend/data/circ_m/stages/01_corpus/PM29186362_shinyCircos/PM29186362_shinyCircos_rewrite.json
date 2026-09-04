@@ -1,0 +1,64 @@
+[
+  {
+    "paragraph": "Creation of Circos plot is one of the most efficient approaches to visualize genomic data. However, the installation and use of existing tools to make Circos plot are challenging for users lacking of coding experiences. To address this issue, we developed an R/Shiny application shinyCircos, a graphical user interface for interactive creation of Circos plot. shinyCircos can be easily installed either on computers for personal use or on local or public servers to provide online use to the community. Furthermore, various types of Circos plots could be easily generated and decorated with simple mouse-click.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Creation of Circos plot is one of the most efficient approaches to visualize genomic data.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The installation and use of existing tools to make Circos plot are challenging for users lacking coding experience.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "To address this issue, we developed an R/Shiny application shinyCircos.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "shinyCircos is a graphical user interface for interactive creation of Circos plot.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "shinyCircos can be easily installed either on computers for personal use or on local or public servers to provide online use to the community.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Various types of Circos plots could be easily generated and decorated with simple mouse-click.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "shinyCircos and its manual are freely available at https://github.com/venyao/shinyCircos. shinyCircos is deployed at https://yimingyu.shinyapps.io/shinycircos/ and http://shinycircos.ncpgr.cn/ for online use.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "shinyCircos and its manual are freely available at https://github.com/venyao/shinyCircos.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "shinyCircos is deployed at https://yimingyu.shinyapps.io/shinycircos/ for online use.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "shinyCircos is deployed at http://shinycircos.ncpgr.cn/ for online use.",
+        "category": "Other",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "diana1983941@mail.hzau.edu.cn or yaowen@henau.edu.cn.",
+    "type": "text",
+    "resultmsu": []
+  }
+]

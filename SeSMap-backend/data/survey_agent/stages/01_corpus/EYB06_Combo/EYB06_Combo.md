@@ -1,0 +1,5 @@
+# Combo: a whole genome comparative browser
+
+## Abstract
+
+Summary: Combo is a comparative genome browser that provides a dynamic view of whole genome alignments along with their associated annotations. Combo provides two different visualization perspectives. The perpendicular (dot plot) view provides a dot plot of genome alignments synchronized with a display of genome annotations along each axis. The parallel view displays two genome annotations horizontally, synchronized through a panel displaying local alignments as trapezoids. Users can zoom to any resolution, from whole chromosomes to individual bases. They can select, highlight and view detailed information from specific alignments and annotations. Combo is an organism agnostic and can import data from a variety of file formats. Availability: Combo is integrated as part of the Argo Genome Browser which also provides single-genome browsing and editing capabilities. Argo is written in Java, runs on multiple platforms and is freely available for download at . Contact: reinhard@broad.mit.edu

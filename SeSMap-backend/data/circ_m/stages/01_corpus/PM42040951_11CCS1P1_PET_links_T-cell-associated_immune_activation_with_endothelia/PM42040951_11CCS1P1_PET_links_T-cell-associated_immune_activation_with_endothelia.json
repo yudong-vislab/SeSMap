@@ -1,0 +1,16 @@
+[
+  {
+    "title": "[11C]CS1P1 PET links T-cell-associated immune activation with endothelial and astrocytic responses",
+    "paragraphs": []
+  },
+  {
+    "title": "[11C]CS1P1 PET links T-cell-associated immune activation with endothelial and astrocytic responses-Abstract",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Neuroimmune signaling across the peripheral-vascular-glial axis is increasingly recognized as a driver of both age-related brain vulnerability and the earliest stages of neurodegenerative disease, including Alzheimer disease. Evaluating this axis in vivo remains challenging due to limited neuroinflammatory imaging biomarkers. We utilized [11C]CS1P1 positron emission tomography (PET) to quantify sphingosine-1-phosphate receptor 1 (S1PR1) availability alongside plasma proteomics in 42 cognitively normal individuals (age 21-82). Through differential abundance analysis and structural equation modeling (SEM), we identified a multi-compartment neuroimmune cascade linking peripheral T-cell activation (CD40LG), vascular endothelial disruption (ICAM1/TEK), central S1PR1 upregulation, and reactive astrogliosis (GFAP). Mediation analysis estimated this S1PR1 axis accounts for 25.5% of the total effect of CD40LG on GFAP. This cascade appears coupled to the astrocytic immune response and is exacerbated by underlying amyloid-beta pathology. These findings suggest [11C]CS1P1 may serve as an in vivo tool for evaluating peripheral-to-central immune crosstalk.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

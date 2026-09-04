@@ -1,0 +1,21 @@
+# Defining anhedonia subgroups using the dimensional anhedonia rating scale in active depression: Findings from the Texas resilience against depression study
+
+## Background
+
+Anhedonia is a core symptom of major depressive disorder (MDD). We aimed to validate the Dimensional Anhedonia Rating Scale (DARS), explore data-driven subgroups of anhedonia among individuals with depression, and determine associations with anxiety, suicidal ideation, neuroticism, and childhood trauma.
+
+## Methods
+
+Participants with current major depressive episode (n = 474) enrolled in the D2K arm of the Texas Resilience Against Depression (T-RAD) study were included in these analyses. Structure and reliability of the DARS were assessed using a factor analysis with a PROMAX rotation and Cronbach's Alpha. Hierarchical clustering was performed to identify anhedonia-related subtypes using the DARS subscores. To identify the clinical signature that discriminates between anhedonia-based subgroups, discriminant analysis using clinical characteristics (anhedonia, suicidal ideation, anxiety, neuroticism, and childhood trauma) was performed using the Data Integration Analysis for Biomarker discovery using Latent cOmponents (DIABLO, mixOmics package version 6.24.0).
+
+## Results
+
+Factor analysis confirmed the original four-factor structure of DARS, which exhibited excellent internal consistency and reliability (Cronbach's alpha = 0.94), including the subscales. DARS food and drinks score was associated with early-life physical abuse and anxiety; the social activities score was associated with early-life emotional abuse and neglect, and anxiety was associated with early-life physical abuse. Participants with anhedonia had elevated anxiety, and early-life physical and emotional abuse, compared to those with no anhedonia.
+
+## Conclusions
+
+Anhedonia was associated with elevated anxiety, and early-life physical and emotional abuse, and early-life physical neglect, compared to those with no anhedonia.
+
+## Clinical Trial Registration
+
+D2K was registered with ClinicalTrials.gov (NCT02919280).

@@ -1,0 +1,86 @@
+[
+  {
+    "paragraph": "High throughput chromatin conformation capture (3C) technologies, such as Hi-C and ChIA-PET, have the potential to elucidate the functional roles of non-coding variants. However, most of published genome-wide unbiased chromatin organization studies have used cultured cell lines, limiting their generalizability.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "High throughput chromatin conformation capture (3C) technologies, such as Hi-C and ChIA-PET, have the potential to elucidate the functional roles of non-coding variants.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Most published genome-wide unbiased chromatin organization studies have used cultured cell lines.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The use of cultured cell lines limits the generalizability of these studies.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "We developed a web browser, HUGIn, to visualize Hi-C data generated from 21 human primary tissues and cell lines. HUGIn enables assessment of chromatin contacts both constitutive across and specific to tissue(s) and/or cell line(s) at any genomic loci, including GWAS SNPs, eQTLs and cis-regulatory elements, facilitating the understanding of both GWAS and eQTL results and functional genomics data.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "We developed a web browser, HUGIn, to visualize Hi-C data generated from 21 human primary tissues and cell lines.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "HUGIn enables assessment of chromatin contacts constitutive across tissues and cell lines.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "HUGIn enables assessment of chromatin contacts specific to tissue(s) and/or cell line(s).",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "HUGIn allows assessment of chromatin contacts at any genomic loci, including GWAS SNPs, eQTLs, and cis-regulatory elements.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "HUGIn facilitates the understanding of GWAS results.",
+        "category": "Conclusion",
+        "rank": 3
+      },
+      {
+        "sentence": "HUGIn facilitates the understanding of eQTL results.",
+        "category": "Conclusion",
+        "rank": 3
+      },
+      {
+        "sentence": "HUGIn facilitates the understanding of functional genomics data.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "HUGIn is available at http://yunliweb.its.unc.edu/HUGIn.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "HUGIn is available at http://yunliweb.its.unc.edu/HUGIn.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Supplementary data are available at Bioinformatics online.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Supplementary data are available at Bioinformatics online.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

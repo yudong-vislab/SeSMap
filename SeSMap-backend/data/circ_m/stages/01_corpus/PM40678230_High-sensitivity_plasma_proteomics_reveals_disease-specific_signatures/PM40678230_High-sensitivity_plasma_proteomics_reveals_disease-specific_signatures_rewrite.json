@@ -1,0 +1,33 @@
+[
+  {
+    "paragraph": "Highly sensitive plasma assays enable accurate blood-based biomarkers for neurodegenerative disease and provide minimally invasive options for clinical use. Large-scale studies encompassing multiple neurodegenerative diseases and utilizing multiplex platforms are essential to uncover disease-specific biomarkers and pathways. We generated and analyzed plasma proteomics using the NULISASeq",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Highly sensitive plasma assays enable accurate blood-based biomarkers for neurodegenerative disease.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Highly sensitive plasma assays provide minimally invasive options for clinical use.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Large-scale studies encompassing multiple neurodegenerative diseases are essential to uncover disease-specific biomarkers and pathways.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Large-scale studies utilizing multiplex platforms are essential to uncover disease-specific biomarkers and pathways.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "We generated and analyzed plasma proteomics using the NULISASeq.",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  }
+]

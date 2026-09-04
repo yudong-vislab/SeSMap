@@ -1,0 +1,16 @@
+[
+  {
+    "title": "How Good Is ChatGPT in Giving Advice on Your Visualization Design?",
+    "paragraphs": []
+  },
+  {
+    "title": "How Good Is ChatGPT in Giving Advice on Your Visualization Design?-Abstract",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Data visualization creators often lack formal training, resulting in a knowledge gap in design practice. Large-language models such as ChatGPT , with their vast internet-scale training data, offer transformative potential to address this gap. In this study, we used both qualitative and quantitative methods to investigate how well ChatGPT can address visualization design questions. First, we quantitatively compared the ChatGPT -generated responses with anonymous online Human replies to data visualization questions on the VisGuides user forum. Next, we conducted a qualitative user study examining the reactions and attitudes of practitioners toward ChatGPT as a visualization design assistant. Participants were asked to bring their visualizations and design questions and received feedback from both Human experts and ChatGPT in randomized order. Our findings from both studies underscore ChatGPT ’s strengths—particularly its ability to rapidly generate diverse design options—while also highlighting areas for improvement, such as nuanced contextual understanding and fluid interaction dynamics beyond the chat interface. Drawing on these insights, we discuss design considerations for future LLM-based design feedback systems.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

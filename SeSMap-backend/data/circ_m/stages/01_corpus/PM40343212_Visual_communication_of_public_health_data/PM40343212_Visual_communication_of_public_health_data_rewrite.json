@@ -1,0 +1,202 @@
+[
+  {
+    "paragraph": "Visual communications (VC) play a crucial role in effectively conveying public health data to diverse audiences, including policymakers, healthcare professionals, and the general public. Although the U.S. government invests heavily in health data and data accessibility, health data are not entirely accessible or easily understood. This can be attributed to data sharing and visualization challenges. VC challenges have created public health information gaps which are compounded in emergencies such as the COVID-19 pandemic, potentially impacting poor health outcomes and increasing health inequities.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Visual communications (VC) play a crucial role in effectively conveying public health data to diverse audiences, including policymakers, healthcare professionals, and the general public.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The U.S. government invests heavily in health data and data accessibility.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Health data are not entirely accessible or easily understood.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Challenges in data sharing and visualization contribute to the inaccessibility of health data.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "VC challenges have created public health information gaps.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Public health information gaps are compounded in emergencies such as the COVID-19 pandemic.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "These gaps potentially impact poor health outcomes and increase health inequities.",
+        "category": "Background",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "To examine visualization tools and techniques effective for public health visual data communication.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The study examines visualization tools effective for public health visual data communication.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The study examines visualization techniques effective for public health visual data communication.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "A scoping review was conducted to summarize the available evidence related to visualization techniques and tools for public health visual data communication as well as related principles and best practices. Original peer-reviewed articles published in English that involve visualization, user-centered design of visual public health applications/interfaces, visual analytics, infographics, or dashboards from PubMed database from 2020 to 2024 were included. Also, review articles, commentaries, editorials, posters, systematic and scoping articles were excluded from this review. In all, twenty-eight (28) studies were included.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A scoping review was conducted to summarize the available evidence related to visualization techniques and tools for public health visual data communication.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The review also aimed to summarize related principles and best practices for public health visual data communication.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Original peer-reviewed articles published in English that involve visualization, user-centered design of visual public health applications/interfaces, visual analytics, infographics, or dashboards were included.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The articles were sourced from the PubMed database and covered the period from 2020 to 2024.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Review articles, commentaries, editorials, posters, systematic and scoping articles were excluded from this review.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "In total, twenty-eight (28) studies were included in the review.",
+        "category": "Result",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "There were 25 different visualization techniques identified which included charts and graphs (e.g., bar charts, line charts, pie charts, bubble charts, box plots, scatter plots), maps (e.g., choropleth maps, hotspot maps, and heatmaps), and specialized visualizations (e.g., sunburst diagrams, alluvial plots, upset plots, circos). These visuals were displayed employing different programming and statistical tools and libraries like R, Python, Power BI, Tableau, ArcGIS, and custom web-based applications. The visuals measured different types of data accessibility, pattern and trends identification, association and relationships of univariate and bivariate data, as well as exploring multidimensional forms of health data. The visualizations were applied in different public health domains, such as HIV prevention and care, public health communication, interventions, surveillance, policy measures and decision-making, and improving health education.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "There were 25 different visualization techniques identified.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The visualization techniques included charts and graphs such as bar charts, line charts, pie charts, bubble charts, box plots, and scatter plots.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The visualization techniques included maps such as choropleth maps, hotspot maps, and heatmaps.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The visualization techniques included specialized visualizations such as sunburst diagrams, alluvial plots, upset plots, and circos.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "These visuals were displayed using programming and statistical tools and libraries like R, Python, Power BI, Tableau, ArcGIS, and custom web-based applications.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The visuals measured different types of data accessibility.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The visuals measured pattern and trends identification.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The visuals measured association and relationships of univariate and bivariate data.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The visuals measured exploration of multidimensional forms of health data.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The visualizations were applied in public health domains such as HIV prevention and care.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The visualizations were applied in public health domains such as public health communication.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The visualizations were applied in public health domains such as interventions.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The visualizations were applied in public health domains such as surveillance.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The visualizations were applied in public health domains such as policy measures and decision-making.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The visualizations were applied in public health domains such as improving health education.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Dashboards and web-based tools combined with static visualizations like charts, maps, or specialized plots can help with data exploration, pattern recognition, and dissemination of health information. Effective communication of public health data promotes informed decision-making, creates awareness, and leads to improved and better health outcomes.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Dashboards and web-based tools combined with static visualizations like charts, maps, or specialized plots can help with data exploration, pattern recognition, and dissemination of health information.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Effective communication of public health data promotes informed decision-making.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "Effective communication of public health data creates awareness.",
+        "category": "Conclusion",
+        "rank": 3
+      },
+      {
+        "sentence": "Effective communication of public health data leads to improved and better health outcomes.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  }
+]

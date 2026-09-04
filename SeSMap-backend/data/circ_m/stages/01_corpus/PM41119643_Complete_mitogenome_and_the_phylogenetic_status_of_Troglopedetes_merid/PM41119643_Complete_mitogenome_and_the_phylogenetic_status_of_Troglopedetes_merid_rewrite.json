@@ -1,0 +1,58 @@
+[
+  {
+    "paragraph": "The mitochondrial genome (mitogenome) has recently emerged as an essential tool for investigating evolutionary relationships of organisms. In this study, the complete mitogenome of a Collembola species, Troglopedetes meridionalis Jantarit, Surakhamhaeng & Deharveng, 2020 (Entomobryidae, Paronellinae) was sequenced using low-coverage whole-genome sequencing techniques. The circular mitogenome is 14,785 bp and contains 37 genes, including 22 transfer RNAs (tRNAs), 13 protein coding sequences (CDS), and two ribosomal RNA (rRNAs). The nucleotide composition analysis revealed that the stop codon of all protein-coding genes, except COX2, is TAA. Phylogenetic analysis, incorporating representative other species of Entomobryidae, indicates that the subfamily Paronellinae is monophyletic, with T. meridionalis and T. dispersus Deharveng & Gers, 1993 being closely related. This phylogenetic framework offers a valuable reference for future research on the evolutionary relationships within Paronellinae and the broader Entomobryidae family. In Thailand, the distribution of Troglopedetes Joseph, 1872 is largely restricted to areas north of the Isthmus of Kra, whereas the closely related genus Cyphoderopsis Carpenter, 1917 is confined to the southern region. A distribution map illustrating the geographic ranges of both genera within Thailand is also provided.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The mitochondrial genome (mitogenome) has recently emerged as an essential tool for investigating evolutionary relationships of organisms.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The complete mitogenome of a Collembola species, Troglopedetes meridionalis Jantarit, Surakhamhaeng & Deharveng, 2020 (Entomobryidae, Paronellinae), was sequenced using low-coverage whole-genome sequencing techniques.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The circular mitogenome is 14,785 bp and contains 37 genes, including 22 transfer RNAs (tRNAs), 13 protein coding sequences (CDS), and two ribosomal RNA (rRNAs).",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The nucleotide composition analysis revealed that the stop codon of all protein-coding genes, except COX2, is TAA.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Phylogenetic analysis, incorporating representative other species of Entomobryidae, indicates that the subfamily Paronellinae is monophyletic.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Phylogenetic analysis shows that T. meridionalis and T. dispersus Deharveng & Gers, 1993 are closely related.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "This phylogenetic framework offers a valuable reference for future research on the evolutionary relationships within Paronellinae and the broader Entomobryidae family.",
+        "category": "Conclusion",
+        "rank": 5
+      },
+      {
+        "sentence": "In Thailand, the distribution of Troglopedetes Joseph, 1872 is largely restricted to areas north of the Isthmus of Kra.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The closely related genus Cyphoderopsis Carpenter, 1917 is confined to the southern region of Thailand.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "A distribution map illustrating the geographic ranges of both genera within Thailand is also provided.",
+        "category": "Other",
+        "rank": 2
+      }
+    ]
+  }
+]

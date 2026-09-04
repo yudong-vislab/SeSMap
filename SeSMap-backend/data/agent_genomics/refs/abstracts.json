@@ -1,0 +1,424 @@
+[
+ {
+  "key": "A01",
+  "title": "Understanding Why ChatGPT Outperforms Humans in Visualization Design Advice",
+  "venue": "arXiv",
+  "year": "2025",
+  "src": "arxiv",
+  "abstract": "This paper investigates why recent generative AI models outperform humans in data visualization knowledge tasks. Through systematic comparative analysis of responses to visualization questions, we find that differences exist between two ChatGPT models and human outputs over rhetorical structure, knowledge breadth, and perceptual quality. Our findings reveal that ChatGPT-4, as a more advanced model, displays a hybrid of characteristics from both humans and ChatGPT-3.5. The two models were generally favored over human responses, while their strengths in coverage and breadth, and emphasis on technical and task-oriented visualization feedback collectively shaped higher overall quality. Based on our findings, we draw implications for advancing user experiences based on the potential of LLMs and human perception over their capabilities, with relevance to broader applications of AI.",
+  "score": 1.0,
+  "matched_title": "Understanding Why ChatGPT Outperforms Humans in Visualization Design Advice"
+ },
+ {
+  "key": "A05",
+  "title": "InterChat: Enhancing Generative Visual Analytics using Multimodal Interactions",
+  "venue": "Computer Graphics Forum",
+  "year": "2025",
+  "src": "crossref",
+  "score": 1.0,
+  "matched_title": "InterChat: Enhancing Generative Visual Analytics using Multimodal Interactions",
+  "abstract": "The rise of Large Language Models (LLMs) and generative visual analytics systems has transformed data‐driven insights, yet significant challenges persist in accurately interpreting users analytical and interaction intents. While language inputs offer flexibility, they often lack precision, making the expression of complex intents inefficient, error‐prone, and time‐intensive. To address these limitations, we investigate the design space of multimodal interactions for generative visual analytics through a literature review and pilot brainstorming sessions. Building on these insights, we introduce a highly extensible workflow that integrates multiple LLM agents for intent inference and visualization generation. We develop InterChat, a generative visual analytics system that combines direct manipulation of visual elements with natural language inputs. This integration enables precise intent communication and supports progressive, visually driven exploratory data analyses. By employing effective prompt engineering, and contextual interaction linking, alongside intuitive visualization and interaction designs, InterChat bridges the gap between user interactions and LLM‐driven visualizations, enhancing both interpretability and usability. Extensive evaluations, including two usage scenarios, a user study, and expert feedback, demonstrate the effectiveness of InterChat. Results show significant improvements in the accuracy and efficiency of handling complex visual analytics tasks, highlighting the potential of multimodal interactions to redefine user engagement and analytical depth in generative visual analytics.",
+  "doi": "10.1111/cgf.70112"
+ },
+ {
+  "key": "A06",
+  "title": "VisEval: A Benchmark for Data Visualization in the Era of Large Language Models",
+  "venue": "IEEE TVCG",
+  "year": "2025",
+  "src": "pubmed",
+  "score": 1.0,
+  "matched_title": "VisEval: A Benchmark for Data Visualization in the Era of Large Language Models.",
+  "abstract": "Translating natural language to visualization (NL2VIS) has shown great promise for visual data analysis, but it remains a challenging task that requires multiple low-level implementations, such as natural language processing and visualization design. Recent advancements in pre-trained large language models (LLMs) are opening new avenues for generating visualizations from natural language. However, the lack of a comprehensive and reliable benchmark hinders our understanding of LLMs' capabilities in visualization generation. In this paper, we address this gap by proposing a new NL2VIS benchmark called VisEval. Firstly, we introduce a high-quality and large-scale dataset. This dataset includes 2,524 representative queries covering 146 databases, paired with accurately labeled ground truths. Secondly, we advocate for a comprehensive automated evaluation methodology covering multiple dimensions, including validity, legality, and readability. By systematically scanning for potential issues with a number of heterogeneous checkers, VisEval provides reliable and trustworthy evaluation outcomes. We run VisEval on a series of state-of-the-art LLMs. Our evaluation reveals prevalent challenges and delivers essential insights for future advancements.",
+  "pmid": "39255134"
+ },
+ {
+  "key": "A07",
+  "title": "CoDA: Agentic Systems for Collaborative Data Visualization",
+  "venue": "arXiv",
+  "year": "2026",
+  "src": "arxiv",
+  "abstract": "Deep research has revolutionized data analysis, yet data scientists still devote substantial time to manually crafting visualizations, highlighting the need for robust automation from natural language queries. However, current systems struggle with complex datasets containing multiple files and iterative refinement. Existing approaches, including simple single- or multi-agent systems, often oversimplify the task, focusing on initial query parsing while failing to robustly manage data complexity, code errors, or final visualization quality. In this paper, we reframe this challenge as a collaborative multi-agent problem. We introduce CoDA, a multi-agent system that employs specialized LLM agents for metadata analysis, task planning, code generation, and self-reflection. We formalize this pipeline, demonstrating how metadata-focused analysis bypasses token limits and quality-driven refinement ensures robustness. Extensive evaluations show CoDA achieves substantial gains in the overall score, outperforming competitive baselines by up to 41.5%. This work demonstrates that the future of visualization automation lies not in isolated code generation but in integrated, collaborative agentic workflows.",
+  "score": 1.0,
+  "matched_title": "CoDA: Agentic Systems for Collaborative Data Visualization"
+ },
+ {
+  "key": "A08",
+  "title": "Waltzboard: Multi-criteria automated dashboard design for exploratory analysis",
+  "venue": "PacificVis",
+  "year": "2025",
+  "src": null,
+  "abstract": null,
+  "note": "未命中"
+ },
+ {
+  "key": "A09",
+  "title": "Bavisitter: Integrating design guidelines into large language models for visualization authoring",
+  "venue": "IEEE VIS",
+  "year": "2024",
+  "src": null,
+  "abstract": null,
+  "note": "未命中"
+ },
+ {
+  "key": "A11",
+  "title": "Charts-of-Thought: Enhancing LLM Visualization Literacy Through Structured Data Extraction",
+  "venue": "arXiv",
+  "year": "2025",
+  "src": "pubmed",
+  "score": 1.0,
+  "matched_title": "Charts-of-Thought: Enhancing LLM Visualization Literacy Through Structured Data Extraction.",
+  "abstract": "This paper evaluates the visualization literacy of modern Large Language Models (LLMs) and introduces a novel prompting technique called Charts-of-Thought. We tested three state-of-the-art LLMs (Claude-3.7-sonnet, GPT-4.5-preview, and Gemini-2.0-pro) on the Visualization Literacy Assessment Test (VLAT) using standard prompts and our structured approach. The Charts-of-Thought method guides LLMs through a systematic data extraction, verification, and analysis process before answering visualization questions. Our results show Claude-3.7-sonnet achieved a score of 50.17 using this method, far exceeding the human baseline of 28.82. This approach improved performance across all models, with score increases of 21.8% for GPT-4.5, 9.4% for Gemini-2.0, and 13.5% for Claude-3.7 compared to standard prompting. The performance gains were consistent across original and modified VLAT charts, with Claude correctly answering 100% of questions for several chart types that previously challenged LLMs. Our study reveals that modern multimodal LLMs can surpass human performance on visualization literacy tasks when given the proper analytical framework. These findings establish a new benchmark for LLM visualization literacy and demonstrate the importance of structured prompting strategies for complex visual interpretation tasks. Beyond improving LLM visualization literacy, Charts-of-Thought could also enhance the accessibility of visualizations, potentially benefiting individuals with visual impairments or lower visualization literacy.",
+  "pmid": "41264447"
+ },
+ {
+  "key": "A12",
+  "title": "LIDA: A Tool for Automatic Generation of Grammar-Agnostic Visualizations and Infographics using Large Language Models",
+  "venue": "ACL",
+  "year": "2023",
+  "src": "arxiv",
+  "abstract": "Systems that support users in the automatic creation of visualizations must address several subtasks - understand the semantics of data, enumerate relevant visualization goals and generate visualization specifications. In this work, we pose visualization generation as a multi-stage generation problem and argue that well-orchestrated pipelines based on large language models (LLMs) such as ChatGPT/GPT-4 and image generation models (IGMs) are suitable to addressing these tasks. We present LIDA, a novel tool for generating grammar-agnostic visualizations and infographics. LIDA comprises of 4 modules - A SUMMARIZER that converts data into a rich but compact natural language summary, a GOAL EXPLORER that enumerates visualization goals given the data, a VISGENERATOR that generates, refines, executes and filters visualization code and an INFOGRAPHER module that yields data-faithful stylized graphics using IGMs. LIDA provides a python api, and a hybrid user interface (direct manipulation and multilingual natural language) for interactive chart, infographics and data story generation. Learn more about the project here - https://microsoft.github.io/lida/",
+  "score": 1.0,
+  "matched_title": "LIDA: A Tool for Automatic Generation of Grammar-Agnostic Visualizations and Infographics using Large Language Models"
+ },
+ {
+  "key": "A14",
+  "title": "Probing the Visualization Literacy of Vision Language Models: the Good the Bad and the Ugly",
+  "venue": "IEEE TVCG",
+  "year": "2025",
+  "src": "pubmed",
+  "score": 1.0,
+  "matched_title": "Probing the Visualization Literacy of Vision Language Models: The Good, the Bad, and the Ugly.",
+  "abstract": "Vision Language Models (VLMs) demonstrate promising chart comprehension capabilities. Yet, prior explorations of their visualization literacy have been limited to assessing their response correctness and fail to explore their internal reasoning. To address this gap, we adapted attention-guided class activation maps (AG-CAM) for VLMs, to visualize the influence and importance of input features (image and text) on model responses. Using this approach, we conducted an examination of four open-source (ChartGemma, Janus 1B and 7B, and LLaVA) and two closed-source (GPT-4o, Gemini) models comparing their performance and, for the open-source models, their AG-CAM results. Overall, we found that ChartGemma, a 3B parameter VLM fine-tuned for chart question-answering (QA), outperformed other open-source models and exhibited performance on par with significantly larger closed-source VLMs. We also found that VLMs exhibit spatial reasoning by accurately localizing key chart features, and semantic reasoning by associating visual elements with corresponding data values and query tokens. Our approach is the first to demonstrate the use of AG-CAM on early fusion VLM architectures, which are widely used, and for chart QA. We also show preliminary evidence that these results can align with human reasoning. Our promising open-source VLMs results pave the way for transparent and reproducible research in AI visualization literacy. Code and Supplemental Materials: https://osf.io/fp3rg.",
+  "pmid": "41259186"
+ },
+ {
+  "key": "A15",
+  "title": "Fine-Tuned Large Language Model for Visualization System: A Study on Self-Regulated Learning in Education",
+  "venue": "IEEE TVCG",
+  "year": "2025",
+  "src": "arxiv",
+  "abstract": "Large Language Models (LLMs) have shown great potential in intelligent visualization systems, especially for domain-specific applications. Integrating LLMs into visualization systems presents challenges, and we categorize these challenges into three alignments: domain problems with LLMs, visualization with LLMs, and interaction with LLMs. To achieve these alignments, we propose a framework and outline a workflow to guide the application of fine-tuned LLMs to enhance visual interactions for domain-specific tasks. These alignment challenges are critical in education because of the need for an intelligent visualization system to support beginners' self-regulated learning. Therefore, we apply the framework to education and introduce Tailor-Mind, an interactive visualization system designed to facilitate self-regulated learning for artificial intelligence beginners. Drawing on insights from a preliminary study, we identify self-regulated learning tasks and fine-tuning objectives to guide visualization design and tuning data construction. Our focus on aligning visualization with fine-tuned LLM makes Tailor-Mind more like a personalized tutor. Tailor-Mind also supports interactive recommendations to help beginners better achieve their learning goals. Model performance evaluations and user studies confirm that Tailor-Mind improves the self-regulated learning experience, effectively validating the proposed framework.",
+  "score": 1.0,
+  "matched_title": "Fine-Tuned Large Language Model for Visualization System: A Study on Self-Regulated Learning in Education"
+ },
+ {
+  "key": "A16",
+  "title": "Democratizing AI scientists using ToolUniverse",
+  "venue": "arXiv",
+  "year": "2025",
+  "src": null,
+  "abstract": null,
+  "note": "未命中"
+ },
+ {
+  "key": "A17",
+  "title": "PlotGen: Multi-Agent LLM-based Scientific Data Visualization via Multimodal Retrieval Feedback",
+  "venue": "The Web Conference",
+  "year": "2025",
+  "src": null,
+  "abstract": null,
+  "note": "未命中"
+ },
+ {
+  "key": "A18",
+  "title": "Data Has Entered the Chat: How Data Workers Conduct Exploratory Visual Analytic Conversations with GenAI Agents",
+  "venue": "ACM Transactions on Interactive Intelligent Systems",
+  "year": "2025",
+  "src": "crossref",
+  "score": 1.0,
+  "matched_title": "Data Has Entered the Chat: How Data Workers Conduct Exploratory Visual Analytic Conversations with GenAI Agents",
+  "abstract": "We investigate the potential of leveraging the code-generating capabilities of Large Language Models (LLMs) to support exploratory visual analysis (EVA) via conversational user interfaces (CUIs). We developed a technology probe that was deployed through two studies with a total of 50 data workers to explore the structure and flow of visual analytic conversations during EVA. We analyzed conversations from both studies using thematic analysis and derived a state transition diagram summarizing the conversational flow between four states of participant utterances ( Analytic Tasks , Editing Operations , Elaborations and Enrichments , and Directive Commands ) and two states of Generative AI (GenAI) agent responses (visualization, text). We describe the capabilities and limitations of GenAI agents according to each state and transitions between states as three co-occurring loops: analysis elaboration, refinement, and explanation. We discuss our findings as future research trajectories to improve the experiences of data workers using GenAI. The code and data are available at https://osf.io/6wxpa .",
+  "doi": "10.1145/3744750"
+ },
+ {
+  "key": "A19",
+  "title": "VegaChat: A Robust Framework for LLM-Based Chart Generation and Assessment",
+  "venue": "arXiv",
+  "year": "2026",
+  "src": "arxiv",
+  "abstract": "Natural-language-to-visualization (NL2VIS) systems based on large language models (LLMs) have substantially improved the accessibility of data visualization. However, their further adoption is hindered by two coupled challenges: (i) the absence of standardized evaluation metrics makes it difficult to assess progress in the field and compare different approaches; and (ii) natural language descriptions are inherently underspecified, so multiple visualizations may be valid for the same query. To address these issues, we introduce VegaChat, a framework for generating, validating, and assessing declarative visualizations from natural language. We propose two complementary metrics: Spec Score, a deterministic metric that measures specification-level similarity without invoking an LLM, and Vision Score, a library-agnostic, image-based metric that leverages a multimodal LLM to assess chart similarity and prompt compliance. We evaluate VegaChat on the NLV Corpus and on the annotated subset of ChartLLM. VegaChat achieves near-zero rates of invalid or empty visualizations, while Spec Score and Vision Score exhibit strong correlation with human judgments (Pearson 0.65 and 0.71, respectively), indicating that the proposed metrics support consistent, cross-library comparison. The code and evaluation artifacts are available at https://zenodo.org/records/17062309.",
+  "score": 1.0,
+  "matched_title": "VegaChat: A Robust Framework for LLM-Based Chart Generation and Assessment"
+ },
+ {
+  "key": "A20",
+  "title": "Automatic Synthesis of Visualization Design Knowledge Bases",
+  "venue": "arXiv",
+  "year": "2026",
+  "src": "arxiv",
+  "abstract": "Formal representations of the visualization design space, such as knowledge bases and graphs, consolidate design practices into a shared resource and enable automated reasoning and interpretable design recommendations. However, prior approaches typically depend on fixed, manually authored rules, making it difficult to build novel representations or extend them for different visualization domains. Instead, we propose data-driven methods that automatically synthesize visualization design knowledge bases. Specifically, our methods (1) extract candidate design features from a visualization corpus, (2) select features forward and backward, and (3) render the final knowledge base. In our benchmark evaluation compared to Draco 2, our synthesized knowledge base offers general and interpretable design features and improves the accuracy of predicting effective designs by 1-15% in varied training and test sets. When we apply our approach to genomics visualization, the synthesized knowledge base includes sensible features with accuracy up to 97%, demonstrating the applicability of our approach to other visualization domains.",
+  "score": 1.0,
+  "matched_title": "Automatic Synthesis of Visualization Design Knowledge Bases"
+ },
+ {
+  "key": "A21",
+  "title": "How Good Is ChatGPT in Giving Advice on Your Visualization Design?",
+  "venue": "ACM Transactions on Computer-Human Interaction",
+  "year": "2025",
+  "src": "crossref",
+  "score": 0.942,
+  "matched_title": "How Good Is\n            <scp>ChatGPT</scp>\n            in Giving Advice on Your Visualization Design?",
+  "abstract": "Data visualization creators often lack formal training, resulting in a knowledge gap in design practice. Large-language models such as ChatGPT , with their vast internet-scale training data, offer transformative potential to address this gap. In this study, we used both qualitative and quantitative methods to investigate how well ChatGPT can address visualization design questions. First, we quantitatively compared the ChatGPT -generated responses with anonymous online Human replies to data visualization questions on the VisGuides user forum. Next, we conducted a qualitative user study examining the reactions and attitudes of practitioners toward ChatGPT as a visualization design assistant. Participants were asked to bring their visualizations and design questions and received feedback from both Human experts and ChatGPT in randomized order. Our findings from both studies underscore ChatGPT ’s strengths—particularly its ability to rapidly generate diverse design options—while also highlighting areas for improvement, such as nuanced contextual understanding and fluid interaction dynamics beyond the chat interface. Drawing on these insights, we discuss design considerations for future LLM-based design feedback systems.",
+  "doi": "10.1145/3745768"
+ },
+ {
+  "key": "A22",
+  "title": "Understanding the research-practice gap in visualization design guidelines",
+  "venue": "IEEE TVCG",
+  "year": "2025",
+  "src": "pubmed",
+  "score": 1.0,
+  "matched_title": "Understanding the Research-Practice Gap in Visualization Design Guidelines.",
+  "abstract": "Empirical research on perception and cognition has laid the foundation for visualization design, often distilled into practical guidelines intended to support effective chart creation. However, it remains unclear how well these research-driven insights are reflected in the guidelines practitioners actually use. In this paper, we investigate the research-practice gap in visualization design guidelines through a mixed-methods approach. We first collected design guidelines from practitioner-facing sources and empirical studies from academic venues to assess their alignment. To complement this analysis, we conducted surveys and interviews with practitioners and researchers to examine their experiences, perceptions, and challenges surrounding the development and use of design guidelines. Our findings reveal misalignment between empirical evidence and widely used guidelines, differing perspectives between communities, and key barriers that contribute to the persistence of the research-practice gap.",
+  "pmid": "41348779"
+ },
+ {
+  "key": "A23",
+  "title": "Natural Language Dataset Generation Framework for Visualizations Powered by Large Language Models",
+  "venue": "CHI",
+  "year": "2024",
+  "src": "arxiv",
+  "abstract": "We introduce VL2NL, a Large Language Model (LLM) framework that generates rich and diverse NL datasets using only Vega-Lite specifications as input, thereby streamlining the development of Natural Language Interfaces (NLIs) for data visualization. To synthesize relevant chart semantics accurately and enhance syntactic diversity in each NL dataset, we leverage 1) a guided discovery incorporated into prompting so that LLMs can steer themselves to create faithful NL datasets in a self-directed manner; 2) a score-based paraphrasing to augment NL syntax along with four language axes. We also present a new collection of 1,981 real-world Vega-Lite specifications that have increased diversity and complexity than existing chart collections. When tested on our chart collection, VL2NL extracted chart semantics and generated L1/L2 captions with 89.4% and 76.0% accuracy, respectively. It also demonstrated generating and paraphrasing utterances and questions with greater diversity compared to the benchmarks. Last, we discuss how our NL datasets and framework can be utilized in real-world scenarios. The codes and chart collection are available at https://github.com/hyungkwonko/chart-llm.",
+  "score": 1.0,
+  "matched_title": "Natural Language Dataset Generation Framework for Visualizations Powered by Large Language Models"
+ },
+ {
+  "key": "A24",
+  "title": "YAC: Bridging Natural Language and Interactive Visual Exploration with Generative AI for Biomedical Data Discovery",
+  "venue": "arXiv",
+  "year": "2025",
+  "src": "arxiv",
+  "abstract": "Incorporating natural language input has the potential to improve the capabilities of biomedical data discovery interfaces. However, user interface elements and visualizations are still powerful tools for interacting with data. In our prototype system, YAC, Yet Another Chatbot, we integrate natural language and interactive visualizations. YAC uses a tool-calling multi-agent system to generate declarative output, which is interpreted to render linked interactive visualizations and apply data filters. We also include adjustment widgets, which allow users to directly modify the structured output. Structured text is also generated to clarify user intent, notify users of system boundaries, and explain aspects of the data with live data element links. We conducted a user study with domain experts to surface areas where YAC can be improved. Furthermore we reflect on the capabilities and design of this system with an analysis of its technical dimensions.",
+  "score": 1.0,
+  "matched_title": "YAC: Bridging Natural Language and Interactive Visual Exploration with Generative AI for Biomedical Data Discovery"
+ },
+ {
+  "key": "A25",
+  "title": "DQVis Dataset: Natural Language to Biomedical Visualization",
+  "venue": "arXiv",
+  "year": "2025",
+  "src": "crossref",
+  "score": 1.0,
+  "matched_title": "DQVis Dataset: Natural Language to Biomedical Visualization",
+  "abstract": "Biomedical research data portals are essential resources for scientific inquiry, and interactive exploratory visualizations are an integral component for querying such data repositories. Increasingly, machine learning is being integrated into visualization systems to create natural language interfaces where questions about data can be answered with visualizations, and follow-up questions can build on the previous state. This paper introduces a framework that takes abstract low-level questions about data and a visualization grammar specification that can answer such a question, reifies them with data entities and fields that meet certain constraints, and paraphrases the question language to produce the final collection of realized data-question-visualization triplets. Furthermore, we can link these foundational elements together to construct chains of queries, visualizations, and follow-up queries. We developed an open-source review interface for evaluating the results of these datasets. We applied this framework to five biomedical research data repositories, resulting in DQVis, a dataset of 1.08 million data-question-visualization triplets and 11.4 thousand two-step question samples. Five visualization experts provided feedback on the generated dataset through our review interface. We present a summary of their input and publish the full reviews as an additional resource alongside the dataset.The DQVis dataset and generation code are available at https://huggingface.co/datasets/HIDIVE/DQVis and https://github.com/hms-dbmi/DQVis-Generation.",
+  "doi": "10.31219/osf.io/rqb7u_v1"
+ },
+ {
+  "key": "A26",
+  "title": "Drawer-Advisor for Content-Aligned Visualization",
+  "venue": "arXiv",
+  "year": "2025",
+  "src": null,
+  "abstract": null,
+  "note": "未命中"
+ },
+ {
+  "key": "A27",
+  "title": "Prompt4Vis: Prompting Large Language Models with Example Mining and Schema Filtering for Tabular Data Visualization",
+  "venue": "arXiv",
+  "year": "2024",
+  "src": "crossref",
+  "score": 0.899,
+  "matched_title": "prompt4vis: prompting large language models with example mining for tabular data visualization",
+  "abstract": "We are currently in the epoch of Large Language Models (LLMs), which have transformed numerous technological domains within the database community. In this paper, we examine the application of LLMs in text-to-visualization (text-to-vis). The advancement of natural language processing technologies has made natural language interfaces more accessible and intuitive for visualizing tabular data. However, despite utilizing advanced neural network architectures, current methods such as Seq2Vis, ncNet, and RGVisNet for transforming natural language queries into DV commands still underperform, indicating significant room for improvement. In this paper, we introduce Prompt4Vis , a novel framework that leverages LLMs and In-context learning to enhance the generation of data visualizations from natural language. Given that In-context learning’s effectiveness is highly dependent on the selection of examples, it is critical to optimize this aspect. Additionally, encoding the full database schema of a query is not only costly but can also lead to inaccuracies. This framework includes two main components: (1) an example mining module that identifies highly effective examples to enhance In-context learning capabilities for text-to-vis applications, and (2) a schema filtering module designed to streamline database schemas. Comprehensive testing on the NVBench dataset has shown that Prompt4Vis significantly outperforms the current state-of-the-art model, RGVisNet, by approximately 35.9% on development sets and 71.3% on test sets. To the best of our knowledge, Prompt4Vis is the first framework to incorporate In-context learning for enhancing text-to-vis, marking a pioneering step in the domain.",
+  "doi": "10.1007/s00778-025-00912-0"
+ },
+ {
+  "key": "A28",
+  "title": "MultiVis-Agent: A Multi-Agent Framework with Logic Rules for Reliable and Comprehensive Cross-Modal Data Visualization",
+  "venue": "arXiv",
+  "year": "2026",
+  "src": "crossref",
+  "score": 1.0,
+  "matched_title": "MultiVis-Agent: A Multi-Agent Framework with Logic Rules for Reliable and Comprehensive Cross-Modal Data Visualization",
+  "abstract": "Real-world visualization tasks involve complex, multi-modal requirements that extend beyond simple text-to-chart generation, requiring reference images, code examples, and iterative refinement. Current systems exhibit fundamental limitations: single-modality input, one-shot generation, and rigid workflows. While LLM-based approaches show potential for these complex requirements, they introduce reliability challenges including catastrophic failures and infinite loop susceptibility. To address this gap, we propose MultiVis-Agent, a logic rule-enhanced multi-agent framework for reliable multi-modal and multi-scenario visualization generation. Our approach introduces a four-layer logic rule framework that provides mathematical guarantees for system reliability while maintaining flexibility. Unlike traditional rule-based systems, our logic rules are mathematical constraints that guide LLM reasoning rather than replacing it. We formalize the MultiVis task spanning four scenarios from basic generation to iterative refinement, and develop MultiVis-Bench, a benchmark with over 1,000 cases for multi-modal visualization evaluation. Extensive experiments demonstrate that our approach achieves 75.63% visualization score on challenging tasks, significantly outperforming baselines (57.54-62.79%), with task completion rates of 99.58% and code execution success rates of 94.56% (vs. 74.48% and 65.10% without logic rules), successfully addressing both complexity and reliability challenges in automated visualization generation.",
+  "doi": "10.1145/3786670"
+ },
+ {
+  "key": "A29",
+  "title": "Multi-View Design Patterns and Responsive Visualization for Genomics Data",
+  "venue": "IEEE TVCG",
+  "year": "2023",
+  "src": "crossref",
+  "score": 1.0,
+  "matched_title": "Multi-View Design Patterns and Responsive Visualization for Genomics Data",
+  "abstract": "A series of recent studies focused on designing cross-resolution and cross-device visualizations, i.e., responsive visualization, a concept adopted from responsive web design. However, these studies mainly focused on visualizations with a single view to a few number of views and did not address the design of responsive multi-view visualizations. In this paper, we present a reusable and generalizable framework for designing responsive multi-view visualizations focused on genomics data. To gain a better understanding of existing design challenges, we review web-based genomics visualization tools in the wild. By characterizing tools based on a taxonomy of responsive designs, we find that responsiveness is rarely supported in existing tools. To distill insights from the survey results in a systematic way, we classify typical view composition patterns, such as ``vertically long,'' ``horizontally wide,'' ``circular,'' and ``cross-shaped'' compositions. We then identify their usability issues in different resolutions that stem from the composition patterns, as well as discussing approaches to address the issues and to make genomics visualizations responsive. By extending the Gosling visualization grammar for genomics data, we show how these approaches can be seamlessly supported in visualization grammars.",
+  "doi": "10.31219/osf.io/pd7vq"
+ },
+ {
+  "key": "A30",
+  "title": "Learnable and Expressive Visualization Authoring Through Blended Interfaces",
+  "venue": "IEEE TVCG",
+  "year": "2025",
+  "src": "crossref",
+  "score": 1.0,
+  "matched_title": "Learnable and Expressive Visualization Authoring Through Blended Interfaces",
+  "abstract": "A wide range of visualization authoring interfaces enable the creation of highly customized visualizations. However, prioritizing expressiveness often impedes the learnability of the authoring interface. The diversity of users, such as varying computational skills and prior experiences in user interfaces, makes it even more challenging for a single authoring interface to satisfy the needs of a broad audience. In this paper, we introduce a framework to balance learnability and expressivity in a visualization authoring system. Adopting insights from learnability studies, such as multimodal interaction and visualization literacy, we explore the design space of blending multiple visualization authoring interfaces for supporting authoring tasks in a complementary and flexible manner. To evaluate the effectiveness of blending interfaces, we implemented a proof-of-concept system, Blace, that combines four common visualization authoring interfaces—template-based, shelf configuration, natural language, and code editor—that are tightly linked to one another to help users easily relate unfamiliar interfaces to more familiar ones. Using the system, we conducted a user study with 12 domain experts who regularly visualize genomics data as part of their analysis workflow. Participants with varied visualization and programming backgrounds were able to successfully reproduce unfamiliar visualization examples without a guided tutorial in the study. Feedback from a post-study qualitative questionnaire further suggests that blending interfaces enabled participants to learn the system easily and assisted them in confidently editing unfamiliar visualization grammar in the code editor, enabling expressive customization. Reflecting on our study results and the design of our system, we discuss the different interaction patterns that we identified and design implications for blending visualization authoring interfaces.",
+  "doi": "10.31219/osf.io/pjcn4"
+ },
+ {
+  "key": "A32",
+  "title": "Chat2VIS: Generating Data Visualizations via Natural Language Using ChatGPT Codex and GPT-3 Large Language Models",
+  "venue": "IEEE Access",
+  "year": "2023",
+  "src": "s2",
+  "score": 1.0,
+  "matched_title": "Chat2VIS: Generating Data Visualizations via Natural Language Using ChatGPT, Codex and GPT-3 Large Language Models",
+  "abstract": "The field of data visualisation has long aimed to devise solutions for generating visualisations directly from natural language text. Research in Natural Language Interfaces (NLIs) has contributed towards the development of such techniques. However, the implementation of workable NLIs has always been challenging due to the inherent ambiguity of natural language, as well as in consequence of unclear and poorly written user queries which pose problems for existing language models in discerning user intent. Instead of pursuing the usual path of developing new iterations of language models, this study uniquely proposes leveraging the advancements in pre-trained large language models (LLMs) such as ChatGPT and GPT-3 to convert free-form natural language directly into code for appropriate visualisations. This paper presents a novel system, Chat2VIS, which takes advantage of the capabilities of LLMs and demonstrates how, with effective prompt engineering, the complex problem of language understanding can be solved more efficiently, resulting in simpler and more accurate end-to-end solutions than prior approaches. Chat2VIS shows that LLMs together with the proposed prompts offer a reliable approach to rendering visualisations from natural language queries, even when queries are highly misspecified and underspecified. This solution also presents a significant reduction in costs for the development of NLI systems, while attaining greater visualisation inference abilities compared to traditional NLP approaches that use hand-crafted grammar rules and tailored models. This study also presents how LLM prompts can be constructed in a way that preserves data security and privacy while being generalisable to different datasets. This work compares the performance of GPT-3, Codex and ChatGPT across several case studies and contrasts the performances with prior studies."
+ },
+ {
+  "key": "A34",
+  "title": "Formalizing visualization design knowledge as constraints: Actionable and extensible models in draco",
+  "venue": "IEEE TVCG",
+  "year": "2018",
+  "src": "crossref",
+  "score": 1.0,
+  "matched_title": "Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco",
+  "abstract": "There exists a gap between visualization design guidelines and their application in visualization tools. While empirical studies can provide design guidance, we lack a formal framework for representing design knowledge, integrating results across studies, and applying this knowledge in automated design tools that promote effective encodings and facilitate visual exploration. We propose modeling visualization design knowledge as a collection of constraints, in conjunction with a method to learn weights for soft constraints from experimental data. Using constraints, we can take theoretical design knowledge and express it in a concrete, extensible, and testable form: the resulting models can recommend visualization designs and can easily be augmented with additional constraints or updated weights. We implement our approach in Draco, a constraint-based system based on Answer Set Programming (ASP). We demonstrate how to construct increasingly sophisticated automated visualization design systems, including systems based on weights learned directly from the results of graphical perception experiments.",
+  "doi": "10.31219/osf.io/3eg9c"
+ },
+ {
+  "key": "A35",
+  "title": "Geranium: Multimodal Retrieval of Genomics Data Visualizations",
+  "venue": "arXiv",
+  "year": "2025",
+  "src": "crossref",
+  "score": 1.0,
+  "matched_title": "Geranium: Multimodal Retrieval of Genomics Data Visualizations",
+  "abstract": "To address the challenge of efficiently retrieving information from the vast landscape of genomics data visualizations, we introduce Geranium, a data visualization retrieval system designed for searching and authoring genomics visualizations. The system supports multimodal retrieval, enabling users to query using images, text, or grammar-based specifications. Retrieved examples serve as scaffolds in the authoring process by providing template structures that researchers can modify with their own data, allowing them to focus on analysis rather than low-level visualization construction. Our approach incorporates three embedding methods to leverage both specialized and general knowledge: context-free grammar embeddings tailored for genomics visualizations, multimodal embeddings from a biomedical vision-language foundation model, and textual embeddings from our fine-tuned specification-to-text large language model. For each visualization, we construct a multimodal representation, including declarative specifications using the Gosling grammar, pixel-based renderings, and natural language descriptions. We experiment with different embedding strategies to maximize top-k retrieval accuracy and conduct user studies with domain collaborators to gather feedback on tool usability. The current collection consists of 3,200 visualization examples across approximately 50 categories, spanning single-view to coordinated multi-view visualizations, and covering applications from single-cell epigenomics to structural variation analysis.",
+  "doi": "10.31219/osf.io/zatw9_v3"
+ },
+ {
+  "key": "A37",
+  "title": "NVAGENT: Automated Data Visualization from Natural Language via Collaborative Agent Workflow",
+  "venue": "arXiv",
+  "year": "2025",
+  "src": "s2",
+  "score": 1.0,
+  "matched_title": "nvAgent: Automated Data Visualization from Natural Language via Collaborative Agent Workflow",
+  "abstract": "Natural Language to Visualization (NL2Vis) seeks to convert natural-language descriptions into visual representations of given tables, empowering users to derive insights from large-scale data. Recent advancements in Large Language Models (LLMs) show promise in automating code generation to transform tabular data into accessible visualizations. However, they often struggle with complex queries that require reasoning across multiple tables. To address this limitation, we propose a collaborative agent workflow, termed nvAgent, for NL2Vis. Specifically, nvAgent comprises three agents: a processor agent for database processing and context filtering, a composer agent for planning visualization generation, and a validator agent for code translation and output verification. Comprehensive evaluations on the new VisEval benchmark demonstrate that nvAgent consistently surpasses state-of-the-art baselines, achieving a 7.88% improvement in single-table and a 9.23% improvement in multi-table scenarios. Qualitative analyses further highlight that nvAgent maintains nearly a 20% performance margin over previous models, underscoring its capacity to produce high-quality visual representations from complex, heterogeneous data sources."
+ },
+ {
+  "key": "A39",
+  "title": "Talk Me Through It: Developing Effective Systems for Chart Authoring",
+  "venue": "arXiv",
+  "year": "2026",
+  "src": "arxiv",
+  "abstract": "Recent chart-authoring systems increasingly focus on natural-language input, enabling users to form a mental image of the chart they wish to create and express this intent using spoken instructions (spoken imagined-chart data). Yet these systems are predominantly trained on typed instructions written while viewing the target chart (typed existing-chart data). While the cognitive processes for describing an existing chart arguably differ from those for creating a new chart, the structural differences in the corresponding prompts remain underexplored. We present empirical findings on the structural differences among spoken imagined-chart instructions, typed imagined-chart instructions, and typed existing-chart instructions for chart creation, showing that imagined-chart prompts contain richer command formats, element specifications, and complex linguistic features, especially in spoken instructions. We then compare the performance of systems trained on spoken imagined-chart data versus typed existing-chart data, finding that the first system outperforms the second one on both voice and text input, highlighting the necessity of targeted training on spoken imagined-chart data. We conclude with design guidelines for chart-authoring systems to improve performance in real-world scenarios.",
+  "score": 1.0,
+  "matched_title": "Talk Me Through It: Developing Effective Systems for Chart Authoring"
+ },
+ {
+  "key": "A40",
+  "title": "Evaluating LLMs abilities to create charts a systematic approach",
+  "venue": "Computers and Graphics",
+  "year": "2026",
+  "src": null,
+  "abstract": null,
+  "note": "未命中"
+ },
+ {
+  "key": "A41",
+  "title": "Qualitative Study for LLM-assisted Design Study Process: Strategies Challenges and Roles",
+  "venue": "arXiv",
+  "year": "2025",
+  "src": "pubmed",
+  "score": 1.0,
+  "matched_title": "Qualitative Study for LLM-assisted Design Study Process: Strategies, Challenges, and Roles.",
+  "abstract": "Design studies aim to develop visualization solutions for real-world problems across various application domains. Recently, the emergence of large language models (LLMs) has introduced new opportunities to enhance the design study process, providing capabilities such as creative problem-solving, data handling, and insightful analysis. However, despite their growing popularity, there remains a lack of systematic understanding of how LLMs can effectively assist researchers in visualization-specific design studies. In this paper, we conducted a rnulti-stage qualitative study to fill this gap, which involved 30 design study researchers from diverse backgrounds and expertise levels. Through in-depth interviews and carefully-designed questionnaires, we investigated strategies for utilizing LLMs, the challenges encountered, and the practices used to overcome them. We further compiled the roles that LLMs can play across different stages of the design study process. Our findings highlight practical implications to inform visualization practitioners, and also provide a framework for leveraging LLMs to facilitate the design study process in visualization research.",
+  "pmid": "41370170"
+ },
+ {
+  "key": "A43",
+  "title": "Collecting and Characterizing Natural Language Utterances for Specifying Data Visualizations",
+  "venue": "CHI",
+  "year": "2021",
+  "src": "arxiv",
+  "abstract": "Natural language interfaces (NLIs) for data visualization are becoming increasingly popular both in academic research and in commercial software. Yet, there is a lack of empirical understanding of how people specify visualizations through natural language. To bridge this gap, we conducted an online study with 102 participants. We showed participants a series of ten visualizations for a given dataset and asked them to provide utterances they would pose to generate the displayed charts. The curated list of utterances generated from the study is provided below. This corpus of utterances can be used to evaluate existing NLIs for data visualization as well as for creating new systems and models to generate visualizations from natural language utterances.",
+  "score": 1.0,
+  "matched_title": "Collecting and Characterizing Natural Language Utterances for Specifying Data Visualizations"
+ },
+ {
+  "key": "A45",
+  "title": "ChartGPT: Leveraging LLMs to Generate Charts From Abstract Natural Language",
+  "venue": "IEEE TVCG",
+  "year": "2025",
+  "src": "pubmed",
+  "score": 1.0,
+  "matched_title": "ChartGPT: Leveraging LLMs to Generate Charts From Abstract Natural Language.",
+  "abstract": "The use of natural language interfaces (NLIs) to create charts is becoming increasingly popular due to the intuitiveness of natural language interactions. One key challenge in this approach is to accurately capture user intents and transform them to proper chart specifications. This obstructs the wide use of NLI in chart generation, as users' natural language inputs are generally abstract (i.e., ambiguous or under-specified), without a clear specification of visual encodings. Recently, pre-trained large language models (LLMs) have exhibited superior performance in understanding and generating natural language, demonstrating great potential for downstream tasks. Inspired by this major trend, we propose ChartGPT, generating charts from abstract natural language inputs. However, LLMs are struggling to address complex logic problems. To enable the model to accurately specify the complex parameters and perform operations in chart generation, we decompose the generation process into a step-by-step reasoning pipeline, so that the model only needs to reason a single and specific sub-task during each run. Moreover, LLMs are pre-trained on general datasets, which might be biased for the task of chart generation. To provide adequate visualization knowledge, we create a dataset consisting of abstract utterances and charts and improve model performance through fine-tuning. We further design an interactive interface for ChartGPT that allows users to check and modify the intermediate outputs of each step. The effectiveness of the proposed system is evaluated through quantitative evaluations and a user study.",
+  "pmid": "38386583"
+ },
+ {
+  "key": "A46",
+  "title": "Understanding Visualization Authoring Techniques for Genomics Data in the Context of Personas and Tasks",
+  "venue": "IEEE TVCG",
+  "year": "2025",
+  "src": "crossref",
+  "score": 1.0,
+  "matched_title": "Understanding Visualization Authoring Techniques for Genomics Data in the Context of Personas and Tasks",
+  "abstract": "Genomics experts rely on visualization to extract and share insights from complex and large-scale datasets. Beyond off-the-shelf tools for data exploration, there is an increasing need for platforms that aid experts in authoring customized visualizations for both exploration and communication of insights. A variety of interactive techniques have been proposed for authoring data visualizations, such as template editing, shelf configuration, natural language input, and code editors. However, it remains unclear how genomics experts create visualizations and which techniques best support their visualization tasks and needs. To address this gap, we conducted two user studies with genomics researchers: (1) semi-structured interviews (n=20) to identify the tasks, user contexts, and current visualization authoring techniques and (2) an exploratory study (n=13) using visual probes to elicit users’ intents and desired techniques when creating visualizations. Our contributions include (1) a characterization of how visualization authoring is currently utilized in genomics visualization, identifying limitations and benefits in light of common criteria for authoring tools, and (2) generalizable design implications for genomics visualization authoring tools based on our findings on task- and user-specific usefulness of authoring techniques.All supplemental materials are available at https://osf.io/bdj4v/",
+  "doi": "10.31219/osf.io/6f42j"
+ },
+ {
+  "key": "A47",
+  "title": "Are LLMs ready for Visualization",
+  "venue": "PacificVis",
+  "year": "2024",
+  "src": "arxiv",
+  "abstract": "Generative models have received a lot of attention in many areas of academia and the industry. Their capabilities span many areas, from the invention of images given a prompt to the generation of concrete code to solve a certain programming issue. These two paradigmatic cases fall within two distinct categories of requirements, ranging from \"creativity\" to \"precision\", as characterized by Bing Chat, which employs ChatGPT-4 as its backbone. Visualization practitioners and researchers have wondered to what end one of such systems could accomplish our work in a more efficient way. Several works in the literature have utilized them for the creation of visualizations. And some tools such as Lida, incorporate them as part of their pipeline. Nevertheless, to the authors' knowledge, no systematic approach for testing their capabilities has been published, which includes both extensive and in-depth evaluation. Our goal is to fill that gap with a systematic approach that analyzes three elements: whether Large Language Models are capable of correctly generating a large variety of charts, what libraries they can deal with effectively, and how far we can go to configure individual charts. To achieve this objective, we initially selected a diverse set of charts, which are commonly utilized in data visualization. We then developed a set of generic prompts that could be used to generate them, and analyzed the performance of different LLMs and libraries. The results include both the set of prompts and the data sources, as well as an analysis of the performance with different configurations.",
+  "score": 1.0,
+  "matched_title": "Are LLMs ready for Visualization?"
+ },
+ {
+  "key": "A48",
+  "title": "GQVis: A Dataset of Genomics Data Questions and Visualizations for Generative AI",
+  "venue": "arXiv",
+  "year": "2025",
+  "src": "arxiv",
+  "abstract": "Data visualization is a fundamental tool in genomics research, enabling the exploration, interpretation, and communication of complex genomic features. While machine learning models show promise for transforming data into insightful visualizations, current models lack the training foundation for domain-specific tasks. In an effort to provide a foundational resource for genomics-focused model training, we present a framework for generating a dataset that pairs abstract, low-level questions about genomics data with corresponding visualizations. Building on prior work with statistical plots, our approach adapts to the complexity of genomics data and the specialized representations used to depict them. We further incorporate multiple linked queries and visualizations, along with justifications for design choices, figure captions, and image alt-texts for each item in the dataset. We use genomics data retrieved from three distinct genomics data repositories (4DN, ENCODE, Chromoscope) to produce GQVis: a dataset consisting of 1.14 million single-query data points, 628k query pairs, and 589k query chains. The GQVis dataset and generation code are available at https://huggingface.co/datasets/HIDIVE/GQVis and https://github.com/hms-dbmi/GQVis-Generation.",
+  "score": 1.0,
+  "matched_title": "GQVis: A Dataset of Genomics Data Questions and Visualizations for Generative AI"
+ },
+ {
+  "key": "A49",
+  "title": "DracoGPT: Extracting Visualization Design Preferences from Large Language Models",
+  "venue": "IEEE TVCG",
+  "year": "2025",
+  "src": "s2",
+  "score": 1.0,
+  "matched_title": "DracoGPT: Extracting Visualization Design Preferences from Large Language Models",
+  "abstract": "Trained on vast corpora, Large Language Models (LLMs) have the potential to encode visualization design knowledge and best practices. However, if they fail to do so, they might provide unreliable visualization recommendations. What visualization design preferences, then, have LLMs learned? We contribute DracoGPT, a method for extracting, modeling, and assessing visualization design preferences from LLMs. To assess varied tasks, we develop two pipelines—DracoGPT-Rank and DracoGPT-Recommend—to model LLMs prompted to either rank or recommend visual encoding specifications. We use Draco as a shared knowledge base in which to represent LLM design preferences and compare them to best practices from empirical research. We demonstrate that DracoGPT can accurately model the preferences expressed by LLMs, enabling analysis in terms of Draco design constraints. Across a suite of backing LLMs, we find that DracoGPT-Rank and DracoGPT-Recommend moderately agree with each other, but both substantially diverge from guidelines drawn from human subjects experiments. Future work can build on our approach to expand Draco's knowledge base to model a richer set of preferences and to provide a robust and cost-effective stand-in for LLMs."
+ },
+ {
+  "key": "A50",
+  "title": "Draco 2: An extensible platform to model visualization design",
+  "venue": "IEEE VIS",
+  "year": "2023",
+  "src": "arxiv",
+  "abstract": "Draco introduced a constraint-based framework to model visualization design in an extensible and testable form. It provides a way to abstract design guidelines from theoretical and empirical studies and applies the knowledge in automated design tools. However, Draco is challenging to use because there is limited tooling and documentation. In response, we present Draco 2, the successor with (1) a more flexible visualization specification format, (2) a comprehensive test suite and documentation, and (3) flexible and convenient APIs. We designed Draco 2 to be more extensible and easier to integrate into visualization systems. We demonstrate these advantages and believe that they make Draco 2 a platform for future research.",
+  "score": 1.0,
+  "matched_title": "Draco 2: An Extensible Platform to Model Visualization Design"
+ },
+ {
+  "key": "A51",
+  "title": "MatPlotAgent: Method and Evaluation for LLM-Based Agentic Scientific Data Visualization",
+  "venue": "arXiv",
+  "year": "2024",
+  "src": "arxiv",
+  "abstract": "Scientific data visualization plays a crucial role in research by enabling the direct display of complex information and assisting researchers in identifying implicit patterns. Despite its importance, the use of Large Language Models (LLMs) for scientific data visualization remains rather unexplored. In this study, we introduce MatPlotAgent, an efficient model-agnostic LLM agent framework designed to automate scientific data visualization tasks. Leveraging the capabilities of both code LLMs and multi-modal LLMs, MatPlotAgent consists of three core modules: query understanding, code generation with iterative debugging, and a visual feedback mechanism for error correction. To address the lack of benchmarks in this field, we present MatPlotBench, a high-quality benchmark consisting of 100 human-verified test cases. Additionally, we introduce a scoring approach that utilizes GPT-4V for automatic evaluation. Experimental results demonstrate that MatPlotAgent can improve the performance of various LLMs, including both commercial and open-source models. Furthermore, the proposed evaluation method shows a strong correlation with human-annotated scores.",
+  "score": 1.0,
+  "matched_title": "MatPlotAgent: Method and Evaluation for LLM-Based Agentic Scientific Data Visualization"
+ },
+ {
+  "key": "A52",
+  "title": "Too many cooks: Exploring how graphical perception studies influence visualization recommendations in draco",
+  "venue": "IEEE TVCG",
+  "year": "2023",
+  "src": "pubmed",
+  "score": 1.0,
+  "matched_title": "Too Many Cooks: Exploring How Graphical Perception Studies Influence Visualization Recommendations in Draco.",
+  "abstract": "Findings from graphical perception can guide visualization recommendation algorithms in identifying effective visualization designs. However, existing algorithms use knowledge from, at best, a few studies, limiting our understanding of how complementary (or contradictory) graphical perception results influence generated recommendations. In this paper, we present a pipeline of applying a large body of graphical perception results to develop new visualization recommendation algorithms and conduct an exploratory study to investigate how results from graphical perception can alter the behavior of downstream algorithms. Specifically, we model graphical perception results from 30 papers in Draco-a framework to model visualization knowledge-to develop new recommendation algorithms. By analyzing Draco-generated algorithms, we showcase the feasibility of our method to (1) identify gaps in existing graphical perception literature informing recommendation algorithms, (2) cluster papers by their preferred design rules and constraints, and (3) investigate why certain studies can dominate Draco's recommendations, whereas others may have little influence. Given our findings, we discuss the potential for mutually reinforcing advancements in graphical perception and visualization recommendation research.",
+  "pmid": "37871053"
+ }
+]

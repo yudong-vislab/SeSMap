@@ -1,0 +1,141 @@
+[
+  {
+    "paragraph": "Extrachromosomal circular DNA (eccDNA) is an emerging tumor biomarker notable for its tumor-specific amplification and contribution to genomic heterogeneity. However, the substantial heterogeneity of eccDNAs poses a significant challenge for characterization. Current identification tools rely predominantly on single data types, overlooking the integrative potential of multi-omics layers and often discarding sparse but biologically meaningful signals.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Extrachromosomal circular DNA (eccDNA) is an emerging tumor biomarker notable for its tumor-specific amplification.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Extrachromosomal circular DNA (eccDNA) contributes to genomic heterogeneity.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "The substantial heterogeneity of eccDNAs poses a significant challenge for characterization.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Current identification tools rely predominantly on single data types.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Current identification tools often overlook the integrative potential of multi-omics layers.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Current identification tools often discard sparse but biologically meaningful signals.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "To address this, we developed eccDNAOmix, an AI-empowered framework that integrates a specialized eccDNA sequencing pipeline with multi-omics data to evaluate the relative contributions of different biological modalities. Basing matched tumor and adjacent normal tissues from colorectal cancer patients, eccDNAOmix employs a masking strategy to eliminate non-biological noise and features a multimodal deep learning model with an adaptive gated fusion mechanism.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "We developed eccDNAOmix, an AI-empowered framework.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "eccDNAOmix integrates a specialized eccDNA sequencing pipeline with multi-omics data.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "eccDNAOmix evaluates the relative contributions of different biological modalities.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "eccDNAOmix is based on matched tumor and adjacent normal tissues from colorectal cancer patients.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "eccDNAOmix employs a masking strategy to eliminate non-biological noise.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "eccDNAOmix features a multimodal deep learning model with an adaptive gated fusion mechanism.",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "Our model achieved robust identification performance (AUC = 0.844), with the DNA sequence modality (AUC = 0.822) being the most identifiable feature for eccDNA identification. Leveraging this finding, we established a web server to facilitate practical eccDNA identification. Biological characterization showed that eccDNAs are preferentially derived from promoter regions and exhibit a significant enrichment of RNA modifications within 100 bp downstream of junction sites. Notably, eccDNAOmix rescued hidden eccDNA fragments from conventionally discarded unmapped sequencing reads and this was confirmed via experimental validation.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Our model achieved robust identification performance (AUC = 0.844).",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "The DNA sequence modality achieved an AUC of 0.822, making it the most identifiable feature for eccDNA identification.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "A web server was established to facilitate practical eccDNA identification.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Biological characterization showed that eccDNAs are preferentially derived from promoter regions.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "EccDNAs exhibit a significant enrichment of RNA modifications within 100 bp downstream of junction sites.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "EccDNAOmix rescued hidden eccDNA fragments from conventionally discarded unmapped sequencing reads.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The rescue of hidden eccDNA fragments by eccDNAOmix was confirmed via experimental validation.",
+        "category": "Experiment",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "By integrating multi-omics sequencing and eccDNA sequencing, this study provides the first comprehensive characterization of eccDNAs. Our multi-omics analysis demonstrates that the DNA sequence contributes the highest proportion to eccDNA identification. By leveraging this dominant identifiable role and providing an accessible single-modality identification tool, our work proposes a practical computational framework for advancing discovery in colorectal cancer.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "This study provides the first comprehensive characterization of eccDNAs by integrating multi-omics sequencing and eccDNA sequencing.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "The multi-omics analysis demonstrates that the DNA sequence contributes the highest proportion to eccDNA identification.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "The study leverages the dominant identifiable role of DNA sequence to provide an accessible single-modality identification tool.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The work proposes a practical computational framework for advancing discovery in colorectal cancer.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

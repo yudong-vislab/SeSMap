@@ -1,0 +1,152 @@
+[
+  {
+    "paragraph": "Abdominal aortic aneurysm (AAA) is a cardiovascular condition characterized by the abnormal dilation of the abdominal aorta.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Abdominal aortic aneurysm (AAA) is a cardiovascular condition.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "AAA is characterized by the abnormal dilation of the abdominal aorta.",
+        "category": "Background",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "A circular RNA (circRNA) microarray was utilized to identify differentially expressed circRNAs in angiotensin II (Ang II)-stimulated AAA mice.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A circular RNA (circRNA) microarray was utilized.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The microarray identified differentially expressed circRNAs.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The study focused on angiotensin II (Ang II)-stimulated AAA mice.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Male apolipoprotein E-deficient (apoE-/-) mice were randomly assigned to 2 groups and subjected to 28 days of infusion with either Ang II or saline. At the end of the experiment, the mice were euthanized via exsanguination under anesthesia. The periadventitial tissues were carefully removed from the aortic wall to measure the maximal external diameter of the suprarenal aorta, and then stored for further analysis. Samples from both the control and AAA groups were used for circRNA expression profiling. The R package Bioconductor was employed to perform Gene Ontology (GO) analysis and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway enrichment analysis. Arraystar's proprietary miRNA target prediction software, integrating miRanda and TargetScan, was used to predict the circRNA/miRNA interactions. Reverse transcription quantitative polymerase chain reaction (RT-qPCR) was employed to confirm the reliability of the microarray results.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Male apolipoprotein E-deficient (apoE-/-) mice were randomly assigned to 2 groups and subjected to 28 days of infusion with either Ang II or saline.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "At the end of the experiment, the mice were euthanized via exsanguination under anesthesia.",
+        "category": "Experiment",
+        "rank": 2
+      },
+      {
+        "sentence": "The periadventitial tissues were carefully removed from the aortic wall to measure the maximal external diameter of the suprarenal aorta.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The periadventitial tissues were then stored for further analysis.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Samples from both the control and AAA groups were used for circRNA expression profiling.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "The R package Bioconductor was employed to perform Gene Ontology (GO) analysis and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway enrichment analysis.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Arraystar's proprietary miRNA target prediction software, integrating miRanda and TargetScan, was used to predict the circRNA/miRNA interactions.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Reverse transcription quantitative polymerase chain reaction (RT-qPCR) was employed to confirm the reliability of the microarray results.",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "A total of 13,103 circRNAs were detected. Compared to the control group, 90 circRNAs were upregulated and 234 were downregulated in the Ang II-induced AAA group. Gene Ontology analysis indicated that the target genes associated with the differentially expressed circRNAs were involved in a variety of biological processes. The KEGG pathway analysis revealed that the differentially expressed circRNAs influenced several critical pathways, including the MAPK signaling pathway, insulin signaling pathway, Ras signaling pathway, and autophagy. The results of RT-qPCR showed that the expression levels of circRNA_30395, circRNA_30398 and circRNA_012594 were significantly increased in AAA, while circRNA_006097 and circRNA_009932 were notably decreased. The top 5 miRNAs related to each validated circRNA were identified through bioinformatic analysis. Among these differentially expressed circRNAs, miR-136-5p was predicted to be the target gene of circRNA_30398 with high probability.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A total of 13,103 circRNAs were detected.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Compared to the control group, 90 circRNAs were upregulated in the Ang II-induced AAA group.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Compared to the control group, 234 circRNAs were downregulated in the Ang II-induced AAA group.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Gene Ontology analysis indicated that the target genes associated with the differentially expressed circRNAs were involved in a variety of biological processes.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The KEGG pathway analysis revealed that the differentially expressed circRNAs influenced several critical pathways, including the MAPK signaling pathway, insulin signaling pathway, Ras signaling pathway, and autophagy.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The results of RT-qPCR showed that the expression levels of circRNA_30395, circRNA_30398, and circRNA_012594 were significantly increased in AAA.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "The results of RT-qPCR showed that the expression levels of circRNA_006097 and circRNA_009932 were notably decreased in AAA.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "The top 5 miRNAs related to each validated circRNA were identified through bioinformatic analysis.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Among these differentially expressed circRNAs, miR-136-5p was predicted to be the target gene of circRNA_30398 with high probability.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "The differential expression of various circRNAs identified in AAA suggests that the circRNA-miRNA-mRNA axis may serve as a potential molecular regulatory mechanism for AAA.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The differential expression of various circRNAs is identified in AAA.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The circRNA-miRNA-mRNA axis may serve as a potential molecular regulatory mechanism for AAA.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

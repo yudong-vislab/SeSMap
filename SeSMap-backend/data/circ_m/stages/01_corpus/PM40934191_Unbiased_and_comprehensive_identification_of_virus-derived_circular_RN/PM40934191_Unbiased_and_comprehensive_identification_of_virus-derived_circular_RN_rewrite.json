@@ -1,0 +1,63 @@
+[
+  {
+    "paragraph": "Non-coding RNAs play a significant role in viral infection cycles, with recent attention focused on circular RNAs (circRNAs) originating from various viral families. Notably, these circRNAs have been associated with oncogenesis and alterations in viral fitness. However, identifying their expression has proven more challenging than initially anticipated due to unique viral characteristics. This challenge has the potential to impede progress in our understanding of viral circRNAs. Key hurdles in working with viral genomes include: (1) the presence of repetitive regions that can lead to misalignment of sequencing reads, and (2) unconventional splicing mechanisms that deviate from conserved eukaryotic patterns. To address these challenges, we developed vCircTrappist, a bioinformatic pipeline tailored to identify backsplicing events and pinpoint loci expressing circRNAs in RNA sequencing data. Applying this pipeline, we obtained novel insights from both new and existing datasets encompassing a range of animal and human pathogens belonging to Herpesviridae, Retroviridae, Adenoviridae, Flaviviridae and Orthomyxoviridae families. Subsequent RT-PCR and Sanger sequencings validated the accuracy of the developed bioinformatic tool for a selection of new candidate virus-derived circRNAs. These findings demonstrate that vCircTrappist is an open and unbiased approach for comprehensive identification of virus-derived circRNAs.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Non-coding RNAs play a significant role in viral infection cycles.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Recent attention has focused on circular RNAs (circRNAs) originating from various viral families.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "CircRNAs have been associated with oncogenesis and alterations in viral fitness.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Identifying the expression of viral circRNAs has proven more challenging than initially anticipated due to unique viral characteristics.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "This challenge has the potential to impede progress in our understanding of viral circRNAs.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Key hurdles in working with viral genomes include the presence of repetitive regions that can lead to misalignment of sequencing reads.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Key hurdles in working with viral genomes include unconventional splicing mechanisms that deviate from conserved eukaryotic patterns.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "We developed vCircTrappist, a bioinformatic pipeline tailored to identify backsplicing events and pinpoint loci expressing circRNAs in RNA sequencing data.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Applying vCircTrappist, we obtained novel insights from both new and existing datasets encompassing a range of animal and human pathogens belonging to Herpesviridae, Retroviridae, Adenoviridae, Flaviviridae, and Orthomyxoviridae families.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "Subsequent RT-PCR and Sanger sequencing validated the accuracy of the developed bioinformatic tool for a selection of new candidate virus-derived circRNAs.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "These findings demonstrate that vCircTrappist is an open and unbiased approach for comprehensive identification of virus-derived circRNAs.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

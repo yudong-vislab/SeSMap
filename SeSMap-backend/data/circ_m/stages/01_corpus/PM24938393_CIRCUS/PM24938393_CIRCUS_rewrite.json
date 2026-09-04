@@ -1,0 +1,100 @@
+[
+  {
+    "paragraph": "Detection of large genomic rearrangements, such as large indels, duplications or translocations is now commonly achieved by next generation sequencing (NGS) approaches. Recently, several tools have been developed to analyze NGS data but the resulting files are difficult to interpret without an additional visualization step. Circos (Genome Res, 19:1639-1645, 2009), a Perl script, is a powerful visualization software that requires setting up numerous configuration files with a large number of parameters to handle. R packages like RCircos (BMC Bioinformatics, 14:244, 2013) or ggbio (Genome Biol, 13:R77, 2012) provide functions to display genomic data as circular Circos-like plots. However, these tools are very general and lack the functions needed to filter, format and adjust specific input genomic data.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Detection of large genomic rearrangements, such as large indels, duplications, or translocations, is now commonly achieved by next generation sequencing (NGS) approaches.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Several tools have been developed recently to analyze NGS data.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The resulting files from NGS data analysis are difficult to interpret without an additional visualization step.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Circos is a powerful visualization software that requires setting up numerous configuration files with a large number of parameters to handle.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Circos is a Perl script for visualizing genomic data.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "R packages like RCircos or ggbio provide functions to display genomic data as circular Circos-like plots.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "RCircos and ggbio are very general tools and lack the functions needed to filter, format, and adjust specific input genomic data.",
+        "category": "Background",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "We implemented an R package called CIRCUS to analyze genomic structural variations. It generates both data and configuration files necessary for Circos, to produce graphs. Only few R pre-requisites are necessary. Options are available to deal with heterogeneous data, various chromosome numbers and multi-scale analysis.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "An R package called CIRCUS was implemented to analyze genomic structural variations.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "CIRCUS generates both data and configuration files necessary for Circos to produce graphs.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Only a few R pre-requisites are necessary to use CIRCUS.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "CIRCUS provides options to handle heterogeneous data.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "CIRCUS supports various chromosome numbers and multi-scale analysis.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "CIRCUS allows fast and versatile analysis of genomic structural variants with Circos plots for users with limited coding skills.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "CIRCUS allows fast analysis of genomic structural variants.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "CIRCUS provides versatile analysis of genomic structural variants.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "CIRCUS uses Circos plots for visualization.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "CIRCUS is designed for users with limited coding skills.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  }
+]

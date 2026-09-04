@@ -1,0 +1,13 @@
+# EVscope: A Comprehensive Bioinformatics Pipeline for Accurate and Robust Analysis of Total RNA Sequencing from Extracellular Vesicles
+
+## Motivation
+
+Extracellular vesicle (EV) RNA sequencing has emerged as a powerful approach for studying RNA biomarkers and intercellular communication. Nevertheless, the extremely low abundance, fragmented nature and ubiquitous tissue origin of EV RNAs, alongside potential contamination from co-isolated materials, such as free DNA and bacterial RNA, pose substantial analytical challenges. These complexities highlight a pressing need for a standardized, computational workflow that ensures robust quality control and EV RNA characterization.
+
+## Results
+
+Here, we present EVscope, an open-source bioinformatics pipeline designed specifically for processing EV RNA-seq datasets. EVscope employs an optimized genome-wide expectation-maximization (EM) algorithm that significantly improves multi-mapping read assignment at single-base resolution by effectively leveraging alignment scores (AS) and local read coverage, specifically tailored for fragmented and low-abundance EV RNAs. Notably, EVscope uniquely generates EM-based BigWig files for downstream analysis, a capability currently unavailable in existing EM-based BigWig quantification tools. The pipeline systematically integrates 27 major steps, including quality control, analysis of library structure, contamination assessment, read alignment, read strandedness detection, UMI-based deduplication, RNA quantification, genomic DNA (gDNA) contamination correction, cellular and tissue source inference and visualization with a comprehensive HTML report. EVscope incorporates a comprehensive, updated annotation covering 19 distinct RNA biotypes, encompassing protein-coding genes, lncRNAs, miRNAs, piRNAs, retrotransposons (LINEs, SINEs, ERVs), and additional non-coding RNAs (tRNAs, rRNAs, snoRNAs). Furthermore, it leverages two highly balanced circRNA detection algorithms for robust circular RNA identification. Notably, a downstream module enables the inference of the tissue/cellular origins of EV RNAs using bulk and single-cell RNA-seq reference datasets. EVscope is implemented as a convenient, single-command Bash pipeline leveraging Conda-managed standard software packages and custom scripts, ensuring reproducibility and straightforward deployment.
+
+## Availability And Implementation
+
+Code, documentation, and tutorials are available at GitHub (https://github.com/TheDongLab/EVscope) and archived on Zenodo (https://zenodo.org/records/15577789).

@@ -1,0 +1,16 @@
+[
+  {
+    "title": "GQVis: A Dataset of Genomics Data Questions and Visualizations for Generative AI",
+    "paragraphs": []
+  },
+  {
+    "title": "GQVis: A Dataset of Genomics Data Questions and Visualizations for Generative AI-Abstract",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Data visualization is a fundamental tool in genomics research, enabling the exploration, interpretation, and communication of complex genomic features. While machine learning models show promise for transforming data into insightful visualizations, current models lack the training foundation for domain-specific tasks. In an effort to provide a foundational resource for genomics-focused model training, we present a framework for generating a dataset that pairs abstract, low-level questions about genomics data with corresponding visualizations. Building on prior work with statistical plots, our approach adapts to the complexity of genomics data and the specialized representations used to depict them. We further incorporate multiple linked queries and visualizations, along with justifications for design choices, figure captions, and image alt-texts for each item in the dataset. We use genomics data retrieved from three distinct genomics data repositories (4DN, ENCODE, Chromoscope) to produce GQVis: a dataset consisting of 1.14 million single-query data points, 628k query pairs, and 589k query chains. The GQVis dataset and generation code are available at https://huggingface.co/datasets/HIDIVE/GQVis and https://github.com/hms-dbmi/GQVis-Generation.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

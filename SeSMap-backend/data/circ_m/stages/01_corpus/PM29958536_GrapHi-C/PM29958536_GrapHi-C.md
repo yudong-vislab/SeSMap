@@ -1,0 +1,9 @@
+# GrapHi-C: graph-based visualization of Hi-C datasets
+
+## Objectives
+
+Hi-C is a proximity-based ligation reaction used to detect regions of the genome that are close in 3D space (or "interacting"). Typically, results from Hi-C experiments (contact maps) are visualized as heatmaps or Circos plots. While informative, these visualizations do not directly represent genomic structure and folding, making the interpretation of the underlying 3D genomic organization obscured. Our objective was to generate a graph-based contact map representation that leads to a more intuitive structural visualization.
+
+## Results
+
+Normalized contact maps were converted into undirected graphs where each vertex represented a genomic region and each edge represented a detected (intra- and inter-chromosomal) or known (linear) interaction between two regions. Each edge was weighted by the inverse of the linear distance (Hi-C experimental resolution) or the interaction frequency from the contact map. Graphs were generated based on this representation scheme for contact maps from existing fission yeast datasets. Originally, these datasets were used to (1) identify specific principles influencing fission yeast genome organization and (2) uncover changes in fission yeast genome organization during the cell cycle. When compared to the equivalent heatmaps and/or Circos plots, the graph-based visualizations more intuitively depicted the changes in genome organization described in the original studies.

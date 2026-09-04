@@ -1,0 +1,80 @@
+[
+  {
+    "paragraph": "Fast algorithms and well-arranged visualizations are required for the comprehensive analysis of the ever-growing size of genomic and transcriptomic next-generation sequencing data.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Fast algorithms are required for the comprehensive analysis of genomic and transcriptomic next-generation sequencing data.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Well-arranged visualizations are required for the comprehensive analysis of genomic and transcriptomic next-generation sequencing data.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The size of genomic and transcriptomic next-generation sequencing data is ever-growing.",
+        "category": "Background",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "ReadXplorer is a software offering straightforward visualization and extensive analysis functions for genomic and transcriptomic DNA sequences mapped on a reference. A unique specialty of ReadXplorer is the quality classification of the read mappings. It is incorporated in all analysis functions and displayed in ReadXplorer's various synchronized data viewers for (i) the reference sequence, its base coverage as (ii) normalizable plot and (iii) histogram, (iv) read alignments and (v) read pairs. ReadXplorer's analysis capability covers RNA secondary structure prediction, single nucleotide polymorphism and deletion-insertion polymorphism detection, genomic feature and general coverage analysis. Especially for RNA-Seq data, it offers differential gene expression analysis, transcription start site and operon detection as well as RPKM value and read count calculations. Furthermore, ReadXplorer can combine or superimpose coverage of different datasets.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "ReadXplorer is a software offering straightforward visualization and extensive analysis functions for genomic and transcriptomic DNA sequences mapped on a reference.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "A unique specialty of ReadXplorer is the quality classification of the read mappings.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The quality classification of the read mappings is incorporated in all analysis functions and displayed in ReadXplorer's various synchronized data viewers.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "ReadXplorer's synchronized data viewers include (i) the reference sequence, (ii) its base coverage as a normalizable plot, (iii) histogram, (iv) read alignments, and (v) read pairs.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "ReadXplorer's analysis capability covers RNA secondary structure prediction, single nucleotide polymorphism and deletion-insertion polymorphism detection, genomic feature and general coverage analysis.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "For RNA-Seq data, ReadXplorer offers differential gene expression analysis, transcription start site and operon detection, as well as RPKM value and read count calculations.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "ReadXplorer can combine or superimpose coverage of different datasets.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "ReadXplorer is available as open-source software at http://www.readxplorer.org along with a detailed manual.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "ReadXplorer is available as open-source software.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "ReadXplorer is available at http://www.readxplorer.org along with a detailed manual.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

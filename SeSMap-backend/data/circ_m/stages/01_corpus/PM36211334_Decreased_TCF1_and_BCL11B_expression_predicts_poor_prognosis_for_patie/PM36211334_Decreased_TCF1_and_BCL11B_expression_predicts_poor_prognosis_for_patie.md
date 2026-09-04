@@ -1,0 +1,5 @@
+# Decreased TCF1 and BCL11B expression predicts poor prognosis for patients with chronic lymphocytic leukemia
+
+## Abstract
+
+T cell immune dysfunction is a prominent characteristic of chronic lymphocytic leukemia (CLL) and the main cause of failure for immunotherapy and multi-drug resistance. There remains a lack of specific biomarkers for evaluating T cell immune status with outcome for CLL patients. T cell factor 1 (TCF1, encoded by the

@@ -1,0 +1,80 @@
+[
+  {
+    "paragraph": "Genome-based bacterial taxonomy requires standardized and reproducible analytical workflows for species delineation and phylogenomic placement; however, the practical deployment of these workflows remains a significant barrier for experimental biologists and clinical scientists. Widely adopted tools such as Prokka, antiSMASH, and PhyloPhlAn underpin key steps in genome annotation, functional characterization, and phylogenomic reconstruction, but their practical deployment in routine laboratory settings, especially on Windows based systems, remains non trivial due to complex software dependencies and command line centric workflows. Existing solutions, including cloud-based platforms (e.g., Galaxy and KBase) and commercial software suites (e.g., CLC Genomics Workbench), partially alleviate these challenges but may also involve considerations related to data-privacy concerns, upload latency, storage quotas, shared computing resources, and recurring licensing costs.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Genome-based bacterial taxonomy requires standardized and reproducible analytical workflows for species delineation and phylogenomic placement.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "The practical deployment of standardized workflows remains a significant barrier for experimental biologists and clinical scientists.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Widely adopted tools such as Prokka, antiSMASH, and PhyloPhlAn underpin key steps in genome annotation, functional characterization, and phylogenomic reconstruction.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "The practical deployment of tools like Prokka, antiSMASH, and PhyloPhlAn in routine laboratory settings, especially on Windows-based systems, remains non-trivial due to complex software dependencies and command-line centric workflows.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Existing solutions, including cloud-based platforms such as Galaxy and KBase, and commercial software suites such as CLC Genomics Workbench, partially alleviate these challenges.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Cloud-based platforms and commercial software suites may involve considerations related to data-privacy concerns, upload latency, storage quotas, shared computing resources, and recurring licensing costs.",
+        "category": "Background",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "To address these limitations, we introduce TaxaScope, a graphical-interface-driven desktop workstation designed to support reproducible, genome-based bacterial taxonomy by integrating a curated set of community-validated tools for genome quality assessment, annotation, phylogenomic inference, genome relatedness estimation, and functional profiling within a unified local graphical user interface (GUI). By leveraging Docker- and Podman-based containerization behind a user-friendly frontend, TaxaScope provides version-locked, standardized execution environments across computing platforms without requiring manual dependency management or prior Linux expertise.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "We introduce TaxaScope, a graphical-interface-driven desktop workstation designed to support reproducible, genome-based bacterial taxonomy.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "TaxaScope integrates a curated set of community-validated tools for genome quality assessment, annotation, phylogenomic inference, genome relatedness estimation, and functional profiling within a unified local graphical user interface (GUI).",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "TaxaScope leverages Docker- and Podman-based containerization behind a user-friendly frontend.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "TaxaScope provides version-locked, standardized execution environments across computing platforms.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "TaxaScope does not require manual dependency management or prior Linux expertise.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "We demonstrate the utility of TaxaScope through a comprehensive re-analysis of",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The utility of TaxaScope is demonstrated through a comprehensive re-analysis.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  }
+]

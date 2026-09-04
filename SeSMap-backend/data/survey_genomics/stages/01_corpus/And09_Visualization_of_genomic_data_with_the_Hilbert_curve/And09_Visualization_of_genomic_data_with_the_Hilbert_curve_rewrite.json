@@ -1,0 +1,49 @@
+[
+  {
+    "paragraph": "In many genomic studies, one works with genome-position-dependent data, e.g. ChIP-chip or ChIP-Seq scores. Using conventional tools, it can be difficult to get a good feel for the data, especially the distribution of features. This article argues that the so-called Hilbert curve visualization can complement genome browsers and help to get further insights into the structure of one's data. This is demonstrated with examples from different use cases. An open-source application, called HilbertVis, is presented that allows the user to produce and interactively explore such plots.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "In genomic studies, genome-position-dependent data such as ChIP-chip or ChIP-Seq scores are commonly used.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Conventional tools make it difficult to understand the distribution of features in genome-position-dependent data.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The Hilbert curve visualization can complement genome browsers and provide further insights into the structure of genomic data.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "Examples from different use cases demonstrate the utility of the Hilbert curve visualization.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "An open-source application called HilbertVis is presented.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "HilbertVis allows users to produce and interactively explore Hilbert curve plots.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "http://www.ebi.ac.uk/huber-srv/hilbert/.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "http://www.ebi.ac.uk/huber-srv/hilbert/",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

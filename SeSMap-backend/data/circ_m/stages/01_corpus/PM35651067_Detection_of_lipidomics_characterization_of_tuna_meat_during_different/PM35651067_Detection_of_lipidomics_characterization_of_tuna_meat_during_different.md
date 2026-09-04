@@ -1,0 +1,5 @@
+# Detection of lipidomics characterization of tuna meat during different wet-aging stages using iKnife rapid evaporative ionization mass spectrometry
+
+## Abstract
+
+As a high-value processed aquatic product, wet-aged tuna has gradually become a popular food, but its lipidomics characteristics during the aging process have not been investigated. Herein, the lipidomics phenotypic data of tuna at different wet-aging stages were acquired using iKnife rapid evaporative ionization mass spectrometry, in which the dominant lipid components, including fatty acid (FA), phosphatidylcholine (PC), phosphatidylethanolamine (PE), and phosphatidylinositol (PI), were structurally identified. Principal component analysis, permutation test, heatmap, and circos plot analysis were performed to characterize lipids in wet-aged tuna, among which FA

@@ -1,0 +1,5 @@
+# WebMeV: A Cloud Platform for Analyzing and Visualizing Cancer Genomic Data
+
+## Abstract
+
+Although large, complex genomic datasets are increasingly easy to generate, and the number of publicly available datasets in cancer and other diseases is rapidly growing, the lack of intuitive, easy-to-use analysis tools has remained a barrier to the effective use of such data. WebMeV (http://mev.tm4.org) is an open-source, web-based tool that gives users access to sophisticated tools for analysis of RNA-Seq and other data in an interface designed to democratize data access. WebMeV combines cloud-based technologies with a simple user interface to allow users to access large public datasets, such as that from The Cancer Genome Atlas or to upload their own. The interface allows users to visualize data and to apply advanced data mining analysis methods to explore the data and draw biologically meaningful conclusions. We provide an overview of WebMeV and demonstrate two simple use cases that illustrate the value of putting data analysis in the hands of those looking to explore the underlying biology of the systems being studied.

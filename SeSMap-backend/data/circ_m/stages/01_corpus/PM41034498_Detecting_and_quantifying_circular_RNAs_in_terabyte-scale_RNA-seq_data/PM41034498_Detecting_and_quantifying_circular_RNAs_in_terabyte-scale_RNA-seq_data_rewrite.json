@@ -1,0 +1,53 @@
+[
+  {
+    "paragraph": "To address recent challenges in circular RNA (circRNA) analysis, we present CIRI3, a tool for circRNA detection and quantification in terabyte-scale RNA-sequencing datasets. Using dynamic multithreaded task partitioning and a blocking search strategy for junction reads, CIRI3 is an order of magnitude faster than existing tools, while providing increased accuracy. We identified differentially spliced circRNAs across 2,535 cancer-related samples, and constructed a pretraining model and a biomarker network provided as the CIRIonco database.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Recent challenges in circular RNA (circRNA) analysis are being addressed.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "CIRI3 is a tool for circRNA detection and quantification in terabyte-scale RNA-sequencing datasets.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "CIRI3 uses dynamic multithreaded task partitioning for processing.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "CIRI3 employs a blocking search strategy for junction reads.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "CIRI3 is an order of magnitude faster than existing tools.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "CIRI3 provides increased accuracy compared to existing tools.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Differentially spliced circRNAs were identified across 2,535 cancer-related samples.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "A pretraining model and a biomarker network were constructed.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "The pretraining model and biomarker network are provided as the CIRIonco database.",
+        "category": "Result",
+        "rank": 3
+      }
+    ]
+  }
+]

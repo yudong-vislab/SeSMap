@@ -1,0 +1,124 @@
+[
+  {
+    "paragraph": "Shotgun metagenomic data analysis for investigating biogeochemical cycles in the environment remains challenging, primarily due to the steep learning curve, intensive time investment, and high computational demands, all of which pose significant barriers for many researchers. We present a new R package called \"CNPS.cycle,\" designed to streamline the interpretation of shotgun metagenomic data related to biogeochemical processes, complete with visually informative outputs. This comprehensive package comprises four distinct analysis modules, focused on carbon, nitrogen, phosphorus, and sulfur cycling. Users can easily utilize the package by uploading annotation result files derived from shotgun metagenomic data, specifically those based on the Kyoto Encyclopedia of Genes and Genomes and the NCBI non-redundant protein sequence database. The package then automates essential steps, including data preprocessing, curation, and differential analysis of biogeochemical cycle-related genes; analysis of microorganisms possessing biogeochemical cycle-related genes at the contig level; β-diversity analysis; and, finally, data visualization. The outcome is a comprehensive analysis revealing differentially abundant genes and functionally significant microbial entities associated with the carbon, nitrogen, phosphorus, and sulfur cycles, presented in the form of tables and high-quality images. This tool will provide profound insights into the relationship between soil microorganisms and elemental chemical cycles, thereby advancing our comprehension of soil ecosystems. For accessibility, the CNPS.cycle package is available on GitHub (https://github.com/yuezhengfu/CNPS.cycle), where detailed instructions on its usage can be found in the project's GitHub page (https://github.com/yuezhengfu/CNPS.cycle/wiki).",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Shotgun metagenomic data analysis for investigating biogeochemical cycles in the environment remains challenging due to the steep learning curve, intensive time investment, and high computational demands.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "These challenges pose significant barriers for many researchers.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "We present a new R package called 'CNPS.cycle,' designed to streamline the interpretation of shotgun metagenomic data related to biogeochemical processes.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The CNPS.cycle package provides visually informative outputs.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The package comprises four distinct analysis modules focused on carbon, nitrogen, phosphorus, and sulfur cycling.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Users can utilize the package by uploading annotation result files derived from shotgun metagenomic data based on the Kyoto Encyclopedia of Genes and Genomes and the NCBI non-redundant protein sequence database.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The package automates essential steps, including data preprocessing, curation, and differential analysis of biogeochemical cycle-related genes.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The package also automates the analysis of microorganisms possessing biogeochemical cycle-related genes at the contig level.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The package includes β-diversity analysis and data visualization.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The outcome is a comprehensive analysis revealing differentially abundant genes and functionally significant microbial entities associated with the carbon, nitrogen, phosphorus, and sulfur cycles.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "The results are presented in the form of tables and high-quality images.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "This tool provides profound insights into the relationship between soil microorganisms and elemental chemical cycles.",
+        "category": "Conclusion",
+        "rank": 5
+      },
+      {
+        "sentence": "The tool advances our comprehension of soil ecosystems.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "The CNPS.cycle package is available on GitHub (https://github.com/yuezhengfu/CNPS.cycle).",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "Detailed instructions on the usage of the package can be found on the project's GitHub page (https://github.com/yuezhengfu/CNPS.cycle/wiki).",
+        "category": "Other",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "The \"CNPS.cycle\" R package offers significant environmental implications by simplifying the analysis of shotgun metagenomic data related to biogeochemical cycles. Its automated workflow identifies key genes and microbes involved in carbon, nitrogen, phosphorus, and sulfur cycling, enhancing our understanding of microbial contributions to ecosystem functions. This tool enables researchers to explore microbial-mediated nutrient cycling more efficiently, supporting informed decisions in environmental management and climate change mitigation. By providing accessible, high-quality outputs, \"CNPS.cycle\" facilitates data-driven insights into the interplay between microbes and global biogeochemical processes.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The 'CNPS.cycle' R package simplifies the analysis of shotgun metagenomic data related to biogeochemical cycles.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The 'CNPS.cycle' R package has significant environmental implications.",
+        "category": "Conclusion",
+        "rank": 3
+      },
+      {
+        "sentence": "The automated workflow of 'CNPS.cycle' identifies key genes and microbes involved in carbon, nitrogen, phosphorus, and sulfur cycling.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The tool enhances understanding of microbial contributions to ecosystem functions.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "The 'CNPS.cycle' tool enables researchers to explore microbial-mediated nutrient cycling more efficiently.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The tool supports informed decisions in environmental management and climate change mitigation.",
+        "category": "Conclusion",
+        "rank": 3
+      },
+      {
+        "sentence": "By providing accessible, high-quality outputs, 'CNPS.cycle' facilitates data-driven insights into the interplay between microbes and global biogeochemical processes.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

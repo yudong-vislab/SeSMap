@@ -1,0 +1,48 @@
+[
+  {
+    "paragraph": "Cancer genomics projects employ high-throughput technologies to identify the complete catalog of somatic alterations that characterize the genome, transcriptome and epigenome of cohorts of tumor samples. Examples include projects carried out by the International Cancer Genome Consortium (ICGC) and The Cancer Genome Atlas (TCGA). A crucial step in the extraction of knowledge from the data is the exploration by experts of the different alterations, as well as the multiple relationships between them. To that end, the use of intuitive visualization tools that can integrate different types of alterations with clinical data is essential to the field of cancer genomics. Here, we review effective and common visualization techniques for exploring oncogenomics data and discuss a selection of tools that allow researchers to effectively visualize multidimensional oncogenomics datasets. The review covers visualization methods employed by tools such as Circos, Gitools, the Integrative Genomics Viewer, Cytoscape, Savant Genome Browser, StratomeX and platforms such as cBio Cancer Genomics Portal, IntOGen, the UCSC Cancer Genomics Browser, the Regulome Explorer and the Cancer Genome Workbench.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Cancer genomics projects employ high-throughput technologies to identify the complete catalog of somatic alterations that characterize the genome, transcriptome, and epigenome of cohorts of tumor samples.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Examples of cancer genomics projects include those carried out by the International Cancer Genome Consortium (ICGC) and The Cancer Genome Atlas (TCGA).",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "A crucial step in the extraction of knowledge from cancer genomics data is the exploration by experts of the different alterations and the multiple relationships between them.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The use of intuitive visualization tools that can integrate different types of alterations with clinical data is essential to the field of cancer genomics.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "This review discusses effective and common visualization techniques for exploring oncogenomics data.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "The review highlights tools that allow researchers to effectively visualize multidimensional oncogenomics datasets.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "Visualization methods employed by tools such as Circos, Gitools, the Integrative Genomics Viewer, Cytoscape, Savant Genome Browser, and StratomeX are covered.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Platforms such as cBio Cancer Genomics Portal, IntOGen, the UCSC Cancer Genomics Browser, the Regulome Explorer, and the Cancer Genome Workbench are also discussed.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  }
+]

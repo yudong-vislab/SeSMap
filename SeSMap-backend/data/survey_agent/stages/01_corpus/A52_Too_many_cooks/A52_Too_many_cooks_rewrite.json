@@ -1,0 +1,53 @@
+[
+  {
+    "paragraph": "Findings from graphical perception can guide visualization recommendation algorithms in identifying effective visualization designs. However, existing algorithms use knowledge from, at best, a few studies, limiting our understanding of how complementary (or contradictory) graphical perception results influence generated recommendations. In this paper, we present a pipeline of applying a large body of graphical perception results to develop new visualization recommendation algorithms and conduct an exploratory study to investigate how results from graphical perception can alter the behavior of downstream algorithms. Specifically, we model graphical perception results from 30 papers in Draco-a framework to model visualization knowledge-to develop new recommendation algorithms. By analyzing Draco-generated algorithms, we showcase the feasibility of our method to (1) identify gaps in existing graphical perception literature informing recommendation algorithms, (2) cluster papers by their preferred design rules and constraints, and (3) investigate why certain studies can dominate Draco's recommendations, whereas others may have little influence. Given our findings, we discuss the potential for mutually reinforcing advancements in graphical perception and visualization recommendation research.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Findings from graphical perception can guide visualization recommendation algorithms in identifying effective visualization designs.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Existing algorithms use knowledge from, at best, a few studies, limiting our understanding of how complementary or contradictory graphical perception results influence generated recommendations.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "A pipeline is presented for applying a large body of graphical perception results to develop new visualization recommendation algorithms.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "An exploratory study is conducted to investigate how results from graphical perception can alter the behavior of downstream algorithms.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "Graphical perception results from 30 papers are modeled in Draco, a framework to model visualization knowledge, to develop new recommendation algorithms.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "By analyzing Draco-generated algorithms, the feasibility of the method is showcased to identify gaps in existing graphical perception literature informing recommendation algorithms.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "By analyzing Draco-generated algorithms, the feasibility of the method is showcased to cluster papers by their preferred design rules and constraints.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "By analyzing Draco-generated algorithms, the feasibility of the method is showcased to investigate why certain studies can dominate Draco's recommendations, whereas others may have little influence.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The potential for mutually reinforcing advancements in graphical perception and visualization recommendation research is discussed.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  }
+]

@@ -1,0 +1,5 @@
+# phiGENOME: an integrative navigation throughout bacteriophage genomes
+
+## Abstract
+
+phiGENOME is a web-based genome browser generating dynamic and interactive graphical representation of phage genomes stored in the phiSITE, database of gene regulation in bacteriophages. phiGENOME is an integral part of the phiSITE web portal (http://www.phisite.org/phigenome) and it was optimised for visualisation of phage genomes with the emphasis on the gene regulatory elements. phiGENOME consists of three components: (i) genome map viewer built using Adobe Flash technology, providing dynamic and interactive graphical display of phage genomes; (ii) sequence browser based on precisely formatted HTML tags, providing detailed exploration of genome features on the sequence level and (iii) regulation illustrator, based on Scalable Vector Graphics (SVG) and designed for graphical representation of gene regulations. Bringing 542 complete genome sequences accompanied with their rich annotations and references, makes phiGENOME a unique information resource in the field of phage genomics.

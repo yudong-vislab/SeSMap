@@ -1,0 +1,68 @@
+[
+  {
+    "paragraph": "Cell-to-cell communication (CCC) plays important roles in multicellular organisms. The identification of communication between cancer cells themselves and one between cancer cells and normal cells in tumor microenvironment helps understand cancer genesis, development and metastasis. CCC is usually mediated by Ligand-Receptor Interactions (LRIs). In this manuscript, we developed a Boosting-based LRI identification model (CellEnBoost) for CCC inference. First, potential LRIs are predicted by data collection, feature extraction, dimensional reduction, and classification based on an ensemble of Light gradient boosting machine and AdaBoost combining convolutional neural network. Next, the predicted LRIs and known LRIs are filtered. Third, the filtered LRIs are applied to CCC elucidation by combining CCC strength measurement and single-cell RNA sequencing data. Finally, CCC inference results are visualized using heatmap view, Circos plot view, and network view. The experimental results show that CellEnBoost obtained the best AUCs and AUPRs on the collected four LRI datasets. Case study in human head and neck squamous cell carcinoma (HNSCC) tissues demonstrates that fibroblasts were more likely to communicate with HNSCC cells, which is in accord with the results from iTALK. We anticipate that this work can contribute to the diagnosis and treatment of cancers.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Cell-to-cell communication (CCC) plays important roles in multicellular organisms.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The identification of communication between cancer cells themselves and between cancer cells and normal cells in the tumor microenvironment helps understand cancer genesis, development, and metastasis.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "CCC is usually mediated by Ligand-Receptor Interactions (LRIs).",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "We developed a Boosting-based LRI identification model (CellEnBoost) for CCC inference.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Potential LRIs are predicted by data collection, feature extraction, dimensional reduction, and classification based on an ensemble of Light gradient boosting machine and AdaBoost combining convolutional neural network.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The predicted LRIs and known LRIs are filtered.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The filtered LRIs are applied to CCC elucidation by combining CCC strength measurement and single-cell RNA sequencing data.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "CCC inference results are visualized using heatmap view, Circos plot view, and network view.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The experimental results show that CellEnBoost obtained the best AUCs and AUPRs on the collected four LRI datasets.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "A case study in human head and neck squamous cell carcinoma (HNSCC) tissues demonstrates that fibroblasts were more likely to communicate with HNSCC cells.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "This finding is in accord with the results from iTALK.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "We anticipate that this work can contribute to the diagnosis and treatment of cancers.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  }
+]

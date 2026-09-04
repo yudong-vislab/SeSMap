@@ -1,0 +1,44 @@
+[
+  {
+    "paragraph": "Gepard provides a user-friendly, interactive application for the quick creation of dotplots. It utilizes suffix arrays to reduce the time complexity of dotplot calculation to Theta(m*log n). A client-server mode, which is a novel feature for dotplot creation software, allows the user to calculate dotplots and color them by functional annotation without any prior downloading of sequence or annotation data.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Gepard provides a user-friendly, interactive application for the quick creation of dotplots.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Gepard utilizes suffix arrays to reduce the time complexity of dotplot calculation to Theta(m*log n).",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Gepard includes a client-server mode, which is a novel feature for dotplot creation software.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The client-server mode allows the user to calculate dotplots and color them by functional annotation without any prior downloading of sequence or annotation data.",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "Both source codes and executable binaries are available at http://mips.gsf.de/services/analysis/gepard",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Source codes are available at http://mips.gsf.de/services/analysis/gepard.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Executable binaries are available at http://mips.gsf.de/services/analysis/gepard.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

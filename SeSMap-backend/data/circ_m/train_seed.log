@@ -1,0 +1,23 @@
+[v11] N=2241 dim=1024 | lambda_tsne=1.0 lambda_con=0.3
+[v11] positives: train=753 test(held-out)=188 | pairs meta=pairs are ROW indices into EMB_CACHE; positives are cross-pa
+[P] cached -> data/circ_m/stages/05_model/tsne_P_perp30.npy
+[P] ready (2241, 2241)
+[v11] it 0001/1500 loss=6.3943 trust=0.667 knnOv=0.036 BZrec@12_2d=0.043
+[v11] it 0100/1500 loss=3.5226 trust=0.887 knnOv=0.323 BZrec@12_2d=0.287
+[v11] it 0200/1500 loss=3.0587 trust=0.906 knnOv=0.379 BZrec@12_2d=0.399
+[v11] it 0300/1500 loss=2.8035 trust=0.914 knnOv=0.392 BZrec@12_2d=0.394
+[v11] it 0400/1500 loss=2.6695 trust=0.917 knnOv=0.399 BZrec@12_2d=0.415
+[v11] it 0500/1500 loss=2.5805 trust=0.918 knnOv=0.397 BZrec@12_2d=0.415
+[v11] it 0600/1500 loss=2.5311 trust=0.917 knnOv=0.398 BZrec@12_2d=0.410
+[v11] it 0700/1500 loss=2.4723 trust=0.919 knnOv=0.402 BZrec@12_2d=0.426
+[v11] it 0800/1500 loss=2.4365 trust=0.917 knnOv=0.401 BZrec@12_2d=0.436
+[v11] it 0900/1500 loss=2.4126 trust=0.917 knnOv=0.400 BZrec@12_2d=0.431
+[v11] it 1000/1500 loss=2.3922 trust=0.917 knnOv=0.401 BZrec@12_2d=0.426
+[v11] it 1100/1500 loss=2.3777 trust=0.917 knnOv=0.402 BZrec@12_2d=0.426
+[v11] it 1200/1500 loss=2.3663 trust=0.917 knnOv=0.401 BZrec@12_2d=0.426
+[v11] it 1300/1500 loss=2.3694 trust=0.917 knnOv=0.401 BZrec@12_2d=0.420
+[v11] it 1400/1500 loss=2.3619 trust=0.917 knnOv=0.401 BZrec@12_2d=0.420
+[v11] it 1500/1500 loss=2.3599 trust=0.917 knnOv=0.401 BZrec@12_2d=0.415
+
+[v11] FINAL trust=0.917 knnOv=0.401 {'n': 188, 'bz_recall@12_2d': 0.4148936170212766, 'bz_recall@12_highD': 0.9946808510638298}
+[save] data/circ_m/stages/05_model/seed_M_lam0.3_s0.pt

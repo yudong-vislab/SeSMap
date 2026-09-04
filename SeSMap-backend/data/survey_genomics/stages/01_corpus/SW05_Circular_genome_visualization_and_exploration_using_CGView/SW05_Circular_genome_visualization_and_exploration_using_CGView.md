@@ -1,0 +1,9 @@
+# Circular genome visualization and exploration using CGView
+
+## Unlabelled
+
+CGView (Circular Genome Viewer) is a Java application and library for generating high-quality, zoomable maps of circular genomes. It converts XML or tab-delimited input into a graphical map (PNG, JPG or Scalable Vector Graphics format), complete with sequence features, labels, legends and footnotes. In addition to the default full view map, the program can generate a series of hyperlinked maps showing expanded views. The linked maps can be explored using any Web browser, allowing rapid genome browsing and facilitating data sharing.
+
+## Availability
+
+CGView (the standalone application, library or applet), sample input, sample maps and documentation can be obtained from http://wishart.biology.ualberta.ca/cgview/

@@ -1,0 +1,5 @@
+# shinyCircos-V2.0: Leveraging the creation of Circos plot with enhanced usability and advanced features
+
+## Abstract
+
+We previously developed shinyCircos, an interactive web application for creating Circos diagrams, which has been widely recognized for its graphical user interface and ease of use. Here, we introduce shinyCircos-V2.0, an upgraded version of shinyCircos that includes a new user interface with enhanced usability and many new features for creating advanced Circos plots. To help users get started with shinyCircos-V2.0, we provide detailed tutorials and example input data sets. The application is available online at https://venyao.xyz/shinyCircos/ and https://asiawang.shinyapps.io/shinyCircos/, or can be installed locally using the source code deposited in GitHub (https://github.com/YaoLab-Bioinfo/shinyCircos-V2.0).

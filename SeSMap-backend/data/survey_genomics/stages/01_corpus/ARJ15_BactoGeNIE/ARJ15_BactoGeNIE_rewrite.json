@@ -1,0 +1,80 @@
+[
+  {
+    "paragraph": "The volume of complete bacterial genome sequence data available to comparative genomics researchers is rapidly increasing. However, visualizations in comparative genomics--which aim to enable analysis tasks across collections of genomes--suffer from visual scalability issues. While large, multi-tiled and high-resolution displays have the potential to address scalability issues, new approaches are needed to take advantage of such environments, in order to enable the effective visual analysis of large genomics datasets.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The volume of complete bacterial genome sequence data available to comparative genomics researchers is rapidly increasing.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Visualizations in comparative genomics aim to enable analysis tasks across collections of genomes.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Visualizations in comparative genomics suffer from visual scalability issues.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Large, multi-tiled, and high-resolution displays have the potential to address scalability issues.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "New approaches are needed to take advantage of large, multi-tiled, and high-resolution displays.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "New approaches are needed to enable the effective visual analysis of large genomics datasets.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "In this paper, we present Bacterial Gene Neighborhood Investigation Environment, or BactoGeNIE, a novel and visually scalable design for comparative gene neighborhood analysis on large display environments. We evaluate BactoGeNIE through a case study on close to 700 draft Escherichia coli genomes, and present lessons learned from our design process.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "BactoGeNIE is a novel and visually scalable design for comparative gene neighborhood analysis on large display environments.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "BactoGeNIE was evaluated through a case study on close to 700 draft Escherichia coli genomes.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "Lessons were learned from the design process of BactoGeNIE.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "BactoGeNIE accommodates comparative tasks over substantially larger collections of neighborhoods than existing tools and explicitly addresses visual scalability. Given current trends in data generation, scalable designs of this type may inform visualization design for large-scale comparative research problems in genomics.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "BactoGeNIE accommodates comparative tasks over substantially larger collections of neighborhoods than existing tools.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "BactoGeNIE explicitly addresses visual scalability.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Scalable designs like BactoGeNIE may inform visualization design for large-scale comparative research problems in genomics.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  }
+]

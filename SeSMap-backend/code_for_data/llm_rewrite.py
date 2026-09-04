@@ -80,11 +80,24 @@ Paragraph:
 """
 
     client = get_openai_client()
-    response = client.chat.completions.create(
-        model=model_for("summary"),
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0
-    )
+    # 瞬时网络/限流错误重试：单次抖动不应中断整批语料构建
+    import time as _t
+    _last = None
+    for _try in range(5):
+        try:
+            response = client.chat.completions.create(
+                model=model_for("summary"),
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0
+            )
+            break
+        except Exception as _e:
+            _last = _e
+            print(f"    [retry {_try+1}/5] {type(_e).__name__}: {str(_e)[:80]}", flush=True)
+            _t.sleep(3 * (_try + 1))
+    else:
+        print(f"    [skip] 连续 5 次失败，跳过该段: {type(_last).__name__}", flush=True)
+        return []
 
     # 提取结果
     text_output = response.choices[0].message.content.strip()

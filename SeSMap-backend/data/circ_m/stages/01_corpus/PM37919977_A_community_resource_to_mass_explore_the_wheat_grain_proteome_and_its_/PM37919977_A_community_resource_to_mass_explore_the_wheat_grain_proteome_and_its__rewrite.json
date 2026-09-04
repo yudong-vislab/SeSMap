@@ -1,0 +1,130 @@
+[
+  {
+    "paragraph": "Late-maturity alpha-amylase (LMA) is a wheat genetic defect causing the synthesis of high isoelectric point alpha-amylase following a temperature shock during mid-grain development or prolonged cold throughout grain development, both leading to starch degradation. While the physiology is well understood, the biochemical mechanisms involved in grain LMA response remain unclear. We have applied high-throughput proteomics to 4,061 wheat flours displaying a range of LMA activities. Using an array of statistical analyses to select LMA-responsive biomarkers, we have mined them using a suite of tools applicable to wheat proteins.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Late-maturity alpha-amylase (LMA) is a wheat genetic defect causing the synthesis of high isoelectric point alpha-amylase following a temperature shock during mid-grain development or prolonged cold throughout grain development, both leading to starch degradation.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The physiology of LMA is well understood.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The biochemical mechanisms involved in grain LMA response remain unclear.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "High-throughput proteomics was applied to 4,061 wheat flours displaying a range of LMA activities.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "An array of statistical analyses was used to select LMA-responsive biomarkers.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The selected biomarkers were mined using a suite of tools applicable to wheat proteins.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "We observed that LMA-affected grains activated their primary metabolisms such as glycolysis and gluconeogenesis; TCA cycle, along with DNA- and RNA- binding mechanisms; and protein translation. This logically transitioned to protein folding activities driven by chaperones and protein disulfide isomerase, as well as protein assembly via dimerisation and complexing. The secondary metabolism was also mobilized with the upregulation of phytohormones and chemical and defence responses. LMA further invoked cellular structures, including ribosomes, microtubules, and chromatin. Finally, and unsurprisingly, LMA expression greatly impacted grain storage proteins, as well as starch and other carbohydrates, with the upregulation of alpha-gliadins and starch metabolism, whereas LMW glutenin, stachyose, sucrose, UDP-galactose, and UDP-glucose were downregulated.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "LMA-affected grains activated their primary metabolisms such as glycolysis and gluconeogenesis.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "LMA-affected grains activated the TCA cycle.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "LMA-affected grains activated DNA- and RNA-binding mechanisms.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "LMA-affected grains activated protein translation.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Protein folding activities were driven by chaperones and protein disulfide isomerase.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Protein assembly occurred via dimerisation and complexing.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The secondary metabolism was mobilized with the upregulation of phytohormones.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The secondary metabolism was mobilized with the upregulation of chemical and defence responses.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "LMA invoked cellular structures, including ribosomes, microtubules, and chromatin.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "LMA expression greatly impacted grain storage proteins, as well as starch and other carbohydrates.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "LMA upregulated alpha-gliadins and starch metabolism.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "LMA downregulated LMW glutenin, stachyose, sucrose, UDP-galactose, and UDP-glucose.",
+        "category": "Result",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "To our knowledge, this is not only the first proteomics study tackling the wheat LMA issue but also the largest plant-based proteomics study published to date. Logistics, technicalities, requirements, and bottlenecks of such an ambitious large-scale high-throughput proteomics experiment along with the challenges associated with big data analyses are discussed.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "This is the first proteomics study tackling the wheat LMA issue.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "This is the largest plant-based proteomics study published to date.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Logistics, technicalities, requirements, and bottlenecks of a large-scale high-throughput proteomics experiment are discussed.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Challenges associated with big data analyses are discussed.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Enabling interspecies epigenomic comparison with CEpBrowser",
+    "paragraphs": []
+  },
+  {
+    "title": "Enabling interspecies epigenomic comparison with CEpBrowser-Summary",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "We developed the Comparative Epigenome Browser (CEpBrowser) to allow the public to perform multi-species epigenomic analysis. The web-based CEpBrowser integrates, manages and visualizes sequencing-based epigenomic datasets. Five key features were developed to maximize the efficiency of interspecies epigenomic comparisons.",
+        "abstract_summary": ""
+      }
+    ]
+  },
+  {
+    "title": "Enabling interspecies epigenomic comparison with CEpBrowser-Availability",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "CEpBrowser is a web application implemented with PHP, MySQL, C and Apache. URL: http://www.cepbrowser.org/.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

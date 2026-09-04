@@ -1,0 +1,13 @@
+# A community resource to mass explore the wheat grain proteome and its application to the late-maturity alpha-amylase (LMA) problem
+
+## Background
+
+Late-maturity alpha-amylase (LMA) is a wheat genetic defect causing the synthesis of high isoelectric point alpha-amylase following a temperature shock during mid-grain development or prolonged cold throughout grain development, both leading to starch degradation. While the physiology is well understood, the biochemical mechanisms involved in grain LMA response remain unclear. We have applied high-throughput proteomics to 4,061 wheat flours displaying a range of LMA activities. Using an array of statistical analyses to select LMA-responsive biomarkers, we have mined them using a suite of tools applicable to wheat proteins.
+
+## Results
+
+We observed that LMA-affected grains activated their primary metabolisms such as glycolysis and gluconeogenesis; TCA cycle, along with DNA- and RNA- binding mechanisms; and protein translation. This logically transitioned to protein folding activities driven by chaperones and protein disulfide isomerase, as well as protein assembly via dimerisation and complexing. The secondary metabolism was also mobilized with the upregulation of phytohormones and chemical and defence responses. LMA further invoked cellular structures, including ribosomes, microtubules, and chromatin. Finally, and unsurprisingly, LMA expression greatly impacted grain storage proteins, as well as starch and other carbohydrates, with the upregulation of alpha-gliadins and starch metabolism, whereas LMW glutenin, stachyose, sucrose, UDP-galactose, and UDP-glucose were downregulated.
+
+## Conclusions
+
+To our knowledge, this is not only the first proteomics study tackling the wheat LMA issue but also the largest plant-based proteomics study published to date. Logistics, technicalities, requirements, and bottlenecks of such an ambitious large-scale high-throughput proteomics experiment along with the challenges associated with big data analyses are discussed.

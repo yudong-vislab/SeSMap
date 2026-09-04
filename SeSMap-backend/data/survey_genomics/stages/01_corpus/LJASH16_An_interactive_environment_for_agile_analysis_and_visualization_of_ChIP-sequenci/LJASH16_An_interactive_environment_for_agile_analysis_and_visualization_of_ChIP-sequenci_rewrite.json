@@ -1,0 +1,53 @@
+[
+  {
+    "paragraph": "To empower experimentalists with a means for fast and comprehensive chromatin immunoprecipitation sequencing (ChIP-seq) data analyses, we introduce an integrated computational environment, EaSeq. The software combines the exploratory power of genome browsers with an extensive set of interactive and user-friendly tools for genome-wide abstraction and visualization. It enables experimentalists to easily extract information and generate hypotheses from their own data and public genome-wide datasets. For demonstration purposes, we performed meta-analyses of public Polycomb ChIP-seq data and established a new screening approach to analyze more than 900 datasets from mouse embryonic stem cells for factors potentially associated with Polycomb recruitment. EaSeq, which is freely available and works on a standard personal computer, can substantially increase the throughput of many analysis workflows, facilitate transparency and reproducibility by automatically documenting and organizing analyses, and enable a broader group of scientists to gain insights from ChIP-seq data.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "We introduce an integrated computational environment, EaSeq, for fast and comprehensive chromatin immunoprecipitation sequencing (ChIP-seq) data analyses.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "EaSeq combines the exploratory power of genome browsers with an extensive set of interactive and user-friendly tools for genome-wide abstraction and visualization.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "EaSeq enables experimentalists to easily extract information and generate hypotheses from their own data and public genome-wide datasets.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "We performed meta-analyses of public Polycomb ChIP-seq data for demonstration purposes.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "We established a new screening approach to analyze more than 900 datasets from mouse embryonic stem cells for factors potentially associated with Polycomb recruitment.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "EaSeq is freely available and works on a standard personal computer.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "EaSeq can substantially increase the throughput of many analysis workflows.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "EaSeq facilitates transparency and reproducibility by automatically documenting and organizing analyses.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "EaSeq enables a broader group of scientists to gain insights from ChIP-seq data.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  }
+]

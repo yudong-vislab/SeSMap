@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Genome2D: a visualization tool for the rapid analysis of bacterial transcriptome data",
+    "paragraphs": []
+  },
+  {
+    "title": "Genome2D: a visualization tool for the rapid analysis of bacterial transcriptome data-Abstract",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Genome2D is a Windows-based software tool for visualization of bacterial transcriptome and customized datasets on linear chromosome maps constructed from annotated genome sequences. Genome2D facilitates the analysis of transcriptome data by using different color ranges to depict differences in gene-expression levels on a genome map. Such output format enables visual inspection of the transcriptome data, and will quickly reveal transcriptional units, without prior knowledge of expression level cutoff values. The compiled version of Genome2D is freely available for academic or non-profit use from http://molgen.biol.rug.nl/molgen/research/molgensoftware.php.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

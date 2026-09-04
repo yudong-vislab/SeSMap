@@ -1,0 +1,162 @@
+[
+  {
+    "paragraph": "Tau-derived cerebrospinal fluid (CSF) biomarkers correlate with amyloid-beta (Aβ) plaques or tau tangles in Alzheimer's disease (AD). This study assessed the effects of long-term anti-Aβ antibodies on amyloid plaques, tau tangles, and CSF tau species to determine the relationships between them.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Tau-derived cerebrospinal fluid (CSF) biomarkers correlate with amyloid-beta (Aβ) plaques or tau tangles in Alzheimer's disease (AD).",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "This study assessed the effects of long-term anti-Aβ antibodies on amyloid plaques.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "This study assessed the effects of long-term anti-Aβ antibodies on tau tangles.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "This study assessed the effects of long-term anti-Aβ antibodies on CSF tau species.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "The study aimed to determine the relationships between amyloid plaques, tau tangles, and CSF tau species.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "A post-hoc analysis of the DIAN-TU-001 trial (NCT01760005) examined 142 participants at risk for dominantly inherited AD randomized to solanezumab (n = 50), gantenerumab (n = 52), or placebo (n = 40). High-resolution mass spectrometry quantified CSF tau species over four years.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A post-hoc analysis of the DIAN-TU-001 trial (NCT01760005) examined 142 participants at risk for dominantly inherited AD.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Participants were randomized to solanezumab (n=50), gantenerumab (n=52), or placebo (n=40).",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "High-resolution mass spectrometry quantified CSF tau species over four years.",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "Phosphorylated tau (p-tau) species (153, 181, 217, 231) increased early in preclinical AD but were reduced with gantenerumab-mediated Aβ plaque reduction. Nearly a decade later, MTBR-tau243 and p-tau205 increased, showing no association with Aβ reduction, aligning with tau tangle pathology progression.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Phosphorylated tau (p-tau) species (153, 181, 217, 231) increased early in preclinical AD.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Phosphorylated tau (p-tau) species (153, 181, 217, 231) were reduced with gantenerumab-mediated Aβ plaque reduction.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Nearly a decade later, MTBR-tau243 and p-tau205 increased.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "MTBR-tau243 and p-tau205 showed no association with Aβ reduction.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The increase in MTBR-tau243 and p-tau205 aligns with tau tangle pathology progression.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "Initially changing soluble p-tau species track Aβ plaque reduction, while ptau205 and MTBR-243 reflect tau tangle pathology, informing different pathways of therapeutic strategies.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Soluble p-tau species initially change to track Aβ plaque reduction.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "p-tau205 reflects tau tangle pathology.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "MTBR-243 reflects tau tangle pathology.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "These findings inform different pathways of therapeutic strategies.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "p-tau217 and p-tau231 correlate with Aβ-PET and respond to Aβ-plaque lowering therapies. Aβ immunotherapy trials support a direct link between p-tau changes and Aβ plaques Gantenerumab reduces Aβ plaques but does not affect tau NFT-related biomarkers. Blood-based p-tau217 assays may provide a non-invasive tool to monitor Aβ therapies. MTBR-tau243 strongly correlates with tau PET and tracks NFT pathology progression. Further studies are needed to validate tau biomarkers for tracking NFT-targeting therapies.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "p-tau217 and p-tau231 correlate with Aβ-PET.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "p-tau217 and p-tau231 respond to Aβ-plaque lowering therapies.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Aβ immunotherapy trials support a direct link between p-tau changes and Aβ plaques.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Gantenerumab reduces Aβ plaques.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Gantenerumab does not affect tau NFT-related biomarkers.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Blood-based p-tau217 assays may provide a non-invasive tool to monitor Aβ therapies.",
+        "category": "Conclusion",
+        "rank": 5
+      },
+      {
+        "sentence": "MTBR-tau243 strongly correlates with tau PET.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "MTBR-tau243 tracks NFT pathology progression.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Further studies are needed to validate tau biomarkers for tracking NFT-targeting therapies.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "paragraph": "Mental health problems will seriously damage social harmony and family happiness. This paper proposes a study on mental health intelligence assessment based on multisource information fusion. Combining the data description of UPI and SCL-90 and the corresponding task requirement analysis, the multisource information fusion visualization based on the Circos diagram is designed and realized, and the parallel coordinate visualization is established. The MDS algorithm is used to project multidimensional survey objects into low-dimensional visualization space, and the actual UPI and SCL-90 questionnaire data for 278 students of a certain major at a university provided by the cooperative unit are used. The results show that the mental health problems of student A are serious, and the symptoms of depression and schizophrenia are prominent, so it is necessary to seek psychological experts for corresponding treatment in time. By contrast, student B's mental health problems are also serious, and the user judges that student B still needs further diagnosis and treatment. The correlation analysis results of multisource information fusion are roughly the same as the actual situation, which is convincing. Therefore, the multisource mental health information fusion of college students has a certain correlation and complementarity.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Mental health problems will seriously damage social harmony and family happiness.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "This paper proposes a study on mental health intelligence assessment based on multisource information fusion.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The multisource information fusion visualization based on the Circos diagram is designed and realized.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The parallel coordinate visualization is established.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The MDS algorithm is used to project multidimensional survey objects into low-dimensional visualization space.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The actual UPI and SCL-90 questionnaire data for 278 students of a certain major at a university provided by the cooperative unit are used.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "The results show that the mental health problems of student A are serious, and the symptoms of depression and schizophrenia are prominent.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "It is necessary to seek psychological experts for corresponding treatment for student A in time.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "Student B's mental health problems are also serious, and the user judges that student B still needs further diagnosis and treatment.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The correlation analysis results of multisource information fusion are roughly the same as the actual situation, which is convincing.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The multisource mental health information fusion of college students has a certain correlation and complementarity.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  }
+]

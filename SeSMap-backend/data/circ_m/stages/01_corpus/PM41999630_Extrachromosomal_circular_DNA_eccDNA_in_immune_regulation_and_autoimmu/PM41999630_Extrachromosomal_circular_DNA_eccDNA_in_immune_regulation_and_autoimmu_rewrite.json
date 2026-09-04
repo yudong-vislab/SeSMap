@@ -1,0 +1,58 @@
+[
+  {
+    "paragraph": "Extrachromosomal circular DNA (eccDNA) has transitioned from genomic curiosity to a pivotal regulator at the intersection of genomics and immunology. This review synthesizes recent advances in eccDNA biology, elucidating its integral roles in both innate and adaptive immunity and its pathogenic contributions to autoimmune diseases. eccDNA arises from diverse genomic events, including DNA damage repair, replication stress, and chromothripsis. In innate immunity, it functions as a potent damage-associated molecular pattern (DAMP), activating cytosolic sensors like cGAS-STING and AIM2 to drive type I interferon and pro-inflammatory cytokine responses. In the adaptive immune system, eccDNA is not merely a byproduct of processes such as V(D)J recombination (e.g., TRECs, KRECs); it also acts as an active modulator regulating immune gene expression via enhancer-like activity, influencing antigen presentation, and shaping T and B cell development. Critically, aberrant eccDNA accumulation is implicated in the pathogenesis of autoimmune disorders such as systemic lupus erythematosus and rheumatoid arthritis. Here, plasma eccDNA levels not only correlate with clinical disease activity indices but also track with therapeutic response, positioning eccDNA as a powerful non-invasive biomarker. Targeting eccDNA biogenesis or its sensing pathways thus represents a promising therapeutic frontier for restoring immune homeostasis. Future research integrating single-cell omics and longitudinal profiling is poised to dissect cell-specific functions and unlock the full clinical potential of eccDNA. Collectively, these findings establish eccDNA as both a functional regulator and a diagnostic tool, offering novel insights into the fundamental interplay between genomic integrity and immune function.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Extrachromosomal circular DNA (eccDNA) has transitioned from genomic curiosity to a pivotal regulator at the intersection of genomics and immunology.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "This review synthesizes recent advances in eccDNA biology, elucidating its integral roles in both innate and adaptive immunity and its pathogenic contributions to autoimmune diseases.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "eccDNA arises from diverse genomic events, including DNA damage repair, replication stress, and chromothripsis.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "In innate immunity, eccDNA functions as a potent damage-associated molecular pattern (DAMP), activating cytosolic sensors like cGAS-STING and AIM2 to drive type I interferon and pro-inflammatory cytokine responses.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "In the adaptive immune system, eccDNA is not merely a byproduct of processes such as V(D)J recombination (e.g., TRECs, KRECs); it also acts as an active modulator regulating immune gene expression via enhancer-like activity, influencing antigen presentation, and shaping T and B cell development.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Aberrant eccDNA accumulation is implicated in the pathogenesis of autoimmune disorders such as systemic lupus erythematosus and rheumatoid arthritis.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Plasma eccDNA levels not only correlate with clinical disease activity indices but also track with therapeutic response, positioning eccDNA as a powerful non-invasive biomarker.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "Targeting eccDNA biogenesis or its sensing pathways represents a promising therapeutic frontier for restoring immune homeostasis.",
+        "category": "Conclusion",
+        "rank": 5
+      },
+      {
+        "sentence": "Future research integrating single-cell omics and longitudinal profiling is poised to dissect cell-specific functions and unlock the full clinical potential of eccDNA.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "Collectively, these findings establish eccDNA as both a functional regulator and a diagnostic tool, offering novel insights into the fundamental interplay between genomic integrity and immune function.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

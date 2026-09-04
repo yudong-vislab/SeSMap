@@ -1,0 +1,26 @@
+[
+  {
+    "title": "theBIGbam: compression and interactive exploration of large-scale sequencing alignments with circular mapping support",
+    "paragraphs": []
+  },
+  {
+    "title": "theBIGbam: compression and interactive exploration of large-scale sequencing alignments with circular mapping support-Summary",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "theBIGbam (github.com/bhagavadgitadu22/theBIGbam) is a genome browser and alignment viewer designed for massive metagenomic and metatranscriptomic datasets. The tool takes BAM files containing read alignments, together with genome assemblies in FASTA format or annotated genome sequences in GenBank format. Alternatively, it can start from raw FASTQ reads and generate alignments using a modified mapper that supports circular genomes, enabling seamless read mapping across genome ends. theBIGbam can compress hundreds of gigabytes of input files 10- to 100-fold into dedicated databases while retaining key per-position information, including coverage depth and recurrent mismatches, insertions, and deletions between reads and the reference. These databases can be served to a local web browser, enabling interactive exploration of any contig in any sample using DNAFeaturesViewer for genome maps and Bokeh for mapping-derived features. Contig-sample pairs available for visualization can be filtered using a range of summary metrics calculated per contig, per sample, and per contig-sample pair to guide users toward the most relevant signals. Through its interactive visualization, theBIGbam facilitates the exploration of complex datasets, while its integrated database-combining assembly features, annotated features, and mapping-derived features-provides the information needed to investigate biological hypotheses systematically. Designed to complement existing browsing tools like IGV and Anvi'o, theBIGbam is particularly suited for examining misassemblies, subpopulations, microdiversity, and contig topology in large-scale datasets.",
+        "abstract_summary": ""
+      }
+    ]
+  },
+  {
+    "title": "theBIGbam: compression and interactive exploration of large-scale sequencing alignments with circular mapping support-Availability And Implementation",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "theBIGbam is an open-source Rust/Python package that can be installed from Bioconda or PyPI. The source code and documentation are available on GitHub (github.com/bhagavadgitadu22/theBIGbam).",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

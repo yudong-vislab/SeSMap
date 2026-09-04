@@ -1,0 +1,63 @@
+[
+  {
+    "paragraph": "Extrachromosomal circular DNA (eccDNA) of chromosomal origin is found in many eukaryotic species and cell types, including cancer, where eccDNAs with oncogenes drive tumorigenesis. Most studies of eccDNA employ short-read sequencing for their identification. However, short-read sequencing cannot resolve the complexity of genomic repeats, which can lead to missing eccDNA products. Long-read sequencing technologies provide an alternative to constructing complete eccDNA maps. We present a software suite, Construction-based Rolling-circle-amplification for eccDNA Sequence Identification and Location (CReSIL), to identify and characterize eccDNA from long-read sequences. CReSIL's performance in identifying eccDNA, with a minimum F1 score of 0.98, is superior to the other bioinformatic tools based on simulated data. CReSIL provides many useful features for genomic annotation, which can be used to infer eccDNA function and Circos visualization for eccDNA architecture investigation. We demonstrated CReSIL's capability in several long-read sequencing datasets, including datasets enriched for eccDNA and whole genome datasets from cells containing large eccDNA products. In conclusion, the CReSIL suite software is a versatile tool for investigating complex and simple eccDNA in eukaryotic cells.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Extrachromosomal circular DNA (eccDNA) of chromosomal origin is found in many eukaryotic species and cell types, including cancer.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "EccDNAs with oncogenes drive tumorigenesis.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Most studies of eccDNA employ short-read sequencing for their identification.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Short-read sequencing cannot resolve the complexity of genomic repeats, which can lead to missing eccDNA products.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Long-read sequencing technologies provide an alternative to constructing complete eccDNA maps.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "We present a software suite, Construction-based Rolling-circle-amplification for eccDNA Sequence Identification and Location (CReSIL), to identify and characterize eccDNA from long-read sequences.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "CReSIL's performance in identifying eccDNA, with a minimum F1 score of 0.98, is superior to the other bioinformatic tools based on simulated data.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "CReSIL provides many useful features for genomic annotation, which can be used to infer eccDNA function.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "CReSIL provides Circos visualization for eccDNA architecture investigation.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "We demonstrated CReSIL's capability in several long-read sequencing datasets, including datasets enriched for eccDNA and whole genome datasets from cells containing large eccDNA products.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "The CReSIL suite software is a versatile tool for investigating complex and simple eccDNA in eukaryotic cells.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

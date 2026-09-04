@@ -1,0 +1,2075 @@
+[
+  {
+    "paragraph": "Astrid van den Brandt , Kiroong Choe , Sehi L’Yi , Devin Lange , and Nils Gehlenborg",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Astrid van den Brandt, Kiroong Choe, Sehi L’Yi, Devin Lange, and Nils Gehlenborg are the authors of the paper.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Index Terms—Visualization authoring, Genomics data visualization, Multi-agent system",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Visualization authoring is discussed.",
+        "category": "Background",
+        "rank": 1
+      },
+      {
+        "sentence": "Genomics data visualization is addressed.",
+        "category": "Background",
+        "rank": 1
+      },
+      {
+        "sentence": "A multi-agent system is considered.",
+        "category": "Background",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Genomics research spans diverse data types, scientific questions, and analysis tasks, each typically demanding highly specialized visualizations [36]. As a consequence, the design space for genomics data visualization is vast; users often need to create or customize entirely new visualizations tailored to their specific data and analysis tasks. Although many visualization tools are available, they are typically either limited in the degree of customization they support or require extensive learning or even programming effort to use effectively. This creates a lock-in effect, where users are constrained by the affordances of a single tool. Moreover, even when a tool is sufficiently expressive, users may lack the visualization expertise to produce effective designs [46].",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Genomics research spans diverse data types, scientific questions, and analysis tasks.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Each type of genomics research typically demands highly specialized visualizations.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The design space for genomics data visualization is vast.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Users often need to create or customize entirely new visualizations tailored to their specific data and analysis tasks.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Many visualization tools are available for genomics research.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Visualization tools are typically limited in the degree of customization they support.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Some visualization tools require extensive learning or even programming effort to use effectively.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "This creates a lock-in effect, where users are constrained by the affordances of a single tool.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Even when a tool is sufficiently expressive, users may lack the visualization expertise to produce effective designs.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Large language model (LLM)-based approaches are increasingly used to assist users in complex scientific and engineering tasks. In the context of visualization, they have been applied to a growing range of tasks, most prominently for automatic visualization generation from natural language [5, 7, 12, 17, 19, 24, 27, 30, 32, 37, 39, 40, 47, 53], but also recommendation [1, 21, 49], evaluation and visualization literacy [11, 14], and design studies [41]. The use of natural language through conversational interfaces is a particularly promising avenue for democratizing complex visualization authoring, lowering the barrier for users who lack programming or visualization expertise.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Large language model (LLM)-based approaches are increasingly used to assist users in complex scientific and engineering tasks.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "In the context of visualization, LLM-based approaches have been applied to automatic visualization generation from natural language.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "LLM-based approaches have also been applied to recommendation, evaluation, visualization literacy, and design studies.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The use of natural language through conversational interfaces is a promising avenue for democratizing complex visualization authoring.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "Conversational interfaces lower the barrier for users who lack programming or visualization expertise.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "While these models show capability for generic statistical visualizations, they remain limited when applied to complex, domain-specific data [11, 15, 53]. Genomics visualizations pose a particular challenge; they typically integrate heterogeneous data types and are composed of multiple linked, interactive views that support multiscale reasoning. Beyond these domain-specific visualization challenges, effective use of LLMs requires well-constructed prompts, which is itself a non-trivial, trial-and-error process. While LLMs show promise for specific, wellscoped genomics visualizations [53], the capabilities and failure modes when authoring the full breadth of complex genomics visualizations are not yet well understood.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Generic statistical visualization models show capability for generic statistical visualizations.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "These models remain limited when applied to complex, domain-specific data.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Genomics visualizations pose a particular challenge.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Genomics visualizations typically integrate heterogeneous data types.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Genomics visualizations are composed of multiple linked, interactive views that support multiscale reasoning.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Effective use of LLMs requires well-constructed prompts.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Constructing well-constructed prompts for LLMs is a non-trivial, trial-and-error process.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "LLMs show promise for specific, well-scoped genomics visualizations.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "The capabilities and failure modes of LLMs when authoring the full breadth of complex genomics visualizations are not yet well understood.",
+        "category": "Background",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "Several strategies have been explored to adapt LLMs to specific tasks or domains, including supervised fine-tuning (SFT), prompt engineering, and retrieval-augmented generation (RAG). These can yield meaningful improvements, but each has its limits: fine-tuning is costly and data-hungry, prompt engineering can be ad hoc and brittle, and RAG depends heavily on quality and coverage. Moreover, LLM outputs are inherently stochastic and require steering. Recently, there has been a shift from using a single general-purpose LLM toward agent-based systems, where multiple specialized agents collaborate, access tools, critique, and iteratively refine outputs [16]. These so-called AI scientist systems offer several advantages: they avoid costly retraining, naturally support decomposition of complex tasks into smaller sub-tasks, and because agents operate within a defined scope and role, logging inputs and outputs in these more restricted contexts can improve provenance tracking, a known challenge in LLM-based systems [18].",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Several strategies have been explored to adapt LLMs to specific tasks or domains, including supervised fine-tuning (SFT), prompt engineering, and retrieval-augmented generation (RAG).",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Supervised fine-tuning (SFT) can yield meaningful improvements but is costly and data-hungry.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Prompt engineering can yield meaningful improvements but can be ad hoc and brittle.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Retrieval-augmented generation (RAG) can yield meaningful improvements but depends heavily on quality and coverage.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "LLM outputs are inherently stochastic and require steering.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "There has been a shift from using a single general-purpose LLM toward agent-based systems, where multiple specialized agents collaborate, access tools, critique, and iteratively refine outputs.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Agent-based systems avoid costly retraining.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Agent-based systems naturally support decomposition of complex tasks into smaller sub-tasks.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Agents operating within a defined scope and role can improve provenance tracking by logging inputs and outputs in more restricted contexts.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Provenance tracking is a known challenge in LLM-based systems.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "• A characterization of LLM capabilities and failure modes for genomics visualization authoring along eight quality dimensions.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A characterization of LLM capabilities for genomics visualization authoring is presented.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "A characterization of LLM failure modes for genomics visualization authoring is presented.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The characterization is conducted along eight quality dimensions.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "• An evaluation framework that uses a user proxy agent to simulate realistic query ambiguity, enabling comparison of authoring schemes beyond fully specified benchmarks.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "An evaluation framework uses a user proxy agent to simulate realistic query ambiguity.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The framework enables comparison of authoring schemes beyond fully specified benchmarks.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "• Findings from a comparative evaluation of six schemes on the effects of agentic iteration, agent architecture, specification complexity, and evaluation metrics.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A comparative evaluation was conducted on six schemes.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "The evaluation examined the effects of agentic iteration.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "The evaluation examined the effects of agent architecture.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "The evaluation examined the effects of specification complexity.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "The evaluation examined the effects of evaluation metrics.",
+        "category": "Experiment",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Based on these findings, we discuss how specialized grammars and flexible agents can complement each other, and what this means for the design and evaluation of agentic visualization authoring systems.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Specialized grammars and flexible agents can complement each other.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "This has implications for the design and evaluation of agentic visualization authoring systems.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "The genome is organized into chromosomes, each a long sequence of nucleotides (A, T, C, G) that encodes genetic information. Genomic datasets capture diverse signals along these sequences. Genomic data visualizations organize these datasets into tracks, which are composed into multi-view layouts for comparative analysis [29, 31] (see Fig. 2). Common tasks include identifying patterns across chromosomal regions, comparing signals between samples, and navigating across scales from whole-genome overviews to single-nucleotide detail [36]. Detailed nomenclature for genomic visualization types, tracks, and tasks can be found in Nusrat et al. [36].",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The genome is organized into chromosomes, each a long sequence of nucleotides (A, T, C, G) that encodes genetic information.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Genomic datasets capture diverse signals along these sequences.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Genomic data visualizations organize these datasets into tracks.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Tracks are composed into multi-view layouts for comparative analysis.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Common tasks include identifying patterns across chromosomal regions.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Common tasks include comparing signals between samples.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Common tasks include navigating across scales from whole-genome overviews to single-nucleotide detail.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Detailed nomenclature for genomic visualization types, tracks, and tasks can be found in Nusrat et al. [36].",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "The ability to author visualizations through natural language (NL2Vis) rather than code has been a longstanding goal in data visualization. The field has evolved from early rule-based and template-matching systems toward LLM-based approaches that can handle more diverse and underspecified queries. Various strategies for adapting LLMs to vi sualization authoring have been explored, from prompt engineering and fine-tuning to multi-step pipelines and agentic architectures. Systems such as LIDA [12], Chat2Vis [32], and ChartGPT [45] demonstrate that LLMs can generate visualizations from natural language, typically targeting single-view, single-dataset scenarios. More recent work moves beyond single-call generation. For example, VegaChat [19] uses fewshot prompted LLMs within a multi-turn pipeline that allows follow-up messages for chart refinements, though evaluation remains focused on single-view cases.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The ability to author visualizations through natural language (NL2Vis) rather than code has been a longstanding goal in data visualization.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The field has evolved from early rule-based and template-matching systems toward LLM-based approaches that can handle more diverse and underspecified queries.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Various strategies for adapting LLMs to visualization authoring have been explored, from prompt engineering and fine-tuning to multi-step pipelines and agentic architectures.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Systems such as LIDA, Chat2Vis, and ChartGPT demonstrate that LLMs can generate visualizations from natural language, typically targeting single-view, single-dataset scenarios.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "More recent work moves beyond single-call generation.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "VegaChat uses few-shot prompted LLMs within a multi-turn pipeline that allows follow-up messages for chart refinements.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Evaluation of VegaChat remains focused on single-view cases.",
+        "category": "Result",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Recently, AI agentic architectures have emerged as a distinct category of NL2Vis systems, with the potential to handle more complex scenarios through task decomposition and iterative refinement, though often at increased cost in latency and token usage [19]. Several systems have explored different perspectives in this design space. nvAgent [37] adopts a divide-and-conquer paradigm with three specialized agents (processor, composer, validator) and introduces a Visualization Query Language (VQL) as an intermediate representation bridging natural language and visualization code. PlotGen [17] uses five agents running sequentially with self-reflection loops, placing it closer to a structured LLM workflow than a fully agentic system. MatPlotAgent [51] and Drawer-Advisor [26] similarly explore agent-based generation with feedback mechanisms. CoDA [7] introduces a self-evolving pipeline where agents specialize in understanding, planning, generating, and reflecting, using metadata schemas and statistics to circumvent context window limits.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "AI agentic architectures have emerged as a distinct category of NL2Vis systems.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "AI agentic architectures have the potential to handle more complex scenarios through task decomposition and iterative refinement.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "AI agentic architectures often incur increased cost in latency and token usage.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "nvAgent adopts a divide-and-conquer paradigm with three specialized agents: processor, composer, and validator.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "nvAgent introduces a Visualization Query Language (VQL) as an intermediate representation bridging natural language and visualization code.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "PlotGen uses five agents running sequentially with self-reflection loops.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "PlotGen is closer to a structured LLM workflow than a fully agentic system.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "MatPlotAgent and Drawer-Advisor explore agent-based generation with feedback mechanisms.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "CoDA introduces a self-evolving pipeline where agents specialize in understanding, planning, generating, and reflecting.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "CoDA uses metadata schemas and statistics to circumvent context window limits.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "A common thread across these systems is that architectural choices, such as how many agents, how they communicate, whether feedback is visual or spec-level, are often asserted rather than empirically compared. MultiVis-Agent claims benefits of its centralized architecture but does not compare against alternatives. PlotGen’s sequential ordering of feedback agents (numeric, lexical, visual) is mainly textually justified. Our work contributes to this space by systematically comparing authoring schemes, from one-shot to multi-agent with review, and grounded in empirically identified quality dimensions.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Architectural choices in these systems, such as the number of agents, their communication methods, and feedback types (visual or spec-level), are often asserted rather than empirically compared.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "MultiVis-Agent claims benefits of its centralized architecture but does not compare against alternatives.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "PlotGen’s sequential ordering of feedback agents (numeric, lexical, visual) is mainly textually justified.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "This work systematically compares authoring schemes, ranging from one-shot to multi-agent with review.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The comparisons are grounded in empirically identified quality dimensions.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "L2: 22, L3: 11) are instantiated across all three scenarios, yielding 159 examples. An example entry is shown in Fig. 3.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "L2: 22 and L3: 11 are instantiated across all three scenarios.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "This instantiation yields 159 examples.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "An example entry is shown in Fig. 3.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Scenarios. Natural language queries can be phrased as a question or a command, and the amount of explicit information about chart types and data attributes varies [43]. In data-intensive domains such as genomics, queries often blend analytical goals with domain-specific terminology. This gives rise to three scenarios (S1–S3). S1 queries are unambiguous in both visualization intent and data attributes. Although users rarely provide this idealized input, they serve as a useful baseline. S2 and S3 queries are increasingly ambiguous. S2 is incomplete in data references (e.g., metadata-based rather than explicit file names) or visualization intent, while S3 frames requests in terms of analytical goals that imply the visualizations without naming them. From another perspective, drawing on visualization task taxonomies [2], S1 and S2 can be seen as how tasks in visualization design, while S3 expresses a why task (Fig. 4).",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Natural language queries can be phrased as a question or a command.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The amount of explicit information about chart types and data attributes varies.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "In data-intensive domains such as genomics, queries often blend analytical goals with domain-specific terminology.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Three scenarios (S1–S3) arise from variations in query characteristics.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "S1 queries are unambiguous in both visualization intent and data attributes.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Users rarely provide S1 queries as idealized input, but they serve as a useful baseline.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "S2 queries are incomplete in data references or visualization intent.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "S3 queries frame requests in terms of analytical goals that imply the visualizations without naming them.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "From another perspective, S1 and S2 can be seen as how tasks in visualization design.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "S3 expresses a why task in visualization design.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Complexity Levels. Genomic visualization specifications vary considerably in authoring complexity, from single-track charts to interactive genome browsers. We define three levels (L1–L3) based on the structural and data-handling demands of the specification. L1 (basic) covers single-track or simple multi-track charts using standard mark types and simple data sources that do not require complex transformations. L2 (intermediate) introduces one or more authoring challenges, such as brushing and overview+detail interactions, semantic zoom, or specialized data types such as BAM and VCF. L3 (complex) consists of application-style genomic browser specifications that compose multiple coordinated views, heterogeneous data types, and domain-specific annotation layers, having more tracks, views and complex arrangement patterns. These levels were defined based on expert knowledge of the genomics visualization domain, but are not intended as a definitive complexity taxonomy.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Genomic visualization specifications vary considerably in authoring complexity, from single-track charts to interactive genome browsers.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Three levels (L1–L3) are defined based on the structural and data-handling demands of the specification.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "L1 (basic) covers single-track or simple multi-track charts using standard mark types and simple data sources that do not require complex transformations.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "L2 (intermediate) introduces one or more authoring challenges, such as brushing and overview+detail interactions, semantic zoom, or specialized data types such as BAM and VCF.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "L3 (complex) consists of application-style genomic browser specifications that compose multiple coordinated views, heterogeneous data types, and domain-specific annotation layers, having more tracks, views and complex arrangement patterns.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "These levels were defined based on expert knowledge of the genomics visualization domain.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The levels are not intended as a definitive complexity taxonomy.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "To identify where the vanilla LLM succeeds and fails, the first author manually inspected a representative sample (45%) of triplets, rendering each spec and comparing it against the ground truth focusing on three key questions: how well does the visualization represent the ground truth (S1), how reasonable is the visualization given a vague description (S2), and how adequate is the visualization for the analytical goal (S3). Note excerpts were iteratively grouped and abstracted into eight quality dimensions. These dimensions were then developed into a scoring rubric for LLM-as-a-judge evaluation of all 159 outputs (Sec. 5).",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The first author manually inspected a representative sample (45%) of triplets to identify where the vanilla LLM succeeds and fails.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Each spec was rendered and compared against the ground truth focusing on three key questions: how well does the visualization represent the ground truth (S1), how reasonable is the visualization given a vague description (S2), and how adequate is the visualization for the analytical goal (S3).",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Excerpts were iteratively grouped and abstracted into eight quality dimensions.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "These dimensions were developed into a scoring rubric for LLM-as-a-judge evaluation of all 159 outputs.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "For S2 and S3, where queries likely require user clarification or interpretation, a user proxy agent, prompted with the ground truth specification and dataset metadata, responded to agent clarification requests on behalf of the user (Fig. 4).",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "For S2 and S3, queries likely require user clarification or interpretation.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "A user proxy agent was prompted with the ground truth specification and dataset metadata.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The user proxy agent responded to agent clarification requests on behalf of the user.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "We identified eight recurring themes, each describing a distinct aspect of visualization output. To enable systematic scoring for the LLM-asa-judge (Sec. 5), we translated each theme into an evaluation criterion with a directional framing. Below we present a summary of the main observations; Fig. 5 illustrates representative failure examples.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Eight recurring themes were identified, each describing a distinct aspect of visualization output.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Each theme was translated into an evaluation criterion with a directional framing to enable systematic scoring for the LLM-as-a-judge.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Fig. 5 illustrates representative failure examples.",
+        "category": "Other",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "D1: Mark & Encoding Appropriateness. At L1 and in S1, mark choices were generally appropriate — bar for quantitative data, area for signal profiles, rect for intervals. As complexity increased, three persistent weaknesses emerged. First, conventional genomic visualization idioms for gene annotation and cytogenetic band tracks were a consistent weak spot. The model struggled to produce composite glyphs these idioms require: gene tracks rarely showed directionality, exon boundaries, or readable labels, and cytoband tracks lacked centromere triangles and visibility-filtered text. Second, structural variant encoding was fragile at L2–L3, with withinLink or betweenLink marks frequently missing colored strokes or having incorrect start/end field mappings. Third, the model frequently doubleencoded the same quantitative variable on both bar height and color, particularly in response to ambiguous queries (S2). This suggests a tendency to over-specify encodings when the prompt is vague, rather than defaulting to a simpler, conventional choice, a pattern that may reflect LLM behavior of attempting to over-satisfy under uncertainty.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Mark choices were generally appropriate at L1 and in S1, including bar for quantitative data, area for signal profiles, and rect for intervals.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "As complexity increased, three persistent weaknesses emerged.",
+        "category": "Result",
+        "rank": 2
+      },
+      {
+        "sentence": "Conventional genomic visualization idioms for gene annotation and cytogenetic band tracks were a consistent weak spot.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The model struggled to produce composite glyphs required by these idioms, such as gene tracks rarely showing directionality, exon boundaries, or readable labels.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Cytoband tracks lacked centromere triangles and visibility-filtered text.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Structural variant encoding was fragile at L2–L3, with withinLink or betweenLink marks frequently missing colored strokes or having incorrect start/end field mappings.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The model frequently doubleencoded the same quantitative variable on both bar height and color, particularly in response to ambiguous queries (S2).",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "This suggests a tendency to over-specify encodings when the prompt is vague, rather than defaulting to a simpler, conventional choice.",
+        "category": "Conclusion",
+        "rank": 3
+      },
+      {
+        "sentence": "This pattern may reflect LLM behavior of attempting to over-satisfy under uncertainty.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "D2: Query Compliance. Query compliance was mostly assessed for S1, and here L1 visualizations were largely compliant. For higher complexity levels, we observed some cases where the requested genomic region does not match. Generally at L2 and L3, there are more missing tracks or views, caused both by spec errors that prevented rendering and by omission of requested components such as data stratification or filtering. We note that for S2 and S3, the boundary between “incomplete” and “acceptably different interpretation” was less clear, suggesting that this criterion is most informative for S1 queries.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Query compliance was mostly assessed for S1.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "L1 visualizations were largely compliant for S1.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "For higher complexity levels, we observed some cases where the requested genomic region does not match.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "At L2 and L3, there are more missing tracks or views caused by spec errors that prevented rendering.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "At L2 and L3, there are more missing tracks or views caused by omission of requested components such as data stratification or filtering.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "For S2 and S3, the boundary between 'incomplete' and 'acceptably different interpretation' was less clear.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "This criterion is most informative for S1 queries.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "D3: Layout & Composition. In S3, layout and composition issues were most common, particularly in the spatial organization of views and tracks for effective comparison and reading, as queries often prompted complex multi-view outputs. The most common problem was failure to overlay : tracks that should share a single view (e.g., cytobands over a reference track, text labels on gene bodies) were instead placed as separate tracks or views, wasting screen space and hindering comparison. In S1, view ordering was occasionally reversed from the ground truth, with detail appearing before overview, and related tracks were sometimes misaligned. Interestingly, the model also chose defensible alternative arrangements, e.g., serial arrangement for two genomic regions, or linear instead of circular layout for whole genome overview. The overall pattern suggests that the model treats each track as an independent unit rather than reasoning about the spatial relationships between them, showing a tendency to separate views that a domain expert would merge.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "In S3, layout and composition issues were most common, particularly in the spatial organization of views and tracks for effective comparison and reading.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Queries often prompted complex multi-view outputs.",
+        "category": "Result",
+        "rank": 2
+      },
+      {
+        "sentence": "The most common problem was failure to overlay tracks that should share a single view.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Tracks that should share a single view, such as cytobands over a reference track or text labels on gene bodies, were instead placed as separate tracks or views.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "This separation of tracks wasted screen space and hindered comparison.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "In S1, view ordering was occasionally reversed from the ground truth, with detail appearing before overview.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "In S1, related tracks were sometimes misaligned.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The model also chose defensible alternative arrangements, such as serial arrangement for two genomic regions or linear instead of circular layout for whole genome overview.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The overall pattern suggests that the model treats each track as an independent unit rather than reasoning about the spatial relationships between them.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "The model shows a tendency to separate views that a domain expert would merge.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "D4: Interaction & Coordination. Brush implementation was the single most consistent failure across the dataset: the brush was absent or non-functional in the vast majority of cases. Coordinated panning and zooming, dependent on a matching linkingId across views, showed inconsistent behavior, succeeding in some specifications but failing in structurally similar ones with no clear predictor of success. More complex semantic zooming in L2 and L3 specifications was also largely absent. As a result, in canonical visualizations, cytoband labels, nucleotide labels, and gene names were either always visible (causing overplotting) or never visible. This suggests that correctly linking views might be a higher level task that the vanilla LLM struggles with.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Brush implementation was the single most consistent failure across the dataset.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The brush was absent or non-functional in the vast majority of cases.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Coordinated panning and zooming, dependent on a matching linkingId across views, showed inconsistent behavior.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Coordinated panning and zooming succeeded in some specifications but failed in structurally similar ones with no clear predictor of success.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "More complex semantic zooming in L2 and L3 specifications was largely absent.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "In canonical visualizations, cytoband labels, nucleotide labels, and gene names were either always visible or never visible.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Always visible labels caused overplotting in canonical visualizations.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "This suggests that correctly linking views might be a higher level task that the vanilla LLM struggles with.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "D5: Axes & Legends. This was a common issue across most scenarios and levels, but was concentrated at L2 and L3 in S2, where multitrack views lacked the reference elements needed to orient the reader. The most striking pattern was a bias toward suppressing genomic axes (often the x-axis), whereas quantitative axes (typically the y-axis) were generated more reliably, sometimes redundantly, suggesting that the model treats quantitative axes as more essential than positional ones. Also titles as reference elements were often omitted, making complex multi-track or view visualizations essentially unreadable without inspecting the underlying spec. This points to a gap between generating content and generating the readability frames and metadata needed to interpret it.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Axes and legends were a common issue across most scenarios and levels.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The issue with axes and legends was concentrated at L2 and L3 in S2, where multitrack views lacked reference elements needed to orient the reader.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "There was a bias toward suppressing genomic axes, often the x-axis.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Quantitative axes, typically the y-axis, were generated more reliably and sometimes redundantly.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The model treats quantitative axes as more essential than positional ones.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "Titles as reference elements were often omitted, making complex multi-track or view visualizations essentially unreadable without inspecting the underlying spec.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "There is a gap between generating content and generating the readability frames and metadata needed to interpret it.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "D6: Proactive Enhancements. This dimension is predominantly relevant for S2 and S3, where the open-ended prompt leaves room for the LLM to add context beyond what was explicitly requested. Very common additions were a tooltip and extra genomic tracks such as cytobands or gene annotations. It seems like the model chose tooltips as a substitute for axes and legends rather than a complement. Extra cytoband and gene tracks were conceptually reasonable for providing navigational context. However, they suffered from the same rendering failures observed in D1 and additionally showed awkward placement, for example between data tracks that were clearly grouped. Some additions were also highly uninformative, such as rendering text labels for variables that had the same value across all data points in a dataset. The pattern suggests that the model might have some intuition that genomic visualizations should include context tracks, but applies this without evaluating whether the specific addition is truly informative or well-placed.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Proactive enhancements are predominantly relevant for S2 and S3.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The open-ended prompt in S2 and S3 allows the LLM to add context beyond what was explicitly requested.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Common additions by the LLM included a tooltip and extra genomic tracks such as cytobands or gene annotations.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The model appeared to choose tooltips as a substitute for axes and legends rather than as a complement.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Extra cytoband and gene tracks were conceptually reasonable for providing navigational context.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Extra cytoband and gene tracks suffered from rendering failures observed in D1.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Extra cytoband and gene tracks showed awkward placement, such as between data tracks that were clearly grouped.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Some additions were highly uninformative, such as rendering text labels for variables with the same value across all data points in a dataset.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The pattern suggests that the model has some intuition that genomic visualizations should include context tracks.",
+        "category": "Conclusion",
+        "rank": 3
+      },
+      {
+        "sentence": "The model applies context tracks without evaluating whether the specific addition is truly informative or well-placed.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "D8: Data Compliance. Data compliance was consistently reliable for matching the required source files, even in S2 and S3 where the model had to infer the correct source from multiple entries using the provided metadata and catalog. Failures were concentrated at L2 and L3, where multi-field datasets and complex transformations were required. The primary failure mode was field parsing: tracks appeared to be empty not because data was absent but because field names were incorrectly mapped. In several cases, the data was technically present (as observed in the spec) but the rendering failure made it invisible. We note that data compliance is often entangled with D1 and D2: a missing track can reflect a field parsing error (D8), an encoding failure (D1), or an omission of a requested query component (D2).",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Data compliance was consistently reliable for matching the required source files.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Data compliance was reliable even in S2 and S3 where the model had to infer the correct source from multiple entries using the provided metadata and catalog.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Failures in data compliance were concentrated at L2 and L3, where multi-field datasets and complex transformations were required.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The primary failure mode in data compliance was field parsing.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Tracks appeared to be empty not because data was absent but because field names were incorrectly mapped.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "In several cases, the data was technically present but the rendering failure made it invisible.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Data compliance is often entangled with D1 and D2.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "A missing track can reflect a field parsing error (D8), an encoding failure (D1), or an omission of a requested query component (D2).",
+        "category": "Background",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "The eight quality dimensions identified in Sec. 3 reveal some common failure modes that motivate three design decisions for an agentic authoring system:",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The eight quality dimensions identified in Sec. 3 reveal some common failure modes.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The common failure modes motivate three design decisions for an agentic authoring system.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "We define six authoring schemes that progressively introduce structure, iteration, and specialization (Fig. 6).",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Six authoring schemes are defined.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The schemes progressively introduce structure, iteration, and specialization.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "All four agentic schemes share the same coordination protocol. A coordinator routes control to each agent in sequence. Each agent reviews the current spec and screenshot, then either calls update\\_spec to modify the specification or returns confirm. Any spec update triggers a new screenshot render and restarts the review cycle from the updating agent, requiring all reviewers to validate the updated specification again. The loop terminates when all agents confirm or a maximum of 15 rounds is reached. Agents are further scoped by their available tools: the QDA agent has access to the data catalog and data inspection tools. VEC and L&S agents can only read and update the spec. The Reviewer additionally has access to the data catalog and data inspection tools to verify field references and filter values during its quality pass.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "All four agentic schemes share the same coordination protocol.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "A coordinator routes control to each agent in sequence.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Each agent reviews the current spec and screenshot.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Each agent either calls update_spec to modify the specification or returns confirm.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Any spec update triggers a new screenshot render and restarts the review cycle from the updating agent.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The review cycle requires all reviewers to validate the updated specification again.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The loop terminates when all agents confirm or a maximum of 15 rounds is reached.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Agents are scoped by their available tools.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The QDA agent has access to the data catalog and data inspection tools.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The VEC and L&S agents can only read and update the spec.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The Reviewer has access to the data catalog and data inspection tools to verify field references and filter values during its quality pass.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "This layered approach addresses a known gap between visualization research and practice [1]: design knowledge is scattered across papers, codebases, and forums, and perception-based findings can be conflicting [52]. By consolidating these sources into structured prompts, following Kim et al.’s template for actionable design guidelines “When/if Context, Approach, because ofProblem,for Purpose” [22], we give the reviewer agent access to actionable design knowledge at inference time without requiring fine-tuning.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A known gap exists between visualization research and practice: design knowledge is scattered across papers, codebases, and forums, and perception-based findings can be conflicting.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "This layered approach consolidates scattered sources into structured prompts.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The approach follows Kim et al.’s template for actionable design guidelines: 'When/if Context, Approach, because of Problem, for Purpose.'",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The reviewer agent is given access to actionable design knowledge at inference time without requiring fine-tuning.",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "• RQ2: How do architectural choices within agentic schemes affect output quality?",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "RQ2 investigates how architectural choices within agentic schemes affect output quality.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "• RQ3: How do task characteristics such as specification complex ity and query ambiguity affect scheme performance?",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Research Question 3 (RQ3) investigates how task characteristics such as specification complexity and query ambiguity affect scheme performance.",
+        "category": "Background",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "We assess output quality along two complementary axes. Perceived quality is scored by an LLM-as-a-judge pipeline on the eight quality dimensions from Sec. 3 (D1–D8), each rated on a 1–5 Likert scale (5 = best); the composite is the mean of all applicable dimensions per observation. Structural similarity is measured by CFG similarity [35], which compares generated and reference specifications via context-free grammar decomposition (0–1 scale). The two can diverge: an output may be judged as a good visualization while deviating structurally from the reference.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Output quality is assessed along two complementary axes.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Perceived quality is scored by an LLM-as-a-judge pipeline on eight quality dimensions from Sec. 3 (D1–D8).",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Each quality dimension is rated on a 1–5 Likert scale, where 5 represents the best score.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The composite score is the mean of all applicable dimensions per observation.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Structural similarity is measured by CFG similarity, which compares generated and reference specifications via context-free grammar decomposition on a 0–1 scale.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Perceived quality and structural similarity can diverge.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "An output may be judged as a good visualization while deviating structurally from the reference.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "To identify which factors most strongly influence output quality among the many possible comparisons across six schemes, three scenarios, and three complexity levels, we fit linear mixed-effects models addressing the three research questions (RQ1–RQ3), with specification as a random intercept to control for difficulty differences. We group the six schemes into three scheme types: direct generation, fixed pipeline, and agentic (the four agent-based schemes pooled). We focus on marginal $R ^ { 2 }$ (how much variance the predictors explain) and $\\Delta R ^ { 2 }$ (how much each individual factor contributes) to distinguish effects that are statistically significant from those that are also practically meaningful. We report fixed-effect coefficients (B).",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Linear mixed-effects models were fit to address the three research questions (RQ1–RQ3).",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Specification was included as a random intercept to control for difficulty differences.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The six schemes were grouped into three scheme types: direct generation, fixed pipeline, and agentic (the four agent-based schemes pooled).",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The analysis focuses on marginal R² (how much variance the predictors explain) and ΔR² (how much each individual factor contributes).",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The analysis distinguishes effects that are statistically significant from those that are also practically meaningful.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Fixed-effect coefficients (B) are reported.",
+        "category": "Result",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Agentic schemes produced significantly higher perceived quality than direct generation and fixed-pipeline baselines, with scheme type explaining 43.2% of variance (agentic vs. direct generation: $B = + 0 . 1 9 9$ $p < . 0 0 1$ ; fixed pipeline vs. direct generation: $B = - 1 . 2 2 2 , p < . 0 0 1 )$ Scheme type had minimal impact on structural similarity $( \\Delta R ^ { 2 } = 1 . 3 \\% )$ despite statistically significant pairwise differences (agentic vs. direct generation: $B = - 0 . 0 4 5 , p < . 0 0 1 ;$ fixed pipeline vs. direct generation: $B = - 0 . 0 3 6 , p < . 0 0 1 ) . \\mathrm { F i g } . 7$ shows both measures side by side.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Agentic schemes produced significantly higher perceived quality than direct generation and fixed-pipeline baselines.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "Scheme type explained 43.2% of variance in perceived quality.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Agentic schemes had a significant effect compared to direct generation ($B = +0.199$, $p < .001$).",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Fixed pipeline schemes had a significant effect compared to direct generation ($B = -1.222$, $p < .001$).",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Scheme type had minimal impact on structural similarity ($\\Delta R^2 = 1.3\\%$).",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Statistically significant pairwise differences were observed for structural similarity (agentic vs. direct generation: $B = -0.045$, $p < .001$; fixed pipeline vs. direct generation: $B = -0.036$, $p < .001$).",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Figure 7 shows perceived quality and structural similarity measures side by side.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "Specification complexity significantly interacted with scheme type for both measures (Fig. 8). For perceived quality, direct generation quality dropped −0.38 from L1 to L2 and −0.45 to L3, while agentic schemes dropped only −0.09 and −0.31 respectively (scheme type × L2: $B = + 0 . 2 8 6 , p < . 0 0 1$ ; scheme type × L3: $B = + 0 . 1 4 8 , p = . 0 3 7 )$ For structural similarity, the mixed-effects model estimated agentic schemes to score lower than direct generation at L1 $( B = - 0 . 0 4 5 )$ but to close the gap at $1 2 \\left( B = + 0 . 0 4 5 , p < . 0 0 1 \\right)$ and outperform it at $\\mathrm { L } 3 \\left( B = + 0 . 0 6 5 , p < . 0 0 1 \\right)$ . Query ambiguity, in contrast, did not moderate the agentic advantage for either measure $( \\Delta R ^ { 2 } \\leq 0 . 1 \\%$ for both). While these interactions are statistically significant, they explain only 0.8% and 1.0% of variance respectively, and should be interpreted as suggestive rather than definitive.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Specification complexity significantly interacted with scheme type for both measures.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "For perceived quality, direct generation quality dropped −0.38 from L1 to L2 and −0.45 to L3.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Agentic schemes dropped only −0.09 and −0.31 respectively for perceived quality.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The interaction for perceived quality was statistically significant (scheme type × L2: B = +0.286, p < .001; scheme type × L3: B = +0.148, p = .037).",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "For structural similarity, the mixed-effects model estimated agentic schemes to score lower than direct generation at L1 (B = -0.045).",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Agentic schemes closed the gap with direct generation at L2 (B = +0.045, p < .001).",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Agentic schemes outperformed direct generation at L3 for structural similarity (B = +0.065, p < .001).",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Query ambiguity did not moderate the agentic advantage for either measure (ΔR^2 ≤ 0.1% for both).",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The interactions explain only 0.8% and 1.0% of variance respectively.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The interactions should be interpreted as suggestive rather than definitive.",
+        "category": "Conclusion",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "Within the four agentic schemes, neither using multiple specialist agents nor adding a reviewer significantly affected perceived quality $( p = . 8 5 0$ and $p = . 4 8 8$ respectively), and the full model explained only 6.6% of variance (marginal $R ^ { 2 } = . 0 6 6 )$ , almost entirely from ambiguity and complexity rather than architecture choices. For structural similarity, both factors were statistically significant but explained less than 1% of variance combined $( \\Delta R ^ { 2 } = 0 . 2 \\%$ and 0.4%). Within this negligible range, using multiple agents produced slightly higher structural similarity $( B = + 0 . 0 1 \\bar { 4 } , p = . 0 0 3 )$ but slightly lower perceived quality $( B = - 0 . 0 0 9 , \\mathrm { n . s . } )$ , while adding a reviewer lowered structural similarity $( B = - 0 . 0 1 6 , p < . 0 0 1 )$ ) without any compensating improvement in perceived quality.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Using multiple specialist agents did not significantly affect perceived quality (p = .850).",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Adding a reviewer did not significantly affect perceived quality (p = .488).",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The full model explained only 6.6% of variance (marginal R^2 = .066).",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The variance explained by the full model was almost entirely due to ambiguity and complexity rather than architecture choices.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "For structural similarity, both factors were statistically significant but explained less than 1% of variance combined (ΔR^2 = 0.2% and 0.4%).",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Using multiple agents produced slightly higher structural similarity (B = +0.014, p = .003).",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Using multiple agents produced slightly lower perceived quality (B = -0.009, n.s.).",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Adding a reviewer lowered structural similarity (B = -0.016, p < .001).",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Adding a reviewer did not result in any compensating improvement in perceived quality.",
+        "category": "Result",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "To understand why additional agents do not improve overall quality, we examined per-step quality changes across 6,663 refinement steps (Fig. 9). Only three out of five agents—Single, QDA, and VEC—improved perceived quality by a comparable amount per step $( B \\approx + 0 . 1 2$ , all $p < . 0 0 1$ ; no significant differences among them). L&S similarly underperformed on perceived quality $( B = - 0 . 0 8 6 ~ \\mathrm { v s }$ . Single, $p < . 0 0 1 )$ . The Reviewer, although empowered to edit the spec, is positioned as a final-pass reviewer rather than a primary author. It contributed near-zero improvement in perceived quality $( B = - 0 . 1 1 9 \\ \\mathrm { v s } .$ Single, $p < . 0 0 1 )$ while producing the largest degradation in structural similarity $( B = - 0 . 0 1 1 , p < . 0 0 1 )$ . Notably, VEC was the only agent that improved structural similarity per step $( B = + 0 . 0 0 7 , p < . 0 0 1 )$ These per-step effects are small $( \\Delta \\bar { R } ^ { 2 } = 0 . 8 \\%$ for perceived quality, 2.4% for structural similarity) and confounded with pipeline position, but they are consistent with the scheme-level finding that adding a reviewer does not help.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "We examined per-step quality changes across 6,663 refinement steps to understand why additional agents do not improve overall quality.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "Only three out of five agents—Single, QDA, and VEC—improved perceived quality by a comparable amount per step $( B \\approx + 0 . 1 2$ , all $p < . 0 0 1$ ; no significant differences among them).",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "L&S underperformed on perceived quality $( B = - 0 . 0 8 6 ~ \\mathrm { v s }$ . Single, $p < . 0 0 1 )$.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The Reviewer, although empowered to edit the spec, is positioned as a final-pass reviewer rather than a primary author.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The Reviewer contributed near-zero improvement in perceived quality $( B = - 0 . 1 1 9 \\ \\mathrm { v s } .$ Single, $p < . 0 0 1 )$.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The Reviewer produced the largest degradation in structural similarity $( B = - 0 . 0 1 1 , p < . 0 0 1 )$.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "VEC was the only agent that improved structural similarity per step $( B = + 0 . 0 0 7 , p < . 0 0 1 )$.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "These per-step effects are small $( \\Delta \bar { R } ^ { 2 } = 0 . 8 \\%$ for perceived quality, 2.4% for structural similarity) and confounded with pipeline position.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The per-step effects are consistent with the scheme-level finding that adding a reviewer does not help.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "Agentic schemes require substantially more time and tokens than Direct Generation. Adding a reviewer has a negligible effect on turns in the single-agent setting $( 4 . 4  4 . 4$ on average; +0.02 unrounded) but a clear effect with multiple agents $( 4 . 5  6 . 0 )$ , and in both cases it raises cost $( \\ S 3 . 2 8 \\to \\ S 3 . 4 9 ; \\ S 3 . 6 \\bar { 5 } \\to \\ S 4 . 9 8$ per run). Moving from a single agent to multiple agents increases API calls $( 1 3 . 8  1 9 . 8 )$ and cost regardless of whether a reviewer is included. Among agentic schemes, the simplest configuration — Single Agent at \\$3.28/run — achieves comparable quality at the lowest cost.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Agentic schemes require substantially more time and tokens than Direct Generation.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Adding a reviewer has a negligible effect on turns in the single-agent setting (4.4 to 4.4 on average; +0.02 unrounded).",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Adding a reviewer has a clear effect on turns with multiple agents (4.5 to 6.0).",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Adding a reviewer raises cost in the single-agent setting (S3.28 to S3.49 per run).",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Adding a reviewer raises cost in the multiple-agent setting (S3.65 to S4.98 per run).",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Moving from a single agent to multiple agents increases API calls (13.8 to 19.8).",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Moving from a single agent to multiple agents increases cost regardless of whether a reviewer is included.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Among agentic schemes, the simplest configuration — Single Agent at $3.28/run — achieves comparable quality at the lowest cost.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "Fig. 10 plots the two measures against each other for 2,843 observations. They are effectively independent $( r = 0 . 0 0 1 , p = . 9 7 8 )$ , both overall and within each scheme. Outputs are distributed evenly across both axes,",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Fig. 10 plots the two measures against each other for 2,843 observations.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The two measures are effectively independent with r = 0.001 and p = 0.978.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The independence holds both overall and within each scheme.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Outputs are distributed evenly across both axes.",
+        "category": "Result",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "confirming that the two metrics capture different aspects of visualization quality.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The two metrics capture different aspects of visualization quality.",
+        "category": "Result",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "To ground the quantitative findings above in a concrete case, we illustrate scheme behavior on a complex L3 specification based on the Corces et al. single-cell epigenomics dataset [10], which requires a cytoband overview linked via brush interaction to multiple bigwig signal tracks and structural variant annotations. We show the S2 case in Fig. 1; corresponding figures for S1 and S3 are in the supplementary material.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "We illustrate scheme behavior on a complex L3 specification based on the Corces et al. single-cell epigenomics dataset.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "The L3 specification requires a cytoband overview linked via brush interaction to multiple bigwig signal tracks and structural variant annotations.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The S2 case is shown in Fig. 1.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Corresponding figures for S1 and S3 are in the supplementary material.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "In S1 (ground truth reproduction), all schemes broadly succeeded in reproducing the requested multi-track layout with the correct data mappings and signal encodings. The main point of failure was consistent across schemes: no scheme rendered the cytoband track correctly, though agentic schemes came closer to a recognizable cytoband than the baselines. Agentic schemes also most consistently generated the brush mark for overview-to-detail linking, though the brush did not always function correctly.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "In S1 (ground truth reproduction), all schemes broadly succeeded in reproducing the requested multi-track layout with the correct data mappings and signal encodings.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The main point of failure was consistent across schemes: no scheme rendered the cytoband track correctly.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Agentic schemes came closer to a recognizable cytoband than the baselines.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Agentic schemes most consistently generated the brush mark for overview-to-detail linking.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The brush mark did not always function correctly.",
+        "category": "Result",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "In S2 (ambiguous query), agentic schemes more clearly separated from the baselines. They produced more expressive encodings and were more likely to include the brush interaction for coordinated exploration. The overall visual quality and completeness of agentic outputs exceeded those of direct generation, suggesting that iterative refinement against the rendered output helps the model make better design choices when the prompt leaves room for interpretation.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "In S2 (ambiguous query), agentic schemes more clearly separated from the baselines.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Agentic schemes produced more expressive encodings.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Agentic schemes were more likely to include the brush interaction for coordinated exploration.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The overall visual quality and completeness of agentic outputs exceeded those of direct generation.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "Iterative refinement against the rendered output helps the model make better design choices when the prompt leaves room for interpretation.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "In S3 (data-driven question), an unexpected instability emerged: linking behavior between views became unreliable across all agentic schemes, with coordinated navigation breaking down in ways not observed in S1 or S2. The brush, present in earlier scenarios, was now omitted. This regression suggests that when the model must simultaneously reason about an analytical question and compose a multiview visualization, interaction features are among the first things to be dropped. This is consistent with our earlier finding on the interaction & coordination dimension (D4), where linking emerged as a weak area.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "In S3, an unexpected instability emerged: linking behavior between views became unreliable across all agentic schemes.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Coordinated navigation broke down in ways not observed in S1 or S2.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The brush, present in earlier scenarios, was now omitted.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "This regression suggests that when the model must simultaneously reason about an analytical question and compose a multiview visualization, interaction features are among the first things to be dropped.",
+        "category": "Conclusion",
+        "rank": 5
+      },
+      {
+        "sentence": "This is consistent with our earlier finding on the interaction and coordination dimension (D4), where linking emerged as a weak area.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "The iterative nature of the agentic schemes is visible in the step-bystep evolution of individual runs. For instance, in the Multi Agents + Reviewer scheme (Fig. 11), the QDA agent first corrected a data transformation that had been misapplied in earlier iterations, and the Reviewer subsequently added a cytoband track for navigational context. This incremental layering of fixes and additions illustrates how the separation of concerns across agents can lead to cumulative improvements that non-agentic baselines did not produce.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The iterative nature of the agentic schemes is visible in the step-by-step evolution of individual runs.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "In the Multi Agents + Reviewer scheme, the QDA agent first corrected a data transformation that had been misapplied in earlier iterations.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "The Reviewer subsequently added a cytoband track for navigational context.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "This incremental layering of fixes and additions illustrates how the separation of concerns across agents can lead to cumulative improvements.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Non-agentic baselines did not produce cumulative improvements.",
+        "category": "Result",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "A run from the Single Agent + Reviewer scheme shows another interesting progression (Fig. 12). The generalist author initially produced gene annotations with the typical failures also seen in Direct Generation: no directionality, missing labels, overplotted text. Over successive iterations, the author refined the gene track to correctly show strand direction and readable labels, and changed an overlaid line encoding to a stratified arrangement to improve comparison effectiveness. The",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A run from the Single Agent + Reviewer scheme shows another interesting progression.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The generalist author initially produced gene annotations with typical failures also seen in Direct Generation: no directionality, missing labels, overplotted text.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Over successive iterations, the author refined the gene track to correctly show strand direction and readable labels.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The author changed an overlaid line encoding to a stratified arrangement to improve comparison effectiveness.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Reviewer performed a final quality pass but did not substantially alter the output, suggesting that a capable generalist agent can self-correct on canonical genomic encodings through iterative refinement alone.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A capable generalist agent can self-correct on canonical genomic encodings through iterative refinement alone.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Agentic schemes were the strongest predictor of perceived quality in our evaluation, outperforming both Direct Generation and Fixed Pipeline. This advantage was consistent across complexity levels, with a small but significant interaction suggesting that agentic schemes degrade less than Direct Generation as specifications grow more complex.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Agentic schemes were the strongest predictor of perceived quality in our evaluation.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "Agentic schemes outperformed both Direct Generation and Fixed Pipeline.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The advantage of agentic schemes was consistent across complexity levels.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "A small but significant interaction suggests that agentic schemes degrade less than Direct Generation as specifications grow more complex.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Surprisingly, the Fixed Pipeline—a hand-crafted three-step decomposition with dedicated prompts and domain-specific guidelines— performed worse than even a single unconstrained LLM call given only the grammar documentation. This is notable because a structured pipeline is arguably the most natural next step after Direct Generation, the approach a practitioner would try first when one-shot results fall short. We invested substantial effort in its design, iterating on prompt engineering for data resolution, encoding selection, and view composition, yet many small failures persisted: incorrect field mappings, misapplied genomics conventions, broken interactions between views. These issues were especially pronounced for specifications involving brushing, overview-detail coordination, or semantic zoom, where a single change can cascade across views and encodings. Further prompt engineering did not resolve this error accumulation.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The Fixed Pipeline is a hand-crafted three-step decomposition with dedicated prompts and domain-specific guidelines.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The Fixed Pipeline performed worse than a single unconstrained LLM call given only the grammar documentation.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "A structured pipeline is arguably the most natural next step after Direct Generation.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Direct Generation is the approach a practitioner would try first when one-shot results fall short.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Substantial effort was invested in the design of the Fixed Pipeline, iterating on prompt engineering for data resolution, encoding selection, and view composition.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Many small failures persisted in the Fixed Pipeline, including incorrect field mappings, misapplied genomics conventions, and broken interactions between views.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Issues in the Fixed Pipeline were especially pronounced for specifications involving brushing, overview-detail coordination, or semantic zoom.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "A single change in specifications like brushing, overview-detail coordination, or semantic zoom can cascade across views and encodings.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Further prompt engineering did not resolve the error accumulation in the Fixed Pipeline.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Using multiple specialist agents or adding a reviewer did not meaningfully improve output quality. A single agent achieved the same perceived quality as more complex configurations at the lowest cost.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Using multiple specialist agents did not meaningfully improve output quality.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Adding a reviewer did not meaningfully improve output quality.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "A single agent achieved the same perceived quality as more complex configurations.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "A single agent achieved the lowest cost.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Our per-step analysis offers some insight into why. Although all agents could edit the specification, only three agents that handle primary authoring (QDA, VEC, and Single) contributed comparable per-step improvements, while those operating at a higher level of abstraction contributed less. L&S, responsible for layout and coordination, showed smaller per-step improvements, and the reviewer showed the least contribution of all. These differences were small in magnitude, but they suggest that simply adding more agents to a complex visualization authoring task is not inherently beneficial.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Our per-step analysis offers some insight into why.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "All agents could edit the specification.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Three agents that handle primary authoring (QDA, VEC, and Single) contributed comparable per-step improvements.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Agents operating at a higher level of abstraction contributed less to per-step improvements.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "L&S, responsible for layout and coordination, showed smaller per-step improvements.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The reviewer showed the least contribution of all agents.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "These differences were small in magnitude.",
+        "category": "Result",
+        "rank": 2
+      },
+      {
+        "sentence": "The findings suggest that simply adding more agents to a complex visualization authoring task is not inherently beneficial.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "This suggests the benefit of agentic authoring lies not in how work is divided but in how tightly the agent’s feedback mechanism is coupled to the grammar. Currently, agents rely on rendered screenshots, which provide holistic but coarse feedback. Finer-grained tools, such as pertrack validation, sub-view rendering, or interaction-level debugging, could let agents inspect and correct more precisely. For grammars where syntactic correctness does not guarantee semantic validity, such",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The benefit of agentic authoring lies in how tightly the agent’s feedback mechanism is coupled to the grammar.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "Currently, agents rely on rendered screenshots, which provide holistic but coarse feedback.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Finer-grained tools, such as per-track validation, sub-view rendering, or interaction-level debugging, could let agents inspect and correct more precisely.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "For grammars where syntactic correctness does not guarantee semantic validity, finer-grained tools are particularly important.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "tools would likely deliver larger gains than adding agents. Similarly, although the Reviewer could modify the specification, it rarely chose to. Future designs might scaffold the reviewer role to provide more structured feedback tied to specific grammar elements and act on the issues it identifies, rather than defaulting to passive critique.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Tools would likely deliver larger gains than adding agents.",
+        "category": "Conclusion",
+        "rank": 3
+      },
+      {
+        "sentence": "The Reviewer could modify the specification, but it rarely chose to.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Future designs might scaffold the reviewer role to provide more structured feedback tied to specific grammar elements.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "Future designs might scaffold the reviewer role to act on the issues it identifies rather than defaulting to passive critique.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Evaluation of LLM-based visualization authoring has largely relied on automated benchmarks, and this dependence is even stronger in specialized domains like genomics, where recruiting expert users is difficult and evaluation datasets are scarce. In this work, we attempted to go beyond static benchmarks by introducing a user proxy agent that simulates realistic clarification dialogues across three levels of query ambiguity. This allowed a single dataset of specifications to approximate how real users with varying levels of specificity might interact with the system.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Evaluation of LLM-based visualization authoring has largely relied on automated benchmarks.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "This dependence is stronger in specialized domains like genomics, where recruiting expert users is difficult and evaluation datasets are scarce.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "In this work, we introduced a user proxy agent that simulates realistic clarification dialogues across three levels of query ambiguity.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The user proxy agent allows a single dataset of specifications to approximate how real users with varying levels of specificity might interact with the system.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "The expected moderation by query ambiguity did not materialize in our results. This leaves open whether agentic schemes actually handle ambiguity well through their iterative process, or whether the proxy, which had access to ground truth metadata, did not faithfully simulate the difficulty of real user interactions. Simulating realistic user behavior within automated benchmarks remains a challenge, and distinguishing between these explanations will require evaluation with actual users in conversational settings.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The expected moderation by query ambiguity did not materialize in our results.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "It remains open whether agentic schemes handle ambiguity well through their iterative process.",
+        "category": "Conclusion",
+        "rank": 3
+      },
+      {
+        "sentence": "It remains open whether the proxy, which had access to ground truth metadata, did not faithfully simulate the difficulty of real user interactions.",
+        "category": "Conclusion",
+        "rank": 3
+      },
+      {
+        "sentence": "Simulating realistic user behavior within automated benchmarks remains a challenge.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Distinguishing between these explanations will require evaluation with actual users in conversational settings.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "• Evaluation. Our evaluation was fully autonomous, with no human in the loop and no validation of the LLM judge against expert ratings. A conversational interface where users can steer and correct would reveal patterns that single-turn evaluation cannot.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The evaluation was fully autonomous with no human in the loop.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "The evaluation did not include validation of the LLM judge against expert ratings.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "A conversational interface where users can steer and correct would reveal patterns that single-turn evaluation cannot.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "• Metrics. Structural similarity and perceived quality are independent, raising the question of what constitutes a “correct” output when multiple valid visualizations exist. Future work could explore constraint satisfaction checking or user preference elicitation as alternatives to reference-based comparison.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Structural similarity and perceived quality are independent.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "This raises the question of what constitutes a 'correct' output when multiple valid visualizations exist.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Future work could explore constraint satisfaction checking as an alternative to reference-based comparison.",
+        "category": "Conclusion",
+        "rank": 2
+      },
+      {
+        "sentence": "Future work could explore user preference elicitation as an alternative to reference-based comparison.",
+        "category": "Conclusion",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "• Agent design. The Reviewer’s ineffectiveness suggests redesign opportunities, such as scaffolding more decisive correction, providing structured feedback tied to grammar elements, or applying persona-inspired prompting. More broadly, agentic tools need tighter coupling with grammar semantics.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The Reviewer’s ineffectiveness suggests redesign opportunities.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Redesign opportunities include scaffolding more decisive correction.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Redesign opportunities include providing structured feedback tied to grammar elements.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Redesign opportunities include applying persona-inspired prompting.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Agentic tools need tighter coupling with grammar semantics.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "• Interaction modalities. Supporting input beyond text, such as sketching or direct manipulation of the specification, could bridge the gap between user intent and system output.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Supporting input beyond text, such as sketching or direct manipulation of the specification, could bridge the gap between user intent and system output.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "All supplemental materials are available on OSF at osf.io/uqe83, released under a cb CC BY 4.0 license.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "All supplemental materials are available on OSF at osf.io/uqe83.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "The supplemental materials are released under a CC BY 4.0 license.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "The authors wish to thank Huyen N. Nguyen for helpful discussions about the Geranium dataset. This work was supported in part by grants from the National Institutes of Health (NIH R01HG011773, K99HG013348) and the Advanced Research Projects Agency for Health (ARPA-H AY2AX000028).",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The authors wish to thank Huyen N. Nguyen for helpful discussions about the Geranium dataset.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "This work was supported in part by grants from the National Institutes of Health (NIH R01HG011773, K99HG013348).",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "This work was supported in part by the Advanced Research Projects Agency for Health (ARPA-H AY2AX000028).",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

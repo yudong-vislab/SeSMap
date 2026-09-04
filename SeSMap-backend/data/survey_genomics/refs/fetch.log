@@ -1,0 +1,84 @@
+[ 1/81] OK   pubmed   sim=1.00 len=1382  ADG11 Sequence surveyor: leveraging overview for scalable 
+[ 2/81] OK   pubmed   sim=1.00 len=1299  AHP18 IRscope: an online program to visualize the junction
+[ 3/81] OK   pubmed   sim=1.00 len=1473  ALS15 J-Circos: an interactive Circos plotter
+[ 4/81] OK   pubmed   sim=1.00 len= 649  And09 Visualization of genomic data with the Hilbert curve
+[ 5/81] OK   pubmed   sim=1.00 len=1233  ARJ15 BactoGeNIE: a large-scale comparative genome visuali
+[ 6/81] OK   pubmed   sim=1.00 len= 940  AVPS12 GenomeView: a next-generation genome browser
+[ 7/81] OK   pubmed   sim=1.00 len=1191  BGM17 Synteny Explorer: An Interactive Visualization Appli
+[ 8/81] OK   pubmed   sim=1.00 len=1625  BKS16 EDGAR 2.0: an enhanced software platform for compara
+[ 9/81] OK   pubmed   sim=1.00 len= 773  BMB15 A low-latency big database system and browser for st
+[10/81] OK   pubmed   sim=1.00 len=1143  BWML06 MEME: discovering and analyzing DNA and protein sequ
+[11/81] OK   pubmed   sim=1.00 len= 743  BYD16 JBrowse: a dynamic web platform for genome visualiza
+[12/81] OK   pubmed   sim=1.00 len= 617  CGD12 The cBio cancer genomics portal: an open platform fo
+[13/81] OK   pubmed   sim=1.00 len= 918  CHCB04 WebLogo: a sequence logo generator
+[14/81] OK   pubmed   sim=1.00 len= 381  CSGB14 Epiviz: interactive visual analytics for functional 
+[15/81] OK   pubmed   sim=1.00 len= 651  CTB09 DNAPlotter: circular and linear interactive genome v
+[16/81] OK   crossref sim=1.00 len= 434  CTYN15 ClicO FS: an interactive web-based service of Circos
+[17/81] OK   pubmed   sim=1.00 len= 760  CYW18 GIVE: portable genome browsers for personal websites
+[18/81] OK   pubmed   sim=1.00 len= 454  CZ13 Enabling interspecies epigenomic comparison with CEp
+[19/81] OK   pubmed   sim=1.00 len=1390  DLS15 IslandViewer 3: more flexible interactive genomic is
+[20/81] OK   pubmed   sim=1.00 len= 956  Don09 Using the Generic Genome Browser (GBrowse)
+[21/81] OK   pubmed   sim=1.00 len= 725  DPH11 Dalliance: interactive genome viewing on the web
+[22/81] OK   pubmed   sim=1.00 len= 430  DRS16 Juicebox provides a visualization system for Hi-C co
+[23/81] OK   crossref sim=1.00 len=1838  DWZG17 HiC-3DViewer: a new tool to visualize Hi-C data in 3
+[24/81] OK   crossref sim=1.00 len=1001  EYB06 Combo: a whole genome comparative browser
+[25/81] OK   pubmed   sim=1.00 len=1308  FNL16 Integrated Genome Browser: visual analytics platform
+[26/81] OK   pubmed   sim=0.96 len=1251  FNM13 Variant View: Visualizing Sequence Variants in their
+[27/81] OK   pubmed   sim=1.00 len=1033  FPP04 VISTA: computational tools for comparative genomics
+[28/81] OK   pubmed   sim=1.00 len=1257  FSB12 Savant Genome Browser 2: visualization and analysis 
+[29/81] OK   crossref sim=1.00 len=2248  GCB18 The UCSC Xena platform for public and private cancer
+[30/81] OK   crossref sim=1.00 len= 813  GES16 HilbertCurve: an R/Bioconductor package for high-res
+[31/81] MISS (未命中)                        GESI18 EnrichedHeatmap: an R/Bioconductor package for compr
+[32/81] OK   pubmed   sim=1.00 len=1949  GKA11 Identifying elemental genomic track types and repres
+[33/81] MISS (未命中)                        GS08 The CGView Server: a comparative genomics tool for c
+[34/81] OK   pubmed   sim=1.00 len= 938  HBB02 The Ensembl genome database project
+[35/81] OK   pubmed   sim=1.00 len=1316  HBSD17 SynMap2 and SynMap3D: web-based whole-genome synteny
+[36/81] OK   pubmed   sim=1.00 len= 876  HJ10 MochiView: versatile software for genome browsing an
+[37/81] OK   pubmed   sim=1.00 len=1864  HJBN12 GenomeRing: alignment visualization based on SuperGe
+[38/81] OK   pubmed   sim=1.00 len=1304  HSD14 ReadXplorer--visualization and analysis of mapped se
+[39/81] OK   pubmed   sim=1.00 len= 680  KAL18 HiGlass: web-based visual exploration and analysis o
+[40/81] OK   pubmed   sim=1.00 len= 537  KAR07 Gepard: a rapid and sensitive tool for creating dotp
+[41/81] OK   pubmed   sim=1.00 len=1769  KNS14 Sequence bundles: a novel method for visualising dis
+[42/81] MISS (未命中)                        KSF02 The human genome browser at UCSC
+[43/81] OK   pubmed   sim=1.00 len= 703  KvEB04 Visualization for genomics: the Microbial Genome Vie
+[44/81] OK   pubmed   sim=1.00 len= 852  KWS15 Quantitative visualization of alternative exon expre
+[45/81] OK   pubmed   sim=1.00 len=2051  KWZ12 ABrowse - a customizable next-generation genome brow
+[46/81] OK   pubmed   sim=1.00 len= 983  Lar14 AliView: a fast and lightweight alignment viewer and
+[47/81] OK   pubmed   sim=1.00 len=1529  LB11 GenPlay a multipurpose genome analyzer and browser
+[48/81] OK   pubmed   sim=1.00 len=1447  LBK18 HiPiler: Visual Exploration of Large Genome Interact
+[49/81] MISS (未命中)                        LGH15 MAGI: visualization and collaborative annotation of 
+[50/81] OK   pubmed   sim=1.00 len=1080  LJASH16 An interactive environment for agile analysis and vi
+[51/81] OK   pubmed   sim=1.00 len=1641  LLL08 SynteBase/SynteView: a tool to visualize gene order 
+[52/81] OK   pubmed   sim=1.00 len=1513  LSWQ17 Deep Motif Dashboard: Visualizing and Understanding 
+[53/81] MISS (未命中)                        LvBSD09 My5C: web tools for chromosome conformation capture 
+[54/81] OK   pubmed   sim=1.00 len= 527  MBS00 VISTA: visualizing global DNA sequence alignments of
+[55/81] OK   pubmed   sim=1.00 len=1402  MMP09 MizBee: A Multiscale Synteny Browser
+[56/81] OK   pubmed   sim=1.00 len=1287  MVS10 Using the Generic Synteny Browser (GBrowse_syn)
+[57/81] OK   pubmed   sim=1.00 len= 952  MXR17 HUGIn: Hi-C Unifying Genomic Interrogator
+[58/81] OK   pubmed   sim=1.00 len= 423  OCQ13 pLogo: a probabilistic approach to visualizing seque
+[59/81] OK   pubmed   sim=1.00 len=1955  OKSF13 MGcV: the microbial genomic context viewer for compa
+[60/81] OK   pubmed   sim=1.00 len=1190  ORRL10 Gremlin: An Interactive Visualization Model for Anal
+[61/81] OK   pubmed   sim=1.00 len=1090  OvHSF15 CiVi: circular genome visualization with unique feat
+[62/81] OK   pubmed   sim=1.00 len= 747  PSESVD10 Interactive microbial genome visualization with GVie
+[63/81] OK   pubmed   sim=1.00 len= 882  RCK12 SpliceSeq: a resource for analysis and visualization
+[64/81] OK   pubmed   sim=1.00 len= 982  RRG16 deepTools2: a next generation web server for deep-se
+[65/81] OK   pubmed   sim=1.00 len= 925  RTD18 Juicebox.js Provides a Cloud-Based Visualization Sys
+[66/81] OK   pubmed   sim=1.00 len= 665  RTRBH12 SpliceGrapher: detecting patterns of alternative spl
+[67/81] OK   pubmed   sim=1.00 len=1349  SAB16 Vials: Visualizing Alternative Splicing of Genes
+[68/81] OK   pubmed   sim=1.00 len=2209  SM07 Cinteny: flexible analysis and visualization of synt
+[69/81] OK   pubmed   sim=1.00 len= 734  SS90 Sequence logos: a new way to display consensus seque
+[70/81] OK   pubmed   sim=1.00 len=1344  STK16 ALVIS: interactive non-aggregative visualization and
+[71/81] OK   pubmed   sim=1.00 len= 763  SW05 Circular genome visualization and exploration using 
+[72/81] OK   pubmed   sim=1.00 len=1152  TRM13 Integrative Genomics Viewer (IGV): high-performance 
+[73/81] OK   crossref sim=1.00 len= 818  VIR06 Two Sample Logo: a graphical representation of the d
+[74/81] OK   pubmed   sim=1.00 len= 861  WBN18 Galaxy HiCExplorer: a web server for reproducible Hi
+[75/81] OK   pubmed   sim=1.00 len=1040  WKP17 WebMeV: A Cloud Platform for Analyzing and Visualizi
+[76/81] OK   pubmed   sim=1.00 len=1009  WNM14 SplicePlot: a utility for visualizing splicing quant
+[77/81] OK   pubmed   sim=1.00 len= 781  WPM09 Jalview Version 2--a multiple sequence alignment edi
+[78/81] OK   pubmed   sim=1.00 len= 653  WSZ18 The 3D Genome Browser: a web-based browser for visua
+[79/81] OK   crossref sim=1.00 len= 719  YCL12 ggbio: an R package for extending the grammar of gra
+[80/81] OK   pubmed   sim=1.00 len= 797  YWR16 MSAViewer: interactive JavaScript visualization of m
+[81/81] MISS (未命中)                        ZMX11 The Human Epigenome Browser at Washington University
+
+成功 75/81 (93%)   失败 6
+总摘要字数 81,204

@@ -1,0 +1,85 @@
+[
+  {
+    "paragraph": "Non-canonical DNA structures, such as G-Quadruplexes (G4s) and i-Motifs (iMs), are pivotal in gene regulation and cellular processes. However, current computational methods for identifying their genomic precursors, Putative G4 Sequences (PGS) and Putative iM Sequences (PIS), primarily rely on manual sequence retrieval and input, thus hindering large-scale analyses essential for deciphering their biological functions. To address this, we present QuaDB, a user-friendly web application designed for identifier-based, rapid prediction of Putative Quadruplex Sequences (PQS).",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Non-canonical DNA structures, such as G-Quadruplexes (G4s) and i-Motifs (iMs), are pivotal in gene regulation and cellular processes.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Current computational methods for identifying genomic precursors, Putative G4 Sequences (PGS) and Putative iM Sequences (PIS), primarily rely on manual sequence retrieval and input.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Manual sequence retrieval and input hinder large-scale analyses essential for deciphering the biological functions of non-canonical DNA structures.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "We present QuaDB, a user-friendly web application designed for identifier-based, rapid prediction of Putative Quadruplex Sequences (PQS).",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "QuaDB streamlines the analytical workflow by enabling real-time sequence retrieval from Ensembl and NCBI using gene identifiers, coupled with automated region-specific analysis across promoter, gene body, and 3' downstream regions. The tool employs a robust, biologically informed scoring model that accurately identifies and scores quadruplex structures, aligning with experimental validation through circular dichroism and thermal melting studies. This validation demonstrated a direct correlation between QuaDB scores and thermal stability.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "QuaDB streamlines the analytical workflow by enabling real-time sequence retrieval from Ensembl and NCBI using gene identifiers.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "QuaDB enables automated region-specific analysis across promoter, gene body, and 3' downstream regions.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The tool employs a robust, biologically informed scoring model that accurately identifies and scores quadruplex structures.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The scoring model aligns with experimental validation through circular dichroism and thermal melting studies.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "The validation demonstrated a direct correlation between QuaDB scores and thermal stability.",
+        "category": "Result",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "With its efficient processing and intuitive interface, QuaDB facilitates comprehensive, large-scale genomic investigations, complementing existing tools by offering a unique identifier-based retrieval and region-aware analytical pipeline for exploring the widespread biological significance of these intriguing DNA structures. The web application can be accessed through: quadb.iitd.ac.in.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "QuaDB facilitates comprehensive, large-scale genomic investigations.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "QuaDB complements existing tools by offering a unique identifier-based retrieval pipeline.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "QuaDB provides a region-aware analytical pipeline for exploring the biological significance of DNA structures.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The web application can be accessed through: quadb.iitd.ac.in.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

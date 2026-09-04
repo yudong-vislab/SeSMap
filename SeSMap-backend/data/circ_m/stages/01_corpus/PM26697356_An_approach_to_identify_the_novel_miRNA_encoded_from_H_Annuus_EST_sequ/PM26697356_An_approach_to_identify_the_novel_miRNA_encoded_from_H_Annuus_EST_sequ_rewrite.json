@@ -1,0 +1,58 @@
+[
+  {
+    "paragraph": "MicroRNAs are a newly discovered class of non-protein small RNAs with 22-24 nucleotides. They play multiple roles in biological processes including development, cell proliferation, apoptosis, stress responses and many other cell functions. In this research, several approaches were combined to make a computational prediction of potential miRNAs and their targets in Helianthus annuus (H. annuus). The already available information of the plant miRNAs present in miRBase v21 was used against expressed sequence tags (ESTs). A total of three miRNAs were detected from which one potential novel miRNA was identified following a range of strict filtering criteria. The target prediction was carried out for these three miRNAs having various targets. These targets were functionally annotated and GO terms were assigned. To study the conserved nature of the miRNAs, predicted phylogenetic analysis was carried out. These findings will significantly provide the broader picture for understanding the functions in H. annuus.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "MicroRNAs are a newly discovered class of non-protein small RNAs with 22-24 nucleotides.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "MicroRNAs play multiple roles in biological processes including development, cell proliferation, apoptosis, stress responses, and many other cell functions.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Several approaches were combined to make a computational prediction of potential miRNAs and their targets in Helianthus annuus (H. annuus).",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The already available information of the plant miRNAs present in miRBase v21 was used against expressed sequence tags (ESTs).",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "A total of three miRNAs were detected.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "One potential novel miRNA was identified following a range of strict filtering criteria.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "The target prediction was carried out for these three miRNAs having various targets.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "These targets were functionally annotated and GO terms were assigned.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Predicted phylogenetic analysis was carried out to study the conserved nature of the miRNAs.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "These findings will significantly provide the broader picture for understanding the functions in H. annuus.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  }
+]

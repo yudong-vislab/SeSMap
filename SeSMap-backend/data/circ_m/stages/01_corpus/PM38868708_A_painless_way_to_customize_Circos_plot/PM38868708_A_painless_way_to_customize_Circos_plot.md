@@ -1,0 +1,5 @@
+# A painless way to customize Circos plot: From data preparation to visualization using TBtools
+
+## Abstract
+
+Circos plots enable scientists to easily inspect big biological data genome-widely on a macroscopic scale, but cumbersome preparation of input data and complex parameter configuration limits its application. We have developed the "Advanced Circos" function in TBtools, to provide a simple way to construct Circos plots. As an out-of-the-box combo toolkit, TBtools has integrated a set of functions convenient for input data preparation. The "Advanced Circos" function is supplied with a user-friendly interface for the customization of parameter settings and can be deployed to visualize all kinds of genomic data, such as genomic associations, alignment data, gene density, and QTL locations. In the present article, we introduce the main features of "Advance Circos" and the protocols of upstream data preparation, aiming to endow more users with the ability to use Circos plots in big genomic data exploration.

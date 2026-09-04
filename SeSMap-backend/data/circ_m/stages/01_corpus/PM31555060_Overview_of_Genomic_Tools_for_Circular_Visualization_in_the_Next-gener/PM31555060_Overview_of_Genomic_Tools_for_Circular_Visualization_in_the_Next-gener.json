@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Overview of Genomic Tools for Circular Visualization in the Next-generation Genomic Sequencing Era",
+    "paragraphs": []
+  },
+  {
+    "title": "Overview of Genomic Tools for Circular Visualization in the Next-generation Genomic Sequencing Era-Abstract",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "After human genome sequencing and rapid changes in genome sequencing methods, we have entered into the era of rapidly accumulating genome-sequencing data. This has derived the development of several types of methods for representing results of genome sequencing data. Circular genome visual-ization tools are also critical in this area as they provide rapid interpretation and simple visualization of overall data. In the last 15 years, we have seen rapid changes in circular visualization tools after the de-velopment of the circos tool with 1-2 tools published per year. Herein we have summarized and revisited all these tools until the third quarter of 2018.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

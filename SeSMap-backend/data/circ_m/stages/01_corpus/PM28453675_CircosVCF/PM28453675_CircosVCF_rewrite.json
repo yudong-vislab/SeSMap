@@ -1,0 +1,70 @@
+[
+  {
+    "paragraph": "Visualization of whole-genomic variations in a meaningful manner assists researchers in gaining new insights into the underlying data, especially when it comes in the context of whole genome comparisons. CircosVCF is a web based visualization tool for genome-wide variant data described in VCF files, using circos plots. The user friendly interface of CircosVCF supports an interactive design of the circles in the plot, and the integration of additional information such as experimental data or annotations. The provided visualization capabilities give a broad overview of the genomic relationships between genomes, and allow identification of specific meaningful SNPs regions.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Visualization of whole-genomic variations in a meaningful manner assists researchers in gaining new insights into the underlying data.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Whole-genomic variations are particularly insightful in the context of whole genome comparisons.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "CircosVCF is a web-based visualization tool for genome-wide variant data described in VCF files, using circos plots.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The user-friendly interface of CircosVCF supports an interactive design of the circles in the plot.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "CircosVCF allows the integration of additional information such as experimental data or annotations.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The provided visualization capabilities give a broad overview of the genomic relationships between genomes.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "CircosVCF allows identification of specific meaningful SNPs regions.",
+        "category": "Result",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "CircosVCF was implemented in JavaScript and is available at http://www.ariel.ac.il/research/fbl/software.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "CircosVCF was implemented in JavaScript.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "CircosVCF is available at http://www.ariel.ac.il/research/fbl/software.",
+        "category": "Other",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "Supplementary data are available at Bioinformatics online.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Supplementary data are available at Bioinformatics online.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

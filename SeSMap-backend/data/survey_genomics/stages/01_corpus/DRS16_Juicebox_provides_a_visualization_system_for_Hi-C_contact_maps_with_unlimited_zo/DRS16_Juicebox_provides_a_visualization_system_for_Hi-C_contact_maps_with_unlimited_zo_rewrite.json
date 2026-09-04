@@ -1,0 +1,33 @@
+[
+  {
+    "paragraph": "Hi-C experiments study how genomes fold in 3D, generating contact maps containing features as small as 20 bp and as large as 200 Mb. Here we introduce Juicebox, a tool for exploring Hi-C and other contact map data. Juicebox allows users to zoom in and out of Hi-C maps interactively, just as a user of Google Earth might zoom in and out of a geographic map. Maps can be compared to one another, or to 1D tracks or 2D feature sets.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Hi-C experiments study how genomes fold in 3D.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Hi-C experiments generate contact maps containing features as small as 20 bp and as large as 200 Mb.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Juicebox is a tool for exploring Hi-C and other contact map data.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Juicebox allows users to zoom in and out of Hi-C maps interactively, similar to how Google Earth users zoom in and out of geographic maps.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Maps can be compared to one another, or to 1D tracks or 2D feature sets.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  }
+]

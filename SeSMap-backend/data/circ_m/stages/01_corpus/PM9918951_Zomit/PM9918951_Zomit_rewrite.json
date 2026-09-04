@@ -1,0 +1,85 @@
+[
+  {
+    "paragraph": "The problems caused by the difficulty in visualizing and browsing biological databases have become crucial. Scientists can no longer interact directly with the huge amount of available data. However, future breakthroughs in biology depend on this interaction. We propose a new metaphor for biological data visualization and browsing that allows navigation in very large databases in an intuitive way. The concepts underlying our approach are based on navigation and visualization with zooming, semantic zooming and portals; and on data transformation via magic lenses. We think that these new visualization and navigation techniques should be applied globally to a federation of biological databases.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The difficulty in visualizing and browsing biological databases has become a crucial problem.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Scientists can no longer interact directly with the huge amount of available data.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Future breakthroughs in biology depend on interaction with biological data.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "We propose a new metaphor for biological data visualization and browsing.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The proposed metaphor allows navigation in very large databases in an intuitive way.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The concepts underlying our approach are based on navigation and visualization with zooming, semantic zooming, and portals.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The approach also involves data transformation via magic lenses.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "These new visualization and navigation techniques should be applied globally to a federation of biological databases.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "We have implemented a generic tool, called Zomit, that provides an application programming interface for developing servers for such navigation and visualization, and a generic architecture-independent client (Javatrade mark applet) that queries such servers. As an illustration of the capabilities of our approach, we have developed ZoomMap, a prototype browser for the HuGeMap human genome map database.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A generic tool called Zomit has been implemented.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Zomit provides an application programming interface for developing servers for navigation and visualization.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Zomit includes a generic architecture-independent client (Javatrade mark applet) that queries such servers.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "ZoomMap, a prototype browser for the HuGeMap human genome map database, has been developed as an illustration of the capabilities of the approach.",
+        "category": "Experiment",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Zomit and ZoomMap are available at the URL http://www.infobiogen.fr/services/zomit.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Zomit and ZoomMap are available at the URL http://www.infobiogen.fr/services/zomit.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "paragraph": "We developed the Comparative Epigenome Browser (CEpBrowser) to allow the public to perform multi-species epigenomic analysis. The web-based CEpBrowser integrates, manages and visualizes sequencing-based epigenomic datasets. Five key features were developed to maximize the efficiency of interspecies epigenomic comparisons.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The Comparative Epigenome Browser (CEpBrowser) was developed to allow the public to perform multi-species epigenomic analysis.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The web-based CEpBrowser integrates sequencing-based epigenomic datasets.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The web-based CEpBrowser manages sequencing-based epigenomic datasets.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The web-based CEpBrowser visualizes sequencing-based epigenomic datasets.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Five key features were developed to maximize the efficiency of interspecies epigenomic comparisons.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "CEpBrowser is a web application implemented with PHP, MySQL, C and Apache. URL: http://www.cepbrowser.org/.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "CEpBrowser is a web application.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "CEpBrowser is implemented with PHP, MySQL, C, and Apache.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The URL for CEpBrowser is http://www.cepbrowser.org/.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "paragraph": "Genomic loci and genome-independent DNA exhibit heterogeneous dynamics related to physiological function. Live-cell imaging of non-repetitive sequences is essential but limited by low signal-to-noise ratio (SNR), restricting accurate identification and dynamic tracking. Here, the development of a BRIGHT (bivalent near-infrared nanobody-mediated cascade illumination of genomic loci for high-SNR tracking) system for non-repetitive sequence live imaging is reported. BRIGHT employs dCas9-n×ALFA to target genomic loci and realizes high SNR by triggering cascade-dependent illumination via bivalent binding and antigen-dependent illumination of a bivalent near-infrared fluorescent nanobody targeting ALFA tags (Bi-NIR-Fb",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Genomic loci and genome-independent DNA exhibit heterogeneous dynamics related to physiological function.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Live-cell imaging of non-repetitive sequences is essential for studying genomic dynamics.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Live-cell imaging of non-repetitive sequences is limited by low signal-to-noise ratio (SNR).",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Low SNR restricts accurate identification and dynamic tracking of non-repetitive sequences.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "The development of a BRIGHT system for non-repetitive sequence live imaging is reported.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "BRIGHT stands for bivalent near-infrared nanobody-mediated cascade illumination of genomic loci for high-SNR tracking.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "BRIGHT employs dCas9-n×ALFA to target genomic loci.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "BRIGHT realizes high SNR by triggering cascade-dependent illumination.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "BRIGHT uses bivalent binding and antigen-dependent illumination of a bivalent near-infrared fluorescent nanobody targeting ALFA tags (Bi-NIR-Fb).",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  }
+]

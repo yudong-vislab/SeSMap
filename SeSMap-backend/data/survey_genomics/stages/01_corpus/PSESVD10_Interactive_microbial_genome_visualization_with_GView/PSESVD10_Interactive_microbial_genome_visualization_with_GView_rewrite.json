@@ -1,0 +1,59 @@
+[
+  {
+    "paragraph": "GView is a Java application for viewing and examining prokaryotic genomes in a circular or linear context. It accepts standard sequence file formats and an optional style specification file to generate customizable, publication quality genome maps in bitmap and scalable vector graphics formats. GView features an interactive pan-and-zoom interface, a command-line interface for incorporation in genome analysis pipelines, and a public Application Programming Interface for incorporation in other Java applications.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "GView is a Java application for viewing and examining prokaryotic genomes in a circular or linear context.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "GView accepts standard sequence file formats to generate genome maps.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "GView allows the use of an optional style specification file to generate customizable, publication quality genome maps.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "GView generates genome maps in bitmap and scalable vector graphics formats.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "GView features an interactive pan-and-zoom interface.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "GView provides a command-line interface for incorporation in genome analysis pipelines.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "GView includes a public Application Programming Interface for incorporation in other Java applications.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "GView is a freely available application licensed under the GNU Public License. The application, source code, documentation, file specifications, tutorials and image galleries are available at http://gview.ca.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "GView is a freely available application licensed under the GNU Public License.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "The application, source code, documentation, file specifications, tutorials, and image galleries are available at http://gview.ca.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

@@ -1,0 +1,171 @@
+[
+  {
+    "paragraph": "Long non-coding RNAs (lncRNAs) play pivotal regulatory roles in mammalian male gametogenesis. Advances in high-throughput technologies have demonstrated that lncRNAs orchestrate robust, flexible, and context-specific gene regulatory networks through dynamic interactions with proteins, DNA, and RNA, modulating transcriptional and post-transcriptional processes. However, the mechanistic role of in situ lncRNA-mRNA interactions in spermatogonial stem cell (SSC) differentiation remains poorly understood.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Long non-coding RNAs (lncRNAs) play pivotal regulatory roles in mammalian male gametogenesis.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Advances in high-throughput technologies have demonstrated that lncRNAs orchestrate robust, flexible, and context-specific gene regulatory networks.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "lncRNAs interact dynamically with proteins, DNA, and RNA to modulate transcriptional and post-transcriptional processes.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "The mechanistic role of in situ lncRNA-mRNA interactions in spermatogonial stem cell (SSC) differentiation remains poorly understood.",
+        "category": "Background",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "The differentially expressed transcripts, including lncRNA, mRNA and circRNA, were systematically identified through long RNA sequencing (LongRNA-seq). RNA-RNA in situ interactions were subsequently mapped using RNA in situ conformation sequencing (RIC-seq) technology. The Gm16751-Zhx3 interaction was validated using single-molecule fluorescence in situ hybridization (smFISH), coupled with RNA antisense purification followed by quantitative PCR (RAP-qPCR), and dual-luciferase reporter assay. Its functional impact on SSC differentiation was assessed via EdU staining, apoptosis assay, mRNA stability assay, RAP-qPCR, respectively. Liquid chromatography-tandem mass spectrometry (LC-MS) and RNA immunoprecipitation-qPCR (RIP-qPCR) were employed to screen and identify the RNA-binding protein (RBP) interacting with Gm16751 and Zhx3. Crosslinking immunoprecipitation followed by qPCR (CLIP-qPCR) further identified specific binding sequences. The regulation of RBP on the differentiation of SSC was verified using RAP-qPCR, RIP-qPCR, puromycin incorporation assay, and RNA stability assay.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Differentially expressed transcripts, including lncRNA, mRNA, and circRNA, were systematically identified through long RNA sequencing (LongRNA-seq).",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "RNA-RNA in situ interactions were mapped using RNA in situ conformation sequencing (RIC-seq) technology.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The Gm16751-Zhx3 interaction was validated using single-molecule fluorescence in situ hybridization (smFISH).",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The Gm16751-Zhx3 interaction was validated using RNA antisense purification followed by quantitative PCR (RAP-qPCR).",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The Gm16751-Zhx3 interaction was validated using a dual-luciferase reporter assay.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The functional impact of Gm16751-Zhx3 interaction on SSC differentiation was assessed via EdU staining.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "The functional impact of Gm16751-Zhx3 interaction on SSC differentiation was assessed via apoptosis assay.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "The functional impact of Gm16751-Zhx3 interaction on SSC differentiation was assessed via mRNA stability assay.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "The functional impact of Gm16751-Zhx3 interaction on SSC differentiation was assessed via RAP-qPCR.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "Liquid chromatography-tandem mass spectrometry (LC-MS) and RNA immunoprecipitation-qPCR (RIP-qPCR) were employed to screen and identify the RNA-binding protein (RBP) interacting with Gm16751 and Zhx3.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Crosslinking immunoprecipitation followed by qPCR (CLIP-qPCR) identified specific binding sequences of the RNA-binding protein (RBP).",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The regulation of the RNA-binding protein (RBP) on the differentiation of SSC was verified using RAP-qPCR.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "The regulation of the RNA-binding protein (RBP) on the differentiation of SSC was verified using RIP-qPCR.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "The regulation of the RNA-binding protein (RBP) on the differentiation of SSC was verified using puromycin incorporation assay.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "The regulation of the RNA-binding protein (RBP) on the differentiation of SSC was verified using RNA stability assay.",
+        "category": "Experiment",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "We employed RIC-seq and LongRNA-seq to systematically identify a functional interaction between lncRNA Gm16751 and Zhx3 mRNA during SSC differentiation, which was further visualized via a Circos plot. Mechanistically, we demonstrated that Gm16751 enhances the mRNA stability of Zhx3, thereby promoting SSC differentiation. Furthermore, mass spectrometry analysis revealed that RPS3 (Ribosomal Protein S3) serves as a critical RBP that bridges the interaction between Gm16751 and Zhx3, ultimately stabilizing Zhx3 mRNA and modulating SSC differentiation.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "RIC-seq and LongRNA-seq were employed to systematically identify a functional interaction between lncRNA Gm16751 and Zhx3 mRNA during SSC differentiation.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The functional interaction between lncRNA Gm16751 and Zhx3 mRNA during SSC differentiation was visualized via a Circos plot.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Gm16751 enhances the mRNA stability of Zhx3, thereby promoting SSC differentiation.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "Mass spectrometry analysis revealed that RPS3 (Ribosomal Protein S3) serves as a critical RBP that bridges the interaction between Gm16751 and Zhx3.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "RPS3 ultimately stabilizes Zhx3 mRNA and modulates SSC differentiation.",
+        "category": "Result",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "Our study identified a novel lncRNA-mRNA interaction pair, Gm16751/Zhx3, which is mediated by RPS3 and facilitates the differentiation of SSC. This discovery provides important mechanistic insights into the regulation of male germ cell development and offers a new perspective for understanding molecular controls in spermatogenesis.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A novel lncRNA-mRNA interaction pair, Gm16751/Zhx3, was identified.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "The interaction is mediated by RPS3.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The interaction facilitates the differentiation of SSC.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "This discovery provides mechanistic insights into the regulation of male germ cell development.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "The findings offer a new perspective for understanding molecular controls in spermatogenesis.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Evol2Circos: A web-based tool for genome synteny and collinearity analysis and its visualization in fishes",
+    "paragraphs": []
+  },
+  {
+    "title": "Evol2Circos: A web-based tool for genome synteny and collinearity analysis and its visualization in fishes-Abstract",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "The advent of high throughput next generation sequencing technologies and improved assembly algorithms have ensued in accumulation of voluminous genomic data in public domains. It has opened up entries for large scale comparative genome studies, especially the identification of conserved syntenic blocks among the species, facilitating the evolutionary importance of the conservation and variation in genomic organization. Synteny construction and visualization requires computational and bioinformatics skills to prepare input file for the synteny analysis pipeline. The syntenic information in fishes is still in juvenile stage and are scattered in different research domains. Here, we present a web-based tool 'Evol2Circos' to provide a user-friendly GUI- and web-based tool to analyse user specific data for synteny construction and visualization, and to facilitate the browsing of syntenic information of different fishes using the circos, bar, dual and dot plots. The information generated from the tool can also be used for further downstream analyses. Evol2Circos software tool is tested under Ubuntu Linux. The web-browser, source code, documentation, user manual, example dataset and scripts are available online at: 203.190.147.148/evole2circos/.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

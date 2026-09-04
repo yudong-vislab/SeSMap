@@ -1,0 +1,15 @@
+{
+ "paras": 1263,
+ "msus": 5502,
+ "cand": 5415,
+ "calls_pair": 541,
+ "hsus": 1865,
+ "in_msu": 550883,
+ "out_msu": 186090,
+ "in_pair": 366987,
+ "out_pair": 64920,
+ "in_hsu": 263903,
+ "out_hsu": 134660,
+ "total_in": 1181773,
+ "total_out": 385670
+}

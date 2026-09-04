@@ -1,0 +1,36 @@
+[
+  {
+    "title": "CircosVCF: circos visualization of whole-genome sequence variations stored in VCF files",
+    "paragraphs": []
+  },
+  {
+    "title": "CircosVCF: circos visualization of whole-genome sequence variations stored in VCF files-Summary",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Visualization of whole-genomic variations in a meaningful manner assists researchers in gaining new insights into the underlying data, especially when it comes in the context of whole genome comparisons. CircosVCF is a web based visualization tool for genome-wide variant data described in VCF files, using circos plots. The user friendly interface of CircosVCF supports an interactive design of the circles in the plot, and the integration of additional information such as experimental data or annotations. The provided visualization capabilities give a broad overview of the genomic relationships between genomes, and allow identification of specific meaningful SNPs regions.",
+        "abstract_summary": ""
+      }
+    ]
+  },
+  {
+    "title": "CircosVCF: circos visualization of whole-genome sequence variations stored in VCF files-Availability And Implementation",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "CircosVCF was implemented in JavaScript and is available at http://www.ariel.ac.il/research/fbl/software.",
+        "abstract_summary": ""
+      }
+    ]
+  },
+  {
+    "title": "CircosVCF: circos visualization of whole-genome sequence variations stored in VCF files-Supplementary Information",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Supplementary data are available at Bioinformatics online.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

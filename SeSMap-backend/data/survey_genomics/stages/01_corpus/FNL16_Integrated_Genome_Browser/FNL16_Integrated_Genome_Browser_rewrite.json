@@ -1,0 +1,80 @@
+[
+  {
+    "paragraph": "Genome browsers that support fast navigation through vast datasets and provide interactive visual analytics functions can help scientists achieve deeper insight into biological systems. Toward this end, we developed Integrated Genome Browser (IGB), a highly configurable, interactive and fast open source desktop genome browser.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Genome browsers support fast navigation through vast datasets.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Genome browsers provide interactive visual analytics functions.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Interactive visual analytics functions help scientists achieve deeper insight into biological systems.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "We developed Integrated Genome Browser (IGB).",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Integrated Genome Browser (IGB) is a highly configurable, interactive, and fast open source desktop genome browser.",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "Here we describe multiple updates to IGB, including all-new capabilities to display and interact with data from high-throughput sequencing experiments. To demonstrate, we describe example visualizations and analyses of datasets from RNA-Seq, ChIP-Seq and bisulfite sequencing experiments. Understanding results from genome-scale experiments requires viewing the data in the context of reference genome annotations and other related datasets. To facilitate this, we enhanced IGB's ability to consume data from diverse sources, including Galaxy, Distributed Annotation and IGB-specific Quickload servers. To support future visualization needs as new genome-scale assays enter wide use, we transformed the IGB codebase into a modular, extensible platform for developers to create and deploy all-new visualizations of genomic data.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "We describe multiple updates to IGB, including all-new capabilities to display and interact with data from high-throughput sequencing experiments.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Example visualizations and analyses of datasets from RNA-Seq, ChIP-Seq, and bisulfite sequencing experiments are described.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "Understanding results from genome-scale experiments requires viewing the data in the context of reference genome annotations and other related datasets.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "We enhanced IGB's ability to consume data from diverse sources, including Galaxy, Distributed Annotation, and IGB-specific Quickload servers.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The IGB codebase was transformed into a modular, extensible platform for developers to create and deploy all-new visualizations of genomic data.",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "IGB is open source and is freely available from http://bioviz.org/igb",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "IGB is open source.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "IGB is freely available from http://bioviz.org/igb.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

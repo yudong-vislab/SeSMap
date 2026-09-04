@@ -1,0 +1,69 @@
+[
+  {
+    "paragraph": "Human papillomavirus (HPV) is comprised of >200 genotypes and has an ~8 kb, circular, double-stranded DNA genome. Transmission of HPV occurs through skin-to-skin contact and infection of squamous epithelial cells of cutaneous and mucosal surfaces. HPV genotypes are categorized as low- or high-risk (hrHPV) based on oncogenic potential. There are approximately 14 types of hrHPV that can cause several types of cancer, including HPV-associated oropharyngeal squamous cell carcinoma (HPV(+)OPSCC). Detection of HPV(+)OPSCC is traditionally accomplished using p16 immunohistochemistry (IHC) and HPV-specific testing, either DNA or",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Human papillomavirus (HPV) is comprised of over 200 genotypes and has an approximately 8 kb, circular, double-stranded DNA genome.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Transmission of HPV occurs through skin-to-skin contact and infection of squamous epithelial cells of cutaneous and mucosal surfaces.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "HPV genotypes are categorized as low- or high-risk (hrHPV) based on oncogenic potential.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "There are approximately 14 types of high-risk HPV (hrHPV) that can cause several types of cancer, including HPV-associated oropharyngeal squamous cell carcinoma (HPV(+)OPSCC).",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Detection of HPV(+)OPSCC is traditionally accomplished using p16 immunohistochemistry (IHC) and HPV-specific testing, either DNA or RNA-based.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "At least 14 genotypes of human papillomavirus (HPV) have been identified to have high oncogenic potential. While molecular diagnostic testing for HPV is widely available for liquid cytologic cervical samples, testing is limited for other sample types, including liquid biopsy samples, such as platelet-poor plasma (PPP). With the rising incidence of HPV-associated oropharyngeal squamous cell carcinoma (HPV(+)OPSCC), laboratory testing is an essential part of patient diagnosis, management, and surveillance. Here, we summarize the development and analytical performance validation of a multiplexed, droplet digital PCR (ddPCR) assay for the detection and quantitation of HPV circulating tumor DNA (ctDNA) in PPP. This assay may provide clinicians with a tool to address minimal residual disease for patients with an HPV-associated cancer.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "At least 14 genotypes of human papillomavirus (HPV) have been identified to have high oncogenic potential.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Molecular diagnostic testing for HPV is widely available for liquid cytologic cervical samples.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Testing for HPV is limited for other sample types, including liquid biopsy samples such as platelet-poor plasma (PPP).",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The rising incidence of HPV-associated oropharyngeal squamous cell carcinoma (HPV(+)OPSCC) highlights the importance of laboratory testing for patient diagnosis, management, and surveillance.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "A multiplexed, droplet digital PCR (ddPCR) assay was developed and analytically validated for the detection and quantitation of HPV circulating tumor DNA (ctDNA) in PPP.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "This assay may provide clinicians with a tool to address minimal residual disease for patients with an HPV-associated cancer.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  }
+]

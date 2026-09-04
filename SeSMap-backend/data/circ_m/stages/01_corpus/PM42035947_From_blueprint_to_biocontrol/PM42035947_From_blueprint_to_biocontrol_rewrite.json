@@ -1,0 +1,63 @@
+[
+  {
+    "paragraph": "The symbiotic bacterium Xenorhabdus magdalenensis has a complex life cycle that alternates between a mutualistic relationship with the native entomopathogenic nematode Steinernema australe and a pathogenic stage with the insect host. Although several nematode-bacteria are well studied, the S. australe-X. Magdalenensis complex, originally isolated from southern Chile, remains poorly understood. In this study, we provide the first complete circular 4.086 Mb genome of the Xenorhabdus magdalenensis IMI397775 strain and genomically and chemically describe the bacteria at their ecological stages: in the IJs' receptacle as symbionts and in the insect's hemolymph as pathogens. We conduct a genomic analysis of X. magdalenensis IMI397775 using genmarks and Prokka for functional annotation and comparative tools to assess the evolutionary history of the most related Xenorhabdus spp. Genomic data were integrated with biochemical metabolic profiling using the API 50 CG test to validate the genotype-phenotype relationship. Our results showed an architecture of IMI397775 strain characterized by 20 rearrangements relative to X. doucetiae, its closest relative, suggesting a rapid evolutionary diversification. The identification of 25 BCGs with low similarity to known databases, and over 60% of which may encode novel molecule positions, makes this strain an important reservoir for natural product discovery. Our in vivo evaluation of cell-free supernatant confirms that the genomic potential of this strain may be a potent biological tool with high efficacy and a potential candidate for the development of new-generation biopesticides.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The symbiotic bacterium Xenorhabdus magdalenensis has a complex life cycle that alternates between a mutualistic relationship with the native entomopathogenic nematode Steinernema australe and a pathogenic stage with the insect host.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Several nematode-bacteria relationships are well studied, but the S. australe-X. magdalenensis complex, originally isolated from southern Chile, remains poorly understood.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "This study provides the first complete circular 4.086 Mb genome of the Xenorhabdus magdalenensis IMI397775 strain.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "The study genomically and chemically describes the bacteria at their ecological stages: in the IJs' receptacle as symbionts and in the insect's hemolymph as pathogens.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "A genomic analysis of X. magdalenensis IMI397775 was conducted using genmarks and Prokka for functional annotation.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Comparative tools were used to assess the evolutionary history of the most related Xenorhabdus spp.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Genomic data were integrated with biochemical metabolic profiling using the API 50 CG test to validate the genotype-phenotype relationship.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The architecture of the IMI397775 strain is characterized by 20 rearrangements relative to X. doucetiae, its closest relative, suggesting a rapid evolutionary diversification.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The identification of 25 BCGs with low similarity to known databases, over 60% of which may encode novel molecule positions, makes this strain an important reservoir for natural product discovery.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "In vivo evaluation of cell-free supernatant confirms that the genomic potential of this strain may be a potent biological tool with high efficacy.",
+        "category": "Experiment",
+        "rank": 5
+      },
+      {
+        "sentence": "The strain is a potential candidate for the development of new-generation biopesticides.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

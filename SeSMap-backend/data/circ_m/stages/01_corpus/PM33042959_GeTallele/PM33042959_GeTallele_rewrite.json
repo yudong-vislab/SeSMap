@@ -1,0 +1,78 @@
+[
+  {
+    "paragraph": "Variant allele frequencies (VAF) are an important measure of genetic variation that can be estimated at single-nucleotide variant (SNV) sites. RNA and DNA VAFs are used as indicators of a wide-range of biological traits, including tumor purity and ploidy changes, allele-specific expression and gene-dosage transcriptional response. Here we present a novel methodology to assess gene and chromosomal allele asymmetries and to aid in identifying genomic alterations in RNA and DNA datasets. Our approach is based on analysis of the VAF distributions in chromosomal segments (continuous multi-SNV genomic regions). In each segment we estimate variant probability, a parameter of a random process that can generate synthetic VAF samples that closely resemble the observed data. We show that variant probability is a biologically interpretable quantitative descriptor of the VAF distribution in chromosomal segments which is consistent with other approaches. To this end, we apply the proposed methodology on data from 72 samples obtained from patients with breast invasive carcinoma (BRCA) from The Cancer Genome Atlas (TCGA). We compare DNA and RNA VAF distributions from matched RNA and whole exome sequencing (WES) datasets and find that both genomic signals give very similar segmentation and estimated variant probability profiles. We also find a correlation between variant probability with copy number alterations (CNA). Finally, to demonstrate a practical application of variant probabilities, we use them to estimate tumor purity. Tumor purity estimates based on variant probabilities demonstrate good concordance with other approaches (Pearson's correlation between 0.44 and 0.76). Our evaluation suggests that variant probabilities can serve as a dependable descriptor of VAF distribution, further enabling the statistical comparison of matched DNA and RNA datasets. Finally, they provide conceptual and mechanistic insights into relations between structure of VAF distributions and genetic events. The methodology is implemented in a Matlab toolbox that provides a suite of functions for analysis, statistical assessment and visualization of Genome and Transcriptome allele frequencies distributions. GeTallele is available at: https://github.com/SlowinskiPiotr/GeTallele.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Variant allele frequencies (VAF) are an important measure of genetic variation that can be estimated at single-nucleotide variant (SNV) sites.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "RNA and DNA VAFs are used as indicators of a wide range of biological traits, including tumor purity and ploidy changes, allele-specific expression, and gene-dosage transcriptional response.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "A novel methodology is presented to assess gene and chromosomal allele asymmetries and to aid in identifying genomic alterations in RNA and DNA datasets.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The approach is based on analysis of the VAF distributions in chromosomal segments, which are continuous multi-SNV genomic regions.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "In each chromosomal segment, variant probability is estimated as a parameter of a random process that can generate synthetic VAF samples closely resembling the observed data.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Variant probability is a biologically interpretable quantitative descriptor of the VAF distribution in chromosomal segments and is consistent with other approaches.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The proposed methodology is applied to data from 72 samples obtained from patients with breast invasive carcinoma (BRCA) from The Cancer Genome Atlas (TCGA).",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "DNA and RNA VAF distributions from matched RNA and whole exome sequencing (WES) datasets are compared, showing very similar segmentation and estimated variant probability profiles.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "A correlation is found between variant probability and copy number alterations (CNA).",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Variant probabilities are used to estimate tumor purity, demonstrating good concordance with other approaches (Pearson's correlation between 0.44 and 0.76).",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "Variant probabilities can serve as a dependable descriptor of VAF distribution, enabling statistical comparison of matched DNA and RNA datasets.",
+        "category": "Conclusion",
+        "rank": 5
+      },
+      {
+        "sentence": "Variant probabilities provide conceptual and mechanistic insights into relations between the structure of VAF distributions and genetic events.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "The methodology is implemented in a Matlab toolbox called GeTallele, which provides functions for analysis, statistical assessment, and visualization of Genome and Transcriptome allele frequency distributions.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "GeTallele is available at: https://github.com/SlowinskiPiotr/GeTallele.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

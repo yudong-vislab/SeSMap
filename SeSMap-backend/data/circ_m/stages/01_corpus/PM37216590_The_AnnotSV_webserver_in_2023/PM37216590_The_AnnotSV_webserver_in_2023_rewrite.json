@@ -1,0 +1,73 @@
+[
+  {
+    "paragraph": "Much of the human genetics variant repertoire is composed of single nucleotide variants (SNV) and small insertion/deletions (indel) but structural variants (SV) remain a major part of our modified DNA. SV detection has often been a complex question to answer either because of the necessity to use different technologies (array CGH, SNP array, Karyotype, Optical Genome Mapping…) to detect each category of SV or to get an appropriate resolution (Whole Genome Sequencing). Thanks to the deluge of pangenomic analysis, Human geneticists are accumulating SV and their interpretation remains time consuming and challenging. The AnnotSV webserver (https://www.lbgi.fr/AnnotSV/) aims at being an efficient tool to (i) annotate and interpret SV potential pathogenicity in the context of human diseases, (ii) recognize potential false positive variants from all the SV identified and (iii) visualize the patient variants repertoire. The most recent developments in the AnnotSV webserver are: (i) updated annotations sources and ranking, (ii) three novel output formats to allow diverse utilization (analysis, pipelines), as well as (iii) two novel user interfaces including an interactive circos view.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Much of the human genetics variant repertoire is composed of single nucleotide variants (SNV) and small insertion/deletions (indel).",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Structural variants (SV) remain a major part of our modified DNA.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "SV detection has often been a complex question to answer because of the necessity to use different technologies to detect each category of SV.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Technologies for SV detection include array CGH, SNP array, Karyotype, and Optical Genome Mapping.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Whole Genome Sequencing is required to achieve appropriate resolution for SV detection.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Human geneticists are accumulating SV data thanks to the deluge of pangenomic analysis.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The interpretation of structural variants remains time consuming and challenging.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The AnnotSV webserver aims to annotate and interpret SV potential pathogenicity in the context of human diseases.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The AnnotSV webserver aims to recognize potential false positive variants from all the SV identified.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The AnnotSV webserver aims to visualize the patient variants repertoire.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The most recent developments in the AnnotSV webserver include updated annotation sources and ranking.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The most recent developments in the AnnotSV webserver include three novel output formats to allow diverse utilization such as analysis and pipelines.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The most recent developments in the AnnotSV webserver include two novel user interfaces, including an interactive circos view.",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  }
+]

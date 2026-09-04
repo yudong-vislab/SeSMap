@@ -1,0 +1,135 @@
+[
+  {
+    "paragraph": "Mitochondrial DNA heteroplasmy plays a crucial role in mitochondrial function, aging, and a wide range of human diseases. Recent advances in high-throughput sequencing have enabled large-scale detection of heteroplasmic variants; however, effective cohort-level integration, comparison, and visualization of Mutant Allele Frequency (MAF) values remain challenging. Existing tools often focus on single-sample visualization or require substantial manual preprocessing, limiting their scalability and usability for large cohorts. To address these challenges, we developed Mito_Plot, an open-source computational pipeline designed for standardized quantification and intuitive visualization of Mitochondrial DNA (mtDNA) heteroplasmy across multiple samples.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Mitochondrial DNA heteroplasmy plays a crucial role in mitochondrial function, aging, and a wide range of human diseases.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Recent advances in high-throughput sequencing have enabled large-scale detection of heteroplasmic variants.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Effective cohort-level integration, comparison, and visualization of Mutant Allele Frequency (MAF) values remain challenging.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Existing tools often focus on single-sample visualization or require substantial manual preprocessing, limiting their scalability and usability for large cohorts.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "We developed Mito_Plot, an open-source computational pipeline designed for standardized quantification of Mitochondrial DNA (mtDNA) heteroplasmy across multiple samples.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Mito_Plot provides intuitive visualization of Mitochondrial DNA (mtDNA) heteroplasmy across multiple samples.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Mito_Plot accepts standard mitochondrial VCF files and automatically calculates MAF based on allelic depth information. MAF data from multiple samples are aggregated into a unified matrix aligned by genomic position, enabling direct cross-sample comparison. The pipeline provides interactive two-dimensional circular plots that map MAF onto the mitochondrial genome with gene-level annotations, facilitating rapid identification of mutation hotspots and sample-specific patterns. In addition, Mito_Plot offers optional three-dimensional visualizations that enhance exploration of large cohorts by separating variant distributions across samples and genomic regions. Application of Mito_Plot to multi-sample mitochondrial sequencing datasets demonstrated robust handling of both variants with low and high MAF values, efficient processing of large cohorts, and improved interpretability compared with static or single-sample visualizations.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Mito_Plot accepts standard mitochondrial VCF files.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Mito_Plot automatically calculates MAF based on allelic depth information.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "MAF data from multiple samples are aggregated into a unified matrix aligned by genomic position.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The unified matrix enables direct cross-sample comparison.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The pipeline provides interactive two-dimensional circular plots that map MAF onto the mitochondrial genome with gene-level annotations.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The circular plots facilitate rapid identification of mutation hotspots and sample-specific patterns.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Mito_Plot offers optional three-dimensional visualizations.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The three-dimensional visualizations enhance exploration of large cohorts by separating variant distributions across samples and genomic regions.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Application of Mito_Plot to multi-sample mitochondrial sequencing datasets demonstrated robust handling of both variants with low and high MAF values.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Mito_Plot demonstrated efficient processing of large cohorts.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Mito_Plot demonstrated improved interpretability compared with static or single-sample visualizations.",
+        "category": "Result",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "Mito_Plot is a scalable, user-friendly software pipeline for cohort-scale quantification and visualization of mtDNA MAF. By integrating standardized MAF calculation with interactive 2D and 3D visualizations, Mito_Plot facilitates comprehensive exploration of mitochondrial variant landscapes across large datasets. The open-source and modular design of the software supports reproducible research and flexible integration into existing analysis workflows, making Mito_Plot a practical resource for mitochondrial genomics research and clinical investigations.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Mito_Plot is a scalable, user-friendly software pipeline for cohort-scale quantification and visualization of mtDNA MAF.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Mito_Plot integrates standardized MAF calculation with interactive 2D and 3D visualizations.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Mito_Plot facilitates comprehensive exploration of mitochondrial variant landscapes across large datasets.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The open-source and modular design of Mito_Plot supports reproducible research.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Mito_Plot allows flexible integration into existing analysis workflows.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Mito_Plot is a practical resource for mitochondrial genomics research and clinical investigations.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  }
+]

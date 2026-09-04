@@ -1,0 +1,36 @@
+[
+  {
+    "title": "Metabolic disease variants rewire gene regulation through disruption of DNA G-quadruplex structures",
+    "paragraphs": []
+  },
+  {
+    "title": "Metabolic disease variants rewire gene regulation through disruption of DNA G-quadruplex structures-Background",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "The global prevalence of metabolic diseases (MetDs) continues to rise and is associated with an increased cancer risk. Genome-wide association studies have identified numerous single nucleotide variants (SNVs) linked to MetDs, some within genes also implicated in tumorigenesis. G-quadruplexes (G4s) are non-canonical DNA secondary structures that regulate gene expression in diverse and context dependent ways. Variants affecting G4 structure may alter transcriptional efficiency. Notably, disease-associated variants are frequently located within or near regulatory elements and may overlap with cancer-associated alternative promoters.",
+        "abstract_summary": ""
+      }
+    ]
+  },
+  {
+    "title": "Metabolic disease variants rewire gene regulation through disruption of DNA G-quadruplex structures-Results",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "We systematically assess the overlap between MetD-associated SNVs and G4 motifs, and evaluate their effects on G4 stability, topology, and their potential to modulate the regulatory activity of G4s in alternative promoters. Approximately 0.9% to 1.6% of MetD-associated SNVs are located within G4 motifs (G4-SNVs), depending on the prediction tool. Effect alleles, those associated with risk or protection against MetDs, generally reduce G4 stability, regardless of their direction of association. Several G4-SNVs are mapped to cancer-associated alternative promoters, including the destabilizing MICB rs2855804 C/T variant and the stabilizing PLA2G6 rs2277844 G/A variants. In vivo G4 formation is confirmed by permanganate/S1 nuclease footprinting coupled with sequencing, while circular dichroism spectroscopy reveals allele-specific changes in G4 topology and stability. Integration of Hi-C data, histone modifications, transcription factor binding, and luciferase reporter assays further support their regulatory impact.",
+        "abstract_summary": ""
+      }
+    ]
+  },
+  {
+    "title": "Metabolic disease variants rewire gene regulation through disruption of DNA G-quadruplex structures-Conclusions",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Although G4-SNVs are unlikely to be the sole disease drivers, they significantly influence transcriptional regulation, potentially contributing to allele-specific gene expression in MetD patients and their link to increased cancer risk.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

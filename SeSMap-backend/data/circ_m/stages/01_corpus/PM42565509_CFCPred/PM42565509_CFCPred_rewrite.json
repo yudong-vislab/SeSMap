@@ -1,0 +1,73 @@
+[
+  {
+    "paragraph": "Circular RNAs (circRNAs) have recently been shown to possess coding potential via a cap-independent translation mechanism, challenging their traditional classification as noncoding RNAs and implicating it directly in the pathogenesis of various diseases. Despite growing evidence of the functional roles of circRNAs-encoded peptides (circPEPs) in disease mechanisms, computational methods for predicting these peptides remain underdeveloped. In this study, we introduce CFCPred, a novel tool for circPEPs prediction that combines cluster purity-guided resampling with fuzzy voting (FV) within a traditional machine learning framework. To address the scarcity of known circPEPs, we employ a resampling strategy that mitigates class-imbalance in the training data by generating synthetic samples based on relationships among individual samples, their nearest neighbours and their cluster assignments. Additionally, to tackle class overlap in the testing data, FV enables adaptive model selection and dynamic weight adjustment across the ensemble. This adaptive ensemble integrates predictions from multiple base models to produce a robust consensus classification. Experimental validation across multiple independent datasets demonstrates that CFCPred achieves strong predictive performance. Overall, the tool provides a computational framework that can accelerate research into circPEPs and their roles in disease.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Circular RNAs (circRNAs) have recently been shown to possess coding potential via a cap-independent translation mechanism.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "This finding challenges the traditional classification of circRNAs as noncoding RNAs.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "CircRNAs are implicated directly in the pathogenesis of various diseases.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "There is growing evidence of the functional roles of circRNAs-encoded peptides (circPEPs) in disease mechanisms.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Computational methods for predicting circRNAs-encoded peptides (circPEPs) remain underdeveloped.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "CFCPred is a novel tool for circPEPs prediction.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "CFCPred combines cluster purity-guided resampling with fuzzy voting (FV) within a traditional machine learning framework.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "To address the scarcity of known circPEPs, CFCPred employs a resampling strategy that mitigates class-imbalance in the training data.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The resampling strategy generates synthetic samples based on relationships among individual samples, their nearest neighbours, and their cluster assignments.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "To tackle class overlap in the testing data, fuzzy voting (FV) enables adaptive model selection and dynamic weight adjustment across the ensemble.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The adaptive ensemble integrates predictions from multiple base models to produce a robust consensus classification.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Experimental validation across multiple independent datasets demonstrates that CFCPred achieves strong predictive performance.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "CFCPred provides a computational framework that can accelerate research into circPEPs and their roles in disease.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

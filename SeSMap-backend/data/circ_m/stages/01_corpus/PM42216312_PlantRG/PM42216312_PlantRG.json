@@ -1,0 +1,16 @@
+[
+  {
+    "title": "PlantRG: A Comprehensive and User-Friendly Database for Plant Resistance Gene Analogs (RGAs)",
+    "paragraphs": []
+  },
+  {
+    "title": "PlantRG: A Comprehensive and User-Friendly Database for Plant Resistance Gene Analogs (RGAs)-Abstract",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Resistance genes are critical for plant defence against biotic stresses, and building a comprehensive, integrated data resource platform for these genes holds great significance for plant research and agriculture. Here, we developed PlantRG (http://plantrg.bio2db.com), a user-friendly plant resistance gene database, which is built on 2 163 397 resistance genes identified from 1062 plant species. These genes were mined from all accessible plant genomic resources-systematically curated from 794 peer-reviewed publications and 107 public databases-to ensure data breadth and reliability. All resistance genes in PlantRG were further functionally annotated using five major reference databases, enhancing their utility for targeted studies. Additionally, 207 353 SSR markers and 141 582 miRNAs associated with these resistance genes were detected, providing insights into their regulatory networks and genetic markers. Key bioinformatic results, including gene duplication patterns, protein-protein interaction predictions and CRISPR guide sequences, were also generated and stored in the database. PlantRG allows free browsing and downloading of all resistance gene sequences, annotations and bioinformatic data. It also offers practical tools such as Blast (for homology search), CasViewer (for CRISPR guide visualization), Circos (for genomic landscape analysis), HmmerSearch (for domain-based identification) and Primer Design, to facilitate user-friendly comparative genomic analysis. Notably, PlantRG is the comprehensive platform to complete large-scale collection and bioinformatic analysis of plant resistance genes. It will support in-depth studies on the structure, function and evolutionary patterns of resistance genes, thereby contributing to agricultural development-for example, breeding stress-resistant crop varieties. In the future, PlantRG will be continuously updated to incorporate new data and features, maintaining its value for the global plant research community.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

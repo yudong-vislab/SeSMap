@@ -1,0 +1,38 @@
+[
+  {
+    "paragraph": "Cell-to-cell communication (CCC) is prominent for cell growth and development as well as tissue and organ formation. CCC inference can help us to deeply understand cellular interplay and discover potential therapeutic targets for complex diseases. Cells communicate through direct contact or indirect dialogue using interacting ligand-receptor pairs (LRPs). Consequently, the CCC inference generally contains ligand-receptor interaction (LRI) data curation and LRI-mediated communication strength quantification. Here, we introduce a computational method, CellCDmT, to elucidate",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Cell-to-cell communication (CCC) is prominent for cell growth and development as well as tissue and organ formation.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "CCC inference can help us to deeply understand cellular interplay and discover potential therapeutic targets for complex diseases.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Cells communicate through direct contact or indirect dialogue using interacting ligand-receptor pairs (LRPs).",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "CCC inference generally contains ligand-receptor interaction (LRI) data curation.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "CCC inference generally contains LRI-mediated communication strength quantification.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "A computational method, CellCDmT, is introduced to elucidate CCC.",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  }
+]

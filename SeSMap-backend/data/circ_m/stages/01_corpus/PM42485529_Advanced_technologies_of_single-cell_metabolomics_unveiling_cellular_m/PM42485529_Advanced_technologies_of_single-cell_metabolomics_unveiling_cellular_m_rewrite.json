@@ -1,0 +1,78 @@
+[
+  {
+    "paragraph": "Metabolomics provides direct insights into cellular physiology, yet it faces greater analytical challenges compared to genomics and transcriptomics due to the chemical diversity, instability, and environmental sensitivity of metabolites. Conventional bulk metabolomics averages signals across cell populations, thereby masking cellular heterogeneity critical for understanding disease mechanisms. Recent breakthroughs in single-cell metabolomics (SCM), driven by advances in mass spectrometry, microfluidics, isotope tracing, and spatial omics, have enabled the detection of metabolic diversity at unprecedented resolution. SCM has uncovered cell-type-specific biomarkers, revealed metabolic reprogramming in cancer and immunity and revealed disease progression. These studies highlight SCM's transformative potential in biomarker discovery, clinical diagnostics, and precision medicine. Despite rapid progress, SCM remains limited by low metabolite abundance, instability during cell handling, lack of standardized quantification methods, and challenges in integrative multi-omics analysis. Future developments will require innovations to improve sensitivity and spatial resolution, establish cross-laboratory quality control frameworks, and apply artificial intelligence for data interpretation. With continued technological convergence, SCM is poised to evolve from a niche research tool into a cornerstone platform for biological and biomedical research.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Metabolomics provides direct insights into cellular physiology.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Metabolomics faces greater analytical challenges compared to genomics and transcriptomics due to the chemical diversity, instability, and environmental sensitivity of metabolites.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Conventional bulk metabolomics averages signals across cell populations, thereby masking cellular heterogeneity critical for understanding disease mechanisms.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Recent breakthroughs in single-cell metabolomics (SCM) have been driven by advances in mass spectrometry, microfluidics, isotope tracing, and spatial omics.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Single-cell metabolomics (SCM) has enabled the detection of metabolic diversity at unprecedented resolution.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "SCM has uncovered cell-type-specific biomarkers.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "SCM has revealed metabolic reprogramming in cancer and immunity.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "SCM has revealed disease progression.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "These studies highlight SCM's transformative potential in biomarker discovery, clinical diagnostics, and precision medicine.",
+        "category": "Conclusion",
+        "rank": 5
+      },
+      {
+        "sentence": "SCM remains limited by low metabolite abundance, instability during cell handling, lack of standardized quantification methods, and challenges in integrative multi-omics analysis.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Future developments in SCM will require innovations to improve sensitivity and spatial resolution.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "Future developments in SCM will require the establishment of cross-laboratory quality control frameworks.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "Future developments in SCM will require the application of artificial intelligence for data interpretation.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "With continued technological convergence, SCM is poised to evolve from a niche research tool into a cornerstone platform for biological and biomedical research.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

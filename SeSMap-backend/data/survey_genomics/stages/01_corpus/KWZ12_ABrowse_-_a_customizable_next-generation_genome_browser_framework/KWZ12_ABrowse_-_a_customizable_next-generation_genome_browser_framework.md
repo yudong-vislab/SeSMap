@@ -1,0 +1,13 @@
+# ABrowse - a customizable next-generation genome browser framework
+
+## Background
+
+With the rapid growth of genome sequencing projects, genome browser is becoming indispensable, not only as a visualization system but also as an interactive platform to support open data access and collaborative work. Thus a customizable genome browser framework with rich functions and flexible configuration is needed to facilitate various genome research projects.
+
+## Results
+
+Based on next-generation web technologies, we have developed a general-purpose genome browser framework ABrowse which provides interactive browsing experience, open data access and collaborative work support. By supporting Google-map-like smooth navigation, ABrowse offers end users highly interactive browsing experience. To facilitate further data analysis, multiple data access approaches are supported for external platforms to retrieve data from ABrowse. To promote collaborative work, an online user-space is provided for end users to create, store and share comments, annotations and landmarks. For data providers, ABrowse is highly customizable and configurable. The framework provides a set of utilities to import annotation data conveniently. To build ABrowse on existing annotation databases, data providers could specify SQL statements according to database schema. And customized pages for detailed information display of annotation entries could be easily plugged in. For developers, new drawing strategies could be integrated into ABrowse for new types of annotation data. In addition, standard web service is provided for data retrieval remotely, providing underlying machine-oriented programming interface for open data access.
+
+## Conclusions
+
+ABrowse framework is valuable for end users, data providers and developers by providing rich user functions and flexible customization approaches. The source code is published under GNU Lesser General Public License v3.0 and is accessible at http://www.abrowse.org/. To demonstrate all the features of ABrowse, a live demo for Arabidopsis thaliana genome has been built at http://arabidopsis.cbi.edu.cn/.

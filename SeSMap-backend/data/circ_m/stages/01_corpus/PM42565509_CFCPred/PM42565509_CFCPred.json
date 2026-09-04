@@ -1,0 +1,16 @@
+[
+  {
+    "title": "CFCPred: Advancing circRNAs-Encoded Peptides Prediction Through Cluster Purity-Guided Resampling and Fuzzy Voting",
+    "paragraphs": []
+  },
+  {
+    "title": "CFCPred: Advancing circRNAs-Encoded Peptides Prediction Through Cluster Purity-Guided Resampling and Fuzzy Voting-Abstract",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Circular RNAs (circRNAs) have recently been shown to possess coding potential via a cap-independent translation mechanism, challenging their traditional classification as noncoding RNAs and implicating it directly in the pathogenesis of various diseases. Despite growing evidence of the functional roles of circRNAs-encoded peptides (circPEPs) in disease mechanisms, computational methods for predicting these peptides remain underdeveloped. In this study, we introduce CFCPred, a novel tool for circPEPs prediction that combines cluster purity-guided resampling with fuzzy voting (FV) within a traditional machine learning framework. To address the scarcity of known circPEPs, we employ a resampling strategy that mitigates class-imbalance in the training data by generating synthetic samples based on relationships among individual samples, their nearest neighbours and their cluster assignments. Additionally, to tackle class overlap in the testing data, FV enables adaptive model selection and dynamic weight adjustment across the ensemble. This adaptive ensemble integrates predictions from multiple base models to produce a robust consensus classification. Experimental validation across multiple independent datasets demonstrates that CFCPred achieves strong predictive performance. Overall, the tool provides a computational framework that can accelerate research into circPEPs and their roles in disease.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

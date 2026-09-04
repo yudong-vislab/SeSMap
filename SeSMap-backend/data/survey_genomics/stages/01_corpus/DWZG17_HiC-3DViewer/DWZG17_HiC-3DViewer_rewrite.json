@@ -1,0 +1,78 @@
+[
+  {
+    "paragraph": "Background Although significant progress has been made to map chromatin structure at unprecedented resolution and scales, we are short of tools that enable the intuitive visualization and navigation along the three‐dimensional (3D) structure of chromatins. The available tools people have so far are generally script‐based or present basic features that do not easily enable the integration of genomic data along with 3D chromatin structure, hence, many scientists find themselves in the obligation to hack tools designed for other purposes such as tools for protein structure study. Methods We present HiC‐3DViewer, a new browser‐based interactive tool designed to provide an intuitive environment for investigators to facilitate the 3D exploratory analysis of Hi‐C data along with many useful annotation functionalities. Among the key features of HiC‐3DViewer relevant to chromatin conformation studies, the most important one is the 1D‐to‐2D‐to‐3D mapping, to highlight genomic regions of interest interactively. This feature enables investigators to explore their data at different levels/angels. Additionally, investigators can superpose different genomic signals (such as ChIP‐Seq, SNP) on the top of the 3D structure. Results As a proof of principle we applied HiC‐3DViewer to investigate the quality of Hi‐C data and to show the spatial binding of GATA1 and GATA2 along the genome. Conclusions As a user‐friendly tool, HiC‐3DViewer enables the visualization of inter/intra‐chromatin interactions and gives users the flexibility to customize the look‐and‐feel of the 3D structure with a simple click. HiC‐3DViewer is implemented in Javascript and Python, and is freely available at: http://bioinfo.au.tsinghua.edu.cn/member/nadhir/HiC3DViewer/ . Supplementary information (User Manual, demo data) is also available at this website.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Significant progress has been made to map chromatin structure at unprecedented resolution and scales.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "We are short of tools that enable the intuitive visualization and navigation along the three-dimensional (3D) structure of chromatins.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Available tools are generally script-based or present basic features that do not easily enable the integration of genomic data along with 3D chromatin structure.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Many scientists find themselves in the obligation to hack tools designed for other purposes, such as tools for protein structure study.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "We present HiC-3DViewer, a new browser-based interactive tool designed to provide an intuitive environment for investigators to facilitate the 3D exploratory analysis of Hi-C data along with many useful annotation functionalities.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The most important feature of HiC-3DViewer is the 1D-to-2D-to-3D mapping, which highlights genomic regions of interest interactively.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "This feature enables investigators to explore their data at different levels or angles.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Investigators can superpose different genomic signals, such as ChIP-Seq and SNP, on the top of the 3D structure.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "As a proof of principle, we applied HiC-3DViewer to investigate the quality of Hi-C data.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "We used HiC-3DViewer to show the spatial binding of GATA1 and GATA2 along the genome.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "HiC-3DViewer enables the visualization of inter- and intra-chromatin interactions.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "HiC-3DViewer gives users the flexibility to customize the look-and-feel of the 3D structure with a simple click.",
+        "category": "Conclusion",
+        "rank": 3
+      },
+      {
+        "sentence": "HiC-3DViewer is implemented in Javascript and Python, and is freely available at: http://bioinfo.au.tsinghua.edu.cn/member/nadhir/HiC3DViewer/.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "Supplementary information, including a user manual and demo data, is also available at the website.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

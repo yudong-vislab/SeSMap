@@ -1,0 +1,5 @@
+# Draco 2: An extensible platform to model visualization design
+
+## Abstract
+
+Draco introduced a constraint-based framework to model visualization design in an extensible and testable form. It provides a way to abstract design guidelines from theoretical and empirical studies and applies the knowledge in automated design tools. However, Draco is challenging to use because there is limited tooling and documentation. In response, we present Draco 2, the successor with (1) a more flexible visualization specification format, (2) a comprehensive test suite and documentation, and (3) flexible and convenient APIs. We designed Draco 2 to be more extensible and easier to integrate into visualization systems. We demonstrate these advantages and believe that they make Draco 2 a platform for future research.

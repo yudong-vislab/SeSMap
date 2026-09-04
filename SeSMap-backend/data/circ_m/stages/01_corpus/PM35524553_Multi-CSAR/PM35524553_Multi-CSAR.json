@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Multi-CSAR: a web server for scaffolding contigs using multiple reference genomes",
+    "paragraphs": []
+  },
+  {
+    "title": "Multi-CSAR: a web server for scaffolding contigs using multiple reference genomes-Abstract",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Multi-CSAR is a web server that can efficiently and more accurately order and orient the contigs in the assembly of a target genome into larger scaffolds based on multiple reference genomes. Given a target genome and multiple reference genomes, Multi-CSAR first identifies sequence markers shared between the target genome and each reference genome, then utilizes these sequence markers to compute a scaffold for the target genome based on each single reference genome, and finally combines all the single reference-derived scaffolds into a multiple reference-derived scaffold. To run Multi-CSAR, the users need to upload a target genome to be scaffolded and one or more reference genomes in multi-FASTA format. The users can also choose to use the 'weighting scheme of reference genomes' for Multi-CSAR to automatically calculate different weights for the reference genomes and choose either 'NUCmer on nucleotides' or 'PROmer on translated amino acids' for Multi-CSAR to identify sequence markers. In the output page, Multi-CSAR displays its multiple reference-derived scaffold in two graphical representations (i.e. Circos plot and dotplot) for the users to visually validate the correctness of scaffolded contigs and in a tabular representation to further validate the scaffold in detail. Multi-CSAR is available online at http://genome.cs.nthu.edu.tw/Multi-CSAR/.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

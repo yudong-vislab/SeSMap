@@ -1,0 +1,78 @@
+[
+  {
+    "paragraph": "The Gram-stain-negative bacterium Paracoccus spp., from the class Alphaproteobacteria and family Rhodobacteraceae, exhibits exceptional metabolic flexibility, diverse substrate utilization, and tolerance to abiotic stressors. To broaden the biotechnological applications of the genus, comprehensive sequencing, phylogenetic, and physiological characterization were performed between two strains of the genus, Paracoccus pantotrophus DSM 11073 and Paracoccus sp. AS002. Illumina sequencing yielded a total genome size of 4.2 Mbp for P. pantotrophus DSM 11073 and 4.8 Mbp for Paracoccus sp. AS002. Through phylogenetic analysis using the EDGAR software, Paracoccus sp. AS002 shared with Paracoccus versutus DSM 582 the same clade in the phylogenetic tree and an ANI score of 98.9 % indicating that Paracoccus sp. AS002 could be reclassified as P. versutus AS002. The study was extended to compare various attributes of the sequenced genomes and highlight the metabolic versatility of the genus Paracoccus. The use of a wide substrate panel demonstrated the metabolic versatility of the strains, including the PET monomer ethylene glycol, the C1 carbon source formic acid, and renewable carbon sources such as ethanol. Additionally, the ability of the strains to produce bioplastic was assessed, with P. pantotrophus DSM 11073 producing 36 % and P. versutus AS002 28 % polyhydroxybutyrate (% cell dry weight) on glucose, and 40 % and 16 % on 60 mM ethylene glycol, respectively. This study demonstrates the value of sequencing bacterial strains for biotechnological applications and highlights EDGAR's effectiveness in phylogenetic analysis, paving the way for using Paracoccus as a microbial chassis in sustainable biotechnological processes supporting the circular bioeconomy.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The Gram-stain-negative bacterium Paracoccus spp., from the class Alphaproteobacteria and family Rhodobacteraceae, exhibits exceptional metabolic flexibility, diverse substrate utilization, and tolerance to abiotic stressors.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Comprehensive sequencing, phylogenetic, and physiological characterization were performed between two strains of the genus, Paracoccus pantotrophus DSM 11073 and Paracoccus sp. AS002.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Illumina sequencing yielded a total genome size of 4.2 Mbp for P. pantotrophus DSM 11073.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Illumina sequencing yielded a total genome size of 4.8 Mbp for Paracoccus sp. AS002.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Through phylogenetic analysis using the EDGAR software, Paracoccus sp. AS002 shared with Paracoccus versutus DSM 582 the same clade in the phylogenetic tree.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Paracoccus sp. AS002 had an ANI score of 98.9 %, indicating that it could be reclassified as P. versutus AS002.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The study compared various attributes of the sequenced genomes and highlighted the metabolic versatility of the genus Paracoccus.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The use of a wide substrate panel demonstrated the metabolic versatility of the strains, including the PET monomer ethylene glycol, the C1 carbon source formic acid, and renewable carbon sources such as ethanol.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "The ability of the strains to produce bioplastic was assessed.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "P. pantotrophus DSM 11073 produced 36 % polyhydroxybutyrate (% cell dry weight) on glucose and 40 % on 60 mM ethylene glycol.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "P. versutus AS002 produced 28 % polyhydroxybutyrate (% cell dry weight) on glucose and 16 % on 60 mM ethylene glycol.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "This study demonstrates the value of sequencing bacterial strains for biotechnological applications.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "The study highlights EDGAR's effectiveness in phylogenetic analysis.",
+        "category": "Conclusion",
+        "rank": 3
+      },
+      {
+        "sentence": "The findings pave the way for using Paracoccus as a microbial chassis in sustainable biotechnological processes supporting the circular bioeconomy.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

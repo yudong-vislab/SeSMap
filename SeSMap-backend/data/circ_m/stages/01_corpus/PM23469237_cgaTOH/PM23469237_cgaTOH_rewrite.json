@@ -1,0 +1,83 @@
+[
+  {
+    "paragraph": "Identification of disease variants via homozygosity mapping and investigation of the effects of genome-wide homozygosity regions on traits of biomedical importance have been widely applied recently. Nonetheless, the existing methods and algorithms to identify long tracts of homozygosity (TOH) are not able to provide efficient and rigorous regions for further downstream association investigation. We expanded current methods to identify TOHs by defining \"surrogate-TOH\", a region covering a cluster of TOHs with specific characteristics. Our defined surrogate-TOH includes cTOH, viz a common TOH region where at least ten TOHs present; gTOH, whereby a group of highly overlapping TOHs share proximal boundaries; and aTOH, which are allelically-matched TOHs. Searching for gTOH and aTOH was based on a repeated binary spectral clustering algorithm, where a hierarchy of clusters is created and represented by a TOH cluster tree. Based on the proposed method of identifying different species of surrogate-TOH, our cgaTOH software was developed. The software provides an intuitive and interactive visualization tool for better investigation of the high-throughput output with special interactive navigation rings, which will find its applicability in both conventional association studies and more sophisticated downstream analyses. NCBI genome map viewer is incorporated into the system. Moreover, we discuss the choice of implementing appropriate empirical ranges of critical parameters by applying to disease models. This method identifies various patterned clusters of SNPs demonstrating extended homozygosity, thus one can observe different aspects of the multi-faceted characteristics of TOHs.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Homozygosity mapping has been widely applied to identify disease variants and investigate the effects of genome-wide homozygosity regions on traits of biomedical importance.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Existing methods and algorithms to identify long tracts of homozygosity (TOH) are not able to provide efficient and rigorous regions for downstream association investigation.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "We expanded current methods to identify TOHs by defining 'surrogate-TOH', a region covering a cluster of TOHs with specific characteristics.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Surrogate-TOH includes cTOH, a common TOH region where at least ten TOHs are present.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Surrogate-TOH includes gTOH, a group of highly overlapping TOHs that share proximal boundaries.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Surrogate-TOH includes aTOH, which are allelically-matched TOHs.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Searching for gTOH and aTOH was based on a repeated binary spectral clustering algorithm.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "A hierarchy of clusters is created and represented by a TOH cluster tree.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Based on the proposed method of identifying different species of surrogate-TOH, our cgaTOH software was developed.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The cgaTOH software provides an intuitive and interactive visualization tool for better investigation of high-throughput output with special interactive navigation rings.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The cgaTOH software will find its applicability in both conventional association studies and more sophisticated downstream analyses.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "NCBI genome map viewer is incorporated into the cgaTOH system.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "We discuss the choice of implementing appropriate empirical ranges of critical parameters by applying the method to disease models.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "This method identifies various patterned clusters of SNPs demonstrating extended homozygosity.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The method allows observation of different aspects of the multi-faceted characteristics of TOHs.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "paragraph": "Suicide prevention requires reliable assessment tools, integrating the Food and Drug Administration (FDA)-endorsed Columbia Classification Algorithm of Suicide Assessment domains and psychological risk factors, capturing patient-reported experiences and clinician-reported characterizations of suicidality comprehensively. The 9-item Concise Health Risk Tracking - Self-Report (CHRT-SR",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Suicide prevention requires reliable assessment tools.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Reliable assessment tools integrate the FDA-endorsed Columbia Classification Algorithm of Suicide Assessment domains and psychological risk factors.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Assessment tools capture patient-reported experiences of suicidality comprehensively.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Assessment tools capture clinician-reported characterizations of suicidality comprehensively.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The 9-item Concise Health Risk Tracking - Self-Report (CHRT-SR) is mentioned.",
+        "category": "Other",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "Data from the Texas Resilience Against Depression (T-RAD) cohort were used for the analysis. T-RAD consists of two datasets, one with participants with a history of depression and healthy controls (D2K, n=1040, ages 10 and above) and one with youth ages 10-24 years at risk for depression (RAD, n=365). Participants completed both the",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Data from the Texas Resilience Against Depression (T-RAD) cohort were used for the analysis.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "T-RAD consists of two datasets.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "One dataset includes participants with a history of depression and healthy controls (D2K, n=1040, ages 10 and above).",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "The other dataset includes youth ages 10-24 years at risk for depression (RAD, n=365).",
+        "category": "Background",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Using the CHRT-Beh, a subset of D2K participants aged ≥ 24 years reported suicidal ideation (14.07%), non-suicidal self-injury (1.11%), and self-injurious behavior (0.28%) in the past week. Findings were similar in D2K participants aged 10-24 years. A subset of RAD participants (1.64%) reported suicidal ideation without attempt or self-injurious behavior in the past week. Participants who reported suicidal ideation on the CHRT-Beh had significantly higher",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Using the CHRT-Beh, a subset of D2K participants aged ≥ 24 years reported suicidal ideation (14.07%) in the past week.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Using the CHRT-Beh, a subset of D2K participants aged ≥ 24 years reported non-suicidal self-injury (1.11%) in the past week.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Using the CHRT-Beh, a subset of D2K participants aged ≥ 24 years reported self-injurious behavior (0.28%) in the past week.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Findings were similar in D2K participants aged 10-24 years.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "A subset of RAD participants (1.64%) reported suicidal ideation without attempt or self-injurious behavior in the past week.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "paragraph": "Gastric carcinoma (GC) refers to a common digestive system disease that exhibits a very high incidence. MicroRNA hsa-mir-3923 belongs to a type of miRNA, of which the function has been merely investigated in breast, pancreatic cancers and pre-neoplasic stages of gastric cancer. It has not been studied or reported in gastric carcinoma, so the relationship between gastric hsa-mir-3923 expression and the clinics feature and pathology of GC cases was examined. This study employed data mining for analyzing gastric carcinoma data in The Cancer Genome Atlas database. A Chi squared test was performed for assessing the relations of hsa-mir-3923 expression with clinics-related and pathology-regulated variables. This study conducted the assessment of the role of hsa-mir-3923 in prognostic process using Kaplan-Meier curves, Receiver operating characteristic (ROC) analysis and proportional hazards model (Cox) study. With the use of Gene Expression Omnibus, this study carried out gene set enrichment analysis (GSEA). In the meantime, the common miRNA database was compared to predict potential target genes; as revealed by co-expression analysis, a regulatory network probably existed, containing hsa-mir-3923. For the analysis of the most tightly associated cytological behavior and pathway in GC, this study adopted the databases for Annotation, Visualization and Integrated Discovery (David) and KO-Based Annotation System (KOBAS). Cytoscape, R and STRING were employed for mapping probable regulatory networks displaying relations to hsa-mir-3923. Lastly, we obtained 69 genes most tightly associated with hsa-mir-3923 and described their relationship with Circos plot. As revealed from the results, hsa-mir-3923 displayed up-regulation in gastric carcinoma, and it displayed associations with vital status, N stage and histologic grade when being expressed. The predicted results of miRNA target genes suggested that there may be a close relationship between 66 genes and hsa-mir-3923 in gastric cancer. As indicated from co-expression data, a small regulating network of 4 genes probably existed. Our results elucidated that hsa-mir-3923 high-expression reveals poor prognosis of GC patients.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Gastric carcinoma (GC) refers to a common digestive system disease that exhibits a very high incidence.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "MicroRNA hsa-mir-3923 belongs to a type of miRNA, of which the function has been merely investigated in breast, pancreatic cancers and pre-neoplastic stages of gastric cancer.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The function of hsa-mir-3923 has not been studied or reported in gastric carcinoma.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The relationship between gastric hsa-mir-3923 expression and the clinical features and pathology of GC cases was examined.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "This study employed data mining for analyzing gastric carcinoma data in The Cancer Genome Atlas database.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "A Chi-squared test was performed for assessing the relations of hsa-mir-3923 expression with clinical and pathology-regulated variables.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The role of hsa-mir-3923 in the prognostic process was assessed using Kaplan-Meier curves, Receiver Operating Characteristic (ROC) analysis, and proportional hazards model (Cox) study.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Gene set enrichment analysis (GSEA) was carried out using the Gene Expression Omnibus.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The common miRNA database was compared to predict potential target genes.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Co-expression analysis revealed that a regulatory network probably existed, containing hsa-mir-3923.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Databases for Annotation, Visualization and Integrated Discovery (David) and KO-Based Annotation System (KOBAS) were adopted for analyzing the most tightly associated cytological behavior and pathway in GC.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Cytoscape, R, and STRING were employed for mapping probable regulatory networks displaying relations to hsa-mir-3923.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "A total of 69 genes most tightly associated with hsa-mir-3923 were identified and their relationship was described using a Circos plot.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "hsa-mir-3923 displayed up-regulation in gastric carcinoma.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "hsa-mir-3923 was associated with vital status, N stage, and histologic grade when expressed.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "The predicted results of miRNA target genes suggested a close relationship between 66 genes and hsa-mir-3923 in gastric cancer.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Co-expression data indicated that a small regulatory network of 4 genes probably existed.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "hsa-mir-3923 high-expression reveals poor prognosis of GC patients.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

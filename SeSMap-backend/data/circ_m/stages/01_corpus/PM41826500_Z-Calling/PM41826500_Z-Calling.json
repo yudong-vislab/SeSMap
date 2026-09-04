@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Z-Calling: a tool for A/Z (2,6-diaminopurine) base calling and dZ-DNA detection using PacBio HiFi reads",
+    "paragraphs": []
+  },
+  {
+    "title": "Z-Calling: a tool for A/Z (2,6-diaminopurine) base calling and dZ-DNA detection using PacBio HiFi reads-Abstract",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "The natural occurrence of 2,6-diaminopurine (Z) as a substitute for adenine (A) in certain bacteriophage genomes has profound evolutionary implications and promising biotechnological potential. Progress in this field, however, has been stymied by the absence of reliable methods to detect dZ-DNA, particularly in mixed samples, and to distinguish A from Z at the single-nucleotide level. Here, we introduce Z-Calling, a machine learning-based tool designed to identify dZ-DNA and discriminate A/Z bases directly from PacBio Circular Consensus Sequencing (CCS) reads without additional processing. By analyzing sequence context-dependent kinetic signal changes induced by Z/A substitution, Z-Calling achieves exceptional sensitivity, reliably detecting dZ-DNA even in samples with as little as ~1% dZ-DNA content. Its A/Z base-calling module demonstrates robust performance, with AUC scores of 0.942-0.952 across diverse DNA sequence contexts. Z-Calling represents a significant advancement in accessible and accurate dZ-DNA sequencing, paving the way for its broader application in biotechnology. Z-Calling is freely available at https://github.com/xiaochuanle/Z-Calling .",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

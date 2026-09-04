@@ -1,0 +1,18 @@
+[
+  {
+    "paragraph": "The circular polymerase extension reaction (CPER) has emerged as a high-fidelity, versatile and rapid tool for generating infectious cDNA clones of positive-sense, single-stranded RNA viruses. Here, we implemented this strategy to generate infectious cDNA clones of two closely related members of the family",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The circular polymerase extension reaction (CPER) has emerged as a high-fidelity, versatile, and rapid tool for generating infectious cDNA clones of positive-sense, single-stranded RNA viruses.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "This strategy was implemented to generate infectious cDNA clones of two closely related members of the family.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  }
+]

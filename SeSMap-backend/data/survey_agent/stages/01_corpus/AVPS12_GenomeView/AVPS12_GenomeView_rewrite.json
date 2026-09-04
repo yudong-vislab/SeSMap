@@ -1,0 +1,53 @@
+[
+  {
+    "paragraph": "Due to ongoing advances in sequencing technologies, billions of nucleotide sequences are now produced on a daily basis. A major challenge is to visualize these data for further downstream analysis. To this end, we present GenomeView, a stand-alone genome browser specifically designed to visualize and manipulate a multitude of genomics data. GenomeView enables users to dynamically browse high volumes of aligned short-read data, with dynamic navigation and semantic zooming, from the whole genome level to the single nucleotide. At the same time, the tool enables visualization of whole genome alignments of dozens of genomes relative to a reference sequence. GenomeView is unique in its capability to interactively handle huge data sets consisting of tens of aligned genomes, thousands of annotation features and millions of mapped short reads both as viewer and editor. GenomeView is freely available as an open source software package.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Advances in sequencing technologies produce billions of nucleotide sequences daily.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "A major challenge is to visualize these data for downstream analysis.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "GenomeView is a stand-alone genome browser designed to visualize and manipulate genomics data.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "GenomeView enables dynamic browsing of high volumes of aligned short-read data.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "GenomeView supports dynamic navigation and semantic zooming from the whole genome level to the single nucleotide.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "GenomeView enables visualization of whole genome alignments of dozens of genomes relative to a reference sequence.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "GenomeView can interactively handle huge data sets consisting of tens of aligned genomes, thousands of annotation features, and millions of mapped short reads.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "GenomeView functions as both a viewer and an editor.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "GenomeView is freely available as an open source software package.",
+        "category": "Other",
+        "rank": 2
+      }
+    ]
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "paragraph": "DNA plasmids are widely used for delivering proteins and RNA in genome editing. However, their bacterial components can lead to inactivation, cell toxicity, and reduced efficiency compared to minicircle DNA (mcDNA), which lacks such bacterial sequences. Existing commercial kits that recombine plasmids into mcDNA within proprietary bacterial strains are labor-intensive, yield inconsistent results, and often produce endotoxin-contaminated low-quality mcDNA. To address this challenge, we developed Plasmid2MC, a novel cell-free method utilizing ΦC31 integrase-mediated recombination to efficiently excise the bacterial backbone from conventionally prepared plasmids, followed by digestion of the bacterial backbone and all other DNA contaminants, resulting in highly pure and virtually endotoxin-free mcDNA. We demonstrated the application of mcDNA to express CRISPR-dCas9 for base editing in HEK293T cells and mouse embryonic stem cells, as well as for homology-independent targeted insertion (HITI) genome editing. The method's ease of preparation, high efficiency, and the high purity of the resulting mcDNA make Plasmid2MC a valuable tool for applications requiring bacterial backbone-free circular DNA.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "DNA plasmids are widely used for delivering proteins and RNA in genome editing.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Bacterial components in DNA plasmids can lead to inactivation, cell toxicity, and reduced efficiency compared to minicircle DNA (mcDNA).",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Minicircle DNA (mcDNA) lacks bacterial sequences.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Existing commercial kits recombine plasmids into mcDNA within proprietary bacterial strains.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Commercial kits are labor-intensive, yield inconsistent results, and often produce endotoxin-contaminated low-quality mcDNA.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Plasmid2MC is a novel cell-free method developed to address the challenges of existing mcDNA preparation methods.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Plasmid2MC utilizes ΦC31 integrase-mediated recombination to efficiently excise the bacterial backbone from conventionally prepared plasmids.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Plasmid2MC includes digestion of the bacterial backbone and all other DNA contaminants.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Plasmid2MC results in highly pure and virtually endotoxin-free mcDNA.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "We demonstrated the application of mcDNA to express CRISPR-dCas9 for base editing in HEK293T cells and mouse embryonic stem cells.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "We demonstrated the application of mcDNA for homology-independent targeted insertion (HITI) genome editing.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "The method's ease of preparation, high efficiency, and the high purity of the resulting mcDNA make Plasmid2MC a valuable tool for applications requiring bacterial backbone-free circular DNA.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "paragraph": "Fluorescence in situ hybridization (FISH) using oligonucleotide-based probes is an innovative modification of classic FISH techniques, enabling karyotypic identifications. Here, we exemplarily describe the design and in silico visualization of oligonucleotide-based probes derived from the Cucumis sativus genome. Additionally, the probes are also plotted comparatively to the closely related Cucumis melo genome. The visualization process is realized in R using various libraries for linear or circular plots including RIdeogram, KaryoploteR, and Circlize.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Fluorescence in situ hybridization (FISH) using oligonucleotide-based probes is an innovative modification of classic FISH techniques.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "FISH using oligonucleotide-based probes enables karyotypic identifications.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "The design and in silico visualization of oligonucleotide-based probes derived from the Cucumis sativus genome are described.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The probes are plotted comparatively to the closely related Cucumis melo genome.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The visualization process is realized in R using various libraries for linear or circular plots including RIdeogram, KaryoploteR, and Circlize.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  }
+]

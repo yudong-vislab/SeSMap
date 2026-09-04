@@ -1,0 +1,21 @@
+# Bacteriological profile of secondary infections following snakebite envenomation's: A systematic literature review
+
+## Introduction
+
+Secondary infection is a significant complication of snakebite envenomation, with considerable impact on clinical outcomes. Identifying the bacterial agents involved is essential for appropriate case management. Notably, the published literature on bacteriological profiles of snakebite secondary infections is geographically skewed toward South and Southeast Asia and Brazil, with marked underrepresentation of data from sub-Saharan Africa and Central America - regions that bear a disproportionate share of the global snakebite burden.
+
+## Methods
+
+Two systematic literature reviews were conducted independently in pairs using the BVS (LILACS and Medline), PubMed, and CAPES Journals databases. One review focused on identifying bacteria present in the oral cavity of snakes, and the other on bacteria involved in secondary infections, with results categorized by Old World and New World regions.
+
+## Results
+
+In the New World, 35 bacterial genera and 9 snake genera were reported across the included studies examining oral cavity samples; in the Old World, 65 bacterial genera and 28 snake genera were reported in the available literature. Regarding secondary infections in patients, 18 bacterial genera and 3 snake genera were reported in the New World literature, while 21 bacterial genera and 5 snake genera were documented in Old World studies. These counts represent cumulative diversity reported across heterogeneous studies and should not be interpreted as estimates of true ecological richness. Some snake species harbored more than 20 distinct bacterial genera in their oral cavities, leading to broad-spectrum antimicrobial recommendations. Secondary infection may result in musculoskeletal damage, particularly when associated with necrosis, blistering, or compartment syndrome.
+
+## Conclusion
+
+The Circos diagrams presented in this review represent binary presence/absence associations and do not encode frequency, isolate count, study number, or evidence strength. Future quantitative analyses - with ribbon thickness scaled to isolate count or number of independent confirming studies - would substantially improve the informational value of this visualization approach. Bacteria involved in secondary infections are typically associated with the snake's oral microbiota or the patient's skin. The development of protocols for prevention and treatment may help reduce functional impairments following envenomation.
+
+## Key Contribution
+
+Secondary infections following snakebite envenomation are common and may be exacerbated by factors such as necrosis, blistering, and excessive inflammation. The bacteria involved are often directly associated with the oral microbiota of the snake or with the patient's own skin flora.

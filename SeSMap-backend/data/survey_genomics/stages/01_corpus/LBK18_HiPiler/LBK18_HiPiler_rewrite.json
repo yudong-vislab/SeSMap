@@ -1,0 +1,73 @@
+[
+  {
+    "paragraph": "This paper presents an interactive visualization interface-HiPiler-for the exploration and visualization of regions-of-interest in large genome interaction matrices. Genome interaction matrices approximate the physical distance of pairs of regions on the genome to each other and can contain up to 3 million rows and columns with many sparse regions. Regions of interest (ROIs) can be defined, e.g., by sets of adjacent rows and columns, or by specific visual patterns in the matrix. However, traditional matrix aggregation or pan-and-zoom interfaces fail in supporting search, inspection, and comparison of ROIs in such large matrices. In HiPiler, ROIs are first-class objects, represented as thumbnail-like \"snippets\". Snippets can be interactively explored and grouped or laid out automatically in scatterplots, or through dimension reduction methods. Snippets are linked to the entire navigable genome interaction matrix through brushing and linking. The design of HiPiler is based on a series of semi-structured interviews with 10 domain experts involved in the analysis and interpretation of genome interaction matrices. We describe six exploration tasks that are crucial for analysis of interaction matrices and demonstrate how HiPiler supports these tasks. We report on a user study with a series of data exploration sessions with domain experts to assess the usability of HiPiler as well as to demonstrate respective findings in the data.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "This paper presents an interactive visualization interface called HiPiler for the exploration and visualization of regions-of-interest in large genome interaction matrices.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Genome interaction matrices approximate the physical distance of pairs of regions on the genome to each other.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Genome interaction matrices can contain up to 3 million rows and columns with many sparse regions.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Regions of interest (ROIs) can be defined by sets of adjacent rows and columns or by specific visual patterns in the matrix.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Traditional matrix aggregation or pan-and-zoom interfaces fail in supporting search, inspection, and comparison of ROIs in large matrices.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "In HiPiler, regions of interest (ROIs) are represented as thumbnail-like 'snippets'.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Snippets in HiPiler can be interactively explored and grouped or laid out automatically in scatterplots or through dimension reduction methods.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Snippets in HiPiler are linked to the entire navigable genome interaction matrix through brushing and linking.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The design of HiPiler is based on a series of semi-structured interviews with 10 domain experts involved in the analysis and interpretation of genome interaction matrices.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Six exploration tasks crucial for the analysis of interaction matrices are described.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "HiPiler supports six exploration tasks crucial for the analysis of interaction matrices.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "A user study was conducted with a series of data exploration sessions with domain experts to assess the usability of HiPiler.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "The user study demonstrates respective findings in the data using HiPiler.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  }
+]

@@ -1,0 +1,73 @@
+[
+  {
+    "paragraph": "Correlated mutations between residue pairs in evolutionarily related proteins arise from constraints needed to maintain a functional and stable protein. Identifying these inter-related positions narrows down the search for structurally or functionally important sites. MISTIC is a server designed to assist users to calculate covariation in protein families and provide them with an interactive tool to visualize the results. Here, we present MISTIC2, an update to the previous server, that allows to calculate four covariation methods (MIp, mfDCA, plmDCA and gaussianDCA). The results visualization framework has been reworked for improved performance, compatibility and user experience. It includes a circos representation of the information contained in the alignment, an interactive covariation network, a 3D structure viewer and a sequence logo. Others components provide additional information such as residue annotations, a roc curve for assessing contact prediction, data tables and different ways of filtering the data and exporting figures. Comparison of different methods is easily done and scores combination is also possible. A newly implemented web service allows users to access MISTIC2 programmatically using an API to calculate covariation and retrieve results. MISTIC2 is available at: https://mistic2.leloir.org.ar.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Correlated mutations between residue pairs in evolutionarily related proteins arise from constraints needed to maintain a functional and stable protein.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Identifying inter-related positions narrows down the search for structurally or functionally important sites.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "MISTIC is a server designed to assist users to calculate covariation in protein families and provide them with an interactive tool to visualize the results.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "MISTIC2 is an update to the previous server that allows calculation of four covariation methods: MIp, mfDCA, plmDCA, and gaussianDCA.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The results visualization framework in MISTIC2 has been reworked for improved performance, compatibility, and user experience.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "MISTIC2 includes a circos representation of the information contained in the alignment.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "MISTIC2 provides an interactive covariation network.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "MISTIC2 includes a 3D structure viewer.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "MISTIC2 includes a sequence logo.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "MISTIC2 provides additional components such as residue annotations, a ROC curve for assessing contact prediction, data tables, and different ways of filtering the data and exporting figures.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Comparison of different methods is easily done in MISTIC2, and scores combination is also possible.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "A newly implemented web service allows users to access MISTIC2 programmatically using an API to calculate covariation and retrieve results.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "MISTIC2 is available at: https://mistic2.leloir.org.ar.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

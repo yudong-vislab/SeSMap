@@ -1,0 +1,63 @@
+[
+  {
+    "paragraph": "In this work we present, apply, and evaluate a novel, interactive visualization model for comparative analysis of structural variants and rearrangements in human and cancer genomes, with emphasis on data integration and uncertainty visualization. To support both global trend analysis and local feature detection, this model enables explorations continuously scaled from the high-level, complete genome perspective, down to the low-level, structural rearrangement view, while preserving global context at all times. We have implemented these techniques in Gremlin, a genomic rearrangement explorer with multi-scale, linked interactions, which we apply to four human cancer genome data sets for evaluation. Using an insight-based evaluation methodology, we compare Gremlin to Circos, the state-of-the-art in genomic rearrangement visualization, through a small user study with computational biologists working in rearrangement analysis. Results from user study evaluations demonstrate that this visualization model enables more total insights, more insights per minute, and more complex insights than the current state-of-the-art for visual analysis and exploration of genome rearrangements.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A novel, interactive visualization model for comparative analysis of structural variants and rearrangements in human and cancer genomes is presented, applied, and evaluated.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The model emphasizes data integration and uncertainty visualization.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The model supports both global trend analysis and local feature detection.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The model enables explorations continuously scaled from the high-level, complete genome perspective to the low-level, structural rearrangement view, while preserving global context.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "These techniques have been implemented in Gremlin, a genomic rearrangement explorer with multi-scale, linked interactions.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Gremlin is applied to four human cancer genome datasets for evaluation.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "An insight-based evaluation methodology is used to compare Gremlin to Circos, the state-of-the-art in genomic rearrangement visualization.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "A small user study with computational biologists working in rearrangement analysis is conducted.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "Results from user study evaluations demonstrate that this visualization model enables more total insights than the current state-of-the-art for visual analysis and exploration of genome rearrangements.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The visualization model enables more insights per minute than the current state-of-the-art for visual analysis and exploration of genome rearrangements.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The visualization model enables more complex insights than the current state-of-the-art for visual analysis and exploration of genome rearrangements.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  }
+]

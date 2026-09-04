@@ -1,0 +1,73 @@
+[
+  {
+    "paragraph": "IslandViewer (http://pathogenomics.sfu.ca/islandviewer) is a widely used web-based resource for the prediction and analysis of genomic islands (GIs) in bacterial and archaeal genomes. GIs are clusters of genes of probable horizontal origin, and are of high interest since they disproportionately encode genes involved in medically and environmentally important adaptations, including antimicrobial resistance and virulence. We now report a major new release of IslandViewer, since the last release in 2013. IslandViewer 3 incorporates a completely new genome visualization tool, IslandPlot, enabling for the first time interactive genome analysis and gene search capabilities using synchronized circular, horizontal and vertical genome views. In addition, more curated virulence factors and antimicrobial resistance genes have been incorporated, and homologs of these genes identified in closely related genomes using strict filters. Pathogen-associated genes have been re-calculated for all pre-computed complete genomes. For user-uploaded genomes to be analysed, IslandViewer 3 can also now handle incomplete genomes, with an improved queuing system on compute nodes to handle user demand. Overall, IslandViewer 3 represents a significant new version of this GI analysis software, with features that may make it more broadly useful for general microbial genome analysis and visualization.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "IslandViewer is a widely used web-based resource for the prediction and analysis of genomic islands (GIs) in bacterial and archaeal genomes.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Genomic islands (GIs) are clusters of genes of probable horizontal origin.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "GIs are of high interest since they disproportionately encode genes involved in medically and environmentally important adaptations, including antimicrobial resistance and virulence.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "A major new release of IslandViewer is reported, since the last release in 2013.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "IslandViewer 3 incorporates a completely new genome visualization tool, IslandPlot.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "IslandPlot enables, for the first time, interactive genome analysis and gene search capabilities using synchronized circular, horizontal, and vertical genome views.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "More curated virulence factors and antimicrobial resistance genes have been incorporated into IslandViewer 3.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Homologs of virulence factors and antimicrobial resistance genes have been identified in closely related genomes using strict filters.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Pathogen-associated genes have been re-calculated for all pre-computed complete genomes.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "IslandViewer 3 can now handle incomplete genomes for user-uploaded analyses.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "An improved queuing system on compute nodes has been implemented to handle user demand.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "IslandViewer 3 represents a significant new version of this GI analysis software.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "The new features of IslandViewer 3 may make it more broadly useful for general microbial genome analysis and visualization.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  }
+]

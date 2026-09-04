@@ -1,0 +1,166 @@
+[
+  {
+    "paragraph": "As the global shift toward non-communicable diseases overlaps with the unfinished agenda of confronting infectious diseases in low- and middle-income countries, epidemiological links across both burdens must be recognized. This study examined the non-communicable disease-infectious disease overlap in the specific comorbidity rates for key diseases in an occupational cohort in Papua, Indonesia.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The global shift toward non-communicable diseases overlaps with the unfinished agenda of confronting infectious diseases in low- and middle-income countries.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Epidemiological links across non-communicable and infectious disease burdens must be recognized.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "This study examined the non-communicable disease-infectious disease overlap in specific comorbidity rates.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The study focused on key diseases in an occupational cohort in Papua, Indonesia.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Diagnosed cases of ischaemic heart disease, stroke, hypertension, diabetes (types 1 and 2), chronic obstructive pulmonary disease, asthma, cancer, HIV and AIDS, tuberculosis, and malaria were extracted from 22,550 patient records (21,513 men, 1037 women) stored in identical electronic health information systems from two clinic sites in Papua, Indonesia. Data were collected as International Classification of Diseases, 10th Revision, entries from records spanning January-December 2013. A novel application of Circos software was used to visualize the interconnectedness between the disease burdens as overlapping prevalence estimates representing comorbidities.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Diagnosed cases of ischaemic heart disease, stroke, hypertension, diabetes (types 1 and 2), chronic obstructive pulmonary disease, asthma, cancer, HIV and AIDS, tuberculosis, and malaria were extracted from 22,550 patient records.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The patient records included 21,513 men and 1,037 women.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The records were stored in identical electronic health information systems from two clinic sites in Papua, Indonesia.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Data were collected as International Classification of Diseases, 10th Revision, entries from records spanning January-December 2013.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "A novel application of Circos software was used to visualize the interconnectedness between the disease burdens.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The visualization represented overlapping prevalence estimates as comorbidities.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Overall, NCDs represented 38 % of all disease cases, primarily in the form of type 2 diabetes (n = 1440) and hypertension (n = 1398). Malaria cases represented the largest single portion of the disease burden with 5310 recorded cases, followed by type 2 diabetes with 1400 cases. Tuberculosis occurred most frequently alongside malaria (29 %), followed by chronic obstructive pulmonary disease (19 %), asthma (17 %), and stroke (12 %). Hypertension-tuberculosis (4 %), tuberculosis-cancer (4 %), and asthma-tuberculosis (2 %) comorbidities were also observed.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Non-communicable diseases (NCDs) represented 38% of all disease cases.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Type 2 diabetes accounted for 1440 cases of NCDs.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Hypertension accounted for 1398 cases of NCDs.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Malaria cases represented the largest single portion of the disease burden with 5310 recorded cases.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Type 2 diabetes was the second largest contributor to the disease burden with 1400 cases.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Tuberculosis occurred most frequently alongside malaria, accounting for 29% of cases.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Chronic obstructive pulmonary disease occurred alongside tuberculosis in 19% of cases.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Asthma occurred alongside tuberculosis in 17% of cases.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Stroke occurred alongside tuberculosis in 12% of cases.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Hypertension-tuberculosis comorbidities accounted for 4% of cases.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Tuberculosis-cancer comorbidities accounted for 4% of cases.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Asthma-tuberculosis comorbidities accounted for 2% of cases.",
+        "category": "Result",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "The high prevalence of multimorbidity, preponderance of non-communicable diseases, and extensive interweaving of non-communicable and infectious disease comorbidities highlighted in this cohort of mining workers in Papua, Indonesia reflect the markedly double disease burden increasingly plaguing Indonesia and other similar low- and middle-income countries - a challenge with which their over-stretched, under-resourced health systems are ill-equipped to cope. Integrated, person-centered treatment and control strategies rooted in the primary healthcare sector will be critical to reverse this trend.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The high prevalence of multimorbidity is highlighted in this cohort of mining workers in Papua, Indonesia.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "There is a preponderance of non-communicable diseases in this cohort of mining workers in Papua, Indonesia.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Extensive interweaving of non-communicable and infectious disease comorbidities is observed in this cohort of mining workers in Papua, Indonesia.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "This reflects the markedly double disease burden increasingly plaguing Indonesia and other similar low- and middle-income countries.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Over-stretched, under-resourced health systems in these countries are ill-equipped to cope with this challenge.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Integrated, person-centered treatment and control strategies rooted in the primary healthcare sector will be critical to reverse this trend.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

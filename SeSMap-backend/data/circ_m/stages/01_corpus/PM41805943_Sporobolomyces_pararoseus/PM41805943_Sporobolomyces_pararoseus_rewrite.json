@@ -1,0 +1,78 @@
+[
+  {
+    "paragraph": "Recent advances in biomanufacturing have stimulated the exploration of microbial platforms for pigment production, offering alternatives to plant-derived and synthetic colorants. Among these biological solutions, microbial carotenoids, a group of naturally occurring pigments, have emerged as particularly valuable due to their vibrant red, orange, and yellow coloration coupled with demonstrated antioxidant capacity and health-promoting benefits. Sporobolomyces pararoseus, one of the most well-studied oleaginous red yeasts, exhibits a remarkable ability to simultaneously produce three commercially valuable carotenoids—β-carotene, torulene, and torularhodin—under scalable fermentation conditions, making it an attractive microbial platform for industrial biotechnology. This review summarizes current knowledge on S. pararoseus as a promising microbial cell factory for carotenoid production, emphasizing its distinctive biological characteristics and environmental adaptability, enzymatic pathways governing carotenoid synthesis, state-of-the-art biotechnological interventions to enhance productivity and recovery efficiency, and potential commercial applications across diverse biotechnology sectors. Current challenges in carotenogenic pathway optimization, genetic tool development, scale-up economics, and market regulatory construction are addressed alongside integrated solutions employing CRISPR-based genome editing techniques, multi-omics profiling approaches, circular bioeconomy strategies, and comprehensive safety evaluation procedures. Through synthesis of contemporary scientific understanding with innovative bioprocessing techniques, this review connects fundamental insights into S. pararoseus biology with actionable methodologies for commercial-scale implementation, and suggests that this yeast could serve as a microbial platform for sustainable production of β-carotene, torulene, and torularhodin to meet global market demands.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Recent advances in biomanufacturing have stimulated the exploration of microbial platforms for pigment production, offering alternatives to plant-derived and synthetic colorants.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Microbial carotenoids are a group of naturally occurring pigments with vibrant red, orange, and yellow coloration and demonstrated antioxidant capacity and health-promoting benefits.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Sporobolomyces pararoseus is one of the most well-studied oleaginous red yeasts.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Sporobolomyces pararoseus exhibits a remarkable ability to simultaneously produce three commercially valuable carotenoids—β-carotene, torulene, and torularhodin—under scalable fermentation conditions.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "This review summarizes current knowledge on Sporobolomyces pararoseus as a promising microbial cell factory for carotenoid production.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "The review emphasizes the distinctive biological characteristics and environmental adaptability of Sporobolomyces pararoseus.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "The review highlights enzymatic pathways governing carotenoid synthesis in Sporobolomyces pararoseus.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "The review discusses state-of-the-art biotechnological interventions to enhance productivity and recovery efficiency of carotenoids in Sporobolomyces pararoseus.",
+        "category": "Other",
+        "rank": 3
+      },
+      {
+        "sentence": "The review explores potential commercial applications of Sporobolomyces pararoseus across diverse biotechnology sectors.",
+        "category": "Other",
+        "rank": 3
+      },
+      {
+        "sentence": "Current challenges in carotenogenic pathway optimization, genetic tool development, scale-up economics, and market regulatory construction are addressed in the review.",
+        "category": "Other",
+        "rank": 3
+      },
+      {
+        "sentence": "Integrated solutions employing CRISPR-based genome editing techniques, multi-omics profiling approaches, circular bioeconomy strategies, and comprehensive safety evaluation procedures are proposed.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The review synthesizes contemporary scientific understanding with innovative bioprocessing techniques.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "The review connects fundamental insights into Sporobolomyces pararoseus biology with actionable methodologies for commercial-scale implementation.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "Sporobolomyces pararoseus could serve as a microbial platform for sustainable production of β-carotene, torulene, and torularhodin to meet global market demands.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

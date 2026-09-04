@@ -1,0 +1,73 @@
+[
+  {
+    "paragraph": "Generative models have received a lot of attention in many areas of academia and the industry. Their capabilities span many areas, from the invention of images given a prompt to the generation of concrete code to solve a certain programming issue. These two paradigmatic cases fall within two distinct categories of requirements, ranging from \"creativity\" to \"precision\", as characterized by Bing Chat, which employs ChatGPT-4 as its backbone. Visualization practitioners and researchers have wondered to what end one of such systems could accomplish our work in a more efficient way. Several works in the literature have utilized them for the creation of visualizations. And some tools such as Lida, incorporate them as part of their pipeline. Nevertheless, to the authors' knowledge, no systematic approach for testing their capabilities has been published, which includes both extensive and in-depth evaluation. Our goal is to fill that gap with a systematic approach that analyzes three elements: whether Large Language Models are capable of correctly generating a large variety of charts, what libraries they can deal with effectively, and how far we can go to configure individual charts. To achieve this objective, we initially selected a diverse set of charts, which are commonly utilized in data visualization. We then developed a set of generic prompts that could be used to generate them, and analyzed the performance of different LLMs and libraries. The results include both the set of prompts and the data sources, as well as an analysis of the performance with different configurations.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Generative models have received a lot of attention in many areas of academia and the industry.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Generative models are capable of tasks such as the invention of images given a prompt and the generation of concrete code to solve programming issues.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "These tasks fall within two distinct categories of requirements, ranging from 'creativity' to 'precision', as characterized by Bing Chat, which employs ChatGPT-4 as its backbone.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Visualization practitioners and researchers have wondered to what extent generative models could accomplish their work more efficiently.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Several works in the literature have utilized generative models for the creation of visualizations.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Some tools, such as Lida, incorporate generative models as part of their pipeline.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "To the authors' knowledge, no systematic approach for testing the capabilities of generative models has been published, which includes both extensive and in-depth evaluation.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "The goal of this study is to fill the gap with a systematic approach that analyzes three elements: whether Large Language Models are capable of correctly generating a large variety of charts, what libraries they can deal with effectively, and how far we can go to configure individual charts.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "To achieve this objective, a diverse set of charts commonly utilized in data visualization was initially selected.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "A set of generic prompts was developed to generate the selected charts.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The performance of different Large Language Models and libraries was analyzed.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The results include the set of prompts and the data sources.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The results also include an analysis of the performance with different configurations.",
+        "category": "Result",
+        "rank": 3
+      }
+    ]
+  }
+]

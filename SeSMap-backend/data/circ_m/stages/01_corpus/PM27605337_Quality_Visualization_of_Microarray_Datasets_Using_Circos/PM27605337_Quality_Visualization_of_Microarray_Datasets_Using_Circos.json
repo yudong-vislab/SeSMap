@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Quality Visualization of Microarray Datasets Using Circos",
+    "paragraphs": []
+  },
+  {
+    "title": "Quality Visualization of Microarray Datasets Using Circos-Abstract",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Quality control and normalization is considered the most important step in the analysis of microarray data. At present there are various methods available for quality assessments of microarray datasets. However there seems to be no standard visualization routine, which also depicts individual microarray quality. Here we present a convenient method for visualizing the results of standard quality control tests using Circos plots. In these plots various quality measurements are drawn in a circular fashion, thus allowing for visualization of the quality and all outliers of each distinct array within a microarray dataset. The proposed method is intended for use with the Affymetrix Human Genome platform (i.e., GPL 96, GPL570 and GPL571). Circos quality measurement plots are a convenient way for the initial quality estimate of Affymetrix datasets that are stored in publicly available databases.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

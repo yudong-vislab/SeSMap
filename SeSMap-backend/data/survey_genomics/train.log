@@ -1,0 +1,147 @@
+########## 配对完成，开始训练 ##########
+  train=851 test=212 total=1063
+########## lambda_con=0.3 seed=0 ##########
+[v11] N=1770 dim=1024 | lambda_tsne=1.0 lambda_con=0.3
+[v11] positives: train=851 test(held-out)=212 | pairs meta=pairs are ROW indices into EMB_CACHE; positives are cross-pa
+[P] cached -> data/survey_genomics/stages/05_model/tsne_P_perp30.npy
+[P] ready (1770, 1770)
+[v11] it 0001/1500 loss=6.0427 trust=0.673 knnOv=0.040 BZrec@12_2d=0.071
+[v11] it 0100/1500 loss=3.5189 trust=0.884 knnOv=0.309 BZrec@12_2d=0.410
+[v11] it 0200/1500 loss=3.1659 trust=0.901 knnOv=0.350 BZrec@12_2d=0.420
+[v11] it 0300/1500 loss=3.0145 trust=0.905 knnOv=0.359 BZrec@12_2d=0.429
+[v11] it 0400/1500 loss=2.8896 trust=0.907 knnOv=0.361 BZrec@12_2d=0.429
+[v11] it 0500/1500 loss=2.8305 trust=0.908 knnOv=0.364 BZrec@12_2d=0.425
+[v11] it 0600/1500 loss=2.8029 trust=0.907 knnOv=0.362 BZrec@12_2d=0.425
+[v11] it 0700/1500 loss=2.7607 trust=0.908 knnOv=0.363 BZrec@12_2d=0.439
+[v11] it 0800/1500 loss=2.7479 trust=0.907 knnOv=0.363 BZrec@12_2d=0.420
+[v11] it 0900/1500 loss=2.7268 trust=0.907 knnOv=0.365 BZrec@12_2d=0.434
+[v11] it 1000/1500 loss=2.7181 trust=0.906 knnOv=0.364 BZrec@12_2d=0.434
+[v11] it 1100/1500 loss=2.7038 trust=0.906 knnOv=0.365 BZrec@12_2d=0.434
+[v11] it 1200/1500 loss=2.7038 trust=0.906 knnOv=0.364 BZrec@12_2d=0.434
+[v11] it 1300/1500 loss=2.6946 trust=0.906 knnOv=0.363 BZrec@12_2d=0.425
+[v11] it 1400/1500 loss=2.6897 trust=0.906 knnOv=0.363 BZrec@12_2d=0.425
+[v11] it 1500/1500 loss=2.6914 trust=0.906 knnOv=0.363 BZrec@12_2d=0.425
+
+[v11] FINAL trust=0.906 knnOv=0.363 {'n': 212, 'bz_recall@12_2d': 0.42452830188679247, 'bz_recall@12_highD': 0.8773584905660378}
+[save] data/survey_genomics/stages/05_model/v11_survey_lam0.3_s0.pt
+########## lambda_con=0.3 seed=1 ##########
+[v11] N=1770 dim=1024 | lambda_tsne=1.0 lambda_con=0.3
+[v11] positives: train=851 test(held-out)=212 | pairs meta=pairs are ROW indices into EMB_CACHE; positives are cross-pa
+[P] loaded cache data/survey_genomics/stages/05_model/tsne_P_perp30.npy
+[P] ready (1770, 1770)
+[v11] it 0001/1500 loss=6.0377 trust=0.671 knnOv=0.046 BZrec@12_2d=0.061
+[v11] it 0100/1500 loss=3.5012 trust=0.886 knnOv=0.302 BZrec@12_2d=0.373
+[v11] it 0200/1500 loss=3.1565 trust=0.901 knnOv=0.345 BZrec@12_2d=0.406
+[v11] it 0300/1500 loss=2.9741 trust=0.906 knnOv=0.359 BZrec@12_2d=0.401
+[v11] it 0400/1500 loss=2.8817 trust=0.908 knnOv=0.362 BZrec@12_2d=0.401
+[v11] it 0500/1500 loss=2.9932 trust=0.906 knnOv=0.355 BZrec@12_2d=0.377
+[v11] it 0600/1500 loss=2.9659 trust=0.906 knnOv=0.357 BZrec@12_2d=0.401
+[v11] it 0700/1500 loss=2.8506 trust=0.908 knnOv=0.363 BZrec@12_2d=0.415
+[v11] it 0800/1500 loss=2.8024 trust=0.909 knnOv=0.362 BZrec@12_2d=0.420
+[v11] it 0900/1500 loss=2.7709 trust=0.908 knnOv=0.360 BZrec@12_2d=0.401
+[v11] it 1000/1500 loss=2.7675 trust=0.908 knnOv=0.362 BZrec@12_2d=0.406
+[v11] it 1100/1500 loss=2.7556 trust=0.908 knnOv=0.362 BZrec@12_2d=0.434
+[v11] it 1200/1500 loss=2.7433 trust=0.908 knnOv=0.361 BZrec@12_2d=0.415
+[v11] it 1300/1500 loss=2.7400 trust=0.908 knnOv=0.361 BZrec@12_2d=0.410
+[v11] it 1400/1500 loss=2.7408 trust=0.908 knnOv=0.361 BZrec@12_2d=0.410
+[v11] it 1500/1500 loss=2.7464 trust=0.908 knnOv=0.361 BZrec@12_2d=0.410
+
+[v11] FINAL trust=0.908 knnOv=0.361 {'n': 212, 'bz_recall@12_2d': 0.41037735849056606, 'bz_recall@12_highD': 0.8773584905660378}
+[save] data/survey_genomics/stages/05_model/v11_survey_lam0.3_s1.pt
+########## lambda_con=0.3 seed=2 ##########
+[v11] N=1770 dim=1024 | lambda_tsne=1.0 lambda_con=0.3
+[v11] positives: train=851 test(held-out)=212 | pairs meta=pairs are ROW indices into EMB_CACHE; positives are cross-pa
+[P] loaded cache data/survey_genomics/stages/05_model/tsne_P_perp30.npy
+[P] ready (1770, 1770)
+[v11] it 0001/1500 loss=6.0384 trust=0.676 knnOv=0.050 BZrec@12_2d=0.042
+[v11] it 0100/1500 loss=3.5251 trust=0.884 knnOv=0.309 BZrec@12_2d=0.382
+[v11] it 0200/1500 loss=3.1471 trust=0.902 knnOv=0.351 BZrec@12_2d=0.434
+[v11] it 0300/1500 loss=2.9863 trust=0.906 knnOv=0.358 BZrec@12_2d=0.415
+[v11] it 0400/1500 loss=2.9057 trust=0.908 knnOv=0.360 BZrec@12_2d=0.410
+[v11] it 0500/1500 loss=2.9574 trust=0.904 knnOv=0.354 BZrec@12_2d=0.420
+[v11] it 0600/1500 loss=3.0470 trust=0.905 knnOv=0.356 BZrec@12_2d=0.425
+[v11] it 0700/1500 loss=2.8398 trust=0.908 knnOv=0.363 BZrec@12_2d=0.415
+[v11] it 0800/1500 loss=2.8058 trust=0.907 knnOv=0.363 BZrec@12_2d=0.396
+[v11] it 0900/1500 loss=2.7778 trust=0.906 knnOv=0.362 BZrec@12_2d=0.392
+[v11] it 1000/1500 loss=2.7712 trust=0.906 knnOv=0.362 BZrec@12_2d=0.396
+[v11] it 1100/1500 loss=2.7566 trust=0.906 knnOv=0.363 BZrec@12_2d=0.382
+[v11] it 1200/1500 loss=2.7569 trust=0.906 knnOv=0.362 BZrec@12_2d=0.396
+[v11] it 1300/1500 loss=2.7525 trust=0.906 knnOv=0.363 BZrec@12_2d=0.396
+[v11] it 1400/1500 loss=2.7535 trust=0.905 knnOv=0.362 BZrec@12_2d=0.392
+[v11] it 1500/1500 loss=2.7430 trust=0.906 knnOv=0.362 BZrec@12_2d=0.392
+
+[v11] FINAL trust=0.906 knnOv=0.362 {'n': 212, 'bz_recall@12_2d': 0.3915094339622642, 'bz_recall@12_highD': 0.8773584905660378}
+[save] data/survey_genomics/stages/05_model/v11_survey_lam0.3_s2.pt
+########## lambda_con=0.0 seed=0 ##########
+[v11] N=1770 dim=1024 | lambda_tsne=1.0 lambda_con=0.0
+[v11] positives: train=851 test(held-out)=212 | pairs meta=pairs are ROW indices into EMB_CACHE; positives are cross-pa
+[P] loaded cache data/survey_genomics/stages/05_model/tsne_P_perp30.npy
+[P] ready (1770, 1770)
+[v11] it 0001/1500 loss=3.8009 trust=0.678 knnOv=0.040 BZrec@12_2d=0.075
+[v11] it 0100/1500 loss=2.0120 trust=0.879 knnOv=0.302 BZrec@12_2d=0.340
+[v11] it 0200/1500 loss=1.6961 trust=0.903 knnOv=0.362 BZrec@12_2d=0.406
+[v11] it 0300/1500 loss=1.5694 trust=0.907 knnOv=0.372 BZrec@12_2d=0.425
+[v11] it 0400/1500 loss=1.4907 trust=0.909 knnOv=0.374 BZrec@12_2d=0.401
+[v11] it 0500/1500 loss=1.4343 trust=0.910 knnOv=0.379 BZrec@12_2d=0.396
+[v11] it 0600/1500 loss=1.4087 trust=0.909 knnOv=0.381 BZrec@12_2d=0.429
+[v11] it 0700/1500 loss=1.3952 trust=0.908 knnOv=0.379 BZrec@12_2d=0.439
+[v11] it 0800/1500 loss=1.3728 trust=0.910 knnOv=0.381 BZrec@12_2d=0.429
+[v11] it 0900/1500 loss=1.3603 trust=0.909 knnOv=0.381 BZrec@12_2d=0.420
+[v11] it 1000/1500 loss=1.3508 trust=0.910 knnOv=0.380 BZrec@12_2d=0.425
+[v11] it 1100/1500 loss=1.3382 trust=0.909 knnOv=0.380 BZrec@12_2d=0.420
+[v11] it 1200/1500 loss=1.3348 trust=0.909 knnOv=0.381 BZrec@12_2d=0.425
+[v11] it 1300/1500 loss=1.3290 trust=0.909 knnOv=0.381 BZrec@12_2d=0.434
+[v11] it 1400/1500 loss=1.3313 trust=0.909 knnOv=0.380 BZrec@12_2d=0.425
+[v11] it 1500/1500 loss=1.3339 trust=0.909 knnOv=0.380 BZrec@12_2d=0.420
+
+[v11] FINAL trust=0.909 knnOv=0.380 {'n': 212, 'bz_recall@12_2d': 0.419811320754717, 'bz_recall@12_highD': 0.8773584905660378}
+[save] data/survey_genomics/stages/05_model/v11_survey_lam0.0_s0.pt
+########## lambda_con=0.0 seed=1 ##########
+[v11] N=1770 dim=1024 | lambda_tsne=1.0 lambda_con=0.0
+[v11] positives: train=851 test(held-out)=212 | pairs meta=pairs are ROW indices into EMB_CACHE; positives are cross-pa
+[P] loaded cache data/survey_genomics/stages/05_model/tsne_P_perp30.npy
+[P] ready (1770, 1770)
+[v11] it 0001/1500 loss=3.7978 trust=0.669 knnOv=0.047 BZrec@12_2d=0.057
+[v11] it 0100/1500 loss=1.9665 trust=0.892 knnOv=0.319 BZrec@12_2d=0.354
+[v11] it 0200/1500 loss=1.7205 trust=0.908 knnOv=0.362 BZrec@12_2d=0.415
+[v11] it 0300/1500 loss=1.5914 trust=0.913 knnOv=0.374 BZrec@12_2d=0.392
+[v11] it 0400/1500 loss=1.5031 trust=0.914 knnOv=0.379 BZrec@12_2d=0.406
+[v11] it 0500/1500 loss=1.4709 trust=0.914 knnOv=0.380 BZrec@12_2d=0.415
+[v11] it 0600/1500 loss=1.4273 trust=0.913 knnOv=0.379 BZrec@12_2d=0.439
+[v11] it 0700/1500 loss=1.4079 trust=0.914 knnOv=0.379 BZrec@12_2d=0.410
+[v11] it 0800/1500 loss=1.3900 trust=0.914 knnOv=0.381 BZrec@12_2d=0.420
+[v11] it 0900/1500 loss=1.3806 trust=0.915 knnOv=0.382 BZrec@12_2d=0.429
+[v11] it 1000/1500 loss=1.3682 trust=0.915 knnOv=0.380 BZrec@12_2d=0.429
+[v11] it 1100/1500 loss=1.3652 trust=0.915 knnOv=0.382 BZrec@12_2d=0.425
+[v11] it 1200/1500 loss=1.3593 trust=0.915 knnOv=0.382 BZrec@12_2d=0.429
+[v11] it 1300/1500 loss=1.3534 trust=0.915 knnOv=0.381 BZrec@12_2d=0.425
+[v11] it 1400/1500 loss=1.3566 trust=0.915 knnOv=0.382 BZrec@12_2d=0.425
+[v11] it 1500/1500 loss=1.3591 trust=0.915 knnOv=0.382 BZrec@12_2d=0.420
+
+[v11] FINAL trust=0.915 knnOv=0.382 {'n': 212, 'bz_recall@12_2d': 0.419811320754717, 'bz_recall@12_highD': 0.8773584905660378}
+[save] data/survey_genomics/stages/05_model/v11_survey_lam0.0_s1.pt
+########## lambda_con=0.0 seed=2 ##########
+[v11] N=1770 dim=1024 | lambda_tsne=1.0 lambda_con=0.0
+[v11] positives: train=851 test(held-out)=212 | pairs meta=pairs are ROW indices into EMB_CACHE; positives are cross-pa
+[P] loaded cache data/survey_genomics/stages/05_model/tsne_P_perp30.npy
+[P] ready (1770, 1770)
+[v11] it 0001/1500 loss=3.7980 trust=0.677 knnOv=0.050 BZrec@12_2d=0.052
+[v11] it 0100/1500 loss=1.9840 trust=0.888 knnOv=0.321 BZrec@12_2d=0.373
+[v11] it 0200/1500 loss=1.7115 trust=0.905 knnOv=0.366 BZrec@12_2d=0.420
+[v11] it 0300/1500 loss=1.5723 trust=0.909 knnOv=0.377 BZrec@12_2d=0.420
+[v11] it 0400/1500 loss=1.5629 trust=0.910 knnOv=0.374 BZrec@12_2d=0.406
+[v11] it 0500/1500 loss=1.5129 trust=0.910 knnOv=0.379 BZrec@12_2d=0.410
+[v11] it 0600/1500 loss=1.4634 trust=0.911 knnOv=0.382 BZrec@12_2d=0.415
+[v11] it 0700/1500 loss=1.4457 trust=0.910 knnOv=0.383 BZrec@12_2d=0.415
+[v11] it 0800/1500 loss=1.4229 trust=0.909 knnOv=0.382 BZrec@12_2d=0.401
+[v11] it 0900/1500 loss=1.4052 trust=0.909 knnOv=0.382 BZrec@12_2d=0.406
+[v11] it 1000/1500 loss=1.3947 trust=0.909 knnOv=0.383 BZrec@12_2d=0.406
+[v11] it 1100/1500 loss=1.3860 trust=0.909 knnOv=0.383 BZrec@12_2d=0.420
+[v11] it 1200/1500 loss=1.3802 trust=0.908 knnOv=0.383 BZrec@12_2d=0.406
+[v11] it 1300/1500 loss=1.3778 trust=0.908 knnOv=0.384 BZrec@12_2d=0.406
+[v11] it 1400/1500 loss=1.3833 trust=0.908 knnOv=0.384 BZrec@12_2d=0.410
+[v11] it 1500/1500 loss=1.3800 trust=0.908 knnOv=0.384 BZrec@12_2d=0.410
+
+[v11] FINAL trust=0.908 knnOv=0.384 {'n': 212, 'bz_recall@12_2d': 0.41037735849056606, 'bz_recall@12_highD': 0.8773584905660378}
+[save] data/survey_genomics/stages/05_model/v11_survey_lam0.0_s2.pt
+SURVEY_TRAIN_DONE

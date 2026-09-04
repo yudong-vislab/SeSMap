@@ -1,0 +1,44 @@
+[
+  {
+    "paragraph": "VISTA is a program for visualizing global DNA sequence alignments of arbitrary length. It has a clean output, allowing for easy identification of similarity, and is easily configurable, enabling the visualization of alignments of various lengths at different levels of resolution. It is currently available on the web, thus allowing for easy access by all researchers.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "VISTA is a program for visualizing global DNA sequence alignments of arbitrary length.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "VISTA has a clean output, allowing for easy identification of similarity.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "VISTA is easily configurable, enabling the visualization of alignments of various lengths at different levels of resolution.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "VISTA is currently available on the web, allowing for easy access by all researchers.",
+        "category": "Background",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "VISTA server is available on the web at http://www-gsd.lbl.gov/vista. The source code is available upon request.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "VISTA server is available on the web at http://www-gsd.lbl.gov/vista.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "The source code is available upon request.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

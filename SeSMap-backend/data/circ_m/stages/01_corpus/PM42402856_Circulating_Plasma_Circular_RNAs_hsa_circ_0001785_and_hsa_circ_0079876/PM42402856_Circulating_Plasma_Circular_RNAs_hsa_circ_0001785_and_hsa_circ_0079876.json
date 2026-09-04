@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Circulating Plasma Circular RNAs hsa_circ_0001785 and hsa_circ_0079876 as Promising Noninvasive Diagnostic Biomarkers for Breast Cancer: A Case-Control Study",
+    "paragraphs": []
+  },
+  {
+    "title": "Circulating Plasma Circular RNAs hsa_circ_0001785 and hsa_circ_0079876 as Promising Noninvasive Diagnostic Biomarkers for Breast Cancer: A Case-Control Study-Background And Aims",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Breast cancer (BC) is a major health concern for women, with early diagnosis essential for better health outcomes such as survival. While mammography is the gold standard screening tool, it is not without drawbacks. Circular RNAs (circRNAs), a class of noncoding RNAs, characterized by covalently closed loops missing 5' and 3' ends, offer stability in body fluids like plasma and are emerging as promising diagnostic biomarkers. Thus, the aim of this study was to investigate the plasma levels of hsa_circ_0001785 and hsa_circ_0079876 in BC patients compared to healthy controls to evaluate their potential for noninvasive BC detection.",
+        "abstract_summary": ""
+      }
+    ]
+  },
+  {
+    "title": "Circulating Plasma Circular RNAs hsa_circ_0001785 and hsa_circ_0079876 as Promising Noninvasive Diagnostic Biomarkers for Breast Cancer: A Case-Control Study-Methods",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "A total of 129 women participated in this study (81 BC patients who underwent surgery and 48 healthy controls based on mammography). The plasma levels of hsa_circ_0001785 and hsa_circ_0079876 were measured using quantitative reverse transcription polymerase chain reaction (qRT-PCR) following RNA extraction from plasma samples. The diagnostic value was assessed using the receiver operating characteristic (ROC) curve.",
+        "abstract_summary": ""
+      }
+    ]
+  },
+  {
+    "title": "Circulating Plasma Circular RNAs hsa_circ_0001785 and hsa_circ_0079876 as Promising Noninvasive Diagnostic Biomarkers for Breast Cancer: A Case-Control Study-Results",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "A significant increase in the expression of both circRNAs was observed in BC patients compared with healthy controls (p value < 0.001). ROC curve analysis demonstrated that an area under the curve (AUC) for hsa_circ_0001785, hsa_circ_0079876, and their combination were 0.76 (sensitivity = 74%, specificity = 79%), 0.98 (sensitivity = 93%, specificity = 92%), and 0.98 (sensitivity = 93%, specificity = 92%), respectively.",
+        "abstract_summary": ""
+      }
+    ]
+  },
+  {
+    "title": "Circulating Plasma Circular RNAs hsa_circ_0001785 and hsa_circ_0079876 as Promising Noninvasive Diagnostic Biomarkers for Breast Cancer: A Case-Control Study-Conclusion",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Plasma levels of hsa_circ_0001785 and hsa_circ_0079876 are significantly elevated in BC patients, with hsa_circ_0079876 showing superior sensitivity and specificity compared to hsa_circ_0001785. These findings highlight hsa_circ_0079876 as a particularly promising diagnostic potential in a case-control setting for noninvasive BC detection.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

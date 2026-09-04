@@ -1,0 +1,96 @@
+[
+  {
+    "paragraph": "Big data and data analysis methods and models are important tools in food security (FS) studies for gap analysis and preparation of appropriate analytical frameworks. These innovations necessitate the development of novel methods for collecting, storing, processing, and extracting data.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Big data and data analysis methods and models are important tools in food security studies.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Big data and data analysis methods are used for gap analysis in food security studies.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Big data and data analysis models are used for preparation of appropriate analytical frameworks in food security studies.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "These innovations necessitate the development of novel methods for collecting data.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "These innovations necessitate the development of novel methods for storing data.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "These innovations necessitate the development of novel methods for processing data.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "These innovations necessitate the development of novel methods for extracting data.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "The primary goal of this study was to conduct a critical review of agricultural big data and methods and models used for FS studies published in peer-reviewed journals since 2010. Approximately 130 articles were selected for full content review after the pre-screening process.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The primary goal of this study was to conduct a critical review of agricultural big data and methods and models used for FS studies published in peer-reviewed journals since 2010.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Approximately 130 articles were selected for full content review after the pre-screening process.",
+        "category": "Method",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "There are different sources of data collection, including but not limited to online databases, the internet, omics, Internet of Things, social media, survey rounds, remote sensing, and the Food and Agriculture Organization Corporate Statistical Database. The collected data require analysis (",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "There are different sources of data collection, including online databases, the internet, omics, Internet of Things, social media, survey rounds, remote sensing, and the Food and Agriculture Organization Corporate Statistical Database.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The collected data require analysis.",
+        "category": "Background",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "There are certain FS gaps both worldwide and in the United Arab Emirates that need to be addressed by scientists and policymakers. Following the identification of the drivers, policies, and indicators, the findings of this review could be used to develop an appropriate analytical framework for FS and nutrition.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "There are certain FS gaps both worldwide and in the United Arab Emirates that need to be addressed by scientists and policymakers.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The identification of the drivers, policies, and indicators is necessary.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The findings of this review could be used to develop an appropriate analytical framework for FS and nutrition.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  }
+]

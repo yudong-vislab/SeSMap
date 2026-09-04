@@ -1,0 +1,68 @@
+[
+  {
+    "paragraph": "The rise of Large Language Models (LLMs) and generative visual analytics systems has transformed data‐driven insights, yet significant challenges persist in accurately interpreting users analytical and interaction intents. While language inputs offer flexibility, they often lack precision, making the expression of complex intents inefficient, error‐prone, and time‐intensive. To address these limitations, we investigate the design space of multimodal interactions for generative visual analytics through a literature review and pilot brainstorming sessions. Building on these insights, we introduce a highly extensible workflow that integrates multiple LLM agents for intent inference and visualization generation. We develop InterChat, a generative visual analytics system that combines direct manipulation of visual elements with natural language inputs. This integration enables precise intent communication and supports progressive, visually driven exploratory data analyses. By employing effective prompt engineering, and contextual interaction linking, alongside intuitive visualization and interaction designs, InterChat bridges the gap between user interactions and LLM‐driven visualizations, enhancing both interpretability and usability. Extensive evaluations, including two usage scenarios, a user study, and expert feedback, demonstrate the effectiveness of InterChat. Results show significant improvements in the accuracy and efficiency of handling complex visual analytics tasks, highlighting the potential of multimodal interactions to redefine user engagement and analytical depth in generative visual analytics.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The rise of Large Language Models (LLMs) and generative visual analytics systems has transformed data-driven insights.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Significant challenges persist in accurately interpreting users' analytical and interaction intents.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Language inputs offer flexibility but often lack precision, making the expression of complex intents inefficient, error-prone, and time-intensive.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "We investigate the design space of multimodal interactions for generative visual analytics through a literature review and pilot brainstorming sessions.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "We introduce a highly extensible workflow that integrates multiple LLM agents for intent inference and visualization generation.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "We develop InterChat, a generative visual analytics system that combines direct manipulation of visual elements with natural language inputs.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "This integration enables precise intent communication and supports progressive, visually driven exploratory data analyses.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "InterChat employs effective prompt engineering, contextual interaction linking, and intuitive visualization and interaction designs.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "InterChat bridges the gap between user interactions and LLM-driven visualizations, enhancing both interpretability and usability.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "Extensive evaluations, including two usage scenarios, a user study, and expert feedback, demonstrate the effectiveness of InterChat.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "Results show significant improvements in the accuracy and efficiency of handling complex visual analytics tasks.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "The findings highlight the potential of multimodal interactions to redefine user engagement and analytical depth in generative visual analytics.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "paragraph": "PlasMapper 3.0 is a web server that allows users to generate, edit, annotate and interactively visualize publication quality plasmid maps. Plasmid maps are used to plan, design, share and publish critical information about gene cloning experiments. PlasMapper 3.0 is the successor to PlasMapper 2.0 and offers many features found only in commercial plasmid mapping/editing packages. PlasMapper 3.0 allows users to paste or upload plasmid sequences as input or to upload existing plasmid maps from its large database of >2000 pre-annotated plasmids (PlasMapDB). This database can be searched by plasmid names, sequence features, restriction sites, preferred host organisms, and sequence length. PlasMapper 3.0 also supports the annotation of new or never-before-seen plasmids using its own feature database that contains common promoters, terminators, regulatory sequences, replication origins, selectable markers and other features found in most cloning plasmids. PlasMapper 3.0 has several interactive sequence editors/viewers that allow users to select and view plasmid regions, insert genes, modify restriction sites or perform codon optimization. The graphics for PlasMapper 3.0 have also been substantially upgraded. It now offers an interactive, full-color plasmid viewer/editor that allows users to zoom, rotate, re-color, linearize, circularize, edit annotated features and modify plasmid images or labels to improve the esthetic qualities of their plasmid map and textual displays. All the plasmid images and textual displays are downloadable in multiple formats. PlasMapper 3.0 is available online at https://plasmapper.ca.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "PlasMapper 3.0 is a web server that allows users to generate, edit, annotate and interactively visualize publication quality plasmid maps.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Plasmid maps are used to plan, design, share and publish critical information about gene cloning experiments.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "PlasMapper 3.0 is the successor to PlasMapper 2.0 and offers many features found only in commercial plasmid mapping/editing packages.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "PlasMapper 3.0 allows users to paste or upload plasmid sequences as input.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "PlasMapper 3.0 allows users to upload existing plasmid maps from its large database of >2000 pre-annotated plasmids (PlasMapDB).",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The PlasMapDB database can be searched by plasmid names, sequence features, restriction sites, preferred host organisms, and sequence length.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "PlasMapper 3.0 supports the annotation of new or never-before-seen plasmids using its own feature database.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The feature database contains common promoters, terminators, regulatory sequences, replication origins, selectable markers and other features found in most cloning plasmids.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "PlasMapper 3.0 has several interactive sequence editors/viewers that allow users to select and view plasmid regions, insert genes, modify restriction sites or perform codon optimization.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The graphics for PlasMapper 3.0 have been substantially upgraded.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "PlasMapper 3.0 now offers an interactive, full-color plasmid viewer/editor that allows users to zoom, rotate, re-color, linearize, circularize, edit annotated features and modify plasmid images or labels.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "PlasMapper 3.0 enables users to improve the esthetic qualities of their plasmid map and textual displays.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "All the plasmid images and textual displays are downloadable in multiple formats.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "PlasMapper 3.0 is available online at https://plasmapper.ca.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

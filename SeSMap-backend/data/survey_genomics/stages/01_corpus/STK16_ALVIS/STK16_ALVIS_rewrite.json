@@ -1,0 +1,73 @@
+[
+  {
+    "paragraph": "Sequence Logos and its variants are the most commonly used method for visualization of multiple sequence alignments (MSAs) and sequence motifs. They provide consensus-based summaries of the sequences in the alignment. Consequently, individual sequences cannot be identified in the visualization and covariant sites are not easily discernible. We recently proposed Sequence Bundles, a motif visualization technique that maintains a one-to-one relationship between sequences and their graphical representation and visualizes covariant sites. We here present Alvis, an open-source platform for the joint explorative analysis of MSAs and phylogenetic trees, employing Sequence Bundles as its main visualization method. Alvis combines the power of the visualization method with an interactive toolkit allowing detection of covariant sites, annotation of trees with synapomorphies and homoplasies, and motif detection. It also offers numerical analysis functionality, such as dimension reduction and classification. Alvis is user-friendly, highly customizable and can export results in publication-quality figures. It is available as a full-featured standalone version (http://www.bitbucket.org/rfs/alvis) and its Sequence Bundles visualization module is further available as a web application (http://science-practice.com/projects/sequence-bundles).",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Sequence Logos and its variants are the most commonly used method for visualization of multiple sequence alignments (MSAs) and sequence motifs.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Sequence Logos provide consensus-based summaries of the sequences in the alignment.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Individual sequences cannot be identified in the visualization using Sequence Logos.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Covariant sites are not easily discernible in Sequence Logos visualizations.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Sequence Bundles is a motif visualization technique that maintains a one-to-one relationship between sequences and their graphical representation.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Sequence Bundles visualizes covariant sites.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Alvis is an open-source platform for the joint explorative analysis of MSAs and phylogenetic trees.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Alvis employs Sequence Bundles as its main visualization method.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Alvis combines the power of the visualization method with an interactive toolkit allowing detection of covariant sites, annotation of trees with synapomorphies and homoplasies, and motif detection.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Alvis offers numerical analysis functionality, such as dimension reduction and classification.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Alvis is user-friendly, highly customizable and can export results in publication-quality figures.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Alvis is available as a full-featured standalone version (http://www.bitbucket.org/rfs/alvis).",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "The Sequence Bundles visualization module is further available as a web application (http://science-practice.com/projects/sequence-bundles).",
+        "category": "Other",
+        "rank": 2
+      }
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "title": "DracoGPT: Extracting Visualization Design Preferences from Large Language Models",
+    "paragraphs": []
+  },
+  {
+    "title": "DracoGPT: Extracting Visualization Design Preferences from Large Language Models-Abstract",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Trained on vast corpora, Large Language Models (LLMs) have the potential to encode visualization design knowledge and best practices. However, if they fail to do so, they might provide unreliable visualization recommendations. What visualization design preferences, then, have LLMs learned? We contribute DracoGPT, a method for extracting, modeling, and assessing visualization design preferences from LLMs. To assess varied tasks, we develop two pipelines—DracoGPT-Rank and DracoGPT-Recommend—to model LLMs prompted to either rank or recommend visual encoding specifications. We use Draco as a shared knowledge base in which to represent LLM design preferences and compare them to best practices from empirical research. We demonstrate that DracoGPT can accurately model the preferences expressed by LLMs, enabling analysis in terms of Draco design constraints. Across a suite of backing LLMs, we find that DracoGPT-Rank and DracoGPT-Recommend moderately agree with each other, but both substantially diverge from guidelines drawn from human subjects experiments. Future work can build on our approach to expand Draco's knowledge base to model a richer set of preferences and to provide a robust and cost-effective stand-in for LLMs.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

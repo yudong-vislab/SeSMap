@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Unbiased and comprehensive identification of virus-derived circular RNAs in a large range of viral species and families",
+    "paragraphs": []
+  },
+  {
+    "title": "Unbiased and comprehensive identification of virus-derived circular RNAs in a large range of viral species and families-Abstract",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Non-coding RNAs play a significant role in viral infection cycles, with recent attention focused on circular RNAs (circRNAs) originating from various viral families. Notably, these circRNAs have been associated with oncogenesis and alterations in viral fitness. However, identifying their expression has proven more challenging than initially anticipated due to unique viral characteristics. This challenge has the potential to impede progress in our understanding of viral circRNAs. Key hurdles in working with viral genomes include: (1) the presence of repetitive regions that can lead to misalignment of sequencing reads, and (2) unconventional splicing mechanisms that deviate from conserved eukaryotic patterns. To address these challenges, we developed vCircTrappist, a bioinformatic pipeline tailored to identify backsplicing events and pinpoint loci expressing circRNAs in RNA sequencing data. Applying this pipeline, we obtained novel insights from both new and existing datasets encompassing a range of animal and human pathogens belonging to Herpesviridae, Retroviridae, Adenoviridae, Flaviviridae and Orthomyxoviridae families. Subsequent RT-PCR and Sanger sequencings validated the accuracy of the developed bioinformatic tool for a selection of new candidate virus-derived circRNAs. These findings demonstrate that vCircTrappist is an open and unbiased approach for comprehensive identification of virus-derived circRNAs.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

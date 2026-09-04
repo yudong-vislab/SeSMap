@@ -1,0 +1,16 @@
+[
+  {
+    "title": "TSUNAMI: Translational Bioinformatics Tool Suite for Network Analysis and Mining",
+    "paragraphs": []
+  },
+  {
+    "title": "TSUNAMI: Translational Bioinformatics Tool Suite for Network Analysis and Mining-Abstract",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Gene co-expression network (GCN) mining identifies gene modules with highly correlated expression profiles across samples/conditions. It enables researchers to discover latent gene/molecule interactions, identify novel gene functions, and extract molecular features from certain disease/condition groups, thus helping to identify disease biomarkers. However, there lacks an easy-to-use tool package for users to mine GCN modules that are relatively small in size with tightly connected genes that can be convenient for downstream gene set enrichment analysis, as well as modules that may share common members. To address this need, we developed an online GCN mining tool package: TSUNAMI (Tools SUite for Network Analysis and MIning). TSUNAMI incorporates our state-of-the-art lmQCM algorithm to mine GCN modules for both public and user-input data (microarray, RNA-seq, or any other numerical omics data), and then performs downstream gene set enrichment analysis for the identified modules. It has several features and advantages: 1) a user-friendly interface and real-time co-expression network mining through a web server; 2) direct access and search of NCBI Gene Expression Omnibus (GEO) and The Cancer Genome Atlas (TCGA) databases, as well as user-input gene expression matrices for GCN module mining; 3) multiple co-expression analysis tools to choose from, all of which are highly flexible in regards to parameter selection options; 4) identified GCN modules are summarized to eigengenes, which are convenient for users to check their correlation with other clinical traits; 5) integrated downstream Enrichr enrichment analysis and links to other gene set enrichment tools; and 6) visualization of gene loci by Circos plot in any step of the process. The web service is freely accessible through URL: https://biolearns.medicine.iu.edu/. Source code is available at https://github.com/huangzhii/TSUNAMI/.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

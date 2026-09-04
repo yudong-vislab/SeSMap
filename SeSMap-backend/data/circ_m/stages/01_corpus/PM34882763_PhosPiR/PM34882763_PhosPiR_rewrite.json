@@ -1,0 +1,43 @@
+[
+  {
+    "paragraph": "Large-scale phosphoproteome profiling using mass spectrometry (MS) provides functional insight that is crucial for disease biology and drug discovery. However, extracting biological understanding from these data is an arduous task requiring multiple analysis platforms that are not adapted for automated high-dimensional data analysis. Here, we introduce an integrated pipeline that combines several R packages to extract high-level biological understanding from large-scale phosphoproteomic data by seamless integration with existing databases and knowledge resources. In a single run, PhosPiR provides data clean-up, fast data overview, multiple statistical testing, differential expression analysis, phosphosite annotation and translation across species, multilevel enrichment analyses, proteome-wide kinase activity and substrate mapping and network hub analysis. Data output includes graphical formats such as heatmap, box-, volcano- and circos-plots. This resource is designed to assist proteome-wide data mining of pathophysiological mechanism without a need for programming knowledge.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Large-scale phosphoproteome profiling using mass spectrometry (MS) provides functional insight that is crucial for disease biology and drug discovery.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Extracting biological understanding from phosphoproteomic data is an arduous task requiring multiple analysis platforms that are not adapted for automated high-dimensional data analysis.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "An integrated pipeline is introduced to combine several R packages for extracting high-level biological understanding from large-scale phosphoproteomic data.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The pipeline enables seamless integration with existing databases and knowledge resources.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "In a single run, PhosPiR provides data clean-up, fast data overview, multiple statistical testing, differential expression analysis, phosphosite annotation and translation across species, multilevel enrichment analyses, proteome-wide kinase activity and substrate mapping, and network hub analysis.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Data output includes graphical formats such as heatmap, box-plots, volcano-plots, and circos-plots.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "This resource is designed to assist proteome-wide data mining of pathophysiological mechanisms without a need for programming knowledge.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  }
+]

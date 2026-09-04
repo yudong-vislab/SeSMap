@@ -1,0 +1,111 @@
+[
+  {
+    "paragraph": "Enlarged perivascular spaces (ePVS) are a marker of cerebral small vessel disease, potentially reflecting reduced waste clearance. Because manual quantification is unfeasible in large datasets, we developed and evaluated an automated tool.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Enlarged perivascular spaces (ePVS) are a marker of cerebral small vessel disease.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Enlarged perivascular spaces (ePVS) potentially reflect reduced waste clearance.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Manual quantification of ePVS is unfeasible in large datasets.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "We developed an automated tool for quantifying ePVS.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "We evaluated the automated tool for quantifying ePVS.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Detection Of Regions of Enlarged perivascular Spaces (DORES), a 3D nnU-Net-based deep learning algorithm was developed for ePVS segmentation using",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Detection Of Regions of Enlarged Perivascular Spaces (DORES) is a 3D nnU-Net-based deep learning algorithm.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "DORES was developed for ePVS segmentation.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "DORES achieved Dice scores of 0.61 ± 0.16 (white matter) and 0.72 ± 0.08 (basal ganglia) in VMAP, with strong correlations and agreement for ePVS count and volume. Performances modestly declined in ADNI3 across algorithms. Scanner-stratified analyses showed stronger correlations for Philips versus Siemens images in the basal ganglia, indicating scanner-dependent differences in measurement consistency.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "DORES achieved Dice scores of 0.61 ± 0.16 for white matter in VMAP.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "DORES achieved Dice scores of 0.72 ± 0.08 for basal ganglia in VMAP.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "DORES showed strong correlations and agreement for ePVS count and volume in VMAP.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Performances modestly declined in ADNI3 across algorithms.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Scanner-stratified analyses showed stronger correlations for Philips images versus Siemens images in the basal ganglia.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Scanner-stratified analyses indicate scanner-dependent differences in measurement consistency.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "DORES provides a multimodal nnU-Net-based pipeline for ePVS segmentation in older adults. The model demonstrates robust within-cohort performance and reasonable external validity, though scanner-related effects limit application across sites.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "DORES provides a multimodal nnU-Net-based pipeline for ePVS segmentation in older adults.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The model demonstrates robust within-cohort performance.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The model demonstrates reasonable external validity.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Scanner-related effects limit application across sites.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  }
+]

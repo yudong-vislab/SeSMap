@@ -1,0 +1,38 @@
+[
+  {
+    "paragraph": "This response addresses the comments raised by Souichi Oka and colleagues in their Letter to the Editor titled \"Addressing biases and limitations in feature attribution for circRNA modification profiling.\" We clarify that two independent XGBoost models were used for distinct purposes in our analysis: one for predicting RNA modification events from nanopore-derived signal features and another for feature attribution using genome-derived sequence features extracted through the m6AlogisticModel framework. We further note that Shapley Additive Explanations (SHAP) was employed as an exploratory interpretability tool rather than as definitive evidence of causal biological mechanisms. We appreciate the constructive methodological suggestions provided and acknowledge that integrating complementary analytical strategies may further enhance the robustness of computational studies of circRNA modifications.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Two independent XGBoost models were used for distinct purposes in the analysis.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "One XGBoost model was used for predicting RNA modification events from nanopore-derived signal features.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Another XGBoost model was used for feature attribution using genome-derived sequence features extracted through the m6AlogisticModel framework.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Shapley Additive Explanations (SHAP) was employed as an exploratory interpretability tool.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "SHAP was not used as definitive evidence of causal biological mechanisms.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Integrating complementary analytical strategies may further enhance the robustness of computational studies of circRNA modifications.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  }
+]

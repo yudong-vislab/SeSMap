@@ -1,0 +1,53 @@
+[
+  {
+    "paragraph": "Contact mapping experiments such as Hi-C explore how genomes fold in 3D. Here, we introduce Juicebox.js, a cloud-based web application for exploring the resulting datasets. Like the original Juicebox application, Juicebox.js allows users to zoom in and out of such datasets using an interface similar to Google Earth. Juicebox.js also has many features designed to facilitate data reproducibility and sharing. Furthermore, Juicebox.js encodes the exact state of the browser in a shareable URL. Creating a public browser for a new Hi-C dataset does not require coding and can be accomplished in under a minute. The web app also makes it possible to create interactive figures online that can complement or replace ordinary journal figures. When combined with Juicer, this makes the entire process of data analysis transparent, insofar as every step from raw reads to published figure is publicly available as open source code.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Contact mapping experiments such as Hi-C explore how genomes fold in 3D.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Juicebox.js is a cloud-based web application for exploring Hi-C datasets.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Juicebox.js allows users to zoom in and out of Hi-C datasets using an interface similar to Google Earth.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Juicebox.js has features designed to facilitate data reproducibility and sharing.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Juicebox.js encodes the exact state of the browser in a shareable URL.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Creating a public browser for a new Hi-C dataset does not require coding and can be accomplished in under a minute.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The web app makes it possible to create interactive figures online that can complement or replace ordinary journal figures.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "When combined with Juicer, Juicebox.js makes the entire process of data analysis transparent.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "Every step from raw reads to published figure is publicly available as open source code when using Juicebox.js and Juicer.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

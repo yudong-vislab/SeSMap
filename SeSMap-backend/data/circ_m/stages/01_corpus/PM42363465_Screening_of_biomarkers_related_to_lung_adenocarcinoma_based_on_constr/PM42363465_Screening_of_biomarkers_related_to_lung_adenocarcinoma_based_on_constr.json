@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Screening of biomarkers related to lung adenocarcinoma based on construction of ceRNA regulation network",
+    "paragraphs": []
+  },
+  {
+    "title": "Screening of biomarkers related to lung adenocarcinoma based on construction of ceRNA regulation network-Background",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Lung adenocarcinoma (LUAD) is a common malignant tumor with a poor prognosis and limited effective therapeutic targets. The underlying molecular regulatory mechanisms driving its progression remain largely unclear. The study objectives were to build a circRNA-miRNA-mRNA ceRNA regulation network of LUAD and to identify miRNAs and mRNAs significantly related to the prognosis .",
+        "abstract_summary": ""
+      }
+    ]
+  },
+  {
+    "title": "Screening of biomarkers related to lung adenocarcinoma based on construction of ceRNA regulation network-Methods",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "The gene expression data and GSE101684 were downloaded from the UCSC Xene and NCBI-GEO databases, respectively. The differentially expressed RNAs (DEcircRNAs, DEmiRNAs, and DEmRNAs; DERs) were obtained by the Limma package in R. Then, the differential LUAD-related genes were identified, and the Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathways of the differential LUAD-related genes were analyzed. Moreover, the circRNA-miRNA-mRNA ceRNA network of LUAD was built. The Kaplan-Meier (K-M) survival curve analysis of ceRNA network nodes was performed. In addition, the proliferation-related ceRNA network was built.",
+        "abstract_summary": ""
+      }
+    ]
+  },
+  {
+    "title": "Screening of biomarkers related to lung adenocarcinoma based on construction of ceRNA regulation network-Results",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "A total of 382 DEcircRNAs, 1907 DEmRNAs and 156 DEmiRNAs were acquired. A total of 245 differential LUAD-related genes were acquired, which were significantly associated with 189 GO biological processes (BP) and 17 KEGG pathways. Moreover, the ceRNA network of LUAD was built. The K-M survival curve analysis of ceRNA network nodes revealed that a total of 2 miRNAs (hsa-miR-96-5p and hsa-miR-125b-2-3p) and 22 mRNAs (CGNL1, CTHRC1, TK1, etc) were significantly related to the prognosis. mRNAs were significantly enriched in 92 GO BPs (such as cell division, cell adhesion) and 9 KEGG pathways (such as cell cycle, HTLV-1 infection). In addition, the proliferation-related ceRNA network was built.",
+        "abstract_summary": ""
+      }
+    ]
+  },
+  {
+    "title": "Screening of biomarkers related to lung adenocarcinoma based on construction of ceRNA regulation network-Conclusion",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "This research built a ceRNA regulation network of LUAD and is of great significance for identifying biomarkers related to the prognosis in LUAD.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,141 @@
+[
+  {
+    "paragraph": "TGF-β-induced fibrogenic changes in human trabecular meshwork (HTM) cells contribute to intraocular pressure elevation in glaucoma. Silibinin, a natural polyphenolic flavonoid from milk thistle seeds, has been well investigated for its function to inhibit fibrosis. The transcriptomic changes in noncoding RNAs contributing to the pro-fibrotic effect of TGF-β2 and the anti-fibrotic activity of silibinin in HTM cells remain unknown.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "TGF-β-induced fibrogenic changes in human trabecular meshwork (HTM) cells contribute to intraocular pressure elevation in glaucoma.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Silibinin is a natural polyphenolic flavonoid derived from milk thistle seeds.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Silibinin has been well investigated for its function to inhibit fibrosis.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "The transcriptomic changes in noncoding RNAs contributing to the pro-fibrotic effect of TGF-β2 in HTM cells remain unknown.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The transcriptomic changes in noncoding RNAs contributing to the anti-fibrotic activity of silibinin in HTM cells remain unknown.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "RNA sequencing was conducted to characterize the transcriptomic profiles (mRNA, lncRNA, circRNA, and miRNA) in TGF-β2-stimulated HTM cells, with or without silibinin treatment. Pathway enrichment analysis of the differentially expressed RNAs was conducted. Competing endogenous RNA networks were constructed.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "RNA sequencing was conducted to characterize the transcriptomic profiles in TGF-β2-stimulated HTM cells.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "The transcriptomic profiles included mRNA, lncRNA, circRNA, and miRNA.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "RNA sequencing was performed with or without silibinin treatment.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "Pathway enrichment analysis of the differentially expressed RNAs was conducted.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Competing endogenous RNA networks were constructed.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "TGF-β2 upregulated 1119 mRNAs, 319 lncRNAs, 383 circRNAs, and 30 miRNAs in HTM cells, of which 545 mRNAs, 183 lncRNAs, 265 circRNAs, and 22 miRNAs were reversed by silibinin. These rescued mRNAs, including COL1A1 and α-SMA, were enriched in pathways including cell migration, cell adhesion, and extracellular matrix. Furthermore, TGF-β2 downregulated 1165 mRNAs, 212 lncRNAs, 449 circRNAs, and 15 miRNAs, of which 395 mRNAs, 54 lncRNAs, 104 circRNAs, and 7 miRNAs were reversed by silibinin. These rescued mRNAs were enriched in cytokine-mediated signaling pathway and inflammatory response. By predicting the binding of differentially expressed mRNAs, lncRNAs, and circRNAs to miRNAs via miranda (v 3.3a) software, we constructed lncRNA-miRNA-mRNA and circRNA-miRNA-mRNA networks that might be involved in the effects of TGF-β2 and silibinin in HTM cells.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "TGF-β2 upregulated 1119 mRNAs, 319 lncRNAs, 383 circRNAs, and 30 miRNAs in HTM cells.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "545 mRNAs, 183 lncRNAs, 265 circRNAs, and 22 miRNAs upregulated by TGF-β2 were reversed by silibinin.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The rescued mRNAs, including COL1A1 and α-SMA, were enriched in pathways such as cell migration, cell adhesion, and extracellular matrix.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "TGF-β2 downregulated 1165 mRNAs, 212 lncRNAs, 449 circRNAs, and 15 miRNAs in HTM cells.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "395 mRNAs, 54 lncRNAs, 104 circRNAs, and 7 miRNAs downregulated by TGF-β2 were reversed by silibinin.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The rescued mRNAs were enriched in cytokine-mediated signaling pathway and inflammatory response.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Differentially expressed mRNAs, lncRNAs, and circRNAs were predicted to bind to miRNAs using miranda (v 3.3a) software.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "lncRNA-miRNA-mRNA and circRNA-miRNA-mRNA networks were constructed to investigate the effects of TGF-β2 and silibinin in HTM cells.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Silibinin mitigated TGF-β2-induced alterations in the coding and noncoding RNA profiles of HTM cells, presumably contributing to its anti-fibrotic activity. To our knowledge, this is the first study to illustrate the lncRNA and circRNA changes induced by TGF-β2 in HTM cells, and the first study to investigate silibinin's anti-fibrotic effects in HTM cells from the perspective of noncoding RNAs. Our work deepened the understanding of gene regulation by noncoding RNAs in the TGF-β2-induced fibrogenic changes and the anti-fibrotic activity of silibinin in HTM cells.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Silibinin mitigated TGF-β2-induced alterations in the coding and noncoding RNA profiles of HTM cells.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "This is the first study to illustrate the lncRNA and circRNA changes induced by TGF-β2 in HTM cells.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "This is the first study to investigate silibinin's anti-fibrotic effects in HTM cells from the perspective of noncoding RNAs.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The study deepened the understanding of gene regulation by noncoding RNAs in the TGF-β2-induced fibrogenic changes in HTM cells.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "The study deepened the understanding of the anti-fibrotic activity of silibinin in HTM cells.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  }
+]

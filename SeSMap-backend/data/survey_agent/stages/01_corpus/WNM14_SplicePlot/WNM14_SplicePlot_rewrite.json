@@ -1,0 +1,74 @@
+[
+  {
+    "paragraph": "RNA sequencing has provided unprecedented resolution of alternative splicing and splicing quantitative trait loci (sQTL). However, there are few tools available for visualizing the genotype-dependent effects of splicing at a population level. SplicePlot is a simple command line utility that produces intuitive visualization of sQTLs and their effects. SplicePlot takes mapped RNA sequencing reads in BAM format and genotype data in VCF format as input and outputs publication-quality Sashimi plots, hive plots and structure plots, enabling better investigation and understanding of the role of genetics on alternative splicing and transcript structure.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "RNA sequencing has provided unprecedented resolution of alternative splicing.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "RNA sequencing has provided unprecedented resolution of splicing quantitative trait loci (sQTL).",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "There are few tools available for visualizing the genotype-dependent effects of splicing at a population level.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "SplicePlot is a simple command line utility that produces intuitive visualization of sQTLs and their effects.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "SplicePlot takes mapped RNA sequencing reads in BAM format as input.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "SplicePlot takes genotype data in VCF format as input.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "SplicePlot outputs publication-quality Sashimi plots, hive plots, and structure plots.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "SplicePlot enables better investigation and understanding of the role of genetics on alternative splicing and transcript structure.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "Source code and detailed documentation are available at http://montgomerylab.stanford.edu/spliceplot/index.html under Resources and at Github. SplicePlot is implemented in Python and is supported on Linux and Mac OS. A VirtualBox virtual machine running Ubuntu with SplicePlot already installed is also available.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Source code and detailed documentation are available at http://montgomerylab.stanford.edu/spliceplot/index.html under Resources and at Github.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "SplicePlot is implemented in Python.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "SplicePlot is supported on Linux and Mac OS.",
+        "category": "Method",
+        "rank": 2
+      },
+      {
+        "sentence": "A VirtualBox virtual machine running Ubuntu with SplicePlot already installed is also available.",
+        "category": "Method",
+        "rank": 2
+      }
+    ]
+  }
+]

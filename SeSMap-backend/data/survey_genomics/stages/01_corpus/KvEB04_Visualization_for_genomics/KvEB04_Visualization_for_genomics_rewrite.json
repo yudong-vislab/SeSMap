@@ -1,0 +1,59 @@
+[
+  {
+    "paragraph": "A Web-based visualization tool, the Microbial Genome Viewer, is presented that allows the user to combine complex genomic data in a highly interactive way. This Web tool enables the interactive generation of chromosome wheels and linear genome maps from genome annotation data stored in a MySQL database. The generated images are in scalable vector graphics (SVG) format, which is suitable for creating high-quality scalable images and dynamic Web representations. Gene-related data such as transcriptome and time-course microarray experiments can be superimposed on the maps for visual inspection.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A Web-based visualization tool, the Microbial Genome Viewer, is presented.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The Microbial Genome Viewer allows the user to combine complex genomic data in a highly interactive way.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "This Web tool enables the interactive generation of chromosome wheels from genome annotation data stored in a MySQL database.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "This Web tool enables the interactive generation of linear genome maps from genome annotation data stored in a MySQL database.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The generated images are in scalable vector graphics (SVG) format.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Scalable vector graphics (SVG) format is suitable for creating high-quality scalable images and dynamic Web representations.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Gene-related data such as transcriptome experiments can be superimposed on the maps for visual inspection.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Gene-related data such as time-course microarray experiments can be superimposed on the maps for visual inspection.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "The Microbial Genome Viewer 1.0 is freely available at http://www.cmbi.kun.nl/MGV",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The Microbial Genome Viewer 1.0 is freely available at http://www.cmbi.kun.nl/MGV.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

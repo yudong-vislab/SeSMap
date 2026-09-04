@@ -1,0 +1,141 @@
+[
+  {
+    "paragraph": "Lung adenocarcinoma (LUAD) is a common malignant tumor with a poor prognosis and limited effective therapeutic targets. The underlying molecular regulatory mechanisms driving its progression remain largely unclear. The study objectives were to build a circRNA-miRNA-mRNA ceRNA regulation network of LUAD and to identify miRNAs and mRNAs significantly related to the prognosis .",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Lung adenocarcinoma (LUAD) is a common malignant tumor with a poor prognosis and limited effective therapeutic targets.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The underlying molecular regulatory mechanisms driving LUAD progression remain largely unclear.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The study aimed to build a circRNA-miRNA-mRNA ceRNA regulation network of LUAD.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The study aimed to identify miRNAs and mRNAs significantly related to the prognosis of LUAD.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "The gene expression data and GSE101684 were downloaded from the UCSC Xene and NCBI-GEO databases, respectively. The differentially expressed RNAs (DEcircRNAs, DEmiRNAs, and DEmRNAs; DERs) were obtained by the Limma package in R. Then, the differential LUAD-related genes were identified, and the Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathways of the differential LUAD-related genes were analyzed. Moreover, the circRNA-miRNA-mRNA ceRNA network of LUAD was built. The Kaplan-Meier (K-M) survival curve analysis of ceRNA network nodes was performed. In addition, the proliferation-related ceRNA network was built.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The gene expression data were downloaded from the UCSC Xene database.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The GSE101684 dataset was downloaded from the NCBI-GEO database.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The differentially expressed RNAs (DEcircRNAs, DEmiRNAs, and DEmRNAs; DERs) were obtained using the Limma package in R.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The differential LUAD-related genes were identified.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The Gene Ontology (GO) pathways of the differential LUAD-related genes were analyzed.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The Kyoto Encyclopedia of Genes and Genomes (KEGG) pathways of the differential LUAD-related genes were analyzed.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The circRNA-miRNA-mRNA ceRNA network of LUAD was built.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The Kaplan-Meier (K-M) survival curve analysis of ceRNA network nodes was performed.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The proliferation-related ceRNA network was built.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "A total of 382 DEcircRNAs, 1907 DEmRNAs and 156 DEmiRNAs were acquired. A total of 245 differential LUAD-related genes were acquired, which were significantly associated with 189 GO biological processes (BP) and 17 KEGG pathways. Moreover, the ceRNA network of LUAD was built. The K-M survival curve analysis of ceRNA network nodes revealed that a total of 2 miRNAs (hsa-miR-96-5p and hsa-miR-125b-2-3p) and 22 mRNAs (CGNL1, CTHRC1, TK1, etc) were significantly related to the prognosis. mRNAs were significantly enriched in 92 GO BPs (such as cell division, cell adhesion) and 9 KEGG pathways (such as cell cycle, HTLV-1 infection). In addition, the proliferation-related ceRNA network was built.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A total of 382 DEcircRNAs, 1907 DEmRNAs, and 156 DEmiRNAs were acquired.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "A total of 245 differential LUAD-related genes were acquired.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The 245 LUAD-related genes were significantly associated with 189 GO biological processes (BP) and 17 KEGG pathways.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The ceRNA network of LUAD was built.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The K-M survival curve analysis of ceRNA network nodes revealed that 2 miRNAs (hsa-miR-96-5p and hsa-miR-125b-2-3p) and 22 mRNAs (CGNL1, CTHRC1, TK1, etc.) were significantly related to the prognosis.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "The mRNAs were significantly enriched in 92 GO biological processes (such as cell division, cell adhesion).",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The mRNAs were significantly enriched in 9 KEGG pathways (such as cell cycle, HTLV-1 infection).",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The proliferation-related ceRNA network was built.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "This research built a ceRNA regulation network of LUAD and is of great significance for identifying biomarkers related to the prognosis in LUAD.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "This research built a ceRNA regulation network of LUAD.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The ceRNA regulation network is significant for identifying biomarkers related to the prognosis in LUAD.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  }
+]

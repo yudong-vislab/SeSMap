@@ -1,0 +1,90 @@
+[
+  {
+    "paragraph": "Current synteny visualization tools either focus on small regions of sequence and do not illustrate genome-wide trends, or are complicated to use and create visualizations that are difficult to interpret. To address this challenge, The Comparative Genomics Platform (CoGe) has developed two web-based tools to visualize synteny across whole genomes. SynMap2 and SynMap3D allow researchers to explore whole genome synteny patterns (across two or three genomes, respectively) in responsive, web-based visualization and virtual reality environments. Both tools have access to the extensive CoGe genome database (containing over 30 000 genomes) as well as the option for users to upload their own data. By leveraging modern web technologies there is no installation required, making the tools widely accessible and easy to use.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Current synteny visualization tools focus on small regions of sequence and do not illustrate genome-wide trends.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Current synteny visualization tools are complicated to use and create visualizations that are difficult to interpret.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The Comparative Genomics Platform (CoGe) has developed two web-based tools to visualize synteny across whole genomes.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "SynMap2 allows researchers to explore whole genome synteny patterns across two genomes in responsive, web-based visualization environments.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "SynMap3D allows researchers to explore whole genome synteny patterns across three genomes in virtual reality environments.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Both tools have access to the extensive CoGe genome database containing over 30,000 genomes.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Users have the option to upload their own data to the tools.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "By leveraging modern web technologies, there is no installation required for the tools.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The tools are widely accessible and easy to use.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Both tools are open source (MIT license) and freely available for use online through CoGe ( https://genomevolution.org ). SynMap2 and SynMap3D can be accessed at http://genomevolution.org/coge/SynMap.pl and http://genomevolution.org/coge/SynMap3D.pl , respectively. Source code is available: https://github.com/LyonsLab/coge .",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Both tools are open source (MIT license) and freely available for use online through CoGe.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "SynMap2 can be accessed at http://genomevolution.org/coge/SynMap.pl.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "SynMap3D can be accessed at http://genomevolution.org/coge/SynMap3D.pl.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "Source code is available at https://github.com/LyonsLab/coge.",
+        "category": "Other",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "Supplementary data are available at Bioinformatics online.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Supplementary data are available at Bioinformatics online.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

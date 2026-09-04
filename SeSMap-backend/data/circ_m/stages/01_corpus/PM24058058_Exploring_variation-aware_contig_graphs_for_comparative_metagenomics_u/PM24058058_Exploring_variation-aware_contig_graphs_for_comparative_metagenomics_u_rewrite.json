@@ -1,0 +1,115 @@
+[
+  {
+    "paragraph": "Although many tools are available to study variation and its impact in single genomes, there is a lack of algorithms for finding such variation in metagenomes. This hampers the interpretation of metagenomics sequencing datasets, which are increasingly acquired in research on the (human) microbiome, in environmental studies and in the study of processes in the production of foods and beverages. Existing algorithms often depend on the use of reference genomes, which pose a problem when a metagenome of a priori unknown strain composition is studied. In this article, we develop a method to perform reference-free detection and visual exploration of genomic variation, both within a single metagenome and between metagenomes.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Many tools are available to study variation and its impact in single genomes.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "There is a lack of algorithms for finding variation in metagenomes.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "This lack hampers the interpretation of metagenomics sequencing datasets.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Metagenomics sequencing datasets are increasingly acquired in research on the human microbiome, in environmental studies, and in the study of processes in the production of foods and beverages.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Existing algorithms often depend on the use of reference genomes.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The use of reference genomes poses a problem when a metagenome of a priori unknown strain composition is studied.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "We develop a method to perform reference-free detection and visual exploration of genomic variation.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The method can detect genomic variation both within a single metagenome and between metagenomes.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "We present the MaryGold algorithm and its implementation, which efficiently detects bubble structures in contig graphs using graph decomposition. These bubbles represent variable genomic regions in closely related strains in metagenomic samples. The variation found is presented in a condensed Circos-based visualization, which allows for easy exploration and interpretation of the found variation. We validated the algorithm on two simulated datasets containing three respectively seven Escherichia coli genomes and showed that finding allelic variation in these genomes improves assemblies. Additionally, we applied MaryGold to publicly available real metagenomic datasets, enabling us to find within-sample genomic variation in the metagenomes of a kimchi fermentation process, the microbiome of a premature infant and in microbial communities living on acid mine drainage. Moreover, we used MaryGold for between-sample variation detection and exploration by comparing sequencing data sampled at different time points for both of these datasets.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The MaryGold algorithm efficiently detects bubble structures in contig graphs using graph decomposition.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Bubble structures represent variable genomic regions in closely related strains in metagenomic samples.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The variation found is presented in a condensed Circos-based visualization.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The Circos-based visualization allows for easy exploration and interpretation of the found variation.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The algorithm was validated on two simulated datasets containing three and seven Escherichia coli genomes, respectively.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "Finding allelic variation in these genomes improves assemblies.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "MaryGold was applied to publicly available real metagenomic datasets.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "MaryGold enabled the detection of within-sample genomic variation in the metagenomes of a kimchi fermentation process, the microbiome of a premature infant, and microbial communities living on acid mine drainage.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "MaryGold was used for between-sample variation detection and exploration by comparing sequencing data sampled at different time points for both datasets.",
+        "category": "Experiment",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "MaryGold has been written in C++ and Python and can be downloaded from http://bioinformatics.tudelft.nl/software",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "MaryGold has been written in C++ and Python.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "MaryGold can be downloaded from http://bioinformatics.tudelft.nl/software.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

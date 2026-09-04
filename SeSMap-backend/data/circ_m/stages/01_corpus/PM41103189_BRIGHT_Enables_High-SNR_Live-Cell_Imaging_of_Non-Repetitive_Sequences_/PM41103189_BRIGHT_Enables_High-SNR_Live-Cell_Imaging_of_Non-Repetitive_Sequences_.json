@@ -1,0 +1,16 @@
+[
+  {
+    "title": "BRIGHT Enables High-SNR Live-Cell Imaging of Non-Repetitive Sequences via Bivalent Fluorescent Nanobody-Mediated Cascade-Dependent Illumination",
+    "paragraphs": []
+  },
+  {
+    "title": "BRIGHT Enables High-SNR Live-Cell Imaging of Non-Repetitive Sequences via Bivalent Fluorescent Nanobody-Mediated Cascade-Dependent Illumination-Abstract",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Genomic loci and genome-independent DNA exhibit heterogeneous dynamics related to physiological function. Live-cell imaging of non-repetitive sequences is essential but limited by low signal-to-noise ratio (SNR), restricting accurate identification and dynamic tracking. Here, the development of a BRIGHT (bivalent near-infrared nanobody-mediated cascade illumination of genomic loci for high-SNR tracking) system for non-repetitive sequence live imaging is reported. BRIGHT employs dCas9-n×ALFA to target genomic loci and realizes high SNR by triggering cascade-dependent illumination via bivalent binding and antigen-dependent illumination of a bivalent near-infrared fluorescent nanobody targeting ALFA tags (Bi-NIR-Fb",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

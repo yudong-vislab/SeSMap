@@ -1,0 +1,120 @@
+[
+  {
+    "paragraph": "Fishes are key components of the megafauna of the deep sea, and evolutionary adaptations to deep-sea life appear to have occurred independently in at least 22 fish orders. In this context, the analysis of even more fish genomes and mitogenomes has fundamental importance, providing a valuable resource for understanding the molecular mechanisms underlying evolutionary adaptation, especially to extreme environments such as the deep sea. Here, we report the first complete mitochondrial genome of Zu cristatus (Bonelli, 1819), providing essential information on its structure and phylogeny.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Fishes are key components of the megafauna of the deep sea.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Evolutionary adaptations to deep-sea life appear to have occurred independently in at least 22 fish orders.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The analysis of more fish genomes and mitogenomes has fundamental importance for understanding evolutionary adaptation.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The analysis of fish genomes and mitogenomes provides a valuable resource for understanding molecular mechanisms underlying adaptation to extreme environments such as the deep sea.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "We report the first complete mitochondrial genome of Zu cristatus (Bonelli, 1819).",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "The mitochondrial genome of Zu cristatus provides essential information on its structure and phylogeny.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "After sequencing on the Illumina HiSeq 4000 platform, processing, and assembly via MitoFinder software v.1.4.1, a single circular mtDNA molecule of 17,450 bp in length was annotated. A total of 37 genes were identified, including the first D-loop region for this species. The asymmetry for both AT skews and GC skews is negative, and the AT content is 56.4%. We also detected the presence of 15 small, noncoding, intergenic nucleotide (IGN) regions and some rare stop codons in bony fishes. Pairwise distance and phylogenetic analyses against a list of other mitochondrial sequences from 42 bony fishes confirmed the current phylogeny with previously related orders. EasycodeML analysis revealed that only 4 PCGs underwent positive selection. New questions about the phylogeny of Lampriformes emerged from our phylogenetic analyses of Lampriformes COI.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Sequencing was performed on the Illumina HiSeq 4000 platform.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Processing and assembly were conducted using MitoFinder software v.1.4.1.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "A single circular mtDNA molecule of 17,450 bp in length was annotated.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "A total of 37 genes were identified, including the first D-loop region for this species.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "The asymmetry for both AT skews and GC skews is negative.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The AT content of the mtDNA molecule is 56.4%.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Fifteen small, noncoding, intergenic nucleotide (IGN) regions were detected.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Some rare stop codons were detected in bony fishes.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Pairwise distance and phylogenetic analyses were conducted against mitochondrial sequences from 42 bony fishes.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The phylogenetic analyses confirmed the current phylogeny with previously related orders.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "EasycodeML analysis revealed that only 4 PCGs underwent positive selection.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "New questions about the phylogeny of Lampriformes emerged from the phylogenetic analyses of Lampriformes COI.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "Overall, the findings of this study highlight the need to elucidate the genetic features of bony fishes in relation to their deep-sea adaptation, with a focus on rare and interesting species.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The findings of this study highlight the need to elucidate the genetic features of bony fishes in relation to their deep-sea adaptation.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "The study focuses on rare and interesting species.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  }
+]

@@ -1,0 +1,125 @@
+[
+  {
+    "paragraph": "Extracellular vesicle (EV) RNA sequencing has emerged as a powerful approach for studying RNA biomarkers and intercellular communication. Nevertheless, the extremely low abundance, fragmented nature and ubiquitous tissue origin of EV RNAs, alongside potential contamination from co-isolated materials, such as free DNA and bacterial RNA, pose substantial analytical challenges. These complexities highlight a pressing need for a standardized, computational workflow that ensures robust quality control and EV RNA characterization.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Extracellular vesicle (EV) RNA sequencing is a powerful approach for studying RNA biomarkers and intercellular communication.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "EV RNAs have extremely low abundance, fragmented nature, and ubiquitous tissue origin.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Potential contamination from co-isolated materials, such as free DNA and bacterial RNA, poses analytical challenges for EV RNA sequencing.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "There is a pressing need for a standardized computational workflow to ensure robust quality control and EV RNA characterization.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Here, we present EVscope, an open-source bioinformatics pipeline designed specifically for processing EV RNA-seq datasets. EVscope employs an optimized genome-wide expectation-maximization (EM) algorithm that significantly improves multi-mapping read assignment at single-base resolution by effectively leveraging alignment scores (AS) and local read coverage, specifically tailored for fragmented and low-abundance EV RNAs. Notably, EVscope uniquely generates EM-based BigWig files for downstream analysis, a capability currently unavailable in existing EM-based BigWig quantification tools. The pipeline systematically integrates 27 major steps, including quality control, analysis of library structure, contamination assessment, read alignment, read strandedness detection, UMI-based deduplication, RNA quantification, genomic DNA (gDNA) contamination correction, cellular and tissue source inference and visualization with a comprehensive HTML report. EVscope incorporates a comprehensive, updated annotation covering 19 distinct RNA biotypes, encompassing protein-coding genes, lncRNAs, miRNAs, piRNAs, retrotransposons (LINEs, SINEs, ERVs), and additional non-coding RNAs (tRNAs, rRNAs, snoRNAs). Furthermore, it leverages two highly balanced circRNA detection algorithms for robust circular RNA identification. Notably, a downstream module enables the inference of the tissue/cellular origins of EV RNAs using bulk and single-cell RNA-seq reference datasets. EVscope is implemented as a convenient, single-command Bash pipeline leveraging Conda-managed standard software packages and custom scripts, ensuring reproducibility and straightforward deployment.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "EVscope is an open-source bioinformatics pipeline designed for processing EV RNA-seq datasets.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "EVscope employs an optimized genome-wide expectation-maximization (EM) algorithm.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The EM algorithm significantly improves multi-mapping read assignment at single-base resolution.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The EM algorithm leverages alignment scores (AS) and local read coverage, tailored for fragmented and low-abundance EV RNAs.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "EVscope uniquely generates EM-based BigWig files for downstream analysis.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Generating EM-based BigWig files is a capability currently unavailable in existing EM-based BigWig quantification tools.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The pipeline integrates 27 major steps, including quality control, analysis of library structure, contamination assessment, read alignment, read strandedness detection, UMI-based deduplication, RNA quantification, genomic DNA (gDNA) contamination correction, cellular and tissue source inference, and visualization with a comprehensive HTML report.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "EVscope incorporates a comprehensive, updated annotation covering 19 distinct RNA biotypes.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The 19 RNA biotypes include protein-coding genes, lncRNAs, miRNAs, piRNAs, retrotransposons (LINEs, SINEs, ERVs), and additional non-coding RNAs (tRNAs, rRNAs, snoRNAs).",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "EVscope leverages two highly balanced circRNA detection algorithms for robust circular RNA identification.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "A downstream module in EVscope enables the inference of the tissue and cellular origins of EV RNAs using bulk and single-cell RNA-seq reference datasets.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "EVscope is implemented as a single-command Bash pipeline leveraging Conda-managed standard software packages and custom scripts.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The implementation ensures reproducibility and straightforward deployment.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Code, documentation, and tutorials are available at GitHub (https://github.com/TheDongLab/EVscope) and archived on Zenodo (https://zenodo.org/records/15577789).",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Code is available at GitHub (https://github.com/TheDongLab/EVscope).",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Documentation is available at GitHub (https://github.com/TheDongLab/EVscope).",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Tutorials are available at GitHub (https://github.com/TheDongLab/EVscope).",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "Code, documentation, and tutorials are archived on Zenodo (https://zenodo.org/records/15577789).",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

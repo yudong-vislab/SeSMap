@@ -1,0 +1,65 @@
+[
+  {
+    "paragraph": "Today's genome browsers and protein databanks supply vast amounts of information about proteins. The challenge is to concisely bring together this information in an interactive and easy to generate format.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Genome browsers supply vast amounts of information about proteins.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Protein databanks supply vast amounts of information about proteins.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The challenge is to concisely bring together protein information in an interactive format.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The challenge is to concisely bring together protein information in an easy to generate format.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "We have developed an interactive CIRCOS module called i-PV to visualize user supplied protein sequence, conservation and SNV data in a live presentable format. I-PV can be downloaded from http://www.i-pv.org.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "An interactive CIRCOS module called i-PV has been developed.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "I-PV visualizes user-supplied protein sequence, conservation, and SNV data in a live presentable format.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "I-PV can be downloaded from http://www.i-pv.org.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "ibrahim.tanyalcin@i-pv.org, itanyalc@vub.ac.be or support@i-pv.org",
+    "type": "text",
+    "resultmsu": []
+  },
+  {
+    "paragraph": "Supplementary data are available at Bioinformatics online.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Supplementary data are available at Bioinformatics online.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

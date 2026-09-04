@@ -1,0 +1,58 @@
+[
+  {
+    "paragraph": "Data visualization is essential for exploring and communicating complex biological datasets. As omics data grow in scale and complexity, there is an increasing demand for visualization tools that are both flexible and extensible. We present ggalign, an R package that extends the ggplot2 ecosystem by introducing an integrative framework for composable visualization. Designed to overcome limitations of existing tools, ggalign supports modular, data-aware layouts-including circular, stacked, and quadrant-based configurations-and enables the representation of diverse data relationships, such as one-to-many and many-to-one connections. Its ability to reorder and group observations using data-driven or domain-specific criteria enhances the interpretability of high-dimensional datasets. Moreover, ggalign introduces a novel linking mechanism for visualizing interconnections across heterogeneous data types, as demonstrated in genomic and microbiome case studies. Together, these features position ggalign as a versatile and reproducible solution for multi-omics research, supporting both exploratory data analysis and publication-ready presentation.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Data visualization is essential for exploring and communicating complex biological datasets.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "As omics data grow in scale and complexity, there is an increasing demand for visualization tools that are both flexible and extensible.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "We present ggalign, an R package that extends the ggplot2 ecosystem by introducing an integrative framework for composable visualization.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "ggalign is designed to overcome limitations of existing tools.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "ggalign supports modular, data-aware layouts, including circular, stacked, and quadrant-based configurations.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "ggalign enables the representation of diverse data relationships, such as one-to-many and many-to-one connections.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "ggalign enhances the interpretability of high-dimensional datasets by reordering and grouping observations using data-driven or domain-specific criteria.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "ggalign introduces a novel linking mechanism for visualizing interconnections across heterogeneous data types.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The novel linking mechanism in ggalign is demonstrated in genomic and microbiome case studies.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "ggalign is a versatile and reproducible solution for multi-omics research, supporting both exploratory data analysis and publication-ready presentation.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

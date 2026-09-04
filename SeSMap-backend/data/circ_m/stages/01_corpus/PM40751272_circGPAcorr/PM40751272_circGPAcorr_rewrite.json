@@ -1,0 +1,78 @@
+[
+  {
+    "paragraph": "Circular RNAs play a crucial role in cell development and serve as biomarkers in many diseases. Nevertheless, the function of many circular RNAs remains unknown. This function can be inferred from sponging and silencing interactions with micro RNAs and messenger RNAs. We recently proposed a network-based circRNA functional annotation tool, circGPA. However, validation data for RNA interactions are often sparse and predicted interactions contain many false positives. To address this issue, we propose an extended algorithm named circGPAcorr, which uses expression data to weight the interactions, resulting in more precise functional annotation. To assess the significance of the results, the p-value is calculated using reduction to circGPA, a generating-polynomial-based method. We show that the problem is #P-hard, and thus computationally difficult. The circGPAcorr algorithm is tested on publicly available myelodysplastic syndromes expression data, providing gene ontology annotations that align with the literature on myelodysplastic syndromes. At the same time, we demonstrate its performance in the circRNA-disease annotation task.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Circular RNAs play a crucial role in cell development.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Circular RNAs serve as biomarkers in many diseases.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The function of many circular RNAs remains unknown.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The function of circular RNAs can be inferred from sponging and silencing interactions with micro RNAs and messenger RNAs.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "We recently proposed a network-based circRNA functional annotation tool, circGPA.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Validation data for RNA interactions are often sparse.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Predicted RNA interactions contain many false positives.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "We propose an extended algorithm named circGPAcorr, which uses expression data to weight the interactions.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The circGPAcorr algorithm results in more precise functional annotation.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "To assess the significance of the results, the p-value is calculated using reduction to circGPA, a generating-polynomial-based method.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The problem is #P-hard and thus computationally difficult.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The circGPAcorr algorithm is tested on publicly available myelodysplastic syndromes expression data.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "The circGPAcorr algorithm provides gene ontology annotations that align with the literature on myelodysplastic syndromes.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "We demonstrate the performance of circGPAcorr in the circRNA-disease annotation task.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  }
+]

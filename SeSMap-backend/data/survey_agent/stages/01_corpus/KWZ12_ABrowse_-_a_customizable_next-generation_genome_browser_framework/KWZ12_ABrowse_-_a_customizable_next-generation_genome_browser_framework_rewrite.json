@@ -1,0 +1,130 @@
+[
+  {
+    "paragraph": "With the rapid growth of genome sequencing projects, genome browser is becoming indispensable, not only as a visualization system but also as an interactive platform to support open data access and collaborative work. Thus a customizable genome browser framework with rich functions and flexible configuration is needed to facilitate various genome research projects.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Genome sequencing projects are growing rapidly.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Genome browsers are becoming indispensable as visualization systems.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Genome browsers are becoming indispensable as interactive platforms to support open data access and collaborative work.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "A customizable genome browser framework with rich functions and flexible configuration is needed.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "A customizable genome browser framework can facilitate various genome research projects.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Based on next-generation web technologies, we have developed a general-purpose genome browser framework ABrowse which provides interactive browsing experience, open data access and collaborative work support. By supporting Google-map-like smooth navigation, ABrowse offers end users highly interactive browsing experience. To facilitate further data analysis, multiple data access approaches are supported for external platforms to retrieve data from ABrowse. To promote collaborative work, an online user-space is provided for end users to create, store and share comments, annotations and landmarks. For data providers, ABrowse is highly customizable and configurable. The framework provides a set of utilities to import annotation data conveniently. To build ABrowse on existing annotation databases, data providers could specify SQL statements according to database schema. And customized pages for detailed information display of annotation entries could be easily plugged in. For developers, new drawing strategies could be integrated into ABrowse for new types of annotation data. In addition, standard web service is provided for data retrieval remotely, providing underlying machine-oriented programming interface for open data access.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "ABrowse is a general-purpose genome browser framework based on next-generation web technologies.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "ABrowse provides an interactive browsing experience, open data access, and collaborative work support.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "ABrowse supports Google-map-like smooth navigation for highly interactive browsing.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "ABrowse supports multiple data access approaches for external platforms to retrieve data.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "ABrowse provides an online user-space for end users to create, store, and share comments, annotations, and landmarks.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "ABrowse is highly customizable and configurable for data providers.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "ABrowse provides utilities to import annotation data conveniently.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Data providers can specify SQL statements according to database schema to build ABrowse on existing annotation databases.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Customized pages for detailed information display of annotation entries can be easily plugged into ABrowse.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "New drawing strategies can be integrated into ABrowse for new types of annotation data.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "ABrowse provides a standard web service for remote data retrieval.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The web service offers a machine-oriented programming interface for open data access.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "ABrowse framework is valuable for end users, data providers and developers by providing rich user functions and flexible customization approaches. The source code is published under GNU Lesser General Public License v3.0 and is accessible at http://www.abrowse.org/. To demonstrate all the features of ABrowse, a live demo for Arabidopsis thaliana genome has been built at http://arabidopsis.cbi.edu.cn/.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The ABrowse framework provides rich user functions and flexible customization approaches.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The source code of ABrowse is published under GNU Lesser General Public License v3.0.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "The source code of ABrowse is accessible at http://www.abrowse.org/.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "A live demo for the Arabidopsis thaliana genome has been built to demonstrate all the features of ABrowse.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "The live demo is accessible at http://arabidopsis.cbi.edu.cn/.",
+        "category": "Other",
+        "rank": 2
+      }
+    ]
+  }
+]

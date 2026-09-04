@@ -1,0 +1,16 @@
+[
+  {
+    "title": "BASys2: a next-generation bacterial genome annotation system",
+    "paragraphs": []
+  },
+  {
+    "title": "BASys2: a next-generation bacterial genome annotation system-Abstract",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Originally released in 2005, BASys (Bacterial Annotation System) was one of the first web servers to support online bacterial genome annotation and interactive genomic display. Over the past 20 years, web technologies and annotation algorithms have advanced considerably. To keep current with these advances and changing needs of microbial genomics, we have developed BASys2 (Bacterial Annotation System 2.0). BASys2 represents a significant upgrade to BASys, offering much more rapid (up to 8000× faster) and far more complete (2× as many data fields) genome annotation with significantly improved genome visualization capabilities. More specifically, BASys2 reduces annotation time from 24 h to as little as 10 s through a fast genome-matching and a novel annotation transfer strategy. Accepting either FASTA or FASTQ files, BASys2 is able to generate up to 62 annotation fields per gene/protein, leveraging over 30 bioinformatics tools and 10 different databases. Among the more unique features of BASys2 is its extensive support for whole metabolome annotation and complete structural proteome generation. BASys2's new interactive genome viewer allows rapid, dynamic visualization of complete bacterial genome maps with options to display/hide multiple concentric annotation tracks, show/remove color-coded legends, manipulate the genome map, and select/view individual gene and metabolite annotations. Available as a web server, a desktop viewer application, and a locally installable Docker image, BASys2 allows researchers to achieve unprecedented annotation depth and to easily upload, download, and display these rich genome/metabolome annotations. The BASys2 web server is freely accessible at https://basys2.ca.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

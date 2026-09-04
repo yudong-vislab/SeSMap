@@ -1,0 +1,5 @@
+# YAC: Bridging Natural Language and Interactive Visual Exploration with Generative AI for Biomedical Data Discovery
+
+## Abstract
+
+Incorporating natural language input has the potential to improve the capabilities of biomedical data discovery interfaces. However, user interface elements and visualizations are still powerful tools for interacting with data. In our prototype system, YAC, Yet Another Chatbot, we integrate natural language and interactive visualizations. YAC uses a tool-calling multi-agent system to generate declarative output, which is interpreted to render linked interactive visualizations and apply data filters. We also include adjustment widgets, which allow users to directly modify the structured output. Structured text is also generated to clarify user intent, notify users of system boundaries, and explain aspects of the data with live data element links. We conducted a user study with domain experts to surface areas where YAC can be improved. Furthermore we reflect on the capabilities and design of this system with an analysis of its technical dimensions.

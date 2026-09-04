@@ -1,0 +1,53 @@
+[
+  {
+    "paragraph": "Since the approval of the first chimeric antigen receptor (CAR)-T product in 2017, the number of new CAR-T clinical trials worldwide exceeds 100 per year. 1649 clinical studies have been conducted to explore possible future clinical applications of targets or target pairs through different biotechnologies. In this study, we aim to take a data-driven analytical approach to explore potential dual-target pairs based on clinical trial information. We screened 1283 non-withdrawal interventional CAR-T clinical trials spanning 96 different targets and 74 target pairs from clinicaltrials.gov. Through the Circos plot and temporal network plots, the information between targets and indications was visualized. Based on the assumption that two targets of a target pair must target the same indication, five new target pairs were inferred, including CD19/CD7, CD19/CD5, CD19/CD37, and CD19/BAFFR and validated by expression pattern, literature and patent information. This study provides novel support for target profiling of CAR-T from the perspective of clinical trials and also provides a reference for researchers and developers to select new targets or target pairs of CAR-T cell therapy.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Since the approval of the first chimeric antigen receptor (CAR)-T product in 2017, the number of new CAR-T clinical trials worldwide exceeds 100 per year.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "1649 clinical studies have been conducted to explore possible future clinical applications of targets or target pairs through different biotechnologies.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "In this study, we aim to take a data-driven analytical approach to explore potential dual-target pairs based on clinical trial information.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "We screened 1283 non-withdrawal interventional CAR-T clinical trials spanning 96 different targets and 74 target pairs from clinicaltrials.gov.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Through the Circos plot and temporal network plots, the information between targets and indications was visualized.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Based on the assumption that two targets of a target pair must target the same indication, five new target pairs were inferred, including CD19/CD7, CD19/CD5, CD19/CD37, and CD19/BAFFR.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "The inferred target pairs were validated by expression pattern, literature, and patent information.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "This study provides novel support for target profiling of CAR-T from the perspective of clinical trials.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "This study provides a reference for researchers and developers to select new targets or target pairs of CAR-T cell therapy.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  }
+]

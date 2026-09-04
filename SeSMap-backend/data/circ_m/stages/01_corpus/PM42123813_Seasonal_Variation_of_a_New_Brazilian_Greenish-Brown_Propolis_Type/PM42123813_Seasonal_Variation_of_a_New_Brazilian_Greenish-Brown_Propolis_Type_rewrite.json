@@ -1,0 +1,48 @@
+[
+  {
+    "paragraph": "Propolis is a natural product of honey bees whose chemical composition is influenced by different plant species and environmental factors, resulting in diverse biological activities. A new propolis type, the greenish-brown propolis (GBPUP), was identified in the northeast of Brazil. This study aimed to evaluate the influence of seasonal variation in the chemical composition of GBPUP extracts over a 12-month period. LC-ESI-Orbitrap-FTMS and UFLC-DAD-UV-Vis revealed a chemical composition with some differences to that of Brazilian green propolis, with pinocembrin as the major compound, followed by galangin, pinostrobin, chrysin, artepillin C, and pinobanksin. The extracts exhibited high levels of total phenolic, flavonoid, and flavanone contents and moderate to high antioxidant activity. Circos plot analysis showed that specific metabolites were responsible for the high activity against",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Propolis is a natural product of honey bees whose chemical composition is influenced by different plant species and environmental factors, resulting in diverse biological activities.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "A new propolis type, the greenish-brown propolis (GBPUP), was identified in the northeast of Brazil.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "This study aimed to evaluate the influence of seasonal variation in the chemical composition of GBPUP extracts over a 12-month period.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "LC-ESI-Orbitrap-FTMS and UFLC-DAD-UV-Vis revealed a chemical composition with some differences to that of Brazilian green propolis.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Pinocembrin was identified as the major compound in GBPUP, followed by galangin, pinostrobin, chrysin, artepillin C, and pinobanksin.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The extracts exhibited high levels of total phenolic, flavonoid, and flavanone contents.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The extracts exhibited moderate to high antioxidant activity.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Circos plot analysis showed that specific metabolites were responsible for the high activity against.",
+        "category": "Result",
+        "rank": 3
+      }
+    ]
+  }
+]

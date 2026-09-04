@@ -1,0 +1,105 @@
+[
+  {
+    "paragraph": "The number of completely sequenced genomes is continuously rising, allowing for comparative analyses of genomic variation. Such analyses are often based on whole-genome alignments to elucidate structural differences arising from insertions, deletions or from rearrangement events. Computational tools that can visualize genome alignments in a meaningful manner are needed to help researchers gain new insights into the underlying data. Such visualizations typically are either realized in a linear fashion as in genome browsers or by using a circular approach, where relationships between genomic regions are indicated by arcs. Both methods allow for the integration of additional information such as experimental data or annotations. However, providing a visualization that still allows for a quick and comprehensive interpretation of all important genomic variations together with various supplemental data, which may be highly heterogeneous, remains a challenge.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The number of completely sequenced genomes is continuously rising.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The increasing number of sequenced genomes allows for comparative analyses of genomic variation.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Comparative analyses of genomic variation are often based on whole-genome alignments.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Whole-genome alignments elucidate structural differences arising from insertions, deletions, or rearrangement events.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Computational tools are needed to visualize genome alignments in a meaningful manner.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Such visualizations help researchers gain new insights into the underlying data.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Genome visualizations are typically realized in a linear fashion as in genome browsers.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Genome visualizations can also use a circular approach where relationships between genomic regions are indicated by arcs.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Both linear and circular visualization methods allow for the integration of additional information such as experimental data or annotations.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Providing a visualization that allows for quick and comprehensive interpretation of all important genomic variations together with various supplemental data remains a challenge.",
+        "category": "Background",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "Here, we present two complementary approaches to tackle this problem. First, we propose the SuperGenome concept for the computation of a common coordinate system for all genomes in a multiple alignment. This coordinate system allows for the consistent placement of genome annotations in the presence of insertions, deletions and rearrangements. Second, we present the GenomeRing visualization that, based on the SuperGenome, creates an interactive overview visualization of the multiple genome alignment in a circular layout. We demonstrate our methods by applying them to an alignment of Campylobacter jejuni strains for the discovery of genomic islands as well as to an alignment of Helicobacter pylori, which we visualize in combination with gene expression data.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "We propose the SuperGenome concept for the computation of a common coordinate system for all genomes in a multiple alignment.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The SuperGenome coordinate system allows for the consistent placement of genome annotations in the presence of insertions, deletions, and rearrangements.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "We present the GenomeRing visualization that creates an interactive overview visualization of the multiple genome alignment in a circular layout.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The GenomeRing visualization is based on the SuperGenome.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "We applied our methods to an alignment of Campylobacter jejuni strains for the discovery of genomic islands.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "We applied our methods to an alignment of Helicobacter pylori, which we visualized in combination with gene expression data.",
+        "category": "Experiment",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "GenomeRing and example data is available at http://it.inf.uni-tuebingen.de/software/genomering/.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "GenomeRing and example data is available at http://it.inf.uni-tuebingen.de/software/genomering/.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

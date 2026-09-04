@@ -1,0 +1,146 @@
+[
+  {
+    "paragraph": "Circular RNAs (circRNAs) are increasingly recognized as important regulators of splicing, transcription and gene expression, and may contribute to drug resistance. The purpose of this study was to investigate the potential roles of circRNAs in the development of albendazole (ABZ) resistance in Haemonchus contortus (H. contortus). By analysing the numbers, species, structural characteristics and functions of circRNAs, we constructed regulatory networks to provide insight into circRNA-mediated mechanisms associated with ABZ resistance.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Circular RNAs (circRNAs) are increasingly recognized as important regulators of splicing, transcription, and gene expression.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Circular RNAs (circRNAs) may contribute to drug resistance.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The purpose of this study was to investigate the potential roles of circRNAs in the development of albendazole (ABZ) resistance in Haemonchus contortus (H. contortus).",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "The study analyzed the numbers, species, structural characteristics, and functions of circRNAs.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Regulatory networks were constructed to provide insight into circRNA-mediated mechanisms associated with ABZ resistance.",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "In this study, ABZ-sensitive (ABZ-S) strains, ABZ-resistant (ABZ-RA) strains and ABZ-resistant treatment (ABZ-RB) strains of H. contortus were subjected to high-throughput sequencing and cDNA library construction with the Illumina HiSeq",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "ABZ-sensitive (ABZ-S) strains of H. contortus were subjected to high-throughput sequencing.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "ABZ-resistant (ABZ-RA) strains of H. contortus were subjected to high-throughput sequencing.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "ABZ-resistant treatment (ABZ-RB) strains of H. contortus were subjected to high-throughput sequencing.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "cDNA library construction was performed for ABZ-S, ABZ-RA, and ABZ-RB strains of H. contortus.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Illumina HiSeq was used for high-throughput sequencing and cDNA library construction.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "A total of 5695 circRNAs were identified across the three strain comparisons, with lengths ranging from 126 to 95,630 nt. Among them, 364, 252 and 311unique DEcircRNAs were identified in ABZ-S, ABZ-RA, ABZ-RB, respectively. These DEcircRNAs were associated with 1369 parental genes involved in 974 GO terms and 326 KEGG pathways, including 86 metabolic pathways. Complex competitive endogenous RNA (ceRNA) regulatory networks were constructed among DEcircRNAs, differentially expressed microRNAs (DEmiRNAs), and differentially expressed messenger RNAs (DEmRNAs). The ceRNA network comprised 110 DEcircRNAs, 41 DEmiRNAs and 10 DEmRNAs, of which 35 were related to metabolism and 37 to organismal systems. Validation experiments confirmed expression differences for nine DEcircRNAs.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A total of 5695 circRNAs were identified across the three strain comparisons, with lengths ranging from 126 to 95,630 nt.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "364 unique DEcircRNAs were identified in ABZ-S.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "252 unique DEcircRNAs were identified in ABZ-RA.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "311 unique DEcircRNAs were identified in ABZ-RB.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "These DEcircRNAs were associated with 1369 parental genes involved in 974 GO terms and 326 KEGG pathways, including 86 metabolic pathways.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Complex competitive endogenous RNA (ceRNA) regulatory networks were constructed among DEcircRNAs, differentially expressed microRNAs (DEmiRNAs), and differentially expressed messenger RNAs (DEmRNAs).",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The ceRNA network comprised 110 DEcircRNAs, 41 DEmiRNAs and 10 DEmRNAs.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "35 components of the ceRNA network were related to metabolism.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "37 components of the ceRNA network were related to organismal systems.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Validation experiments confirmed expression differences for nine DEcircRNAs.",
+        "category": "Experiment",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "The high-throughput identification of DEcircRNAs in drug-resistant strains suggests that some circRNAs may participate in the development of ABZ resistance by regulating source genes and functioning as ceRNAs. These regulatory processes may involve pathways such as ABC transporters and drug metabolism-cytochrome P450.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The high-throughput identification of DEcircRNAs in drug-resistant strains suggests that some circRNAs may participate in the development of ABZ resistance.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Some circRNAs may regulate source genes and function as ceRNAs in the development of ABZ resistance.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "These regulatory processes may involve pathways such as ABC transporters.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "These regulatory processes may involve pathways such as drug metabolism-cytochrome P450.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  }
+]

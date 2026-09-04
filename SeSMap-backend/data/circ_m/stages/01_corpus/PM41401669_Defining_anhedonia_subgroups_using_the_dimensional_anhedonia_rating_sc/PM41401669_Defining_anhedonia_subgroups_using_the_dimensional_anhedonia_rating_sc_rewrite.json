@@ -1,0 +1,137 @@
+[
+  {
+    "paragraph": "Anhedonia is a core symptom of major depressive disorder (MDD). We aimed to validate the Dimensional Anhedonia Rating Scale (DARS), explore data-driven subgroups of anhedonia among individuals with depression, and determine associations with anxiety, suicidal ideation, neuroticism, and childhood trauma.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Anhedonia is a core symptom of major depressive disorder (MDD).",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The study aimed to validate the Dimensional Anhedonia Rating Scale (DARS).",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The study aimed to explore data-driven subgroups of anhedonia among individuals with depression.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The study aimed to determine associations of anhedonia with anxiety, suicidal ideation, neuroticism, and childhood trauma.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Participants with current major depressive episode (n = 474) enrolled in the D2K arm of the Texas Resilience Against Depression (T-RAD) study were included in these analyses. Structure and reliability of the DARS were assessed using a factor analysis with a PROMAX rotation and Cronbach's Alpha. Hierarchical clustering was performed to identify anhedonia-related subtypes using the DARS subscores. To identify the clinical signature that discriminates between anhedonia-based subgroups, discriminant analysis using clinical characteristics (anhedonia, suicidal ideation, anxiety, neuroticism, and childhood trauma) was performed using the Data Integration Analysis for Biomarker discovery using Latent cOmponents (DIABLO, mixOmics package version 6.24.0).",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Participants with current major depressive episode (n = 474) enrolled in the D2K arm of the Texas Resilience Against Depression (T-RAD) study were included in these analyses.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The structure and reliability of the DARS were assessed using a factor analysis with a PROMAX rotation and Cronbach's Alpha.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Hierarchical clustering was performed to identify anhedonia-related subtypes using the DARS subscores.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Discriminant analysis using clinical characteristics (anhedonia, suicidal ideation, anxiety, neuroticism, and childhood trauma) was performed to identify the clinical signature that discriminates between anhedonia-based subgroups.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The discriminant analysis was conducted using the Data Integration Analysis for Biomarker discovery using Latent cOmponents (DIABLO, mixOmics package version 6.24.0).",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Factor analysis confirmed the original four-factor structure of DARS, which exhibited excellent internal consistency and reliability (Cronbach's alpha = 0.94), including the subscales. DARS food and drinks score was associated with early-life physical abuse and anxiety; the social activities score was associated with early-life emotional abuse and neglect, and anxiety was associated with early-life physical abuse. Participants with anhedonia had elevated anxiety, and early-life physical and emotional abuse, compared to those with no anhedonia.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Factor analysis confirmed the original four-factor structure of DARS.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The original four-factor structure of DARS exhibited excellent internal consistency and reliability (Cronbach's alpha = 0.94), including the subscales.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "DARS food and drinks score was associated with early-life physical abuse and anxiety.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "The social activities score was associated with early-life emotional abuse and neglect.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Anxiety was associated with early-life physical abuse.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Participants with anhedonia had elevated anxiety compared to those with no anhedonia.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Participants with anhedonia had elevated early-life physical and emotional abuse compared to those with no anhedonia.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Anhedonia was associated with elevated anxiety, and early-life physical and emotional abuse, and early-life physical neglect, compared to those with no anhedonia.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Anhedonia was associated with elevated anxiety.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Anhedonia was associated with early-life physical and emotional abuse.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Anhedonia was associated with early-life physical neglect.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "These associations were compared to those with no anhedonia.",
+        "category": "Result",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "D2K was registered with ClinicalTrials.gov (NCT02919280).",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "D2K was registered with ClinicalTrials.gov (NCT02919280).",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "paragraph": "Next-generation sequencing (NGS) technologies have enabled high-throughput and low-cost generation of sequence data; however, de novo genome assembly remains a great challenge, particularly for large genomes. NGS short reads are often insufficient to create large contigs that span repeat sequences and to facilitate unambiguous assembly. Plant genomes are notorious for containing high quantities of repetitive elements, which combined with huge genome sizes, makes accurate assembly of these large and complex genomes intractable thus far. Using two-color genome mapping of tiling bacterial artificial chromosomes (BAC) clones on nanochannel arrays, we completed high-confidence assembly of a 2.1-Mb, highly repetitive region in the large and complex genome of Aegilops tauschii, the D-genome donor of hexaploid wheat (Triticum aestivum). Genome mapping is based on direct visualization of sequence motifs on single DNA molecules hundreds of kilobases in length. With the genome map as a scaffold, we anchored unplaced sequence contigs, validated the initial draft assembly, and resolved instances of misassembly, some involving contigs <2 kb long, to dramatically improve the assembly from 75% to 95% complete.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Next-generation sequencing (NGS) technologies have enabled high-throughput and low-cost generation of sequence data.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "De novo genome assembly remains a great challenge, particularly for large genomes.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "NGS short reads are often insufficient to create large contigs that span repeat sequences and to facilitate unambiguous assembly.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Plant genomes are notorious for containing high quantities of repetitive elements, which combined with huge genome sizes, makes accurate assembly of these large and complex genomes intractable thus far.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Using two-color genome mapping of tiling bacterial artificial chromosomes (BAC) clones on nanochannel arrays, we completed high-confidence assembly of a 2.1-Mb, highly repetitive region in the large and complex genome of Aegilops tauschii, the D-genome donor of hexaploid wheat (Triticum aestivum).",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Genome mapping is based on direct visualization of sequence motifs on single DNA molecules hundreds of kilobases in length.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "With the genome map as a scaffold, we anchored unplaced sequence contigs, validated the initial draft assembly, and resolved instances of misassembly, some involving contigs <2 kb long.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "We dramatically improved the assembly from 75% to 95% complete.",
+        "category": "Result",
+        "rank": 5
+      }
+    ]
+  }
+]

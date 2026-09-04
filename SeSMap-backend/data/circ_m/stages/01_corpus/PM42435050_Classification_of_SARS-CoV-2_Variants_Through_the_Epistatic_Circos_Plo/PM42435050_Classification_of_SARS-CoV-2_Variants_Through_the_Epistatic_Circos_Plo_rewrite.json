@@ -1,0 +1,68 @@
+[
+  {
+    "paragraph": "The COVID-19 pandemic has profoundly affected global health, driven by the remarkable transmissibility and mutational adaptability of the SARS-CoV-2 virus. Although five variants of concern, Alpha, Beta, Gamma, Delta, and Omicron, have been identified, the classification task in this study is formulated using four classes: Alpha, Delta, Omicron, and Else, reflecting the sequence availability and temporal coverage of the dataset. Here, we develop an integrative framework that combines direct coupling analysis (DCA), Circos-based visualization, and convolutional neural networks (CNNs) to characterize lineage-specific epistatic signatures from large-scale SARS-CoV-2 genomic sequences. DCA-inferred pairwise mutational couplings were transformed into Circos images, which were then used as inputs for CNN-based classification models. The proposed framework achieved robust variant classification, with the best-performing model reaching a weighted-average [Formula: see text] of [Formula: see text] and an AUC close to 1. Additional temporal holdout analyses showed that the framework retained reasonable predictive capability across evolutionary time, yielding a weighted-average [Formula: see text] of 87.85%.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The COVID-19 pandemic has profoundly affected global health, driven by the remarkable transmissibility and mutational adaptability of the SARS-CoV-2 virus.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Five variants of concern, Alpha, Beta, Gamma, Delta, and Omicron, have been identified.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The classification task in this study is formulated using four classes: Alpha, Delta, Omicron, and Else.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The classification reflects the sequence availability and temporal coverage of the dataset.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "An integrative framework was developed to combine direct coupling analysis (DCA), Circos-based visualization, and convolutional neural networks (CNNs).",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The framework characterizes lineage-specific epistatic signatures from large-scale SARS-CoV-2 genomic sequences.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "DCA-inferred pairwise mutational couplings were transformed into Circos images.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Circos images were used as inputs for CNN-based classification models.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The proposed framework achieved robust variant classification.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "The best-performing model reached a weighted-average F1-score of [Formula: see text] and an AUC close to 1.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "Temporal holdout analyses showed that the framework retained reasonable predictive capability across evolutionary time.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The framework yielded a weighted-average F1-score of 87.85% in temporal holdout analyses.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  }
+]

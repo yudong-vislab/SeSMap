@@ -1,0 +1,177 @@
+[
+  {
+    "paragraph": "Secondary infection is a significant complication of snakebite envenomation, with considerable impact on clinical outcomes. Identifying the bacterial agents involved is essential for appropriate case management. Notably, the published literature on bacteriological profiles of snakebite secondary infections is geographically skewed toward South and Southeast Asia and Brazil, with marked underrepresentation of data from sub-Saharan Africa and Central America - regions that bear a disproportionate share of the global snakebite burden.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Secondary infection is a significant complication of snakebite envenomation.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Secondary infection has considerable impact on clinical outcomes.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Identifying the bacterial agents involved is essential for appropriate case management.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "The published literature on bacteriological profiles of snakebite secondary infections is geographically skewed toward South and Southeast Asia and Brazil.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "There is marked underrepresentation of data from sub-Saharan Africa and Central America.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Sub-Saharan Africa and Central America bear a disproportionate share of the global snakebite burden.",
+        "category": "Background",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Two systematic literature reviews were conducted independently in pairs using the BVS (LILACS and Medline), PubMed, and CAPES Journals databases. One review focused on identifying bacteria present in the oral cavity of snakes, and the other on bacteria involved in secondary infections, with results categorized by Old World and New World regions.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Two systematic literature reviews were conducted independently in pairs.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The reviews used the BVS (LILACS and Medline), PubMed, and CAPES Journals databases.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "One review focused on identifying bacteria present in the oral cavity of snakes.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The other review focused on bacteria involved in secondary infections.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The results were categorized by Old World and New World regions.",
+        "category": "Result",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "In the New World, 35 bacterial genera and 9 snake genera were reported across the included studies examining oral cavity samples; in the Old World, 65 bacterial genera and 28 snake genera were reported in the available literature. Regarding secondary infections in patients, 18 bacterial genera and 3 snake genera were reported in the New World literature, while 21 bacterial genera and 5 snake genera were documented in Old World studies. These counts represent cumulative diversity reported across heterogeneous studies and should not be interpreted as estimates of true ecological richness. Some snake species harbored more than 20 distinct bacterial genera in their oral cavities, leading to broad-spectrum antimicrobial recommendations. Secondary infection may result in musculoskeletal damage, particularly when associated with necrosis, blistering, or compartment syndrome.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "In the New World, 35 bacterial genera and 9 snake genera were reported across the included studies examining oral cavity samples.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "In the Old World, 65 bacterial genera and 28 snake genera were reported in the available literature.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Regarding secondary infections in patients, 18 bacterial genera and 3 snake genera were reported in the New World literature.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "In Old World studies, 21 bacterial genera and 5 snake genera were documented for secondary infections in patients.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "These counts represent cumulative diversity reported across heterogeneous studies and should not be interpreted as estimates of true ecological richness.",
+        "category": "Conclusion",
+        "rank": 2
+      },
+      {
+        "sentence": "Some snake species harbored more than 20 distinct bacterial genera in their oral cavities.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Broad-spectrum antimicrobial recommendations were made for snake species harboring more than 20 distinct bacterial genera in their oral cavities.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "Secondary infection may result in musculoskeletal damage, particularly when associated with necrosis, blistering, or compartment syndrome.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "The Circos diagrams presented in this review represent binary presence/absence associations and do not encode frequency, isolate count, study number, or evidence strength. Future quantitative analyses - with ribbon thickness scaled to isolate count or number of independent confirming studies - would substantially improve the informational value of this visualization approach. Bacteria involved in secondary infections are typically associated with the snake's oral microbiota or the patient's skin. The development of protocols for prevention and treatment may help reduce functional impairments following envenomation.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The Circos diagrams represent binary presence/absence associations.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The Circos diagrams do not encode frequency, isolate count, study number, or evidence strength.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Future quantitative analyses with ribbon thickness scaled to isolate count or number of independent confirming studies would substantially improve the informational value of this visualization approach.",
+        "category": "Conclusion",
+        "rank": 4
+      },
+      {
+        "sentence": "Bacteria involved in secondary infections are typically associated with the snake's oral microbiota.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Bacteria involved in secondary infections are typically associated with the patient's skin.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The development of protocols for prevention and treatment may help reduce functional impairments following envenomation.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Secondary infections following snakebite envenomation are common and may be exacerbated by factors such as necrosis, blistering, and excessive inflammation. The bacteria involved are often directly associated with the oral microbiota of the snake or with the patient's own skin flora.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Secondary infections following snakebite envenomation are common.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Secondary infections may be exacerbated by factors such as necrosis, blistering, and excessive inflammation.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The bacteria involved in secondary infections are often directly associated with the oral microbiota of the snake.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "The bacteria involved in secondary infections may also be associated with the patient's own skin flora.",
+        "category": "Background",
+        "rank": 4
+      }
+    ]
+  }
+]

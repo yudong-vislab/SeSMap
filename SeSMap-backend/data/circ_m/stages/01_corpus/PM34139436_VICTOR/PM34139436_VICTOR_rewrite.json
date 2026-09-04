@@ -1,0 +1,78 @@
+[
+  {
+    "paragraph": "Clustering is the process of grouping different data objects based on similar properties. Clustering has applications in various case studies from several fields such as graph theory, image analysis, pattern recognition, statistics and others. Nowadays, there are numerous algorithms and tools able to generate clustering results. However, different algorithms or parameterizations may produce quite dissimilar cluster sets. In this way, the user is often forced to manually filter and compare these results in order to decide which of them generate the ideal clusters. To automate this process, in this study, we present VICTOR, the first fully interactive and dependency-free visual analytics web application which allows the visual comparison of the results of various clustering algorithms. VICTOR can handle multiple cluster set results simultaneously and compare them using ten different metrics. Clustering results can be filtered and compared to each other with the use of data tables or interactive heatmaps, bar plots, correlation networks, sankey and circos plots. We demonstrate VICTOR's functionality using three examples. In the first case, we compare five different network clustering algorithms on a Yeast protein-protein interaction dataset whereas in the second example, we test four different parameters of the MCL clustering algorithm on the same dataset. Finally, as a third example, we compare four different meta-analyses with hierarchically clustered differentially expressed genes found to be involved in myocardial infarction. VICTOR is available at http://victor.pavlopouloslab.info or http://bib.fleming.gr:3838/VICTOR.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Clustering is the process of grouping different data objects based on similar properties.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Clustering has applications in various case studies from several fields such as graph theory, image analysis, pattern recognition, and statistics.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "There are numerous algorithms and tools able to generate clustering results.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Different algorithms or parameterizations may produce quite dissimilar cluster sets.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The user is often forced to manually filter and compare clustering results to decide which generate the ideal clusters.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "This study presents VICTOR, the first fully interactive and dependency-free visual analytics web application for comparing clustering results.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "VICTOR allows the visual comparison of the results of various clustering algorithms.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "VICTOR can handle multiple cluster set results simultaneously and compare them using ten different metrics.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Clustering results can be filtered and compared using data tables, interactive heatmaps, bar plots, correlation networks, sankey plots, and circos plots.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "VICTOR's functionality is demonstrated using three examples.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "In the first example, five different network clustering algorithms are compared on a Yeast protein-protein interaction dataset.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "In the second example, four different parameters of the MCL clustering algorithm are tested on the same dataset.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "In the third example, four different meta-analyses with hierarchically clustered differentially expressed genes involved in myocardial infarction are compared.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "VICTOR is available at http://victor.pavlopouloslab.info or http://bib.fleming.gr:3838/VICTOR.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

@@ -1,0 +1,136 @@
+[
+  {
+    "paragraph": "Breast cancer (BC) is a major health concern for women, with early diagnosis essential for better health outcomes such as survival. While mammography is the gold standard screening tool, it is not without drawbacks. Circular RNAs (circRNAs), a class of noncoding RNAs, characterized by covalently closed loops missing 5' and 3' ends, offer stability in body fluids like plasma and are emerging as promising diagnostic biomarkers. Thus, the aim of this study was to investigate the plasma levels of hsa_circ_0001785 and hsa_circ_0079876 in BC patients compared to healthy controls to evaluate their potential for noninvasive BC detection.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Breast cancer is a major health concern for women.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Early diagnosis of breast cancer is essential for better health outcomes such as survival.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Mammography is the gold standard screening tool for breast cancer.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Mammography has drawbacks as a screening tool.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Circular RNAs are a class of noncoding RNAs characterized by covalently closed loops missing 5' and 3' ends.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Circular RNAs offer stability in body fluids like plasma.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Circular RNAs are emerging as promising diagnostic biomarkers.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "The aim of this study was to investigate the plasma levels of hsa_circ_0001785 and hsa_circ_0079876 in breast cancer patients compared to healthy controls.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The study aimed to evaluate the potential of hsa_circ_0001785 and hsa_circ_0079876 for noninvasive breast cancer detection.",
+        "category": "Method",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "A total of 129 women participated in this study (81 BC patients who underwent surgery and 48 healthy controls based on mammography). The plasma levels of hsa_circ_0001785 and hsa_circ_0079876 were measured using quantitative reverse transcription polymerase chain reaction (qRT-PCR) following RNA extraction from plasma samples. The diagnostic value was assessed using the receiver operating characteristic (ROC) curve.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A total of 129 women participated in this study.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "The study included 81 breast cancer patients who underwent surgery and 48 healthy controls based on mammography.",
+        "category": "Experiment",
+        "rank": 3
+      },
+      {
+        "sentence": "The plasma levels of hsa_circ_0001785 and hsa_circ_0079876 were measured using quantitative reverse transcription polymerase chain reaction (qRT-PCR).",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "RNA was extracted from plasma samples for the qRT-PCR analysis.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The diagnostic value was assessed using the receiver operating characteristic (ROC) curve.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "A significant increase in the expression of both circRNAs was observed in BC patients compared with healthy controls (p value < 0.001). ROC curve analysis demonstrated that an area under the curve (AUC) for hsa_circ_0001785, hsa_circ_0079876, and their combination were 0.76 (sensitivity = 74%, specificity = 79%), 0.98 (sensitivity = 93%, specificity = 92%), and 0.98 (sensitivity = 93%, specificity = 92%), respectively.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A significant increase in the expression of both circRNAs was observed in BC patients compared with healthy controls (p value < 0.001).",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "ROC curve analysis demonstrated that the area under the curve (AUC) for hsa_circ_0001785 was 0.76 (sensitivity = 74%, specificity = 79%).",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "ROC curve analysis demonstrated that the area under the curve (AUC) for hsa_circ_0079876 was 0.98 (sensitivity = 93%, specificity = 92%).",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "ROC curve analysis demonstrated that the area under the curve (AUC) for the combination of hsa_circ_0001785 and hsa_circ_0079876 was 0.98 (sensitivity = 93%, specificity = 92%).",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Plasma levels of hsa_circ_0001785 and hsa_circ_0079876 are significantly elevated in BC patients, with hsa_circ_0079876 showing superior sensitivity and specificity compared to hsa_circ_0001785. These findings highlight hsa_circ_0079876 as a particularly promising diagnostic potential in a case-control setting for noninvasive BC detection.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Plasma levels of hsa_circ_0001785 are significantly elevated in BC patients.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Plasma levels of hsa_circ_0079876 are significantly elevated in BC patients.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "hsa_circ_0079876 shows superior sensitivity and specificity compared to hsa_circ_0001785.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "hsa_circ_0079876 has promising diagnostic potential in a case-control setting for noninvasive BC detection.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

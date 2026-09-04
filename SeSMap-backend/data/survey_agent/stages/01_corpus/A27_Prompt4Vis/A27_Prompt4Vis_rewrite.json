@@ -1,0 +1,73 @@
+[
+  {
+    "paragraph": "We are currently in the epoch of Large Language Models (LLMs), which have transformed numerous technological domains within the database community. In this paper, we examine the application of LLMs in text-to-visualization (text-to-vis). The advancement of natural language processing technologies has made natural language interfaces more accessible and intuitive for visualizing tabular data. However, despite utilizing advanced neural network architectures, current methods such as Seq2Vis, ncNet, and RGVisNet for transforming natural language queries into DV commands still underperform, indicating significant room for improvement. In this paper, we introduce Prompt4Vis , a novel framework that leverages LLMs and In-context learning to enhance the generation of data visualizations from natural language. Given that In-context learning’s effectiveness is highly dependent on the selection of examples, it is critical to optimize this aspect. Additionally, encoding the full database schema of a query is not only costly but can also lead to inaccuracies. This framework includes two main components: (1) an example mining module that identifies highly effective examples to enhance In-context learning capabilities for text-to-vis applications, and (2) a schema filtering module designed to streamline database schemas. Comprehensive testing on the NVBench dataset has shown that Prompt4Vis significantly outperforms the current state-of-the-art model, RGVisNet, by approximately 35.9% on development sets and 71.3% on test sets. To the best of our knowledge, Prompt4Vis is the first framework to incorporate In-context learning for enhancing text-to-vis, marking a pioneering step in the domain.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Large Language Models (LLMs) have transformed numerous technological domains within the database community.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "This paper examines the application of LLMs in text-to-visualization (text-to-vis).",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The advancement of natural language processing technologies has made natural language interfaces more accessible and intuitive for visualizing tabular data.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Current methods such as Seq2Vis, ncNet, and RGVisNet for transforming natural language queries into DV commands underperform despite utilizing advanced neural network architectures.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "There is significant room for improvement in current text-to-vis methods.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "This paper introduces Prompt4Vis, a novel framework that leverages LLMs and In-context learning to enhance the generation of data visualizations from natural language.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "In-context learning’s effectiveness is highly dependent on the selection of examples, making it critical to optimize this aspect.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Encoding the full database schema of a query is costly and can lead to inaccuracies.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The Prompt4Vis framework includes an example mining module that identifies highly effective examples to enhance In-context learning capabilities for text-to-vis applications.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The Prompt4Vis framework includes a schema filtering module designed to streamline database schemas.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Comprehensive testing on the NVBench dataset shows that Prompt4Vis significantly outperforms the current state-of-the-art model, RGVisNet, by approximately 35.9% on development sets and 71.3% on test sets.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "Prompt4Vis is the first framework to incorporate In-context learning for enhancing text-to-vis.",
+        "category": "Conclusion",
+        "rank": 5
+      },
+      {
+        "sentence": "Prompt4Vis marks a pioneering step in the text-to-vis domain.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  }
+]

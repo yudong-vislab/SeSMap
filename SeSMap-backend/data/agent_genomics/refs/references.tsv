@@ -1,0 +1,41 @@
+A01	Understanding Why ChatGPT Outperforms Humans in Visualization Design Advice	arXiv	2025
+A05	InterChat: Enhancing Generative Visual Analytics using Multimodal Interactions	Computer Graphics Forum	2025
+A06	VisEval: A Benchmark for Data Visualization in the Era of Large Language Models	IEEE TVCG	2025
+A07	CoDA: Agentic Systems for Collaborative Data Visualization	arXiv	2026
+A08	Waltzboard: Multi-criteria automated dashboard design for exploratory analysis	PacificVis	2025
+A09	Bavisitter: Integrating design guidelines into large language models for visualization authoring	IEEE VIS	2024
+A11	Charts-of-Thought: Enhancing LLM Visualization Literacy Through Structured Data Extraction	arXiv	2025
+A12	LIDA: A Tool for Automatic Generation of Grammar-Agnostic Visualizations and Infographics using Large Language Models	ACL	2023
+A14	Probing the Visualization Literacy of Vision Language Models: the Good the Bad and the Ugly	IEEE TVCG	2025
+A15	Fine-Tuned Large Language Model for Visualization System: A Study on Self-Regulated Learning in Education	IEEE TVCG	2025
+A16	Democratizing AI scientists using ToolUniverse	arXiv	2025
+A17	PlotGen: Multi-Agent LLM-based Scientific Data Visualization via Multimodal Retrieval Feedback	The Web Conference	2025
+A18	Data Has Entered the Chat: How Data Workers Conduct Exploratory Visual Analytic Conversations with GenAI Agents	ACM Transactions on Interactive Intelligent Systems	2025
+A19	VegaChat: A Robust Framework for LLM-Based Chart Generation and Assessment	arXiv	2026
+A20	Automatic Synthesis of Visualization Design Knowledge Bases	arXiv	2026
+A21	How Good Is ChatGPT in Giving Advice on Your Visualization Design?	ACM Transactions on Computer-Human Interaction	2025
+A22	Understanding the research-practice gap in visualization design guidelines	IEEE TVCG	2025
+A23	Natural Language Dataset Generation Framework for Visualizations Powered by Large Language Models	CHI	2024
+A24	YAC: Bridging Natural Language and Interactive Visual Exploration with Generative AI for Biomedical Data Discovery	arXiv	2025
+A25	DQVis Dataset: Natural Language to Biomedical Visualization	arXiv	2025
+A26	Drawer-Advisor for Content-Aligned Visualization	arXiv	2025
+A27	Prompt4Vis: Prompting Large Language Models with Example Mining and Schema Filtering for Tabular Data Visualization	arXiv	2024
+A28	MultiVis-Agent: A Multi-Agent Framework with Logic Rules for Reliable and Comprehensive Cross-Modal Data Visualization	arXiv	2026
+A29	Multi-View Design Patterns and Responsive Visualization for Genomics Data	IEEE TVCG	2023
+A30	Learnable and Expressive Visualization Authoring Through Blended Interfaces	IEEE TVCG	2025
+A32	Chat2VIS: Generating Data Visualizations via Natural Language Using ChatGPT Codex and GPT-3 Large Language Models	IEEE Access	2023
+A34	Formalizing visualization design knowledge as constraints: Actionable and extensible models in draco	IEEE TVCG	2018
+A35	Geranium: Multimodal Retrieval of Genomics Data Visualizations	arXiv	2025
+A37	NVAGENT: Automated Data Visualization from Natural Language via Collaborative Agent Workflow	arXiv	2025
+A39	Talk Me Through It: Developing Effective Systems for Chart Authoring	arXiv	2026
+A40	Evaluating LLMs abilities to create charts a systematic approach	Computers and Graphics	2026
+A41	Qualitative Study for LLM-assisted Design Study Process: Strategies Challenges and Roles	arXiv	2025
+A43	Collecting and Characterizing Natural Language Utterances for Specifying Data Visualizations	CHI	2021
+A45	ChartGPT: Leveraging LLMs to Generate Charts From Abstract Natural Language	IEEE TVCG	2025
+A46	Understanding Visualization Authoring Techniques for Genomics Data in the Context of Personas and Tasks	IEEE TVCG	2025
+A47	Are LLMs ready for Visualization	PacificVis	2024
+A48	GQVis: A Dataset of Genomics Data Questions and Visualizations for Generative AI	arXiv	2025
+A49	DracoGPT: Extracting Visualization Design Preferences from Large Language Models	IEEE TVCG	2025
+A50	Draco 2: An extensible platform to model visualization design	IEEE VIS	2023
+A51	MatPlotAgent: Method and Evaluation for LLM-Based Agentic Scientific Data Visualization	arXiv	2024
+A52	Too many cooks: Exploring how graphical perception studies influence visualization recommendations in draco	IEEE TVCG	2023

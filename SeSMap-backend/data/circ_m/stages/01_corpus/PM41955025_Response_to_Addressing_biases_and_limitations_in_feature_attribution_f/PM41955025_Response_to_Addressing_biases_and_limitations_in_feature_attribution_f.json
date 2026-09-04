@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Response to \"Addressing biases and limitations in feature attribution for circRNA modification profiling\"",
+    "paragraphs": []
+  },
+  {
+    "title": "Response to \"Addressing biases and limitations in feature attribution for circRNA modification profiling\"-Abstract",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "This response addresses the comments raised by Souichi Oka and colleagues in their Letter to the Editor titled \"Addressing biases and limitations in feature attribution for circRNA modification profiling.\" We clarify that two independent XGBoost models were used for distinct purposes in our analysis: one for predicting RNA modification events from nanopore-derived signal features and another for feature attribution using genome-derived sequence features extracted through the m6AlogisticModel framework. We further note that Shapley Additive Explanations (SHAP) was employed as an exploratory interpretability tool rather than as definitive evidence of causal biological mechanisms. We appreciate the constructive methodological suggestions provided and acknowledge that integrating complementary analytical strategies may further enhance the robustness of computational studies of circRNA modifications.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "paragraph": "It has been repeatedly observed that gene order is rapidly lost in prokaryotic genomes. However, persistent synteny blocks are found when comparing more or less distant species. These genes that remain consistently adjacent are appealing candidates for the study of genome evolution and a more accurate definition of their functional role. Such studies require visualizing conserved synteny blocks in a large number of genomes at all taxonomic distances.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Gene order is rapidly lost in prokaryotic genomes.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Persistent synteny blocks are found when comparing more or less distant species.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Genes that remain consistently adjacent are appealing candidates for the study of genome evolution.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Genes that remain consistently adjacent are appealing candidates for a more accurate definition of their functional role.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Studying conserved synteny blocks requires visualizing them in a large number of genomes at all taxonomic distances.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "After comparing nearly 600 completely sequenced genomes encompassing the whole prokaryotic tree of life, the computed synteny data were assembled in a relational database, SynteBase. SynteView was designed to visualize conserved synteny blocks in a large number of genomes after choosing one of them as a reference. SynteView functions with data stored either in SynteBase or in a home-made relational database of personal data. In addition, this software can compute on-the-fly and display the distribution of synteny blocks which are conserved in pairs of genomes. This tool has been designed to provide a wealth of information on each positional orthologous gene, to be user-friendly and customizable. It is also possible to download sequences of genes belonging to these synteny blocks for further studies. SynteView is accessible through Java Webstart at http://www.synteview.u-psud.fr.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Nearly 600 completely sequenced genomes encompassing the whole prokaryotic tree of life were compared.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The computed synteny data were assembled in a relational database called SynteBase.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "SynteView was designed to visualize conserved synteny blocks in a large number of genomes after choosing one of them as a reference.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "SynteView functions with data stored either in SynteBase or in a home-made relational database of personal data.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "SynteView can compute on-the-fly and display the distribution of synteny blocks conserved in pairs of genomes.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "SynteView provides a wealth of information on each positional orthologous gene.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "SynteView is designed to be user-friendly and customizable.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "It is possible to download sequences of genes belonging to synteny blocks for further studies.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "SynteView is accessible through Java Webstart at http://www.synteview.u-psud.fr.",
+        "category": "Other",
+        "rank": 2
+      }
+    ]
+  },
+  {
+    "paragraph": "SynteBase answers queries about gene order conservation and SynteView visualizes the obtained results in a flexible and powerful way which provides a comparative overview of the conserved synteny in a large number of genomes, whatever their taxonomic distances.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "SynteBase answers queries about gene order conservation.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "SynteView visualizes the obtained results in a flexible and powerful way.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "SynteView provides a comparative overview of the conserved synteny in a large number of genomes.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "SynteView supports analysis regardless of the taxonomic distances between genomes.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  }
+]

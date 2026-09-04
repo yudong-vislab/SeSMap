@@ -1,0 +1,28 @@
+[
+  {
+    "paragraph": "Acute lymphoblastic leukemia (ALL) is a clinically diverse cancer in which microRNA (miRNA)-mediated post-transcriptional regulation contributes to leukemogenesis and subtype heterogeneity. In this study, miRNA expression profiling by microarray was performed on ALL cases (B-ALL and T-ALL) and healthy controls. Data were normalized and analyzed for differential expression using false discovery rate (FDR)-adjusted",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Acute lymphoblastic leukemia (ALL) is a clinically diverse cancer.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "MicroRNA (miRNA)-mediated post-transcriptional regulation contributes to leukemogenesis and subtype heterogeneity in ALL.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "MiRNA expression profiling by microarray was performed on ALL cases (B-ALL and T-ALL) and healthy controls.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Data were normalized and analyzed for differential expression using false discovery rate (FDR)-adjusted methods.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  }
+]

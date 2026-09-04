@@ -1,0 +1,58 @@
+[
+  {
+    "paragraph": "Assessing the accuracy of long-read assemblies, especially from complex environmental metagenomes that include underrepresented organisms, is challenging. Here we benchmark four state-of-the-art long-read assembly software programs, HiCanu, hifiasm-meta, metaFlye and metaMDBG, on 21 PacBio HiFi metagenomes spanning mock communities, gut microbiomes and ocean samples. By quantifying read clipping events, in which long reads are systematically split during mapping to maximize the agreement with assembled contigs, we identify where assemblies diverge from their source reads. Our analyses reveal that long-read metagenome assemblies can include >40 errors per 100 million base pairs of assembled contigs, including multi-domain chimeras, prematurely circularized sequences, haplotyping errors, excessive repeats and phantom sequences. We provide an open-source tool and a reproducible workflow for rigorous evaluation of assembly errors, charting a path toward more reliable genome recovery from long-read metagenomes.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Assessing the accuracy of long-read assemblies from complex environmental metagenomes is challenging.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Environmental metagenomes include underrepresented organisms.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Four state-of-the-art long-read assembly software programs were benchmarked: HiCanu, hifiasm-meta, metaFlye, and metaMDBG.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The benchmarking was conducted on 21 PacBio HiFi metagenomes spanning mock communities, gut microbiomes, and ocean samples.",
+        "category": "Experiment",
+        "rank": 4
+      },
+      {
+        "sentence": "Read clipping events were quantified to identify where assemblies diverge from their source reads.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Read clipping events occur when long reads are systematically split during mapping to maximize agreement with assembled contigs.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Long-read metagenome assemblies can include more than 40 errors per 100 million base pairs of assembled contigs.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "Errors in long-read metagenome assemblies include multi-domain chimeras, prematurely circularized sequences, haplotyping errors, excessive repeats, and phantom sequences.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "An open-source tool and a reproducible workflow are provided for rigorous evaluation of assembly errors.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The workflow charts a path toward more reliable genome recovery from long-read metagenomes.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  }
+]

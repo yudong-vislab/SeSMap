@@ -1,0 +1,73 @@
+[
+  {
+    "paragraph": "The use of natural language interfaces (NLIs) to create charts is becoming increasingly popular due to the intuitiveness of natural language interactions. One key challenge in this approach is to accurately capture user intents and transform them to proper chart specifications. This obstructs the wide use of NLI in chart generation, as users' natural language inputs are generally abstract (i.e., ambiguous or under-specified), without a clear specification of visual encodings. Recently, pre-trained large language models (LLMs) have exhibited superior performance in understanding and generating natural language, demonstrating great potential for downstream tasks. Inspired by this major trend, we propose ChartGPT, generating charts from abstract natural language inputs. However, LLMs are struggling to address complex logic problems. To enable the model to accurately specify the complex parameters and perform operations in chart generation, we decompose the generation process into a step-by-step reasoning pipeline, so that the model only needs to reason a single and specific sub-task during each run. Moreover, LLMs are pre-trained on general datasets, which might be biased for the task of chart generation. To provide adequate visualization knowledge, we create a dataset consisting of abstract utterances and charts and improve model performance through fine-tuning. We further design an interactive interface for ChartGPT that allows users to check and modify the intermediate outputs of each step. The effectiveness of the proposed system is evaluated through quantitative evaluations and a user study.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The use of natural language interfaces (NLIs) to create charts is becoming increasingly popular due to the intuitiveness of natural language interactions.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "A key challenge in using NLIs for chart creation is accurately capturing user intents and transforming them into proper chart specifications.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Users' natural language inputs are generally abstract, being ambiguous or under-specified, without a clear specification of visual encodings.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Pre-trained large language models (LLMs) have exhibited superior performance in understanding and generating natural language, demonstrating great potential for downstream tasks.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "We propose ChartGPT, a system for generating charts from abstract natural language inputs.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "LLMs struggle to address complex logic problems.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "To enable the model to accurately specify complex parameters and perform operations in chart generation, we decompose the generation process into a step-by-step reasoning pipeline.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The step-by-step reasoning pipeline ensures the model only needs to reason a single and specific sub-task during each run.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "LLMs are pre-trained on general datasets, which might be biased for the task of chart generation.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "We create a dataset consisting of abstract utterances and charts to provide adequate visualization knowledge.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "We improve model performance through fine-tuning on the created dataset.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "We design an interactive interface for ChartGPT that allows users to check and modify the intermediate outputs of each step.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The effectiveness of the proposed system is evaluated through quantitative evaluations and a user study.",
+        "category": "Experiment",
+        "rank": 4
+      }
+    ]
+  }
+]

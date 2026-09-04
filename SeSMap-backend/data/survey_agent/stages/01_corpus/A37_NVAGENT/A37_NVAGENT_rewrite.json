@@ -1,0 +1,63 @@
+[
+  {
+    "paragraph": "Natural Language to Visualization (NL2Vis) seeks to convert natural-language descriptions into visual representations of given tables, empowering users to derive insights from large-scale data. Recent advancements in Large Language Models (LLMs) show promise in automating code generation to transform tabular data into accessible visualizations. However, they often struggle with complex queries that require reasoning across multiple tables. To address this limitation, we propose a collaborative agent workflow, termed nvAgent, for NL2Vis. Specifically, nvAgent comprises three agents: a processor agent for database processing and context filtering, a composer agent for planning visualization generation, and a validator agent for code translation and output verification. Comprehensive evaluations on the new VisEval benchmark demonstrate that nvAgent consistently surpasses state-of-the-art baselines, achieving a 7.88% improvement in single-table and a 9.23% improvement in multi-table scenarios. Qualitative analyses further highlight that nvAgent maintains nearly a 20% performance margin over previous models, underscoring its capacity to produce high-quality visual representations from complex, heterogeneous data sources.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Natural Language to Visualization (NL2Vis) seeks to convert natural-language descriptions into visual representations of given tables.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "NL2Vis empowers users to derive insights from large-scale data.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Recent advancements in Large Language Models (LLMs) show promise in automating code generation to transform tabular data into accessible visualizations.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "LLMs often struggle with complex queries that require reasoning across multiple tables.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "We propose a collaborative agent workflow, termed nvAgent, for NL2Vis.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "nvAgent comprises three agents: a processor agent for database processing and context filtering, a composer agent for planning visualization generation, and a validator agent for code translation and output verification.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Comprehensive evaluations on the new VisEval benchmark demonstrate that nvAgent consistently surpasses state-of-the-art baselines.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "nvAgent achieves a 7.88% improvement in single-table scenarios.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "nvAgent achieves a 9.23% improvement in multi-table scenarios.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Qualitative analyses highlight that nvAgent maintains nearly a 20% performance margin over previous models.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "nvAgent underscores its capacity to produce high-quality visual representations from complex, heterogeneous data sources.",
+        "category": "Conclusion",
+        "rank": 5
+      }
+    ]
+  }
+]

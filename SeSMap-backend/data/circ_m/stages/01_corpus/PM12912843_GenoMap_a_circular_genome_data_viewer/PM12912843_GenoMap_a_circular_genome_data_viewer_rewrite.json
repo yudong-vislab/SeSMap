@@ -1,0 +1,28 @@
+[
+  {
+    "paragraph": "A Tcl/Tk-based application called GenoMap is described, a viewer for genome-wide map of microarray expression data within a circular bacterial genome. An interactive interface facilitates easy identification of the expressed region. This software is also used for drawing genome-wide quantitative data.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "A Tcl/Tk-based application called GenoMap is described.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "GenoMap is a viewer for genome-wide map of microarray expression data within a circular bacterial genome.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "An interactive interface facilitates easy identification of the expressed region.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "This software is used for drawing genome-wide quantitative data.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  }
+]

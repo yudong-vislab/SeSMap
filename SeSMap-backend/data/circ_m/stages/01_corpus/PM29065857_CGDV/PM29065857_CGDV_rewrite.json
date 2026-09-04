@@ -1,0 +1,95 @@
+[
+  {
+    "paragraph": "Interpretation of large-scale data is very challenging and currently there is scarcity of web tools which support automated visualization of a variety of high throughput genomics and transcriptomics data and for a wide variety of model organisms along with user defined karyotypes. Circular plot provides holistic visualization of high throughput large scale data but it is very complex and challenging to generate as most of the available tools need informatics expertise to install and run them.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Interpretation of large-scale data is very challenging.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "There is a scarcity of web tools which support automated visualization of a variety of high throughput genomics and transcriptomics data.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "There is a scarcity of web tools for a wide variety of model organisms along with user-defined karyotypes.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Circular plot provides holistic visualization of high throughput large-scale data.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Generating circular plots is very complex and challenging.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Most of the available tools for generating circular plots need informatics expertise to install and run them.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "We have developed CGDV (Circos for Genomics and Transcriptomics Data Visualization), a webtool based on Circos, for seamless and automated visualization of a variety of large scale genomics and transcriptomics data. CGDV takes output of analyzed genomics or transcriptomics data of different formats, such as vcf, bed, xls, tab limited matrix text file, CNVnator raw output and Gene fusion raw output, to plot circular view of the sample data. CGDV take cares of generating intermediate files required for circos. CGDV is freely available at https://cgdv-upload.persistent.co.in/cgdv/ .",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "CGDV (Circos for Genomics and Transcriptomics Data Visualization) is a webtool for seamless and automated visualization of large-scale genomics and transcriptomics data.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "CGDV is based on Circos.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "CGDV takes output of analyzed genomics or transcriptomics data of different formats, such as vcf, bed, xls, tab-limited matrix text file, CNVnator raw output, and Gene fusion raw output.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "CGDV plots circular views of the sample data.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "CGDV generates intermediate files required for Circos.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "CGDV is freely available at https://cgdv-upload.persistent.co.in/cgdv/.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  },
+  {
+    "paragraph": "The circular plot for each data type is tailored to gain best biological insights into the data. The inter-relationship between data points, homologous sequences, genes involved in fusion events, differential expression pattern, sequencing depth, types and size of variations and enrichment of DNA binding proteins can be seen using CGDV. CGDV thus helps biologists and bioinformaticians to visualize a variety of genomics and transcriptomics data seamlessly.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The circular plot for each data type is tailored to gain best biological insights into the data.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "The inter-relationship between data points, homologous sequences, genes involved in fusion events, differential expression pattern, sequencing depth, types and size of variations, and enrichment of DNA binding proteins can be seen using CGDV.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "CGDV helps biologists and bioinformaticians to visualize a variety of genomics and transcriptomics data seamlessly.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  }
+]

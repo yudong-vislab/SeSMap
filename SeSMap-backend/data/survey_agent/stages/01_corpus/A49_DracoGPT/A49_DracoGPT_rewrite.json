@@ -1,0 +1,88 @@
+[
+  {
+    "paragraph": "Trained on vast corpora, Large Language Models (LLMs) have the potential to encode visualization design knowledge and best practices. However, if they fail to do so, they might provide unreliable visualization recommendations. What visualization design preferences, then, have LLMs learned? We contribute DracoGPT, a method for extracting, modeling, and assessing visualization design preferences from LLMs. To assess varied tasks, we develop two pipelines—DracoGPT-Rank and DracoGPT-Recommend—to model LLMs prompted to either rank or recommend visual encoding specifications. We use Draco as a shared knowledge base in which to represent LLM design preferences and compare them to best practices from empirical research. We demonstrate that DracoGPT can accurately model the preferences expressed by LLMs, enabling analysis in terms of Draco design constraints. Across a suite of backing LLMs, we find that DracoGPT-Rank and DracoGPT-Recommend moderately agree with each other, but both substantially diverge from guidelines drawn from human subjects experiments. Future work can build on our approach to expand Draco's knowledge base to model a richer set of preferences and to provide a robust and cost-effective stand-in for LLMs.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Large Language Models (LLMs) are trained on vast corpora.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "LLMs have the potential to encode visualization design knowledge and best practices.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "If LLMs fail to encode visualization design knowledge, they might provide unreliable visualization recommendations.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "The study investigates what visualization design preferences LLMs have learned.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "We contribute DracoGPT, a method for extracting, modeling, and assessing visualization design preferences from LLMs.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "To assess varied tasks, we develop two pipelines—DracoGPT-Rank and DracoGPT-Recommend.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "DracoGPT-Rank models LLMs prompted to rank visual encoding specifications.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "DracoGPT-Recommend models LLMs prompted to recommend visual encoding specifications.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "We use Draco as a shared knowledge base to represent LLM design preferences.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "We compare LLM design preferences to best practices from empirical research.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "DracoGPT can accurately model the preferences expressed by LLMs.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "DracoGPT enables analysis of LLM preferences in terms of Draco design constraints.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Across a suite of backing LLMs, DracoGPT-Rank and DracoGPT-Recommend moderately agree with each other.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "DracoGPT-Rank and DracoGPT-Recommend substantially diverge from guidelines drawn from human subjects experiments.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Future work can expand Draco's knowledge base to model a richer set of preferences.",
+        "category": "Conclusion",
+        "rank": 3
+      },
+      {
+        "sentence": "Future work can provide a robust and cost-effective stand-in for LLMs.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  }
+]

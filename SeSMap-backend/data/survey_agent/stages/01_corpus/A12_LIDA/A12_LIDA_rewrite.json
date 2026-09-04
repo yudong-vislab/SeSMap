@@ -1,0 +1,58 @@
+[
+  {
+    "paragraph": "Systems that support users in the automatic creation of visualizations must address several subtasks - understand the semantics of data, enumerate relevant visualization goals and generate visualization specifications. In this work, we pose visualization generation as a multi-stage generation problem and argue that well-orchestrated pipelines based on large language models (LLMs) such as ChatGPT/GPT-4 and image generation models (IGMs) are suitable to addressing these tasks. We present LIDA, a novel tool for generating grammar-agnostic visualizations and infographics. LIDA comprises of 4 modules - A SUMMARIZER that converts data into a rich but compact natural language summary, a GOAL EXPLORER that enumerates visualization goals given the data, a VISGENERATOR that generates, refines, executes and filters visualization code and an INFOGRAPHER module that yields data-faithful stylized graphics using IGMs. LIDA provides a python api, and a hybrid user interface (direct manipulation and multilingual natural language) for interactive chart, infographics and data story generation. Learn more about the project here - https://microsoft.github.io/lida/",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Systems that support users in the automatic creation of visualizations must address several subtasks, including understanding the semantics of data, enumerating relevant visualization goals, and generating visualization specifications.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Visualization generation is posed as a multi-stage generation problem in this work.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Well-orchestrated pipelines based on large language models (LLMs) such as ChatGPT/GPT-4 and image generation models (IGMs) are argued to be suitable for addressing visualization generation tasks.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "LIDA is a novel tool for generating grammar-agnostic visualizations and infographics.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "LIDA comprises four modules: a SUMMARIZER, a GOAL EXPLORER, a VISGENERATOR, and an INFOGRAPHER.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The SUMMARIZER module converts data into a rich but compact natural language summary.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The GOAL EXPLORER module enumerates visualization goals given the data.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The VISGENERATOR module generates, refines, executes, and filters visualization code.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The INFOGRAPHER module yields data-faithful stylized graphics using IGMs.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "LIDA provides a Python API and a hybrid user interface for interactive chart, infographic, and data story generation.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  }
+]

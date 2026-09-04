@@ -1,0 +1,48 @@
+[
+  {
+    "paragraph": "The natural occurrence of 2,6-diaminopurine (Z) as a substitute for adenine (A) in certain bacteriophage genomes has profound evolutionary implications and promising biotechnological potential. Progress in this field, however, has been stymied by the absence of reliable methods to detect dZ-DNA, particularly in mixed samples, and to distinguish A from Z at the single-nucleotide level. Here, we introduce Z-Calling, a machine learning-based tool designed to identify dZ-DNA and discriminate A/Z bases directly from PacBio Circular Consensus Sequencing (CCS) reads without additional processing. By analyzing sequence context-dependent kinetic signal changes induced by Z/A substitution, Z-Calling achieves exceptional sensitivity, reliably detecting dZ-DNA even in samples with as little as ~1% dZ-DNA content. Its A/Z base-calling module demonstrates robust performance, with AUC scores of 0.942-0.952 across diverse DNA sequence contexts. Z-Calling represents a significant advancement in accessible and accurate dZ-DNA sequencing, paving the way for its broader application in biotechnology. Z-Calling is freely available at https://github.com/xiaochuanle/Z-Calling .",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The natural occurrence of 2,6-diaminopurine (Z) as a substitute for adenine (A) in certain bacteriophage genomes has profound evolutionary implications and promising biotechnological potential.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Progress in this field has been stymied by the absence of reliable methods to detect dZ-DNA, particularly in mixed samples, and to distinguish A from Z at the single-nucleotide level.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Z-Calling is a machine learning-based tool designed to identify dZ-DNA and discriminate A/Z bases directly from PacBio Circular Consensus Sequencing (CCS) reads without additional processing.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Z-Calling analyzes sequence context-dependent kinetic signal changes induced by Z/A substitution.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Z-Calling achieves exceptional sensitivity, reliably detecting dZ-DNA even in samples with as little as ~1% dZ-DNA content.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "The A/Z base-calling module of Z-Calling demonstrates robust performance, with AUC scores of 0.942-0.952 across diverse DNA sequence contexts.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "Z-Calling represents a significant advancement in accessible and accurate dZ-DNA sequencing, paving the way for its broader application in biotechnology.",
+        "category": "Conclusion",
+        "rank": 5
+      },
+      {
+        "sentence": "Z-Calling is freely available at https://github.com/xiaochuanle/Z-Calling.",
+        "category": "Other",
+        "rank": 2
+      }
+    ]
+  }
+]

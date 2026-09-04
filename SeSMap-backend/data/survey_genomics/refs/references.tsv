@@ -1,0 +1,81 @@
+ADG11	tool	Sequence surveyor: leveraging overview for scalable genomic alignment visualization	IEEE TVCG	2011
+AHP18	tool	IRscope: an online program to visualize the junction sites of chloroplast genomes	Bioinformatics	2018
+ALS15	tool	J-Circos: an interactive Circos plotter	Bioinformatics	2015
+And09	tool	Visualization of genomic data with the Hilbert curve	Bioinformatics	2009
+ARJ15	tool	BactoGeNIE: a large-scale comparative genome visualization for big displays	BMC Bioinformatics	2015
+AVPS12	tool	GenomeView: a next-generation genome browser	Nucleic Acids Research	2012
+BGM17	tool	Synteny Explorer: An Interactive Visualization Application for Teaching Genome Evolution	IEEE TVCG	2017
+BKS16	tool	EDGAR 2.0: an enhanced software platform for comparative gene content analyses	Nucleic Acids Research	2016
+BMB15	tool	A low-latency big database system and browser for storage querying and visualization of 3D genomic data	Nucleic Acids Research	2015
+BWML06	tool	MEME: discovering and analyzing DNA and protein sequence motifs	Nucleic Acids Research	2006
+BYD16	tool	JBrowse: a dynamic web platform for genome visualization and analysis	Genome Biology	2016
+CGD12	tool	The cBio cancer genomics portal: an open platform for exploring multidimensional cancer genomics data	Cancer Discovery	2012
+CHCB04	tool	WebLogo: a sequence logo generator	Genome Research	2004
+CSGB14	tool	Epiviz: interactive visual analytics for functional genomics data	Nature Methods	2014
+CTB09	tool	DNAPlotter: circular and linear interactive genome visualization	Bioinformatics	2009
+CTYN15	tool	ClicO FS: an interactive web-based service of Circos	Bioinformatics	2015
+CYW18	tool	GIVE: portable genome browsers for personal websites	Genome Biology	2018
+CZ13	tool	Enabling interspecies epigenomic comparison with CEpBrowser	Bioinformatics	2013
+DLS15	tool	IslandViewer 3: more flexible interactive genomic island discovery visualization and analysis	Nucleic Acids Research	2015
+Don09	tool	Using the Generic Genome Browser (GBrowse)	Current Protocols in Bioinformatics	2009
+DPH11	tool	Dalliance: interactive genome viewing on the web	Bioinformatics	2011
+DRS16	tool	Juicebox provides a visualization system for Hi-C contact maps with unlimited zoom	Cell Systems	2016
+DWZG17	tool	HiC-3DViewer: a new tool to visualize Hi-C data in 3D space	Quantitative Biology	2017
+EYB06	tool	Combo: a whole genome comparative browser	Bioinformatics	2006
+FNL16	tool	Integrated Genome Browser: visual analytics platform for genomics	Bioinformatics	2016
+FNM13	tool	Variant View: Visualizing Sequence Variants in their Context	IEEE TVCG	2013
+FPP04	tool	VISTA: computational tools for comparative genomics	Nucleic Acids Research	2004
+FSB12	tool	Savant Genome Browser 2: visualization and analysis for population-scale genomics	Nucleic Acids Research	2012
+GCB18	tool	The UCSC Xena platform for public and private cancer genomics data visualization and interpretation	bioRxiv	2018
+GES16	tool	HilbertCurve: an R/Bioconductor package for high-resolution visualization of genomic data	Bioinformatics	2016
+GESI18	tool	EnrichedHeatmap: an R/Bioconductor package for comprehensive visualization of genomic signal associations	BMC Genomics	2018
+GKA11	tool	Identifying elemental genomic track types and representing them uniformly	BMC Bioinformatics	2011
+GS08	tool	The CGView Server: a comparative genomics tool for circular genomes	Nucleic Acids Research	2008
+HBB02	tool	The Ensembl genome database project	Nucleic Acids Research	2002
+HBSD17	tool	SynMap2 and SynMap3D: web-based whole-genome synteny browsers	Bioinformatics	2017
+HJ10	tool	MochiView: versatile software for genome browsing and DNA motif analysis	BMC Biology	2010
+HJBN12	tool	GenomeRing: alignment visualization based on SuperGenome coordinates	Bioinformatics	2012
+HSD14	tool	ReadXplorer--visualization and analysis of mapped sequences	Bioinformatics	2014
+KAL18	tool	HiGlass: web-based visual exploration and analysis of genome interaction maps	Genome Biology	2018
+KAR07	tool	Gepard: a rapid and sensitive tool for creating dotplots on genome scale	Bioinformatics	2007
+KNS14	tool	Sequence bundles: a novel method for visualising discovering and exploring sequence motifs	BMC Proceedings	2014
+KSF02	tool	The human genome browser at UCSC	Genome Research	2002
+KvEB04	tool	Visualization for genomics: the Microbial Genome Viewer	Bioinformatics	2004
+KWS15	tool	Quantitative visualization of alternative exon expression from RNA-seq data	Bioinformatics	2015
+KWZ12	tool	ABrowse - a customizable next-generation genome browser framework	BMC Bioinformatics	2012
+Lar14	tool	AliView: a fast and lightweight alignment viewer and editor for large datasets	Bioinformatics	2014
+LB11	tool	GenPlay a multipurpose genome analyzer and browser	Bioinformatics	2011
+LBK18	tool	HiPiler: Visual Exploration of Large Genome Interaction Matrices with Interactive Small Multiples	IEEE TVCG	2018
+LGH15	tool	MAGI: visualization and collaborative annotation of genomic aberrations	Nature Methods	2015
+LJASH16	tool	An interactive environment for agile analysis and visualization of ChIP-sequencing data	Nature Structural and Molecular Biology	2016
+LLL08	tool	SynteBase/SynteView: a tool to visualize gene order conservation in prokaryotic genomes	BMC Bioinformatics	2008
+LSWQ17	tool	Deep Motif Dashboard: Visualizing and Understanding Genomic Sequences Using Deep Neural Networks	Pacific Symposium on Biocomputing	2017
+LvBSD09	tool	My5C: web tools for chromosome conformation capture studies	Nature Methods	2009
+MBS00	tool	VISTA: visualizing global DNA sequence alignments of arbitrary length	Bioinformatics	2000
+MMP09	tool	MizBee: A Multiscale Synteny Browser	IEEE TVCG	2009
+MVS10	tool	Using the Generic Synteny Browser (GBrowse_syn)	Current Protocols in Bioinformatics	2010
+MXR17	tool	HUGIn: Hi-C Unifying Genomic Interrogator	Bioinformatics	2017
+OCQ13	tool	pLogo: a probabilistic approach to visualizing sequence motifs	Nature Methods	2013
+OKSF13	tool	MGcV: the microbial genomic context viewer for comparative genome analysis	BMC Genomics	2013
+ORRL10	tool	Gremlin: An Interactive Visualization Model for Analyzing Genomic Rearrangements	IEEE TVCG	2010
+OvHSF15	tool	CiVi: circular genome visualization with unique features to analyze sequence elements	Bioinformatics	2015
+PSESVD10	tool	Interactive microbial genome visualization with GView	Bioinformatics	2010
+RCK12	tool	SpliceSeq: a resource for analysis and visualization of RNA-Seq data on alternative splicing and its functional impacts	Bioinformatics	2012
+RRG16	tool	deepTools2: a next generation web server for deep-sequencing data analysis	Nucleic Acids Research	2016
+RTD18	tool	Juicebox.js Provides a Cloud-Based Visualization System for Hi-C Data	Cell Systems	2018
+RTRBH12	tool	SpliceGrapher: detecting patterns of alternative splicing from RNA-Seq data in the context of gene models and EST data	Genome Biology	2012
+SAB16	tool	Vials: Visualizing Alternative Splicing of Genes	IEEE TVCG	2016
+SM07	tool	Cinteny: flexible analysis and visualization of synteny and genome rearrangements in multiple organisms	BMC Bioinformatics	2007
+SS90	tool	Sequence logos: a new way to display consensus sequences	Nucleic Acids Research	1990
+STK16	tool	ALVIS: interactive non-aggregative visualization and explorative analysis of multiple sequence alignments	Nucleic Acids Research	2016
+SW05	tool	Circular genome visualization and exploration using CGView	Bioinformatics	2005
+TRM13	tool	Integrative Genomics Viewer (IGV): high-performance genomics data visualization and exploration	Briefings in Bioinformatics	2013
+VIR06	tool	Two Sample Logo: a graphical representation of the differences between two sets of sequence alignments	Bioinformatics	2006
+WBN18	tool	Galaxy HiCExplorer: a web server for reproducible Hi-C data analysis quality control and visualization	Nucleic Acids Research	2018
+WKP17	tool	WebMeV: A Cloud Platform for Analyzing and Visualizing Cancer Genomic Data	Cancer Research	2017
+WNM14	tool	SplicePlot: a utility for visualizing splicing quantitative trait loci	Bioinformatics	2014
+WPM09	tool	Jalview Version 2--a multiple sequence alignment editor and analysis workbench	Bioinformatics	2009
+WSZ18	tool	The 3D Genome Browser: a web-based browser for visualizing 3D genome organization and long-range chromatin interactions	Genome Biology	2018
+YCL12	tool	ggbio: an R package for extending the grammar of graphics for genomic data	Genome Biology	2012
+YWR16	tool	MSAViewer: interactive JavaScript visualization of multiple sequence alignments	Bioinformatics	2016
+ZMX11	tool	The Human Epigenome Browser at Washington University	Nature Methods	2011

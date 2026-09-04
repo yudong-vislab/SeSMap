@@ -1,0 +1,54 @@
+[
+  {
+    "paragraph": "We present CCPlotR-an R package that generates visualizations of cell-cell interactions. CCPlotR is designed to work with the output of tools that predict cell-cell interactions from single-cell gene expression data and requires only a table of predicted interactions as input. The package can generate a comprehensive set of publication-ready figures such as heatmaps, dotplots, circos plots and network diagrams, providing a useful resource for researchers working on cell-cell interactions.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "CCPlotR is an R package that generates visualizations of cell-cell interactions.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "CCPlotR is designed to work with the output of tools that predict cell-cell interactions from single-cell gene expression data.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "CCPlotR requires only a table of predicted interactions as input.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The package can generate a comprehensive set of publication-ready figures such as heatmaps, dotplots, circos plots, and network diagrams.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "CCPlotR provides a useful resource for researchers working on cell-cell interactions.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "CCPlotR is available to download and install from GitHub (https://github.com/Sarah145/CCPlotR) and comes with a toy dataset to demonstrate the different functions. Support for users will be provided via the GitHub issues tracker (https://github.com/Sarah145/CCPlotR/issues).",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "CCPlotR is available to download and install from GitHub.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "CCPlotR comes with a toy dataset to demonstrate the different functions.",
+        "category": "Method",
+        "rank": 2
+      },
+      {
+        "sentence": "Support for users will be provided via the GitHub issues tracker.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

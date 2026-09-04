@@ -1,0 +1,43 @@
+[
+  {
+    "paragraph": "Cell and gene therapy (CGT) manufacturing has outpaced traditional chemistry, manufacturing, and controls frameworks, leaving a \"black box\" in vector quality control (QC). Legacy assays such as Sanger and short-read next-generation sequencing often fail to resolve complex structures including adeno-associated virus (AAV) inverted terminal repeats, lentiviral recombination, and mRNA poly(A) tails. Oxford Nanopore Technologies enables long-read, native single-molecule sequencing to access these attributes directly. This review summarizes nanopore sequencing across the CGT lifecycle. For plasmid DNA, it confirms full-length circular identity and reveals structural heterogeneity missed by restriction mapping. For viral vectors (AAV and lentivirus), it functions as an integrity assay to distinguish full genomes from truncations and to detect sequence-resolved impurities, including reverse-packaged plasmid backbones. For mRNA therapeutics, direct RNA sequencing profiles poly(A) tail length distributions and base modifications (",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Cell and gene therapy (CGT) manufacturing has outpaced traditional chemistry, manufacturing, and controls frameworks, leaving a 'black box' in vector quality control (QC).",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Legacy assays such as Sanger and short-read next-generation sequencing often fail to resolve complex structures including adeno-associated virus (AAV) inverted terminal repeats, lentiviral recombination, and mRNA poly(A) tails.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Oxford Nanopore Technologies enables long-read, native single-molecule sequencing to access these attributes directly.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "This review summarizes nanopore sequencing across the CGT lifecycle.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "For plasmid DNA, nanopore sequencing confirms full-length circular identity and reveals structural heterogeneity missed by restriction mapping.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "For viral vectors (AAV and lentivirus), nanopore sequencing functions as an integrity assay to distinguish full genomes from truncations and to detect sequence-resolved impurities, including reverse-packaged plasmid backbones.",
+        "category": "Result",
+        "rank": 5
+      },
+      {
+        "sentence": "For mRNA therapeutics, direct RNA sequencing profiles poly(A) tail length distributions and base modifications.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  }
+]

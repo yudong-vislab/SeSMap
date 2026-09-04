@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Generation of a HiBiT-expressing recombinant rat hepacivirus supporting both in vivo and in vitro infection",
+    "paragraphs": []
+  },
+  {
+    "title": "Generation of a HiBiT-expressing recombinant rat hepacivirus supporting both in vivo and in vitro infection-Abstract",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "The lack of immuno-competent animal models of hepatitis C virus (HCV) infection has been an obstacle to vaccine development and research on immune responses. Hepacivirus ratti (Norway rat hepacivirus-1: NRHV1) is a virus closely related to HCV that specifically infects the liver and induces hepatocellular carcinoma in rats, making it a promising surrogate model for HCV. NRHV1 expressing a reporter gene serves as a powerful tool for analyzing the in vivo dynamics and pathogenicity mechanisms of NRHV1. In this study, we developed a reporter NRHV1 capable of infection and replication in both immunodeficient mice and cultured cells and established a platform for generating diverse reporter viruses. A reporter virus containing the HiBiT gene in the coding region of NS5A domain III was constructed using circular polymerase extension reaction (CPER). Infection with this reporter virus led to HiBiT activity in infected cells and the activity was correlated with the amount of intracellular viral RNA. In addition, this reporter virus established persistent infection in NOD-SCID mice and led to the generation of HiBiT activity in the livers of infected mice, although loss of the HiBiT gene was observed in some mice. Furthermore, reporter virus recovered from infected mice could infect and generate HiBiT activity in cultured cells. These results demonstrate that the reporter virus can infect hepatocytes in vivo and in vitro. This platform provides a versatile tool for in vitro quantitative antiviral screening and for exploring viral infection dynamics in vivo, although further studies will be required to improve the long-term stability of the HiBiT reporter.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

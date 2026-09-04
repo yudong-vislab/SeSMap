@@ -1,0 +1,48 @@
+[
+  {
+    "paragraph": "The HuGeMap database stores the major genetic and physical maps of the human genome. HuGeMap is accessible on the Web at http://www. infobiogen.fr/services/Hugemap and through a CORBA server. A standard genome map data format for the interconnection of genome map databases was defined in collaboration with the EBI. The HuGeMap CORBA server provides this interconnection using the interface definition language IDL. Two graphical user interfaces were developed for the visualization of the HuGeMap data: ZoomMap (http://www.infobiogen.fr/services/zomit/Zoom Map.html) for navigation by zooming and data transformation via magic lenses, and MappetShow (http://www.infobiogen.fr/services/Mappet) for visualizing and comparing maps.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The HuGeMap database stores the major genetic and physical maps of the human genome.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "HuGeMap is accessible on the Web at http://www.infobiogen.fr/services/Hugemap.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "HuGeMap is accessible through a CORBA server.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "A standard genome map data format for the interconnection of genome map databases was defined in collaboration with the EBI.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The HuGeMap CORBA server provides interconnection using the interface definition language IDL.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Two graphical user interfaces were developed for the visualization of the HuGeMap data.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "ZoomMap (http://www.infobiogen.fr/services/zomit/Zoom Map.html) allows navigation by zooming and data transformation via magic lenses.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "MappetShow (http://www.infobiogen.fr/services/Mappet) is used for visualizing and comparing maps.",
+        "category": "Method",
+        "rank": 4
+      }
+    ]
+  }
+]

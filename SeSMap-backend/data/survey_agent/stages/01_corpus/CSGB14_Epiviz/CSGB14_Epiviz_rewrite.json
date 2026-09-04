@@ -1,0 +1,33 @@
+[
+  {
+    "paragraph": "Visualization is an integral aspect of genomics data analysis. Algorithmic-statistical analysis and interactive visualization are most effective when used iteratively. Epiviz (http://epiviz.cbcb.umd.edu/), a web-based genome browser, and the Epivizr Bioconductor package allow interactive, extensible and reproducible visualization within a state-of-the-art data-analysis platform.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Visualization is an integral aspect of genomics data analysis.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Algorithmic-statistical analysis and interactive visualization are most effective when used iteratively.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Epiviz is a web-based genome browser.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The Epivizr Bioconductor package allows interactive, extensible, and reproducible visualization.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Epiviz and Epivizr operate within a state-of-the-art data-analysis platform.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  }
+]

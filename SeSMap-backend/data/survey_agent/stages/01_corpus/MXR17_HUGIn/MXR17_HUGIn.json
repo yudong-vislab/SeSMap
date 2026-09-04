@@ -1,0 +1,46 @@
+[
+  {
+    "title": "HUGIn: Hi-C Unifying Genomic Interrogator",
+    "paragraphs": []
+  },
+  {
+    "title": "HUGIn: Hi-C Unifying Genomic Interrogator-Motivation",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "High throughput chromatin conformation capture (3C) technologies, such as Hi-C and ChIA-PET, have the potential to elucidate the functional roles of non-coding variants. However, most of published genome-wide unbiased chromatin organization studies have used cultured cell lines, limiting their generalizability.",
+        "abstract_summary": ""
+      }
+    ]
+  },
+  {
+    "title": "HUGIn: Hi-C Unifying Genomic Interrogator-Results",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "We developed a web browser, HUGIn, to visualize Hi-C data generated from 21 human primary tissues and cell lines. HUGIn enables assessment of chromatin contacts both constitutive across and specific to tissue(s) and/or cell line(s) at any genomic loci, including GWAS SNPs, eQTLs and cis-regulatory elements, facilitating the understanding of both GWAS and eQTL results and functional genomics data.",
+        "abstract_summary": ""
+      }
+    ]
+  },
+  {
+    "title": "HUGIn: Hi-C Unifying Genomic Interrogator-Availability And Implementation",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "HUGIn is available at http://yunliweb.its.unc.edu/HUGIn.",
+        "abstract_summary": ""
+      }
+    ]
+  },
+  {
+    "title": "HUGIn: Hi-C Unifying Genomic Interrogator-Supplementary Information",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "Supplementary data are available at Bioinformatics online.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

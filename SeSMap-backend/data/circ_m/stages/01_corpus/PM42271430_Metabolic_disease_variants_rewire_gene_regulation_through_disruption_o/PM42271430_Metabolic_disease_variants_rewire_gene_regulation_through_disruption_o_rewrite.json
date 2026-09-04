@@ -1,0 +1,125 @@
+[
+  {
+    "paragraph": "The global prevalence of metabolic diseases (MetDs) continues to rise and is associated with an increased cancer risk. Genome-wide association studies have identified numerous single nucleotide variants (SNVs) linked to MetDs, some within genes also implicated in tumorigenesis. G-quadruplexes (G4s) are non-canonical DNA secondary structures that regulate gene expression in diverse and context dependent ways. Variants affecting G4 structure may alter transcriptional efficiency. Notably, disease-associated variants are frequently located within or near regulatory elements and may overlap with cancer-associated alternative promoters.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The global prevalence of metabolic diseases (MetDs) continues to rise and is associated with an increased cancer risk.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Genome-wide association studies have identified numerous single nucleotide variants (SNVs) linked to MetDs.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Some single nucleotide variants linked to MetDs are within genes also implicated in tumorigenesis.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "G-quadruplexes (G4s) are non-canonical DNA secondary structures that regulate gene expression in diverse and context-dependent ways.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Variants affecting G4 structure may alter transcriptional efficiency.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Disease-associated variants are frequently located within or near regulatory elements.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Disease-associated variants may overlap with cancer-associated alternative promoters.",
+        "category": "Background",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "We systematically assess the overlap between MetD-associated SNVs and G4 motifs, and evaluate their effects on G4 stability, topology, and their potential to modulate the regulatory activity of G4s in alternative promoters. Approximately 0.9% to 1.6% of MetD-associated SNVs are located within G4 motifs (G4-SNVs), depending on the prediction tool. Effect alleles, those associated with risk or protection against MetDs, generally reduce G4 stability, regardless of their direction of association. Several G4-SNVs are mapped to cancer-associated alternative promoters, including the destabilizing MICB rs2855804 C/T variant and the stabilizing PLA2G6 rs2277844 G/A variants. In vivo G4 formation is confirmed by permanganate/S1 nuclease footprinting coupled with sequencing, while circular dichroism spectroscopy reveals allele-specific changes in G4 topology and stability. Integration of Hi-C data, histone modifications, transcription factor binding, and luciferase reporter assays further support their regulatory impact.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "We systematically assess the overlap between MetD-associated SNVs and G4 motifs.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "We evaluate the effects of MetD-associated SNVs on G4 stability, topology, and their potential to modulate the regulatory activity of G4s in alternative promoters.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Approximately 0.9% to 1.6% of MetD-associated SNVs are located within G4 motifs (G4-SNVs), depending on the prediction tool.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Effect alleles, those associated with risk or protection against MetDs, generally reduce G4 stability, regardless of their direction of association.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Several G4-SNVs are mapped to cancer-associated alternative promoters.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The destabilizing MICB rs2855804 C/T variant is mapped to a cancer-associated alternative promoter.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "The stabilizing PLA2G6 rs2277844 G/A variant is mapped to a cancer-associated alternative promoter.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "In vivo G4 formation is confirmed by permanganate/S1 nuclease footprinting coupled with sequencing.",
+        "category": "Experiment",
+        "rank": 5
+      },
+      {
+        "sentence": "Circular dichroism spectroscopy reveals allele-specific changes in G4 topology and stability.",
+        "category": "Experiment",
+        "rank": 5
+      },
+      {
+        "sentence": "Integration of Hi-C data, histone modifications, transcription factor binding, and luciferase reporter assays further support the regulatory impact of G4-SNVs.",
+        "category": "Result",
+        "rank": 5
+      }
+    ]
+  },
+  {
+    "paragraph": "Although G4-SNVs are unlikely to be the sole disease drivers, they significantly influence transcriptional regulation, potentially contributing to allele-specific gene expression in MetD patients and their link to increased cancer risk.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "G4-SNVs are unlikely to be the sole disease drivers.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "G4-SNVs significantly influence transcriptional regulation.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "G4-SNVs potentially contribute to allele-specific gene expression in MetD patients.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "G4-SNVs are linked to increased cancer risk in MetD patients.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  }
+]

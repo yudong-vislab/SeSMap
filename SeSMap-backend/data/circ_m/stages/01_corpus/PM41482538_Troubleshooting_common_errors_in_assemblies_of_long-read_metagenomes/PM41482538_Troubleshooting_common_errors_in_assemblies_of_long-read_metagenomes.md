@@ -1,0 +1,5 @@
+# Troubleshooting common errors in assemblies of long-read metagenomes
+
+## Abstract
+
+Assessing the accuracy of long-read assemblies, especially from complex environmental metagenomes that include underrepresented organisms, is challenging. Here we benchmark four state-of-the-art long-read assembly software programs, HiCanu, hifiasm-meta, metaFlye and metaMDBG, on 21 PacBio HiFi metagenomes spanning mock communities, gut microbiomes and ocean samples. By quantifying read clipping events, in which long reads are systematically split during mapping to maximize the agreement with assembled contigs, we identify where assemblies diverge from their source reads. Our analyses reveal that long-read metagenome assemblies can include >40 errors per 100 million base pairs of assembled contigs, including multi-domain chimeras, prematurely circularized sequences, haplotyping errors, excessive repeats and phantom sequences. We provide an open-source tool and a reproducible workflow for rigorous evaluation of assembly errors, charting a path toward more reliable genome recovery from long-read metagenomes.

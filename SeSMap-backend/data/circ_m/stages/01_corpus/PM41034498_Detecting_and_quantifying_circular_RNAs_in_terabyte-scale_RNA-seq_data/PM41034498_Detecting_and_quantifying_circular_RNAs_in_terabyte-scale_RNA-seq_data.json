@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Detecting and quantifying circular RNAs in terabyte-scale RNA-seq datasets with CIRI3",
+    "paragraphs": []
+  },
+  {
+    "title": "Detecting and quantifying circular RNAs in terabyte-scale RNA-seq datasets with CIRI3-Abstract",
+    "paragraphs": [
+      {
+        "type": "text",
+        "origin_text": "To address recent challenges in circular RNA (circRNA) analysis, we present CIRI3, a tool for circRNA detection and quantification in terabyte-scale RNA-sequencing datasets. Using dynamic multithreaded task partitioning and a blocking search strategy for junction reads, CIRI3 is an order of magnitude faster than existing tools, while providing increased accuracy. We identified differentially spliced circRNAs across 2,535 cancer-related samples, and constructed a pretraining model and a biomarker network provided as the CIRIonco database.",
+        "abstract_summary": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,160 @@
+[
+  {
+    "paragraph": "The evolutionary pressures that underlie the large-scale functional organization of the genome are not well understood in eukaryotes. Recent evidence suggests that functionally similar genes may colocalize (cluster) in the eukaryotic genome, suggesting the role of chromatin-level gene regulation in shaping the physical distribution of coordinated genes. However, few of the bioinformatic tools currently available allow for a systematic study of gene colocalization across several, evolutionarily distant species. Furthermore, most tools require the user to input manually curated lists of gene position information, DNA sequence or gene homology relations between species. With the growing number of sequenced genomes, there is a need to provide new comparative genomics tools that can address the analysis of multi-species gene colocalization.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The evolutionary pressures that underlie the large-scale functional organization of the genome are not well understood in eukaryotes.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Recent evidence suggests that functionally similar genes may colocalize (cluster) in the eukaryotic genome.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Gene colocalization suggests the role of chromatin-level gene regulation in shaping the physical distribution of coordinated genes.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Few of the bioinformatic tools currently available allow for a systematic study of gene colocalization across several, evolutionarily distant species.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Most bioinformatic tools require the user to input manually curated lists of gene position information, DNA sequence, or gene homology relations between species.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "With the growing number of sequenced genomes, there is a need to provide new comparative genomics tools that can address the analysis of multi-species gene colocalization.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Kerfuffle is a web tool designed to help discover, visualize, and quantify the physical organization of genomes by identifying significant gene colocalization and conservation across the assembled genomes of available species (currently up to 47, from humans to worms). Kerfuffle only requires the user to specify a list of human genes and the names of other species of interest. Without further input from the user, the software queries the e!Ensembl BioMart server to obtain positional information and discovers homology relations in all genes and species specified. Using this information, Kerfuffle performs a multi-species clustering analysis, presents downloadable lists of clustered genes, performs Monte Carlo statistical significance calculations, estimates how conserved gene clusters are across species, plots histograms and interactive graphs, allows users to save their queries, and generates a downloadable visualization of the clusters using the Circos software. These analyses may be used to further explore the functional roles of gene clusters by interrogating the enriched molecular pathways associated with each cluster.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Kerfuffle is a web tool designed to help discover, visualize, and quantify the physical organization of genomes.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Kerfuffle identifies significant gene colocalization and conservation across the assembled genomes of available species.",
+        "category": "Background",
+        "rank": 4
+      },
+      {
+        "sentence": "Kerfuffle currently supports up to 47 species, ranging from humans to worms.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "Kerfuffle only requires the user to specify a list of human genes and the names of other species of interest.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The software queries the e!Ensembl BioMart server to obtain positional information and discovers homology relations in all genes and species specified.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Kerfuffle performs a multi-species clustering analysis using the obtained information.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Kerfuffle presents downloadable lists of clustered genes.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Kerfuffle performs Monte Carlo statistical significance calculations.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Kerfuffle estimates how conserved gene clusters are across species.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Kerfuffle plots histograms and interactive graphs.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Kerfuffle allows users to save their queries.",
+        "category": "Method",
+        "rank": 2
+      },
+      {
+        "sentence": "Kerfuffle generates a downloadable visualization of the clusters using the Circos software.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "These analyses may be used to further explore the functional roles of gene clusters.",
+        "category": "Conclusion",
+        "rank": 3
+      },
+      {
+        "sentence": "The functional roles of gene clusters can be interrogated by exploring the enriched molecular pathways associated with each cluster.",
+        "category": "Conclusion",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "Kerfuffle is a new, easy-to-use and publicly available tool to aid our understanding of functional genomics and comparative genomics. This software allows for flexibility and quick investigations of a user-defined set of genes, and the results may be saved online for further analysis. Kerfuffle is freely available at http://atwallab.org/kerfuffle, is implemented in JavaScript (using jQuery and jsCharts libraries) and PHP 5.2, runs on an Apache server, and stores data in flat files and an SQLite database.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Kerfuffle is a new, easy-to-use and publicly available tool to aid understanding of functional genomics and comparative genomics.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Kerfuffle allows for flexibility and quick investigations of a user-defined set of genes.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The results from Kerfuffle may be saved online for further analysis.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Kerfuffle is freely available at http://atwallab.org/kerfuffle.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "Kerfuffle is implemented in JavaScript using jQuery and jsCharts libraries.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Kerfuffle is implemented in PHP 5.2.",
+        "category": "Method",
+        "rank": 2
+      },
+      {
+        "sentence": "Kerfuffle runs on an Apache server.",
+        "category": "Method",
+        "rank": 2
+      },
+      {
+        "sentence": "Kerfuffle stores data in flat files and an SQLite database.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  }
+]

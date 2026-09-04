@@ -1,0 +1,64 @@
+[
+  {
+    "paragraph": "Jalview Version 2 is a system for interactive WYSIWYG editing, analysis and annotation of multiple sequence alignments. Core features include keyboard and mouse-based editing, multiple views and alignment overviews, and linked structure display with Jmol. Jalview 2 is available in two forms: a lightweight Java applet for use in web applications, and a powerful desktop application that employs web services for sequence alignment, secondary structure prediction and the retrieval of alignments, sequences, annotation and structures from public databases and any DAS 1.53 compliant sequence or annotation server.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Jalview Version 2 is a system for interactive WYSIWYG editing, analysis, and annotation of multiple sequence alignments.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "Core features of Jalview Version 2 include keyboard and mouse-based editing.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Core features of Jalview Version 2 include multiple views and alignment overviews.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Core features of Jalview Version 2 include linked structure display with Jmol.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Jalview 2 is available as a lightweight Java applet for use in web applications.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Jalview 2 is available as a powerful desktop application that employs web services for sequence alignment, secondary structure prediction, and the retrieval of alignments, sequences, annotation, and structures from public databases.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Jalview 2 supports retrieval of data from any DAS 1.53 compliant sequence or annotation server.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "The Jalview 2 Desktop application and JalviewLite applet are made freely available under the GPL, and can be downloaded from www.jalview.org.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "The Jalview 2 Desktop application is made freely available under the GPL.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "The JalviewLite applet is made freely available under the GPL.",
+        "category": "Other",
+        "rank": 2
+      },
+      {
+        "sentence": "The applications can be downloaded from www.jalview.org.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "paragraph": "We introduce ggbio, a new methodology to visualize and explore genomics annotationsand high-throughput data. The plots provide detailed views of genomic regions,summary views of sequence alignments and splicing patterns, and genome-wide overviewswith karyogram, circular and grand linear layouts. The methods leverage thestatistical functionality available in R, the grammar of graphics and the datahandling capabilities of the Bioconductor project. The plots are specified within amodular framework that enables users to construct plots in a systematic way, and aregenerated directly from Bioconductor data structures. The ggbio R package isavailable at http://www.bioconductor.org/packages/2.11/bioc/html/ggbio.html .",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "We introduce ggbio, a new methodology to visualize and explore genomics annotations and high-throughput data.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "The plots provide detailed views of genomic regions.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The plots provide summary views of sequence alignments and splicing patterns.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The plots provide genome-wide overviews with karyogram, circular, and grand linear layouts.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The methods leverage the statistical functionality available in R.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The methods leverage the grammar of graphics.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The methods leverage the data handling capabilities of the Bioconductor project.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The plots are specified within a modular framework that enables users to construct plots in a systematic way.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The plots are generated directly from Bioconductor data structures.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The ggbio R package is available at http://www.bioconductor.org/packages/2.11/bioc/html/ggbio.html.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

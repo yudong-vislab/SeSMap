@@ -1,0 +1,128 @@
+[
+  {
+    "paragraph": "Gene co-expression network (GCN) mining identifies gene modules with highly correlated expression profiles across samples/conditions. It enables researchers to discover latent gene/molecule interactions, identify novel gene functions, and extract molecular features from certain disease/condition groups, thus helping to identify disease biomarkers. However, there lacks an easy-to-use tool package for users to mine GCN modules that are relatively small in size with tightly connected genes that can be convenient for downstream gene set enrichment analysis, as well as modules that may share common members. To address this need, we developed an online GCN mining tool package: TSUNAMI (Tools SUite for Network Analysis and MIning). TSUNAMI incorporates our state-of-the-art lmQCM algorithm to mine GCN modules for both public and user-input data (microarray, RNA-seq, or any other numerical omics data), and then performs downstream gene set enrichment analysis for the identified modules. It has several features and advantages: 1) a user-friendly interface and real-time co-expression network mining through a web server; 2) direct access and search of NCBI Gene Expression Omnibus (GEO) and The Cancer Genome Atlas (TCGA) databases, as well as user-input gene expression matrices for GCN module mining; 3) multiple co-expression analysis tools to choose from, all of which are highly flexible in regards to parameter selection options; 4) identified GCN modules are summarized to eigengenes, which are convenient for users to check their correlation with other clinical traits; 5) integrated downstream Enrichr enrichment analysis and links to other gene set enrichment tools; and 6) visualization of gene loci by Circos plot in any step of the process. The web service is freely accessible through URL: https://biolearns.medicine.iu.edu/. Source code is available at https://github.com/huangzhii/TSUNAMI/.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Gene co-expression network (GCN) mining identifies gene modules with highly correlated expression profiles across samples/conditions.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "GCN mining enables researchers to discover latent gene/molecule interactions.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "GCN mining helps identify novel gene functions.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "GCN mining extracts molecular features from certain disease/condition groups.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "GCN mining helps identify disease biomarkers.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "There lacks an easy-to-use tool package for users to mine GCN modules that are relatively small in size with tightly connected genes.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "GCN modules that are relatively small in size can be convenient for downstream gene set enrichment analysis.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "GCN modules may share common members.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "To address this need, we developed an online GCN mining tool package: TSUNAMI (Tools SUite for Network Analysis and MIning).",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "TSUNAMI incorporates the state-of-the-art lmQCM algorithm to mine GCN modules for both public and user-input data.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "TSUNAMI supports data types such as microarray, RNA-seq, or any other numerical omics data.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "TSUNAMI performs downstream gene set enrichment analysis for the identified modules.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "TSUNAMI has a user-friendly interface and provides real-time co-expression network mining through a web server.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "TSUNAMI provides direct access and search of NCBI Gene Expression Omnibus (GEO) and The Cancer Genome Atlas (TCGA) databases.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "TSUNAMI allows users to input gene expression matrices for GCN module mining.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "TSUNAMI offers multiple co-expression analysis tools to choose from.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The co-expression analysis tools in TSUNAMI are highly flexible in regards to parameter selection options.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Identified GCN modules in TSUNAMI are summarized to eigengenes.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "Eigengenes are convenient for users to check their correlation with other clinical traits.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "TSUNAMI integrates downstream Enrichr enrichment analysis.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "TSUNAMI provides links to other gene set enrichment tools.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "TSUNAMI enables visualization of gene loci by Circos plot at any step of the process.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The TSUNAMI web service is freely accessible through URL: https://biolearns.medicine.iu.edu/.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "The TSUNAMI source code is available at https://github.com/huangzhii/TSUNAMI/.",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]

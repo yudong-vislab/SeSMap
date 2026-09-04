@@ -1,0 +1,126 @@
+[
+  {
+    "paragraph": "In this study, differentially expressed genes (DEGs) and signaling pathways involved in diquat (DQ) and paraquat (PQ) poisoning were identified via bioinformatics analysis, in order to inform the development of novel clinical treatments.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Differentially expressed genes (DEGs) involved in diquat (DQ) poisoning were identified via bioinformatics analysis.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Differentially expressed genes (DEGs) involved in paraquat (PQ) poisoning were identified via bioinformatics analysis.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Signaling pathways involved in diquat (DQ) poisoning were identified via bioinformatics analysis.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Signaling pathways involved in paraquat (PQ) poisoning were identified via bioinformatics analysis.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The study aims to inform the development of novel clinical treatments for diquat (DQ) and paraquat (PQ) poisoning.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Raw data from GSE153959 were downloaded from the Gene Expression Omnibus database. DEGs of the DQ vs. control (CON) and PQ vs. CON comparison groups were identified using R, and DEGs shared by the two groups were identified using TBtools. Subsequently, the shared DEGs were searched in the Gene Ontology and Kyoto Encyclopedia of Genes and Genomes (KEGG) databases, using the Database for Annotation, Visualization, and Integrated Discovery. A protein-protein interaction (PPI) network was constructed, and hub genes were identified using the cytoHubba plug-in in Cytoscape software. Finally, circos and contrast plots showing the DEGs shared between mouse and human chromosomes were constructed using TBtools.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Raw data from GSE153959 were downloaded from the Gene Expression Omnibus database.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "DEGs of the DQ vs. control (CON) and PQ vs. CON comparison groups were identified using R.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "DEGs shared by the two groups were identified using TBtools.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "The shared DEGs were searched in the Gene Ontology and Kyoto Encyclopedia of Genes and Genomes (KEGG) databases.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The Database for Annotation, Visualization, and Integrated Discovery was used for the search.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "A protein-protein interaction (PPI) network was constructed.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Hub genes were identified using the cytoHubba plug-in in Cytoscape software.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "Circos and contrast plots showing the DEGs shared between mouse and human chromosomes were constructed using TBtools.",
+        "category": "Method",
+        "rank": 3
+      }
+    ]
+  },
+  {
+    "paragraph": "Thirty-one DEGs shared by the DQ and PQ groups were identified. Enriched biological process terms included positive regulation of cell proliferation and translation. Enriched cellular component terms included extracellular region, intracellular membrane-bounded organelle and mitochondrion. Enriched molecular function terms included transcription factor activity and sequence-specific double-stranded DNA binding. Enriched KEGG pathways included the interleukin-17 signaling pathway, tumor necrosis factor signaling pathway, and human T-cell leukemia virus 1 infection. The top 10 hub genes in the PPI network were prostaglandin-endoperoxide synthase 2 (",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "Thirty-one DEGs shared by the DQ and PQ groups were identified.",
+        "category": "Result",
+        "rank": 4
+      },
+      {
+        "sentence": "Enriched biological process terms included positive regulation of cell proliferation and translation.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Enriched cellular component terms included extracellular region, intracellular membrane-bounded organelle, and mitochondrion.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Enriched molecular function terms included transcription factor activity and sequence-specific double-stranded DNA binding.",
+        "category": "Result",
+        "rank": 3
+      },
+      {
+        "sentence": "Enriched KEGG pathways included the interleukin-17 signaling pathway, tumor necrosis factor signaling pathway, and human T-cell leukemia virus 1 infection.",
+        "category": "Result",
+        "rank": 4
+      }
+    ]
+  },
+  {
+    "paragraph": "These pathways and DEGs may serve as targets for gene therapy.",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "These pathways may serve as targets for gene therapy.",
+        "category": "Conclusion",
+        "rank": 3
+      },
+      {
+        "sentence": "These DEGs may serve as targets for gene therapy.",
+        "category": "Conclusion",
+        "rank": 3
+      }
+    ]
+  }
+]

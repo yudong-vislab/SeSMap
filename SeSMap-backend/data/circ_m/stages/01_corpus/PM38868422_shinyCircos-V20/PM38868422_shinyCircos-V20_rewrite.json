@@ -1,0 +1,48 @@
+[
+  {
+    "paragraph": "We previously developed shinyCircos, an interactive web application for creating Circos diagrams, which has been widely recognized for its graphical user interface and ease of use. Here, we introduce shinyCircos-V2.0, an upgraded version of shinyCircos that includes a new user interface with enhanced usability and many new features for creating advanced Circos plots. To help users get started with shinyCircos-V2.0, we provide detailed tutorials and example input data sets. The application is available online at https://venyao.xyz/shinyCircos/ and https://asiawang.shinyapps.io/shinyCircos/, or can be installed locally using the source code deposited in GitHub (https://github.com/YaoLab-Bioinfo/shinyCircos-V2.0).",
+    "type": "text",
+    "resultmsu": [
+      {
+        "sentence": "shinyCircos is an interactive web application for creating Circos diagrams.",
+        "category": "Background",
+        "rank": 3
+      },
+      {
+        "sentence": "shinyCircos has been widely recognized for its graphical user interface and ease of use.",
+        "category": "Background",
+        "rank": 2
+      },
+      {
+        "sentence": "shinyCircos-V2.0 is an upgraded version of shinyCircos.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "shinyCircos-V2.0 includes a new user interface with enhanced usability.",
+        "category": "Method",
+        "rank": 4
+      },
+      {
+        "sentence": "shinyCircos-V2.0 includes many new features for creating advanced Circos plots.",
+        "category": "Method",
+        "rank": 5
+      },
+      {
+        "sentence": "Detailed tutorials and example input data sets are provided to help users get started with shinyCircos-V2.0.",
+        "category": "Method",
+        "rank": 3
+      },
+      {
+        "sentence": "The application is available online at https://venyao.xyz/shinyCircos/ and https://asiawang.shinyapps.io/shinyCircos/.",
+        "category": "Other",
+        "rank": 1
+      },
+      {
+        "sentence": "shinyCircos-V2.0 can be installed locally using the source code deposited in GitHub (https://github.com/YaoLab-Bioinfo/shinyCircos-V2.0).",
+        "category": "Other",
+        "rank": 1
+      }
+    ]
+  }
+]
