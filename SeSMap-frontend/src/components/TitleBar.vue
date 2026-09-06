@@ -1,7 +1,7 @@
 <template>
   <header class="title-bar">
     <div class="title-brand">
-      <span class="title-text">Subspace Semantic Map Visual Analytics System (SeSMapVA)</span>
+      <span class="title-text">Semantic Subspace Map Visual Analytics System (SeSMapVA)</span>
     </div>
   </header>
 </template>
