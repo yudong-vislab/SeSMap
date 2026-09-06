@@ -1,0 +1,40 @@
+[seed 0] lam_con=0.0  train=1808 test=339 dev=cpu
+      it    1/1500 loss=5.0685
+      it  500/1500 loss=2.0151
+      it 1000/1500 loss=1.8230
+      it 1500/1500 loss=1.7863
+      -> Co-loc@12 = 0.1829   (1008s)
+[seed 0] lam_con=0.3  train=1808 test=339 dev=cpu
+      it    1/1500 loss=7.6803
+      it  500/1500 loss=3.7089
+      it 1000/1500 loss=3.4825
+      it 1500/1500 loss=3.4443
+      -> Co-loc@12 = 0.2183   (1200s)
+[seed 1] lam_con=0.0  train=1822 test=336 dev=cpu
+      it    1/1500 loss=5.0679
+      it  500/1500 loss=2.0347
+      it 1000/1500 loss=1.8438
+      it 1500/1500 loss=1.8073
+      -> Co-loc@12 = 0.1935   (1033s)
+[seed 1] lam_con=0.3  train=1822 test=336 dev=cpu
+      it    1/1500 loss=7.6799
+      it  500/1500 loss=3.7990
+      it 1000/1500 loss=3.5493
+      it 1500/1500 loss=3.5129
+      -> Co-loc@12 = 0.2113   (1189s)
+[seed 2] lam_con=0.0  train=1930 test=309 dev=cpu
+      it    1/1500 loss=5.0676
+      it  500/1500 loss=2.1135
+      it 1000/1500 loss=1.9085
+      it 1500/1500 loss=1.8579
+      -> Co-loc@12 = 0.1942   (1018s)
+[seed 2] lam_con=0.3  train=1930 test=309 dev=cpu
+      it    1/1500 loss=7.6804
+      it  500/1500 loss=3.7809
+      it 1000/1500 loss=3.5549
+      it 1500/1500 loss=3.5034
+      -> Co-loc@12 = 0.2006   (1192s)
+[seed 3] lam_con=0.0  train=1891 test=313 dev=cpu
+      it    1/1500 loss=5.0679
+      it  500/1500 loss=2.0446
+      it 1000/1500 loss=1.8534
