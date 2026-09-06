@@ -46,12 +46,18 @@
 
 
     <!-- ② 原文句子 - 显示当前link关联的MSU句子（含勾选） -->
-    <div class="subcard__source" ref="sourceRef" :style="sourcePanelStyle">
+    <div
+      class="subcard__source"
+      :class="{ 'is-sized': sourceHeight != null }"
+      ref="sourceRef"
+      :style="sourcePanelStyle"
+    >
        <div v-if="displayMsuSentences.length > 0" class="msu-sentences">
          <!-- ★ 点击 HSU 后只显示该 HSU 的 MSU；聚合后默认折叠过长的证据列表 -->
          <div v-for="(msu, index) in visibleMsuSentences" :key="msu.uid" class="msu-sentence">
-          <div class="msu-meta">
-            <label class="msu-checkwrap">
+          <!-- 点击这一行（勾选框/Details 按钮除外）折叠或展开该 MSU 的正文 -->
+          <div class="msu-meta" @click="toggleMsuCollapse(msu.uid)">
+            <label class="msu-checkwrap" @click.stop>
               <input
                 type="checkbox"
                 class="msu-check"
@@ -59,29 +65,38 @@
                 :checked="selectedMsus.has(msu.uid)"
                 @change="toggleMsu(msu.uid)"
               />
-              <span
-                class="paper-dot"
-                :style="{ backgroundColor: msu.paperColor }"
-                :title="msu.paperLabel"
-              ></span>
-              <span class="msu-id">MSU {{ msu.id }}</span>
             </label>
+            <span
+              class="paper-dot"
+              :class="{ 'is-collapsed': isMsuCollapsed(msu.uid) }"
+              :style="{ backgroundColor: msu.paperColor }"
+              :title="msu.paperLabel"
+            ></span>
+            <button
+              class="msu-id"
+              type="button"
+              :aria-expanded="String(!isMsuCollapsed(msu.uid))"
+              :title="isMsuCollapsed(msu.uid) ? 'Click to expand this MSU' : 'Click to collapse this MSU'"
+            >
+              MSU {{ msu.id }}
+            </button>
 
-            <button class="show-original-btn" @click="toggleOriginal">
+            <button class="show-original-btn" @click.stop="toggleOriginal">
               {{ showOriginal ? 'Hide Details' : 'Show Details' }}
             </button>
           </div>
 
-          <div class="msu-text">{{ msu.sentence }}</div>
+          <template v-if="!isMsuCollapsed(msu.uid)">
+            <div class="msu-text">{{ msu.sentence }}</div>
 
-          
-          <!-- 展开显示的原文/上下文（字段兼容 + 调试兜底） -->
-          <div v-if="showOriginal" class="para-info">
-            <div v-if="msu.para_info && String(msu.para_info).trim().length" class="para-info-content">
-              {{ msu.para_info }}
+            <!-- 展开显示的原文/上下文（字段兼容 + 调试兜底） -->
+            <div v-if="showOriginal" class="para-info">
+              <div v-if="msu.para_info && String(msu.para_info).trim().length" class="para-info-content">
+                {{ msu.para_info }}
+              </div>
+              <pre v-else class="para-info-content para-info-raw">{{ formatRawForDebug(msu.raw) }}</pre>
             </div>
-            <pre v-else class="para-info-content para-info-raw">{{ formatRawForDebug(msu.raw) }}</pre>
-          </div>
+          </template>
         </div>
         <button
           v-if="hasCollapsedMsus"
@@ -101,7 +116,12 @@
     />
 
     <!-- ③ 大模型总结（展示点击按钮后的结果） -->
-    <div class="subcard__llm" ref="llmRef" :style="llmPanelStyle">
+    <div
+      class="subcard__llm"
+      :class="{ 'is-sized': llmHeight != null }"
+      ref="llmRef"
+      :style="llmPanelStyle"
+    >
       <div v-if="llmSummary" class="llm-content">
         <span class="llm-label">Evidence Synthesis:</span>
         <span class="llm-text">{{ llmSummary }}</span>
@@ -123,7 +143,7 @@
 </template>
 
 <script setup>
-import { onMounted, watch, ref, onBeforeUnmount, computed } from 'vue'
+import { onMounted, watch, ref, onBeforeUnmount, computed, nextTick } from 'vue'
 import { mountMiniLink } from '@/lib/useLinkCard'
 import { summarizeMsuSentences } from '@/lib/api'
 import { onStepwiseMsuCandidates, onApplyStepwiseMsuFilter } from '@/lib/selectionBus'
@@ -169,18 +189,21 @@ const sectionResize = {
   active: false,
   target: null,
   startY: 0,
-  startHeight: 0,
-  lastHeight: 0
+  startHeight: 0
 }
 
 const SECTION_MIN_HEIGHT = {
-  source: 70,
+  source: 48,
   llm: 48
 }
 const SECTION_MAX_HEIGHT = {
-  source: 620,
-  llm: 420
+  source: 800,
+  llm: 800
 }
+// 生成总结后自动为 Evidence Synthesis 争取的最大高度（超出部分自行滚动）
+const LLM_AUTOFIT_MAX = 200
+// 用户手动拖过 LLM 分隔条后就不再自动调整，尊重用户的设定
+const llmSizedByUser = ref(false)
 
 const subspaceTrail = computed(() => {
   const raw = Array.isArray(props.link?.panelNames) ? props.link.panelNames : [];
@@ -203,22 +226,45 @@ const clampSectionHeight = (target, value) => {
   return Math.max(min, Math.min(max, Number(value) || min))
 }
 
+function sectionEl(target) {
+  return target === 'llm' ? llmRef.value : sourceRef.value
+}
+
+function setSectionHeight(target, value) {
+  if (target === 'llm') llmHeight.value = value
+  else sourceHeight.value = value
+}
+
+// 把“请求高度”对齐到实际渲染高度：卡片被上下限夹住时，两者会不一致，
+// 若不对齐，下一次拖拽会以错误的基准起步，累积成越拖越偏的错位。
+function syncSectionHeightsToDom() {
+  const src = sourceRef.value
+  const llm = llmRef.value
+  if (src && sourceHeight.value != null) {
+    sourceHeight.value = Math.round(src.getBoundingClientRect().height)
+  }
+  if (llm && llmHeight.value != null) {
+    llmHeight.value = Math.round(llm.getBoundingClientRect().height)
+  }
+}
+
 function startSectionResize(target, event) {
   event.preventDefault()
   event.stopPropagation()
 
-  const el = target === 'llm' ? llmRef.value : sourceRef.value
+  const el = sectionEl(target)
   if (!el) return
 
-  const current = clampSectionHeight(target, el.getBoundingClientRect().height)
-  if (target === 'llm') llmHeight.value = current
-  else sourceHeight.value = current
+  // 起点用真实渲染高度，不做 max 夹取，避免按下瞬间跳一下
+  const current = Math.max(SECTION_MIN_HEIGHT[target] ?? 48, el.getBoundingClientRect().height)
+  setSectionHeight(target, current)
+
+  if (target === 'llm') llmSizedByUser.value = true
 
   sectionResize.active = true
   sectionResize.target = target
   sectionResize.startY = event.clientY
   sectionResize.startHeight = current
-  sectionResize.lastHeight = current
 
   document.body.classList.add('is-section-resizing')
   window.addEventListener('mousemove', onSectionResizeMove)
@@ -228,16 +274,43 @@ function startSectionResize(target, event) {
 function onSectionResizeMove(event) {
   if (!sectionResize.active || !sectionResize.target) return
   const target = sectionResize.target
+  const el = sectionEl(target)
   const next = clampSectionHeight(target, sectionResize.startHeight + (event.clientY - sectionResize.startY))
-  const delta = next - sectionResize.lastHeight
-  if (!delta) return
 
-  if (target === 'llm') llmHeight.value = next
-  else sourceHeight.value = next
+  // 卡片高度按“想要多高 - 现在实际多高”补差，每帧都以真实布局为准，
+  // 这样在夹取边界上也不会和外层卡片高度失配。
+  const rendered = el ? el.getBoundingClientRect().height : next
+  setSectionHeight(target, next)
 
-  sectionResize.lastHeight = next
+  const delta = next - rendered
+  if (Math.abs(delta) < 1) return
   emit('resize-card-delta', delta)
 }
+
+// 总结返回后按内容为 LLM 区申请一点额外高度，避免它被挤成一条缝
+async function autoFitLlmSection() {
+  if (llmSizedByUser.value) return
+  await nextTick()
+  const el = llmRef.value
+  if (!el) return
+  const current = el.getBoundingClientRect().height
+  const needed = el.scrollHeight
+  if (needed <= current + 2) return
+  const target = clampSectionHeight('llm', Math.min(needed, LLM_AUTOFIT_MAX))
+  const delta = target - current
+  if (delta <= 0) return
+
+  // 先把 MSU 区固定在当前高度，让卡片新增的高度全部给到总结区
+  const srcEl = sourceRef.value
+  if (srcEl && sourceHeight.value == null) {
+    sourceHeight.value = clampSectionHeight('source', srcEl.getBoundingClientRect().height)
+  }
+
+  llmHeight.value = target
+  emit('resize-card-delta', delta)
+}
+
+watch(llmSummary, (value) => { if (value) autoFitLlmSection() })
 
 function stopSectionResize() {
   if (!sectionResize.active) return
@@ -246,6 +319,7 @@ function stopSectionResize() {
   document.body.classList.remove('is-section-resizing')
   window.removeEventListener('mousemove', onSectionResizeMove)
   window.removeEventListener('mouseup', stopSectionResize)
+  nextTick(syncSectionHeightsToDom)
 }
 
 function onMiniSize(size) {
@@ -266,6 +340,18 @@ const MSU_PREVIEW_LIMIT = 8
 
 // 切换显示/隐藏原文
 const toggleOriginal = () => { showOriginal.value = !showOriginal.value }
+
+// 折叠状态：同样按 uid 记录，折叠后只保留标题行
+const collapsedMsus = ref(new Set())
+
+const isMsuCollapsed = (uid) => collapsedMsus.value.has(uid)
+
+const toggleMsuCollapse = (uid) => {
+  const set = new Set(collapsedMsus.value)
+  if (set.has(uid)) set.delete(uid)
+  else set.add(uid)
+  collapsedMsus.value = set
+}
 
 // 切换某个 MSU 的选择状态
 const toggleMsu = (uid) => {
@@ -745,16 +831,16 @@ onBeforeUnmount(() => {
 /* 原有样式（未改动） */
 .subcard{
   border:1px dashed #e5e7eb; border-radius:10px;
-  display:grid; gap:2px;
-  grid-template-rows:auto auto minmax(0, 1fr) 7px auto 7px;
+  display:flex; flex-direction:column; gap:2px;
   padding:4px; background:#fff;
-  transition: all 0.3s ease;
+  /* 只过渡不影响布局的属性：height 参与拖拽，动画会让拖动手感发飘 */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
   height:100%;
   min-height:0;
+  overflow:hidden;      /* 任何一段都不允许溢出到相邻段上方 */
   font-family:var(--app-font);
   color:#374151;
 }
-.subcard.expanded { grid-template-rows: auto auto auto 7px auto 7px; }
 .subcard__meta{
   position:relative;
   display:flex;
@@ -863,6 +949,7 @@ onBeforeUnmount(() => {
   position: relative;        /* 让右侧按钮以本容器为定位参照 */
   display: flex;
   align-items: center;       /* 按钮与 hex 垂直对齐 */
+  flex: 0 0 auto;
   min-height: 40px;
   height: auto;
 }
@@ -880,8 +967,13 @@ onBeforeUnmount(() => {
 
 .hex-scroll::-webkit-scrollbar{ height:0; }
 
-.subcard__source { min-height:0; overflow-y: auto; transition: height 0.12s ease; }
-.subcard.expanded .subcard__source { min-height:0; }
+/* MSU 列表：默认吃掉剩余空间；被拖拽定高后按定高显示（仍可在空间不足时收缩） */
+.subcard__source{
+  flex: 1 1 auto;
+  min-height: 48px;
+  overflow-y: auto;
+}
+.subcard__source.is-sized{ flex: 0 1 auto; }
 .msu-sentences { font-size: 11px; line-height: 1.4; }
 .msu-sentence { margin-bottom: 8px; padding: 6px; background: #f9fafb; border-radius: 4px; border-left: 3px solid #e5e7eb; }
 .msu-sentence:last-child { margin-bottom: 0; }
@@ -899,8 +991,24 @@ onBeforeUnmount(() => {
 }
 .msu-list-toggle:hover{ background:#f3f4f6; }
 
-.msu-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
-.msu-id { font-weight: 600; color: #374151; font-size: 10px; }
+.msu-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; cursor: pointer; }
+/* 折叠后标题行是唯一内容，去掉多余的下边距 */
+.msu-meta:only-child { margin-bottom: 0; }
+.paper-dot{ margin-left:6px; }
+.msu-id{
+  appearance:none;
+  -webkit-appearance:none;
+  border:none;
+  background:transparent;
+  padding:0;
+  margin:0 auto 0 6px;
+  font-family:inherit;
+  font-weight: 600;
+  color: #374151;
+  font-size: 10px;
+  line-height:1;
+  cursor:pointer;
+}
 .paper-dot{
   display:inline-block;
   width:10px;
@@ -908,6 +1016,11 @@ onBeforeUnmount(() => {
   border-radius:50%;
   border:1px solid rgba(255,255,255,0.25);
   flex:none;
+  transition: box-shadow .15s ease;
+}
+/* 折叠状态：圆点外加一圈系统黑描边，展开时消失 */
+.paper-dot.is-collapsed{
+  box-shadow: 0 0 0 1px #f9fafb, 0 0 0 2.5px #111;
 }
 .show-original-btn{
   font-size: 10px;
@@ -941,7 +1054,14 @@ onBeforeUnmount(() => {
 .para-info-content { color: #4b5563; font-size: 10px; line-height: 1.5; white-space: pre-wrap; }
 .para-info-raw { margin: 0; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; font-size: 10px; }
 
-.subcard__llm { min-height:48px; overflow-y: auto; transition: height 0.12s ease; }
+/* Evidence Synthesis：始终排在 MSU 拖动条之下，吸收剩余空间，内容超长时自己滚动 */
+.subcard__llm{
+  flex: 1 1 auto;
+  min-height: 48px;
+  max-height: 50%;
+  overflow-y: auto;
+}
+.subcard__llm.is-sized{ max-height: none; }
 .llm-content { font-size: 11px; line-height: 1.45; color: #374151; padding: 7px 8px; background: #ffffff; border-radius: 5px; border-left: 3px solid #d8dee8; }
 .llm-label{ font-weight:700; color:#1f2937; margin-right:4px; }
 .llm-text{ color:#374151; }
@@ -953,6 +1073,7 @@ onBeforeUnmount(() => {
 
 .section-resize-handle{
   position:relative;
+  flex:0 0 7px;
   height:7px;
   cursor:ns-resize;
   touch-action:none;
